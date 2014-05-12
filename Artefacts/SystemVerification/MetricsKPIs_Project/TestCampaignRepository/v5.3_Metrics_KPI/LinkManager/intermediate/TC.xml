@@ -1,0 +1,2046 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generator: reqtify -->
+
+<Root>
+	<ELEMENT type="" label="SystemVerification/MetricsKPIs_Project/TestCampaignRepository/v5.3_Metrics_KPI/TCR_v5.3_Metrics_KPI" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI">
+		<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\tcr_v5.3_metrics_kpi.ivv" version="07/11/2013 13:38:17" />
+		<ELEMENT type="TestSuite" label="IVV-IVVP-001" fullName="IVV-IVVP-001" hash="ed184a42" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuite/IVV%2DIVVP%2D001">
+			<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-001" version="07/11/2013 13:00:53" />
+			<PROPERTIES>
+				<PROPERTY name="fragmentName" type="String">IVV-IVVP-001</PROPERTY>
+				<PROPERTY name="completeTitle" type="String">Test 01 </PROPERTY>
+			</PROPERTIES>
+			<ELEMENT type="TestSuiteHeader" label="IVV-IVVP-001 Test Suite Header" fullName="IVV-IVVP-001 Test Suite Header" hash="69f1ac26" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteHeader/IVV%2DIVVP%2D001">
+				<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-001" version="07/11/2013 13:00:53" />
+				<PROPERTIES>
+					<PROPERTY name="TestSuite_IsDataFromDOORS" type="String">true</PROPERTY>
+					<PROPERTY name="TestSuite_URI" type="String">orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a3%211?viewName=ORCH%5FIVVMngt%5FInterface</PROPERTY>
+					<PROPERTY name="TestSuite_uniqueID" type="String">IVV-IVVP-001_v5.3_Metrics_KPI</PROPERTY>
+					<PROPERTY name="TestSuite_Identification" type="String">IVV-IVVP-001</PROPERTY>
+					<PROPERTY name="TestSuite_Title" type="String">Test 01 </PROPERTY>
+					<PROPERTY name="TestSuite_AssociatedCampaigns" type="String">V1_MetricsKPI</PROPERTY>
+					<PROPERTY name="TestSuite_Objective" type="String" />
+					<PROPERTY name="TestSuite_RegressionThread" type="String" />
+					<PROPERTY name="TestSuite_TestMethod" type="String">T</PROPERTY>
+					<PROPERTY name="TestSuite_AttachedRequirements_ForLM" type="String" />
+					<PROPERTY name="TestSuite_AttachedRequirements" type="String" />
+					<PROPERTY name="TestSuite_DefinitionVersion" type="String" />
+					<PROPERTY name="IE Object Type" type="String">IVV Procedure</PROPERTY>
+					<PROPERTY name="IE PUID" type="String">IVV-IVVP-001</PROPERTY>
+					<PROPERTY name="ORCH Test Version" type="String" />
+					<PROPERTY name="Test type" type="String" />
+					<PROPERTY name="Specific Skills Needed" type="String" />
+					<PROPERTY name="TestSuite_TestStatus" type="String">Accepted</PROPERTY>
+					<PROPERTY name="TestSuite_IsTestMeansDefined" type="String">False</PROPERTY>
+					<PROPERTY name="TestSuite_IsTestDataSetDefined" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_ContainingProjectName" type="String">MetricsKPIs</PROPERTY>
+					<PROPERTY name="TestSuite_WriterAssumedName" type="String" />
+					<PROPERTY name="TestSuite_WriterAssumedEmail" type="String" />
+					<PROPERTY name="TestSuite_WriterRealName" type="String" />
+					<PROPERTY name="TestSuite_WriterRealEmail" type="String" />
+					<PROPERTY name="TestSuite_CampaignForInterest_ID" type="String">V1_MetricsKPI</PROPERTY>
+					<PROPERTY name="TestSuite_CampaignForInterest_Name" type="String">v5.3_Metrics_KPI</PROPERTY>
+					<PROPERTY name="TestSuite_WritingStatus" type="String">WrittenAndReviewedOK</PROPERTY>
+					<PROPERTY name="TestSuite_RunningStatus" type="String">NotRun</PROPERTY>
+					<PROPERTY name="TestSuite_VersionUnderTest" type="String" />
+					<PROPERTY name="TestSuite_SoftwareTestEnvironment" type="String" />
+					<PROPERTY name="TestSuite_HardwareTestEnvironment" type="String" />
+					<PROPERTY name="TestSuite_RunnerAssumedName" type="String" />
+					<PROPERTY name="TestSuite_RunnerAssumedEmail" type="String" />
+					<PROPERTY name="TestSuite_RunnerRealName" type="String" />
+					<PROPERTY name="TestSuite_RunnerRealEmail" type="String" />
+					<PROPERTY name="TestSuite_State" type="String">OK</PROPERTY>
+					<PROPERTY name="TestSuite_TargetedRunDate_brut" type="String" />
+					<PROPERTY name="TestSuite_TargetedRunDate" type="String" />
+					<PROPERTY name="TestSuite_LastRunDate_brut" type="String" />
+					<PROPERTY name="TestSuite_LastRunDate" type="String" />
+					<PROPERTY name="TestSuite_ApproximateRunningDuration" type="String" />
+					<PROPERTY name="TestSuite_Notes" type="String" />
+					<PROPERTY name="TestSuite_Description" type="String" />
+					<PROPERTY name="TestSuite_Type" type="String">Manual</PROPERTY>
+					<PROPERTY name="TestSuite_ScriptPath" type="String" />
+					<PROPERTY name="TestSuite_ScriptArgs" type="String" />
+					<PROPERTY name="TestSuite_IsTestMeansAvailable" type="String">False</PROPERTY>
+					<PROPERTY name="TestSuite_IsDataSetAvailable" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_FreeField1" type="String" />
+					<PROPERTY name="TestSuite_FreeField2" type="String" />
+					<PROPERTY name="TestSuite_FreeField3" type="String" />
+					<PROPERTY name="TestSuite_FreeField4" type="String" />
+					<PROPERTY name="TestSuite_Revision" type="String" />
+					<PROPERTY name="TestSuite_Execution" type="String">1</PROPERTY>
+					<PROPERTY name="TestSuite_NbrSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrRemainSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrOKSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrNOKSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrNTSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrOSSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrTestCases" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrWithDefectSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrTestCasesForRegression" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_PercentOK" type="String">0%</PROPERTY>
+				</PROPERTIES>
+			</ELEMENT>
+			<ELEMENT type="TestSuiteExecutionHeader" label="IVV-IVVP-001 TestSuiteExecutionHeader " fullName="IVV-IVVP-001 TestSuiteExecutionHeader " hash="1b7ac5ac" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteExecutionHeader/IVV%2DIVVP%2D001TestSuiteExecutionHeader">
+				<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-001" version="07/11/2013 13:00:53" />
+				<ELEMENT type="TestSuiteExecution" label="IVV-IVVP-001TestSuiteExecution1" fullName="IVV-IVVP-001TestSuiteExecution1" hash="7b29ee59" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteExecution/IVV%2DIVVP%2D001TestSuiteExecution1">
+					<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-001" version="07/11/2013 13:00:53" />
+					<PROPERTIES>
+						<PROPERTY name="RunNumber" type="String">1</PROPERTY>
+						<PROPERTY name="Date" type="String" />
+						<PROPERTY name="RunBy" type="String" />
+						<PROPERTY name="State" type="String" />
+						<PROPERTY name="SystemVersion" type="String" />
+						<PROPERTY name="AssociatedDefects" type="String" />
+						<PROPERTY name="Comments" type="String" />
+					</PROPERTIES>
+				</ELEMENT>
+			</ELEMENT>
+		</ELEMENT>
+		<ELEMENT type="TestSuite" label="IVV-IVVP-002" fullName="IVV-IVVP-002" hash="74111bf8" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuite/IVV%2DIVVP%2D002">
+			<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-002" version="07/11/2013 13:08:29" />
+			<PROPERTIES>
+				<PROPERTY name="fragmentName" type="String">IVV-IVVP-002</PROPERTY>
+				<PROPERTY name="completeTitle" type="String">Test 02</PROPERTY>
+			</PROPERTIES>
+			<ELEMENT type="TestSuiteHeader" label="IVV-IVVP-002 Test Suite Header" fullName="IVV-IVVP-002 Test Suite Header" hash="caa72a8f" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteHeader/IVV%2DIVVP%2D002">
+				<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-002" version="07/11/2013 13:08:29" />
+				<PROPERTIES>
+					<PROPERTY name="TestSuite_IsDataFromDOORS" type="String">true</PROPERTY>
+					<PROPERTY name="TestSuite_URI" type="String">orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a3%212?viewName=ORCH%5FIVVMngt%5FInterface</PROPERTY>
+					<PROPERTY name="TestSuite_uniqueID" type="String">IVV-IVVP-002_v5.3_Metrics_KPI</PROPERTY>
+					<PROPERTY name="TestSuite_Identification" type="String">IVV-IVVP-002</PROPERTY>
+					<PROPERTY name="TestSuite_Title" type="String">Test 02</PROPERTY>
+					<PROPERTY name="TestSuite_AssociatedCampaigns" type="String">V1_MetricsKPI</PROPERTY>
+					<PROPERTY name="TestSuite_Objective" type="String" />
+					<PROPERTY name="TestSuite_RegressionThread" type="String" />
+					<PROPERTY name="TestSuite_TestMethod" type="String">D</PROPERTY>
+					<PROPERTY name="TestSuite_AttachedRequirements_ForLM" type="String" />
+					<PROPERTY name="TestSuite_AttachedRequirements" type="String" />
+					<PROPERTY name="TestSuite_DefinitionVersion" type="String" />
+					<PROPERTY name="IE Object Type" type="String">IVV Procedure</PROPERTY>
+					<PROPERTY name="IE PUID" type="String">IVV-IVVP-002</PROPERTY>
+					<PROPERTY name="ORCH Test Version" type="String" />
+					<PROPERTY name="Test type" type="String" />
+					<PROPERTY name="Specific Skills Needed" type="String" />
+					<PROPERTY name="TestSuite_TestStatus" type="String">Accepted</PROPERTY>
+					<PROPERTY name="TestSuite_IsTestMeansDefined" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_IsTestDataSetDefined" type="String">False</PROPERTY>
+					<PROPERTY name="TestSuite_ContainingProjectName" type="String">MetricsKPIs</PROPERTY>
+					<PROPERTY name="TestSuite_WriterAssumedName" type="String" />
+					<PROPERTY name="TestSuite_WriterAssumedEmail" type="String" />
+					<PROPERTY name="TestSuite_WriterRealName" type="String" />
+					<PROPERTY name="TestSuite_WriterRealEmail" type="String" />
+					<PROPERTY name="TestSuite_CampaignForInterest_ID" type="String">V1_MetricsKPI</PROPERTY>
+					<PROPERTY name="TestSuite_CampaignForInterest_Name" type="String">v5.3_Metrics_KPI</PROPERTY>
+					<PROPERTY name="TestSuite_WritingStatus" type="String">WrittenAndReviewedOK</PROPERTY>
+					<PROPERTY name="TestSuite_RunningStatus" type="String">NotRun</PROPERTY>
+					<PROPERTY name="TestSuite_VersionUnderTest" type="String" />
+					<PROPERTY name="TestSuite_SoftwareTestEnvironment" type="String" />
+					<PROPERTY name="TestSuite_HardwareTestEnvironment" type="String" />
+					<PROPERTY name="TestSuite_RunnerAssumedName" type="String" />
+					<PROPERTY name="TestSuite_RunnerAssumedEmail" type="String" />
+					<PROPERTY name="TestSuite_RunnerRealName" type="String" />
+					<PROPERTY name="TestSuite_RunnerRealEmail" type="String" />
+					<PROPERTY name="TestSuite_State" type="String">KO</PROPERTY>
+					<PROPERTY name="TestSuite_TargetedRunDate_brut" type="String" />
+					<PROPERTY name="TestSuite_TargetedRunDate" type="String" />
+					<PROPERTY name="TestSuite_LastRunDate_brut" type="String" />
+					<PROPERTY name="TestSuite_LastRunDate" type="String" />
+					<PROPERTY name="TestSuite_ApproximateRunningDuration" type="String" />
+					<PROPERTY name="TestSuite_Notes" type="String" />
+					<PROPERTY name="TestSuite_Description" type="String" />
+					<PROPERTY name="TestSuite_Type" type="String">Manual</PROPERTY>
+					<PROPERTY name="TestSuite_ScriptPath" type="String" />
+					<PROPERTY name="TestSuite_ScriptArgs" type="String" />
+					<PROPERTY name="TestSuite_IsTestMeansAvailable" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_IsDataSetAvailable" type="String">False</PROPERTY>
+					<PROPERTY name="TestSuite_FreeField1" type="String" />
+					<PROPERTY name="TestSuite_FreeField2" type="String" />
+					<PROPERTY name="TestSuite_FreeField3" type="String" />
+					<PROPERTY name="TestSuite_FreeField4" type="String" />
+					<PROPERTY name="TestSuite_Revision" type="String" />
+					<PROPERTY name="TestSuite_Execution" type="String">1</PROPERTY>
+					<PROPERTY name="TestSuite_NbrSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrRemainSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrOKSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrNOKSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrNTSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrOSSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrTestCases" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrWithDefectSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrTestCasesForRegression" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_PercentOK" type="String">0%</PROPERTY>
+				</PROPERTIES>
+			</ELEMENT>
+			<ELEMENT type="TestSuiteExecutionHeader" label="IVV-IVVP-002 TestSuiteExecutionHeader " fullName="IVV-IVVP-002 TestSuiteExecutionHeader " hash="a8eee86f" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteExecutionHeader/IVV%2DIVVP%2D002TestSuiteExecutionHeader">
+				<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-002" version="07/11/2013 13:08:29" />
+				<ELEMENT type="TestSuiteExecution" label="IVV-IVVP-002TestSuiteExecution1" fullName="IVV-IVVP-002TestSuiteExecution1" hash="c6e38297" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteExecution/IVV%2DIVVP%2D002TestSuiteExecution1">
+					<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-002" version="07/11/2013 13:08:29" />
+					<PROPERTIES>
+						<PROPERTY name="RunNumber" type="String">1</PROPERTY>
+						<PROPERTY name="Date" type="String" />
+						<PROPERTY name="RunBy" type="String" />
+						<PROPERTY name="State" type="String" />
+						<PROPERTY name="SystemVersion" type="String" />
+						<PROPERTY name="AssociatedDefects" type="String" />
+						<PROPERTY name="Comments" type="String" />
+					</PROPERTIES>
+				</ELEMENT>
+			</ELEMENT>
+		</ELEMENT>
+		<ELEMENT type="TestSuite" label="IVV-IVVP-003" fullName="IVV-IVVP-003" hash="3162b6e" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuite/IVV%2DIVVP%2D003">
+			<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-003" version="07/11/2013 13:08:56" />
+			<PROPERTIES>
+				<PROPERTY name="fragmentName" type="String">IVV-IVVP-003</PROPERTY>
+				<PROPERTY name="completeTitle" type="String">Test 03</PROPERTY>
+			</PROPERTIES>
+			<ELEMENT type="TestSuiteHeader" label="IVV-IVVP-003 Test Suite Header" fullName="IVV-IVVP-003 Test Suite Header" hash="1d45aad7" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteHeader/IVV%2DIVVP%2D003">
+				<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-003" version="07/11/2013 13:08:56" />
+				<PROPERTIES>
+					<PROPERTY name="TestSuite_IsDataFromDOORS" type="String">true</PROPERTY>
+					<PROPERTY name="TestSuite_URI" type="String">orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a3%213?viewName=ORCH%5FIVVMngt%5FInterface</PROPERTY>
+					<PROPERTY name="TestSuite_uniqueID" type="String">IVV-IVVP-003_v5.3_Metrics_KPI</PROPERTY>
+					<PROPERTY name="TestSuite_Identification" type="String">IVV-IVVP-003</PROPERTY>
+					<PROPERTY name="TestSuite_Title" type="String">Test 03</PROPERTY>
+					<PROPERTY name="TestSuite_AssociatedCampaigns" type="String">V1_MetricsKPI</PROPERTY>
+					<PROPERTY name="TestSuite_Objective" type="String" />
+					<PROPERTY name="TestSuite_RegressionThread" type="String" />
+					<PROPERTY name="TestSuite_TestMethod" type="String">D</PROPERTY>
+					<PROPERTY name="TestSuite_AttachedRequirements_ForLM" type="String" />
+					<PROPERTY name="TestSuite_AttachedRequirements" type="String" />
+					<PROPERTY name="TestSuite_DefinitionVersion" type="String" />
+					<PROPERTY name="IE Object Type" type="String">IVV Procedure</PROPERTY>
+					<PROPERTY name="IE PUID" type="String">IVV-IVVP-003</PROPERTY>
+					<PROPERTY name="ORCH Test Version" type="String" />
+					<PROPERTY name="Test type" type="String" />
+					<PROPERTY name="Specific Skills Needed" type="String" />
+					<PROPERTY name="TestSuite_TestStatus" type="String">Accepted</PROPERTY>
+					<PROPERTY name="TestSuite_IsTestMeansDefined" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_IsTestDataSetDefined" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_ContainingProjectName" type="String">MetricsKPIs</PROPERTY>
+					<PROPERTY name="TestSuite_WriterAssumedName" type="String" />
+					<PROPERTY name="TestSuite_WriterAssumedEmail" type="String" />
+					<PROPERTY name="TestSuite_WriterRealName" type="String" />
+					<PROPERTY name="TestSuite_WriterRealEmail" type="String" />
+					<PROPERTY name="TestSuite_CampaignForInterest_ID" type="String">V1_MetricsKPI</PROPERTY>
+					<PROPERTY name="TestSuite_CampaignForInterest_Name" type="String">v5.3_Metrics_KPI</PROPERTY>
+					<PROPERTY name="TestSuite_WritingStatus" type="String">NotWritten</PROPERTY>
+					<PROPERTY name="TestSuite_RunningStatus" type="String">NotRun</PROPERTY>
+					<PROPERTY name="TestSuite_VersionUnderTest" type="String" />
+					<PROPERTY name="TestSuite_SoftwareTestEnvironment" type="String" />
+					<PROPERTY name="TestSuite_HardwareTestEnvironment" type="String" />
+					<PROPERTY name="TestSuite_RunnerAssumedName" type="String" />
+					<PROPERTY name="TestSuite_RunnerAssumedEmail" type="String" />
+					<PROPERTY name="TestSuite_RunnerRealName" type="String" />
+					<PROPERTY name="TestSuite_RunnerRealEmail" type="String" />
+					<PROPERTY name="TestSuite_State" type="String">OK</PROPERTY>
+					<PROPERTY name="TestSuite_TargetedRunDate_brut" type="String" />
+					<PROPERTY name="TestSuite_TargetedRunDate" type="String" />
+					<PROPERTY name="TestSuite_LastRunDate_brut" type="String" />
+					<PROPERTY name="TestSuite_LastRunDate" type="String" />
+					<PROPERTY name="TestSuite_ApproximateRunningDuration" type="String" />
+					<PROPERTY name="TestSuite_Notes" type="String" />
+					<PROPERTY name="TestSuite_Description" type="String" />
+					<PROPERTY name="TestSuite_Type" type="String">Manual</PROPERTY>
+					<PROPERTY name="TestSuite_ScriptPath" type="String" />
+					<PROPERTY name="TestSuite_ScriptArgs" type="String" />
+					<PROPERTY name="TestSuite_IsTestMeansAvailable" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_IsDataSetAvailable" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_FreeField1" type="String" />
+					<PROPERTY name="TestSuite_FreeField2" type="String" />
+					<PROPERTY name="TestSuite_FreeField3" type="String" />
+					<PROPERTY name="TestSuite_FreeField4" type="String" />
+					<PROPERTY name="TestSuite_Revision" type="String" />
+					<PROPERTY name="TestSuite_Execution" type="String">1</PROPERTY>
+					<PROPERTY name="TestSuite_NbrSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrRemainSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrOKSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrNOKSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrNTSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrOSSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrTestCases" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrWithDefectSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrTestCasesForRegression" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_PercentOK" type="String">0%</PROPERTY>
+				</PROPERTIES>
+			</ELEMENT>
+			<ELEMENT type="TestSuiteExecutionHeader" label="IVV-IVVP-003 TestSuiteExecutionHeader " fullName="IVV-IVVP-003 TestSuiteExecutionHeader " hash="c662f32e" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteExecutionHeader/IVV%2DIVVP%2D003TestSuiteExecutionHeader">
+				<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-003" version="07/11/2013 13:08:56" />
+				<ELEMENT type="TestSuiteExecution" label="IVV-IVVP-003TestSuiteExecution1" fullName="IVV-IVVP-003TestSuiteExecution1" hash="1b755b12" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteExecution/IVV%2DIVVP%2D003TestSuiteExecution1">
+					<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-003" version="07/11/2013 13:08:56" />
+					<PROPERTIES>
+						<PROPERTY name="RunNumber" type="String">1</PROPERTY>
+						<PROPERTY name="Date" type="String" />
+						<PROPERTY name="RunBy" type="String" />
+						<PROPERTY name="State" type="String" />
+						<PROPERTY name="SystemVersion" type="String" />
+						<PROPERTY name="AssociatedDefects" type="String" />
+						<PROPERTY name="Comments" type="String" />
+					</PROPERTIES>
+				</ELEMENT>
+			</ELEMENT>
+		</ELEMENT>
+		<ELEMENT type="TestSuite" label="IVV-IVVP-004" fullName="IVV-IVVP-004" hash="9d72becd" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuite/IVV%2DIVVP%2D004">
+			<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-004" version="07/11/2013 13:09:49" />
+			<PROPERTIES>
+				<PROPERTY name="fragmentName" type="String">IVV-IVVP-004</PROPERTY>
+				<PROPERTY name="completeTitle" type="String">Test 04</PROPERTY>
+			</PROPERTIES>
+			<ELEMENT type="TestSuiteHeader" label="IVV-IVVP-004 Test Suite Header" fullName="IVV-IVVP-004 Test Suite Header" hash="577b219c" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteHeader/IVV%2DIVVP%2D004">
+				<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-004" version="07/11/2013 13:09:49" />
+				<PROPERTIES>
+					<PROPERTY name="TestSuite_IsDataFromDOORS" type="String">true</PROPERTY>
+					<PROPERTY name="TestSuite_URI" type="String">orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a3%214?viewName=ORCH%5FIVVMngt%5FInterface</PROPERTY>
+					<PROPERTY name="TestSuite_uniqueID" type="String">IVV-IVVP-004_v5.3_Metrics_KPI</PROPERTY>
+					<PROPERTY name="TestSuite_Identification" type="String">IVV-IVVP-004</PROPERTY>
+					<PROPERTY name="TestSuite_Title" type="String">Test 04</PROPERTY>
+					<PROPERTY name="TestSuite_AssociatedCampaigns" type="String">V1_MetricsKPI</PROPERTY>
+					<PROPERTY name="TestSuite_Objective" type="String" />
+					<PROPERTY name="TestSuite_RegressionThread" type="String" />
+					<PROPERTY name="TestSuite_TestMethod" type="String">T</PROPERTY>
+					<PROPERTY name="TestSuite_AttachedRequirements_ForLM" type="String" />
+					<PROPERTY name="TestSuite_AttachedRequirements" type="String" />
+					<PROPERTY name="TestSuite_DefinitionVersion" type="String" />
+					<PROPERTY name="IE Object Type" type="String">IVV Procedure</PROPERTY>
+					<PROPERTY name="IE PUID" type="String">IVV-IVVP-004</PROPERTY>
+					<PROPERTY name="ORCH Test Version" type="String" />
+					<PROPERTY name="Test type" type="String" />
+					<PROPERTY name="Specific Skills Needed" type="String" />
+					<PROPERTY name="TestSuite_TestStatus" type="String">In negociation</PROPERTY>
+					<PROPERTY name="TestSuite_IsTestMeansDefined" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_IsTestDataSetDefined" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_ContainingProjectName" type="String">MetricsKPIs</PROPERTY>
+					<PROPERTY name="TestSuite_WriterAssumedName" type="String" />
+					<PROPERTY name="TestSuite_WriterAssumedEmail" type="String" />
+					<PROPERTY name="TestSuite_WriterRealName" type="String" />
+					<PROPERTY name="TestSuite_WriterRealEmail" type="String" />
+					<PROPERTY name="TestSuite_CampaignForInterest_ID" type="String">V1_MetricsKPI</PROPERTY>
+					<PROPERTY name="TestSuite_CampaignForInterest_Name" type="String">v5.3_Metrics_KPI</PROPERTY>
+					<PROPERTY name="TestSuite_WritingStatus" type="String">BeingWritten</PROPERTY>
+					<PROPERTY name="TestSuite_RunningStatus" type="String">NotRun</PROPERTY>
+					<PROPERTY name="TestSuite_VersionUnderTest" type="String" />
+					<PROPERTY name="TestSuite_SoftwareTestEnvironment" type="String" />
+					<PROPERTY name="TestSuite_HardwareTestEnvironment" type="String" />
+					<PROPERTY name="TestSuite_RunnerAssumedName" type="String" />
+					<PROPERTY name="TestSuite_RunnerAssumedEmail" type="String" />
+					<PROPERTY name="TestSuite_RunnerRealName" type="String" />
+					<PROPERTY name="TestSuite_RunnerRealEmail" type="String" />
+					<PROPERTY name="TestSuite_State" type="String">OK</PROPERTY>
+					<PROPERTY name="TestSuite_TargetedRunDate_brut" type="String" />
+					<PROPERTY name="TestSuite_TargetedRunDate" type="String" />
+					<PROPERTY name="TestSuite_LastRunDate_brut" type="String" />
+					<PROPERTY name="TestSuite_LastRunDate" type="String" />
+					<PROPERTY name="TestSuite_ApproximateRunningDuration" type="String" />
+					<PROPERTY name="TestSuite_Notes" type="String" />
+					<PROPERTY name="TestSuite_Description" type="String" />
+					<PROPERTY name="TestSuite_Type" type="String">Manual</PROPERTY>
+					<PROPERTY name="TestSuite_ScriptPath" type="String" />
+					<PROPERTY name="TestSuite_ScriptArgs" type="String" />
+					<PROPERTY name="TestSuite_IsTestMeansAvailable" type="String">False</PROPERTY>
+					<PROPERTY name="TestSuite_IsDataSetAvailable" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_FreeField1" type="String" />
+					<PROPERTY name="TestSuite_FreeField2" type="String" />
+					<PROPERTY name="TestSuite_FreeField3" type="String" />
+					<PROPERTY name="TestSuite_FreeField4" type="String" />
+					<PROPERTY name="TestSuite_Revision" type="String" />
+					<PROPERTY name="TestSuite_Execution" type="String">1</PROPERTY>
+					<PROPERTY name="TestSuite_NbrSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrRemainSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrOKSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrNOKSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrNTSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrOSSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrTestCases" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrWithDefectSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrTestCasesForRegression" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_PercentOK" type="String">0%</PROPERTY>
+				</PROPERTIES>
+			</ELEMENT>
+			<ELEMENT type="TestSuiteExecutionHeader" label="IVV-IVVP-004 TestSuiteExecutionHeader " fullName="IVV-IVVP-004 TestSuiteExecutionHeader " hash="14b7b5a8" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteExecutionHeader/IVV%2DIVVP%2D004TestSuiteExecutionHeader">
+				<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-004" version="07/11/2013 13:09:49" />
+				<ELEMENT type="TestSuiteExecution" label="IVV-IVVP-004TestSuiteExecution1" fullName="IVV-IVVP-004TestSuiteExecution1" hash="66065d4a" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteExecution/IVV%2DIVVP%2D004TestSuiteExecution1">
+					<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-004" version="07/11/2013 13:09:49" />
+					<PROPERTIES>
+						<PROPERTY name="RunNumber" type="String">1</PROPERTY>
+						<PROPERTY name="Date" type="String" />
+						<PROPERTY name="RunBy" type="String" />
+						<PROPERTY name="State" type="String" />
+						<PROPERTY name="SystemVersion" type="String" />
+						<PROPERTY name="AssociatedDefects" type="String" />
+						<PROPERTY name="Comments" type="String" />
+					</PROPERTIES>
+				</ELEMENT>
+			</ELEMENT>
+		</ELEMENT>
+		<ELEMENT type="TestSuite" label="IVV-IVVP-005" fullName="IVV-IVVP-005" hash="ea758e5b" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuite/IVV%2DIVVP%2D005">
+			<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-005" version="07/11/2013 13:10:05" />
+			<PROPERTIES>
+				<PROPERTY name="fragmentName" type="String">IVV-IVVP-005</PROPERTY>
+				<PROPERTY name="completeTitle" type="String">Test 05 </PROPERTY>
+			</PROPERTIES>
+			<ELEMENT type="TestSuiteHeader" label="IVV-IVVP-005 Test Suite Header" fullName="IVV-IVVP-005 Test Suite Header" hash="8099a1c4" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteHeader/IVV%2DIVVP%2D005">
+				<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-005" version="07/11/2013 13:10:05" />
+				<PROPERTIES>
+					<PROPERTY name="TestSuite_IsDataFromDOORS" type="String">true</PROPERTY>
+					<PROPERTY name="TestSuite_URI" type="String">orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a3%215?viewName=ORCH%5FIVVMngt%5FInterface</PROPERTY>
+					<PROPERTY name="TestSuite_uniqueID" type="String">IVV-IVVP-005_v5.3_Metrics_KPI</PROPERTY>
+					<PROPERTY name="TestSuite_Identification" type="String">IVV-IVVP-005</PROPERTY>
+					<PROPERTY name="TestSuite_Title" type="String">Test 05 </PROPERTY>
+					<PROPERTY name="TestSuite_AssociatedCampaigns" type="String">V1_MetricsKPI</PROPERTY>
+					<PROPERTY name="TestSuite_Objective" type="String" />
+					<PROPERTY name="TestSuite_RegressionThread" type="String" />
+					<PROPERTY name="TestSuite_TestMethod" type="String">D</PROPERTY>
+					<PROPERTY name="TestSuite_AttachedRequirements_ForLM" type="String" />
+					<PROPERTY name="TestSuite_AttachedRequirements" type="String" />
+					<PROPERTY name="TestSuite_DefinitionVersion" type="String" />
+					<PROPERTY name="IE Object Type" type="String">IVV Procedure</PROPERTY>
+					<PROPERTY name="IE PUID" type="String">IVV-IVVP-005</PROPERTY>
+					<PROPERTY name="ORCH Test Version" type="String" />
+					<PROPERTY name="Test type" type="String" />
+					<PROPERTY name="Specific Skills Needed" type="String" />
+					<PROPERTY name="TestSuite_TestStatus" type="String">Obsolete</PROPERTY>
+					<PROPERTY name="TestSuite_IsTestMeansDefined" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_IsTestDataSetDefined" type="String">False</PROPERTY>
+					<PROPERTY name="TestSuite_ContainingProjectName" type="String">MetricsKPIs</PROPERTY>
+					<PROPERTY name="TestSuite_WriterAssumedName" type="String" />
+					<PROPERTY name="TestSuite_WriterAssumedEmail" type="String" />
+					<PROPERTY name="TestSuite_WriterRealName" type="String" />
+					<PROPERTY name="TestSuite_WriterRealEmail" type="String" />
+					<PROPERTY name="TestSuite_CampaignForInterest_ID" type="String">V1_MetricsKPI</PROPERTY>
+					<PROPERTY name="TestSuite_CampaignForInterest_Name" type="String">v5.3_Metrics_KPI</PROPERTY>
+					<PROPERTY name="TestSuite_WritingStatus" type="String">WrittenAndNotReviewed</PROPERTY>
+					<PROPERTY name="TestSuite_RunningStatus" type="String">NotRun</PROPERTY>
+					<PROPERTY name="TestSuite_VersionUnderTest" type="String" />
+					<PROPERTY name="TestSuite_SoftwareTestEnvironment" type="String" />
+					<PROPERTY name="TestSuite_HardwareTestEnvironment" type="String" />
+					<PROPERTY name="TestSuite_RunnerAssumedName" type="String" />
+					<PROPERTY name="TestSuite_RunnerAssumedEmail" type="String" />
+					<PROPERTY name="TestSuite_RunnerRealName" type="String" />
+					<PROPERTY name="TestSuite_RunnerRealEmail" type="String" />
+					<PROPERTY name="TestSuite_State" type="String">Blocked</PROPERTY>
+					<PROPERTY name="TestSuite_TargetedRunDate_brut" type="String" />
+					<PROPERTY name="TestSuite_TargetedRunDate" type="String" />
+					<PROPERTY name="TestSuite_LastRunDate_brut" type="String" />
+					<PROPERTY name="TestSuite_LastRunDate" type="String" />
+					<PROPERTY name="TestSuite_ApproximateRunningDuration" type="String" />
+					<PROPERTY name="TestSuite_Notes" type="String" />
+					<PROPERTY name="TestSuite_Description" type="String" />
+					<PROPERTY name="TestSuite_Type" type="String">Manual</PROPERTY>
+					<PROPERTY name="TestSuite_ScriptPath" type="String" />
+					<PROPERTY name="TestSuite_ScriptArgs" type="String" />
+					<PROPERTY name="TestSuite_IsTestMeansAvailable" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_IsDataSetAvailable" type="String">False</PROPERTY>
+					<PROPERTY name="TestSuite_FreeField1" type="String" />
+					<PROPERTY name="TestSuite_FreeField2" type="String" />
+					<PROPERTY name="TestSuite_FreeField3" type="String" />
+					<PROPERTY name="TestSuite_FreeField4" type="String" />
+					<PROPERTY name="TestSuite_Revision" type="String" />
+					<PROPERTY name="TestSuite_Execution" type="String">1</PROPERTY>
+					<PROPERTY name="TestSuite_NbrSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrRemainSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrOKSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrNOKSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrNTSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrOSSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrTestCases" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrWithDefectSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrTestCasesForRegression" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_PercentOK" type="String">0%</PROPERTY>
+				</PROPERTIES>
+			</ELEMENT>
+			<ELEMENT type="TestSuiteExecutionHeader" label="IVV-IVVP-005 TestSuiteExecutionHeader " fullName="IVV-IVVP-005 TestSuiteExecutionHeader " hash="7a3baee9" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteExecutionHeader/IVV%2DIVVP%2D005TestSuiteExecutionHeader">
+				<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-005" version="07/11/2013 13:10:05" />
+				<ELEMENT type="TestSuiteExecution" label="IVV-IVVP-005TestSuiteExecution1" fullName="IVV-IVVP-005TestSuiteExecution1" hash="bb9084cf" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteExecution/IVV%2DIVVP%2D005TestSuiteExecution1">
+					<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-005" version="07/11/2013 13:10:05" />
+					<PROPERTIES>
+						<PROPERTY name="RunNumber" type="String">1</PROPERTY>
+						<PROPERTY name="Date" type="String" />
+						<PROPERTY name="RunBy" type="String" />
+						<PROPERTY name="State" type="String" />
+						<PROPERTY name="SystemVersion" type="String" />
+						<PROPERTY name="AssociatedDefects" type="String" />
+						<PROPERTY name="Comments" type="String" />
+					</PROPERTIES>
+				</ELEMENT>
+			</ELEMENT>
+		</ELEMENT>
+		<ELEMENT type="TestSuite" label="IVV-IVVP-006" fullName="IVV-IVVP-006" hash="737cdfe1" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuite/IVV%2DIVVP%2D006">
+			<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-006" version="07/11/2013 13:10:26" />
+			<PROPERTIES>
+				<PROPERTY name="fragmentName" type="String">IVV-IVVP-006</PROPERTY>
+				<PROPERTY name="completeTitle" type="String">Test 06</PROPERTY>
+			</PROPERTIES>
+			<ELEMENT type="TestSuiteHeader" label="IVV-IVVP-006 Test Suite Header" fullName="IVV-IVVP-006 Test Suite Header" hash="23cf276d" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteHeader/IVV%2DIVVP%2D006">
+				<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-006" version="07/11/2013 13:10:26" />
+				<PROPERTIES>
+					<PROPERTY name="TestSuite_IsDataFromDOORS" type="String">true</PROPERTY>
+					<PROPERTY name="TestSuite_URI" type="String">orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a3%216?viewName=ORCH%5FIVVMngt%5FInterface</PROPERTY>
+					<PROPERTY name="TestSuite_uniqueID" type="String">IVV-IVVP-006_v5.3_Metrics_KPI</PROPERTY>
+					<PROPERTY name="TestSuite_Identification" type="String">IVV-IVVP-006</PROPERTY>
+					<PROPERTY name="TestSuite_Title" type="String">Test 06</PROPERTY>
+					<PROPERTY name="TestSuite_AssociatedCampaigns" type="String">V1_MetricsKPI</PROPERTY>
+					<PROPERTY name="TestSuite_Objective" type="String" />
+					<PROPERTY name="TestSuite_RegressionThread" type="String" />
+					<PROPERTY name="TestSuite_TestMethod" type="String">T</PROPERTY>
+					<PROPERTY name="TestSuite_AttachedRequirements_ForLM" type="String" />
+					<PROPERTY name="TestSuite_AttachedRequirements" type="String" />
+					<PROPERTY name="TestSuite_DefinitionVersion" type="String" />
+					<PROPERTY name="IE Object Type" type="String">IVV Procedure</PROPERTY>
+					<PROPERTY name="IE PUID" type="String">IVV-IVVP-006</PROPERTY>
+					<PROPERTY name="ORCH Test Version" type="String" />
+					<PROPERTY name="Test type" type="String" />
+					<PROPERTY name="Specific Skills Needed" type="String" />
+					<PROPERTY name="TestSuite_TestStatus" type="String">Accepted</PROPERTY>
+					<PROPERTY name="TestSuite_IsTestMeansDefined" type="String">False</PROPERTY>
+					<PROPERTY name="TestSuite_IsTestDataSetDefined" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_ContainingProjectName" type="String">MetricsKPIs</PROPERTY>
+					<PROPERTY name="TestSuite_WriterAssumedName" type="String" />
+					<PROPERTY name="TestSuite_WriterAssumedEmail" type="String" />
+					<PROPERTY name="TestSuite_WriterRealName" type="String" />
+					<PROPERTY name="TestSuite_WriterRealEmail" type="String" />
+					<PROPERTY name="TestSuite_CampaignForInterest_ID" type="String">V1_MetricsKPI</PROPERTY>
+					<PROPERTY name="TestSuite_CampaignForInterest_Name" type="String">v5.3_Metrics_KPI</PROPERTY>
+					<PROPERTY name="TestSuite_WritingStatus" type="String">WrittenAndReviewedOK</PROPERTY>
+					<PROPERTY name="TestSuite_RunningStatus" type="String">NotRun</PROPERTY>
+					<PROPERTY name="TestSuite_VersionUnderTest" type="String" />
+					<PROPERTY name="TestSuite_SoftwareTestEnvironment" type="String" />
+					<PROPERTY name="TestSuite_HardwareTestEnvironment" type="String" />
+					<PROPERTY name="TestSuite_RunnerAssumedName" type="String" />
+					<PROPERTY name="TestSuite_RunnerAssumedEmail" type="String" />
+					<PROPERTY name="TestSuite_RunnerRealName" type="String" />
+					<PROPERTY name="TestSuite_RunnerRealEmail" type="String" />
+					<PROPERTY name="TestSuite_State" type="String">KO</PROPERTY>
+					<PROPERTY name="TestSuite_TargetedRunDate_brut" type="String" />
+					<PROPERTY name="TestSuite_TargetedRunDate" type="String" />
+					<PROPERTY name="TestSuite_LastRunDate_brut" type="String" />
+					<PROPERTY name="TestSuite_LastRunDate" type="String" />
+					<PROPERTY name="TestSuite_ApproximateRunningDuration" type="String" />
+					<PROPERTY name="TestSuite_Notes" type="String" />
+					<PROPERTY name="TestSuite_Description" type="String" />
+					<PROPERTY name="TestSuite_Type" type="String">Manual</PROPERTY>
+					<PROPERTY name="TestSuite_ScriptPath" type="String" />
+					<PROPERTY name="TestSuite_ScriptArgs" type="String" />
+					<PROPERTY name="TestSuite_IsTestMeansAvailable" type="String">False</PROPERTY>
+					<PROPERTY name="TestSuite_IsDataSetAvailable" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_FreeField1" type="String" />
+					<PROPERTY name="TestSuite_FreeField2" type="String" />
+					<PROPERTY name="TestSuite_FreeField3" type="String" />
+					<PROPERTY name="TestSuite_FreeField4" type="String" />
+					<PROPERTY name="TestSuite_Revision" type="String" />
+					<PROPERTY name="TestSuite_Execution" type="String">1</PROPERTY>
+					<PROPERTY name="TestSuite_NbrSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrRemainSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrOKSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrNOKSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrNTSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrOSSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrTestCases" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrWithDefectSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrTestCasesForRegression" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_PercentOK" type="String">0%</PROPERTY>
+				</PROPERTIES>
+			</ELEMENT>
+			<ELEMENT type="TestSuiteExecutionHeader" label="IVV-IVVP-006 TestSuiteExecutionHeader " fullName="IVV-IVVP-006 TestSuiteExecutionHeader " hash="c9af832a" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteExecutionHeader/IVV%2DIVVP%2D006TestSuiteExecutionHeader">
+				<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-006" version="07/11/2013 13:10:26" />
+				<ELEMENT type="TestSuiteExecution" label="IVV-IVVP-006TestSuiteExecution1" fullName="IVV-IVVP-006TestSuiteExecution1" hash="65ae801" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteExecution/IVV%2DIVVP%2D006TestSuiteExecution1">
+					<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-006" version="07/11/2013 13:10:26" />
+					<PROPERTIES>
+						<PROPERTY name="RunNumber" type="String">1</PROPERTY>
+						<PROPERTY name="Date" type="String" />
+						<PROPERTY name="RunBy" type="String" />
+						<PROPERTY name="State" type="String" />
+						<PROPERTY name="SystemVersion" type="String" />
+						<PROPERTY name="AssociatedDefects" type="String" />
+						<PROPERTY name="Comments" type="String" />
+					</PROPERTIES>
+				</ELEMENT>
+			</ELEMENT>
+		</ELEMENT>
+		<ELEMENT type="TestSuite" label="IVV-IVVP-007" fullName="IVV-IVVP-007" hash="47bef77" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuite/IVV%2DIVVP%2D007">
+			<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-007" version="07/11/2013 13:10:45" />
+			<PROPERTIES>
+				<PROPERTY name="fragmentName" type="String">IVV-IVVP-007</PROPERTY>
+				<PROPERTY name="completeTitle" type="String">Test 07</PROPERTY>
+			</PROPERTIES>
+			<ELEMENT type="TestSuiteHeader" label="IVV-IVVP-007 Test Suite Header" fullName="IVV-IVVP-007 Test Suite Header" hash="f42da735" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteHeader/IVV%2DIVVP%2D007">
+				<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-007" version="07/11/2013 13:10:45" />
+				<PROPERTIES>
+					<PROPERTY name="TestSuite_IsDataFromDOORS" type="String">true</PROPERTY>
+					<PROPERTY name="TestSuite_URI" type="String">orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a3%217?viewName=ORCH%5FIVVMngt%5FInterface</PROPERTY>
+					<PROPERTY name="TestSuite_uniqueID" type="String">IVV-IVVP-007_v5.3_Metrics_KPI</PROPERTY>
+					<PROPERTY name="TestSuite_Identification" type="String">IVV-IVVP-007</PROPERTY>
+					<PROPERTY name="TestSuite_Title" type="String">Test 07</PROPERTY>
+					<PROPERTY name="TestSuite_AssociatedCampaigns" type="String">V1_MetricsKPI</PROPERTY>
+					<PROPERTY name="TestSuite_Objective" type="String" />
+					<PROPERTY name="TestSuite_RegressionThread" type="String" />
+					<PROPERTY name="TestSuite_TestMethod" type="String" />
+					<PROPERTY name="TestSuite_AttachedRequirements_ForLM" type="String" />
+					<PROPERTY name="TestSuite_AttachedRequirements" type="String" />
+					<PROPERTY name="TestSuite_DefinitionVersion" type="String" />
+					<PROPERTY name="IE Object Type" type="String">IVV Procedure</PROPERTY>
+					<PROPERTY name="IE PUID" type="String">IVV-IVVP-007</PROPERTY>
+					<PROPERTY name="ORCH Test Version" type="String" />
+					<PROPERTY name="Test type" type="String" />
+					<PROPERTY name="Specific Skills Needed" type="String" />
+					<PROPERTY name="TestSuite_TestStatus" type="String">Accepted</PROPERTY>
+					<PROPERTY name="TestSuite_IsTestMeansDefined" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_IsTestDataSetDefined" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_ContainingProjectName" type="String">MetricsKPIs</PROPERTY>
+					<PROPERTY name="TestSuite_WriterAssumedName" type="String" />
+					<PROPERTY name="TestSuite_WriterAssumedEmail" type="String" />
+					<PROPERTY name="TestSuite_WriterRealName" type="String" />
+					<PROPERTY name="TestSuite_WriterRealEmail" type="String" />
+					<PROPERTY name="TestSuite_CampaignForInterest_ID" type="String">V1_MetricsKPI</PROPERTY>
+					<PROPERTY name="TestSuite_CampaignForInterest_Name" type="String">v5.3_Metrics_KPI</PROPERTY>
+					<PROPERTY name="TestSuite_WritingStatus" type="String">NotWritten</PROPERTY>
+					<PROPERTY name="TestSuite_RunningStatus" type="String">NotRun</PROPERTY>
+					<PROPERTY name="TestSuite_VersionUnderTest" type="String" />
+					<PROPERTY name="TestSuite_SoftwareTestEnvironment" type="String" />
+					<PROPERTY name="TestSuite_HardwareTestEnvironment" type="String" />
+					<PROPERTY name="TestSuite_RunnerAssumedName" type="String" />
+					<PROPERTY name="TestSuite_RunnerAssumedEmail" type="String" />
+					<PROPERTY name="TestSuite_RunnerRealName" type="String" />
+					<PROPERTY name="TestSuite_RunnerRealEmail" type="String" />
+					<PROPERTY name="TestSuite_State" type="String">OK</PROPERTY>
+					<PROPERTY name="TestSuite_TargetedRunDate_brut" type="String" />
+					<PROPERTY name="TestSuite_TargetedRunDate" type="String" />
+					<PROPERTY name="TestSuite_LastRunDate_brut" type="String" />
+					<PROPERTY name="TestSuite_LastRunDate" type="String" />
+					<PROPERTY name="TestSuite_ApproximateRunningDuration" type="String" />
+					<PROPERTY name="TestSuite_Notes" type="String" />
+					<PROPERTY name="TestSuite_Description" type="String" />
+					<PROPERTY name="TestSuite_Type" type="String">Manual</PROPERTY>
+					<PROPERTY name="TestSuite_ScriptPath" type="String" />
+					<PROPERTY name="TestSuite_ScriptArgs" type="String" />
+					<PROPERTY name="TestSuite_IsTestMeansAvailable" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_IsDataSetAvailable" type="String">False</PROPERTY>
+					<PROPERTY name="TestSuite_FreeField1" type="String" />
+					<PROPERTY name="TestSuite_FreeField2" type="String" />
+					<PROPERTY name="TestSuite_FreeField3" type="String" />
+					<PROPERTY name="TestSuite_FreeField4" type="String" />
+					<PROPERTY name="TestSuite_Revision" type="String" />
+					<PROPERTY name="TestSuite_Execution" type="String">1</PROPERTY>
+					<PROPERTY name="TestSuite_NbrSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrRemainSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrOKSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrNOKSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrNTSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrOSSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrTestCases" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrWithDefectSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrTestCasesForRegression" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_PercentOK" type="String">0%</PROPERTY>
+				</PROPERTIES>
+			</ELEMENT>
+			<ELEMENT type="TestSuiteExecutionHeader" label="IVV-IVVP-007 TestSuiteExecutionHeader " fullName="IVV-IVVP-007 TestSuiteExecutionHeader " hash="a723986b" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteExecutionHeader/IVV%2DIVVP%2D007TestSuiteExecutionHeader">
+				<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-007" version="07/11/2013 13:10:45" />
+				<ELEMENT type="TestSuiteExecution" label="IVV-IVVP-007TestSuiteExecution1" fullName="IVV-IVVP-007TestSuiteExecution1" hash="dbcc3184" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteExecution/IVV%2DIVVP%2D007TestSuiteExecution1">
+					<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-007" version="07/11/2013 13:10:45" />
+					<PROPERTIES>
+						<PROPERTY name="RunNumber" type="String">1</PROPERTY>
+						<PROPERTY name="Date" type="String" />
+						<PROPERTY name="RunBy" type="String" />
+						<PROPERTY name="State" type="String" />
+						<PROPERTY name="SystemVersion" type="String" />
+						<PROPERTY name="AssociatedDefects" type="String" />
+						<PROPERTY name="Comments" type="String" />
+					</PROPERTIES>
+				</ELEMENT>
+			</ELEMENT>
+		</ELEMENT>
+		<ELEMENT type="TestSuite" label="IVV-IVVP-008" fullName="IVV-IVVP-008" hash="94c4f2e6" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuite/IVV%2DIVVP%2D008">
+			<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-008" version="07/11/2013 12:40:11" />
+			<PROPERTIES>
+				<PROPERTY name="fragmentName" type="String">IVV-IVVP-008</PROPERTY>
+				<PROPERTY name="completeTitle" type="String">Test 08</PROPERTY>
+			</PROPERTIES>
+			<ELEMENT type="TestSuiteHeader" label="IVV-IVVP-008 Test Suite Header" fullName="IVV-IVVP-008 Test Suite Header" hash="b7b231fb" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteHeader/IVV%2DIVVP%2D008">
+				<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-008" version="07/11/2013 12:40:11" />
+				<PROPERTIES>
+					<PROPERTY name="TestSuite_IsDataFromDOORS" type="String">true</PROPERTY>
+					<PROPERTY name="TestSuite_URI" type="String">orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a3%218?viewName=ORCH%5FIVVMngt%5FInterface</PROPERTY>
+					<PROPERTY name="TestSuite_uniqueID" type="String">IVV-IVVP-008_v5.3_Metrics_KPI</PROPERTY>
+					<PROPERTY name="TestSuite_Identification" type="String">IVV-IVVP-008</PROPERTY>
+					<PROPERTY name="TestSuite_Title" type="String">Test 08</PROPERTY>
+					<PROPERTY name="TestSuite_AssociatedCampaigns" type="String">V1_MetricsKPI</PROPERTY>
+					<PROPERTY name="TestSuite_Objective" type="String" />
+					<PROPERTY name="TestSuite_RegressionThread" type="String" />
+					<PROPERTY name="TestSuite_TestMethod" type="String">D</PROPERTY>
+					<PROPERTY name="TestSuite_AttachedRequirements_ForLM" type="String" />
+					<PROPERTY name="TestSuite_AttachedRequirements" type="String" />
+					<PROPERTY name="TestSuite_DefinitionVersion" type="String" />
+					<PROPERTY name="IE Object Type" type="String">IVV Procedure</PROPERTY>
+					<PROPERTY name="IE PUID" type="String">IVV-IVVP-008</PROPERTY>
+					<PROPERTY name="ORCH Test Version" type="String" />
+					<PROPERTY name="Test type" type="String" />
+					<PROPERTY name="Specific Skills Needed" type="String" />
+					<PROPERTY name="TestSuite_TestStatus" type="String" />
+					<PROPERTY name="TestSuite_IsTestMeansDefined" type="String" />
+					<PROPERTY name="TestSuite_IsTestDataSetDefined" type="String" />
+					<PROPERTY name="TestSuite_ContainingProjectName" type="String">MetricsKPIs</PROPERTY>
+					<PROPERTY name="TestSuite_WriterAssumedName" type="String" />
+					<PROPERTY name="TestSuite_WriterAssumedEmail" type="String" />
+					<PROPERTY name="TestSuite_WriterRealName" type="String" />
+					<PROPERTY name="TestSuite_WriterRealEmail" type="String" />
+					<PROPERTY name="TestSuite_CampaignForInterest_ID" type="String">V1_MetricsKPI</PROPERTY>
+					<PROPERTY name="TestSuite_CampaignForInterest_Name" type="String">v5.3_Metrics_KPI</PROPERTY>
+					<PROPERTY name="TestSuite_WritingStatus" type="String">WrittenAndNotReviewed</PROPERTY>
+					<PROPERTY name="TestSuite_RunningStatus" type="String">NotRun</PROPERTY>
+					<PROPERTY name="TestSuite_VersionUnderTest" type="String" />
+					<PROPERTY name="TestSuite_SoftwareTestEnvironment" type="String" />
+					<PROPERTY name="TestSuite_HardwareTestEnvironment" type="String" />
+					<PROPERTY name="TestSuite_RunnerAssumedName" type="String" />
+					<PROPERTY name="TestSuite_RunnerAssumedEmail" type="String" />
+					<PROPERTY name="TestSuite_RunnerRealName" type="String" />
+					<PROPERTY name="TestSuite_RunnerRealEmail" type="String" />
+					<PROPERTY name="TestSuite_State" type="String" />
+					<PROPERTY name="TestSuite_TargetedRunDate_brut" type="String" />
+					<PROPERTY name="TestSuite_TargetedRunDate" type="String" />
+					<PROPERTY name="TestSuite_LastRunDate_brut" type="String" />
+					<PROPERTY name="TestSuite_LastRunDate" type="String" />
+					<PROPERTY name="TestSuite_ApproximateRunningDuration" type="String" />
+					<PROPERTY name="TestSuite_Notes" type="String" />
+					<PROPERTY name="TestSuite_Description" type="String" />
+					<PROPERTY name="TestSuite_Type" type="String">Manual</PROPERTY>
+					<PROPERTY name="TestSuite_ScriptPath" type="String" />
+					<PROPERTY name="TestSuite_ScriptArgs" type="String" />
+					<PROPERTY name="TestSuite_IsTestMeansAvailable" type="String" />
+					<PROPERTY name="TestSuite_IsDataSetAvailable" type="String" />
+					<PROPERTY name="TestSuite_FreeField1" type="String" />
+					<PROPERTY name="TestSuite_FreeField2" type="String" />
+					<PROPERTY name="TestSuite_FreeField3" type="String" />
+					<PROPERTY name="TestSuite_FreeField4" type="String" />
+					<PROPERTY name="TestSuite_Revision" type="String" />
+					<PROPERTY name="TestSuite_Execution" type="String">1</PROPERTY>
+					<PROPERTY name="TestSuite_NbrSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrRemainSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrOKSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrNOKSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrNTSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrOSSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrTestCases" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrWithDefectSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrTestCasesForRegression" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_PercentOK" type="String">0%</PROPERTY>
+				</PROPERTIES>
+			</ELEMENT>
+			<ELEMENT type="TestSuiteExecutionHeader" label="IVV-IVVP-008 TestSuiteExecutionHeader " fullName="IVV-IVVP-008 TestSuiteExecutionHeader " hash="b7740867" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteExecutionHeader/IVV%2DIVVP%2D008TestSuiteExecutionHeader">
+				<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-008" version="07/11/2013 12:40:11" />
+				<ELEMENT type="TestSuiteExecution" label="IVV-IVVP-008TestSuiteExecution1" fullName="IVV-IVVP-008TestSuiteExecution1" hash="fcbce4b1" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteExecution/IVV%2DIVVP%2D008TestSuiteExecution1">
+					<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-008" version="07/11/2013 12:40:11" />
+					<PROPERTIES>
+						<PROPERTY name="RunNumber" type="String">1</PROPERTY>
+						<PROPERTY name="Date" type="String" />
+						<PROPERTY name="RunBy" type="String" />
+						<PROPERTY name="State" type="String" />
+						<PROPERTY name="SystemVersion" type="String" />
+						<PROPERTY name="AssociatedDefects" type="String" />
+						<PROPERTY name="Comments" type="String" />
+					</PROPERTIES>
+				</ELEMENT>
+			</ELEMENT>
+		</ELEMENT>
+		<ELEMENT type="TestSuite" label="IVV-IVVP-009" fullName="IVV-IVVP-009" hash="e3c3c270" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuite/IVV%2DIVVP%2D009">
+			<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-009" version="07/11/2013 13:11:13" />
+			<PROPERTIES>
+				<PROPERTY name="fragmentName" type="String">IVV-IVVP-009</PROPERTY>
+				<PROPERTY name="completeTitle" type="String">Test 09</PROPERTY>
+			</PROPERTIES>
+			<ELEMENT type="TestSuiteHeader" label="IVV-IVVP-009 Test Suite Header" fullName="IVV-IVVP-009 Test Suite Header" hash="6050b1a3" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteHeader/IVV%2DIVVP%2D009">
+				<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-009" version="07/11/2013 13:11:13" />
+				<PROPERTIES>
+					<PROPERTY name="TestSuite_IsDataFromDOORS" type="String">true</PROPERTY>
+					<PROPERTY name="TestSuite_URI" type="String">orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a3%219?viewName=ORCH%5FIVVMngt%5FInterface</PROPERTY>
+					<PROPERTY name="TestSuite_uniqueID" type="String">IVV-IVVP-009_v5.3_Metrics_KPI</PROPERTY>
+					<PROPERTY name="TestSuite_Identification" type="String">IVV-IVVP-009</PROPERTY>
+					<PROPERTY name="TestSuite_Title" type="String">Test 09</PROPERTY>
+					<PROPERTY name="TestSuite_AssociatedCampaigns" type="String">V1_MetricsKPI</PROPERTY>
+					<PROPERTY name="TestSuite_Objective" type="String" />
+					<PROPERTY name="TestSuite_RegressionThread" type="String" />
+					<PROPERTY name="TestSuite_TestMethod" type="String" />
+					<PROPERTY name="TestSuite_AttachedRequirements_ForLM" type="String" />
+					<PROPERTY name="TestSuite_AttachedRequirements" type="String" />
+					<PROPERTY name="TestSuite_DefinitionVersion" type="String" />
+					<PROPERTY name="IE Object Type" type="String">IVV Procedure</PROPERTY>
+					<PROPERTY name="IE PUID" type="String">IVV-IVVP-009</PROPERTY>
+					<PROPERTY name="ORCH Test Version" type="String" />
+					<PROPERTY name="Test type" type="String" />
+					<PROPERTY name="Specific Skills Needed" type="String" />
+					<PROPERTY name="TestSuite_TestStatus" type="String">Accepted</PROPERTY>
+					<PROPERTY name="TestSuite_IsTestMeansDefined" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_IsTestDataSetDefined" type="String">False</PROPERTY>
+					<PROPERTY name="TestSuite_ContainingProjectName" type="String">MetricsKPIs</PROPERTY>
+					<PROPERTY name="TestSuite_WriterAssumedName" type="String" />
+					<PROPERTY name="TestSuite_WriterAssumedEmail" type="String" />
+					<PROPERTY name="TestSuite_WriterRealName" type="String" />
+					<PROPERTY name="TestSuite_WriterRealEmail" type="String" />
+					<PROPERTY name="TestSuite_CampaignForInterest_ID" type="String">V1_MetricsKPI</PROPERTY>
+					<PROPERTY name="TestSuite_CampaignForInterest_Name" type="String">v5.3_Metrics_KPI</PROPERTY>
+					<PROPERTY name="TestSuite_WritingStatus" type="String">WrittenAndNotReviewed</PROPERTY>
+					<PROPERTY name="TestSuite_RunningStatus" type="String">NotRun</PROPERTY>
+					<PROPERTY name="TestSuite_VersionUnderTest" type="String" />
+					<PROPERTY name="TestSuite_SoftwareTestEnvironment" type="String" />
+					<PROPERTY name="TestSuite_HardwareTestEnvironment" type="String" />
+					<PROPERTY name="TestSuite_RunnerAssumedName" type="String" />
+					<PROPERTY name="TestSuite_RunnerAssumedEmail" type="String" />
+					<PROPERTY name="TestSuite_RunnerRealName" type="String" />
+					<PROPERTY name="TestSuite_RunnerRealEmail" type="String" />
+					<PROPERTY name="TestSuite_State" type="String" />
+					<PROPERTY name="TestSuite_TargetedRunDate_brut" type="String" />
+					<PROPERTY name="TestSuite_TargetedRunDate" type="String" />
+					<PROPERTY name="TestSuite_LastRunDate_brut" type="String" />
+					<PROPERTY name="TestSuite_LastRunDate" type="String" />
+					<PROPERTY name="TestSuite_ApproximateRunningDuration" type="String" />
+					<PROPERTY name="TestSuite_Notes" type="String" />
+					<PROPERTY name="TestSuite_Description" type="String" />
+					<PROPERTY name="TestSuite_Type" type="String">Manual</PROPERTY>
+					<PROPERTY name="TestSuite_ScriptPath" type="String" />
+					<PROPERTY name="TestSuite_ScriptArgs" type="String" />
+					<PROPERTY name="TestSuite_IsTestMeansAvailable" type="String">False</PROPERTY>
+					<PROPERTY name="TestSuite_IsDataSetAvailable" type="String">False</PROPERTY>
+					<PROPERTY name="TestSuite_FreeField1" type="String" />
+					<PROPERTY name="TestSuite_FreeField2" type="String" />
+					<PROPERTY name="TestSuite_FreeField3" type="String" />
+					<PROPERTY name="TestSuite_FreeField4" type="String" />
+					<PROPERTY name="TestSuite_Revision" type="String" />
+					<PROPERTY name="TestSuite_Execution" type="String">1</PROPERTY>
+					<PROPERTY name="TestSuite_NbrSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrRemainSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrOKSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrNOKSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrNTSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrOSSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrTestCases" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrWithDefectSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrTestCasesForRegression" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_PercentOK" type="String">0%</PROPERTY>
+				</PROPERTIES>
+			</ELEMENT>
+			<ELEMENT type="TestSuiteExecutionHeader" label="IVV-IVVP-009 TestSuiteExecutionHeader " fullName="IVV-IVVP-009 TestSuiteExecutionHeader " hash="d9f81326" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteExecutionHeader/IVV%2DIVVP%2D009TestSuiteExecutionHeader">
+				<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-009" version="07/11/2013 13:11:13" />
+				<ELEMENT type="TestSuiteExecution" label="IVV-IVVP-009TestSuiteExecution1" fullName="IVV-IVVP-009TestSuiteExecution1" hash="212a3d34" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteExecution/IVV%2DIVVP%2D009TestSuiteExecution1">
+					<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-009" version="07/11/2013 13:11:13" />
+					<PROPERTIES>
+						<PROPERTY name="RunNumber" type="String">1</PROPERTY>
+						<PROPERTY name="Date" type="String" />
+						<PROPERTY name="RunBy" type="String" />
+						<PROPERTY name="State" type="String" />
+						<PROPERTY name="SystemVersion" type="String" />
+						<PROPERTY name="AssociatedDefects" type="String" />
+						<PROPERTY name="Comments" type="String" />
+					</PROPERTIES>
+				</ELEMENT>
+			</ELEMENT>
+		</ELEMENT>
+		<ELEMENT type="TestSuite" label="IVV-IVVP-010" fullName="IVV-IVVP-010" hash="83044b95" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuite/IVV%2DIVVP%2D010">
+			<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-010" version="07/11/2013 13:11:34" />
+			<PROPERTIES>
+				<PROPERTY name="fragmentName" type="String">IVV-IVVP-010</PROPERTY>
+				<PROPERTY name="completeTitle" type="String">Test 10 </PROPERTY>
+			</PROPERTIES>
+			<ELEMENT type="TestSuiteHeader" label="IVV-IVVP-010 Test Suite Header" fullName="IVV-IVVP-010 Test Suite Header" hash="db741738" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteHeader/IVV%2DIVVP%2D010">
+				<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-010" version="07/11/2013 13:11:34" />
+				<PROPERTIES>
+					<PROPERTY name="TestSuite_IsDataFromDOORS" type="String">true</PROPERTY>
+					<PROPERTY name="TestSuite_URI" type="String">orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a3%2110?viewName=ORCH%5FIVVMngt%5FInterface</PROPERTY>
+					<PROPERTY name="TestSuite_uniqueID" type="String">IVV-IVVP-010_v5.3_Metrics_KPI</PROPERTY>
+					<PROPERTY name="TestSuite_Identification" type="String">IVV-IVVP-010</PROPERTY>
+					<PROPERTY name="TestSuite_Title" type="String">Test 10 </PROPERTY>
+					<PROPERTY name="TestSuite_AssociatedCampaigns" type="String">V1_MetricsKPI</PROPERTY>
+					<PROPERTY name="TestSuite_Objective" type="String" />
+					<PROPERTY name="TestSuite_RegressionThread" type="String" />
+					<PROPERTY name="TestSuite_TestMethod" type="String" />
+					<PROPERTY name="TestSuite_AttachedRequirements_ForLM" type="String" />
+					<PROPERTY name="TestSuite_AttachedRequirements" type="String" />
+					<PROPERTY name="TestSuite_DefinitionVersion" type="String" />
+					<PROPERTY name="IE Object Type" type="String">IVV Procedure</PROPERTY>
+					<PROPERTY name="IE PUID" type="String">IVV-IVVP-010</PROPERTY>
+					<PROPERTY name="ORCH Test Version" type="String" />
+					<PROPERTY name="Test type" type="String" />
+					<PROPERTY name="Specific Skills Needed" type="String" />
+					<PROPERTY name="TestSuite_TestStatus" type="String">Accepted</PROPERTY>
+					<PROPERTY name="TestSuite_IsTestMeansDefined" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_IsTestDataSetDefined" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_ContainingProjectName" type="String">MetricsKPIs</PROPERTY>
+					<PROPERTY name="TestSuite_WriterAssumedName" type="String" />
+					<PROPERTY name="TestSuite_WriterAssumedEmail" type="String" />
+					<PROPERTY name="TestSuite_WriterRealName" type="String" />
+					<PROPERTY name="TestSuite_WriterRealEmail" type="String" />
+					<PROPERTY name="TestSuite_CampaignForInterest_ID" type="String">V1_MetricsKPI</PROPERTY>
+					<PROPERTY name="TestSuite_CampaignForInterest_Name" type="String">v5.3_Metrics_KPI</PROPERTY>
+					<PROPERTY name="TestSuite_WritingStatus" type="String">NotWritten</PROPERTY>
+					<PROPERTY name="TestSuite_RunningStatus" type="String">NotRun</PROPERTY>
+					<PROPERTY name="TestSuite_VersionUnderTest" type="String" />
+					<PROPERTY name="TestSuite_SoftwareTestEnvironment" type="String" />
+					<PROPERTY name="TestSuite_HardwareTestEnvironment" type="String" />
+					<PROPERTY name="TestSuite_RunnerAssumedName" type="String" />
+					<PROPERTY name="TestSuite_RunnerAssumedEmail" type="String" />
+					<PROPERTY name="TestSuite_RunnerRealName" type="String" />
+					<PROPERTY name="TestSuite_RunnerRealEmail" type="String" />
+					<PROPERTY name="TestSuite_State" type="String" />
+					<PROPERTY name="TestSuite_TargetedRunDate_brut" type="String" />
+					<PROPERTY name="TestSuite_TargetedRunDate" type="String" />
+					<PROPERTY name="TestSuite_LastRunDate_brut" type="String" />
+					<PROPERTY name="TestSuite_LastRunDate" type="String" />
+					<PROPERTY name="TestSuite_ApproximateRunningDuration" type="String" />
+					<PROPERTY name="TestSuite_Notes" type="String" />
+					<PROPERTY name="TestSuite_Description" type="String" />
+					<PROPERTY name="TestSuite_Type" type="String">Manual</PROPERTY>
+					<PROPERTY name="TestSuite_ScriptPath" type="String" />
+					<PROPERTY name="TestSuite_ScriptArgs" type="String" />
+					<PROPERTY name="TestSuite_IsTestMeansAvailable" type="String">False</PROPERTY>
+					<PROPERTY name="TestSuite_IsDataSetAvailable" type="String">False</PROPERTY>
+					<PROPERTY name="TestSuite_FreeField1" type="String" />
+					<PROPERTY name="TestSuite_FreeField2" type="String" />
+					<PROPERTY name="TestSuite_FreeField3" type="String" />
+					<PROPERTY name="TestSuite_FreeField4" type="String" />
+					<PROPERTY name="TestSuite_Revision" type="String" />
+					<PROPERTY name="TestSuite_Execution" type="String">1</PROPERTY>
+					<PROPERTY name="TestSuite_NbrSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrRemainSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrOKSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrNOKSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrNTSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrOSSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrTestCases" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrWithDefectSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrTestCasesForRegression" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_PercentOK" type="String">0%</PROPERTY>
+				</PROPERTIES>
+			</ELEMENT>
+			<ELEMENT type="TestSuiteExecutionHeader" label="IVV-IVVP-010 TestSuiteExecutionHeader " fullName="IVV-IVVP-010 TestSuiteExecutionHeader " hash="744323f0" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteExecutionHeader/IVV%2DIVVP%2D010TestSuiteExecutionHeader">
+				<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-010" version="07/11/2013 13:11:34" />
+				<ELEMENT type="TestSuiteExecution" label="IVV-IVVP-010TestSuiteExecution1" fullName="IVV-IVVP-010TestSuiteExecution1" hash="3bb0d6aa" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteExecution/IVV%2DIVVP%2D010TestSuiteExecution1">
+					<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-010" version="07/11/2013 13:11:34" />
+					<PROPERTIES>
+						<PROPERTY name="RunNumber" type="String">1</PROPERTY>
+						<PROPERTY name="Date" type="String" />
+						<PROPERTY name="RunBy" type="String" />
+						<PROPERTY name="State" type="String" />
+						<PROPERTY name="SystemVersion" type="String" />
+						<PROPERTY name="AssociatedDefects" type="String" />
+						<PROPERTY name="Comments" type="String" />
+					</PROPERTIES>
+				</ELEMENT>
+			</ELEMENT>
+		</ELEMENT>
+		<ELEMENT type="TestSuite" label="IVV-IVVP-011" fullName="IVV-IVVP-011" hash="f4037b03" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuite/IVV%2DIVVP%2D011">
+			<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-011" version="07/11/2013 13:11:51" />
+			<PROPERTIES>
+				<PROPERTY name="fragmentName" type="String">IVV-IVVP-011</PROPERTY>
+				<PROPERTY name="completeTitle" type="String">Test 11</PROPERTY>
+			</PROPERTIES>
+			<ELEMENT type="TestSuiteHeader" label="IVV-IVVP-011 Test Suite Header" fullName="IVV-IVVP-011 Test Suite Header" hash="c969760" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteHeader/IVV%2DIVVP%2D011">
+				<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-011" version="07/11/2013 13:11:51" />
+				<PROPERTIES>
+					<PROPERTY name="TestSuite_IsDataFromDOORS" type="String">true</PROPERTY>
+					<PROPERTY name="TestSuite_URI" type="String">orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a3%2111?viewName=ORCH%5FIVVMngt%5FInterface</PROPERTY>
+					<PROPERTY name="TestSuite_uniqueID" type="String">IVV-IVVP-011_v5.3_Metrics_KPI</PROPERTY>
+					<PROPERTY name="TestSuite_Identification" type="String">IVV-IVVP-011</PROPERTY>
+					<PROPERTY name="TestSuite_Title" type="String">Test 11</PROPERTY>
+					<PROPERTY name="TestSuite_AssociatedCampaigns" type="String">V1_MetricsKPI</PROPERTY>
+					<PROPERTY name="TestSuite_Objective" type="String" />
+					<PROPERTY name="TestSuite_RegressionThread" type="String" />
+					<PROPERTY name="TestSuite_TestMethod" type="String" />
+					<PROPERTY name="TestSuite_AttachedRequirements_ForLM" type="String" />
+					<PROPERTY name="TestSuite_AttachedRequirements" type="String" />
+					<PROPERTY name="TestSuite_DefinitionVersion" type="String" />
+					<PROPERTY name="IE Object Type" type="String">IVV Procedure</PROPERTY>
+					<PROPERTY name="IE PUID" type="String">IVV-IVVP-011</PROPERTY>
+					<PROPERTY name="ORCH Test Version" type="String" />
+					<PROPERTY name="Test type" type="String" />
+					<PROPERTY name="Specific Skills Needed" type="String" />
+					<PROPERTY name="TestSuite_TestStatus" type="String">Accepted</PROPERTY>
+					<PROPERTY name="TestSuite_IsTestMeansDefined" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_IsTestDataSetDefined" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_ContainingProjectName" type="String">MetricsKPIs</PROPERTY>
+					<PROPERTY name="TestSuite_WriterAssumedName" type="String" />
+					<PROPERTY name="TestSuite_WriterAssumedEmail" type="String" />
+					<PROPERTY name="TestSuite_WriterRealName" type="String" />
+					<PROPERTY name="TestSuite_WriterRealEmail" type="String" />
+					<PROPERTY name="TestSuite_CampaignForInterest_ID" type="String">V1_MetricsKPI</PROPERTY>
+					<PROPERTY name="TestSuite_CampaignForInterest_Name" type="String">v5.3_Metrics_KPI</PROPERTY>
+					<PROPERTY name="TestSuite_WritingStatus" type="String">NotWritten</PROPERTY>
+					<PROPERTY name="TestSuite_RunningStatus" type="String">NotRun</PROPERTY>
+					<PROPERTY name="TestSuite_VersionUnderTest" type="String" />
+					<PROPERTY name="TestSuite_SoftwareTestEnvironment" type="String" />
+					<PROPERTY name="TestSuite_HardwareTestEnvironment" type="String" />
+					<PROPERTY name="TestSuite_RunnerAssumedName" type="String" />
+					<PROPERTY name="TestSuite_RunnerAssumedEmail" type="String" />
+					<PROPERTY name="TestSuite_RunnerRealName" type="String" />
+					<PROPERTY name="TestSuite_RunnerRealEmail" type="String" />
+					<PROPERTY name="TestSuite_State" type="String" />
+					<PROPERTY name="TestSuite_TargetedRunDate_brut" type="String" />
+					<PROPERTY name="TestSuite_TargetedRunDate" type="String" />
+					<PROPERTY name="TestSuite_LastRunDate_brut" type="String" />
+					<PROPERTY name="TestSuite_LastRunDate" type="String" />
+					<PROPERTY name="TestSuite_ApproximateRunningDuration" type="String" />
+					<PROPERTY name="TestSuite_Notes" type="String" />
+					<PROPERTY name="TestSuite_Description" type="String" />
+					<PROPERTY name="TestSuite_Type" type="String">Manual</PROPERTY>
+					<PROPERTY name="TestSuite_ScriptPath" type="String" />
+					<PROPERTY name="TestSuite_ScriptArgs" type="String" />
+					<PROPERTY name="TestSuite_IsTestMeansAvailable" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_IsDataSetAvailable" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_FreeField1" type="String" />
+					<PROPERTY name="TestSuite_FreeField2" type="String" />
+					<PROPERTY name="TestSuite_FreeField3" type="String" />
+					<PROPERTY name="TestSuite_FreeField4" type="String" />
+					<PROPERTY name="TestSuite_Revision" type="String" />
+					<PROPERTY name="TestSuite_Execution" type="String">1</PROPERTY>
+					<PROPERTY name="TestSuite_NbrSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrRemainSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrOKSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrNOKSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrNTSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrOSSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrTestCases" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrWithDefectSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrTestCasesForRegression" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_PercentOK" type="String">0%</PROPERTY>
+				</PROPERTIES>
+			</ELEMENT>
+			<ELEMENT type="TestSuiteExecutionHeader" label="IVV-IVVP-011 TestSuiteExecutionHeader " fullName="IVV-IVVP-011 TestSuiteExecutionHeader " hash="1acf38b1" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteExecutionHeader/IVV%2DIVVP%2D011TestSuiteExecutionHeader">
+				<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-011" version="07/11/2013 13:11:51" />
+				<ELEMENT type="TestSuiteExecution" label="IVV-IVVP-011TestSuiteExecution1" fullName="IVV-IVVP-011TestSuiteExecution1" hash="e6260f2f" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteExecution/IVV%2DIVVP%2D011TestSuiteExecution1">
+					<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-011" version="07/11/2013 13:11:51" />
+					<PROPERTIES>
+						<PROPERTY name="RunNumber" type="String">1</PROPERTY>
+						<PROPERTY name="Date" type="String" />
+						<PROPERTY name="RunBy" type="String" />
+						<PROPERTY name="State" type="String" />
+						<PROPERTY name="SystemVersion" type="String" />
+						<PROPERTY name="AssociatedDefects" type="String" />
+						<PROPERTY name="Comments" type="String" />
+					</PROPERTIES>
+				</ELEMENT>
+			</ELEMENT>
+		</ELEMENT>
+		<ELEMENT type="TestSuite" label="IVV-IVVP-012" fullName="IVV-IVVP-012" hash="6d0a2ab9" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuite/IVV%2DIVVP%2D012">
+			<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-012" version="07/11/2013 13:12:08" />
+			<PROPERTIES>
+				<PROPERTY name="fragmentName" type="String">IVV-IVVP-012</PROPERTY>
+				<PROPERTY name="completeTitle" type="String">Test 12</PROPERTY>
+			</PROPERTIES>
+			<ELEMENT type="TestSuiteHeader" label="IVV-IVVP-012 Test Suite Header" fullName="IVV-IVVP-012 Test Suite Header" hash="afc011c9" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteHeader/IVV%2DIVVP%2D012">
+				<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-012" version="07/11/2013 13:12:08" />
+				<PROPERTIES>
+					<PROPERTY name="TestSuite_IsDataFromDOORS" type="String">true</PROPERTY>
+					<PROPERTY name="TestSuite_URI" type="String">orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a3%2112?viewName=ORCH%5FIVVMngt%5FInterface</PROPERTY>
+					<PROPERTY name="TestSuite_uniqueID" type="String">IVV-IVVP-012_v5.3_Metrics_KPI</PROPERTY>
+					<PROPERTY name="TestSuite_Identification" type="String">IVV-IVVP-012</PROPERTY>
+					<PROPERTY name="TestSuite_Title" type="String">Test 12</PROPERTY>
+					<PROPERTY name="TestSuite_AssociatedCampaigns" type="String">V1_MetricsKPI</PROPERTY>
+					<PROPERTY name="TestSuite_Objective" type="String" />
+					<PROPERTY name="TestSuite_RegressionThread" type="String" />
+					<PROPERTY name="TestSuite_TestMethod" type="String" />
+					<PROPERTY name="TestSuite_AttachedRequirements_ForLM" type="String" />
+					<PROPERTY name="TestSuite_AttachedRequirements" type="String" />
+					<PROPERTY name="TestSuite_DefinitionVersion" type="String" />
+					<PROPERTY name="IE Object Type" type="String">IVV Procedure</PROPERTY>
+					<PROPERTY name="IE PUID" type="String">IVV-IVVP-012</PROPERTY>
+					<PROPERTY name="ORCH Test Version" type="String" />
+					<PROPERTY name="Test type" type="String" />
+					<PROPERTY name="Specific Skills Needed" type="String" />
+					<PROPERTY name="TestSuite_TestStatus" type="String" />
+					<PROPERTY name="TestSuite_IsTestMeansDefined" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_IsTestDataSetDefined" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_ContainingProjectName" type="String">MetricsKPIs</PROPERTY>
+					<PROPERTY name="TestSuite_WriterAssumedName" type="String" />
+					<PROPERTY name="TestSuite_WriterAssumedEmail" type="String" />
+					<PROPERTY name="TestSuite_WriterRealName" type="String" />
+					<PROPERTY name="TestSuite_WriterRealEmail" type="String" />
+					<PROPERTY name="TestSuite_CampaignForInterest_ID" type="String">V1_MetricsKPI</PROPERTY>
+					<PROPERTY name="TestSuite_CampaignForInterest_Name" type="String">v5.3_Metrics_KPI</PROPERTY>
+					<PROPERTY name="TestSuite_WritingStatus" type="String">NotWritten</PROPERTY>
+					<PROPERTY name="TestSuite_RunningStatus" type="String">NotRun</PROPERTY>
+					<PROPERTY name="TestSuite_VersionUnderTest" type="String" />
+					<PROPERTY name="TestSuite_SoftwareTestEnvironment" type="String" />
+					<PROPERTY name="TestSuite_HardwareTestEnvironment" type="String" />
+					<PROPERTY name="TestSuite_RunnerAssumedName" type="String" />
+					<PROPERTY name="TestSuite_RunnerAssumedEmail" type="String" />
+					<PROPERTY name="TestSuite_RunnerRealName" type="String" />
+					<PROPERTY name="TestSuite_RunnerRealEmail" type="String" />
+					<PROPERTY name="TestSuite_State" type="String" />
+					<PROPERTY name="TestSuite_TargetedRunDate_brut" type="String" />
+					<PROPERTY name="TestSuite_TargetedRunDate" type="String" />
+					<PROPERTY name="TestSuite_LastRunDate_brut" type="String" />
+					<PROPERTY name="TestSuite_LastRunDate" type="String" />
+					<PROPERTY name="TestSuite_ApproximateRunningDuration" type="String" />
+					<PROPERTY name="TestSuite_Notes" type="String" />
+					<PROPERTY name="TestSuite_Description" type="String" />
+					<PROPERTY name="TestSuite_Type" type="String">Manual</PROPERTY>
+					<PROPERTY name="TestSuite_ScriptPath" type="String" />
+					<PROPERTY name="TestSuite_ScriptArgs" type="String" />
+					<PROPERTY name="TestSuite_IsTestMeansAvailable" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_IsDataSetAvailable" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_FreeField1" type="String" />
+					<PROPERTY name="TestSuite_FreeField2" type="String" />
+					<PROPERTY name="TestSuite_FreeField3" type="String" />
+					<PROPERTY name="TestSuite_FreeField4" type="String" />
+					<PROPERTY name="TestSuite_Revision" type="String" />
+					<PROPERTY name="TestSuite_Execution" type="String">1</PROPERTY>
+					<PROPERTY name="TestSuite_NbrSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrRemainSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrOKSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrNOKSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrNTSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrOSSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrTestCases" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrWithDefectSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrTestCasesForRegression" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_PercentOK" type="String">0%</PROPERTY>
+				</PROPERTIES>
+			</ELEMENT>
+			<ELEMENT type="TestSuiteExecutionHeader" label="IVV-IVVP-012 TestSuiteExecutionHeader " fullName="IVV-IVVP-012 TestSuiteExecutionHeader " hash="a95b1572" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteExecutionHeader/IVV%2DIVVP%2D012TestSuiteExecutionHeader">
+				<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-012" version="07/11/2013 13:12:08" />
+				<ELEMENT type="TestSuiteExecution" label="IVV-IVVP-012TestSuiteExecution1" fullName="IVV-IVVP-012TestSuiteExecution1" hash="5bec63e1" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteExecution/IVV%2DIVVP%2D012TestSuiteExecution1">
+					<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-012" version="07/11/2013 13:12:08" />
+					<PROPERTIES>
+						<PROPERTY name="RunNumber" type="String">1</PROPERTY>
+						<PROPERTY name="Date" type="String" />
+						<PROPERTY name="RunBy" type="String" />
+						<PROPERTY name="State" type="String" />
+						<PROPERTY name="SystemVersion" type="String" />
+						<PROPERTY name="AssociatedDefects" type="String" />
+						<PROPERTY name="Comments" type="String" />
+					</PROPERTIES>
+				</ELEMENT>
+			</ELEMENT>
+		</ELEMENT>
+		<ELEMENT type="TestSuite" label="IVV-IVVP-013" fullName="IVV-IVVP-013" hash="1a0d1a2f" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuite/IVV%2DIVVP%2D013">
+			<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-013" version="07/11/2013 13:12:28" />
+			<PROPERTIES>
+				<PROPERTY name="fragmentName" type="String">IVV-IVVP-013</PROPERTY>
+				<PROPERTY name="completeTitle" type="String">Test 13</PROPERTY>
+			</PROPERTIES>
+			<ELEMENT type="TestSuiteHeader" label="IVV-IVVP-013 Test Suite Header" fullName="IVV-IVVP-013 Test Suite Header" hash="78229191" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteHeader/IVV%2DIVVP%2D013">
+				<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-013" version="07/11/2013 13:12:28" />
+				<PROPERTIES>
+					<PROPERTY name="TestSuite_IsDataFromDOORS" type="String">true</PROPERTY>
+					<PROPERTY name="TestSuite_URI" type="String">orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a3%2113?viewName=ORCH%5FIVVMngt%5FInterface</PROPERTY>
+					<PROPERTY name="TestSuite_uniqueID" type="String">IVV-IVVP-013_v5.3_Metrics_KPI</PROPERTY>
+					<PROPERTY name="TestSuite_Identification" type="String">IVV-IVVP-013</PROPERTY>
+					<PROPERTY name="TestSuite_Title" type="String">Test 13</PROPERTY>
+					<PROPERTY name="TestSuite_AssociatedCampaigns" type="String">V1_MetricsKPI</PROPERTY>
+					<PROPERTY name="TestSuite_Objective" type="String" />
+					<PROPERTY name="TestSuite_RegressionThread" type="String" />
+					<PROPERTY name="TestSuite_TestMethod" type="String">I</PROPERTY>
+					<PROPERTY name="TestSuite_AttachedRequirements_ForLM" type="String" />
+					<PROPERTY name="TestSuite_AttachedRequirements" type="String" />
+					<PROPERTY name="TestSuite_DefinitionVersion" type="String" />
+					<PROPERTY name="IE Object Type" type="String">IVV Procedure</PROPERTY>
+					<PROPERTY name="IE PUID" type="String">IVV-IVVP-013</PROPERTY>
+					<PROPERTY name="ORCH Test Version" type="String" />
+					<PROPERTY name="Test type" type="String" />
+					<PROPERTY name="Specific Skills Needed" type="String" />
+					<PROPERTY name="TestSuite_TestStatus" type="String">Accepted</PROPERTY>
+					<PROPERTY name="TestSuite_IsTestMeansDefined" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_IsTestDataSetDefined" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_ContainingProjectName" type="String">MetricsKPIs</PROPERTY>
+					<PROPERTY name="TestSuite_WriterAssumedName" type="String" />
+					<PROPERTY name="TestSuite_WriterAssumedEmail" type="String" />
+					<PROPERTY name="TestSuite_WriterRealName" type="String" />
+					<PROPERTY name="TestSuite_WriterRealEmail" type="String" />
+					<PROPERTY name="TestSuite_CampaignForInterest_ID" type="String">V1_MetricsKPI</PROPERTY>
+					<PROPERTY name="TestSuite_CampaignForInterest_Name" type="String">v5.3_Metrics_KPI</PROPERTY>
+					<PROPERTY name="TestSuite_WritingStatus" type="String">WrittenAndReviewedOK</PROPERTY>
+					<PROPERTY name="TestSuite_RunningStatus" type="String">NotRun</PROPERTY>
+					<PROPERTY name="TestSuite_VersionUnderTest" type="String" />
+					<PROPERTY name="TestSuite_SoftwareTestEnvironment" type="String" />
+					<PROPERTY name="TestSuite_HardwareTestEnvironment" type="String" />
+					<PROPERTY name="TestSuite_RunnerAssumedName" type="String" />
+					<PROPERTY name="TestSuite_RunnerAssumedEmail" type="String" />
+					<PROPERTY name="TestSuite_RunnerRealName" type="String" />
+					<PROPERTY name="TestSuite_RunnerRealEmail" type="String" />
+					<PROPERTY name="TestSuite_State" type="String" />
+					<PROPERTY name="TestSuite_TargetedRunDate_brut" type="String" />
+					<PROPERTY name="TestSuite_TargetedRunDate" type="String" />
+					<PROPERTY name="TestSuite_LastRunDate_brut" type="String" />
+					<PROPERTY name="TestSuite_LastRunDate" type="String" />
+					<PROPERTY name="TestSuite_ApproximateRunningDuration" type="String" />
+					<PROPERTY name="TestSuite_Notes" type="String" />
+					<PROPERTY name="TestSuite_Description" type="String" />
+					<PROPERTY name="TestSuite_Type" type="String">Manual</PROPERTY>
+					<PROPERTY name="TestSuite_ScriptPath" type="String" />
+					<PROPERTY name="TestSuite_ScriptArgs" type="String" />
+					<PROPERTY name="TestSuite_IsTestMeansAvailable" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_IsDataSetAvailable" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_FreeField1" type="String" />
+					<PROPERTY name="TestSuite_FreeField2" type="String" />
+					<PROPERTY name="TestSuite_FreeField3" type="String" />
+					<PROPERTY name="TestSuite_FreeField4" type="String" />
+					<PROPERTY name="TestSuite_Revision" type="String" />
+					<PROPERTY name="TestSuite_Execution" type="String">1</PROPERTY>
+					<PROPERTY name="TestSuite_NbrSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrRemainSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrOKSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrNOKSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrNTSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrOSSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrTestCases" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrWithDefectSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrTestCasesForRegression" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_PercentOK" type="String">0%</PROPERTY>
+				</PROPERTIES>
+			</ELEMENT>
+			<ELEMENT type="TestSuiteExecutionHeader" label="IVV-IVVP-013 TestSuiteExecutionHeader " fullName="IVV-IVVP-013 TestSuiteExecutionHeader " hash="c7d70e33" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteExecutionHeader/IVV%2DIVVP%2D013TestSuiteExecutionHeader">
+				<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-013" version="07/11/2013 13:12:28" />
+				<ELEMENT type="TestSuiteExecution" label="IVV-IVVP-013TestSuiteExecution1" fullName="IVV-IVVP-013TestSuiteExecution1" hash="867aba64" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteExecution/IVV%2DIVVP%2D013TestSuiteExecution1">
+					<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-013" version="07/11/2013 13:12:28" />
+					<PROPERTIES>
+						<PROPERTY name="RunNumber" type="String">1</PROPERTY>
+						<PROPERTY name="Date" type="String" />
+						<PROPERTY name="RunBy" type="String" />
+						<PROPERTY name="State" type="String" />
+						<PROPERTY name="SystemVersion" type="String" />
+						<PROPERTY name="AssociatedDefects" type="String" />
+						<PROPERTY name="Comments" type="String" />
+					</PROPERTIES>
+				</ELEMENT>
+			</ELEMENT>
+		</ELEMENT>
+		<ELEMENT type="TestSuite" label="IVV-IVVP-014" fullName="IVV-IVVP-014" hash="84698f8c" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuite/IVV%2DIVVP%2D014">
+			<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-014" version="07/11/2013 13:12:43" />
+			<PROPERTIES>
+				<PROPERTY name="fragmentName" type="String">IVV-IVVP-014</PROPERTY>
+				<PROPERTY name="completeTitle" type="String">Test 14</PROPERTY>
+			</PROPERTIES>
+			<ELEMENT type="TestSuiteHeader" label="IVV-IVVP-014 Test Suite Header" fullName="IVV-IVVP-014 Test Suite Header" hash="321c1ada" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteHeader/IVV%2DIVVP%2D014">
+				<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-014" version="07/11/2013 13:12:43" />
+				<PROPERTIES>
+					<PROPERTY name="TestSuite_IsDataFromDOORS" type="String">true</PROPERTY>
+					<PROPERTY name="TestSuite_URI" type="String">orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a3%2114?viewName=ORCH%5FIVVMngt%5FInterface</PROPERTY>
+					<PROPERTY name="TestSuite_uniqueID" type="String">IVV-IVVP-014_v5.3_Metrics_KPI</PROPERTY>
+					<PROPERTY name="TestSuite_Identification" type="String">IVV-IVVP-014</PROPERTY>
+					<PROPERTY name="TestSuite_Title" type="String">Test 14</PROPERTY>
+					<PROPERTY name="TestSuite_AssociatedCampaigns" type="String">V1_MetricsKPI</PROPERTY>
+					<PROPERTY name="TestSuite_Objective" type="String" />
+					<PROPERTY name="TestSuite_RegressionThread" type="String" />
+					<PROPERTY name="TestSuite_TestMethod" type="String">I</PROPERTY>
+					<PROPERTY name="TestSuite_AttachedRequirements_ForLM" type="String" />
+					<PROPERTY name="TestSuite_AttachedRequirements" type="String" />
+					<PROPERTY name="TestSuite_DefinitionVersion" type="String" />
+					<PROPERTY name="IE Object Type" type="String">IVV Procedure</PROPERTY>
+					<PROPERTY name="IE PUID" type="String">IVV-IVVP-014</PROPERTY>
+					<PROPERTY name="ORCH Test Version" type="String" />
+					<PROPERTY name="Test type" type="String" />
+					<PROPERTY name="Specific Skills Needed" type="String" />
+					<PROPERTY name="TestSuite_TestStatus" type="String">Accepted</PROPERTY>
+					<PROPERTY name="TestSuite_IsTestMeansDefined" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_IsTestDataSetDefined" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_ContainingProjectName" type="String">MetricsKPIs</PROPERTY>
+					<PROPERTY name="TestSuite_WriterAssumedName" type="String" />
+					<PROPERTY name="TestSuite_WriterAssumedEmail" type="String" />
+					<PROPERTY name="TestSuite_WriterRealName" type="String" />
+					<PROPERTY name="TestSuite_WriterRealEmail" type="String" />
+					<PROPERTY name="TestSuite_CampaignForInterest_ID" type="String">V1_MetricsKPI</PROPERTY>
+					<PROPERTY name="TestSuite_CampaignForInterest_Name" type="String">v5.3_Metrics_KPI</PROPERTY>
+					<PROPERTY name="TestSuite_WritingStatus" type="String">WrittenAndNotReviewed</PROPERTY>
+					<PROPERTY name="TestSuite_RunningStatus" type="String">NotRun</PROPERTY>
+					<PROPERTY name="TestSuite_VersionUnderTest" type="String" />
+					<PROPERTY name="TestSuite_SoftwareTestEnvironment" type="String" />
+					<PROPERTY name="TestSuite_HardwareTestEnvironment" type="String" />
+					<PROPERTY name="TestSuite_RunnerAssumedName" type="String" />
+					<PROPERTY name="TestSuite_RunnerAssumedEmail" type="String" />
+					<PROPERTY name="TestSuite_RunnerRealName" type="String" />
+					<PROPERTY name="TestSuite_RunnerRealEmail" type="String" />
+					<PROPERTY name="TestSuite_State" type="String" />
+					<PROPERTY name="TestSuite_TargetedRunDate_brut" type="String" />
+					<PROPERTY name="TestSuite_TargetedRunDate" type="String" />
+					<PROPERTY name="TestSuite_LastRunDate_brut" type="String" />
+					<PROPERTY name="TestSuite_LastRunDate" type="String" />
+					<PROPERTY name="TestSuite_ApproximateRunningDuration" type="String" />
+					<PROPERTY name="TestSuite_Notes" type="String" />
+					<PROPERTY name="TestSuite_Description" type="String" />
+					<PROPERTY name="TestSuite_Type" type="String">Manual</PROPERTY>
+					<PROPERTY name="TestSuite_ScriptPath" type="String" />
+					<PROPERTY name="TestSuite_ScriptArgs" type="String" />
+					<PROPERTY name="TestSuite_IsTestMeansAvailable" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_IsDataSetAvailable" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_FreeField1" type="String" />
+					<PROPERTY name="TestSuite_FreeField2" type="String" />
+					<PROPERTY name="TestSuite_FreeField3" type="String" />
+					<PROPERTY name="TestSuite_FreeField4" type="String" />
+					<PROPERTY name="TestSuite_Revision" type="String" />
+					<PROPERTY name="TestSuite_Execution" type="String">1</PROPERTY>
+					<PROPERTY name="TestSuite_NbrSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrRemainSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrOKSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrNOKSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrNTSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrOSSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrTestCases" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrWithDefectSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrTestCasesForRegression" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_PercentOK" type="String">0%</PROPERTY>
+				</PROPERTIES>
+			</ELEMENT>
+			<ELEMENT type="TestSuiteExecutionHeader" label="IVV-IVVP-014 TestSuiteExecutionHeader " fullName="IVV-IVVP-014 TestSuiteExecutionHeader " hash="150248b5" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteExecutionHeader/IVV%2DIVVP%2D014TestSuiteExecutionHeader">
+				<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-014" version="07/11/2013 13:12:43" />
+				<ELEMENT type="TestSuiteExecution" label="IVV-IVVP-014TestSuiteExecution1" fullName="IVV-IVVP-014TestSuiteExecution1" hash="fb09bc3c" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteExecution/IVV%2DIVVP%2D014TestSuiteExecution1">
+					<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-014" version="07/11/2013 13:12:43" />
+					<PROPERTIES>
+						<PROPERTY name="RunNumber" type="String">1</PROPERTY>
+						<PROPERTY name="Date" type="String" />
+						<PROPERTY name="RunBy" type="String" />
+						<PROPERTY name="State" type="String" />
+						<PROPERTY name="SystemVersion" type="String" />
+						<PROPERTY name="AssociatedDefects" type="String" />
+						<PROPERTY name="Comments" type="String" />
+					</PROPERTIES>
+				</ELEMENT>
+			</ELEMENT>
+		</ELEMENT>
+		<ELEMENT type="TestSuite" label="IVV-IVVP-015" fullName="IVV-IVVP-015" hash="f36ebf1a" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuite/IVV%2DIVVP%2D015">
+			<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-015" version="07/11/2013 13:13:07" />
+			<PROPERTIES>
+				<PROPERTY name="fragmentName" type="String">IVV-IVVP-015</PROPERTY>
+				<PROPERTY name="completeTitle" type="String">Test 15</PROPERTY>
+			</PROPERTIES>
+			<ELEMENT type="TestSuiteHeader" label="IVV-IVVP-015 Test Suite Header" fullName="IVV-IVVP-015 Test Suite Header" hash="e5fe9a82" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteHeader/IVV%2DIVVP%2D015">
+				<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-015" version="07/11/2013 13:13:07" />
+				<PROPERTIES>
+					<PROPERTY name="TestSuite_IsDataFromDOORS" type="String">true</PROPERTY>
+					<PROPERTY name="TestSuite_URI" type="String">orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a3%2115?viewName=ORCH%5FIVVMngt%5FInterface</PROPERTY>
+					<PROPERTY name="TestSuite_uniqueID" type="String">IVV-IVVP-015_v5.3_Metrics_KPI</PROPERTY>
+					<PROPERTY name="TestSuite_Identification" type="String">IVV-IVVP-015</PROPERTY>
+					<PROPERTY name="TestSuite_Title" type="String">Test 15</PROPERTY>
+					<PROPERTY name="TestSuite_AssociatedCampaigns" type="String">V1_MetricsKPI</PROPERTY>
+					<PROPERTY name="TestSuite_Objective" type="String" />
+					<PROPERTY name="TestSuite_RegressionThread" type="String" />
+					<PROPERTY name="TestSuite_TestMethod" type="String">I</PROPERTY>
+					<PROPERTY name="TestSuite_AttachedRequirements_ForLM" type="String" />
+					<PROPERTY name="TestSuite_AttachedRequirements" type="String" />
+					<PROPERTY name="TestSuite_DefinitionVersion" type="String" />
+					<PROPERTY name="IE Object Type" type="String">IVV Procedure</PROPERTY>
+					<PROPERTY name="IE PUID" type="String">IVV-IVVP-015</PROPERTY>
+					<PROPERTY name="ORCH Test Version" type="String" />
+					<PROPERTY name="Test type" type="String" />
+					<PROPERTY name="Specific Skills Needed" type="String" />
+					<PROPERTY name="TestSuite_TestStatus" type="String">Accepted</PROPERTY>
+					<PROPERTY name="TestSuite_IsTestMeansDefined" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_IsTestDataSetDefined" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_ContainingProjectName" type="String">MetricsKPIs</PROPERTY>
+					<PROPERTY name="TestSuite_WriterAssumedName" type="String" />
+					<PROPERTY name="TestSuite_WriterAssumedEmail" type="String" />
+					<PROPERTY name="TestSuite_WriterRealName" type="String" />
+					<PROPERTY name="TestSuite_WriterRealEmail" type="String" />
+					<PROPERTY name="TestSuite_CampaignForInterest_ID" type="String">V1_MetricsKPI</PROPERTY>
+					<PROPERTY name="TestSuite_CampaignForInterest_Name" type="String">v5.3_Metrics_KPI</PROPERTY>
+					<PROPERTY name="TestSuite_WritingStatus" type="String">WrittenAndReviewedOK</PROPERTY>
+					<PROPERTY name="TestSuite_RunningStatus" type="String">NotRun</PROPERTY>
+					<PROPERTY name="TestSuite_VersionUnderTest" type="String" />
+					<PROPERTY name="TestSuite_SoftwareTestEnvironment" type="String" />
+					<PROPERTY name="TestSuite_HardwareTestEnvironment" type="String" />
+					<PROPERTY name="TestSuite_RunnerAssumedName" type="String" />
+					<PROPERTY name="TestSuite_RunnerAssumedEmail" type="String" />
+					<PROPERTY name="TestSuite_RunnerRealName" type="String" />
+					<PROPERTY name="TestSuite_RunnerRealEmail" type="String" />
+					<PROPERTY name="TestSuite_State" type="String" />
+					<PROPERTY name="TestSuite_TargetedRunDate_brut" type="String" />
+					<PROPERTY name="TestSuite_TargetedRunDate" type="String" />
+					<PROPERTY name="TestSuite_LastRunDate_brut" type="String" />
+					<PROPERTY name="TestSuite_LastRunDate" type="String" />
+					<PROPERTY name="TestSuite_ApproximateRunningDuration" type="String" />
+					<PROPERTY name="TestSuite_Notes" type="String" />
+					<PROPERTY name="TestSuite_Description" type="String" />
+					<PROPERTY name="TestSuite_Type" type="String">Manual</PROPERTY>
+					<PROPERTY name="TestSuite_ScriptPath" type="String" />
+					<PROPERTY name="TestSuite_ScriptArgs" type="String" />
+					<PROPERTY name="TestSuite_IsTestMeansAvailable" type="String">False</PROPERTY>
+					<PROPERTY name="TestSuite_IsDataSetAvailable" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_FreeField1" type="String" />
+					<PROPERTY name="TestSuite_FreeField2" type="String" />
+					<PROPERTY name="TestSuite_FreeField3" type="String" />
+					<PROPERTY name="TestSuite_FreeField4" type="String" />
+					<PROPERTY name="TestSuite_Revision" type="String" />
+					<PROPERTY name="TestSuite_Execution" type="String">1</PROPERTY>
+					<PROPERTY name="TestSuite_NbrSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrRemainSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrOKSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrNOKSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrNTSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrOSSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrTestCases" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrWithDefectSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrTestCasesForRegression" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_PercentOK" type="String">0%</PROPERTY>
+				</PROPERTIES>
+			</ELEMENT>
+			<ELEMENT type="TestSuiteExecutionHeader" label="IVV-IVVP-015 TestSuiteExecutionHeader " fullName="IVV-IVVP-015 TestSuiteExecutionHeader " hash="7b8e53f4" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteExecutionHeader/IVV%2DIVVP%2D015TestSuiteExecutionHeader">
+				<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-015" version="07/11/2013 13:13:07" />
+				<ELEMENT type="TestSuiteExecution" label="IVV-IVVP-015TestSuiteExecution1" fullName="IVV-IVVP-015TestSuiteExecution1" hash="269f65b9" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteExecution/IVV%2DIVVP%2D015TestSuiteExecution1">
+					<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-015" version="07/11/2013 13:13:07" />
+					<PROPERTIES>
+						<PROPERTY name="RunNumber" type="String">1</PROPERTY>
+						<PROPERTY name="Date" type="String" />
+						<PROPERTY name="RunBy" type="String" />
+						<PROPERTY name="State" type="String" />
+						<PROPERTY name="SystemVersion" type="String" />
+						<PROPERTY name="AssociatedDefects" type="String" />
+						<PROPERTY name="Comments" type="String" />
+					</PROPERTIES>
+				</ELEMENT>
+			</ELEMENT>
+		</ELEMENT>
+		<ELEMENT type="TestSuite" label="IVV-IVVP-016" fullName="IVV-IVVP-016" hash="6a67eea0" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuite/IVV%2DIVVP%2D016">
+			<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-016" version="07/11/2013 13:13:30" />
+			<PROPERTIES>
+				<PROPERTY name="fragmentName" type="String">IVV-IVVP-016</PROPERTY>
+				<PROPERTY name="completeTitle" type="String">Test 16</PROPERTY>
+			</PROPERTIES>
+			<ELEMENT type="TestSuiteHeader" label="IVV-IVVP-016 Test Suite Header" fullName="IVV-IVVP-016 Test Suite Header" hash="46a81c2b" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteHeader/IVV%2DIVVP%2D016">
+				<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-016" version="07/11/2013 13:13:30" />
+				<PROPERTIES>
+					<PROPERTY name="TestSuite_IsDataFromDOORS" type="String">true</PROPERTY>
+					<PROPERTY name="TestSuite_URI" type="String">orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a3%2116?viewName=ORCH%5FIVVMngt%5FInterface</PROPERTY>
+					<PROPERTY name="TestSuite_uniqueID" type="String">IVV-IVVP-016_v5.3_Metrics_KPI</PROPERTY>
+					<PROPERTY name="TestSuite_Identification" type="String">IVV-IVVP-016</PROPERTY>
+					<PROPERTY name="TestSuite_Title" type="String">Test 16</PROPERTY>
+					<PROPERTY name="TestSuite_AssociatedCampaigns" type="String">V1_MetricsKPI</PROPERTY>
+					<PROPERTY name="TestSuite_Objective" type="String" />
+					<PROPERTY name="TestSuite_RegressionThread" type="String" />
+					<PROPERTY name="TestSuite_TestMethod" type="String">I</PROPERTY>
+					<PROPERTY name="TestSuite_AttachedRequirements_ForLM" type="String" />
+					<PROPERTY name="TestSuite_AttachedRequirements" type="String" />
+					<PROPERTY name="TestSuite_DefinitionVersion" type="String" />
+					<PROPERTY name="IE Object Type" type="String">IVV Procedure</PROPERTY>
+					<PROPERTY name="IE PUID" type="String">IVV-IVVP-016</PROPERTY>
+					<PROPERTY name="ORCH Test Version" type="String" />
+					<PROPERTY name="Test type" type="String" />
+					<PROPERTY name="Specific Skills Needed" type="String" />
+					<PROPERTY name="TestSuite_TestStatus" type="String">Accepted</PROPERTY>
+					<PROPERTY name="TestSuite_IsTestMeansDefined" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_IsTestDataSetDefined" type="String">False</PROPERTY>
+					<PROPERTY name="TestSuite_ContainingProjectName" type="String">MetricsKPIs</PROPERTY>
+					<PROPERTY name="TestSuite_WriterAssumedName" type="String" />
+					<PROPERTY name="TestSuite_WriterAssumedEmail" type="String" />
+					<PROPERTY name="TestSuite_WriterRealName" type="String" />
+					<PROPERTY name="TestSuite_WriterRealEmail" type="String" />
+					<PROPERTY name="TestSuite_CampaignForInterest_ID" type="String">V1_MetricsKPI</PROPERTY>
+					<PROPERTY name="TestSuite_CampaignForInterest_Name" type="String">v5.3_Metrics_KPI</PROPERTY>
+					<PROPERTY name="TestSuite_WritingStatus" type="String">WrittenAndReviewedOK</PROPERTY>
+					<PROPERTY name="TestSuite_RunningStatus" type="String">NotRun</PROPERTY>
+					<PROPERTY name="TestSuite_VersionUnderTest" type="String" />
+					<PROPERTY name="TestSuite_SoftwareTestEnvironment" type="String" />
+					<PROPERTY name="TestSuite_HardwareTestEnvironment" type="String" />
+					<PROPERTY name="TestSuite_RunnerAssumedName" type="String" />
+					<PROPERTY name="TestSuite_RunnerAssumedEmail" type="String" />
+					<PROPERTY name="TestSuite_RunnerRealName" type="String" />
+					<PROPERTY name="TestSuite_RunnerRealEmail" type="String" />
+					<PROPERTY name="TestSuite_State" type="String" />
+					<PROPERTY name="TestSuite_TargetedRunDate_brut" type="String" />
+					<PROPERTY name="TestSuite_TargetedRunDate" type="String" />
+					<PROPERTY name="TestSuite_LastRunDate_brut" type="String" />
+					<PROPERTY name="TestSuite_LastRunDate" type="String" />
+					<PROPERTY name="TestSuite_ApproximateRunningDuration" type="String" />
+					<PROPERTY name="TestSuite_Notes" type="String" />
+					<PROPERTY name="TestSuite_Description" type="String" />
+					<PROPERTY name="TestSuite_Type" type="String">Manual</PROPERTY>
+					<PROPERTY name="TestSuite_ScriptPath" type="String" />
+					<PROPERTY name="TestSuite_ScriptArgs" type="String" />
+					<PROPERTY name="TestSuite_IsTestMeansAvailable" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_IsDataSetAvailable" type="String">False</PROPERTY>
+					<PROPERTY name="TestSuite_FreeField1" type="String" />
+					<PROPERTY name="TestSuite_FreeField2" type="String" />
+					<PROPERTY name="TestSuite_FreeField3" type="String" />
+					<PROPERTY name="TestSuite_FreeField4" type="String" />
+					<PROPERTY name="TestSuite_Revision" type="String" />
+					<PROPERTY name="TestSuite_Execution" type="String">1</PROPERTY>
+					<PROPERTY name="TestSuite_NbrSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrRemainSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrOKSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrNOKSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrNTSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrOSSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrTestCases" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrWithDefectSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrTestCasesForRegression" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_PercentOK" type="String">0%</PROPERTY>
+				</PROPERTIES>
+			</ELEMENT>
+			<ELEMENT type="TestSuiteExecutionHeader" label="IVV-IVVP-016 TestSuiteExecutionHeader " fullName="IVV-IVVP-016 TestSuiteExecutionHeader " hash="c81a7e37" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteExecutionHeader/IVV%2DIVVP%2D016TestSuiteExecutionHeader">
+				<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-016" version="07/11/2013 13:13:30" />
+				<ELEMENT type="TestSuiteExecution" label="IVV-IVVP-016TestSuiteExecution1" fullName="IVV-IVVP-016TestSuiteExecution1" hash="9b550977" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteExecution/IVV%2DIVVP%2D016TestSuiteExecution1">
+					<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-016" version="07/11/2013 13:13:30" />
+					<PROPERTIES>
+						<PROPERTY name="RunNumber" type="String">1</PROPERTY>
+						<PROPERTY name="Date" type="String" />
+						<PROPERTY name="RunBy" type="String" />
+						<PROPERTY name="State" type="String" />
+						<PROPERTY name="SystemVersion" type="String" />
+						<PROPERTY name="AssociatedDefects" type="String" />
+						<PROPERTY name="Comments" type="String" />
+					</PROPERTIES>
+				</ELEMENT>
+			</ELEMENT>
+		</ELEMENT>
+		<ELEMENT type="TestSuite" label="IVV-IVVP-017" fullName="IVV-IVVP-017" hash="1d60de36" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuite/IVV%2DIVVP%2D017">
+			<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-017" version="07/11/2013 13:13:47" />
+			<PROPERTIES>
+				<PROPERTY name="fragmentName" type="String">IVV-IVVP-017</PROPERTY>
+				<PROPERTY name="completeTitle" type="String">Test 17</PROPERTY>
+			</PROPERTIES>
+			<ELEMENT type="TestSuiteHeader" label="IVV-IVVP-017 Test Suite Header" fullName="IVV-IVVP-017 Test Suite Header" hash="914a9c73" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteHeader/IVV%2DIVVP%2D017">
+				<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-017" version="07/11/2013 13:13:47" />
+				<PROPERTIES>
+					<PROPERTY name="TestSuite_IsDataFromDOORS" type="String">true</PROPERTY>
+					<PROPERTY name="TestSuite_URI" type="String">orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a3%2117?viewName=ORCH%5FIVVMngt%5FInterface</PROPERTY>
+					<PROPERTY name="TestSuite_uniqueID" type="String">IVV-IVVP-017_v5.3_Metrics_KPI</PROPERTY>
+					<PROPERTY name="TestSuite_Identification" type="String">IVV-IVVP-017</PROPERTY>
+					<PROPERTY name="TestSuite_Title" type="String">Test 17</PROPERTY>
+					<PROPERTY name="TestSuite_AssociatedCampaigns" type="String">V1_MetricsKPI</PROPERTY>
+					<PROPERTY name="TestSuite_Objective" type="String" />
+					<PROPERTY name="TestSuite_RegressionThread" type="String" />
+					<PROPERTY name="TestSuite_TestMethod" type="String">I</PROPERTY>
+					<PROPERTY name="TestSuite_AttachedRequirements_ForLM" type="String" />
+					<PROPERTY name="TestSuite_AttachedRequirements" type="String" />
+					<PROPERTY name="TestSuite_DefinitionVersion" type="String" />
+					<PROPERTY name="IE Object Type" type="String">IVV Procedure</PROPERTY>
+					<PROPERTY name="IE PUID" type="String">IVV-IVVP-017</PROPERTY>
+					<PROPERTY name="ORCH Test Version" type="String" />
+					<PROPERTY name="Test type" type="String" />
+					<PROPERTY name="Specific Skills Needed" type="String" />
+					<PROPERTY name="TestSuite_TestStatus" type="String">Accepted</PROPERTY>
+					<PROPERTY name="TestSuite_IsTestMeansDefined" type="String">False</PROPERTY>
+					<PROPERTY name="TestSuite_IsTestDataSetDefined" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_ContainingProjectName" type="String">MetricsKPIs</PROPERTY>
+					<PROPERTY name="TestSuite_WriterAssumedName" type="String" />
+					<PROPERTY name="TestSuite_WriterAssumedEmail" type="String" />
+					<PROPERTY name="TestSuite_WriterRealName" type="String" />
+					<PROPERTY name="TestSuite_WriterRealEmail" type="String" />
+					<PROPERTY name="TestSuite_CampaignForInterest_ID" type="String">V1_MetricsKPI</PROPERTY>
+					<PROPERTY name="TestSuite_CampaignForInterest_Name" type="String">v5.3_Metrics_KPI</PROPERTY>
+					<PROPERTY name="TestSuite_WritingStatus" type="String">WrittenAndReviewedOK</PROPERTY>
+					<PROPERTY name="TestSuite_RunningStatus" type="String">NotRun</PROPERTY>
+					<PROPERTY name="TestSuite_VersionUnderTest" type="String" />
+					<PROPERTY name="TestSuite_SoftwareTestEnvironment" type="String" />
+					<PROPERTY name="TestSuite_HardwareTestEnvironment" type="String" />
+					<PROPERTY name="TestSuite_RunnerAssumedName" type="String" />
+					<PROPERTY name="TestSuite_RunnerAssumedEmail" type="String" />
+					<PROPERTY name="TestSuite_RunnerRealName" type="String" />
+					<PROPERTY name="TestSuite_RunnerRealEmail" type="String" />
+					<PROPERTY name="TestSuite_State" type="String" />
+					<PROPERTY name="TestSuite_TargetedRunDate_brut" type="String" />
+					<PROPERTY name="TestSuite_TargetedRunDate" type="String" />
+					<PROPERTY name="TestSuite_LastRunDate_brut" type="String" />
+					<PROPERTY name="TestSuite_LastRunDate" type="String" />
+					<PROPERTY name="TestSuite_ApproximateRunningDuration" type="String" />
+					<PROPERTY name="TestSuite_Notes" type="String" />
+					<PROPERTY name="TestSuite_Description" type="String" />
+					<PROPERTY name="TestSuite_Type" type="String">Manual</PROPERTY>
+					<PROPERTY name="TestSuite_ScriptPath" type="String" />
+					<PROPERTY name="TestSuite_ScriptArgs" type="String" />
+					<PROPERTY name="TestSuite_IsTestMeansAvailable" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_IsDataSetAvailable" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_FreeField1" type="String" />
+					<PROPERTY name="TestSuite_FreeField2" type="String" />
+					<PROPERTY name="TestSuite_FreeField3" type="String" />
+					<PROPERTY name="TestSuite_FreeField4" type="String" />
+					<PROPERTY name="TestSuite_Revision" type="String" />
+					<PROPERTY name="TestSuite_Execution" type="String">1</PROPERTY>
+					<PROPERTY name="TestSuite_NbrSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrRemainSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrOKSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrNOKSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrNTSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrOSSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrTestCases" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrWithDefectSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrTestCasesForRegression" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_PercentOK" type="String">0%</PROPERTY>
+				</PROPERTIES>
+			</ELEMENT>
+			<ELEMENT type="TestSuiteExecutionHeader" label="IVV-IVVP-017 TestSuiteExecutionHeader " fullName="IVV-IVVP-017 TestSuiteExecutionHeader " hash="a6966576" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteExecutionHeader/IVV%2DIVVP%2D017TestSuiteExecutionHeader">
+				<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-017" version="07/11/2013 13:13:47" />
+				<ELEMENT type="TestSuiteExecution" label="IVV-IVVP-017TestSuiteExecution1" fullName="IVV-IVVP-017TestSuiteExecution1" hash="46c3d0f2" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteExecution/IVV%2DIVVP%2D017TestSuiteExecution1">
+					<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-017" version="07/11/2013 13:13:47" />
+					<PROPERTIES>
+						<PROPERTY name="RunNumber" type="String">1</PROPERTY>
+						<PROPERTY name="Date" type="String" />
+						<PROPERTY name="RunBy" type="String" />
+						<PROPERTY name="State" type="String" />
+						<PROPERTY name="SystemVersion" type="String" />
+						<PROPERTY name="AssociatedDefects" type="String" />
+						<PROPERTY name="Comments" type="String" />
+					</PROPERTIES>
+				</ELEMENT>
+			</ELEMENT>
+		</ELEMENT>
+		<ELEMENT type="TestSuite" label="IVV-IVVP-018" fullName="IVV-IVVP-018" hash="8ddfc3a7" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuite/IVV%2DIVVP%2D018">
+			<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-018" version="07/11/2013 13:14:06" />
+			<PROPERTIES>
+				<PROPERTY name="fragmentName" type="String">IVV-IVVP-018</PROPERTY>
+				<PROPERTY name="completeTitle" type="String">Test 18</PROPERTY>
+			</PROPERTIES>
+			<ELEMENT type="TestSuiteHeader" label="IVV-IVVP-018 Test Suite Header" fullName="IVV-IVVP-018 Test Suite Header" hash="d2d50abd" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteHeader/IVV%2DIVVP%2D018">
+				<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-018" version="07/11/2013 13:14:06" />
+				<PROPERTIES>
+					<PROPERTY name="TestSuite_IsDataFromDOORS" type="String">true</PROPERTY>
+					<PROPERTY name="TestSuite_URI" type="String">orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a3%2118?viewName=ORCH%5FIVVMngt%5FInterface</PROPERTY>
+					<PROPERTY name="TestSuite_uniqueID" type="String">IVV-IVVP-018_v5.3_Metrics_KPI</PROPERTY>
+					<PROPERTY name="TestSuite_Identification" type="String">IVV-IVVP-018</PROPERTY>
+					<PROPERTY name="TestSuite_Title" type="String">Test 18</PROPERTY>
+					<PROPERTY name="TestSuite_AssociatedCampaigns" type="String">V1_MetricsKPI</PROPERTY>
+					<PROPERTY name="TestSuite_Objective" type="String" />
+					<PROPERTY name="TestSuite_RegressionThread" type="String" />
+					<PROPERTY name="TestSuite_TestMethod" type="String">I</PROPERTY>
+					<PROPERTY name="TestSuite_AttachedRequirements_ForLM" type="String" />
+					<PROPERTY name="TestSuite_AttachedRequirements" type="String" />
+					<PROPERTY name="TestSuite_DefinitionVersion" type="String" />
+					<PROPERTY name="IE Object Type" type="String">IVV Procedure</PROPERTY>
+					<PROPERTY name="IE PUID" type="String">IVV-IVVP-018</PROPERTY>
+					<PROPERTY name="ORCH Test Version" type="String" />
+					<PROPERTY name="Test type" type="String" />
+					<PROPERTY name="Specific Skills Needed" type="String" />
+					<PROPERTY name="TestSuite_TestStatus" type="String">Accepted</PROPERTY>
+					<PROPERTY name="TestSuite_IsTestMeansDefined" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_IsTestDataSetDefined" type="String">False</PROPERTY>
+					<PROPERTY name="TestSuite_ContainingProjectName" type="String">MetricsKPIs</PROPERTY>
+					<PROPERTY name="TestSuite_WriterAssumedName" type="String" />
+					<PROPERTY name="TestSuite_WriterAssumedEmail" type="String" />
+					<PROPERTY name="TestSuite_WriterRealName" type="String" />
+					<PROPERTY name="TestSuite_WriterRealEmail" type="String" />
+					<PROPERTY name="TestSuite_CampaignForInterest_ID" type="String">V1_MetricsKPI</PROPERTY>
+					<PROPERTY name="TestSuite_CampaignForInterest_Name" type="String">v5.3_Metrics_KPI</PROPERTY>
+					<PROPERTY name="TestSuite_WritingStatus" type="String">WrittenAndReviewedOK</PROPERTY>
+					<PROPERTY name="TestSuite_RunningStatus" type="String">NotRun</PROPERTY>
+					<PROPERTY name="TestSuite_VersionUnderTest" type="String" />
+					<PROPERTY name="TestSuite_SoftwareTestEnvironment" type="String" />
+					<PROPERTY name="TestSuite_HardwareTestEnvironment" type="String" />
+					<PROPERTY name="TestSuite_RunnerAssumedName" type="String" />
+					<PROPERTY name="TestSuite_RunnerAssumedEmail" type="String" />
+					<PROPERTY name="TestSuite_RunnerRealName" type="String" />
+					<PROPERTY name="TestSuite_RunnerRealEmail" type="String" />
+					<PROPERTY name="TestSuite_State" type="String" />
+					<PROPERTY name="TestSuite_TargetedRunDate_brut" type="String" />
+					<PROPERTY name="TestSuite_TargetedRunDate" type="String" />
+					<PROPERTY name="TestSuite_LastRunDate_brut" type="String" />
+					<PROPERTY name="TestSuite_LastRunDate" type="String" />
+					<PROPERTY name="TestSuite_ApproximateRunningDuration" type="String" />
+					<PROPERTY name="TestSuite_Notes" type="String" />
+					<PROPERTY name="TestSuite_Description" type="String" />
+					<PROPERTY name="TestSuite_Type" type="String">Manual</PROPERTY>
+					<PROPERTY name="TestSuite_ScriptPath" type="String" />
+					<PROPERTY name="TestSuite_ScriptArgs" type="String" />
+					<PROPERTY name="TestSuite_IsTestMeansAvailable" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_IsDataSetAvailable" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_FreeField1" type="String" />
+					<PROPERTY name="TestSuite_FreeField2" type="String" />
+					<PROPERTY name="TestSuite_FreeField3" type="String" />
+					<PROPERTY name="TestSuite_FreeField4" type="String" />
+					<PROPERTY name="TestSuite_Revision" type="String" />
+					<PROPERTY name="TestSuite_Execution" type="String">1</PROPERTY>
+					<PROPERTY name="TestSuite_NbrSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrRemainSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrOKSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrNOKSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrNTSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrOSSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrTestCases" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrWithDefectSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrTestCasesForRegression" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_PercentOK" type="String">0%</PROPERTY>
+				</PROPERTIES>
+			</ELEMENT>
+			<ELEMENT type="TestSuiteExecutionHeader" label="IVV-IVVP-018 TestSuiteExecutionHeader " fullName="IVV-IVVP-018 TestSuiteExecutionHeader " hash="b6c1f57a" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteExecutionHeader/IVV%2DIVVP%2D018TestSuiteExecutionHeader">
+				<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-018" version="07/11/2013 13:14:06" />
+				<ELEMENT type="TestSuiteExecution" label="IVV-IVVP-018TestSuiteExecution1" fullName="IVV-IVVP-018TestSuiteExecution1" hash="61b305c7" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteExecution/IVV%2DIVVP%2D018TestSuiteExecution1">
+					<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-018" version="07/11/2013 13:14:06" />
+					<PROPERTIES>
+						<PROPERTY name="RunNumber" type="String">1</PROPERTY>
+						<PROPERTY name="Date" type="String" />
+						<PROPERTY name="RunBy" type="String" />
+						<PROPERTY name="State" type="String" />
+						<PROPERTY name="SystemVersion" type="String" />
+						<PROPERTY name="AssociatedDefects" type="String" />
+						<PROPERTY name="Comments" type="String" />
+					</PROPERTIES>
+				</ELEMENT>
+			</ELEMENT>
+		</ELEMENT>
+		<ELEMENT type="TestSuite" label="IVV-IVVP-019" fullName="IVV-IVVP-019" hash="fad8f331" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuite/IVV%2DIVVP%2D019">
+			<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-019" version="07/11/2013 13:14:25" />
+			<PROPERTIES>
+				<PROPERTY name="fragmentName" type="String">IVV-IVVP-019</PROPERTY>
+				<PROPERTY name="completeTitle" type="String">Test 19</PROPERTY>
+			</PROPERTIES>
+			<ELEMENT type="TestSuiteHeader" label="IVV-IVVP-019 Test Suite Header" fullName="IVV-IVVP-019 Test Suite Header" hash="5378ae5" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteHeader/IVV%2DIVVP%2D019">
+				<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-019" version="07/11/2013 13:14:25" />
+				<PROPERTIES>
+					<PROPERTY name="TestSuite_IsDataFromDOORS" type="String">true</PROPERTY>
+					<PROPERTY name="TestSuite_URI" type="String">orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a3%2119?viewName=ORCH%5FIVVMngt%5FInterface</PROPERTY>
+					<PROPERTY name="TestSuite_uniqueID" type="String">IVV-IVVP-019_v5.3_Metrics_KPI</PROPERTY>
+					<PROPERTY name="TestSuite_Identification" type="String">IVV-IVVP-019</PROPERTY>
+					<PROPERTY name="TestSuite_Title" type="String">Test 19</PROPERTY>
+					<PROPERTY name="TestSuite_AssociatedCampaigns" type="String">V1_MetricsKPI</PROPERTY>
+					<PROPERTY name="TestSuite_Objective" type="String" />
+					<PROPERTY name="TestSuite_RegressionThread" type="String" />
+					<PROPERTY name="TestSuite_TestMethod" type="String">I</PROPERTY>
+					<PROPERTY name="TestSuite_AttachedRequirements_ForLM" type="String" />
+					<PROPERTY name="TestSuite_AttachedRequirements" type="String" />
+					<PROPERTY name="TestSuite_DefinitionVersion" type="String" />
+					<PROPERTY name="IE Object Type" type="String">IVV Procedure</PROPERTY>
+					<PROPERTY name="IE PUID" type="String">IVV-IVVP-019</PROPERTY>
+					<PROPERTY name="ORCH Test Version" type="String" />
+					<PROPERTY name="Test type" type="String" />
+					<PROPERTY name="Specific Skills Needed" type="String" />
+					<PROPERTY name="TestSuite_TestStatus" type="String" />
+					<PROPERTY name="TestSuite_IsTestMeansDefined" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_IsTestDataSetDefined" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_ContainingProjectName" type="String">MetricsKPIs</PROPERTY>
+					<PROPERTY name="TestSuite_WriterAssumedName" type="String" />
+					<PROPERTY name="TestSuite_WriterAssumedEmail" type="String" />
+					<PROPERTY name="TestSuite_WriterRealName" type="String" />
+					<PROPERTY name="TestSuite_WriterRealEmail" type="String" />
+					<PROPERTY name="TestSuite_CampaignForInterest_ID" type="String">V1_MetricsKPI</PROPERTY>
+					<PROPERTY name="TestSuite_CampaignForInterest_Name" type="String">v5.3_Metrics_KPI</PROPERTY>
+					<PROPERTY name="TestSuite_WritingStatus" type="String">WrittenAndReviewedOK</PROPERTY>
+					<PROPERTY name="TestSuite_RunningStatus" type="String">NotRun</PROPERTY>
+					<PROPERTY name="TestSuite_VersionUnderTest" type="String" />
+					<PROPERTY name="TestSuite_SoftwareTestEnvironment" type="String" />
+					<PROPERTY name="TestSuite_HardwareTestEnvironment" type="String" />
+					<PROPERTY name="TestSuite_RunnerAssumedName" type="String" />
+					<PROPERTY name="TestSuite_RunnerAssumedEmail" type="String" />
+					<PROPERTY name="TestSuite_RunnerRealName" type="String" />
+					<PROPERTY name="TestSuite_RunnerRealEmail" type="String" />
+					<PROPERTY name="TestSuite_State" type="String" />
+					<PROPERTY name="TestSuite_TargetedRunDate_brut" type="String" />
+					<PROPERTY name="TestSuite_TargetedRunDate" type="String" />
+					<PROPERTY name="TestSuite_LastRunDate_brut" type="String" />
+					<PROPERTY name="TestSuite_LastRunDate" type="String" />
+					<PROPERTY name="TestSuite_ApproximateRunningDuration" type="String" />
+					<PROPERTY name="TestSuite_Notes" type="String" />
+					<PROPERTY name="TestSuite_Description" type="String" />
+					<PROPERTY name="TestSuite_Type" type="String">Manual</PROPERTY>
+					<PROPERTY name="TestSuite_ScriptPath" type="String" />
+					<PROPERTY name="TestSuite_ScriptArgs" type="String" />
+					<PROPERTY name="TestSuite_IsTestMeansAvailable" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_IsDataSetAvailable" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_FreeField1" type="String" />
+					<PROPERTY name="TestSuite_FreeField2" type="String" />
+					<PROPERTY name="TestSuite_FreeField3" type="String" />
+					<PROPERTY name="TestSuite_FreeField4" type="String" />
+					<PROPERTY name="TestSuite_Revision" type="String" />
+					<PROPERTY name="TestSuite_Execution" type="String">1</PROPERTY>
+					<PROPERTY name="TestSuite_NbrSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrRemainSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrOKSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrNOKSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrNTSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrOSSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrTestCases" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrWithDefectSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrTestCasesForRegression" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_PercentOK" type="String">0%</PROPERTY>
+				</PROPERTIES>
+			</ELEMENT>
+			<ELEMENT type="TestSuiteExecutionHeader" label="IVV-IVVP-019 TestSuiteExecutionHeader " fullName="IVV-IVVP-019 TestSuiteExecutionHeader " hash="d84dee3b" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteExecutionHeader/IVV%2DIVVP%2D019TestSuiteExecutionHeader">
+				<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-019" version="07/11/2013 13:14:25" />
+				<ELEMENT type="TestSuiteExecution" label="IVV-IVVP-019TestSuiteExecution1" fullName="IVV-IVVP-019TestSuiteExecution1" hash="bc25dc42" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteExecution/IVV%2DIVVP%2D019TestSuiteExecution1">
+					<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-019" version="07/11/2013 13:14:25" />
+					<PROPERTIES>
+						<PROPERTY name="RunNumber" type="String">1</PROPERTY>
+						<PROPERTY name="Date" type="String" />
+						<PROPERTY name="RunBy" type="String" />
+						<PROPERTY name="State" type="String" />
+						<PROPERTY name="SystemVersion" type="String" />
+						<PROPERTY name="AssociatedDefects" type="String" />
+						<PROPERTY name="Comments" type="String" />
+					</PROPERTIES>
+				</ELEMENT>
+			</ELEMENT>
+		</ELEMENT>
+		<ELEMENT type="TestSuite" label="IVV-IVVP-020" fullName="IVV-IVVP-020" hash="a8291856" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuite/IVV%2DIVVP%2D020">
+			<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-020" version="07/11/2013 13:14:43" />
+			<PROPERTIES>
+				<PROPERTY name="fragmentName" type="String">IVV-IVVP-020</PROPERTY>
+				<PROPERTY name="completeTitle" type="String">Test 20</PROPERTY>
+			</PROPERTIES>
+			<ELEMENT type="TestSuiteHeader" label="IVV-IVVP-020 Test Suite Header" fullName="IVV-IVVP-020 Test Suite Header" hash="74dd5af2" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteHeader/IVV%2DIVVP%2D020">
+				<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-020" version="07/11/2013 13:14:43" />
+				<PROPERTIES>
+					<PROPERTY name="TestSuite_IsDataFromDOORS" type="String">true</PROPERTY>
+					<PROPERTY name="TestSuite_URI" type="String">orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a3%2120?viewName=ORCH%5FIVVMngt%5FInterface</PROPERTY>
+					<PROPERTY name="TestSuite_uniqueID" type="String">IVV-IVVP-020_v5.3_Metrics_KPI</PROPERTY>
+					<PROPERTY name="TestSuite_Identification" type="String">IVV-IVVP-020</PROPERTY>
+					<PROPERTY name="TestSuite_Title" type="String">Test 20</PROPERTY>
+					<PROPERTY name="TestSuite_AssociatedCampaigns" type="String">V1_MetricsKPI</PROPERTY>
+					<PROPERTY name="TestSuite_Objective" type="String" />
+					<PROPERTY name="TestSuite_RegressionThread" type="String" />
+					<PROPERTY name="TestSuite_TestMethod" type="String" />
+					<PROPERTY name="TestSuite_AttachedRequirements_ForLM" type="String" />
+					<PROPERTY name="TestSuite_AttachedRequirements" type="String" />
+					<PROPERTY name="TestSuite_DefinitionVersion" type="String" />
+					<PROPERTY name="IE Object Type" type="String">IVV Procedure</PROPERTY>
+					<PROPERTY name="IE PUID" type="String">IVV-IVVP-020</PROPERTY>
+					<PROPERTY name="ORCH Test Version" type="String" />
+					<PROPERTY name="Test type" type="String" />
+					<PROPERTY name="Specific Skills Needed" type="String" />
+					<PROPERTY name="TestSuite_TestStatus" type="String">Accepted</PROPERTY>
+					<PROPERTY name="TestSuite_IsTestMeansDefined" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_IsTestDataSetDefined" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_ContainingProjectName" type="String">MetricsKPIs</PROPERTY>
+					<PROPERTY name="TestSuite_WriterAssumedName" type="String" />
+					<PROPERTY name="TestSuite_WriterAssumedEmail" type="String" />
+					<PROPERTY name="TestSuite_WriterRealName" type="String" />
+					<PROPERTY name="TestSuite_WriterRealEmail" type="String" />
+					<PROPERTY name="TestSuite_CampaignForInterest_ID" type="String">V1_MetricsKPI</PROPERTY>
+					<PROPERTY name="TestSuite_CampaignForInterest_Name" type="String">v5.3_Metrics_KPI</PROPERTY>
+					<PROPERTY name="TestSuite_WritingStatus" type="String">WrittenAndReviewedOK</PROPERTY>
+					<PROPERTY name="TestSuite_RunningStatus" type="String">NotRun</PROPERTY>
+					<PROPERTY name="TestSuite_VersionUnderTest" type="String" />
+					<PROPERTY name="TestSuite_SoftwareTestEnvironment" type="String" />
+					<PROPERTY name="TestSuite_HardwareTestEnvironment" type="String" />
+					<PROPERTY name="TestSuite_RunnerAssumedName" type="String" />
+					<PROPERTY name="TestSuite_RunnerAssumedEmail" type="String" />
+					<PROPERTY name="TestSuite_RunnerRealName" type="String" />
+					<PROPERTY name="TestSuite_RunnerRealEmail" type="String" />
+					<PROPERTY name="TestSuite_State" type="String" />
+					<PROPERTY name="TestSuite_TargetedRunDate_brut" type="String" />
+					<PROPERTY name="TestSuite_TargetedRunDate" type="String" />
+					<PROPERTY name="TestSuite_LastRunDate_brut" type="String" />
+					<PROPERTY name="TestSuite_LastRunDate" type="String" />
+					<PROPERTY name="TestSuite_ApproximateRunningDuration" type="String" />
+					<PROPERTY name="TestSuite_Notes" type="String" />
+					<PROPERTY name="TestSuite_Description" type="String" />
+					<PROPERTY name="TestSuite_Type" type="String">Manual</PROPERTY>
+					<PROPERTY name="TestSuite_ScriptPath" type="String" />
+					<PROPERTY name="TestSuite_ScriptArgs" type="String" />
+					<PROPERTY name="TestSuite_IsTestMeansAvailable" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_IsDataSetAvailable" type="String">True</PROPERTY>
+					<PROPERTY name="TestSuite_FreeField1" type="String" />
+					<PROPERTY name="TestSuite_FreeField2" type="String" />
+					<PROPERTY name="TestSuite_FreeField3" type="String" />
+					<PROPERTY name="TestSuite_FreeField4" type="String" />
+					<PROPERTY name="TestSuite_Revision" type="String" />
+					<PROPERTY name="TestSuite_Execution" type="String">1</PROPERTY>
+					<PROPERTY name="TestSuite_NbrSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrRemainSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrOKSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrNOKSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrNTSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrOSSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrTestCases" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrWithDefectSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrTestCasesForRegression" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_PercentOK" type="String">0%</PROPERTY>
+				</PROPERTIES>
+			</ELEMENT>
+			<ELEMENT type="TestSuiteExecutionHeader" label="IVV-IVVP-020 TestSuiteExecutionHeader " fullName="IVV-IVVP-020 TestSuiteExecutionHeader " hash="769d24d7" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteExecutionHeader/IVV%2DIVVP%2D020TestSuiteExecutionHeader">
+				<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-020" version="07/11/2013 13:14:43" />
+				<ELEMENT type="TestSuiteExecution" label="IVV-IVVP-020TestSuiteExecution1" fullName="IVV-IVVP-020TestSuiteExecution1" hash="47d1f371" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteExecution/IVV%2DIVVP%2D020TestSuiteExecution1">
+					<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-020" version="07/11/2013 13:14:43" />
+					<PROPERTIES>
+						<PROPERTY name="RunNumber" type="String">1</PROPERTY>
+						<PROPERTY name="Date" type="String" />
+						<PROPERTY name="RunBy" type="String" />
+						<PROPERTY name="State" type="String" />
+						<PROPERTY name="SystemVersion" type="String" />
+						<PROPERTY name="AssociatedDefects" type="String" />
+						<PROPERTY name="Comments" type="String" />
+					</PROPERTIES>
+				</ELEMENT>
+			</ELEMENT>
+		</ELEMENT>
+		<ELEMENT type="TestSuite" label="IVV-IVVP-021" fullName="IVV-IVVP-021" hash="df2e28c0" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuite/IVV%2DIVVP%2D021">
+			<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-021" version="07/11/2013 12:40:10" />
+			<PROPERTIES>
+				<PROPERTY name="fragmentName" type="String">IVV-IVVP-021</PROPERTY>
+				<PROPERTY name="completeTitle" type="String">Test 21</PROPERTY>
+			</PROPERTIES>
+			<ELEMENT type="TestSuiteHeader" label="IVV-IVVP-021 Test Suite Header" fullName="IVV-IVVP-021 Test Suite Header" hash="a33fdaaa" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteHeader/IVV%2DIVVP%2D021">
+				<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-021" version="07/11/2013 12:40:10" />
+				<PROPERTIES>
+					<PROPERTY name="TestSuite_IsDataFromDOORS" type="String">true</PROPERTY>
+					<PROPERTY name="TestSuite_URI" type="String">orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a3%2121?viewName=ORCH%5FIVVMngt%5FInterface</PROPERTY>
+					<PROPERTY name="TestSuite_uniqueID" type="String">IVV-IVVP-021_v5.3_Metrics_KPI</PROPERTY>
+					<PROPERTY name="TestSuite_Identification" type="String">IVV-IVVP-021</PROPERTY>
+					<PROPERTY name="TestSuite_Title" type="String">Test 21</PROPERTY>
+					<PROPERTY name="TestSuite_AssociatedCampaigns" type="String">V1_MetricsKPI</PROPERTY>
+					<PROPERTY name="TestSuite_Objective" type="String" />
+					<PROPERTY name="TestSuite_RegressionThread" type="String" />
+					<PROPERTY name="TestSuite_TestMethod" type="String" />
+					<PROPERTY name="TestSuite_AttachedRequirements_ForLM" type="String" />
+					<PROPERTY name="TestSuite_AttachedRequirements" type="String" />
+					<PROPERTY name="TestSuite_DefinitionVersion" type="String" />
+					<PROPERTY name="IE Object Type" type="String">IVV Procedure</PROPERTY>
+					<PROPERTY name="IE PUID" type="String">IVV-IVVP-021</PROPERTY>
+					<PROPERTY name="ORCH Test Version" type="String" />
+					<PROPERTY name="Test type" type="String" />
+					<PROPERTY name="Specific Skills Needed" type="String" />
+					<PROPERTY name="TestSuite_TestStatus" type="String" />
+					<PROPERTY name="TestSuite_IsTestMeansDefined" type="String" />
+					<PROPERTY name="TestSuite_IsTestDataSetDefined" type="String" />
+					<PROPERTY name="TestSuite_ContainingProjectName" type="String">MetricsKPIs</PROPERTY>
+					<PROPERTY name="TestSuite_WriterAssumedName" type="String" />
+					<PROPERTY name="TestSuite_WriterAssumedEmail" type="String" />
+					<PROPERTY name="TestSuite_WriterRealName" type="String" />
+					<PROPERTY name="TestSuite_WriterRealEmail" type="String" />
+					<PROPERTY name="TestSuite_CampaignForInterest_ID" type="String">V1_MetricsKPI</PROPERTY>
+					<PROPERTY name="TestSuite_CampaignForInterest_Name" type="String">v5.3_Metrics_KPI</PROPERTY>
+					<PROPERTY name="TestSuite_WritingStatus" type="String">NotWritten</PROPERTY>
+					<PROPERTY name="TestSuite_RunningStatus" type="String">NotRun</PROPERTY>
+					<PROPERTY name="TestSuite_VersionUnderTest" type="String" />
+					<PROPERTY name="TestSuite_SoftwareTestEnvironment" type="String" />
+					<PROPERTY name="TestSuite_HardwareTestEnvironment" type="String" />
+					<PROPERTY name="TestSuite_RunnerAssumedName" type="String" />
+					<PROPERTY name="TestSuite_RunnerAssumedEmail" type="String" />
+					<PROPERTY name="TestSuite_RunnerRealName" type="String" />
+					<PROPERTY name="TestSuite_RunnerRealEmail" type="String" />
+					<PROPERTY name="TestSuite_State" type="String" />
+					<PROPERTY name="TestSuite_TargetedRunDate_brut" type="String" />
+					<PROPERTY name="TestSuite_TargetedRunDate" type="String" />
+					<PROPERTY name="TestSuite_LastRunDate_brut" type="String" />
+					<PROPERTY name="TestSuite_LastRunDate" type="String" />
+					<PROPERTY name="TestSuite_ApproximateRunningDuration" type="String" />
+					<PROPERTY name="TestSuite_Notes" type="String" />
+					<PROPERTY name="TestSuite_Description" type="String" />
+					<PROPERTY name="TestSuite_Type" type="String">Manual</PROPERTY>
+					<PROPERTY name="TestSuite_ScriptPath" type="String" />
+					<PROPERTY name="TestSuite_ScriptArgs" type="String" />
+					<PROPERTY name="TestSuite_IsTestMeansAvailable" type="String" />
+					<PROPERTY name="TestSuite_IsDataSetAvailable" type="String" />
+					<PROPERTY name="TestSuite_FreeField1" type="String" />
+					<PROPERTY name="TestSuite_FreeField2" type="String" />
+					<PROPERTY name="TestSuite_FreeField3" type="String" />
+					<PROPERTY name="TestSuite_FreeField4" type="String" />
+					<PROPERTY name="TestSuite_Revision" type="String" />
+					<PROPERTY name="TestSuite_Execution" type="String">1</PROPERTY>
+					<PROPERTY name="TestSuite_NbrSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrRemainSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrOKSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrNOKSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrNTSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrOSSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrTestCases" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrWithDefectSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrTestCasesForRegression" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_PercentOK" type="String">0%</PROPERTY>
+				</PROPERTIES>
+			</ELEMENT>
+			<ELEMENT type="TestSuiteChangeHeader" label="IVV-IVVP-021 TestSuiteChangeHeader " fullName="IVV-IVVP-021 TestSuiteChangeHeader " hash="e04d75b1" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteChangeHeader/IVV%2DIVVP%2D021TestSuiteChangeHeader">
+				<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-021" version="07/11/2013 12:40:10" />
+				<ELEMENT type="TestSuiteChange" label="IVV-IVVP-021TestSuiteChange" fullName="IVV-IVVP-021TestSuiteChange" hash="f7f33296" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteChange/IVV%2DIVVP%2D021TestSuiteChange">
+					<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-021" version="07/11/2013 12:40:10" />
+					<PROPERTIES>
+						<PROPERTY name="Revision" type="String" />
+						<PROPERTY name="Date" type="String" />
+						<PROPERTY name="WrittenBy" type="String" />
+						<PROPERTY name="CheckedBy" type="String" />
+						<PROPERTY name="ApprovedBy" type="String" />
+						<PROPERTY name="Description" type="String" />
+					</PROPERTIES>
+				</ELEMENT>
+			</ELEMENT>
+			<ELEMENT type="TestSuiteExecutionHeader" label="IVV-IVVP-021 TestSuiteExecutionHeader " fullName="IVV-IVVP-021 TestSuiteExecutionHeader " hash="18113f96" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteExecutionHeader/IVV%2DIVVP%2D021TestSuiteExecutionHeader">
+				<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-021" version="07/11/2013 12:40:10" />
+				<ELEMENT type="TestSuiteExecution" label="IVV-IVVP-021TestSuiteExecution1" fullName="IVV-IVVP-021TestSuiteExecution1" hash="9a472af4" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteExecution/IVV%2DIVVP%2D021TestSuiteExecution1">
+					<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-021" version="07/11/2013 12:40:10" />
+					<PROPERTIES>
+						<PROPERTY name="RunNumber" type="String">1</PROPERTY>
+						<PROPERTY name="Date" type="String" />
+						<PROPERTY name="RunBy" type="String" />
+						<PROPERTY name="State" type="String" />
+						<PROPERTY name="SystemVersion" type="String" />
+						<PROPERTY name="AssociatedDefects" type="String" />
+						<PROPERTY name="Comments" type="String" />
+					</PROPERTIES>
+				</ELEMENT>
+			</ELEMENT>
+		</ELEMENT>
+		<ELEMENT type="TestSuite" label="IVV-IVVP-022" fullName="IVV-IVVP-022" hash="4627797a" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuite/IVV%2DIVVP%2D022">
+			<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-022" version="07/11/2013 12:40:10" />
+			<PROPERTIES>
+				<PROPERTY name="fragmentName" type="String">IVV-IVVP-022</PROPERTY>
+				<PROPERTY name="completeTitle" type="String">Test 22</PROPERTY>
+			</PROPERTIES>
+			<ELEMENT type="TestSuiteHeader" label="IVV-IVVP-022 Test Suite Header" fullName="IVV-IVVP-022 Test Suite Header" hash="695c03" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteHeader/IVV%2DIVVP%2D022">
+				<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-022" version="07/11/2013 12:40:10" />
+				<PROPERTIES>
+					<PROPERTY name="TestSuite_IsDataFromDOORS" type="String">true</PROPERTY>
+					<PROPERTY name="TestSuite_URI" type="String">orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a3%2122?viewName=ORCH%5FIVVMngt%5FInterface</PROPERTY>
+					<PROPERTY name="TestSuite_uniqueID" type="String">IVV-IVVP-022_v5.3_Metrics_KPI</PROPERTY>
+					<PROPERTY name="TestSuite_Identification" type="String">IVV-IVVP-022</PROPERTY>
+					<PROPERTY name="TestSuite_Title" type="String">Test 22</PROPERTY>
+					<PROPERTY name="TestSuite_AssociatedCampaigns" type="String">V1_MetricsKPI</PROPERTY>
+					<PROPERTY name="TestSuite_Objective" type="String" />
+					<PROPERTY name="TestSuite_RegressionThread" type="String" />
+					<PROPERTY name="TestSuite_TestMethod" type="String" />
+					<PROPERTY name="TestSuite_AttachedRequirements_ForLM" type="String" />
+					<PROPERTY name="TestSuite_AttachedRequirements" type="String" />
+					<PROPERTY name="TestSuite_DefinitionVersion" type="String" />
+					<PROPERTY name="IE Object Type" type="String">IVV Procedure</PROPERTY>
+					<PROPERTY name="IE PUID" type="String">IVV-IVVP-022</PROPERTY>
+					<PROPERTY name="ORCH Test Version" type="String" />
+					<PROPERTY name="Test type" type="String" />
+					<PROPERTY name="Specific Skills Needed" type="String" />
+					<PROPERTY name="TestSuite_TestStatus" type="String" />
+					<PROPERTY name="TestSuite_IsTestMeansDefined" type="String" />
+					<PROPERTY name="TestSuite_IsTestDataSetDefined" type="String" />
+					<PROPERTY name="TestSuite_ContainingProjectName" type="String">MetricsKPIs</PROPERTY>
+					<PROPERTY name="TestSuite_WriterAssumedName" type="String" />
+					<PROPERTY name="TestSuite_WriterAssumedEmail" type="String" />
+					<PROPERTY name="TestSuite_WriterRealName" type="String" />
+					<PROPERTY name="TestSuite_WriterRealEmail" type="String" />
+					<PROPERTY name="TestSuite_CampaignForInterest_ID" type="String">V1_MetricsKPI</PROPERTY>
+					<PROPERTY name="TestSuite_CampaignForInterest_Name" type="String">v5.3_Metrics_KPI</PROPERTY>
+					<PROPERTY name="TestSuite_WritingStatus" type="String">WrittenAndReviewedOK</PROPERTY>
+					<PROPERTY name="TestSuite_RunningStatus" type="String">NotRun</PROPERTY>
+					<PROPERTY name="TestSuite_VersionUnderTest" type="String" />
+					<PROPERTY name="TestSuite_SoftwareTestEnvironment" type="String" />
+					<PROPERTY name="TestSuite_HardwareTestEnvironment" type="String" />
+					<PROPERTY name="TestSuite_RunnerAssumedName" type="String" />
+					<PROPERTY name="TestSuite_RunnerAssumedEmail" type="String" />
+					<PROPERTY name="TestSuite_RunnerRealName" type="String" />
+					<PROPERTY name="TestSuite_RunnerRealEmail" type="String" />
+					<PROPERTY name="TestSuite_State" type="String" />
+					<PROPERTY name="TestSuite_TargetedRunDate_brut" type="String" />
+					<PROPERTY name="TestSuite_TargetedRunDate" type="String" />
+					<PROPERTY name="TestSuite_LastRunDate_brut" type="String" />
+					<PROPERTY name="TestSuite_LastRunDate" type="String" />
+					<PROPERTY name="TestSuite_ApproximateRunningDuration" type="String" />
+					<PROPERTY name="TestSuite_Notes" type="String" />
+					<PROPERTY name="TestSuite_Description" type="String" />
+					<PROPERTY name="TestSuite_Type" type="String">Manual</PROPERTY>
+					<PROPERTY name="TestSuite_ScriptPath" type="String" />
+					<PROPERTY name="TestSuite_ScriptArgs" type="String" />
+					<PROPERTY name="TestSuite_IsTestMeansAvailable" type="String" />
+					<PROPERTY name="TestSuite_IsDataSetAvailable" type="String" />
+					<PROPERTY name="TestSuite_FreeField1" type="String" />
+					<PROPERTY name="TestSuite_FreeField2" type="String" />
+					<PROPERTY name="TestSuite_FreeField3" type="String" />
+					<PROPERTY name="TestSuite_FreeField4" type="String" />
+					<PROPERTY name="TestSuite_Revision" type="String" />
+					<PROPERTY name="TestSuite_Execution" type="String">1</PROPERTY>
+					<PROPERTY name="TestSuite_NbrSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrRemainSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrOKSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrNOKSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrNTSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrOSSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrTestCases" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrWithDefectSteps" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_NbrTestCasesForRegression" type="String">0</PROPERTY>
+					<PROPERTY name="TestSuite_PercentOK" type="String">0%</PROPERTY>
+				</PROPERTIES>
+			</ELEMENT>
+			<ELEMENT type="TestSuiteExecutionHeader" label="IVV-IVVP-022 TestSuiteExecutionHeader " fullName="IVV-IVVP-022 TestSuiteExecutionHeader " hash="ab851255" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteExecutionHeader/IVV%2DIVVP%2D022TestSuiteExecutionHeader">
+				<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-022" version="07/11/2013 12:40:10" />
+				<ELEMENT type="TestSuiteExecution" label="IVV-IVVP-022TestSuiteExecution1" fullName="IVV-IVVP-022TestSuiteExecution1" hash="278d463a" uri="orchestra://Ivv/SystemVerification%2FMetricsKPIs%5FProject%2FTestCampaignRepository%2Fv5%2E3%5FMetrics%5FKPI%2FTCR%5Fv5%2E3%5FMetrics%5FKPI/TestSuiteExecution/IVV%2DIVVP%2D022TestSuiteExecution1">
+					<VERSION filePath="\systemverification\metricskpis_project\testcampaignrepository\v5.3_metrics_kpi\testsuites\ivv-ivvp-022" version="07/11/2013 12:40:10" />
+					<PROPERTIES>
+						<PROPERTY name="RunNumber" type="String">1</PROPERTY>
+						<PROPERTY name="Date" type="String" />
+						<PROPERTY name="RunBy" type="String" />
+						<PROPERTY name="State" type="String" />
+						<PROPERTY name="SystemVersion" type="String" />
+						<PROPERTY name="AssociatedDefects" type="String" />
+						<PROPERTY name="Comments" type="String" />
+					</PROPERTIES>
+				</ELEMENT>
+			</ELEMENT>
+		</ELEMENT>
+	</ELEMENT>
+</Root>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generator: reqtify -->
+
+<Root>
+	<ELEMENT type="Module" label="(WakeUpClock Module) ModulesForMetricsKPIs.PBS" fullName="ModulesForMetricsKPIs.PBS" hash="11/07/13 17:41:44" uri="orchestra://Doors/WakeUpClock/Module/4ca05e8652d31da4%2E00001a01">
+		<VERSION filePath="/WakeUpClock/ModulesForMetricsKPIs/PBS" version="11/07/13 17:41:44" />
+		<PROPERTIES>
+			<PROPERTY name="Created By" type="String">orchestra</PROPERTY>
+			<PROPERTY name="Created On" type="Date">17 October 2013</PROPERTY>
+			<PROPERTY name="Description" type="String">Product Breakdown Structure Module</PROPERTY>
+			<PROPERTY name="IE Configuration Item Number" type="Integer">3</PROPERTY>
+			<PROPERTY name="IE Mod LifeCycle Phase" type="IE Mod Life Cycle Phase" />
+			<PROPERTY name="IE Mod Type" type="IE Mod Type">Product Breakdown Structure</PROPERTY>
+			<PROPERTY name="IE Release" type="String">6.0.0.4</PROPERTY>
+			<PROPERTY name="Last Modified By" type="String">sem</PROPERTY>
+			<PROPERTY name="Last Modified On" type="Date">07 November 2013</PROPERTY>
+			<PROPERTY name="Name" type="String">PBS</PROPERTY>
+			<PROPERTY name="Orchestra Module Id" type="String">4ca05e8652d31da4.00001a01</PROPERTY>
+			<PROPERTY name="Prefix" type="String">PBS</PROPERTY>
+		</PROPERTIES>
+		<ELEMENT type="configuration item" label="" uri="orchestra://Doors/WakeUpClock/Object/4ca05e8652d31da4%2E00001a01%211">
+			<VERSION filePath="/WakeUpClock/ModulesForMetricsKPIs/PBS" version="11/07/13 17:41:44" />
+			<PROPERTIES>
+				<PROPERTY name="LMLabel" type="String">PBS-CI-001 - Component1</PROPERTY>
+				<PROPERTY name="toolId" type="String">PBS-CI-001</PROPERTY>
+				<PROPERTY name="IE Object Type" type="string">Configuration Item</PROPERTY>
+				<PROPERTY name="IE PUID" type="string">PBS-CI-001</PROPERTY>
+				<PROPERTY name="Object Text" type="string">Component1</PROPERTY>
+			</PROPERTIES>
+			<LINKS_TO_ELEMENTS>
+				<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a2%215" fullName="SR-REQ-002" label="SR-REQ-002" linkType="is allocated by" linkDirection="out" />
+				<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a2%216" fullName="SR-REQ-003" label="SR-REQ-003" linkType="is allocated by" linkDirection="out" />
+				<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a2%217" fullName="SR-REQ-004" label="SR-REQ-004" linkType="is allocated by" linkDirection="out" />
+				<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a2%218" fullName="SR-REQ-005" label="SR-REQ-005" linkType="is allocated by" linkDirection="out" />
+				<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a2%219" fullName="SR-REQ-006" label="SR-REQ-006" linkType="is allocated by" linkDirection="out" />
+				<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a2%2110" fullName="SR-REQ-007" label="SR-REQ-007" linkType="is allocated by" linkDirection="out" />
+				<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a2%2111" fullName="SR-REQ-008" label="SR-REQ-008" linkType="is allocated by" linkDirection="out" />
+				<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a2%2112" fullName="SR-REQ-009" label="SR-REQ-009" linkType="is allocated by" linkDirection="out" />
+				<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a2%2116" fullName="SR-REQ-013" label="SR-REQ-013" linkType="is allocated by" linkDirection="out" />
+				<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a2%2117" fullName="SR-REQ-014" label="SR-REQ-014" linkType="is allocated by" linkDirection="out" />
+				<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a2%2118" fullName="SR-REQ-015" label="SR-REQ-015" linkType="is allocated by" linkDirection="out" />
+				<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a2%2123" fullName="SR-REQ-020" label="SR-REQ-020" linkType="is allocated by" linkDirection="out" />
+				<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a2%2129" fullName="SR-REQ-014bis" label="SR-REQ-014bis" linkType="is allocated by" linkDirection="out" />
+			</LINKS_TO_ELEMENTS>
+		</ELEMENT>
+		<ELEMENT type="configuration item" label="" uri="orchestra://Doors/WakeUpClock/Object/4ca05e8652d31da4%2E00001a01%212">
+			<VERSION filePath="/WakeUpClock/ModulesForMetricsKPIs/PBS" version="11/07/13 17:41:44" />
+			<PROPERTIES>
+				<PROPERTY name="LMLabel" type="String">PBS-CI-002 - Component2</PROPERTY>
+				<PROPERTY name="toolId" type="String">PBS-CI-002</PROPERTY>
+				<PROPERTY name="IE Object Type" type="string">Configuration Item</PROPERTY>
+				<PROPERTY name="IE PUID" type="string">PBS-CI-002</PROPERTY>
+				<PROPERTY name="Object Text" type="string">Component2</PROPERTY>
+			</PROPERTIES>
+			<LINKS_TO_ELEMENTS>
+				<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a2%214" fullName="SR-REQ-001" label="SR-REQ-001" linkType="is allocated by" linkDirection="out" />
+				<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a2%215" fullName="SR-REQ-002" label="SR-REQ-002" linkType="is allocated by" linkDirection="out" />
+				<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a2%216" fullName="SR-REQ-003" label="SR-REQ-003" linkType="is allocated by" linkDirection="out" />
+				<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a2%217" fullName="SR-REQ-004" label="SR-REQ-004" linkType="is allocated by" linkDirection="out" />
+				<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a2%218" fullName="SR-REQ-005" label="SR-REQ-005" linkType="is allocated by" linkDirection="out" />
+				<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a2%2116" fullName="SR-REQ-013" label="SR-REQ-013" linkType="is allocated by" linkDirection="out" />
+				<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a2%2117" fullName="SR-REQ-014" label="SR-REQ-014" linkType="is allocated by" linkDirection="out" />
+				<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a2%2118" fullName="SR-REQ-015" label="SR-REQ-015" linkType="is allocated by" linkDirection="out" />
+				<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a2%2126" fullName="SR-REQ-023" label="SR-REQ-023" linkType="is allocated by" linkDirection="out" />
+				<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a2%2127" fullName="SR-REQ-024" label="SR-REQ-024" linkType="is allocated by" linkDirection="out" />
+				<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a2%2129" fullName="SR-REQ-014bis" label="SR-REQ-014bis" linkType="is allocated by" linkDirection="out" />
+			</LINKS_TO_ELEMENTS>
+		</ELEMENT>
+		<ELEMENT type="configuration item" label="" uri="orchestra://Doors/WakeUpClock/Object/4ca05e8652d31da4%2E00001a01%213">
+			<VERSION filePath="/WakeUpClock/ModulesForMetricsKPIs/PBS" version="11/07/13 17:41:44" />
+			<PROPERTIES>
+				<PROPERTY name="LMLabel" type="String">PBS-CI-003 - Component3</PROPERTY>
+				<PROPERTY name="toolId" type="String">PBS-CI-003</PROPERTY>
+				<PROPERTY name="IE Object Type" type="string">Configuration Item</PROPERTY>
+				<PROPERTY name="IE PUID" type="string">PBS-CI-003</PROPERTY>
+				<PROPERTY name="Object Text" type="string">Component3</PROPERTY>
+			</PROPERTIES>
+			<LINKS_TO_ELEMENTS>
+				<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a2%2123" fullName="SR-REQ-020" label="SR-REQ-020" linkType="is allocated by" linkDirection="out" />
+				<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a2%2124" fullName="SR-REQ-021" label="SR-REQ-021" linkType="is allocated by" linkDirection="out" />
+				<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a2%2125" fullName="SR-REQ-022" label="SR-REQ-022" linkType="is allocated by" linkDirection="out" />
+			</LINKS_TO_ELEMENTS>
+		</ELEMENT>
+	</ELEMENT>
+</Root>

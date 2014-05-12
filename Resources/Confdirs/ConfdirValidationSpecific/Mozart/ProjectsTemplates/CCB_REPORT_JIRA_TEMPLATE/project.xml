@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project version="4.5">
+  <ProjectConfiguration context="General">
+    <GeneratedDocumentConfiguration publishOutput="publisher\doc\CCB_REPORT_JIRA.doc" isMaster="true" publishTemplate="template_eng.dot"></GeneratedDocumentConfiguration>
+    <DocumentProperty id="doc.title" name="Document Title" value="CCB REPORT" type="string"></DocumentProperty>
+    <DocumentProperty id="doc.type" name="Document Type" value="CCB-RP" type="string"></DocumentProperty>
+    <DocumentProperty id="doc.entity.identifier" name="Entity Identifier" value="" type="string"></DocumentProperty>
+    <DocumentProperty id="doc.company.name" name="Company Name" value="TCS / EPM / SSD" type="string"></DocumentProperty>
+    <DocumentProperty id="doc.company.address" name="Company Address" value="" type="string"></DocumentProperty>
+    <DocumentProperty id="doc.zipcode" name="Zip Code" value="" type="string"></DocumentProperty>
+    <DocumentProperty id="doc.company.city" name="Company City" value="" type="string"></DocumentProperty>
+    <DocumentProperty id="doc.company.country" name="Company Country" value="" type="string"></DocumentProperty>
+    <DocumentProperty id="doc.company.tel" name="Company Phone" value="" type="string"></DocumentProperty>
+    <DocumentProperty id="doc.company.fax" name="Company Fax" value="" type="string"></DocumentProperty>
+    <DocumentProperty id="doc.product" name="Product" value="" type="string"></DocumentProperty>
+    <DocumentProperty id="doc.system" name="System Name" value="WakeUp Solution" type="string"></DocumentProperty>
+    <DocumentProperty id="doc.classification" name="Document Classification" value="" type="string"></DocumentProperty>
+    <DocumentProperty id="doc.type.code" name="Document Type Code" value="" type="string"></DocumentProperty>
+    <DocumentProperty id="doc.identification" name="Document Identification" value="XX XXX XXX" type="string"></DocumentProperty>
+    <DocumentProperty id="doc.issue" name="Document Issue" value="" type="string"></DocumentProperty>
+    <DocumentProperty id="doc.template.reference" name="Document Template Identifier" value="" type="string"></DocumentProperty>
+    <DocumentProperty id="doc.template.version" name="Document Template Version" value="" type="string"></DocumentProperty>
+    <AssemblyTemplateFile name="fra\TSS\compte_rendu_CCB"></AssemblyTemplateFile>
+  </ProjectConfiguration>
+</Project>

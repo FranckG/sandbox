@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.thalesgroup.mde.vp.qualityassessment.rules.feature"
+      label="Rules feature"
+      version="1.0.0.201311201500"
+      provider-name="THALESGROUP">
+
+   <description url="http://www.example.com/description">
+      [Enter Feature Description here.]
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      [Enter Copyright Description here.]
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      [Enter License Description here.]
+   </license>
+
+   <plugin
+         id="com.thalesgroup.mde.vp.qualityassessment.rules.analysis"
+         download-size="0"
+         install-size="0"
+         version="0.1.0.201311201500"
+         unpack="false"/>
+
+   <plugin
+         id="com.thalesgroup.mde.vp.qualityassessment.rules.validation"
+         download-size="0"
+         install-size="0"
+         version="0.1.0.201311201500"
+         unpack="false"/>
+
+   <plugin
+         id="com.thalesgroup.mde.vp.qualityassessment.rules.transformation"
+         download-size="0"
+         install-size="0"
+         version="0.1.0.201311201500"
+         unpack="false"/>
+
+   <plugin
+         id="com.thalesgroup.mde.vp.qualityassessment.rules.generation"
+         download-size="0"
+         install-size="0"
+         version="0.1.0.201311201500"
+         unpack="false"/>
+
+   <plugin
+         id="com.thalesgroup.mde.vp.qualityassessment.rules.computation"
+         download-size="0"
+         install-size="0"
+         version="0.1.0.201311201500"
+         unpack="false"/>
+
+</feature>

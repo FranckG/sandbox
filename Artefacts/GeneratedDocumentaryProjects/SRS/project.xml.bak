@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project version="4.3">
+  <ProjectConfiguration context="General">
+    <GeneratedDocumentConfiguration publishOutput="publisher\doc\output.doc" isMaster="true" publishTemplate="template_eng.dot"></GeneratedDocumentConfiguration>
+    <DocumentProperty id="doc.logo" name="Document Logo" value="" checked="true" type="picture"></DocumentProperty>
+    <DocumentProperty id="doc.logo.landscape" name="Document Landscape Logo" value="" checked="false" type="picture"></DocumentProperty>
+    <DocumentProperty id="doc.logo.footer" name="Document Footer Logo" value="" checked="false" type="picture"></DocumentProperty>
+    <DocumentProperty id="doc.title" name="Document Title" value="(Provide a document title)" checked="true" type="string"></DocumentProperty>
+    <DocumentProperty id="doc.type" name="Document Type" value="(Provide a document type)" checked="true" type="string"></DocumentProperty>
+    <DocumentProperty id="doc.cdrl" name="CDRL Sequence Number" value="" checked="false" type="string"></DocumentProperty>
+    <DocumentProperty id="doc.volume" name="Document Volume" value="" checked="false" type="string"></DocumentProperty>
+    <DocumentProperty id="doc.product" name="Product" value="" checked="false" type="string"></DocumentProperty>
+    <DocumentProperty id="doc.classification" name="Document Classification" value="" checked="false" type="string"></DocumentProperty>
+    <DocumentProperty id="doc.category" name="Document Category" value="" checked="false" type="string"></DocumentProperty>
+    <DocumentProperty id="doc.date" name="Document Date" value="" checked="true" type="string"></DocumentProperty>
+    <DocumentProperty id="doc.reference" name="Document Reference" value="" checked="false" type="string"></DocumentProperty>
+    <DocumentProperty id="doc.identification" name="Document Identification" value="" checked="false" type="string"></DocumentProperty>
+    <DocumentProperty id="doc.issue" name="Document Issue" value="" checked="false" type="string"></DocumentProperty>
+    <DocumentProperty id="doc.book.prefix" name="Book Prefix" value="" checked="false" type="string"></DocumentProperty>
+    <DocumentProperty id="doc.company.name" name="Company Name" value="" checked="false" type="string"></DocumentProperty>
+    <DocumentProperty id="doc.company.address" name="Company Address" value="" checked="false" type="string"></DocumentProperty>
+    <DocumentProperty id="doc.zipcode" name="Zip Code" value="" checked="false" type="string"></DocumentProperty>
+    <DocumentProperty id="doc.notice" name="Notice" value="" checked="false" type="string"></DocumentProperty>
+    <DocumentProperty id="doc.customer.reference" name="Customer Reference" value="" checked="false" type="string"></DocumentProperty>
+    <DocumentProperty id="doc.system" name="System Name" value="" checked="true" type="string"></DocumentProperty>
+    <DocumentProperty id="doc.contract" name="Contract Number" value="" checked="false" type="string"></DocumentProperty>
+    <DocumentProperty id="doc.prog.name" name="Program Name" value="" checked="false" type="string"></DocumentProperty>
+    <DocumentProperty id="doc.prog.reference" name="Program Reference" value="" checked="false" type="string"></DocumentProperty>
+    <DocumentProperty id="doc.author.name" name="Author Name" value="" checked="false" type="string"></DocumentProperty>
+    <DocumentProperty id="doc.author.function" name="Author Function" value="" checked="false" type="string"></DocumentProperty>
+    <DocumentProperty id="doc.technical.name" name="Technical Approver Name" value="" checked="false" type="string"></DocumentProperty>
+    <DocumentProperty id="doc.technical.function" name="Technical Approver Function" value="" checked="false" type="string"></DocumentProperty>
+    <DocumentProperty id="doc.quality.name" name="Quality Approver Name" value="" checked="false" type="string"></DocumentProperty>
+    <DocumentProperty id="doc.quality.function" name="Quality Approver Function" value="" checked="false" type="string"></DocumentProperty>
+    <DocumentProperty id="doc.client.name" name="Client Approver Name" value="" checked="false" type="string"></DocumentProperty>
+    <DocumentProperty id="doc.client.function" name="Client Approver Function" value="" checked="false" type="string"></DocumentProperty>
+    <DocumentProperty id="doc.customer.name" name="Customer Name" value="" checked="false" type="string"></DocumentProperty>
+    <DocumentProperty id="doc.customer.departmentcode" name="Customer Department Code" value="" checked="false" type="string"></DocumentProperty>
+    <DocumentProperty id="Ivv_Component_Type" name="Component Type" value="" checked="false" type=""></DocumentProperty>
+    <DocumentProperty id="Ivv_Component_Name" name="Component Name" value="" checked="false" type=""></DocumentProperty>
+    <DocumentProperty id="Ivv_Test_Phase" name="Test Phase" value="" checked="false" type=""></DocumentProperty>
+    <AssemblyTemplateFile name="eng\srs"></AssemblyTemplateFile>
+  </ProjectConfiguration>
+</Project>

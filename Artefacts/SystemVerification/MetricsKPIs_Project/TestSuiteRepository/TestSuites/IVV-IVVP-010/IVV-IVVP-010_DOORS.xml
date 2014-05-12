@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ImportedFromDOORS SchemaVersion="3">
+  <TestSuite_IsDataFromDOORS><![CDATA[true]]></TestSuite_IsDataFromDOORS>
+  <TestSuite_URI><![CDATA[orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a3%2110?viewName=ORCH%5FIVVMngt%5FInterface]]></TestSuite_URI>
+  <TestSuite_Identification><![CDATA[IVV-IVVP-010]]></TestSuite_Identification>
+  <TestSuite_Title><![CDATA[Test 10 ]]></TestSuite_Title>
+  <TestSuite_AssociatedCampaigns><![CDATA[V1_MetricsKPI]]></TestSuite_AssociatedCampaigns>
+  <TestSuite_Objective><![CDATA[]]></TestSuite_Objective>
+  <TestSuite_RegressionThread><![CDATA[]]></TestSuite_RegressionThread>
+  <TestSuite_TestMethod><![CDATA[]]></TestSuite_TestMethod>
+  <TestSuite_AttachedRequirements><![CDATA[]]></TestSuite_AttachedRequirements>
+  <TestSuite_DefinitionVersion><![CDATA[]]></TestSuite_DefinitionVersion>
+  <TestSuite_TestStatus><![CDATA[Accepted]]></TestSuite_TestStatus>
+  <TestSuite_IsTestMeansDefined><![CDATA[True]]></TestSuite_IsTestMeansDefined>
+  <TestSuite_IsTestDataSetDefined><![CDATA[True]]></TestSuite_IsTestDataSetDefined>
+  <TestSuite_Categories>
+    <TestSuite_Category>
+      <TestSuite_CategoryName><![CDATA[IE Object Type]]></TestSuite_CategoryName>
+      <TestSuite_CategoryValue><![CDATA[IVV Procedure]]></TestSuite_CategoryValue>
+    </TestSuite_Category>
+    <TestSuite_Category>
+      <TestSuite_CategoryName><![CDATA[IE PUID]]></TestSuite_CategoryName>
+      <TestSuite_CategoryValue><![CDATA[IVV-IVVP-010]]></TestSuite_CategoryValue>
+    </TestSuite_Category>
+    <TestSuite_Category>
+      <TestSuite_CategoryName><![CDATA[ORCH Test Version]]></TestSuite_CategoryName>
+      <TestSuite_CategoryValue><![CDATA[]]></TestSuite_CategoryValue>
+    </TestSuite_Category>
+    <TestSuite_Category>
+      <TestSuite_CategoryName><![CDATA[Test type]]></TestSuite_CategoryName>
+      <TestSuite_CategoryValue><![CDATA[]]></TestSuite_CategoryValue>
+    </TestSuite_Category>
+    <TestSuite_Category>
+      <TestSuite_CategoryName><![CDATA[Specific Skills Needed]]></TestSuite_CategoryName>
+      <TestSuite_CategoryValue><![CDATA[]]></TestSuite_CategoryValue>
+    </TestSuite_Category>
+  </TestSuite_Categories>
+</ImportedFromDOORS>

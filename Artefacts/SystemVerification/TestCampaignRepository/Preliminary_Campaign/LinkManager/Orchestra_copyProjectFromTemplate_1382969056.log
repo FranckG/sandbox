@@ -1,0 +1,54 @@
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+CopyProject started 28 October 2013 15:04:16
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+===============================================================================
+Updating document [TSR]
+===============================================================================
+newDocName  [TCR_Preliminary_Campaign]
+new Doc uri [orchestra://Ivv/SystemVerification%2FTestCampaignRepository%2FPreliminary%5FCampaign%2FTCR%5FPreliminary%5FCampaign]
+suffix to add to objecid of each uri [_TCR_Preliminary_Campaign]
+make associated link file read only [false]
+=> Project definition successfully updated
+=> Rqtfqry successfully updated
+=> Rqtfqry successfully updated
+=> Rqtfqry successfully updated
+=> Rqtfqry successfully updated
+=> Rqtfqry successfully updated
+=> Rqtfqry successfully updated
+=> Rqtfqry successfully updated
+=> Rqtfqry successfully updated
+=> Rqtfqry successfully updated
+=> Rqtfqry successfully updated
+=> Rqtfqry successfully updated
+=> Rqtfqry successfully updated
+=> Rqtfqry successfully updated
+=> Rqtfqry successfully updated
+=> Rqtfqry successfully updated
+=> Rqtfqry successfully updated
+=> Rqtfqry successfully updated
+=> Rqtfqry successfully updated
+=> Rqtfqry successfully updated
+=> Rqtfqry successfully updated
+=> Rqtfqry successfully updated
+=> Rqtfqry successfully updated
+=> Rqtfqry successfully updated
+=> Rqtfqry successfully updated
+=> Rqtfqry successfully updated
+=> Rqtfqry successfully updated
+=> Rqtfqry successfully updated
+=> Rqtfqry successfully updated
+=> Rqtfqry successfully updated
+=> Rqtfqry successfully updated
+=> Updating document links rootName for each orchestra URI.
+=> uri to update retrieved from the link file:
+=> Created map of old/new uris:
+=> Starting to migrate links in modification document
+=> Saving link file
+=> Starting to migrate checker definition file[T:\Artefacts\SystemVerification\TestCampaignRepository\Preliminary_Campaign\LinkManager\\cardinality.xml]
+[T:\Artefacts\SystemVerification\TestCampaignRepository\Preliminary_Campaign\LinkManager\\cardinality.xml] does not exist
+=> Starting to migrate checker definition file[T:\Artefacts\SystemVerification\TestCampaignRepository\Preliminary_Campaign\LinkManager\\integrity.xml]
+[T:\Artefacts\SystemVerification\TestCampaignRepository\Preliminary_Campaign\LinkManager\\integrity.xml] does not exist
+=> Folowing error nodes removed from project: Element with parent not found, Element modified but not found, Link to undefined requirement
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+CopyProject ended 28 October 2013 15:04:20
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

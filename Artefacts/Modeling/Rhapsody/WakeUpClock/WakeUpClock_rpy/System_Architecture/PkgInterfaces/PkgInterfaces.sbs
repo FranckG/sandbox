@@ -1,0 +1,56 @@
+I-Logix-RPY-Archive version 8.6.0 C++ 4012249
+{ ISubsystem 
+	- _ownerHandle = { IHandle 
+		- _m2Class = "ISubsystem";
+		- _filename = "System_Architecture\\System_Architecture.sbs";
+		- _subsystem = "";
+		- _class = "";
+		- _name = "System_Architecture";
+		- _id = GUID c8578bb9-da2b-49a7-bd01-c18c5cf20ed4;
+	}
+	- _id = GUID c50d0439-12a8-4587-b11c-f849ffded926;
+	- _myState = 8192;
+	- _name = "PkgInterfaces";
+	- _lastID = 3;
+	- Declaratives = { IRPYRawContainer 
+		- size = 3;
+		- value = 
+		{ ISubsystem 
+			- fileName = "Context";
+			- _persistAs = "Context";
+			- _id = GUID 007cc8ec-ece8-46bf-8262-2316b4ad0c57;
+		}
+		{ ISubsystem 
+			- fileName = "Logical";
+			- _persistAs = "Logical";
+			- _id = GUID 70f40cd7-a30c-4938-8d54-93d51ad89f9c;
+		}
+		{ ISubsystem 
+			- fileName = "Physical";
+			- _persistAs = "Physical";
+			- _id = GUID d3d61221-8280-402e-ace8-8f393e44a954;
+		}
+	}
+	- weakCGTime = 12.20.2013::15:31:26;
+	- strongCGTime = 12.16.2013::12:16:56;
+	- _defaultComposite = GUID 4b676b7e-a98c-41b3-804c-48e7e4d5203e;
+	- _eventsBaseID = -1;
+	- Classes = { IRPYRawContainer 
+		- size = 1;
+		- value = 
+		{ IClass 
+			- _id = GUID 4b676b7e-a98c-41b3-804c-48e7e4d5203e;
+			- _myState = 40960;
+			- _name = "TopLevel";
+			- weakCGTime = 12.16.2013::12:16:56;
+			- strongCGTime = 12.16.2013::12:16:56;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+	}
+	- _configurationRelatedTime = 1.2.1990::0:0:0;
+}
+

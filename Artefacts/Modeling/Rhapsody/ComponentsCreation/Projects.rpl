@@ -1,0 +1,25 @@
+I-Logix-RPY-Archive version 8.6.0 C++ 2071527
+{ IWorkspace 
+	- m_SavedActiveProjectsName = "WakeUpClock";
+	- _ownerHandle = { IHandle 
+		- _m2Class = "";
+	}
+	- _id = GUID cd2cede3-32b9-4521-ba30-b700829acedf;
+	- _myState = 8192;
+	- _name = "Projects";
+	- Declaratives = { IRPYRawContainer 
+		- size = 2;
+		- value = 
+		{ IProject 
+			- fileName = "ComponentsCreation";
+			- _persistAs = "D:\\Orchestra_Data_5.3\\Artefacts\\Metrics\\Rhapsody\\ComponentsCreation";
+			- _id = GUID 102da27a-25f0-472f-ad81-7b8d66f1a23a;
+		}
+		{ IProject 
+			- fileName = "WakeUpClock";
+			- _persistAs = "D:\\Orchestra_Data\\OPUC\\WakeUpClock\\Artefacts\\Models\\WakeUpClock";
+			- _id = GUID 91be0163-9323-4355-b7a7-dd00416793b8;
+		}
+	}
+}
+

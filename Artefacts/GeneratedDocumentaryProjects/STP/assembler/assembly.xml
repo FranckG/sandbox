@@ -1,0 +1,1161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssemblyTree>
+  <AssemblyRoot id="TRTP0644/150.2.22.45_1181924975578_558" label="SOFTWARE TEST PLAN (STP)" typeId="DocumentRoot" publicationContextId="RootProvider">
+    <Property name="visible"><![CDATA[true]]></Property>
+    <Property name="changeOrientation"><![CDATA[No change]]></Property>
+    <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+    <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+    <Property name="lineBreakBefore"><![CDATA[false]]></Property>
+    <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+    <Property name="projectContextFilter"><![CDATA[]]></Property>
+    <SectionAssemblyContainer id="421a701d-ce0b-4c84-9dcc-130219bb900a_1324018037842@VMO385/150.2.38.139" label="Changes" typeId="DocumentSection" publicationContextId="HeadingProvider">
+      <Property name="visible"><![CDATA[true]]></Property>
+      <Property name="changeOrientation"><![CDATA[No change]]></Property>
+      <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+      <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+      <Property name="lineBreakBefore"><![CDATA[false]]></Property>
+      <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+      <Property name="projectContextFilter"><![CDATA[]]></Property>
+      <Property name="history"><![CDATA[true]]></Property>
+      <Property name="appendix"><![CDATA[false]]></Property>
+      <Property name="beforeTOC_Introduction"><![CDATA[false]]></Property>
+      <Property name="bookmarkTag"><![CDATA[]]></Property>
+      <AutomaticAssemblyContainer id="a540e64a-9b0d-4e43-a618-34d8f4f62a4b_1324018042186@VMO385/150.2.38.139" label="&lt;&lt; Automatic Assembly &gt;&gt;" typeId="AutomaticAssemblyDefault" publicationContextId="AutomaticAssemblyProvider">
+        <Property name="visible"><![CDATA[true]]></Property>
+        <Property name="changeOrientation"><![CDATA[No change]]></Property>
+        <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+        <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+        <Property name="lineBreakBefore"><![CDATA[false]]></Property>
+        <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+        <Property name="projectContextFilter"><![CDATA[]]></Property>
+        <Property name="searchFromRoot"><![CDATA[all]]></Property>
+        <Property name="includeRoot"><![CDATA[true]]></Property>
+        <Property name="searchFromFragment"><![CDATA[*]]></Property>
+        <Property name="searchFromFragmentType"><![CDATA[*]]></Property>
+        <Property name="selectTypes"><![CDATA[*]]></Property>
+        <Property name="selectFragmentName"><![CDATA[*Changes]]></Property>
+        <Property name="selectCaseSensitiveFragmentName"><![CDATA[false]]></Property>
+        <Property name="nameProcessing"><![CDATA[no]]></Property>
+        <Property name="selectProperties"><![CDATA[]]></Property>
+        <Property name="directChildrenOnly"><![CDATA[false]]></Property>
+        <Property name="recursiveSearch"><![CDATA[false]]></Property>
+        <Property name="sort"><![CDATA[no sort]]></Property>
+        <Property name="sortPropertyNames"><![CDATA[]]></Property>
+        <Property name="ascendingOrDescendingSort"><![CDATA[ascending]]></Property>
+        <Property name="keepChildren"><![CDATA[false]]></Property>
+        <Property name="keepParentStructure"><![CDATA[no]]></Property>
+        <Property name="setPublicationContextsForType"><![CDATA[]]></Property>
+        <Property name="setPropertiesForType"><![CDATA[]]></Property>
+        <Property name="addContainersForType"><![CDATA[]]></Property>
+        <Property name="addContainers"><![CDATA[]]></Property>
+        <ProgrammaticAssemblyRule nature="" description="Default automatic assembly rule - Create the assembly nodes corresponding to the rule conditions: from scope root fragments, search fragments that match the rule (types, names and properties). Found fragments can be sorted." sortType="No" ascending="true" freeze="false" allowSynchro="false" initialize="true"></ProgrammaticAssemblyRule>
+      </AutomaticAssemblyContainer>
+    </SectionAssemblyContainer>
+    <SectionAssemblyContainer id="TRTP0644/150.2.22.45_1181924975578_559" label="SCOPE" typeId="DocumentSection" publicationContextId="HeadingProvider">
+      <Property name="visible"><![CDATA[true]]></Property>
+      <Property name="changeOrientation"><![CDATA[No change]]></Property>
+      <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+      <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+      <Property name="lineBreakBefore"><![CDATA[false]]></Property>
+      <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+      <Property name="projectContextFilter"><![CDATA[]]></Property>
+      <Property name="appendix"><![CDATA[false]]></Property>
+      <Property name="beforeTOC_Introduction"><![CDATA[false]]></Property>
+      <Property name="bookmarkTag"><![CDATA[]]></Property>
+      <SectionAssemblyContainer id="TRTP0644/150.2.22.45_1181924975578_561" label="System overview" typeId="DocumentSection" publicationContextId="HeadingProvider">
+        <Property name="visible"><![CDATA[true]]></Property>
+        <Property name="changeOrientation"><![CDATA[No change]]></Property>
+        <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+        <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+        <Property name="lineBreakBefore"><![CDATA[false]]></Property>
+        <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+        <Property name="projectContextFilter"><![CDATA[]]></Property>
+        <Property name="beforeTOC_Introduction"><![CDATA[false]]></Property>
+        <Property name="bookmarkTag"><![CDATA[]]></Property>
+        <AutomaticAssemblyContainer id="05b3a2c6-3f51-4ae3-a9d8-447d34b1a5bd_1324017961233@VMO385/150.2.38.139" label="&lt;&lt; Automatic Assembly &gt;&gt;" typeId="AutomaticAssemblyDefault" publicationContextId="AutomaticAssemblyProvider">
+          <Property name="visible"><![CDATA[true]]></Property>
+          <Property name="changeOrientation"><![CDATA[No change]]></Property>
+          <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+          <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+          <Property name="lineBreakBefore"><![CDATA[false]]></Property>
+          <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+          <Property name="projectContextFilter"><![CDATA[]]></Property>
+          <Property name="searchFromRoot"><![CDATA[all]]></Property>
+          <Property name="includeRoot"><![CDATA[true]]></Property>
+          <Property name="searchFromFragment"><![CDATA[*]]></Property>
+          <Property name="searchFromFragmentType"><![CDATA[*]]></Property>
+          <Property name="selectTypes"><![CDATA[*]]></Property>
+          <Property name="selectFragmentName"><![CDATA[*SystemOverview]]></Property>
+          <Property name="selectCaseSensitiveFragmentName"><![CDATA[false]]></Property>
+          <Property name="nameProcessing"><![CDATA[no]]></Property>
+          <Property name="selectProperties"><![CDATA[]]></Property>
+          <Property name="directChildrenOnly"><![CDATA[false]]></Property>
+          <Property name="recursiveSearch"><![CDATA[false]]></Property>
+          <Property name="sort"><![CDATA[no sort]]></Property>
+          <Property name="sortPropertyNames"><![CDATA[]]></Property>
+          <Property name="ascendingOrDescendingSort"><![CDATA[ascending]]></Property>
+          <Property name="keepChildren"><![CDATA[true]]></Property>
+          <Property name="keepParentStructure"><![CDATA[no]]></Property>
+          <Property name="setPublicationContextsForType"><![CDATA[]]></Property>
+          <Property name="setPropertiesForType"><![CDATA[]]></Property>
+          <Property name="addContainersForType"><![CDATA[]]></Property>
+          <Property name="addContainers"><![CDATA[]]></Property>
+          <ProgrammaticAssemblyRule nature="" description="Default automatic assembly rule - Create the assembly nodes corresponding to the rule conditions: from scope root fragments, search fragments that match the rule (types, names and properties). Found fragments can be sorted." sortType="No" ascending="true" freeze="false" allowSynchro="false" initialize="true"></ProgrammaticAssemblyRule>
+        </AutomaticAssemblyContainer>
+      </SectionAssemblyContainer>
+      <SectionAssemblyContainer id="TRTP0644/150.2.22.45_1181924975578_562" label="Document overview" typeId="DocumentSection" publicationContextId="HeadingProvider">
+        <Property name="visible"><![CDATA[true]]></Property>
+        <Property name="changeOrientation"><![CDATA[No change]]></Property>
+        <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+        <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+        <Property name="lineBreakBefore"><![CDATA[false]]></Property>
+        <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+        <Property name="projectContextFilter"><![CDATA[]]></Property>
+        <Property name="beforeTOC_Introduction"><![CDATA[false]]></Property>
+        <Property name="bookmarkTag"><![CDATA[]]></Property>
+        <AutomaticAssemblyContainer id="6426fa6a-1f17-46ed-844b-351544cca941_1324017967108@VMO385/150.2.38.139" label="&lt;&lt; Automatic Assembly &gt;&gt;" typeId="AutomaticAssemblyDefault" publicationContextId="AutomaticAssemblyProvider">
+          <Property name="visible"><![CDATA[true]]></Property>
+          <Property name="changeOrientation"><![CDATA[No change]]></Property>
+          <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+          <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+          <Property name="lineBreakBefore"><![CDATA[false]]></Property>
+          <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+          <Property name="projectContextFilter"><![CDATA[]]></Property>
+          <Property name="searchFromRoot"><![CDATA[all]]></Property>
+          <Property name="includeRoot"><![CDATA[true]]></Property>
+          <Property name="searchFromFragment"><![CDATA[*]]></Property>
+          <Property name="searchFromFragmentType"><![CDATA[*]]></Property>
+          <Property name="selectTypes"><![CDATA[*]]></Property>
+          <Property name="selectFragmentName"><![CDATA[*DocOverview]]></Property>
+          <Property name="selectCaseSensitiveFragmentName"><![CDATA[false]]></Property>
+          <Property name="nameProcessing"><![CDATA[no]]></Property>
+          <Property name="selectProperties"><![CDATA[]]></Property>
+          <Property name="directChildrenOnly"><![CDATA[false]]></Property>
+          <Property name="recursiveSearch"><![CDATA[false]]></Property>
+          <Property name="sort"><![CDATA[no sort]]></Property>
+          <Property name="sortPropertyNames"><![CDATA[]]></Property>
+          <Property name="ascendingOrDescendingSort"><![CDATA[ascending]]></Property>
+          <Property name="keepChildren"><![CDATA[true]]></Property>
+          <Property name="keepParentStructure"><![CDATA[no]]></Property>
+          <Property name="setPublicationContextsForType"><![CDATA[]]></Property>
+          <Property name="setPropertiesForType"><![CDATA[]]></Property>
+          <Property name="addContainersForType"><![CDATA[]]></Property>
+          <Property name="addContainers"><![CDATA[]]></Property>
+          <ProgrammaticAssemblyRule nature="" description="Default automatic assembly rule - Create the assembly nodes corresponding to the rule conditions: from scope root fragments, search fragments that match the rule (types, names and properties). Found fragments can be sorted." sortType="No" ascending="true" freeze="false" allowSynchro="false" initialize="true"></ProgrammaticAssemblyRule>
+        </AutomaticAssemblyContainer>
+      </SectionAssemblyContainer>
+    </SectionAssemblyContainer>
+    <SectionAssemblyContainer id="TRTP0644/150.2.22.45_1181924975578_564" label="REFERENCED DOCUMENTS" typeId="DocumentSection" publicationContextId="HeadingProvider">
+      <Property name="visible"><![CDATA[true]]></Property>
+      <Property name="changeOrientation"><![CDATA[No change]]></Property>
+      <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+      <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+      <Property name="lineBreakBefore"><![CDATA[false]]></Property>
+      <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+      <Property name="projectContextFilter"><![CDATA[]]></Property>
+      <Property name="appendix"><![CDATA[false]]></Property>
+      <Property name="beforeTOC_Introduction"><![CDATA[false]]></Property>
+      <Property name="bookmarkTag"><![CDATA[]]></Property>
+      <SectionAssemblyContainer id="TRTP0644/150.2.22.45_1181924975578_565" label="Applicable documents" typeId="DocumentSection" publicationContextId="HeadingProvider">
+        <Property name="visible"><![CDATA[true]]></Property>
+        <Property name="changeOrientation"><![CDATA[No change]]></Property>
+        <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+        <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+        <Property name="lineBreakBefore"><![CDATA[false]]></Property>
+        <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+        <Property name="projectContextFilter"><![CDATA[]]></Property>
+        <Property name="beforeTOC_Introduction"><![CDATA[false]]></Property>
+        <Property name="bookmarkTag"><![CDATA[]]></Property>
+        <AutomaticAssemblyContainer id="49c851b5-f4cc-4728-92e4-142c00f6dc35_1324017969623@VMO385/150.2.38.139" label="&lt;&lt; Automatic Assembly &gt;&gt;" typeId="AutomaticAssemblyDefault" publicationContextId="AutomaticAssemblyProvider">
+          <Property name="visible"><![CDATA[true]]></Property>
+          <Property name="changeOrientation"><![CDATA[No change]]></Property>
+          <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+          <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+          <Property name="lineBreakBefore"><![CDATA[false]]></Property>
+          <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+          <Property name="projectContextFilter"><![CDATA[]]></Property>
+          <Property name="searchFromRoot"><![CDATA[all]]></Property>
+          <Property name="includeRoot"><![CDATA[true]]></Property>
+          <Property name="searchFromFragment"><![CDATA[*]]></Property>
+          <Property name="searchFromFragmentType"><![CDATA[*]]></Property>
+          <Property name="selectTypes"><![CDATA[*]]></Property>
+          <Property name="selectFragmentName"><![CDATA[*Applicable documents]]></Property>
+          <Property name="selectCaseSensitiveFragmentName"><![CDATA[false]]></Property>
+          <Property name="nameProcessing"><![CDATA[no]]></Property>
+          <Property name="selectProperties"><![CDATA[]]></Property>
+          <Property name="directChildrenOnly"><![CDATA[false]]></Property>
+          <Property name="recursiveSearch"><![CDATA[false]]></Property>
+          <Property name="sort"><![CDATA[no sort]]></Property>
+          <Property name="sortPropertyNames"><![CDATA[]]></Property>
+          <Property name="ascendingOrDescendingSort"><![CDATA[ascending]]></Property>
+          <Property name="keepChildren"><![CDATA[false]]></Property>
+          <Property name="keepParentStructure"><![CDATA[no]]></Property>
+          <Property name="setPublicationContextsForType"><![CDATA[]]></Property>
+          <Property name="setPropertiesForType"><![CDATA[]]></Property>
+          <Property name="addContainersForType"><![CDATA[]]></Property>
+          <Property name="addContainers"><![CDATA[]]></Property>
+          <ProgrammaticAssemblyRule nature="" description="Default automatic assembly rule - Create the assembly nodes corresponding to the rule conditions: from scope root fragments, search fragments that match the rule (types, names and properties). Found fragments can be sorted." sortType="No" ascending="true" freeze="false" allowSynchro="false" initialize="true"></ProgrammaticAssemblyRule>
+        </AutomaticAssemblyContainer>
+      </SectionAssemblyContainer>
+      <SectionAssemblyContainer id="TRTP0644/150.2.22.45_1181924975578_566" label="Reference documents" typeId="DocumentSection" publicationContextId="HeadingProvider">
+        <Property name="visible"><![CDATA[true]]></Property>
+        <Property name="changeOrientation"><![CDATA[No change]]></Property>
+        <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+        <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+        <Property name="lineBreakBefore"><![CDATA[false]]></Property>
+        <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+        <Property name="projectContextFilter"><![CDATA[]]></Property>
+        <Property name="beforeTOC_Introduction"><![CDATA[false]]></Property>
+        <Property name="bookmarkTag"><![CDATA[]]></Property>
+        <AutomaticAssemblyContainer id="ce5ca677-e49d-4461-bb66-03073eef33bb_1324017970639@VMO385/150.2.38.139" label="&lt;&lt; Automatic Assembly &gt;&gt;" typeId="AutomaticAssemblyDefault" publicationContextId="AutomaticAssemblyProvider">
+          <Property name="visible"><![CDATA[true]]></Property>
+          <Property name="changeOrientation"><![CDATA[No change]]></Property>
+          <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+          <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+          <Property name="lineBreakBefore"><![CDATA[false]]></Property>
+          <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+          <Property name="projectContextFilter"><![CDATA[]]></Property>
+          <Property name="searchFromRoot"><![CDATA[all]]></Property>
+          <Property name="includeRoot"><![CDATA[true]]></Property>
+          <Property name="searchFromFragment"><![CDATA[*]]></Property>
+          <Property name="searchFromFragmentType"><![CDATA[*]]></Property>
+          <Property name="selectTypes"><![CDATA[*]]></Property>
+          <Property name="selectFragmentName"><![CDATA[*Reference documents]]></Property>
+          <Property name="selectCaseSensitiveFragmentName"><![CDATA[false]]></Property>
+          <Property name="nameProcessing"><![CDATA[no]]></Property>
+          <Property name="selectProperties"><![CDATA[]]></Property>
+          <Property name="directChildrenOnly"><![CDATA[false]]></Property>
+          <Property name="recursiveSearch"><![CDATA[false]]></Property>
+          <Property name="sort"><![CDATA[no sort]]></Property>
+          <Property name="sortPropertyNames"><![CDATA[]]></Property>
+          <Property name="ascendingOrDescendingSort"><![CDATA[ascending]]></Property>
+          <Property name="keepChildren"><![CDATA[false]]></Property>
+          <Property name="keepParentStructure"><![CDATA[no]]></Property>
+          <Property name="setPublicationContextsForType"><![CDATA[]]></Property>
+          <Property name="setPropertiesForType"><![CDATA[]]></Property>
+          <Property name="addContainersForType"><![CDATA[]]></Property>
+          <Property name="addContainers"><![CDATA[]]></Property>
+          <ProgrammaticAssemblyRule nature="" description="Default automatic assembly rule - Create the assembly nodes corresponding to the rule conditions: from scope root fragments, search fragments that match the rule (types, names and properties). Found fragments can be sorted." sortType="No" ascending="true" freeze="false" allowSynchro="false" initialize="true"></ProgrammaticAssemblyRule>
+        </AutomaticAssemblyContainer>
+      </SectionAssemblyContainer>
+    </SectionAssemblyContainer>
+    <SectionAssemblyContainer id="TRTP0644/150.2.22.45_1181924975578_578" label="QUALIFICATION TEST IDENTIFICATION" typeId="DocumentSection" publicationContextId="HeadingProvider">
+      <Property name="visible"><![CDATA[true]]></Property>
+      <Property name="changeOrientation"><![CDATA[No change]]></Property>
+      <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+      <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+      <Property name="lineBreakBefore"><![CDATA[false]]></Property>
+      <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+      <Property name="projectContextFilter"><![CDATA[]]></Property>
+      <Property name="appendix"><![CDATA[false]]></Property>
+      <Property name="beforeTOC_Introduction"><![CDATA[false]]></Property>
+      <Property name="bookmarkTag"><![CDATA[]]></Property>
+      <AutomaticAssemblyContainer id="c42bcf00-c8fa-4277-b6ae-b43b9b1c8c37_1324018012686@VMO385/150.2.38.139" label="&lt;&lt; Automatic Assembly &gt;&gt;" typeId="AutomaticAssemblyDefault" publicationContextId="AutomaticAssemblyProvider">
+        <Property name="visible"><![CDATA[true]]></Property>
+        <Property name="changeOrientation"><![CDATA[No change]]></Property>
+        <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+        <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+        <Property name="lineBreakBefore"><![CDATA[false]]></Property>
+        <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+        <Property name="projectContextFilter"><![CDATA[]]></Property>
+        <Property name="searchFromRoot"><![CDATA[all]]></Property>
+        <Property name="includeRoot"><![CDATA[true]]></Property>
+        <Property name="searchFromFragment"><![CDATA[*]]></Property>
+        <Property name="searchFromFragmentType"><![CDATA[*]]></Property>
+        <Property name="selectTypes"><![CDATA[*]]></Property>
+        <Property name="selectFragmentName"><![CDATA[*100. ORCH Document view]]></Property>
+        <Property name="selectCaseSensitiveFragmentName"><![CDATA[false]]></Property>
+        <Property name="nameProcessing"><![CDATA[no]]></Property>
+        <Property name="selectProperties"><![CDATA[]]></Property>
+        <Property name="directChildrenOnly"><![CDATA[false]]></Property>
+        <Property name="recursiveSearch"><![CDATA[false]]></Property>
+        <Property name="sort"><![CDATA[no sort]]></Property>
+        <Property name="sortPropertyNames"><![CDATA[]]></Property>
+        <Property name="ascendingOrDescendingSort"><![CDATA[ascending]]></Property>
+        <Property name="keepChildren"><![CDATA[true]]></Property>
+        <Property name="keepParentStructure"><![CDATA[no]]></Property>
+        <Property name="setPublicationContextsForType"><![CDATA[Doorsivv procedure=DoorsIVVProcedureProvider]]></Property>
+        <Property name="setPropertiesForType"><![CDATA[]]></Property>
+        <Property name="addContainersForType"><![CDATA[Doorsivv procedure=AutomaticAssemblyApplicativeLinkedFragments(Associated IDJ, (linkTypes=Doorsis justified by, setPublicationContextsForType=Doorsjustification\=GenericProvider\,Doorsissue-decision\=GenericProvider,setPropertiesForType=Doorsjustification\=\(title\=Label\,publishDescriptions\=true\,publishAssociatedResource\=false\,publishProperties\=tabular\,hideProperties\=IE PUID\\,IE Object Type\\,Paragraph Style\)\;Doorsissue-decision\=\(title\=Label\,publishDescriptions\=true\,publishAssociatedResource\=false\)))]]></Property>
+        <Property name="addContainers"><![CDATA[]]></Property>
+        <AssemblyFragment id="4858da1e-291f-4dff-969d-09e23bef2467_1361888929332@EFXESS0109P/192.168.8.9" label="(WakeUpClock System.IVV.Verification.System verification View) 100. ORCH Document view" typeId="DoorsView" publicationContextId="DoorsLinearModeModuleOrViewProvider" fragmentElementId="orchestra://Doors/WakeUpClock/View/4ca05e8652d31da4%2E00001168%21100%2E%20ORCH%20Document%20view">
+          <Property name="visible"><![CDATA[true]]></Property>
+          <Property name="changeOrientation"><![CDATA[No change]]></Property>
+          <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+          <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+          <Property name="lineBreakBefore"><![CDATA[false]]></Property>
+          <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+          <Property name="projectContextFilter"><![CDATA[]]></Property>
+          <Property name="publishAttributesWithNoValue"><![CDATA[false]]></Property>
+          <Property name="attributesNotToPublish"><![CDATA[PUID, Title]]></Property>
+          <AssemblyFragment id="cdad7a32-28fc-42e0-bcd6-6150d3c979f3_1361888929332@EFXESS0109P/192.168.8.9" label="Functional" typeId="DoorsObject" publicationContextId="DoorsHierarchicalObjectProvider" fragmentElementId="orchestra://Doors/WakeUpClock/Object/4ca05e8652d31da4%2E00001168%211?viewName=100%2E%20ORCH%20Document%20view">
+            <Property name="visible"><![CDATA[true]]></Property>
+            <Property name="changeOrientation"><![CDATA[No change]]></Property>
+            <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+            <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+            <Property name="lineBreakBefore"><![CDATA[false]]></Property>
+            <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+            <Property name="projectContextFilter"><![CDATA[]]></Property>
+            <Property name="headingIfNoLabelForNonTerminalElement"><![CDATA[false]]></Property>
+            <Property name="headingIfLabelForTerminalElement"><![CDATA[false]]></Property>
+            <Property name="generateBookmark"><![CDATA[false]]></Property>
+            <AssemblyFragment id="c12e09cb-7479-46ad-9e50-fa7661419401_1361888929332@EFXESS0109P/192.168.8.9" label="SVe-IVVP-001" typeId="Doorsivv procedure" publicationContextId="DoorsIVVProcedureProvider" fragmentElementId="orchestra://Doors/WakeUpClock/Object/4ca05e8652d31da4%2E00001168%214?viewName=100%2E%20ORCH%20Document%20view">
+              <Property name="visible"><![CDATA[true]]></Property>
+              <Property name="changeOrientation"><![CDATA[No change]]></Property>
+              <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+              <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+              <Property name="lineBreakBefore"><![CDATA[false]]></Property>
+              <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+              <Property name="projectContextFilter"><![CDATA[]]></Property>
+              <AutomaticAssemblyContainer id="3cbc031f-7c48-4132-8128-bc949a8aa934_1361888929332@EFXESS0109P/192.168.8.9" label="Associated IDJ" typeId="AutomaticAssemblyApplicativeLinkedFragments" publicationContextId="AutomaticAssemblyProvider">
+                <Property name="visible"><![CDATA[true]]></Property>
+                <Property name="changeOrientation"><![CDATA[No change]]></Property>
+                <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+                <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+                <Property name="lineBreakBefore"><![CDATA[false]]></Property>
+                <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+                <Property name="projectContextFilter"><![CDATA[]]></Property>
+                <Property name="searchFromRoot"><![CDATA[parent]]></Property>
+                <Property name="includeRoot"><![CDATA[false]]></Property>
+                <Property name="searchFromFragment"><![CDATA[*]]></Property>
+                <Property name="searchFromFragmentType"><![CDATA[*]]></Property>
+                <Property name="selectTypes"><![CDATA[*]]></Property>
+                <Property name="selectFragmentName"><![CDATA[*]]></Property>
+                <Property name="selectCaseSensitiveFragmentName"><![CDATA[false]]></Property>
+                <Property name="nameProcessing"><![CDATA[no]]></Property>
+                <Property name="selectProperties"><![CDATA[]]></Property>
+                <Property name="directChildrenOnly"><![CDATA[false]]></Property>
+                <Property name="recursiveSearch"><![CDATA[false]]></Property>
+                <Property name="sort"><![CDATA[no sort]]></Property>
+                <Property name="sortPropertyNames"><![CDATA[]]></Property>
+                <Property name="ascendingOrDescendingSort"><![CDATA[ascending]]></Property>
+                <Property name="keepChildren"><![CDATA[false]]></Property>
+                <Property name="keepParentStructure"><![CDATA[no]]></Property>
+                <Property name="setPublicationContextsForType"><![CDATA[Doorsjustification=GenericProvider,Doorsissue-decision=GenericProvider]]></Property>
+                <Property name="setPropertiesForType"><![CDATA[Doorsjustification=(title=Label,publishDescriptions=true,publishAssociatedResource=false,publishProperties=tabular,hideProperties=IE PUID\,IE Object Type\,Paragraph Style);Doorsissue-decision=(title=Label,publishDescriptions=true,publishAssociatedResource=false)]]></Property>
+                <Property name="addContainersForType"><![CDATA[]]></Property>
+                <Property name="addContainers"><![CDATA[]]></Property>
+                <Property name="selectContainerParentTypes"><![CDATA[*]]></Property>
+                <Property name="selectContainerParentFragmentName"><![CDATA[*]]></Property>
+                <Property name="selectContainerParentProperties"><![CDATA[]]></Property>
+                <Property name="linkTypes"><![CDATA[Doorsis justified by]]></Property>
+                <Property name="linkDirection"><![CDATA[out]]></Property>
+                <Property name="linkLabel"><![CDATA[*]]></Property>
+                <ProgrammaticAssemblyRule nature="" description="***DEPRECATED*** - keep for compatibility reasons (with existing customs) Create the assembly nodes corresponding to the applicative linked fragments of the parent of this container. The linked fragments shall match the rule conditions (type,  name and properties). The linked fragments can be sorted." sortType="No" ascending="true" freeze="false" allowSynchro="false" initialize="true"></ProgrammaticAssemblyRule>
+              </AutomaticAssemblyContainer>
+            </AssemblyFragment>
+            <AssemblyFragment id="3fd7f449-7ec3-460b-903f-03b640ade270_1361888929332@EFXESS0109P/192.168.8.9" label="SVe-IVVP-002" typeId="Doorsivv procedure" publicationContextId="DoorsIVVProcedureProvider" fragmentElementId="orchestra://Doors/WakeUpClock/Object/4ca05e8652d31da4%2E00001168%215?viewName=100%2E%20ORCH%20Document%20view">
+              <Property name="visible"><![CDATA[true]]></Property>
+              <Property name="changeOrientation"><![CDATA[No change]]></Property>
+              <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+              <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+              <Property name="lineBreakBefore"><![CDATA[false]]></Property>
+              <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+              <Property name="projectContextFilter"><![CDATA[]]></Property>
+              <AutomaticAssemblyContainer id="cb971822-fc44-4aaa-b020-3a34307e6ab0_1361888929332@EFXESS0109P/192.168.8.9" label="Associated IDJ" typeId="AutomaticAssemblyApplicativeLinkedFragments" publicationContextId="AutomaticAssemblyProvider">
+                <Property name="visible"><![CDATA[true]]></Property>
+                <Property name="changeOrientation"><![CDATA[No change]]></Property>
+                <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+                <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+                <Property name="lineBreakBefore"><![CDATA[false]]></Property>
+                <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+                <Property name="projectContextFilter"><![CDATA[]]></Property>
+                <Property name="searchFromRoot"><![CDATA[parent]]></Property>
+                <Property name="includeRoot"><![CDATA[false]]></Property>
+                <Property name="searchFromFragment"><![CDATA[*]]></Property>
+                <Property name="searchFromFragmentType"><![CDATA[*]]></Property>
+                <Property name="selectTypes"><![CDATA[*]]></Property>
+                <Property name="selectFragmentName"><![CDATA[*]]></Property>
+                <Property name="selectCaseSensitiveFragmentName"><![CDATA[false]]></Property>
+                <Property name="nameProcessing"><![CDATA[no]]></Property>
+                <Property name="selectProperties"><![CDATA[]]></Property>
+                <Property name="directChildrenOnly"><![CDATA[false]]></Property>
+                <Property name="recursiveSearch"><![CDATA[false]]></Property>
+                <Property name="sort"><![CDATA[no sort]]></Property>
+                <Property name="sortPropertyNames"><![CDATA[]]></Property>
+                <Property name="ascendingOrDescendingSort"><![CDATA[ascending]]></Property>
+                <Property name="keepChildren"><![CDATA[false]]></Property>
+                <Property name="keepParentStructure"><![CDATA[no]]></Property>
+                <Property name="setPublicationContextsForType"><![CDATA[Doorsjustification=GenericProvider,Doorsissue-decision=GenericProvider]]></Property>
+                <Property name="setPropertiesForType"><![CDATA[Doorsjustification=(title=Label,publishDescriptions=true,publishAssociatedResource=false,publishProperties=tabular,hideProperties=IE PUID\,IE Object Type\,Paragraph Style);Doorsissue-decision=(title=Label,publishDescriptions=true,publishAssociatedResource=false)]]></Property>
+                <Property name="addContainersForType"><![CDATA[]]></Property>
+                <Property name="addContainers"><![CDATA[]]></Property>
+                <Property name="selectContainerParentTypes"><![CDATA[*]]></Property>
+                <Property name="selectContainerParentFragmentName"><![CDATA[*]]></Property>
+                <Property name="selectContainerParentProperties"><![CDATA[]]></Property>
+                <Property name="linkTypes"><![CDATA[Doorsis justified by]]></Property>
+                <Property name="linkDirection"><![CDATA[out]]></Property>
+                <Property name="linkLabel"><![CDATA[*]]></Property>
+                <ProgrammaticAssemblyRule nature="" description="***DEPRECATED*** - keep for compatibility reasons (with existing customs) Create the assembly nodes corresponding to the applicative linked fragments of the parent of this container. The linked fragments shall match the rule conditions (type,  name and properties). The linked fragments can be sorted." sortType="No" ascending="true" freeze="false" allowSynchro="false" initialize="true"></ProgrammaticAssemblyRule>
+              </AutomaticAssemblyContainer>
+            </AssemblyFragment>
+            <AssemblyFragment id="0f27b7e2-70fd-4445-9699-337265e6a35c_1361888929332@EFXESS0109P/192.168.8.9" label="SVe-IVVP-003" typeId="Doorsivv procedure" publicationContextId="DoorsIVVProcedureProvider" fragmentElementId="orchestra://Doors/WakeUpClock/Object/4ca05e8652d31da4%2E00001168%217?viewName=100%2E%20ORCH%20Document%20view">
+              <Property name="visible"><![CDATA[true]]></Property>
+              <Property name="changeOrientation"><![CDATA[No change]]></Property>
+              <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+              <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+              <Property name="lineBreakBefore"><![CDATA[false]]></Property>
+              <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+              <Property name="projectContextFilter"><![CDATA[]]></Property>
+              <AutomaticAssemblyContainer id="de110e73-eb4a-49b2-aa47-d872183af113_1361888929332@EFXESS0109P/192.168.8.9" label="Associated IDJ" typeId="AutomaticAssemblyApplicativeLinkedFragments" publicationContextId="AutomaticAssemblyProvider">
+                <Property name="visible"><![CDATA[true]]></Property>
+                <Property name="changeOrientation"><![CDATA[No change]]></Property>
+                <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+                <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+                <Property name="lineBreakBefore"><![CDATA[false]]></Property>
+                <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+                <Property name="projectContextFilter"><![CDATA[]]></Property>
+                <Property name="searchFromRoot"><![CDATA[parent]]></Property>
+                <Property name="includeRoot"><![CDATA[false]]></Property>
+                <Property name="searchFromFragment"><![CDATA[*]]></Property>
+                <Property name="searchFromFragmentType"><![CDATA[*]]></Property>
+                <Property name="selectTypes"><![CDATA[*]]></Property>
+                <Property name="selectFragmentName"><![CDATA[*]]></Property>
+                <Property name="selectCaseSensitiveFragmentName"><![CDATA[false]]></Property>
+                <Property name="nameProcessing"><![CDATA[no]]></Property>
+                <Property name="selectProperties"><![CDATA[]]></Property>
+                <Property name="directChildrenOnly"><![CDATA[false]]></Property>
+                <Property name="recursiveSearch"><![CDATA[false]]></Property>
+                <Property name="sort"><![CDATA[no sort]]></Property>
+                <Property name="sortPropertyNames"><![CDATA[]]></Property>
+                <Property name="ascendingOrDescendingSort"><![CDATA[ascending]]></Property>
+                <Property name="keepChildren"><![CDATA[false]]></Property>
+                <Property name="keepParentStructure"><![CDATA[no]]></Property>
+                <Property name="setPublicationContextsForType"><![CDATA[Doorsjustification=GenericProvider,Doorsissue-decision=GenericProvider]]></Property>
+                <Property name="setPropertiesForType"><![CDATA[Doorsjustification=(title=Label,publishDescriptions=true,publishAssociatedResource=false,publishProperties=tabular,hideProperties=IE PUID\,IE Object Type\,Paragraph Style);Doorsissue-decision=(title=Label,publishDescriptions=true,publishAssociatedResource=false)]]></Property>
+                <Property name="addContainersForType"><![CDATA[]]></Property>
+                <Property name="addContainers"><![CDATA[]]></Property>
+                <Property name="selectContainerParentTypes"><![CDATA[*]]></Property>
+                <Property name="selectContainerParentFragmentName"><![CDATA[*]]></Property>
+                <Property name="selectContainerParentProperties"><![CDATA[]]></Property>
+                <Property name="linkTypes"><![CDATA[Doorsis justified by]]></Property>
+                <Property name="linkDirection"><![CDATA[out]]></Property>
+                <Property name="linkLabel"><![CDATA[*]]></Property>
+                <ProgrammaticAssemblyRule nature="" description="***DEPRECATED*** - keep for compatibility reasons (with existing customs) Create the assembly nodes corresponding to the applicative linked fragments of the parent of this container. The linked fragments shall match the rule conditions (type,  name and properties). The linked fragments can be sorted." sortType="No" ascending="true" freeze="false" allowSynchro="false" initialize="true"></ProgrammaticAssemblyRule>
+              </AutomaticAssemblyContainer>
+            </AssemblyFragment>
+            <AssemblyFragment id="fcca179f-9362-4653-a641-47735457bc08_1361888929332@EFXESS0109P/192.168.8.9" label="SVe-IVVP-004" typeId="Doorsivv procedure" publicationContextId="DoorsIVVProcedureProvider" fragmentElementId="orchestra://Doors/WakeUpClock/Object/4ca05e8652d31da4%2E00001168%2112?viewName=100%2E%20ORCH%20Document%20view">
+              <Property name="visible"><![CDATA[true]]></Property>
+              <Property name="changeOrientation"><![CDATA[No change]]></Property>
+              <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+              <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+              <Property name="lineBreakBefore"><![CDATA[false]]></Property>
+              <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+              <Property name="projectContextFilter"><![CDATA[]]></Property>
+              <AutomaticAssemblyContainer id="a3d61900-c20f-4eae-a4aa-5b4c1adcd71c_1361888929332@EFXESS0109P/192.168.8.9" label="Associated IDJ" typeId="AutomaticAssemblyApplicativeLinkedFragments" publicationContextId="AutomaticAssemblyProvider">
+                <Property name="visible"><![CDATA[true]]></Property>
+                <Property name="changeOrientation"><![CDATA[No change]]></Property>
+                <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+                <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+                <Property name="lineBreakBefore"><![CDATA[false]]></Property>
+                <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+                <Property name="projectContextFilter"><![CDATA[]]></Property>
+                <Property name="searchFromRoot"><![CDATA[parent]]></Property>
+                <Property name="includeRoot"><![CDATA[false]]></Property>
+                <Property name="searchFromFragment"><![CDATA[*]]></Property>
+                <Property name="searchFromFragmentType"><![CDATA[*]]></Property>
+                <Property name="selectTypes"><![CDATA[*]]></Property>
+                <Property name="selectFragmentName"><![CDATA[*]]></Property>
+                <Property name="selectCaseSensitiveFragmentName"><![CDATA[false]]></Property>
+                <Property name="nameProcessing"><![CDATA[no]]></Property>
+                <Property name="selectProperties"><![CDATA[]]></Property>
+                <Property name="directChildrenOnly"><![CDATA[false]]></Property>
+                <Property name="recursiveSearch"><![CDATA[false]]></Property>
+                <Property name="sort"><![CDATA[no sort]]></Property>
+                <Property name="sortPropertyNames"><![CDATA[]]></Property>
+                <Property name="ascendingOrDescendingSort"><![CDATA[ascending]]></Property>
+                <Property name="keepChildren"><![CDATA[false]]></Property>
+                <Property name="keepParentStructure"><![CDATA[no]]></Property>
+                <Property name="setPublicationContextsForType"><![CDATA[Doorsjustification=GenericProvider,Doorsissue-decision=GenericProvider]]></Property>
+                <Property name="setPropertiesForType"><![CDATA[Doorsjustification=(title=Label,publishDescriptions=true,publishAssociatedResource=false,publishProperties=tabular,hideProperties=IE PUID\,IE Object Type\,Paragraph Style);Doorsissue-decision=(title=Label,publishDescriptions=true,publishAssociatedResource=false)]]></Property>
+                <Property name="addContainersForType"><![CDATA[]]></Property>
+                <Property name="addContainers"><![CDATA[]]></Property>
+                <Property name="selectContainerParentTypes"><![CDATA[*]]></Property>
+                <Property name="selectContainerParentFragmentName"><![CDATA[*]]></Property>
+                <Property name="selectContainerParentProperties"><![CDATA[]]></Property>
+                <Property name="linkTypes"><![CDATA[Doorsis justified by]]></Property>
+                <Property name="linkDirection"><![CDATA[out]]></Property>
+                <Property name="linkLabel"><![CDATA[*]]></Property>
+                <ProgrammaticAssemblyRule nature="" description="***DEPRECATED*** - keep for compatibility reasons (with existing customs) Create the assembly nodes corresponding to the applicative linked fragments of the parent of this container. The linked fragments shall match the rule conditions (type,  name and properties). The linked fragments can be sorted." sortType="No" ascending="true" freeze="false" allowSynchro="false" initialize="true"></ProgrammaticAssemblyRule>
+              </AutomaticAssemblyContainer>
+            </AssemblyFragment>
+            <AssemblyFragment id="e18cdf02-066e-42b4-8c4d-4b340e263b28_1361888929332@EFXESS0109P/192.168.8.9" label="SVe-IVVP-007" typeId="Doorsivv procedure" publicationContextId="DoorsIVVProcedureProvider" fragmentElementId="orchestra://Doors/WakeUpClock/Object/4ca05e8652d31da4%2E00001168%2111?viewName=100%2E%20ORCH%20Document%20view">
+              <Property name="visible"><![CDATA[true]]></Property>
+              <Property name="changeOrientation"><![CDATA[No change]]></Property>
+              <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+              <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+              <Property name="lineBreakBefore"><![CDATA[false]]></Property>
+              <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+              <Property name="projectContextFilter"><![CDATA[]]></Property>
+              <AutomaticAssemblyContainer id="e22eedc5-f1a0-4ae6-ad46-155c3e551619_1361888929394@EFXESS0109P/192.168.8.9" label="Associated IDJ" typeId="AutomaticAssemblyApplicativeLinkedFragments" publicationContextId="AutomaticAssemblyProvider">
+                <Property name="visible"><![CDATA[true]]></Property>
+                <Property name="changeOrientation"><![CDATA[No change]]></Property>
+                <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+                <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+                <Property name="lineBreakBefore"><![CDATA[false]]></Property>
+                <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+                <Property name="projectContextFilter"><![CDATA[]]></Property>
+                <Property name="searchFromRoot"><![CDATA[parent]]></Property>
+                <Property name="includeRoot"><![CDATA[false]]></Property>
+                <Property name="searchFromFragment"><![CDATA[*]]></Property>
+                <Property name="searchFromFragmentType"><![CDATA[*]]></Property>
+                <Property name="selectTypes"><![CDATA[*]]></Property>
+                <Property name="selectFragmentName"><![CDATA[*]]></Property>
+                <Property name="selectCaseSensitiveFragmentName"><![CDATA[false]]></Property>
+                <Property name="nameProcessing"><![CDATA[no]]></Property>
+                <Property name="selectProperties"><![CDATA[]]></Property>
+                <Property name="directChildrenOnly"><![CDATA[false]]></Property>
+                <Property name="recursiveSearch"><![CDATA[false]]></Property>
+                <Property name="sort"><![CDATA[no sort]]></Property>
+                <Property name="sortPropertyNames"><![CDATA[]]></Property>
+                <Property name="ascendingOrDescendingSort"><![CDATA[ascending]]></Property>
+                <Property name="keepChildren"><![CDATA[false]]></Property>
+                <Property name="keepParentStructure"><![CDATA[no]]></Property>
+                <Property name="setPublicationContextsForType"><![CDATA[Doorsjustification=GenericProvider,Doorsissue-decision=GenericProvider]]></Property>
+                <Property name="setPropertiesForType"><![CDATA[Doorsjustification=(title=Label,publishDescriptions=true,publishAssociatedResource=false,publishProperties=tabular,hideProperties=IE PUID\,IE Object Type\,Paragraph Style);Doorsissue-decision=(title=Label,publishDescriptions=true,publishAssociatedResource=false)]]></Property>
+                <Property name="addContainersForType"><![CDATA[]]></Property>
+                <Property name="addContainers"><![CDATA[]]></Property>
+                <Property name="selectContainerParentTypes"><![CDATA[*]]></Property>
+                <Property name="selectContainerParentFragmentName"><![CDATA[*]]></Property>
+                <Property name="selectContainerParentProperties"><![CDATA[]]></Property>
+                <Property name="linkTypes"><![CDATA[Doorsis justified by]]></Property>
+                <Property name="linkDirection"><![CDATA[out]]></Property>
+                <Property name="linkLabel"><![CDATA[*]]></Property>
+                <ProgrammaticAssemblyRule nature="" description="***DEPRECATED*** - keep for compatibility reasons (with existing customs) Create the assembly nodes corresponding to the applicative linked fragments of the parent of this container. The linked fragments shall match the rule conditions (type,  name and properties). The linked fragments can be sorted." sortType="No" ascending="true" freeze="false" allowSynchro="false" initialize="true"></ProgrammaticAssemblyRule>
+              </AutomaticAssemblyContainer>
+            </AssemblyFragment>
+          </AssemblyFragment>
+          <AssemblyFragment id="ed99c9e0-4a0d-47b4-87fb-e6d6703af2db_1361888929332@EFXESS0109P/192.168.8.9" label="Performance, robustness, ..." typeId="DoorsObject" publicationContextId="DoorsHierarchicalObjectProvider" fragmentElementId="orchestra://Doors/WakeUpClock/Object/4ca05e8652d31da4%2E00001168%213?viewName=100%2E%20ORCH%20Document%20view">
+            <Property name="visible"><![CDATA[true]]></Property>
+            <Property name="changeOrientation"><![CDATA[No change]]></Property>
+            <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+            <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+            <Property name="lineBreakBefore"><![CDATA[false]]></Property>
+            <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+            <Property name="projectContextFilter"><![CDATA[]]></Property>
+            <Property name="headingIfNoLabelForNonTerminalElement"><![CDATA[false]]></Property>
+            <Property name="headingIfLabelForTerminalElement"><![CDATA[false]]></Property>
+            <Property name="generateBookmark"><![CDATA[false]]></Property>
+            <AssemblyFragment id="12d2145e-c408-4f08-8881-5cbb3cb1aa71_1361888929332@EFXESS0109P/192.168.8.9" label="SVe-IVVP-005" typeId="Doorsivv procedure" publicationContextId="DoorsIVVProcedureProvider" fragmentElementId="orchestra://Doors/WakeUpClock/Object/4ca05e8652d31da4%2E00001168%219?viewName=100%2E%20ORCH%20Document%20view">
+              <Property name="visible"><![CDATA[true]]></Property>
+              <Property name="changeOrientation"><![CDATA[No change]]></Property>
+              <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+              <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+              <Property name="lineBreakBefore"><![CDATA[false]]></Property>
+              <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+              <Property name="projectContextFilter"><![CDATA[]]></Property>
+              <AutomaticAssemblyContainer id="b6eba448-b3e0-45db-bc9f-5e49dcc1082c_1361888929394@EFXESS0109P/192.168.8.9" label="Associated IDJ" typeId="AutomaticAssemblyApplicativeLinkedFragments" publicationContextId="AutomaticAssemblyProvider">
+                <Property name="visible"><![CDATA[true]]></Property>
+                <Property name="changeOrientation"><![CDATA[No change]]></Property>
+                <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+                <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+                <Property name="lineBreakBefore"><![CDATA[false]]></Property>
+                <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+                <Property name="projectContextFilter"><![CDATA[]]></Property>
+                <Property name="searchFromRoot"><![CDATA[parent]]></Property>
+                <Property name="includeRoot"><![CDATA[false]]></Property>
+                <Property name="searchFromFragment"><![CDATA[*]]></Property>
+                <Property name="searchFromFragmentType"><![CDATA[*]]></Property>
+                <Property name="selectTypes"><![CDATA[*]]></Property>
+                <Property name="selectFragmentName"><![CDATA[*]]></Property>
+                <Property name="selectCaseSensitiveFragmentName"><![CDATA[false]]></Property>
+                <Property name="nameProcessing"><![CDATA[no]]></Property>
+                <Property name="selectProperties"><![CDATA[]]></Property>
+                <Property name="directChildrenOnly"><![CDATA[false]]></Property>
+                <Property name="recursiveSearch"><![CDATA[false]]></Property>
+                <Property name="sort"><![CDATA[no sort]]></Property>
+                <Property name="sortPropertyNames"><![CDATA[]]></Property>
+                <Property name="ascendingOrDescendingSort"><![CDATA[ascending]]></Property>
+                <Property name="keepChildren"><![CDATA[false]]></Property>
+                <Property name="keepParentStructure"><![CDATA[no]]></Property>
+                <Property name="setPublicationContextsForType"><![CDATA[Doorsjustification=GenericProvider,Doorsissue-decision=GenericProvider]]></Property>
+                <Property name="setPropertiesForType"><![CDATA[Doorsjustification=(title=Label,publishDescriptions=true,publishAssociatedResource=false,publishProperties=tabular,hideProperties=IE PUID\,IE Object Type\,Paragraph Style);Doorsissue-decision=(title=Label,publishDescriptions=true,publishAssociatedResource=false)]]></Property>
+                <Property name="addContainersForType"><![CDATA[]]></Property>
+                <Property name="addContainers"><![CDATA[]]></Property>
+                <Property name="selectContainerParentTypes"><![CDATA[*]]></Property>
+                <Property name="selectContainerParentFragmentName"><![CDATA[*]]></Property>
+                <Property name="selectContainerParentProperties"><![CDATA[]]></Property>
+                <Property name="linkTypes"><![CDATA[Doorsis justified by]]></Property>
+                <Property name="linkDirection"><![CDATA[out]]></Property>
+                <Property name="linkLabel"><![CDATA[*]]></Property>
+                <ProgrammaticAssemblyRule nature="" description="***DEPRECATED*** - keep for compatibility reasons (with existing customs) Create the assembly nodes corresponding to the applicative linked fragments of the parent of this container. The linked fragments shall match the rule conditions (type,  name and properties). The linked fragments can be sorted." sortType="No" ascending="true" freeze="false" allowSynchro="false" initialize="true"></ProgrammaticAssemblyRule>
+              </AutomaticAssemblyContainer>
+            </AssemblyFragment>
+            <AssemblyFragment id="cb715560-a10e-4dd1-a80e-ba634213bada_1361888929332@EFXESS0109P/192.168.8.9" label="SVe-IVVP-006" typeId="Doorsivv procedure" publicationContextId="DoorsIVVProcedureProvider" fragmentElementId="orchestra://Doors/WakeUpClock/Object/4ca05e8652d31da4%2E00001168%2110?viewName=100%2E%20ORCH%20Document%20view">
+              <Property name="visible"><![CDATA[true]]></Property>
+              <Property name="changeOrientation"><![CDATA[No change]]></Property>
+              <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+              <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+              <Property name="lineBreakBefore"><![CDATA[false]]></Property>
+              <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+              <Property name="projectContextFilter"><![CDATA[]]></Property>
+              <AutomaticAssemblyContainer id="3a9d10d5-4ab2-471f-a10e-5754ad64f5e2_1361888929394@EFXESS0109P/192.168.8.9" label="Associated IDJ" typeId="AutomaticAssemblyApplicativeLinkedFragments" publicationContextId="AutomaticAssemblyProvider">
+                <Property name="visible"><![CDATA[true]]></Property>
+                <Property name="changeOrientation"><![CDATA[No change]]></Property>
+                <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+                <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+                <Property name="lineBreakBefore"><![CDATA[false]]></Property>
+                <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+                <Property name="projectContextFilter"><![CDATA[]]></Property>
+                <Property name="searchFromRoot"><![CDATA[parent]]></Property>
+                <Property name="includeRoot"><![CDATA[false]]></Property>
+                <Property name="searchFromFragment"><![CDATA[*]]></Property>
+                <Property name="searchFromFragmentType"><![CDATA[*]]></Property>
+                <Property name="selectTypes"><![CDATA[*]]></Property>
+                <Property name="selectFragmentName"><![CDATA[*]]></Property>
+                <Property name="selectCaseSensitiveFragmentName"><![CDATA[false]]></Property>
+                <Property name="nameProcessing"><![CDATA[no]]></Property>
+                <Property name="selectProperties"><![CDATA[]]></Property>
+                <Property name="directChildrenOnly"><![CDATA[false]]></Property>
+                <Property name="recursiveSearch"><![CDATA[false]]></Property>
+                <Property name="sort"><![CDATA[no sort]]></Property>
+                <Property name="sortPropertyNames"><![CDATA[]]></Property>
+                <Property name="ascendingOrDescendingSort"><![CDATA[ascending]]></Property>
+                <Property name="keepChildren"><![CDATA[false]]></Property>
+                <Property name="keepParentStructure"><![CDATA[no]]></Property>
+                <Property name="setPublicationContextsForType"><![CDATA[Doorsjustification=GenericProvider,Doorsissue-decision=GenericProvider]]></Property>
+                <Property name="setPropertiesForType"><![CDATA[Doorsjustification=(title=Label,publishDescriptions=true,publishAssociatedResource=false,publishProperties=tabular,hideProperties=IE PUID\,IE Object Type\,Paragraph Style);Doorsissue-decision=(title=Label,publishDescriptions=true,publishAssociatedResource=false)]]></Property>
+                <Property name="addContainersForType"><![CDATA[]]></Property>
+                <Property name="addContainers"><![CDATA[]]></Property>
+                <Property name="selectContainerParentTypes"><![CDATA[*]]></Property>
+                <Property name="selectContainerParentFragmentName"><![CDATA[*]]></Property>
+                <Property name="selectContainerParentProperties"><![CDATA[]]></Property>
+                <Property name="linkTypes"><![CDATA[Doorsis justified by]]></Property>
+                <Property name="linkDirection"><![CDATA[out]]></Property>
+                <Property name="linkLabel"><![CDATA[*]]></Property>
+                <ProgrammaticAssemblyRule nature="" description="***DEPRECATED*** - keep for compatibility reasons (with existing customs) Create the assembly nodes corresponding to the applicative linked fragments of the parent of this container. The linked fragments shall match the rule conditions (type,  name and properties). The linked fragments can be sorted." sortType="No" ascending="true" freeze="false" allowSynchro="false" initialize="true"></ProgrammaticAssemblyRule>
+              </AutomaticAssemblyContainer>
+            </AssemblyFragment>
+            <AssemblyFragment id="706f864b-2290-40eb-8791-ad1c62cfd1b3_1361888929332@EFXESS0109P/192.168.8.9" label="SVe-IVVP-009" typeId="Doorsivv procedure" publicationContextId="DoorsIVVProcedureProvider" fragmentElementId="orchestra://Doors/WakeUpClock/Object/4ca05e8652d31da4%2E00001168%2115?viewName=100%2E%20ORCH%20Document%20view">
+              <Property name="visible"><![CDATA[true]]></Property>
+              <Property name="changeOrientation"><![CDATA[No change]]></Property>
+              <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+              <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+              <Property name="lineBreakBefore"><![CDATA[false]]></Property>
+              <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+              <Property name="projectContextFilter"><![CDATA[]]></Property>
+              <AutomaticAssemblyContainer id="2be3c087-d838-43f2-a7a3-0cf8acac846b_1361888929394@EFXESS0109P/192.168.8.9" label="Associated IDJ" typeId="AutomaticAssemblyApplicativeLinkedFragments" publicationContextId="AutomaticAssemblyProvider">
+                <Property name="visible"><![CDATA[true]]></Property>
+                <Property name="changeOrientation"><![CDATA[No change]]></Property>
+                <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+                <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+                <Property name="lineBreakBefore"><![CDATA[false]]></Property>
+                <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+                <Property name="projectContextFilter"><![CDATA[]]></Property>
+                <Property name="searchFromRoot"><![CDATA[parent]]></Property>
+                <Property name="includeRoot"><![CDATA[false]]></Property>
+                <Property name="searchFromFragment"><![CDATA[*]]></Property>
+                <Property name="searchFromFragmentType"><![CDATA[*]]></Property>
+                <Property name="selectTypes"><![CDATA[*]]></Property>
+                <Property name="selectFragmentName"><![CDATA[*]]></Property>
+                <Property name="selectCaseSensitiveFragmentName"><![CDATA[false]]></Property>
+                <Property name="nameProcessing"><![CDATA[no]]></Property>
+                <Property name="selectProperties"><![CDATA[]]></Property>
+                <Property name="directChildrenOnly"><![CDATA[false]]></Property>
+                <Property name="recursiveSearch"><![CDATA[false]]></Property>
+                <Property name="sort"><![CDATA[no sort]]></Property>
+                <Property name="sortPropertyNames"><![CDATA[]]></Property>
+                <Property name="ascendingOrDescendingSort"><![CDATA[ascending]]></Property>
+                <Property name="keepChildren"><![CDATA[false]]></Property>
+                <Property name="keepParentStructure"><![CDATA[no]]></Property>
+                <Property name="setPublicationContextsForType"><![CDATA[Doorsjustification=GenericProvider,Doorsissue-decision=GenericProvider]]></Property>
+                <Property name="setPropertiesForType"><![CDATA[Doorsjustification=(title=Label,publishDescriptions=true,publishAssociatedResource=false,publishProperties=tabular,hideProperties=IE PUID\,IE Object Type\,Paragraph Style);Doorsissue-decision=(title=Label,publishDescriptions=true,publishAssociatedResource=false)]]></Property>
+                <Property name="addContainersForType"><![CDATA[]]></Property>
+                <Property name="addContainers"><![CDATA[]]></Property>
+                <Property name="selectContainerParentTypes"><![CDATA[*]]></Property>
+                <Property name="selectContainerParentFragmentName"><![CDATA[*]]></Property>
+                <Property name="selectContainerParentProperties"><![CDATA[]]></Property>
+                <Property name="linkTypes"><![CDATA[Doorsis justified by]]></Property>
+                <Property name="linkDirection"><![CDATA[out]]></Property>
+                <Property name="linkLabel"><![CDATA[*]]></Property>
+                <ProgrammaticAssemblyRule nature="" description="***DEPRECATED*** - keep for compatibility reasons (with existing customs) Create the assembly nodes corresponding to the applicative linked fragments of the parent of this container. The linked fragments shall match the rule conditions (type,  name and properties). The linked fragments can be sorted." sortType="No" ascending="true" freeze="false" allowSynchro="false" initialize="true"></ProgrammaticAssemblyRule>
+              </AutomaticAssemblyContainer>
+            </AssemblyFragment>
+            <AssemblyFragment id="86cea30f-d1b8-40bb-b448-37987441d6f8_1361888929332@EFXESS0109P/192.168.8.9" label="SVe-IVVP-008" typeId="Doorsivv procedure" publicationContextId="DoorsIVVProcedureProvider" fragmentElementId="orchestra://Doors/WakeUpClock/Object/4ca05e8652d31da4%2E00001168%2114?viewName=100%2E%20ORCH%20Document%20view">
+              <Property name="visible"><![CDATA[true]]></Property>
+              <Property name="changeOrientation"><![CDATA[No change]]></Property>
+              <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+              <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+              <Property name="lineBreakBefore"><![CDATA[false]]></Property>
+              <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+              <Property name="projectContextFilter"><![CDATA[]]></Property>
+              <AutomaticAssemblyContainer id="ee120c8d-6c84-4400-8dec-c2e64d01f777_1361888929394@EFXESS0109P/192.168.8.9" label="Associated IDJ" typeId="AutomaticAssemblyApplicativeLinkedFragments" publicationContextId="AutomaticAssemblyProvider">
+                <Property name="visible"><![CDATA[true]]></Property>
+                <Property name="changeOrientation"><![CDATA[No change]]></Property>
+                <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+                <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+                <Property name="lineBreakBefore"><![CDATA[false]]></Property>
+                <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+                <Property name="projectContextFilter"><![CDATA[]]></Property>
+                <Property name="searchFromRoot"><![CDATA[parent]]></Property>
+                <Property name="includeRoot"><![CDATA[false]]></Property>
+                <Property name="searchFromFragment"><![CDATA[*]]></Property>
+                <Property name="searchFromFragmentType"><![CDATA[*]]></Property>
+                <Property name="selectTypes"><![CDATA[*]]></Property>
+                <Property name="selectFragmentName"><![CDATA[*]]></Property>
+                <Property name="selectCaseSensitiveFragmentName"><![CDATA[false]]></Property>
+                <Property name="nameProcessing"><![CDATA[no]]></Property>
+                <Property name="selectProperties"><![CDATA[]]></Property>
+                <Property name="directChildrenOnly"><![CDATA[false]]></Property>
+                <Property name="recursiveSearch"><![CDATA[false]]></Property>
+                <Property name="sort"><![CDATA[no sort]]></Property>
+                <Property name="sortPropertyNames"><![CDATA[]]></Property>
+                <Property name="ascendingOrDescendingSort"><![CDATA[ascending]]></Property>
+                <Property name="keepChildren"><![CDATA[false]]></Property>
+                <Property name="keepParentStructure"><![CDATA[no]]></Property>
+                <Property name="setPublicationContextsForType"><![CDATA[Doorsjustification=GenericProvider,Doorsissue-decision=GenericProvider]]></Property>
+                <Property name="setPropertiesForType"><![CDATA[Doorsjustification=(title=Label,publishDescriptions=true,publishAssociatedResource=false,publishProperties=tabular,hideProperties=IE PUID\,IE Object Type\,Paragraph Style);Doorsissue-decision=(title=Label,publishDescriptions=true,publishAssociatedResource=false)]]></Property>
+                <Property name="addContainersForType"><![CDATA[]]></Property>
+                <Property name="addContainers"><![CDATA[]]></Property>
+                <Property name="selectContainerParentTypes"><![CDATA[*]]></Property>
+                <Property name="selectContainerParentFragmentName"><![CDATA[*]]></Property>
+                <Property name="selectContainerParentProperties"><![CDATA[]]></Property>
+                <Property name="linkTypes"><![CDATA[Doorsis justified by]]></Property>
+                <Property name="linkDirection"><![CDATA[out]]></Property>
+                <Property name="linkLabel"><![CDATA[*]]></Property>
+                <ProgrammaticAssemblyRule nature="" description="***DEPRECATED*** - keep for compatibility reasons (with existing customs) Create the assembly nodes corresponding to the applicative linked fragments of the parent of this container. The linked fragments shall match the rule conditions (type,  name and properties). The linked fragments can be sorted." sortType="No" ascending="true" freeze="false" allowSynchro="false" initialize="true"></ProgrammaticAssemblyRule>
+              </AutomaticAssemblyContainer>
+            </AssemblyFragment>
+          </AssemblyFragment>
+        </AssemblyFragment>
+        <ProgrammaticAssemblyRule nature="" description="Default automatic assembly rule - Create the assembly nodes corresponding to the rule conditions: from scope root fragments, search fragments that match the rule (types, names and properties). Found fragments can be sorted." sortType="No" ascending="true" freeze="false" allowSynchro="false" initialize="true"></ProgrammaticAssemblyRule>
+      </AutomaticAssemblyContainer>
+    </SectionAssemblyContainer>
+    <SectionAssemblyContainer id="TRTP0644/150.2.22.45_1181924975578_588" label="TEST SCHEDULES" typeId="DocumentSection" publicationContextId="HeadingProvider">
+      <Property name="visible"><![CDATA[true]]></Property>
+      <Property name="changeOrientation"><![CDATA[Landscape]]></Property>
+      <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+      <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+      <Property name="lineBreakBefore"><![CDATA[false]]></Property>
+      <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+      <Property name="projectContextFilter"><![CDATA[]]></Property>
+      <Property name="appendix"><![CDATA[false]]></Property>
+      <Property name="beforeTOC_Introduction"><![CDATA[false]]></Property>
+      <Property name="bookmarkTag"><![CDATA[]]></Property>
+      <AutomaticAssemblyContainer id="c81d91fc-c098-4a9b-b781-528fd01e5046_1324017987201@VMO385/150.2.38.139" label="&lt;&lt; Automatic Assembly &gt;&gt;" typeId="AutomaticAssemblyDefault" publicationContextId="AutomaticAssemblyProvider">
+        <Property name="visible"><![CDATA[true]]></Property>
+        <Property name="changeOrientation"><![CDATA[No change]]></Property>
+        <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+        <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+        <Property name="lineBreakBefore"><![CDATA[false]]></Property>
+        <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+        <Property name="projectContextFilter"><![CDATA[]]></Property>
+        <Property name="searchFromRoot"><![CDATA[all]]></Property>
+        <Property name="includeRoot"><![CDATA[true]]></Property>
+        <Property name="searchFromFragment"><![CDATA[*]]></Property>
+        <Property name="searchFromFragmentType"><![CDATA[*]]></Property>
+        <Property name="selectTypes"><![CDATA[*]]></Property>
+        <Property name="selectFragmentName"><![CDATA[*202. ORCH Test Order]]></Property>
+        <Property name="selectCaseSensitiveFragmentName"><![CDATA[false]]></Property>
+        <Property name="nameProcessing"><![CDATA[no]]></Property>
+        <Property name="selectProperties"><![CDATA[]]></Property>
+        <Property name="directChildrenOnly"><![CDATA[false]]></Property>
+        <Property name="recursiveSearch"><![CDATA[false]]></Property>
+        <Property name="sort"><![CDATA[no sort]]></Property>
+        <Property name="sortPropertyNames"><![CDATA[]]></Property>
+        <Property name="ascendingOrDescendingSort"><![CDATA[ascending]]></Property>
+        <Property name="keepChildren"><![CDATA[true]]></Property>
+        <Property name="keepParentStructure"><![CDATA[no]]></Property>
+        <Property name="setPublicationContextsForType"><![CDATA[DoorsView=DoorsMatrixModeViewProvider]]></Property>
+        <Property name="setPropertiesForType"><![CDATA[DoorsView=(hideColumnsEmptyValues=true,caption=View only)]]></Property>
+        <Property name="addContainersForType"><![CDATA[]]></Property>
+        <Property name="addContainers"><![CDATA[]]></Property>
+        <AssemblyFragment id="768127c8-e6d7-46b1-9e18-34a86bc7c2cf_1361888929394@EFXESS0109P/192.168.8.9" label="(WakeUpClock System.IVV.Verification.System verification View) 202. ORCH Test Order" typeId="DoorsView" publicationContextId="DoorsMatrixModeViewProvider" fragmentElementId="orchestra://Doors/WakeUpClock/View/4ca05e8652d31da4%2E00001168%21202%2E%20ORCH%20Test%20Order">
+          <Property name="visible"><![CDATA[true]]></Property>
+          <Property name="changeOrientation"><![CDATA[No change]]></Property>
+          <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+          <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+          <Property name="lineBreakBefore"><![CDATA[false]]></Property>
+          <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+          <Property name="projectContextFilter"><![CDATA[]]></Property>
+          <Property name="automaticColumnSize"><![CDATA[false]]></Property>
+          <Property name="columnSize"><![CDATA[]]></Property>
+          <Property name="showColumns"><![CDATA[]]></Property>
+          <Property name="hideHeaderColumns"><![CDATA[false]]></Property>
+          <Property name="hideColumns"><![CDATA[]]></Property>
+          <Property name="hideColumnsEmptyValues"><![CDATA[true]]></Property>
+          <Property name="hideRowsEmptyValues"><![CDATA[false]]></Property>
+          <Property name="hideEmptyTable"><![CDATA[false]]></Property>
+          <Property name="noBorderForSameValue"><![CDATA[false]]></Property>
+          <Property name="noBorderForSameValueForColumns"><![CDATA[]]></Property>
+          <Property name="noBorderForSameValueMasterColumns"><![CDATA[]]></Property>
+          <Property name="hyperlinkForColumns"><![CDATA[]]></Property>
+          <Property name="processChildrenRecursively"><![CDATA[true]]></Property>
+          <Property name="sort"><![CDATA[No Sort]]></Property>
+          <Property name="sortColumns"><![CDATA[]]></Property>
+          <Property name="columnTitles"><![CDATA[]]></Property>
+          <Property name="tableTitle"><![CDATA[CaptionOnly]]></Property>
+          <Property name="fontSizeHeader"><![CDATA[10]]></Property>
+          <Property name="fontSizeContent"><![CDATA[10]]></Property>
+          <Property name="tableWidthPortrait"><![CDATA[16]]></Property>
+          <Property name="tableWidthLandscape"><![CDATA[22]]></Property>
+          <Property name="matrixColumnsNotToPublish"><![CDATA[]]></Property>
+          <Property name="caption"><![CDATA[View only]]></Property>
+          <AssemblyFragment id="93bbd2a9-c418-4f01-8c75-6eb8362a48d3_1361888929394@EFXESS0109P/192.168.8.9" label="Functional" typeId="DoorsObject" publicationContextId="DoorsHierarchicalObjectProvider" fragmentElementId="orchestra://Doors/WakeUpClock/Object/4ca05e8652d31da4%2E00001168%211?viewName=202%2E%20ORCH%20Test%20Order">
+            <Property name="visible"><![CDATA[true]]></Property>
+            <Property name="changeOrientation"><![CDATA[No change]]></Property>
+            <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+            <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+            <Property name="lineBreakBefore"><![CDATA[false]]></Property>
+            <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+            <Property name="projectContextFilter"><![CDATA[]]></Property>
+            <Property name="headingIfNoLabelForNonTerminalElement"><![CDATA[false]]></Property>
+            <Property name="headingIfLabelForTerminalElement"><![CDATA[false]]></Property>
+            <Property name="generateBookmark"><![CDATA[false]]></Property>
+            <AssemblyFragment id="37d37190-1b1a-4e40-b948-307e66cd703e_1361888929394@EFXESS0109P/192.168.8.9" label="SVe-IVVP-001" typeId="Doorsivv procedure" publicationContextId="IvvProcedureProvider" fragmentElementId="orchestra://Doors/WakeUpClock/Object/4ca05e8652d31da4%2E00001168%214?viewName=202%2E%20ORCH%20Test%20Order">
+              <Property name="visible"><![CDATA[true]]></Property>
+              <Property name="changeOrientation"><![CDATA[No change]]></Property>
+              <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+              <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+              <Property name="lineBreakBefore"><![CDATA[true]]></Property>
+              <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+              <Property name="projectContextFilter"><![CDATA[]]></Property>
+              <Property name="keepWithNext"><![CDATA[false]]></Property>
+              <Property name="publishAttributesWithNoValue"><![CDATA[false]]></Property>
+              <Property name="attributesNotToPublish"><![CDATA[PUID, Title, Test objectives]]></Property>
+              <Property name="generateBookmark"><![CDATA[false]]></Property>
+            </AssemblyFragment>
+            <AssemblyFragment id="8baefcc6-939a-4003-96a2-c0203cd95c77_1361888929394@EFXESS0109P/192.168.8.9" label="SVe-IVVP-002" typeId="Doorsivv procedure" publicationContextId="IvvProcedureProvider" fragmentElementId="orchestra://Doors/WakeUpClock/Object/4ca05e8652d31da4%2E00001168%215?viewName=202%2E%20ORCH%20Test%20Order">
+              <Property name="visible"><![CDATA[true]]></Property>
+              <Property name="changeOrientation"><![CDATA[No change]]></Property>
+              <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+              <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+              <Property name="lineBreakBefore"><![CDATA[true]]></Property>
+              <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+              <Property name="projectContextFilter"><![CDATA[]]></Property>
+              <Property name="keepWithNext"><![CDATA[false]]></Property>
+              <Property name="publishAttributesWithNoValue"><![CDATA[false]]></Property>
+              <Property name="attributesNotToPublish"><![CDATA[PUID, Title, Test objectives]]></Property>
+              <Property name="generateBookmark"><![CDATA[false]]></Property>
+            </AssemblyFragment>
+            <AssemblyFragment id="4908cd1a-d17a-45dc-b037-ea97b1219f66_1361888929394@EFXESS0109P/192.168.8.9" label="SVe-IVVP-003" typeId="Doorsivv procedure" publicationContextId="IvvProcedureProvider" fragmentElementId="orchestra://Doors/WakeUpClock/Object/4ca05e8652d31da4%2E00001168%217?viewName=202%2E%20ORCH%20Test%20Order">
+              <Property name="visible"><![CDATA[true]]></Property>
+              <Property name="changeOrientation"><![CDATA[No change]]></Property>
+              <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+              <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+              <Property name="lineBreakBefore"><![CDATA[true]]></Property>
+              <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+              <Property name="projectContextFilter"><![CDATA[]]></Property>
+              <Property name="keepWithNext"><![CDATA[false]]></Property>
+              <Property name="publishAttributesWithNoValue"><![CDATA[false]]></Property>
+              <Property name="attributesNotToPublish"><![CDATA[PUID, Title, Test objectives]]></Property>
+              <Property name="generateBookmark"><![CDATA[false]]></Property>
+            </AssemblyFragment>
+            <AssemblyFragment id="bab319df-2b5c-4dbc-b2b8-193e0de50a42_1361888929394@EFXESS0109P/192.168.8.9" label="SVe-IVVP-004" typeId="Doorsivv procedure" publicationContextId="IvvProcedureProvider" fragmentElementId="orchestra://Doors/WakeUpClock/Object/4ca05e8652d31da4%2E00001168%2112?viewName=202%2E%20ORCH%20Test%20Order">
+              <Property name="visible"><![CDATA[true]]></Property>
+              <Property name="changeOrientation"><![CDATA[No change]]></Property>
+              <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+              <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+              <Property name="lineBreakBefore"><![CDATA[true]]></Property>
+              <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+              <Property name="projectContextFilter"><![CDATA[]]></Property>
+              <Property name="keepWithNext"><![CDATA[false]]></Property>
+              <Property name="publishAttributesWithNoValue"><![CDATA[false]]></Property>
+              <Property name="attributesNotToPublish"><![CDATA[PUID, Title, Test objectives]]></Property>
+              <Property name="generateBookmark"><![CDATA[false]]></Property>
+            </AssemblyFragment>
+            <AssemblyFragment id="72e0de11-25d5-4bc7-9550-91420bae1e26_1361888929394@EFXESS0109P/192.168.8.9" label="SVe-IVVP-007" typeId="Doorsivv procedure" publicationContextId="IvvProcedureProvider" fragmentElementId="orchestra://Doors/WakeUpClock/Object/4ca05e8652d31da4%2E00001168%2111?viewName=202%2E%20ORCH%20Test%20Order">
+              <Property name="visible"><![CDATA[true]]></Property>
+              <Property name="changeOrientation"><![CDATA[No change]]></Property>
+              <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+              <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+              <Property name="lineBreakBefore"><![CDATA[true]]></Property>
+              <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+              <Property name="projectContextFilter"><![CDATA[]]></Property>
+              <Property name="keepWithNext"><![CDATA[false]]></Property>
+              <Property name="publishAttributesWithNoValue"><![CDATA[false]]></Property>
+              <Property name="attributesNotToPublish"><![CDATA[PUID, Title, Test objectives]]></Property>
+              <Property name="generateBookmark"><![CDATA[false]]></Property>
+            </AssemblyFragment>
+          </AssemblyFragment>
+          <AssemblyFragment id="36e00d32-4a1e-4a73-be88-080471c3096c_1361888929394@EFXESS0109P/192.168.8.9" label="Performance, robustness, ..." typeId="DoorsObject" publicationContextId="DoorsHierarchicalObjectProvider" fragmentElementId="orchestra://Doors/WakeUpClock/Object/4ca05e8652d31da4%2E00001168%213?viewName=202%2E%20ORCH%20Test%20Order">
+            <Property name="visible"><![CDATA[true]]></Property>
+            <Property name="changeOrientation"><![CDATA[No change]]></Property>
+            <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+            <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+            <Property name="lineBreakBefore"><![CDATA[false]]></Property>
+            <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+            <Property name="projectContextFilter"><![CDATA[]]></Property>
+            <Property name="headingIfNoLabelForNonTerminalElement"><![CDATA[false]]></Property>
+            <Property name="headingIfLabelForTerminalElement"><![CDATA[false]]></Property>
+            <Property name="generateBookmark"><![CDATA[false]]></Property>
+            <AssemblyFragment id="c75bfbaa-0dbf-48ad-85e6-0c733a3ca1df_1361888929394@EFXESS0109P/192.168.8.9" label="SVe-IVVP-005" typeId="Doorsivv procedure" publicationContextId="IvvProcedureProvider" fragmentElementId="orchestra://Doors/WakeUpClock/Object/4ca05e8652d31da4%2E00001168%219?viewName=202%2E%20ORCH%20Test%20Order">
+              <Property name="visible"><![CDATA[true]]></Property>
+              <Property name="changeOrientation"><![CDATA[No change]]></Property>
+              <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+              <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+              <Property name="lineBreakBefore"><![CDATA[true]]></Property>
+              <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+              <Property name="projectContextFilter"><![CDATA[]]></Property>
+              <Property name="keepWithNext"><![CDATA[false]]></Property>
+              <Property name="publishAttributesWithNoValue"><![CDATA[false]]></Property>
+              <Property name="attributesNotToPublish"><![CDATA[PUID, Title, Test objectives]]></Property>
+              <Property name="generateBookmark"><![CDATA[false]]></Property>
+            </AssemblyFragment>
+            <AssemblyFragment id="fda8eda3-6c28-4013-b0da-5927ba48acfe_1361888929394@EFXESS0109P/192.168.8.9" label="SVe-IVVP-006" typeId="Doorsivv procedure" publicationContextId="IvvProcedureProvider" fragmentElementId="orchestra://Doors/WakeUpClock/Object/4ca05e8652d31da4%2E00001168%2110?viewName=202%2E%20ORCH%20Test%20Order">
+              <Property name="visible"><![CDATA[true]]></Property>
+              <Property name="changeOrientation"><![CDATA[No change]]></Property>
+              <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+              <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+              <Property name="lineBreakBefore"><![CDATA[true]]></Property>
+              <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+              <Property name="projectContextFilter"><![CDATA[]]></Property>
+              <Property name="keepWithNext"><![CDATA[false]]></Property>
+              <Property name="publishAttributesWithNoValue"><![CDATA[false]]></Property>
+              <Property name="attributesNotToPublish"><![CDATA[PUID, Title, Test objectives]]></Property>
+              <Property name="generateBookmark"><![CDATA[false]]></Property>
+            </AssemblyFragment>
+            <AssemblyFragment id="612bdf93-f59e-4abd-8c0c-26755778e62c_1361888929394@EFXESS0109P/192.168.8.9" label="SVe-IVVP-009" typeId="Doorsivv procedure" publicationContextId="IvvProcedureProvider" fragmentElementId="orchestra://Doors/WakeUpClock/Object/4ca05e8652d31da4%2E00001168%2115?viewName=202%2E%20ORCH%20Test%20Order">
+              <Property name="visible"><![CDATA[true]]></Property>
+              <Property name="changeOrientation"><![CDATA[No change]]></Property>
+              <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+              <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+              <Property name="lineBreakBefore"><![CDATA[true]]></Property>
+              <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+              <Property name="projectContextFilter"><![CDATA[]]></Property>
+              <Property name="keepWithNext"><![CDATA[false]]></Property>
+              <Property name="publishAttributesWithNoValue"><![CDATA[false]]></Property>
+              <Property name="attributesNotToPublish"><![CDATA[PUID, Title, Test objectives]]></Property>
+              <Property name="generateBookmark"><![CDATA[false]]></Property>
+            </AssemblyFragment>
+            <AssemblyFragment id="974f67e4-5095-488d-abd7-f2d724ae5e38_1361888929394@EFXESS0109P/192.168.8.9" label="SVe-IVVP-008" typeId="Doorsivv procedure" publicationContextId="IvvProcedureProvider" fragmentElementId="orchestra://Doors/WakeUpClock/Object/4ca05e8652d31da4%2E00001168%2114?viewName=202%2E%20ORCH%20Test%20Order">
+              <Property name="visible"><![CDATA[true]]></Property>
+              <Property name="changeOrientation"><![CDATA[No change]]></Property>
+              <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+              <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+              <Property name="lineBreakBefore"><![CDATA[true]]></Property>
+              <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+              <Property name="projectContextFilter"><![CDATA[]]></Property>
+              <Property name="keepWithNext"><![CDATA[false]]></Property>
+              <Property name="publishAttributesWithNoValue"><![CDATA[false]]></Property>
+              <Property name="attributesNotToPublish"><![CDATA[PUID, Title, Test objectives]]></Property>
+              <Property name="generateBookmark"><![CDATA[false]]></Property>
+            </AssemblyFragment>
+          </AssemblyFragment>
+        </AssemblyFragment>
+        <ProgrammaticAssemblyRule nature="" description="Default automatic assembly rule - Create the assembly nodes corresponding to the rule conditions: from scope root fragments, search fragments that match the rule (types, names and properties). Found fragments can be sorted." sortType="No" ascending="true" freeze="false" allowSynchro="false" initialize="true"></ProgrammaticAssemblyRule>
+      </AutomaticAssemblyContainer>
+    </SectionAssemblyContainer>
+    <SectionAssemblyContainer id="TRTP0644/150.2.22.45_1181924975578_589" label="REQUIREMENTS TRACEABILITY" typeId="DocumentSection" publicationContextId="HeadingProvider">
+      <Property name="visible"><![CDATA[true]]></Property>
+      <Property name="changeOrientation"><![CDATA[Landscape]]></Property>
+      <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+      <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+      <Property name="lineBreakBefore"><![CDATA[false]]></Property>
+      <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+      <Property name="projectContextFilter"><![CDATA[]]></Property>
+      <Property name="appendix"><![CDATA[false]]></Property>
+      <Property name="beforeTOC_Introduction"><![CDATA[false]]></Property>
+      <Property name="bookmarkTag"><![CDATA[]]></Property>
+      <AutomaticAssemblyContainer id="44ca9ec6-6051-4968-9e8c-695499633451_1324017988139@VMO385/150.2.38.139" label="&lt;&lt; Automatic Assembly &gt;&gt;" typeId="AutomaticAssemblyDefault" publicationContextId="AutomaticAssemblyProvider">
+        <Property name="visible"><![CDATA[true]]></Property>
+        <Property name="changeOrientation"><![CDATA[No change]]></Property>
+        <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+        <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+        <Property name="lineBreakBefore"><![CDATA[false]]></Property>
+        <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+        <Property name="projectContextFilter"><![CDATA[]]></Property>
+        <Property name="searchFromRoot"><![CDATA[all]]></Property>
+        <Property name="includeRoot"><![CDATA[true]]></Property>
+        <Property name="searchFromFragment"><![CDATA[*]]></Property>
+        <Property name="searchFromFragmentType"><![CDATA[*]]></Property>
+        <Property name="selectTypes"><![CDATA[*]]></Property>
+        <Property name="selectFragmentName"><![CDATA[*30. IVV matrix]]></Property>
+        <Property name="selectCaseSensitiveFragmentName"><![CDATA[false]]></Property>
+        <Property name="nameProcessing"><![CDATA[no]]></Property>
+        <Property name="selectProperties"><![CDATA[]]></Property>
+        <Property name="directChildrenOnly"><![CDATA[false]]></Property>
+        <Property name="recursiveSearch"><![CDATA[false]]></Property>
+        <Property name="sort"><![CDATA[no sort]]></Property>
+        <Property name="sortPropertyNames"><![CDATA[]]></Property>
+        <Property name="ascendingOrDescendingSort"><![CDATA[ascending]]></Property>
+        <Property name="keepChildren"><![CDATA[true]]></Property>
+        <Property name="keepParentStructure"><![CDATA[no]]></Property>
+        <Property name="setPublicationContextsForType"><![CDATA[DoorsView=DoorsMatrixModeViewProvider]]></Property>
+        <Property name="setPropertiesForType"><![CDATA[DoorsView=(hideColumnsEmptyValues=true,caption=View only, noBorderForSameValue=true)]]></Property>
+        <Property name="addContainersForType"><![CDATA[]]></Property>
+        <Property name="addContainers"><![CDATA[]]></Property>
+        <AssemblyFragment id="366a2bf5-1e83-438f-b58a-e95e5b53628e_1361888929394@EFXESS0109P/192.168.8.9" label="(WakeUpClock System.IVV.Verification.System verification View) 30. IVV matrix" typeId="DoorsView" publicationContextId="DoorsMatrixModeViewProvider" fragmentElementId="orchestra://Doors/WakeUpClock/View/4ca05e8652d31da4%2E00001168%2130%2E%20IVV%20matrix">
+          <Property name="visible"><![CDATA[true]]></Property>
+          <Property name="changeOrientation"><![CDATA[No change]]></Property>
+          <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+          <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+          <Property name="lineBreakBefore"><![CDATA[false]]></Property>
+          <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+          <Property name="projectContextFilter"><![CDATA[]]></Property>
+          <Property name="automaticColumnSize"><![CDATA[false]]></Property>
+          <Property name="columnSize"><![CDATA[]]></Property>
+          <Property name="showColumns"><![CDATA[]]></Property>
+          <Property name="hideHeaderColumns"><![CDATA[false]]></Property>
+          <Property name="hideColumns"><![CDATA[]]></Property>
+          <Property name="hideColumnsEmptyValues"><![CDATA[true]]></Property>
+          <Property name="hideRowsEmptyValues"><![CDATA[false]]></Property>
+          <Property name="hideEmptyTable"><![CDATA[false]]></Property>
+          <Property name="noBorderForSameValue"><![CDATA[true]]></Property>
+          <Property name="noBorderForSameValueForColumns"><![CDATA[]]></Property>
+          <Property name="noBorderForSameValueMasterColumns"><![CDATA[]]></Property>
+          <Property name="hyperlinkForColumns"><![CDATA[]]></Property>
+          <Property name="processChildrenRecursively"><![CDATA[true]]></Property>
+          <Property name="sort"><![CDATA[No Sort]]></Property>
+          <Property name="sortColumns"><![CDATA[]]></Property>
+          <Property name="columnTitles"><![CDATA[]]></Property>
+          <Property name="tableTitle"><![CDATA[CaptionOnly]]></Property>
+          <Property name="fontSizeHeader"><![CDATA[10]]></Property>
+          <Property name="fontSizeContent"><![CDATA[10]]></Property>
+          <Property name="tableWidthPortrait"><![CDATA[16]]></Property>
+          <Property name="tableWidthLandscape"><![CDATA[22]]></Property>
+          <Property name="matrixColumnsNotToPublish"><![CDATA[]]></Property>
+          <Property name="caption"><![CDATA[View only]]></Property>
+          <AssemblyFragment id="ac715f60-69bf-4682-8d02-3951199dfeca_1361888929394@EFXESS0109P/192.168.8.9" label="SVe-IVVP-001" typeId="Doorsivv procedure" publicationContextId="IvvProcedureProvider" fragmentElementId="orchestra://Doors/WakeUpClock/Object/4ca05e8652d31da4%2E00001168%214?viewName=30%2E%20IVV%20matrix">
+            <Property name="visible"><![CDATA[true]]></Property>
+            <Property name="changeOrientation"><![CDATA[No change]]></Property>
+            <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+            <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+            <Property name="lineBreakBefore"><![CDATA[true]]></Property>
+            <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+            <Property name="projectContextFilter"><![CDATA[]]></Property>
+            <Property name="keepWithNext"><![CDATA[false]]></Property>
+            <Property name="publishAttributesWithNoValue"><![CDATA[false]]></Property>
+            <Property name="attributesNotToPublish"><![CDATA[PUID, Title, Test objectives]]></Property>
+            <Property name="generateBookmark"><![CDATA[false]]></Property>
+          </AssemblyFragment>
+          <AssemblyFragment id="04952532-211f-4a58-a9e7-17c8eb685074_1361888929394@EFXESS0109P/192.168.8.9" label="SVe-IVVP-002" typeId="Doorsivv procedure" publicationContextId="IvvProcedureProvider" fragmentElementId="orchestra://Doors/WakeUpClock/Object/4ca05e8652d31da4%2E00001168%215?viewName=30%2E%20IVV%20matrix">
+            <Property name="visible"><![CDATA[true]]></Property>
+            <Property name="changeOrientation"><![CDATA[No change]]></Property>
+            <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+            <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+            <Property name="lineBreakBefore"><![CDATA[true]]></Property>
+            <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+            <Property name="projectContextFilter"><![CDATA[]]></Property>
+            <Property name="keepWithNext"><![CDATA[false]]></Property>
+            <Property name="publishAttributesWithNoValue"><![CDATA[false]]></Property>
+            <Property name="attributesNotToPublish"><![CDATA[PUID, Title, Test objectives]]></Property>
+            <Property name="generateBookmark"><![CDATA[false]]></Property>
+          </AssemblyFragment>
+          <AssemblyFragment id="3814a873-8b63-4f1a-87aa-5e74a0f7dbca_1361888929394@EFXESS0109P/192.168.8.9" label="SVe-IVVP-003" typeId="Doorsivv procedure" publicationContextId="IvvProcedureProvider" fragmentElementId="orchestra://Doors/WakeUpClock/Object/4ca05e8652d31da4%2E00001168%217?viewName=30%2E%20IVV%20matrix">
+            <Property name="visible"><![CDATA[true]]></Property>
+            <Property name="changeOrientation"><![CDATA[No change]]></Property>
+            <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+            <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+            <Property name="lineBreakBefore"><![CDATA[true]]></Property>
+            <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+            <Property name="projectContextFilter"><![CDATA[]]></Property>
+            <Property name="keepWithNext"><![CDATA[false]]></Property>
+            <Property name="publishAttributesWithNoValue"><![CDATA[false]]></Property>
+            <Property name="attributesNotToPublish"><![CDATA[PUID, Title, Test objectives]]></Property>
+            <Property name="generateBookmark"><![CDATA[false]]></Property>
+          </AssemblyFragment>
+          <AssemblyFragment id="2038cae9-fdad-4e0b-a980-598c7cd23b5c_1361888929394@EFXESS0109P/192.168.8.9" label="SVe-IVVP-004" typeId="Doorsivv procedure" publicationContextId="IvvProcedureProvider" fragmentElementId="orchestra://Doors/WakeUpClock/Object/4ca05e8652d31da4%2E00001168%2112?viewName=30%2E%20IVV%20matrix">
+            <Property name="visible"><![CDATA[true]]></Property>
+            <Property name="changeOrientation"><![CDATA[No change]]></Property>
+            <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+            <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+            <Property name="lineBreakBefore"><![CDATA[true]]></Property>
+            <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+            <Property name="projectContextFilter"><![CDATA[]]></Property>
+            <Property name="keepWithNext"><![CDATA[false]]></Property>
+            <Property name="publishAttributesWithNoValue"><![CDATA[false]]></Property>
+            <Property name="attributesNotToPublish"><![CDATA[PUID, Title, Test objectives]]></Property>
+            <Property name="generateBookmark"><![CDATA[false]]></Property>
+          </AssemblyFragment>
+          <AssemblyFragment id="799495b8-3e54-41cd-afbb-a023e32e3b6c_1361888929394@EFXESS0109P/192.168.8.9" label="SVe-IVVP-007" typeId="Doorsivv procedure" publicationContextId="IvvProcedureProvider" fragmentElementId="orchestra://Doors/WakeUpClock/Object/4ca05e8652d31da4%2E00001168%2111?viewName=30%2E%20IVV%20matrix">
+            <Property name="visible"><![CDATA[true]]></Property>
+            <Property name="changeOrientation"><![CDATA[No change]]></Property>
+            <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+            <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+            <Property name="lineBreakBefore"><![CDATA[true]]></Property>
+            <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+            <Property name="projectContextFilter"><![CDATA[]]></Property>
+            <Property name="keepWithNext"><![CDATA[false]]></Property>
+            <Property name="publishAttributesWithNoValue"><![CDATA[false]]></Property>
+            <Property name="attributesNotToPublish"><![CDATA[PUID, Title, Test objectives]]></Property>
+            <Property name="generateBookmark"><![CDATA[false]]></Property>
+          </AssemblyFragment>
+          <AssemblyFragment id="17d68860-b303-4b85-a84a-a756e49c35ac_1361888929394@EFXESS0109P/192.168.8.9" label="SVe-IVVP-005" typeId="Doorsivv procedure" publicationContextId="IvvProcedureProvider" fragmentElementId="orchestra://Doors/WakeUpClock/Object/4ca05e8652d31da4%2E00001168%219?viewName=30%2E%20IVV%20matrix">
+            <Property name="visible"><![CDATA[true]]></Property>
+            <Property name="changeOrientation"><![CDATA[No change]]></Property>
+            <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+            <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+            <Property name="lineBreakBefore"><![CDATA[true]]></Property>
+            <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+            <Property name="projectContextFilter"><![CDATA[]]></Property>
+            <Property name="keepWithNext"><![CDATA[false]]></Property>
+            <Property name="publishAttributesWithNoValue"><![CDATA[false]]></Property>
+            <Property name="attributesNotToPublish"><![CDATA[PUID, Title, Test objectives]]></Property>
+            <Property name="generateBookmark"><![CDATA[false]]></Property>
+          </AssemblyFragment>
+          <AssemblyFragment id="4b55cc90-46b2-4376-8c06-a856e64679c5_1361888929394@EFXESS0109P/192.168.8.9" label="SVe-IVVP-006" typeId="Doorsivv procedure" publicationContextId="IvvProcedureProvider" fragmentElementId="orchestra://Doors/WakeUpClock/Object/4ca05e8652d31da4%2E00001168%2110?viewName=30%2E%20IVV%20matrix">
+            <Property name="visible"><![CDATA[true]]></Property>
+            <Property name="changeOrientation"><![CDATA[No change]]></Property>
+            <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+            <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+            <Property name="lineBreakBefore"><![CDATA[true]]></Property>
+            <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+            <Property name="projectContextFilter"><![CDATA[]]></Property>
+            <Property name="keepWithNext"><![CDATA[false]]></Property>
+            <Property name="publishAttributesWithNoValue"><![CDATA[false]]></Property>
+            <Property name="attributesNotToPublish"><![CDATA[PUID, Title, Test objectives]]></Property>
+            <Property name="generateBookmark"><![CDATA[false]]></Property>
+          </AssemblyFragment>
+          <AssemblyFragment id="5a003b84-8b28-4fc9-b5cb-8f903e3afc87_1361888929394@EFXESS0109P/192.168.8.9" label="SVe-IVVP-009" typeId="Doorsivv procedure" publicationContextId="IvvProcedureProvider" fragmentElementId="orchestra://Doors/WakeUpClock/Object/4ca05e8652d31da4%2E00001168%2115?viewName=30%2E%20IVV%20matrix">
+            <Property name="visible"><![CDATA[true]]></Property>
+            <Property name="changeOrientation"><![CDATA[No change]]></Property>
+            <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+            <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+            <Property name="lineBreakBefore"><![CDATA[true]]></Property>
+            <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+            <Property name="projectContextFilter"><![CDATA[]]></Property>
+            <Property name="keepWithNext"><![CDATA[false]]></Property>
+            <Property name="publishAttributesWithNoValue"><![CDATA[false]]></Property>
+            <Property name="attributesNotToPublish"><![CDATA[PUID, Title, Test objectives]]></Property>
+            <Property name="generateBookmark"><![CDATA[false]]></Property>
+          </AssemblyFragment>
+          <AssemblyFragment id="5acde619-5875-4e2d-bbd6-ee21c41d62ff_1361888929394@EFXESS0109P/192.168.8.9" label="SVe-IVVP-008" typeId="Doorsivv procedure" publicationContextId="IvvProcedureProvider" fragmentElementId="orchestra://Doors/WakeUpClock/Object/4ca05e8652d31da4%2E00001168%2114?viewName=30%2E%20IVV%20matrix">
+            <Property name="visible"><![CDATA[true]]></Property>
+            <Property name="changeOrientation"><![CDATA[No change]]></Property>
+            <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+            <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+            <Property name="lineBreakBefore"><![CDATA[true]]></Property>
+            <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+            <Property name="projectContextFilter"><![CDATA[]]></Property>
+            <Property name="keepWithNext"><![CDATA[false]]></Property>
+            <Property name="publishAttributesWithNoValue"><![CDATA[false]]></Property>
+            <Property name="attributesNotToPublish"><![CDATA[PUID, Title, Test objectives]]></Property>
+            <Property name="generateBookmark"><![CDATA[false]]></Property>
+          </AssemblyFragment>
+        </AssemblyFragment>
+        <ProgrammaticAssemblyRule nature="" description="Default automatic assembly rule - Create the assembly nodes corresponding to the rule conditions: from scope root fragments, search fragments that match the rule (types, names and properties). Found fragments can be sorted." sortType="No" ascending="true" freeze="false" allowSynchro="false" initialize="true"></ProgrammaticAssemblyRule>
+      </AutomaticAssemblyContainer>
+      <AutomaticAssemblyContainer id="f74deb41-f2d5-49ac-9428-3287428b5e48_1324018656846@VMO385/150.2.38.139" label="&lt;&lt; Automatic Assembly &gt;&gt;" typeId="AutomaticAssemblyDefault" publicationContextId="AutomaticAssemblyProvider">
+        <Property name="visible"><![CDATA[true]]></Property>
+        <Property name="changeOrientation"><![CDATA[No change]]></Property>
+        <Property name="pageBreakBefore"><![CDATA[false]]></Property>
+        <Property name="pageBreakAfter"><![CDATA[false]]></Property>
+        <Property name="lineBreakBefore"><![CDATA[false]]></Property>
+        <Property name="lineBreakAfter"><![CDATA[false]]></Property>
+        <Property name="projectContextFilter"><![CDATA[]]></Property>
+        <Property name="searchFromRoot"><![CDATA[all]]></Property>
+        <Property name="includeRoot"><![CDATA[true]]></Property>
+        <Property name="searchFromFragment"><![CDATA[*]]></Property>
+        <Property name="searchFromFragmentType"><![CDATA[*]]></Property>
+        <Property name="selectTypes"><![CDATA[*]]></Property>
+        <Property name="selectFragmentName"><![CDATA[*33. Verification Matrix]]></Property>
+        <Property name="selectCaseSensitiveFragmentName"><![CDATA[false]]></Property>
+        <Property name="nameProcessing"><![CDATA[no]]></Property>
+        <Property name="selectProperties"><![CDATA[]]></Property>
+        <Property name="directChildrenOnly"><![CDATA[false]]></Property>
+        <Property name="recursiveSearch"><![CDATA[false]]></Property>
+        <Property name="sort"><![CDATA[no sort]]></Property>
+        <Property name="sortPropertyNames"><![CDATA[]]></Property>
+        <Property name="ascendingOrDescendingSort"><![CDATA[ascending]]></Property>
+        <Property name="keepChildren"><![CDATA[true]]></Property>
+        <Property name="keepParentStructure"><![CDATA[no]]></Property>
+        <Property name="setPublicationContextsForType"><![CDATA[DoorsView=DoorsMatrixModeViewProvider]]></Property>
+        <Property name="setPropertiesForType"><![CDATA[DoorsView=(hideColumnsEmptyValues=true,caption=View only, noBorderForSameValue=true)]]></Property>
+        <Property name="addContainersForType"><![CDATA[]]></Property>
+        <Property name="addContainers"><![CDATA[]]></Property>
+        <ProgrammaticAssemblyRule nature="" description="Default automatic assembly rule - Create the assembly nodes corresponding to the rule conditions: from scope root fragments, search fragments that match the rule (types, names and properties). Found fragments can be sorted." sortType="No" ascending="true" freeze="false" allowSynchro="false" initialize="true"></ProgrammaticAssemblyRule>
+      </AutomaticAssemblyContainer>
+    </SectionAssemblyContainer>
+  </AssemblyRoot>
+</AssemblyTree>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ImportedFromDOORS SchemaVersion="3">
+  <TestSuite_IsDataFromDOORS><![CDATA[True]]></TestSuite_IsDataFromDOORS>
+  <TestSuite_URI><![CDATA[orchestra://Doors/WakeUpClock/Object/4ca05e8652d31da4%2E00001168%2115?viewName=ORCH%5FIVVMngt%5FInterface]]></TestSuite_URI>
+  <TestSuite_Identification><![CDATA[SVe-IVVP-009]]></TestSuite_Identification>
+  <TestSuite_Title><![CDATA[Autonomy verification]]></TestSuite_Title>
+  <TestSuite_AssociatedCampaigns><![CDATA[Preliminary, V2]]></TestSuite_AssociatedCampaigns>
+  <TestSuite_Objective><![CDATA[The objective of this test is to check :
+the autonomy of the product]]></TestSuite_Objective>
+  <TestSuite_RegressionThread><![CDATA[]]></TestSuite_RegressionThread>
+  <TestSuite_TestMethod><![CDATA[A]]></TestSuite_TestMethod>
+  <TestSuite_AttachedRequirements><![CDATA[SSS-REQ-012]]></TestSuite_AttachedRequirements>
+  <TestSuite_DefinitionVersion><![CDATA[]]></TestSuite_DefinitionVersion>
+  <TestSuite_TestStatus><![CDATA[]]></TestSuite_TestStatus>
+  <TestSuite_IsTestMeansDefined><![CDATA[]]></TestSuite_IsTestMeansDefined>
+  <TestSuite_IsTestDataSetDefined><![CDATA[]]></TestSuite_IsTestDataSetDefined>
+  <TestSuite_Categories>
+    <TestSuite_Category>
+      <TestSuite_CategoryName><![CDATA[IE Object Type]]></TestSuite_CategoryName>
+      <TestSuite_CategoryValue><![CDATA[IVV Procedure]]></TestSuite_CategoryValue>
+    </TestSuite_Category>
+    <TestSuite_Category>
+      <TestSuite_CategoryName><![CDATA[IE PUID]]></TestSuite_CategoryName>
+      <TestSuite_CategoryValue><![CDATA[SVe-IVVP-009]]></TestSuite_CategoryValue>
+    </TestSuite_Category>
+    <TestSuite_Category>
+      <TestSuite_CategoryName><![CDATA[Test type]]></TestSuite_CategoryName>
+      <TestSuite_CategoryValue><![CDATA[Performance]]></TestSuite_CategoryValue>
+    </TestSuite_Category>
+    <TestSuite_Category>
+      <TestSuite_CategoryName><![CDATA[Specific Skills Needed]]></TestSuite_CategoryName>
+      <TestSuite_CategoryValue><![CDATA[]]></TestSuite_CategoryValue>
+    </TestSuite_Category>
+  </TestSuite_Categories>
+</ImportedFromDOORS>

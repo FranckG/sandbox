@@ -1,0 +1,117 @@
+[Files]
+Names=Specification,Customer needs,Model,CQ,Verification
+RepositoryTool=Boost
+
+[Specification]
+Cover1=Model
+Cover1Position=1615@1285
+Cover1Types=AddedOrchestraRhapsody.satisfies,AddedOrchestraRhapsody.describes
+GraphicPosition=1220@980
+Variable1Name=Parameters
+Variable1Value=
+Variable2Name=selectedxmlnode
+Variable2Value=
+Variable3Name=SingleArtifact
+Variable3Value=true
+Variable4Name=selectedxmlnodes
+Variable4Value=<treeitem id="orchestra://Doors/WakeUpClock/Module/51389318215a5a7c%2E00000544" label="System specification" image="/..//images/doors_EPM_module.gif" type="Module" project="WakeUpClock" tool="Doors" artifactParameters=""/>
+Variable5Name=tool
+Variable5Value=Doors
+Variable6Name=artefactId
+Variable6Value=orchestra://Doors/WakeUpClock/Module/51389318215a5a7c%2E00000544
+UseIntermediateFile=1
+Type=Orchestra Requirements
+ModificationDocument1=linksSpecification.xml
+ModificationDocument1Type=AddedOrchestraDoors
+Path=WakeUpClock.System.Specification.System specification
+GVPosition=8340,720,13220,12440
+
+[Customer needs]
+Cover1=Specification
+Cover1Position=1005@835
+Cover1Types=Orchestra Requirements.satisfies
+GraphicPosition=640@600
+Variable1Name=Parameters
+Variable1Value=
+Variable2Name=selectedxmlnode
+Variable2Value=
+Variable3Name=SingleArtifact
+Variable3Value=true
+Variable4Name=selectedxmlnodes
+Variable4Value=<treeitem id="orchestra://Doors/WakeUpClock/Module/4ca05e8652d31da4%2E00001a05" label="Customer needs" image="/..//images/doors_EPM_module.gif" type="Module" project="WakeUpClock" tool="Doors" artifactParameters=""/>
+Variable5Name=tool
+Variable5Value=Doors
+Variable6Name=artefactId
+Variable6Value=orchestra://Doors/WakeUpClock/Module/4ca05e8652d31da4%2E00001a05
+UseIntermediateFile=1
+Type=Orchestra Requirements
+ModificationDocument1=linksCustomer needs.xml
+ModificationDocument1Type=AddedOrchestraDoors
+Path=WakeUpClock.Customer.Specification.Customer needs
+GVPosition=10220,2180,13180,6060
+
+[Model]
+GraphicPosition=3430@2310
+Variable1Name=Parameters
+Variable1Value=
+Variable2Name=selectedxmlnode
+Variable2Value=
+Variable3Name=SingleArtifact
+Variable3Value=true
+Variable4Name=selectedxmlnodes
+Variable4Value=<treeitem id="orchestra://Rhapsody/Modeling%2FRhapsody%2FWakeUpClock%2FWakeUpClock" label="WakeUpClock" image="/..//images/rhapsody.gif" type="" project="Modeling/Rhapsody/WakeUpClock/WakeUpClock" tool="Rhapsody" artifactParameters=""/>
+Variable5Name=tool
+Variable5Value=Rhapsody
+Variable6Name=artefactId
+Variable6Value=orchestra://Rhapsody/Modeling%2FRhapsody%2FWakeUpClock%2FWakeUpClock
+UseIntermediateFile=1
+Type=Orchestra Model Rhapsody
+ModificationDocument1=linksModel.xml
+ModificationDocument1Type=AddedOrchestraRhapsody
+Path=Modeling.Rhapsody.WakeUpClock.WakeUpClock
+GVPosition=16660,560,28860,57080
+
+[CQ]
+Cover1=Specification
+Cover1Position=1130@1810
+Cover1AnnotationPosition=1130@1810
+Cover1Types=Orchestra Requirements.follows,AddedOrchestraDoors.is composed of,Orchestra Requirements.refers to,AddedOrchestraDoors.is justified by,Orchestra Requirements.is composed of,AddedOrchestraDoors.is allocated by,Orchestra Requirements.is justified by,AddedOrchestraDoors.verifies,Orchestra Requirements.is allocated by,AddedOrchestraDoors.satisfies,AddedOrchestraDoors.is the result of,Orchestra Requirements.verifies,AddedOrchestraDoors.describes,Orchestra Requirements.describes,AddedOrchestraDoors.follows,Orchestra Requirements.satisfies,Orchestra Requirements.is the result of,AddedOrchestraDoors.refers to
+GraphicPosition=1560@2640
+Variable1Name=artefactId
+Variable1Value=orchestra://Clearquest/WakeUpClock/Query/Public%20Queries%2FAll%20Defects%20Security
+Variable2Name=Parameters
+Variable2Value=
+Variable3Name=SingleArtifact
+Variable3Value=true
+Variable4Name=selectedxmlnodes
+Variable4Value=<treeitem id="orchestra://Clearquest/WakeUpClock/Query/Public%20Queries%2FAll%20Defects%20Security" label="All Defects Security" image="/..//images/Clearquest_Query.gif" type="Query" project="WakeUpClock" tool="Clearquest" artifactParameters="" computed="true"/>
+UseIntermediateFile=1
+Type=Orchestra ChangeManagement ClearQuest
+ModificationDocument1=linksCQ.xml
+ModificationDocument1Type=AddedOrchestraClearquest
+Path=WakeUpClock.Public Queries.All Defects Security
+GVPosition=120,5900,3080,8100
+
+[Verification]
+Cover1=Specification
+Cover1Position=2215@725
+Cover1Types=AddedOrchestraDoors.verifies,Orchestra Requirements.verifies
+Cover2=Model
+Cover2Position=3320@1390
+Cover2Types=Orchestra Model Rhapsody.depends,AddedOrchestraRhapsody.describes,AddedOrchestraRhapsody.is allocated by,AddedOrchestraRhapsody.depends,AddedOrchestraRhapsody.satisfies
+GraphicPosition=3210@470
+Variable1Name=artefactId
+Variable1Value=orchestra://Doors/WakeUpClock/Module/4bf4db5d5f2471e2%2E0000160a
+Variable2Name=Parameters
+Variable2Value=
+Variable3Name=SingleArtifact
+Variable3Value=true
+Variable4Name=selectedxmlnodes
+Variable4Value=<treeitem id="orchestra://Doors/WakeUpClock/Module/4bf4db5d5f2471e2%2E0000160a" label="System verification" image="/..//images/doors_EPM_module.gif" type="Module" project="WakeUpClock" tool="Doors" artifactParameters=""/>
+UseIntermediateFile=1
+Type=Orchestra IVV
+ModificationDocument1=linksIVV Procedure.xml
+ModificationDocument1Type=AddedOrchestraDoors
+Path=WakeUpClock.System.IVV.Verification.System verification
+GVPosition=2220,1360,5180,4960
+

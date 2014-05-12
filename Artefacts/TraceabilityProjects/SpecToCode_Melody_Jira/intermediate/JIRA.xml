@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generator: reqtify -->
+
+<Root>
+	<ELEMENT fullName="[L] JIRA_TESTING_DEFECT" label="[L] JIRA_TESTING_DEFECT" type="Query" uri="orchestra://Jira/WakeUpClock/Query/10506">
+		<PROPERTIES>
+			<PROPERTY name="Issue Type" nature="" type="Column">60</PROPERTY>
+			<PROPERTY name="Key" nature="" type="Column">60</PROPERTY>
+			<PROPERTY name="Summary" nature="" type="Column">60</PROPERTY>
+			<PROPERTY name="Assignee" nature="" type="Column">60</PROPERTY>
+			<PROPERTY name="Reporter" nature="" type="Column">60</PROPERTY>
+			<PROPERTY name="Priority" nature="" type="Column">60</PROPERTY>
+			<PROPERTY name="Status" nature="" type="Column">60</PROPERTY>
+			<PROPERTY name="Resolution" nature="" type="Column">60</PROPERTY>
+			<PROPERTY name="Created" nature="" type="Column">60</PROPERTY>
+			<PROPERTY name="Updated" nature="" type="Column">60</PROPERTY>
+			<PROPERTY name="Due Date" nature="" type="Column">60</PROPERTY>
+		</PROPERTIES>
+		<ELEMENT fullName="ORC-73" label="(WakeUpClock Defect) ORC-73" type="Defect" uri="orchestra://Jira/WakeUpClock/Defect/ORC%2D73?filterId=10506">
+			<PROPERTIES>
+				<PROPERTY name="Issue Type" nature="" type="String">Problem Report</PROPERTY>
+				<PROPERTY name="Key" nature="" type="String">ORC-73</PROPERTY>
+				<PROPERTY name="Summary" nature="" type="String">[R_OPUC52] issue for testing OPUC 52</PROPERTY>
+				<PROPERTY name="Assignee" nature="" type="String">Project Manager</PROPERTY>
+				<PROPERTY name="Reporter" nature="" type="String">DSI</PROPERTY>
+				<PROPERTY name="Priority" nature="" type="String">High</PROPERTY>
+				<PROPERTY name="Status" nature="" type="String">Submitted</PROPERTY>
+				<PROPERTY name="Resolution" nature="" type="String" />
+				<PROPERTY name="Created" nature="" type="String">27/01/14</PROPERTY>
+				<PROPERTY name="Updated" nature="" type="String">27/01/14</PROPERTY>
+				<PROPERTY name="Due Date" nature="" type="String" />
+			</PROPERTIES>
+		</ELEMENT>
+		<ELEMENT fullName="ORC-72" label="(WakeUpClock Defect) ORC-72" type="Defect" uri="orchestra://Jira/WakeUpClock/Defect/ORC%2D72?filterId=10506">
+			<PROPERTIES>
+				<PROPERTY name="Issue Type" nature="" type="String">Problem Report</PROPERTY>
+				<PROPERTY name="Key" nature="" type="String">ORC-72</PROPERTY>
+				<PROPERTY name="Summary" nature="" type="String">[R_OPUC51] issue for testing OPUC 51</PROPERTY>
+				<PROPERTY name="Assignee" nature="" type="String">Project Manager</PROPERTY>
+				<PROPERTY name="Reporter" nature="" type="String">DSI</PROPERTY>
+				<PROPERTY name="Priority" nature="" type="String">High</PROPERTY>
+				<PROPERTY name="Status" nature="" type="String">Submitted</PROPERTY>
+				<PROPERTY name="Resolution" nature="" type="String" />
+				<PROPERTY name="Created" nature="" type="String">27/01/14</PROPERTY>
+				<PROPERTY name="Updated" nature="" type="String">27/01/14</PROPERTY>
+				<PROPERTY name="Due Date" nature="" type="String" />
+			</PROPERTIES>
+		</ELEMENT>
+	</ELEMENT>
+</Root>

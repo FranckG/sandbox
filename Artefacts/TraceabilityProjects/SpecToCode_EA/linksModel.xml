@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generator: reqtify -->
+
+<ModificationDocument>
+<Requirement type="MelodyDiagram" ident="orchestra://Melody/Modeling%2FMelody%2FWakeUpClock%5FMA/Diagram/%5FfJ5VEAyjEeKrKKD1TyRkrQ" label="[IS] [SD] Set current time - Interface Scenario">
+<Reference type="describes" ident="orchestra://Doors/WakeUpClock/Object/51389318215a5a7c%2E00000544%2148" label="SSS-REQ-014 - The system shall provide an interface to set time (in 24h format).">
+</Reference>
+</Requirement>
+<Requirement type="MelodyDiagram" ident="orchestra://Melody/Modeling%2FMelody%2FWakeUpClock%5FMA/Diagram/%5FL4I3YLBmEd%2DhD%2D9%2D%5FnxuLw" label="[IS] Buzz on time - Interface Scenario">
+<Reference type="describes" ident="orchestra://Doors/WakeUpClock/Object/51389318215a5a7c%2E00000544%2131" label="SSS-REQ-001 - The system shall provide an interface enabling activation of every functions in less than 2 actions.">
+</Reference>
+<Reference type="describes" ident="orchestra://Doors/WakeUpClock/Object/51389318215a5a7c%2E00000544%2133" label="SSS-REQ-003 - The buzzer output level shall be adjustable by the user.">
+</Reference>
+</Requirement>
+</ModificationDocument>

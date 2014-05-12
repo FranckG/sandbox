@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generator: reqtify -->
+
+<Root>
+	<ELEMENT type="Module" label="(WakeUpClock Module) ModulesForMetricsKPIs.SSS" fullName="ModulesForMetricsKPIs.SSS" hash="11/07/13 17:51:34" uri="orchestra://Doors/WakeUpClock/Module/524d2a940b0233d5%2E000075a2">
+		<VERSION filePath="/WakeUpClock/ModulesForMetricsKPIs/SSS" version="11/07/13 17:51:34" />
+		<PROPERTIES>
+			<PROPERTY name="Created By" type="String">orchestra</PROPERTY>
+			<PROPERTY name="Created On" type="Date">16 October 2013</PROPERTY>
+			<PROPERTY name="Description" type="String">System Requirements Module</PROPERTY>
+			<PROPERTY name="IE Mod LifeCycle Phase" type="IE Mod Life Cycle Phase" />
+			<PROPERTY name="IE Mod Type" type="IE Mod Type">System Requirements</PROPERTY>
+			<PROPERTY name="IE Release" type="String">6.0.0.4</PROPERTY>
+			<PROPERTY name="IE Requirement Number" type="Integer">25</PROPERTY>
+			<PROPERTY name="Last Modified By" type="String">sem</PROPERTY>
+			<PROPERTY name="Last Modified On" type="Date">07 November 2013</PROPERTY>
+			<PROPERTY name="Name" type="String">SSS</PROPERTY>
+			<PROPERTY name="ORCH Selected Test Campaign" type="ORCH Version List" />
+			<PROPERTY name="Orchestra Module Id" type="String">524d2a940b0233d5.000075a2</PROPERTY>
+			<PROPERTY name="Prefix" type="String">SR</PROPERTY>
+		</PROPERTIES>
+		<ELEMENT type="requirement" label="" uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a2%214">
+			<VERSION filePath="/WakeUpClock/ModulesForMetricsKPIs/SSS" version="11/07/13 17:51:34" />
+			<PROPERTIES>
+				<PROPERTY name="LMLabel" type="String">SR-REQ-001 - new Requirement</PROPERTY>
+				<PROPERTY name="toolId" type="String">SR-REQ-001</PROPERTY>
+				<PROPERTY name="IE Object Type" type="string">Requirement</PROPERTY>
+				<PROPERTY name="IE PUID" type="string">SR-REQ-001</PROPERTY>
+				<PROPERTY name="IE Req Status" type="string">Accepted</PROPERTY>
+				<PROPERTY name="IE Test Method Expected" type="string" />
+				<PROPERTY name="Object Text" type="string">new Requirement</PROPERTY>
+			</PROPERTIES>
+			<LINKS_TO_ELEMENTS>
+				<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a0%212" fullName="UR-REQ-001" label="UR-REQ-001" linkType="satisfies" linkDirection="out" />
+			</LINKS_TO_ELEMENTS>
+		</ELEMENT>
+		<ELEMENT type="requirement" label="" uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a2%215">
+			<VERSION filePath="/WakeUpClock/ModulesForMetricsKPIs/SSS" version="11/07/13 17:51:34" />
+			<PROPERTIES>
+				<PROPERTY name="LMLabel" type="String">SR-REQ-002 - new Requirement</PROPERTY>
+				<PROPERTY name="toolId" type="String">SR-REQ-002</PROPERTY>
+				<PROPERTY name="IE Object Type" type="string">Requirement</PROPERTY>
+				<PROPERTY name="IE PUID" type="string">SR-REQ-002</PROPERTY>
+				<PROPERTY name="IE Req Status" type="string">In negotiation</PROPERTY>
+				<PROPERTY name="IE Test Method Expected" type="string" />
+				<PROPERTY name="Object Text" type="string">new Requirement</PROPERTY>
+			</PROPERTIES>
+		</ELEMENT>
+		<ELEMENT type="requirement" label="" uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a2%216">
+			<VERSION filePath="/WakeUpClock/ModulesForMetricsKPIs/SSS" version="11/07/13 17:51:34" />
+			<PROPERTIES>
+				<PROPERTY name="LMLabel" type="String">SR-REQ-003 - new Requirement</PROPERTY>
+				<PROPERTY name="toolId" type="String">SR-REQ-003</PROPERTY>
+				<PROPERTY name="IE Object Type" type="string">Requirement</PROPERTY>
+				<PROPERTY name="IE PUID" type="string">SR-REQ-003</PROPERTY>
+				<PROPERTY name="IE Req Status" type="string">Accepted</PROPERTY>
+				<PROPERTY name="IE Test Method Expected" type="string" />
+				<PROPERTY name="Object Text" type="string">new Requirement</PROPERTY>
+			</PROPERTIES>
+		</ELEMENT>
+		<ELEMENT type="requirement" label="" uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a2%217">
+			<VERSION filePath="/WakeUpClock/ModulesForMetricsKPIs/SSS" version="11/07/13 17:51:34" />
+			<PROPERTIES>
+				<PROPERTY name="LMLabel" type="String">SR-REQ-004 - new Requirement</PROPERTY>
+				<PROPERTY name="toolId" type="String">SR-REQ-004</PROPERTY>
+				<PROPERTY name="IE Object Type" type="string">Requirement</PROPERTY>
+				<PROPERTY name="IE PUID" type="string">SR-REQ-004</PROPERTY>
+				<PROPERTY name="IE Req Status" type="string">Accepted</PROPERTY>
+				<PROPERTY name="IE Test Method Expected" type="string" />
+				<PROPERTY name="Object Text" type="string">new Requirement</PROPERTY>
+			</PROPERTIES>
+			<LINKS_TO_ELEMENTS>
+				<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a0%212" fullName="UR-REQ-001" label="UR-REQ-001" linkType="satisfies" linkDirection="out" />
+			</LINKS_TO_ELEMENTS>
+		</ELEMENT>
+		<ELEMENT type="requirement" label="" uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a2%218">
+			<VERSION filePath="/WakeUpClock/ModulesForMetricsKPIs/SSS" version="11/07/13 17:51:34" />
+			<PROPERTIES>
+				<PROPERTY name="LMLabel" type="String">SR-REQ-005 - new Requirement</PROPERTY>
+				<PROPERTY name="toolId" type="String">SR-REQ-005</PROPERTY>
+				<PROPERTY name="IE Object Type" type="string">Requirement</PROPERTY>
+				<PROPERTY name="IE PUID" type="string">SR-REQ-005</PROPERTY>
+				<PROPERTY name="IE Req Status" type="string">Accepted</PROPERTY>
+				<PROPERTY name="IE Test Method Expected" type="string" />
+				<PROPERTY name="Object Text" type="string">new Requirement</PROPERTY>
+			</PROPERTIES>
+			<LINKS_TO_ELEMENTS>
+				<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a0%212" fullName="UR-REQ-001" label="UR-REQ-001" linkType="satisfies" linkDirection="out" />
+			</LINKS_TO_ELEMENTS>
+		</ELEMENT>
+		<ELEMENT type="requirement" label="" uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a2%219">
+			<VERSION filePath="/WakeUpClock/ModulesForMetricsKPIs/SSS" version="11/07/13 17:51:34" />
+			<PROPERTIES>
+				<PROPERTY name="LMLabel" type="String">SR-REQ-006 - new Requirement</PROPERTY>
+				<PROPERTY name="toolId" type="String">SR-REQ-006</PROPERTY>
+				<PROPERTY name="IE Object Type" type="string">Requirement</PROPERTY>
+				<PROPERTY name="IE PUID" type="string">SR-REQ-006</PROPERTY>
+				<PROPERTY name="IE Req Status" type="string">Accepted</PROPERTY>
+				<PROPERTY name="IE Test Method Expected" type="string" />
+				<PROPERTY name="Object Text" type="string">new Requirement</PROPERTY>
+			</PROPERTIES>
+		</ELEMENT>
+		<ELEMENT type="requirement" label="" uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a2%2110">
+			<VERSION filePath="/WakeUpClock/ModulesForMetricsKPIs/SSS" version="11/07/13 17:51:34" />
+			<PROPERTIES>
+				<PROPERTY name="LMLabel" type="String">SR-REQ-007 - new Requirement</PROPERTY>
+				<PROPERTY name="toolId" type="String">SR-REQ-007</PROPERTY>
+				<PROPERTY name="IE Object Type" type="string">Requirement</PROPERTY>
+				<PROPERTY name="IE PUID" type="string">SR-REQ-007</PROPERTY>
+				<PROPERTY name="IE Req Status" type="string">Accepted</PROPERTY>
+				<PROPERTY name="IE Test Method Expected" type="string" />
+				<PROPERTY name="Object Text" type="string">new Requirement</PROPERTY>
+			</PROPERTIES>
+		</ELEMENT>
+		<ELEMENT type="requirement" label="" uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a2%2111">
+			<VERSION filePath="/WakeUpClock/ModulesForMetricsKPIs/SSS" version="11/07/13 17:51:34" />
+			<PROPERTIES>
+				<PROPERTY name="LMLabel" type="String">SR-REQ-008 - new Requirement</PROPERTY>
+				<PROPERTY name="toolId" type="String">SR-REQ-008</PROPERTY>
+				<PROPERTY name="IE Object Type" type="string">Requirement</PROPERTY>
+				<PROPERTY name="IE PUID" type="string">SR-REQ-008</PROPERTY>
+				<PROPERTY name="IE Req Status" type="string">Obsolete</PROPERTY>
+				<PROPERTY name="IE Test Method Expected" type="string" />
+				<PROPERTY name="Object Text" type="string">new Requirement</PROPERTY>
+			</PROPERTIES>
+		</ELEMENT>
+		<ELEMENT type="requirement" label="" uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a2%2112">
+			<VERSION filePath="/WakeUpClock/ModulesForMetricsKPIs/SSS" version="11/07/13 17:51:34" />
+			<PROPERTIES>
+				<PROPERTY name="LMLabel" type="String">SR-REQ-009 - new Requirement</PROPERTY>
+				<PROPERTY name="toolId" type="String">SR-REQ-009</PROPERTY>
+				<PROPERTY name="IE Object Type" type="string">Requirement</PROPERTY>
+				<PROPERTY name="IE PUID" type="string">SR-REQ-009</PROPERTY>
+				<PROPERTY name="IE Req Status" type="string">Accepted</PROPERTY>
+				<PROPERTY name="IE Test Method Expected" type="string" />
+				<PROPERTY name="Object Text" type="string">new Requirement</PROPERTY>
+			</PROPERTIES>
+		</ELEMENT>
+		<ELEMENT type="requirement" label="" uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a2%2113">
+			<VERSION filePath="/WakeUpClock/ModulesForMetricsKPIs/SSS" version="11/07/13 17:51:34" />
+			<PROPERTIES>
+				<PROPERTY name="LMLabel" type="String">SR-REQ-010 - new Requirement</PROPERTY>
+				<PROPERTY name="toolId" type="String">SR-REQ-010</PROPERTY>
+				<PROPERTY name="IE Object Type" type="string">Requirement</PROPERTY>
+				<PROPERTY name="IE PUID" type="string">SR-REQ-010</PROPERTY>
+				<PROPERTY name="IE Req Status" type="string">Accepted</PROPERTY>
+				<PROPERTY name="IE Test Method Expected" type="string" />
+				<PROPERTY name="Object Text" type="string">new Requirement</PROPERTY>
+			</PROPERTIES>
+			<LINKS_TO_ELEMENTS>
+				<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a0%213" fullName="UR-REQ-002" label="UR-REQ-002" linkType="satisfies" linkDirection="out" />
+			</LINKS_TO_ELEMENTS>
+		</ELEMENT>
+		<ELEMENT type="requirement" label="" uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a2%2114">
+			<VERSION filePath="/WakeUpClock/ModulesForMetricsKPIs/SSS" version="11/07/13 17:51:34" />
+			<PROPERTIES>
+				<PROPERTY name="LMLabel" type="String">SR-REQ-011 - new Requirement</PROPERTY>
+				<PROPERTY name="toolId" type="String">SR-REQ-011</PROPERTY>
+				<PROPERTY name="IE Object Type" type="string">Requirement</PROPERTY>
+				<PROPERTY name="IE PUID" type="string">SR-REQ-011</PROPERTY>
+				<PROPERTY name="IE Req Status" type="string">Accepted</PROPERTY>
+				<PROPERTY name="IE Test Method Expected" type="string" />
+				<PROPERTY name="Object Text" type="string">new Requirement</PROPERTY>
+			</PROPERTIES>
+			<LINKS_TO_ELEMENTS>
+				<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a0%213" fullName="UR-REQ-002" label="UR-REQ-002" linkType="satisfies" linkDirection="out" />
+			</LINKS_TO_ELEMENTS>
+		</ELEMENT>
+		<ELEMENT type="requirement" label="" uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a2%2115">
+			<VERSION filePath="/WakeUpClock/ModulesForMetricsKPIs/SSS" version="11/07/13 17:51:34" />
+			<PROPERTIES>
+				<PROPERTY name="LMLabel" type="String">SR-REQ-012 - new Requirement</PROPERTY>
+				<PROPERTY name="toolId" type="String">SR-REQ-012</PROPERTY>
+				<PROPERTY name="IE Object Type" type="string">Requirement</PROPERTY>
+				<PROPERTY name="IE PUID" type="string">SR-REQ-012</PROPERTY>
+				<PROPERTY name="IE Req Status" type="string">Accepted</PROPERTY>
+				<PROPERTY name="IE Test Method Expected" type="string" />
+				<PROPERTY name="Object Text" type="string">new Requirement</PROPERTY>
+			</PROPERTIES>
+			<LINKS_TO_ELEMENTS>
+				<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a0%213" fullName="UR-REQ-002" label="UR-REQ-002" linkType="satisfies" linkDirection="out" />
+			</LINKS_TO_ELEMENTS>
+		</ELEMENT>
+		<ELEMENT type="requirement" label="" uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a2%2116">
+			<VERSION filePath="/WakeUpClock/ModulesForMetricsKPIs/SSS" version="11/07/13 17:51:34" />
+			<PROPERTIES>
+				<PROPERTY name="LMLabel" type="String">SR-REQ-013 - new Requirement</PROPERTY>
+				<PROPERTY name="toolId" type="String">SR-REQ-013</PROPERTY>
+				<PROPERTY name="IE Object Type" type="string">Requirement</PROPERTY>
+				<PROPERTY name="IE PUID" type="string">SR-REQ-013</PROPERTY>
+				<PROPERTY name="IE Req Status" type="string">Obsolete</PROPERTY>
+				<PROPERTY name="IE Test Method Expected" type="string" />
+				<PROPERTY name="Object Text" type="string">new Requirement</PROPERTY>
+			</PROPERTIES>
+		</ELEMENT>
+		<ELEMENT type="requirement" label="" uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a2%2117">
+			<VERSION filePath="/WakeUpClock/ModulesForMetricsKPIs/SSS" version="11/07/13 17:51:34" />
+			<PROPERTIES>
+				<PROPERTY name="LMLabel" type="String">SR-REQ-014 - new Requirement</PROPERTY>
+				<PROPERTY name="toolId" type="String">SR-REQ-014</PROPERTY>
+				<PROPERTY name="IE Object Type" type="string">Requirement</PROPERTY>
+				<PROPERTY name="IE PUID" type="string">SR-REQ-014</PROPERTY>
+				<PROPERTY name="IE Req Status" type="string">In negotiation</PROPERTY>
+				<PROPERTY name="IE Test Method Expected" type="string" />
+				<PROPERTY name="Object Text" type="string">new Requirement</PROPERTY>
+			</PROPERTIES>
+			<LINKS_TO_ELEMENTS>
+				<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a0%214" fullName="UR-REQ-003" label="UR-REQ-003" linkType="satisfies" linkDirection="out" />
+			</LINKS_TO_ELEMENTS>
+		</ELEMENT>
+		<ELEMENT type="requirement" label="" uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a2%2129">
+			<VERSION filePath="/WakeUpClock/ModulesForMetricsKPIs/SSS" version="11/07/13 17:51:34" />
+			<PROPERTIES>
+				<PROPERTY name="LMLabel" type="String">SR-REQ-014bis - new Requirement</PROPERTY>
+				<PROPERTY name="toolId" type="String">SR-REQ-014bis</PROPERTY>
+				<PROPERTY name="IE Object Type" type="string">Requirement</PROPERTY>
+				<PROPERTY name="IE PUID" type="string">SR-REQ-014bis</PROPERTY>
+				<PROPERTY name="IE Req Status" type="string">Accepted</PROPERTY>
+				<PROPERTY name="IE Test Method Expected" type="string" />
+				<PROPERTY name="Object Text" type="string">new Requirement</PROPERTY>
+			</PROPERTIES>
+			<LINKS_TO_ELEMENTS>
+				<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a0%214" fullName="UR-REQ-003" label="UR-REQ-003" linkType="satisfies" linkDirection="out" />
+			</LINKS_TO_ELEMENTS>
+		</ELEMENT>
+		<ELEMENT type="requirement" label="" uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a2%2118">
+			<VERSION filePath="/WakeUpClock/ModulesForMetricsKPIs/SSS" version="11/07/13 17:51:34" />
+			<PROPERTIES>
+				<PROPERTY name="LMLabel" type="String">SR-REQ-015 - new Requirement</PROPERTY>
+				<PROPERTY name="toolId" type="String">SR-REQ-015</PROPERTY>
+				<PROPERTY name="IE Object Type" type="string">Requirement</PROPERTY>
+				<PROPERTY name="IE PUID" type="string">SR-REQ-015</PROPERTY>
+				<PROPERTY name="IE Req Status" type="string">Analysis</PROPERTY>
+				<PROPERTY name="IE Test Method Expected" type="string" />
+				<PROPERTY name="Object Text" type="string">new Requirement</PROPERTY>
+			</PROPERTIES>
+			<LINKS_TO_ELEMENTS>
+				<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a0%215" fullName="UR-REQ-004" label="UR-REQ-004" linkType="satisfies" linkDirection="out" />
+			</LINKS_TO_ELEMENTS>
+		</ELEMENT>
+		<ELEMENT type="requirement" label="" uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a2%2119">
+			<VERSION filePath="/WakeUpClock/ModulesForMetricsKPIs/SSS" version="11/07/13 17:51:34" />
+			<PROPERTIES>
+				<PROPERTY name="LMLabel" type="String">SR-REQ-016 - new Requirement</PROPERTY>
+				<PROPERTY name="toolId" type="String">SR-REQ-016</PROPERTY>
+				<PROPERTY name="IE Object Type" type="string">Requirement</PROPERTY>
+				<PROPERTY name="IE PUID" type="string">SR-REQ-016</PROPERTY>
+				<PROPERTY name="IE Req Status" type="string" />
+				<PROPERTY name="IE Test Method Expected" type="string" />
+				<PROPERTY name="Object Text" type="string">new Requirement</PROPERTY>
+			</PROPERTIES>
+		</ELEMENT>
+		<ELEMENT type="requirement" label="" uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a2%2120">
+			<VERSION filePath="/WakeUpClock/ModulesForMetricsKPIs/SSS" version="11/07/13 17:51:34" />
+			<PROPERTIES>
+				<PROPERTY name="LMLabel" type="String">SR-REQ-017 - new Requirement</PROPERTY>
+				<PROPERTY name="toolId" type="String">SR-REQ-017</PROPERTY>
+				<PROPERTY name="IE Object Type" type="string">Requirement</PROPERTY>
+				<PROPERTY name="IE PUID" type="string">SR-REQ-017</PROPERTY>
+				<PROPERTY name="IE Req Status" type="string" />
+				<PROPERTY name="IE Test Method Expected" type="string" />
+				<PROPERTY name="Object Text" type="string">new Requirement</PROPERTY>
+			</PROPERTIES>
+		</ELEMENT>
+		<ELEMENT type="requirement" label="" uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a2%2121">
+			<VERSION filePath="/WakeUpClock/ModulesForMetricsKPIs/SSS" version="11/07/13 17:51:34" />
+			<PROPERTIES>
+				<PROPERTY name="LMLabel" type="String">SR-REQ-018 - new Requirement</PROPERTY>
+				<PROPERTY name="toolId" type="String">SR-REQ-018</PROPERTY>
+				<PROPERTY name="IE Object Type" type="string">Requirement</PROPERTY>
+				<PROPERTY name="IE PUID" type="string">SR-REQ-018</PROPERTY>
+				<PROPERTY name="IE Req Status" type="string" />
+				<PROPERTY name="IE Test Method Expected" type="string" />
+				<PROPERTY name="Object Text" type="string">new Requirement</PROPERTY>
+			</PROPERTIES>
+		</ELEMENT>
+		<ELEMENT type="requirement" label="" uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a2%2122">
+			<VERSION filePath="/WakeUpClock/ModulesForMetricsKPIs/SSS" version="11/07/13 17:51:34" />
+			<PROPERTIES>
+				<PROPERTY name="LMLabel" type="String">SR-REQ-019 - new Requirement</PROPERTY>
+				<PROPERTY name="toolId" type="String">SR-REQ-019</PROPERTY>
+				<PROPERTY name="IE Object Type" type="string">Requirement</PROPERTY>
+				<PROPERTY name="IE PUID" type="string">SR-REQ-019</PROPERTY>
+				<PROPERTY name="IE Req Status" type="string" />
+				<PROPERTY name="IE Test Method Expected" type="string" />
+				<PROPERTY name="Object Text" type="string">new Requirement</PROPERTY>
+			</PROPERTIES>
+		</ELEMENT>
+		<ELEMENT type="requirement" label="" uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a2%2123">
+			<VERSION filePath="/WakeUpClock/ModulesForMetricsKPIs/SSS" version="11/07/13 17:51:34" />
+			<PROPERTIES>
+				<PROPERTY name="LMLabel" type="String">SR-REQ-020 - new Requirement</PROPERTY>
+				<PROPERTY name="toolId" type="String">SR-REQ-020</PROPERTY>
+				<PROPERTY name="IE Object Type" type="string">Requirement</PROPERTY>
+				<PROPERTY name="IE PUID" type="string">SR-REQ-020</PROPERTY>
+				<PROPERTY name="IE Req Status" type="string" />
+				<PROPERTY name="IE Test Method Expected" type="string" />
+				<PROPERTY name="Object Text" type="string">new Requirement</PROPERTY>
+			</PROPERTIES>
+		</ELEMENT>
+		<ELEMENT type="requirement" label="" uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a2%2124">
+			<VERSION filePath="/WakeUpClock/ModulesForMetricsKPIs/SSS" version="11/07/13 17:51:34" />
+			<PROPERTIES>
+				<PROPERTY name="LMLabel" type="String">SR-REQ-021 - new Requirement</PROPERTY>
+				<PROPERTY name="toolId" type="String">SR-REQ-021</PROPERTY>
+				<PROPERTY name="IE Object Type" type="string">Requirement</PROPERTY>
+				<PROPERTY name="IE PUID" type="string">SR-REQ-021</PROPERTY>
+				<PROPERTY name="IE Req Status" type="string">Accepted</PROPERTY>
+				<PROPERTY name="IE Test Method Expected" type="string" />
+				<PROPERTY name="Object Text" type="string">new Requirement</PROPERTY>
+			</PROPERTIES>
+			<LINKS_TO_ELEMENTS>
+				<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a0%216" fullName="UR-REQ-005" label="UR-REQ-005" linkType="satisfies" linkDirection="out" />
+			</LINKS_TO_ELEMENTS>
+		</ELEMENT>
+		<ELEMENT type="requirement" label="" uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a2%2125">
+			<VERSION filePath="/WakeUpClock/ModulesForMetricsKPIs/SSS" version="11/07/13 17:51:34" />
+			<PROPERTIES>
+				<PROPERTY name="LMLabel" type="String">SR-REQ-022 - new Requirement</PROPERTY>
+				<PROPERTY name="toolId" type="String">SR-REQ-022</PROPERTY>
+				<PROPERTY name="IE Object Type" type="string">Requirement</PROPERTY>
+				<PROPERTY name="IE PUID" type="string">SR-REQ-022</PROPERTY>
+				<PROPERTY name="IE Req Status" type="string" />
+				<PROPERTY name="IE Test Method Expected" type="string" />
+				<PROPERTY name="Object Text" type="string">new Requirement</PROPERTY>
+			</PROPERTIES>
+			<LINKS_TO_ELEMENTS>
+				<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a0%216" fullName="UR-REQ-005" label="UR-REQ-005" linkType="satisfies" linkDirection="out" />
+			</LINKS_TO_ELEMENTS>
+		</ELEMENT>
+		<ELEMENT type="requirement" label="" uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a2%2126">
+			<VERSION filePath="/WakeUpClock/ModulesForMetricsKPIs/SSS" version="11/07/13 17:51:34" />
+			<PROPERTIES>
+				<PROPERTY name="LMLabel" type="String">SR-REQ-023 - new Requirement</PROPERTY>
+				<PROPERTY name="toolId" type="String">SR-REQ-023</PROPERTY>
+				<PROPERTY name="IE Object Type" type="string">Requirement</PROPERTY>
+				<PROPERTY name="IE PUID" type="string">SR-REQ-023</PROPERTY>
+				<PROPERTY name="IE Req Status" type="string">Obsolete</PROPERTY>
+				<PROPERTY name="IE Test Method Expected" type="string" />
+				<PROPERTY name="Object Text" type="string">new Requirement</PROPERTY>
+			</PROPERTIES>
+		</ELEMENT>
+		<ELEMENT type="requirement" label="" uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a2%2127">
+			<VERSION filePath="/WakeUpClock/ModulesForMetricsKPIs/SSS" version="11/07/13 17:51:34" />
+			<PROPERTIES>
+				<PROPERTY name="LMLabel" type="String">SR-REQ-024 - new Requirement</PROPERTY>
+				<PROPERTY name="toolId" type="String">SR-REQ-024</PROPERTY>
+				<PROPERTY name="IE Object Type" type="string">Requirement</PROPERTY>
+				<PROPERTY name="IE PUID" type="string">SR-REQ-024</PROPERTY>
+				<PROPERTY name="IE Req Status" type="string">Accepted</PROPERTY>
+				<PROPERTY name="IE Test Method Expected" type="string" />
+				<PROPERTY name="Object Text" type="string">new Requirement</PROPERTY>
+			</PROPERTIES>
+		</ELEMENT>
+		<ELEMENT type="requirement" label="" uri="orchestra://Doors/WakeUpClock/Object/524d2a940b0233d5%2E000075a2%2128">
+			<VERSION filePath="/WakeUpClock/ModulesForMetricsKPIs/SSS" version="11/07/13 17:51:34" />
+			<PROPERTIES>
+				<PROPERTY name="LMLabel" type="String">SR-REQ-025 - new Requirement</PROPERTY>
+				<PROPERTY name="toolId" type="String">SR-REQ-025</PROPERTY>
+				<PROPERTY name="IE Object Type" type="string">Requirement</PROPERTY>
+				<PROPERTY name="IE PUID" type="string">SR-REQ-025</PROPERTY>
+				<PROPERTY name="IE Req Status" type="string">Accepted</PROPERTY>
+				<PROPERTY name="IE Test Method Expected" type="string" />
+				<PROPERTY name="Object Text" type="string">new Requirement</PROPERTY>
+			</PROPERTIES>
+		</ELEMENT>
+	</ELEMENT>
+</Root>

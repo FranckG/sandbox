@@ -1,0 +1,118 @@
+V "GNAT Lib v6.3"
+A -g
+A -g
+A -gnatA
+A -gnatWb
+A -gnatiw
+A -g
+A -gnatws
+A -mtune=generic
+P ZX
+R nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnvvnnvnnnnnnnnnnnnnnn
+
+U ada_main%b		b~zada.adb		200d2a41 NE OO PK IL
+W system%s		system.ads		system.ali
+
+U ada_main%s		b~zada.ads		50bcd863 EE NE OO PK IL
+W system%s		system.ads		system.ali
+
+D b~zada.ads		20130314070254 5ed27ea6
+D b~zada.adb		20130314070254 7edf54e7
+D system.ads		20080919214140 0e6ea6c5
+X 1 b~zada.ads
+3K9*ada_main 174l5 174e13 2|5b14 133l5 133t13
+6i4*gnat_argc{integer} 10m22 2|111m7
+7m4*gnat_argv{3|66M9} 11m22 2|112m7
+8m4*gnat_envp{3|66M9} 12m22 2|113m7
+14i4*gnat_exit_status{integer} 15m22 2|121r15
+17a4*GNAT_Version{string} 19r22
+21a4*Ada_Main_Program_Name{string} 22r22 2|107r52
+24U14*adafinal 25r22 2|85b14 88l8 88t16
+27U14*adainit 28r22 2|14b14 83l8 83t15 116r7
+30U14*Break_Start 31b<c,__gnat_break_start>22 2|117r7
+33V13*main{integer} 34>7 35>7 36>7 38r22 2|90b13 122t7
+34i7 argc{integer} 2|91b7 111r20
+35m7 argv{3|66M9} 2|92b7 112r20
+36m7 envp{3|66M9} 2|93b7 113r20
+40M9*Version_32 41r22 43r22 45r22 47r22 49r22 51r22 53r22 55r22 57r22 59r22
+. 61r22 63r22 65r22 67r22 69r22 71r22 73r22 75r22 77r22 79r22 81r22 83r22
+. 85r22 87r22 89r22 91r22 93r22 95r22 97r22 99r22 101r22 103r22 105r22 107r22
+. 109r22 111r22 113r22 115r22 117r22 119r22 121r22 123r22 125r22
+41m4*u00001{40M9} 42r22
+43m4*u00002{40M9} 44r22
+45m4*u00003{40M9} 46r22
+47m4*u00004{40M9} 48r22
+49m4*u00005{40M9} 50r22
+51m4*u00006{40M9} 52r22
+53m4*u00007{40M9} 54r22
+55m4*u00008{40M9} 56r22
+57m4*u00009{40M9} 58r22
+59m4*u00010{40M9} 60r22
+61m4*u00011{40M9} 62r22
+63m4*u00012{40M9} 64r22
+65m4*u00013{40M9} 66r22
+67m4*u00014{40M9} 68r22
+69m4*u00015{40M9} 70r22
+71m4*u00016{40M9} 72r22
+73m4*u00017{40M9} 74r22
+75m4*u00018{40M9} 76r22
+77m4*u00019{40M9} 78r22
+79m4*u00020{40M9} 80r22
+81m4*u00021{40M9} 82r22
+83m4*u00022{40M9} 84r22
+85m4*u00023{40M9} 86r22
+87m4*u00024{40M9} 88r22
+89m4*u00025{40M9} 90r22
+91m4*u00026{40M9} 92r22
+93m4*u00027{40M9} 94r22
+95m4*u00028{40M9} 96r22
+97m4*u00029{40M9} 98r22
+99m4*u00030{40M9} 100r22
+101m4*u00031{40M9} 102r22
+103m4*u00032{40M9} 104r22
+105m4*u00033{40M9} 106r22
+107m4*u00034{40M9} 108r22
+109m4*u00035{40M9} 110r22
+111m4*u00036{40M9} 112r22
+113m4*u00037{40M9} 114r22
+115m4*u00038{40M9} 116r22
+117m4*u00039{40M9} 118r22
+119m4*u00040{40M9} 120r22
+121m4*u00041{40M9} 122r22
+123m4*u00042{40M9} 124r22
+125m4*u00043{40M9} 126r22
+X 2 b~zada.adb
+8U14 Do_Finalize 9b<c,system__standard_library__adafinal>22 87r7 119r7
+11a4 Local_Priority_Specific_Dispatching{string} 63r9
+12a4 Local_Interrupt_States{string} 65r27
+15b7*E17{boolean} 15m42 80m7
+16b7*E13{boolean} 16m42 78m7
+17b7*E23{boolean} 17m42 82m7
+19i7*Main_Priority{integer} 20m25 56m7
+21i7*Time_Slice_Value{integer} 22m25 57m7
+23e7*WC_Encoding{character} 24m25 58m7
+25e7*Locking_Policy{character} 26m25 59m7
+27e7*Queuing_Policy{character} 28m25 60m7
+29e7*Task_Dispatching_Policy{character} 30m25 61m7
+31m7*Priority_Specific_Dispatching{3|66M9} 32m25 62m7
+33i7*Num_Specific_Dispatching{integer} 34m25 64m7
+35m7*Interrupt_States{3|66M9} 36m25 65m7
+37i7*Num_Interrupt_States{integer} 38m25 66m7
+39i7*Unreserve_All_Interrupts{integer} 40m25 67m7
+41i7*Zero_Cost_Exceptions{integer} 42m25 68m7
+43i7*Detect_Blocking{integer} 44m25 69m7
+45i7*Default_Stack_Size{integer} 46m25 70m7
+47i7*Leap_Seconds_Support{integer} 48m25 71m7
+50U17*Install_Handler 51b<c,__gnat_install_handler>25 74r10
+53i7*Handler_Installed{integer} 54m25 73r10
+96U17*initialize 96>29 97b<c,__gnat_initialize>25 115r7
+96m29 Addr{3|66M9}
+99U17*finalize 100b<c,__gnat_finalize>25 120r7
+102U17*Ada_Main_Program 103b<ada,_ada_zada>27 118r7
+105a7 SEH(integer) 115m19
+107m7 Ensure_Reference{3|66M9} 108r24
+X 3 system.ads
+39K9*System 1|2w6 7r16 8r16 35r14 36r14 2|31r39 35r26 92r14 93r14 96r36 107r34
+. 3|199e11
+66M9*Address 1|7r23 8r23 35r21 36r21 2|31r46 35r33 92r21 93r21 96r43 107r41
+

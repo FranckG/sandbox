@@ -1,0 +1,870 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<tgo:project xmlns:tgo="com.thalesgroup.orchestra" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" description="Development activities implemented on SPOT Business Case" icon="tree_orchestra.png" id="d52415e7-6639-4ea4-bc56-060c006fb57f" importPath="T:\Resources\EngineeringDesk\SampleProject4OrchestraV5.2\.project" lang="false" lock="false" name="SampleProject4OrchestraV5.2" processMap="guide.png" useRole="false" version="5.3.3.201310281318" xsi:schemaLocation="com.thalesgroup.orc.desk.manager/resources/schema/project.xsd">
+    <tgo:role description="Is responsible for the project management" id="6f74beeb-ada0-4258-8b4e-cfabcfdc4ad9" name="WPM - Work Package Manager"/>
+    <tgo:role description="Is responsible for configuration and change aspects." id="fbba9029-029f-4b71-abbe-86ddcad80add" name="CM - Configuration Manager"/>
+    <tgo:role description="Covers the whole scope of specification and design" id="32f9f6e3-da45-451e-9b3b-5c585b6ebc26" name="SE - System Engineer"/>
+    <tgo:role description="Defines the IVV strategy and manages the IVV team" id="0c460568-7398-489f-b322-569c4b061877" name="IL - IVV Leader"/>
+    <tgo:role description="Performs the IVV activities as defined by the IVV Leader" id="142fcf67-6b91-4410-84b7-931b8ff09da5" name="IE - IVV Engineer"/>
+    <tgo:role description="Covers all the software aspects" id="dfd5ac16-7cda-43d2-a196-e76c2e19f128" name="SD - Software Developper"/>
+    <tgo:role description="Is responsible for the document identification and creation." id="024181c2-aec8-4a86-a62a-11a1acad0984" name="DM - Document Manager"/>
+    <tgo:role description="Checks that the process is correctly applied on the project" id="513f60ca-4ae0-419e-a676-8661b04c7705" name="QA - Quality Engineer"/>
+    <tgo:user administrator="true" firstName="Jean-Yves" id="e73dd334-003a-444b-8126-f538df8176a0" lastName="LAMBOURG" login="t0007929">
+        <tgo:userRole id="6f74beeb-ada0-4258-8b4e-cfabcfdc4ad9"/>
+        <tgo:userRole id="fbba9029-029f-4b71-abbe-86ddcad80add"/>
+        <tgo:userRole id="32f9f6e3-da45-451e-9b3b-5c585b6ebc26"/>
+        <tgo:userRole id="0c460568-7398-489f-b322-569c4b061877"/>
+        <tgo:userRole id="142fcf67-6b91-4410-84b7-931b8ff09da5"/>
+        <tgo:userRole id="dfd5ac16-7cda-43d2-a196-e76c2e19f128"/>
+        <tgo:userRole id="024181c2-aec8-4a86-a62a-11a1acad0984"/>
+        <tgo:userRole id="513f60ca-4ae0-419e-a676-8661b04c7705"/>
+    </tgo:user>
+    <tgo:user administrator="true" firstName="trainee" id="87f9a732-9403-41c0-a3d4-0ecb308371d0" lastName="1" login="trainee1">
+        <tgo:userRole id="6f74beeb-ada0-4258-8b4e-cfabcfdc4ad9"/>
+        <tgo:userRole id="fbba9029-029f-4b71-abbe-86ddcad80add"/>
+        <tgo:userRole id="32f9f6e3-da45-451e-9b3b-5c585b6ebc26"/>
+        <tgo:userRole id="0c460568-7398-489f-b322-569c4b061877"/>
+        <tgo:userRole id="142fcf67-6b91-4410-84b7-931b8ff09da5"/>
+        <tgo:userRole id="dfd5ac16-7cda-43d2-a196-e76c2e19f128"/>
+        <tgo:userRole id="513f60ca-4ae0-419e-a676-8661b04c7705"/>
+    </tgo:user>
+    <tgo:user administrator="true" firstName="trainee" id="f00bf510-f3f8-43b9-8c10-14c29e753347" lastName="2" login="trainee2">
+        <tgo:userRole id="6f74beeb-ada0-4258-8b4e-cfabcfdc4ad9"/>
+        <tgo:userRole id="fbba9029-029f-4b71-abbe-86ddcad80add"/>
+        <tgo:userRole id="32f9f6e3-da45-451e-9b3b-5c585b6ebc26"/>
+        <tgo:userRole id="0c460568-7398-489f-b322-569c4b061877"/>
+        <tgo:userRole id="142fcf67-6b91-4410-84b7-931b8ff09da5"/>
+        <tgo:userRole id="dfd5ac16-7cda-43d2-a196-e76c2e19f128"/>
+        <tgo:userRole id="513f60ca-4ae0-419e-a676-8661b04c7705"/>
+    </tgo:user>
+    <tgo:user administrator="false" firstName="trainee" id="b72e203f-b656-42ae-8356-7833724c495d" lastName="3" login="trainee3"/>
+    <tgo:user administrator="false" firstName="trainee" id="37b46fe9-5fb4-4bc2-a3f2-dc9b9a3a3c23" lastName="4" login="trainee4"/>
+    <tgo:user administrator="false" firstName="trainee" id="65013297-fb37-4b91-a075-8c64f386886b" lastName="5" login="trainee5"/>
+    <tgo:user administrator="false" firstName="trainee" id="b992b881-2f54-40fb-92bd-1e720f2b2767" lastName="6" login="trainee6"/>
+    <tgo:user administrator="false" firstName="trainee" id="cb438585-d5f2-4602-b046-8292da16c4e5" lastName="7" login="trainee7"/>
+    <tgo:user administrator="false" firstName="trainee" id="548b66b1-3183-4a69-88fc-10253e3fa0be" lastName="8" login="trainee8"/>
+    <tgo:user administrator="false" firstName="trainee" id="9ca0bade-9834-45c3-a06f-90d3088e5b7a" lastName="9" login="trainee9"/>
+    <tgo:user administrator="false" firstName="trainee" id="76482931-6a8a-4b79-b130-0acf4b53bba7" lastName="B" login="traineeB"/>
+    <tgo:user administrator="false" firstName="trainee" id="3d521a7d-b172-4d6b-8499-5cc6b71f1f79" lastName="C" login="traineeC"/>
+    <tgo:user administrator="false" firstName="trainee" id="428bdecf-0dc6-4186-ad2f-108398874adf" lastName="A" login="traineeA"/>
+    <tgo:user administrator="true" firstName="Fabrice" id="8ee0e38c-55c0-4a95-b45e-f0e0187b9980" lastName="FAUVEL" login="t0047208">
+        <tgo:userRole id="6f74beeb-ada0-4258-8b4e-cfabcfdc4ad9"/>
+        <tgo:userRole id="fbba9029-029f-4b71-abbe-86ddcad80add"/>
+        <tgo:userRole id="32f9f6e3-da45-451e-9b3b-5c585b6ebc26"/>
+        <tgo:userRole id="0c460568-7398-489f-b322-569c4b061877"/>
+        <tgo:userRole id="142fcf67-6b91-4410-84b7-931b8ff09da5"/>
+        <tgo:userRole id="dfd5ac16-7cda-43d2-a196-e76c2e19f128"/>
+        <tgo:userRole id="024181c2-aec8-4a86-a62a-11a1acad0984"/>
+        <tgo:userRole id="513f60ca-4ae0-419e-a676-8661b04c7705"/>
+    </tgo:user>
+    <tgo:user administrator="false" firstName="integ" id="e041c21a-df89-46e9-b929-692430989be7" lastName="11" login="integ11"/>
+    <tgo:user administrator="false" firstName="integ" id="75f06bfa-0dee-449c-932d-5b38e87ceaaa" lastName="12" login="integ12"/>
+    <tgo:user administrator="false" firstName="integ" id="399a0c9d-6a7b-4293-89fb-253b2a207065" lastName="13" login="integ13"/>
+    <tgo:user administrator="false" firstName="integ" id="00063ad0-51bf-47ba-9c21-32414bb3d0ea" lastName="14" login="integ14"/>
+    <tgo:user administrator="false" firstName="Quentin" id="32c72ceb-f42d-4933-a06c-c2f5f8ba3751" lastName="GAUTHIER-LAFAYE" login="t0015119">
+        <tgo:userRole id="6f74beeb-ada0-4258-8b4e-cfabcfdc4ad9"/>
+        <tgo:userRole id="fbba9029-029f-4b71-abbe-86ddcad80add"/>
+        <tgo:userRole id="32f9f6e3-da45-451e-9b3b-5c585b6ebc26"/>
+        <tgo:userRole id="0c460568-7398-489f-b322-569c4b061877"/>
+        <tgo:userRole id="142fcf67-6b91-4410-84b7-931b8ff09da5"/>
+        <tgo:userRole id="dfd5ac16-7cda-43d2-a196-e76c2e19f128"/>
+        <tgo:userRole id="024181c2-aec8-4a86-a62a-11a1acad0984"/>
+        <tgo:userRole id="513f60ca-4ae0-419e-a676-8661b04c7705"/>
+    </tgo:user>
+    <tgo:user administrator="true" firstName="edith" id="ae33b53f-23e8-405c-8bea-c8b7f7aebbe1" lastName="rodde" login="erodde">
+        <tgo:userRole id="6f74beeb-ada0-4258-8b4e-cfabcfdc4ad9"/>
+        <tgo:userRole id="fbba9029-029f-4b71-abbe-86ddcad80add"/>
+        <tgo:userRole id="32f9f6e3-da45-451e-9b3b-5c585b6ebc26"/>
+        <tgo:userRole id="0c460568-7398-489f-b322-569c4b061877"/>
+        <tgo:userRole id="142fcf67-6b91-4410-84b7-931b8ff09da5"/>
+        <tgo:userRole id="dfd5ac16-7cda-43d2-a196-e76c2e19f128"/>
+        <tgo:userRole id="024181c2-aec8-4a86-a62a-11a1acad0984"/>
+        <tgo:userRole id="513f60ca-4ae0-419e-a676-8661b04c7705"/>
+    </tgo:user>
+    <tgo:user administrator="true" firstName="Laurent" id="8cce1e5b-a524-48c9-a822-78c73bddfcfd" lastName="ROCHE" login="lroche">
+        <tgo:userRole id="6f74beeb-ada0-4258-8b4e-cfabcfdc4ad9"/>
+        <tgo:userRole id="fbba9029-029f-4b71-abbe-86ddcad80add"/>
+        <tgo:userRole id="32f9f6e3-da45-451e-9b3b-5c585b6ebc26"/>
+        <tgo:userRole id="0c460568-7398-489f-b322-569c4b061877"/>
+        <tgo:userRole id="142fcf67-6b91-4410-84b7-931b8ff09da5"/>
+        <tgo:userRole id="dfd5ac16-7cda-43d2-a196-e76c2e19f128"/>
+        <tgo:userRole id="024181c2-aec8-4a86-a62a-11a1acad0984"/>
+        <tgo:userRole id="513f60ca-4ae0-419e-a676-8661b04c7705"/>
+    </tgo:user>
+    <tgo:variable category="Data" name="PRJ_DATA_HOME-IVV_DASHBOARDS" value="${PRJ_DATA_HOME-ARTIFACTS_IVV}\Dashboards"/>
+    <tgo:variable category="Tool" description="" name="\Host\Tool\SYS_TOOL_FILE_CMD-EXPLORER" value="C:\WINDOWS\explorer.exe"/>
+    <tgo:variable category="Data" name="PRJ_DATA_HOME-ARTIFACTS" value="${PRJ_DATA_HOME-PROJECT}\Artefacts"/>
+    <tgo:variable category="Doc" name="PRJ_DOC_TMPL-IVV_TS_DASHBOARD" value="${\Orchestra installation\Products\IVVManagement\InstallLocation}\Templates\Orchestra.IVVQ_Dashboard-TSR.xls"/>
+    <tgo:variable category="Data" name="PRJ_DATA_HOME-ARTIFACTS_METRICS" value="${PRJ_DATA_HOME-ARTIFACTS}\Metrics"/>
+    <tgo:variable category="Data" name="PRJ_DATA_HOME-ARTIFACTS_SYS_SPEC" value="${PRJ_DATA_HOME-ARTIFACTS}\SystemSpecification"/>
+    <tgo:variable category="Data" name="PRJ_DATA_PRJ-PROJECT_NAME" value="${\Dataset\EngineeringDesk\projectName}"/>
+    <tgo:variable category="Data" name="PRJ_DATA_HOME-METRICS_REQ_MNGT" value="${PRJ_DATA_HOME-ARTIFACTS_METRICS}\RequirementManagementDomain"/>
+    <tgo:variable category="Data" name="PRJ_DATA_HOME-REFERENCE" value="${PRJ_DATA_HOME-PROJECT}\Resources"/>
+    <tgo:variable category="Data" description="URI (Search) to &quot;Customer needs&quot; " name="CUSTOMER_NEEDS_MODULE" value="orchestra://Doors/${PRJ_DATA_PRJ-PROJECT_NAME}?relativePath=Customer|$|Specification|$|Customer needs"/>
+    <tgo:variable category="Data" name="PRJ_DATA_HOME-SHARED" value="${\Orchestra\TemporaryDirectory}"/>
+    <tgo:variable category="Data" name="PRJ_DATA_HOME-METRICS_IVV_MNGT" value="${PRJ_DATA_HOME-ARTIFACTS_METRICS}\IVV_ManagementDomain"/>
+    <tgo:variable category="Data" description="URI (Search) to &quot;Specification justif&quot; module" name="SPECIFICATION_JUSTIFICATION_MODULE" value="orchestra://Doors/${PRJ_DATA_PRJ-PROJECT_NAME}?relativePath=System|$|Specification|$|Specification justif"/>
+    <tgo:variable category="Data" name="PRJ_DATA_HOME-ARTIFACTS_CCB" value="${PRJ_DATA_HOME-ARTIFACTS_CONF_MNGT}\CCB"/>
+    <tgo:variable category="Data" description="CCB label for Jira" name="CCB-LABEL" userOverride="true" value="XX-XX-XXXX"/>
+    <tgo:variable category="Data" name="PRJ_DATA_DB-MODULO_CCB_DOCS_HOME" value="SampleProject4Orchestra|$|Engineering activities|$|Manage changes|$|CCB"/>
+    <tgo:variable category="Data" name="PRJ_DATA_MA-PROJECT_NAME" value="${\Dataset\EngineeringDesk\Melody_projectName}"/>
+    <tgo:variable category="Data" name="PRJ_DOC_ID-ORCSE_CCB_REPORT" value="ORCSE_CCB_REPORT"/>
+    <tgo:variable category="Data" name="PRJ_DATA_HOME-METRICS_CHANGE_MNGT" value="${PRJ_DATA_HOME-ARTIFACTS_METRICS}\ChangeManagementDomain"/>
+    <tgo:variable category="Data" description="" name="PRJ_DATA_RHAP-PROJECT_NAME" value="${\Dataset\EngineeringDesk\Rhapsody_projectName}"/>
+    <tgo:variable category="Tool" name="PRJ_TOOL_HOME-CCB" value="${PRJ_DATA_HOME-REFERENCE}\Change Mgt\CCB"/>
+    <tgo:variable category="Data" name="PRJ_DATA_HOME-ARTIFACTS_IVV" value="${PRJ_DATA_HOME-ARTIFACTS}\SystemVerification"/>
+    <tgo:variable category="Doc" name="PRJ_DOC_TMPL-IVV_DASHBOARD" value="${\Orchestra installation\Products\IVVManagement\InstallLocation}\Templates\Orchestra.IVVQ_Dashboard-TCR.xls"/>
+    <tgo:variable category="Data" name="PRJ_DOC_ID-ORCSE_CCB_INVITATION" value="ORCSE_CCB_INVITATION"/>
+    <tgo:variable category="Data" description="URI (Search) to &quot;System specification&quot; module" name="SYSTEM_SPECIFICATION_MODULE" value="orchestra://Doors/${PRJ_DATA_PRJ-PROJECT_NAME}?relativePath=System|$|Specification|$|System specification"/>
+    <tgo:variable category="Data" description="Mozart Repository for CCB documents" name="PRJ_DOC_ID-REP_MOZART_CCB" value="ORCSE_CCB"/>
+    <tgo:variable category="Data" name="PRJ_PATH_WSP-MODULO" value="${\Orchestra\TemporaryDirectory}"/>
+    <tgo:variable category="Data" name="PRJ_TOOL_TMPL-OFFICE" value="${PRJ_DATA_HOME-REFERENCE}\Office"/>
+    <tgo:variable category="Data" description="URI (Search) to &quot;System verification justification&quot; module" name="VERIFICATION_JUSTIFICATION_MODULE" value="orchestra://Doors/${PRJ_DATA_PRJ-PROJECT_NAME}?relativePath=System|$|IVV|$|Verification|$|Verification justif"/>
+    <tgo:variable category="Data" name="PRJ_TOOL_TMPL-IVV" value="${PRJ_DATA_HOME-REFERENCE}\IVV"/>
+    <tgo:variable category="Data" name="PRJ_DATA_HOME-ARTIFACTS_CONF_MNGT" value="${PRJ_DATA_HOME-ARTIFACTS}\ConfigurationManagement"/>
+    <tgo:variable category="Data" name="PRJ_PATH_WSP-MOZART" value="${\Orchestra\Mozart\DocumentaryProjects}"/>
+    <tgo:variable category="Data" name="PRJ_DATA_HOME-ARTIFACTS_CHANGE_MNGT" value="${PRJ_DATA_HOME-ARTIFACTS}\PapeeteClearQuest"/>
+    <tgo:variable category="Data" name="PRJ_DATA_DB-MODULO_TERMINATED_STATUS" value="3 - Terminated"/>
+    <tgo:variable category="Data" description="URI (Search) to &quot;System verification&quot; module" name="SYSTEM_VERIFICATION_MODULE" value="orchestra://Doors/${PRJ_DATA_PRJ-PROJECT_NAME}?relativePath=System|$|IVV|$|Verification|$|System verification"/>
+    <tgo:variable category="Data" name="PRJ_DOC_ID-ORCSE_SSS" value="ORCSE_SSS"/>
+    <tgo:variable category="Data" name="PRJ_DOC_ID-ORCSE_STP" value="ORCSE_STP"/>
+    <tgo:variable category="Data" name="PRJ_DOC_ID-ORCSE_STD" value="ORCSE_STD"/>
+    <tgo:variable category="Config" description="URI (Search) to &quot;Will be set by user action&quot; module" name="VERIF_CAMPAIGN_NAME" userOverride="true" value="V1"/>
+    <tgo:variable category="Data" name="PRJ_DATA_DOORS-PROJECT_NAME" value="${\Dataset\EngineeringDesk\DOORS_projectName}"/>
+    <tgo:variable category="Data" name="PRJ_DOC_ID-ORCSE_STR" value="ORCSE_STR"/>
+    <tgo:variable category="Data" name="PRJ_DATA_DB-MODULO_USER_SCHEMA" value="orchestra"/>
+    <tgo:variable category="Config" description="Jira Host" name="CCB-HOST" value="${\DataSet\ChangeManagementURI}"/>
+    <tgo:variable category="Data" name="PRJ_DATA_HOME-PROJECT" value="${\DataSet\EngineeringDesk\projectLocation}"/>
+    <tgo:variable category="Data" description="Mozart Repository for CCB documentation" name="PRJ_DOC-ORCSE_CCB_REP" value="ORCSE_CCB"/>
+    <tgo:variable category="Doc" name="PRJ_DOC_TMPL-RPP_DOC" value="${PRJ_TOOL_TMPL-OFFICE}\RPP.xls"/>
+    <tgo:variable category="Doc" name="PRJ_DOC_TMPL-SCCB_PREP_DOC" value="${PRJ_TOOL_TMPL-OFFICE}\ForDecisionMeeting.xls"/>
+    <tgo:variable category="Data" description="URI" name="SYSTEM_BREAKDOWN_MODULE" value="orchestra://Doors/${PRJ_DATA_PRJ-PROJECT_NAME}?relativePath=System|$|Specification|$|Breakdown structure"/>
+    <tgo:variable category="Data" name="PRJ_TOOL_SRV-MAIL_SRVR_ADDR" value="ef01mailhost.ef01.thales"/>
+    <tgo:variable category="Data" name="PRJ_DOC_ID-REP_MOZART_IVV" value="ORCSE_IVV"/>
+    <tgo:variable category="Dynamic variable" description="" name="MyDyn" value="admin"/>
+    <tgo:actionGroup description="Help" icon="guide2.png" id="b3f6b356-b9ee-499a-b534-4e32f6f16a04" name="Help" visibleUnderServiceChilds="false">
+        <tgo:roleFilter name=""/>
+        <tgo:action icon="book3.png" id="c89f3fbb-3c70-46f7-9c65-c26291e2ffd9" name="Framework SUM" serviceId="Open file" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+            <tgo:roleFilter name=""/>
+            <tgo:param description="Path of file to open" id="d89a60ef-9727-46d1-bb39-11228a2c3dd0" name="filePath" userInput="false" value="${\Orchestra installation\Products\OrchestraFramework\InstallLocation}\doc\SUM_OrchestraFramework.pdf"/>
+        </tgo:action>
+        <tgo:action icon="book3.png" id="1d0cfffb-9758-42ea-8ede-7a55df9d68db" name="Mozart SUM" serviceId="Open file" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+            <tgo:roleFilter name=""/>
+            <tgo:param description="Path of file to open" id="c51a325b-9ede-422d-bbc2-aef13b78475e" name="filePath" userInput="false" value="${\Orchestra installation\Products\Mozart\InstallLocation}\doc\SUM_Mozart.pdf"/>
+        </tgo:action>
+        <tgo:action description="${\Orchestra installation\Products\InstallLocation}${\Orchestra installation\Products\InstallLocation}\OrchestraFramework\doc\SUM_OrchestraFramework.pdf" icon="book3.png" id="161448ee-9931-439a-9d1f-70d992727049" name="CHARM SUM" serviceId="Open file" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+            <tgo:roleFilter name=""/>
+            <tgo:param description="Path of file to open" id="56f9f097-989a-4a23-86fc-8f3ebb6e013f" name="filePath" userInput="false" value="${\Orchestra installation\Products\OrchestraFramework\InstallLocation}\doc\SUM_OrchestraFramework.pdf"/>
+        </tgo:action>
+        <tgo:action icon="book3.png" id="6757dc24-fb3f-422b-8ac1-534c10a1675b" name="UCM Guide" serviceId="Open file" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+            <tgo:roleFilter name=""/>
+            <tgo:param description="Path of file to open" id="d7de3aba-a25a-4896-82eb-2130f08c797e" name="filePath" userInput="false" value="${\Orchestra installation\Products\OrchestraFramework\InstallLocation}\doc\SUM_OrchestraFramework.pdf"/>
+        </tgo:action>
+    </tgo:actionGroup>
+    <tgo:action icon="mail4.png" id="b728f4f5-126f-413b-bd33-bfe6a525576f" name="Mail to Support" serviceId="Open URL" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+        <tgo:roleFilter name=""/>
+        <tgo:param description="URL to open" id="8c4a9941-e093-45ac-aaa1-f43687d24bfd" name="url" userInput="false" value="mailto:local.support@thalesgroup.com"/>
+    </tgo:action>
+    <tgo:action icon="bug.png" id="4cfd067e-1add-462c-ac4e-45fea5761943" name="Submit a problem" serviceId="Create defect in Change Management" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+        <tgo:roleFilter name=""/>
+        <tgo:param description="Absolute path of the clearquest project file" id="729c526d-8d43-40f8-a00a-314391158070" name="projectFilePath" userInput="false" value="${PRJ_DATA_HOME-ARTIFACTS_CHANGE_MNGT}\SampleProject.clearquest"/>
+    </tgo:action>
+    <tgo:actionGroup description="Access my &quot;to do&quot; list" icon="taskcoach.png" id="bf4bd88c-6f41-4541-975f-4622b6c569f9" name="My ToDo Lists" visibleUnderServiceChilds="false">
+        <tgo:roleFilter name=""/>
+        <tgo:action description="View all the change requests that I should work on" icon="taskcoach.png" id="2c4b0583-a25b-4a4f-ae01-f8905ce6e372" name="My pending list" serviceId="Load artifact in extractor view" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+            <tgo:roleFilter name=""/>
+            <tgo:param description="Exceute the Query Public Queries/MyPendingList" id="07aedc81-50fc-46fa-8684-cf0affe32cf2" name="uri" userInput="false" value="orchestra://Clearquest/ClearQuest%2Fvalidation/Query/Public%20Queries%2FMPL"/>
+            <tgo:param description="Title of the view where the request is going to be displayed." id="dc8a6677-f866-495b-9b67-c9bb16c490bb" name="newViewTitleName" userInput="false" value="My pending list"/>
+        </tgo:action>
+        <tgo:action description="View the status of all the change requests I submitted" icon="taskcoach.png" id="40097f37-b6e6-41a6-bf0f-059477a5abb5" name="My submited list" serviceId="Load artifact in extractor view" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+            <tgo:roleFilter name=""/>
+            <tgo:param description="URI to open in the Extractor View. &#13;&#10;Use the syntax : &#13;&#10;For an URI : orchestra://Clearquest/prod/Query/Public%20Queries%2FMyPendingList)" id="81c79b7d-075f-4871-ac74-4c4fcc507889" name="uri" userInput="false" value="orchestra://Clearquest/PapeeteClearQuest%2FSampleProject/Query/Public%20Queries%2FMyPendingList"/>
+            <tgo:param description="Title of the view where the request is going to be displayed." id="1c9af14b-0200-4da7-929e-bc62fa293578" name="newViewTitleName" userInput="false" value="My submitted list"/>
+        </tgo:action>
+    </tgo:actionGroup>
+    <tgo:action icon="chorus2.png" id="31cfefc0-da15-4f0b-84ea-c8081699b82f" name="Chorus" serviceId="Open URL" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+        <tgo:roleFilter name=""/>
+        <tgo:param description="URL to open" id="16e22571-7261-48ac-beaf-c37ff2f95683" name="url" userInput="false" value="http://info.tisfr.thales/services_portal_fr/library/chorus/export_div/index_doc.htm"/>
+    </tgo:action>
+    <tgo:action icon="logo_orchestra.png" id="678075a4-95ff-4382-981f-b5b3e926bb67" name="Orchestra intranet" serviceId="Open URL" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+        <tgo:roleFilter name=""/>
+        <tgo:param description="URL to open" id="153031bc-18b9-4999-88e3-7bc2b84a18a1" name="url" userInput="false" value="http://intranet.corp.thales/orchestra"/>
+    </tgo:action>
+    <tgo:action icon="bug.png" id="afeefa46-5e95-4a1e-ad62-742355e831db" name="Submit a Jira problem" serviceId="Open URL" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+        <tgo:param description="URL to open. &#13;&#10;Used the syntax : &#13;&#10;For a file: file:///FilePath (ex: file:///C:\Program Files)&#13;&#10;For an URL : http://URL (ex: http://www.google.fr)" id="0b0702d0-b944-43e6-9278-5b3d8c9581cf" name="url" userInput="false" value="${\DataSet\ChangeManagementURI}"/>
+    </tgo:action>
+    <tgo:actionGroup description="Access my &quot;to do&quot; list" icon="taskcoach.png" id="20f7ed34-ca13-4ea6-acf9-351979abd33c" name="My Jira ToDo Lists" visibleUnderServiceChilds="false">
+        <tgo:action description="View all the change requests that I should work on" icon="taskcoach.png" id="24e2512b-9ffd-4564-a4d2-8fa9fefafa0e" name="My pending list" serviceId="Load artifact in extractor view" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+            <tgo:param description="Exceute the Query Public Queries/MyPendingList" id="d9e08969-a267-407c-8fa1-61659073d1a9" name="uri" userInput="false" value="orchestra://Jira/Jira%2F%24%7BCCB%2DHOST%7D/Query/%24%7BMYPENDING%2DFILTERID%7D"/>
+            <tgo:param description="Title of the view where the request is going to be displayed." id="1cba84b1-058a-4f8b-a5d4-e7ae79930c94" name="newViewTitleName" userInput="false" value="My pending list"/>
+        </tgo:action>
+        <tgo:action description="View the status of all the change requests I submitted" icon="taskcoach.png" id="e79da61e-fe7f-41e2-b404-4b61fb8afa93" name="My submited list" serviceId="Load artifact in extractor view" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+            <tgo:param description="URI to open in the Extractor View. &#13;&#10;Used the syntax : &#13;&#10;For an URI : orchestra://Clearquest/prod/Query/Public%20Queries%2FMyPendingList)" id="682834f2-7ec8-4ac6-85b5-8bea10caced7" name="uri" userInput="false" value="orchestra://Jira/Jira%2F%24%7BCCB%2DHOST%7D/Query/%24%7BMYSUBMITTED%2DFILTERID%7D"/>
+            <tgo:param description="Title of the view where the request is going to be displayed." id="0c552986-5fec-4e5a-bd16-108be7685096" name="newViewTitleName" userInput="false" value="My submitted list"/>
+        </tgo:action>
+    </tgo:actionGroup>
+    <tgo:activity icon="tree_team1.png" id="847131b0-f0f3-4155-80f9-8a3e72f799b2" name="Engineering activities">
+        <tgo:variable category="Data" description="" name="ProjectName" value="ProjectName1"/>
+        <tgo:action id="72f71e78-7eb7-439f-b759-94795cc45bd9" name="LaunchMozart" serviceId="Program launcher" serviceResultBehaviour="Hide" visibleUnderServiceChilds="false">
+            <tgo:param description="Command to launch. (Do not add program arguments here.)" id="a2d2ae90-3d90-4774-bc6b-11e9e22a8318" name="command" userInput="false" value="${\Orchestra installation\Products\Mozart\Executable}"/>
+        </tgo:action>
+        <tgo:action id="ebb20f21-1cf0-426b-864d-b3293d27ef8a" name="Launch LM" serviceId="Program launcher" serviceResultBehaviour="Hide" visibleUnderServiceChilds="false">
+            <tgo:param description="Command to launch. (Do not add program arguments here.)" id="0fb389ff-ce71-4799-85b8-308f1aed1531" name="command" userInput="false" value="${\Orchestra installation\Products\LinkManager\InstallLocation}\OrchestraLM.exe"/>
+        </tgo:action>
+        <tgo:action id="6ec4ef78-c4b1-42d1-8cc4-c8e624857101" name="Launch Rhapsody" serviceId="Program launcher" serviceResultBehaviour="Hide" visibleUnderServiceChilds="false">
+            <tgo:param description="Command to launch. (Do not add program arguments here.)" id="da54eb1c-d9b4-48f1-b970-59eeb2ef422c" name="command" userInput="false" value="${\Orchestra installation\COTS\Rhapsody\Current\Executable}"/>
+            <tgo:param description="When you add an argument containing spaces (a path for example), enclose argument using double-quotes (“)" id="f4a4dc89-eef5-4c1f-8e5b-4414be248583" name="arg1" userInput="false" value="-lang=cpp"/>
+        </tgo:action>
+        <tgo:action id="10e0f63c-a918-4aa2-b8c3-f15860634060" name="Launch Doors" serviceId="Program launcher" serviceResultBehaviour="Hide" visibleUnderServiceChilds="false">
+            <tgo:param description="Command to launch. (Do not add program arguments here.)" id="3ed4e840-bc81-4a07-800a-32ec9b0d7cba" name="command" userInput="false" value="${\Orchestra installation\COTS\Doors\Current\Executable}"/>
+            <tgo:param description="When you add an argument containing spaces (a path for example), enclose argument using double-quotes (“)" id="cd744e03-3962-4dca-9a62-f57a47679523" name="arg1" userInput="false" value="-d 36677@${\Dataset\ServerName}"/>
+        </tgo:action>
+        <tgo:activity description="Manage the context level of the solution, specify the solution" icon="tree_human_resources1.png" id="a8ed96ab-c3a4-4b69-aaac-9d1b0b8ec07e" name="Analyse customer needs &amp; define system requirements">
+            <tgo:variable category="Data" description="URI (Search) to &quot;Customer needs&quot; " name="CUSTOMER_NEEDS_MODULE" value="orchestra://Doors/${PRJ_DATA_DOORS-PROJECT_NAME}?relativePath=Customer|$|Specification|$|Customer needs"/>
+            <tgo:variable category="Data" description="URI (Search) to &quot;System specification&quot; module" name="SYSTEM_SPECIFICATION_MODULE" value="orchestra://Doors/${PRJ_DATA_DOORS-PROJECT_NAME}?relativePath=System|$|Specification|$|System specification"/>
+            <tgo:variable category="Data" description="URI (Search) to &quot;System verification&quot; module" name="SYSTEM_VERIFICATION_MODULE" value="orchestra://Doors/${PRJ_DATA_DOORS-PROJECT_NAME}?relativePath=System|$|IVV|$|Verification|$|System verification"/>
+            <tgo:actionGroup icon="handshake3.png" id="7b4420f2-ac3b-4827-933f-221f5cf2d7ea" name="Analyse customer needs" visibleUnderServiceChilds="false">
+                <tgo:action icon="requirements.png" id="55e1beb3-e032-467c-b437-7c2c1e9b5130" name="Access customer requirements" serviceId="Navigate" serviceResultBehaviour="Hide" visibleUnderServiceChilds="false">
+                    <tgo:param description="URI to navigate" id="de971a2e-af31-47bd-b3b7-5791738297d0" name="uri" userInput="false" value="${CUSTOMER_NEEDS_MODULE}"/>
+                </tgo:action>
+                <tgo:action icon="review2.png" id="619fa59e-feb3-408a-a9e9-c521e3452647" name="Check compliance" serviceId="Navigate" serviceResultBehaviour="Hide" visibleUnderServiceChilds="false">
+                    <tgo:param description="URI to navigate" id="5502e06d-94da-4058-8b87-ebc26aa56433" name="uri" userInput="false" value="${CUSTOMER_NEEDS_MODULE}|$|30. Compliance Matrix"/>
+                </tgo:action>
+                <tgo:action icon="check2.png" id="0dc58645-1c24-4572-b34b-0381ed9c58df" name="Check analysis progress" serviceId="Navigate" serviceResultBehaviour="Hide" visibleUnderServiceChilds="false">
+                    <tgo:param description="URI to navigate" id="8681e253-6e35-4d38-81aa-2b10ca888e03" name="uri" userInput="false" value="${CUSTOMER_NEEDS_MODULE}|$|25. Analysis progress measure"/>
+                </tgo:action>
+            </tgo:actionGroup>
+            <tgo:actionGroup icon="requirements.png" id="8751ace0-9fc0-4f2a-a7e2-1c5c661f56cd" name="Define system requirements" visibleUnderServiceChilds="false">
+                <tgo:action icon="requirements.png" id="a57a04d4-e927-462f-bf81-2d7cc84c810f" name="Access system requirements" serviceId="Navigate" serviceResultBehaviour="Hide" visibleUnderServiceChilds="false">
+                    <tgo:param description="URI to navigate" id="d5d7f46f-033a-415f-95dd-7c804bd57f53" name="uri" userInput="false" value="${SYSTEM_SPECIFICATION_MODULE}"/>
+                </tgo:action>
+                <tgo:action icon="review2.png" id="616c96a2-d862-46cc-8043-4ac0503ddb44" name="Check compliance to upper requirements" serviceId="Navigate" serviceResultBehaviour="Hide" visibleUnderServiceChilds="false">
+                    <tgo:param description="URI to navigate" id="bdac5494-c724-427c-a49d-32f1dfeac112" name="uri" userInput="false" value="${SYSTEM_SPECIFICATION_MODULE}|$|31. Upper requirements satisfied Matrix"/>
+                </tgo:action>
+                <tgo:action icon="check2.png" id="f4d27294-97b0-43e7-8cea-da5090bd979a" name="Check analysis progress" serviceId="Navigate" serviceResultBehaviour="Hide" visibleUnderServiceChilds="false">
+                    <tgo:param description="URI to navigate" id="3fbe8ab3-63ac-4663-ab69-434fdf81b22e" name="uri" userInput="false" value="${SYSTEM_SPECIFICATION_MODULE}|$|25. Analysis progress measure"/>
+                </tgo:action>
+                <tgo:action icon="korganizer.png" id="b638da0a-b4c1-4451-9fc5-978b816591a8" name="Justify traceability" serviceId="Navigate" serviceResultBehaviour="Hide" visibleUnderServiceChilds="false">
+                    <tgo:param description="URI to navigate" id="bfedf6b6-ac30-4d9c-ad9c-c7ffe662830b" name="uri" userInput="false" value="${SPECIFICATION_JUSTIFICATION_MODULE}"/>
+                </tgo:action>
+                <tgo:action id="32be4fc9-a338-49c0-b3ac-b2b6ecf23def" name="Identifiy system" serviceId="Navigate" serviceResultBehaviour="Hide" visibleUnderServiceChilds="false">
+                    <tgo:param description="URI to navigate" id="e48e459c-860e-46ec-bac3-d8e7408870c0" name="uri" userInput="false" value="orchestra://Doors/WakeUpClock/Module/4ca05e8652d31da4%2E00001a05"/>
+                </tgo:action>
+            </tgo:actionGroup>
+            <tgo:actionGroup icon="check2.png" id="b91a6b5c-45af-40c6-86dd-c5858cd65afe" name="Prepare verification" visibleUnderServiceChilds="false">
+                <tgo:action icon="sign6.png" id="1822f012-72e7-477d-9b6b-bfbef9512a4b" name="Define test strategy" serviceId="Open file" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                    <tgo:param description="file to open" id="239ac6b6-808e-467e-b167-45196a127a81" name="filePath" userInput="false" value="${PRJ_DATA_HOME-ARTIFACTS_IVV}\SystemVerification.doc"/>
+                </tgo:action>
+                <tgo:action icon="check2.png" id="c8085593-2d7e-49d3-9717-5fe899dab979" name="Define test objectives" serviceId="Navigate" serviceResultBehaviour="Hide" visibleUnderServiceChilds="false">
+                    <tgo:param description="orchestra://Doors/SampleProjectForIVV/Module/4bf4db5d5f2471e2%2E0000afa1" id="fada6528-8982-45e6-ae94-baa3c669f280" name="uri" userInput="false" value="${SYSTEM_VERIFICATION_MODULE}"/>
+                </tgo:action>
+            </tgo:actionGroup>
+            <tgo:action id="94e4b195-beb5-4e08-858e-49922c7ac27b" name="Establish Specifcation" serviceId="Navigate" serviceResultBehaviour="Hide" visibleUnderServiceChilds="false">
+                <tgo:param description="Doors WakeUpClock/system/System specification" id="8702c8a4-7093-4268-95ad-e00a33783216" name="uri" userInput="false" value="orchestra://Doors/WakeUpClock/Module/51389318215a5a7c%2E00000544"/>
+            </tgo:action>
+            <tgo:activity description="Produce the specification documents based on the engineering data produced during this phase" icon="tree_book1.png" id="f588e39c-e1d3-4d89-8be3-2a5268d64426" name="Produce the related documents (MA)">
+                <tgo:variable category="Config" description="" name="DOC_SPECIFIC_ARTEFACTS" value="${SYSTEM_SPECIFICATION_MODULE};${SYSTEM_SPECIFICATION_MODULE}|$|10. Document view;${SYSTEM_SPECIFICATION_MODULE}|$|31. Upper requirements satisfied Matrix;${CUSTOMER_NEEDS_MODULE}|$|30. Compliance Matrix;${SPECIFICATION_JUSTIFICATION_MODULE}|$|31. Issues refer to ...Matrix;${SPECIFICATION_JUSTIFICATION_MODULE}|$|30. Decisions justify...Matrix;orchestra://Reqtify/TraceabilityProjects%2FSpecToCode%5FRhapsody%2FSpecToCode%5FRhapsody/LinkSet/Model%2CSpecification"/>
+                <tgo:variable category="Tool" description="Modeling tool" name="MODELING_TOOL" value="Melody"/>
+                <tgo:variable category="Config" description="" name="DOC_ACRONYM" value="SRS"/>
+                <tgo:actionGroup description="Update documentary fragments" icon="tree_data_collection2.png" id="4da81555-abd7-46ea-9d69-743e3be43479" name="Update documentary fragments" visibleUnderServiceChilds="false">
+                    <tgo:action icon="create.png" id="7f7497e7-279f-4441-89f5-d8b65d26de45" name="Update changes" serviceId="Navigate" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                        <tgo:param description="URI to navigate" id="97d92c60-97bd-434f-8e52-9cfb40b02bf0" name="uri" userInput="false" value="orchestra://Excel/Documents%2FDocumentaryFragments%2F${DOC_ACRONYM}%2FChanges/Reference/Changes"/>
+                    </tgo:action>
+                    <tgo:action icon="create.png" id="7550c2a9-380e-43a1-9e28-5f05ddf87a42" name="Update references" serviceId="Navigate" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                        <tgo:param description="URI to navigate" id="d86f1fe6-8093-4437-b7e2-c6de572ed570" name="uri" userInput="false" value="orchestra://Excel/Documents%2FDocumentaryFragments%2F${DOC_ACRONYM}%2FReferences"/>
+                    </tgo:action>
+                    <tgo:action icon="create.png" id="fb26bc6d-0dc6-4805-8ac8-f5a3e9f71339" name="Update document overview" serviceId="Navigate" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                        <tgo:param description="URI to navigate" id="4a2ecb2c-4512-4376-8159-7e660cc5d8e0" name="uri" userInput="false" value="orchestra://Word/Documents%2FDocumentaryFragments%2F${DOC_ACRONYM}%2FDocOverview"/>
+                    </tgo:action>
+                </tgo:actionGroup>
+                <tgo:action description="Update the document properties" icon="create.png" id="5b72356a-4549-4ab0-9cf1-2901f249219d" name="Update identity card" serviceId="Change document properties" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                    <tgo:param description="Name of the documentary project. &#13;&#10;Example: &quot;myProject&quot;" id="b31a503c-9da1-47a4-9826-17e087b1488e" name="projectName" userInput="false" value="${DOC_ACRONYM}"/>
+                </tgo:action>
+                <tgo:action icon="build.png" id="9e0db381-8f2e-42b7-afa6-6555522ad680" name="Generate the document (MA)" serviceId="Create documentary project from template and generate document" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                    <tgo:param description="Name of the project template to use. &#13;&#10;Example: &quot;myProjectTemplate&quot;" id="6bb663ff-7a39-4791-90c3-202e4d51f5e0" name="projectTemplateName" userInput="true" value="[R_OPUC13]_SRS_GEN_DOC_MA"/>
+                    <tgo:param description="Name of the documentary project. &#13;&#10;Example: &quot;myProject&quot;" id="573dcacf-9bb9-49ff-a224-592924733998" name="projectName" userInput="false" value="${DOC_ACRONYM}"/>
+                    <tgo:param description="Physical location where the document project will be created. &#13;&#10;Example: &quot;C:\orchestra_data\artifacts\projects&quot;" id="e4bbaef5-0eea-4db7-98d1-3d0ff19565ce" name="documentaryProjects" userInput="false" value="T:\Artefacts\GeneratedDocumentaryProjects"/>
+                    <tgo:param description="Please leave all parameter as is but change the &lt;Please provide a date&gt; with the issue date." id="cb28df78-7653-4698-9ea0-6a637a71cd55" name="propertiesList" userInput="false" value="Document Title=${DOC_ACRONYM};Document Type=${DOC_ACRONYM};System Name=${PRJ_DATA_PRJ-PROJECT_NAME};Document Date=&lt;Please provide a date&gt;"/>
+                    <tgo:param description="List of artefact URI to add to the project. You can specify a text file or define a list of Orchestra URI (syntax: orchestraURI[;orchestraURI]).&#13;&#10;Example:&#13;&#10;C:\artefactsList.txt&#13;&#10;orchestra://JPG/Blue%20hills;orchestra://JPG/Water%20lilies" id="745634b9-9216-4504-a658-9df9df9b10ca" name="artefactsUrisList" userInput="false" value="orchestra://Melody/Modeling%2FMelody%2FWakeUp%2FWakeUp;orchestra://Clearquest/WakeUpClock/Query/Public%20Queries%2FAll%20Defects%20Security;orchestra://Doors/WakeUpClock/Module/4ca05e8652d31da4%2E00001a05;orchestra://Doors/WakeUpClock/Module/51389318215a5a7c%2E00000544"/>
+                </tgo:action>
+                <tgo:action icon="book2.png" id="c40bd78b-af5d-4c72-9972-760a04bd3805" name="Access the generated document" serviceId="Open generated document" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                    <tgo:param description="Name of the documentary project. &#13;&#10;Example: &quot;myProject&quot;" id="3237a266-6395-4bc7-9984-c614ade3df3e" name="projectName" userInput="false" value="${DOC_ACRONYM}"/>
+                </tgo:action>
+                <tgo:action icon="book3.png" id="25fa555e-be5c-480d-967e-5f9cfd9a6730" name="Access the doc generation project" serviceId="Open documentary project" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                    <tgo:param description="Name of the documentary project. &#13;&#10;Example: &quot;myProject&quot;" id="7f90ddcc-1697-417c-8a1a-d83c4e2d3ae4" name="projectName" userInput="false" value="${DOC_ACRONYM}"/>
+                </tgo:action>
+            </tgo:activity>
+            <tgo:activity description="Produce the specification documents based on the engineering data produced during this phase" icon="tree_book1.png" id="22edc856-dbed-4571-b897-ee54b989243a" name="Produce the related documents (Rhap)">
+                <tgo:variable category="Conf" name="DOC_SPECIFIC_ARTEFACTS" value="${SYSTEM_SPECIFICATION_MODULE};${SYSTEM_SPECIFICATION_MODULE}|$|10. Document view;${SYSTEM_SPECIFICATION_MODULE}|$|31. Upper requirements satisfied Matrix;${CUSTOMER_NEEDS_MODULE}|$|30. Compliance Matrix;${SPECIFICATION_JUSTIFICATION_MODULE}|$|31. Issues refer to ...Matrix;${SPECIFICATION_JUSTIFICATION_MODULE}|$|30. Decisions justify...Matrix;orchestra://Reqtify/TraceabilityProjects%2FSpecToCode%5FRhapsody%2FSpecToCode%5FRhapsody/LinkSet/Model%2CSpecification"/>
+                <tgo:variable category="Tool" description="Modeling tool" name="MODELING_TOOL" value="Rhapsody"/>
+                <tgo:variable category="Conf" name="DOC_ACRONYM" value="SRS"/>
+                <tgo:actionGroup icon="data_collection4.png" id="adb12a48-dc8d-4951-9763-07ca57a9e565" name="Update documentary fragments" visibleUnderServiceChilds="false">
+                    <tgo:action icon="create.png" id="c3fadf19-26a7-437d-af8a-e3d92956e183" name="Update changes" serviceId="Navigate" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                        <tgo:param description="URI to navigate" id="47359832-f6e6-4e77-8ca6-66a8fa5d1859" name="uri" userInput="false" value="orchestra://Excel/Documents%2FDocumentaryFragments%2F${DOC_ACRONYM}%2FChanges/Reference/Changes"/>
+                    </tgo:action>
+                    <tgo:action icon="create.png" id="93a51b2d-a348-42b6-bbaf-cce663a5d940" name="Update references" serviceId="Navigate" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                        <tgo:param description="URI to navigate" id="6c4e75d3-1394-4c59-aa6e-417178b98387" name="uri" userInput="false" value="orchestra://Excel/Documents%2FDocumentaryFragments%2F${DOC_ACRONYM}%2FReferences"/>
+                    </tgo:action>
+                    <tgo:action icon="create.png" id="bf06aeed-82ea-4736-89fd-69ceae350e75" name="Update document overview" serviceId="Navigate" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                        <tgo:param description="URI to navigate" id="ba7a3bb5-112d-449e-bf7e-5f4fb176ceb4" name="uri" userInput="false" value="orchestra://Word/Documents%2FDocumentaryFragments%2F${DOC_ACRONYM}%2FDocOverview"/>
+                    </tgo:action>
+                </tgo:actionGroup>
+                <tgo:action description="Update the document properties" icon="create.png" id="dd9a214f-5bea-49b2-814d-c3ed81d2ce7f" name="Update identity card" serviceId="Change document properties" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                    <tgo:param description="Name of the documentary project. &#13;&#10;Example: &quot;myProject&quot;" id="7b131f5e-3f84-4acc-a478-6cf90f6c74f6" name="projectName" userInput="false" value="orchestra://Rhapsody/Models%2FWakeUpClock%2FWakeUpClock"/>
+                </tgo:action>
+                <tgo:action icon="build.png" id="6cfa150d-7d70-422b-becc-3059e0342d80" name="Generate the document (Rhap)" serviceId="Create documentary project from template and generate document" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                    <tgo:param description="Name of the project template to use. &#13;&#10;Example: &quot;myProjectTemplate&quot;" id="b363059e-401e-4b4e-9829-ff3eafb2b55c" name="projectTemplateName" userInput="true" value="[R_OPUC10]_SRS_GEN_DOC_RHAPSODY"/>
+                    <tgo:param description="Name of the documentary project. &#13;&#10;Example: &quot;myProject&quot;" id="022d2fc9-0014-4c37-ad39-c279b00195d6" name="projectName" userInput="false" value="${DOC_ACRONYM}"/>
+                    <tgo:param description="Physical location where the document project will be created. &#13;&#10;Example: &quot;C:\orchestra_data\artifacts\projects&quot;" id="667bfc79-76cf-4a90-a8ec-374319d813ad" name="documentaryProjects" userInput="false" value="\\IVV0010L\manual-wakeUpClock-WakeUpClock\Artefacts\GeneratedDocumentaryProjects"/>
+                    <tgo:param description="Please leave all parameter as is but change the &lt;Please provide a date&gt; with the issue date." id="18575ca3-efda-453f-b59e-20856b4f5366" name="propertiesList" userInput="false" value="Document Title=${DOC_ACRONYM};Document Type=${DOC_ACRONYM};System Name=${PRJ_DATA_PRJ-PROJECT_NAME};Document Date=15/04/2014"/>
+                    <tgo:param description="List of artefact URI to add to the project. You can specify a text file or define a list of Orchestra URI (syntax: orchestraURI[;orchestraURI]).&#13;&#10;Example:&#13;&#10;C:\artefactsList.txt&#13;&#10;orchestra://JPG/Blue%20hills;orchestra://JPG/Water%20lilies" id="49e0cc1c-5fb6-4361-9e57-31287d3ebf6f" name="artefactsUrisList" userInput="false" value="orchestra://Rhapsody/Modeling%2FRhapsody%2FWakeUpClock%2FWakeUpClock;orchestra://Clearquest/ClearQuest/Query/Public%20Queries%2FAll%20Defects%20Security;orchestra://Doors/WakeUpClock/Module/4ca05e8652d31da4%2E00001a05;orchestra://Doors/WakeUpClock/Module/51389318215a5a7c%2E00000544"/>
+                </tgo:action>
+                <tgo:action icon="book2.png" id="f81f4cc2-9171-4424-930b-ce11b751a243" name="Access the generated document" serviceId="Open generated document" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                    <tgo:param description="Name of the documentary project. &#13;&#10;Example: &quot;myProject&quot;" id="551299bd-abeb-455b-a092-289715fe08aa" name="projectName" userInput="false" value="${DOC_ACRONYM}"/>
+                </tgo:action>
+                <tgo:action icon="book3.png" id="50226d4a-d3de-49f8-beb0-8846c93fe6a7" name="Access the doc generation project" serviceId="Open documentary project" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                    <tgo:param description="Name of the documentary project. &#13;&#10;Example: &quot;myProject&quot;" id="ed0eefd4-2064-417c-a6bd-ef42cfa0bb0b" name="projectName" userInput="false" value="${DOC_ACRONYM}"/>
+                </tgo:action>
+            </tgo:activity>
+            <tgo:activity description="Review the specification before officialisation" icon="tree_docreview.png" id="715e2867-5125-49aa-b507-0e20f0ad3c32" name="Review specification">
+                <tgo:roleFilter name=""/>
+                <tgo:actionGroup icon="help.png" id="cce95ab4-1a6e-4794-b60b-50b0d38d6695" name="Guides" visibleUnderServiceChilds="false">
+                    <tgo:action icon="book1.png" id="486d074d-9434-4e93-ad23-f9efe34032d8" name="Peer review guide" serviceId="Open URL" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                        <tgo:param description="URL to open. &#10;Used the syntax : &#10;For a file: file:///FilePath (ex: file:///C:\Program Files)&#10;For an URL : http://URL (ex: http://www.google.fr)" id="df918930-2370-464a-9f11-6705a21f3e55" name="url" userInput="false" value="http://modref.trt.thales/modulo/webservice?servicename=fileget&amp;database=modref&amp;number=TH/00115"/>
+                    </tgo:action>
+                </tgo:actionGroup>
+                <tgo:actionGroup icon="softMan.png" id="2ea2b78a-0a42-424b-91f1-947bbe158a8d" name="Prepare review (author)" visibleUnderServiceChilds="false">
+                    <tgo:action icon="calendar.png" id="00ec0cc3-2992-4ee8-8a8d-ea20944c0266" name="Schedule review" serviceId="Program launcher" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                        <tgo:param description="Command to launch. (Do not add program arguments here.)" id="9daa3e5e-3c00-4d39-997f-7aea17782e9b" name="command" userInput="false" value="${\Orchestra installation\COTS\Outlook\Current\Executable}"/>
+                    </tgo:action>
+                    <tgo:action icon="book7.png" id="369de258-0d0d-401e-b38d-2cf82c5ef792" name="Create review form" serviceId="Create spreadsheet from template" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                        <tgo:param description="Path of template to use" id="c5c91aca-a31f-4195-97d8-1097c5c3e3be" name="templateFilePath" userInput="false" value="${PRJ_DOC_TMPL-RPP_DOC}"/>
+                        <tgo:param description="Repository path where to create document" id="074ba50a-20f3-463d-8206-5069f5833688" name="destinationFolderPath" userInput="false" value="${PRJ_DATA_HOME-ARTIFACTS_SYS_SPEC}\Reviews"/>
+                    </tgo:action>
+                    <tgo:action icon="update3.png" id="63c57ab1-1ffb-45f6-99e4-7417dd3467de" name="Update review form" serviceId="Program launcher" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                        <tgo:param description="Command to launch. (Do not add program arguments here.)" id="c949386b-26c0-41b2-b6ba-3b69bfe3a983" name="command" userInput="false" value="${\Host\Tool\SYS_TOOL_FILE_CMD-EXPLORER}"/>
+                        <tgo:param description="When you add an argument containing spaces (a path for example), enclose argument using double-quotes (“)" id="4315ba9d-bed0-42e3-a72d-cb52b8db4265" name="arg1" userInput="false" value="${PRJ_DATA_HOME-ARTIFACTS_SYS_SPEC}\Reviews"/>
+                    </tgo:action>
+                    <tgo:action description="Prepare the body of the inviting mail" icon="writeDoc.png" id="65a4f262-f042-43ce-8d02-7d736cab792d" name="Prepare invitation" serviceId="Program launcher" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                        <tgo:param description="Command to launch. (Do not add program arguments here.)" id="20e936bd-5060-4296-90b6-b214beed3dbd" name="command" userInput="false" value="${PRJ_DATA_HOME-REFERENCE}\Reviews\CreateBody.cmd"/>
+                        <tgo:param description="When you add an argument containing spaces (a path for example), enclose argument using double-quotes (“)" id="5d940471-1f59-4547-aeec-6964063ee949" name="arg1" userInput="false" value="${PRJ_DATA_HOME-ARTIFACTS_SYS_SPEC}\Reviews"/>
+                    </tgo:action>
+                    <tgo:action description="Inform peers that the peer review form is available and they need to work" icon="mail4.png" id="5204d974-12bf-4d4b-ac65-8062911da696" name="Invite peers" serviceId="Send mail" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                        <tgo:param description="Address of the mailing server." id="2b5e4526-56d5-448c-b130-4d4ef8566662" name="emailServerAddress" userInput="false" value="${PRJ_TOOL_SRV-MAIL_SRVR_ADDR}"/>
+                        <tgo:param description="Sender's Internet address." id="6ba3443c-03fd-4489-b247-4716483eb083" name="from" userInput="false" value="${\DataSet\EngineeringDesk\emailAddress}"/>
+                        <tgo:param description="Subject of the message." id="da072301-7ba5-454d-b9f9-a562d6b05ac9" name="subject" userInput="true" value="&lt;doc title&gt; review scheduled for &lt;date and time&gt;"/>
+                        <tgo:param description="List of contact : free text or ASCI file." id="15dabe9b-5ced-4776-916d-3388e04137cc" name="to" userInput="true" value="peer1;peer2"/>
+                        <tgo:param description="Content of the message." id="229a0700-2f2d-4991-9422-279c2723e2c1" name="bodyFilePath" userInput="false" value="${PRJ_DATA_HOME-REFERENCE}\Reviews\ReviewBody.txt"/>
+                    </tgo:action>
+                    <tgo:action description="Consolidate and analyse the defects to prepare the meeting" icon="review2.png" id="bff6f285-8f18-41f2-8ace-6617c93d8efd" name="Consolidate reviewers sheets" serviceId="Program launcher" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                        <tgo:param description="Command to launch. (Do not add program arguments here.)" id="8bbd7749-886b-442c-a6bd-a6980caec164" name="command" userInput="false" value="${\Host\Tool\SYS_TOOL_FILE_CMD-EXPLORER}"/>
+                        <tgo:param description="When you add an argument containing spaces (a path for example), enclose argument using double-quotes (“)" id="0c24b6d8-9507-48ff-95c3-44e5fd8d1570" name="arg1" userInput="false" value="${PRJ_DATA_HOME-ARTIFACTS_SYS_SPEC}\Reviews"/>
+                    </tgo:action>
+                </tgo:actionGroup>
+                <tgo:actionGroup icon="meeting5.png" id="68ade911-054b-41d4-96b9-81b2e76451c9" name="Lead review" visibleUnderServiceChilds="false">
+                    <tgo:action description="Record review decisions in the review form" icon="update3.png" id="5d064ada-7674-49de-85ea-e17339ec2c08" name="Update review form" serviceId="Program launcher" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                        <tgo:param description="Command to launch. (Do not add program arguments here.)" id="083977e3-c9bf-4392-8f04-777f304dda00" name="command" userInput="false" value="${\Host\Tool\SYS_TOOL_FILE_CMD-EXPLORER}"/>
+                        <tgo:param description="When you add an argument containing spaces (a path for example), enclose argument using double-quotes (“)" id="d28ebd18-5cc9-43e8-9ff6-28795f919819" name="arg1" userInput="false" value="${PRJ_DATA_HOME-ARTIFACTS_SYS_SPEC}\Reviews"/>
+                    </tgo:action>
+                </tgo:actionGroup>
+                <tgo:actionGroup icon="update3.png" id="d35e1985-cbf6-4a57-aaf5-ec7f7d093142" name="Check after review" visibleUnderServiceChilds="false">
+                    <tgo:action description="Check and record that accepted changes have been made" icon="update3.png" id="efbe0089-f3a2-4fa7-b39a-ca67a998e846" name="Update review form" serviceId="Program launcher" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                        <tgo:param description="Command to launch. (Do not add program arguments here.)" id="7e45a096-9ac0-4bfe-b45f-7041e002239b" name="command" userInput="false" value="${\Host\Tool\SYS_TOOL_FILE_CMD-EXPLORER}"/>
+                        <tgo:param description="When you add an argument containing spaces (a path for example), enclose argument using double-quotes (“)" id="e7207bd1-678d-4cc2-a47e-1ec6b0a93723" name="arg1" userInput="false" value="${PRJ_DATA_HOME-ARTIFACTS_SYS_SPEC}\Reviews"/>
+                    </tgo:action>
+                </tgo:actionGroup>
+                <tgo:actionGroup icon="finish.png" id="2527be90-c1e5-4e95-9566-386cde25ce82" name="Close review" visibleUnderServiceChilds="false">
+                    <tgo:action description="Consolidate the data and evaluate the review" icon="update3.png" id="d6fa70e7-ec21-4e2a-be90-6ee38aef4cd4" name="Update review form" serviceId="Program launcher" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                        <tgo:param description="Command to launch. (Do not add program arguments here.)" id="82f074e6-8d47-48b5-825f-5ce287bec2c1" name="command" userInput="false" value="${\Host\Tool\SYS_TOOL_FILE_CMD-EXPLORER}"/>
+                        <tgo:param description="When you add an argument containing spaces (a path for example), enclose argument using double-quotes (“)" id="35161b65-f83d-4ae5-8090-9612f03ca2c3" name="arg1" userInput="false" value="${PRJ_DATA_HOME-ARTIFACTS_SYS_SPEC}\Reviews"/>
+                    </tgo:action>
+                </tgo:actionGroup>
+            </tgo:activity>
+            <tgo:activity icon="tree_book1.png" id="960ffc6f-9527-449d-876c-ddff507297f5" name="Produce the Rhap_Jira document">
+                <tgo:action id="e9be1a36-df98-42b0-8fa5-ff9d20c12930" name="Create Rhap_Jira document" serviceId="Create documentary project from template and generate document" serviceResultBehaviour="Hide" visibleUnderServiceChilds="false">
+                    <tgo:param description="Name of the project template to use. &#13;&#10;Example: &quot;myProjectTemplate&quot;" id="ba13d155-5b1c-4d22-b047-3e1d700ec892" name="projectTemplateName" userInput="false" value="Rhapsody_Jira_template"/>
+                    <tgo:param description="Name of the documentary project. &#13;&#10;Example: &quot;myProject&quot;" id="c5a97021-e5b0-467a-8905-82c2dfee4280" name="projectName" userInput="false" value="Rhapsody_Jira document"/>
+                    <tgo:param description="Physical location where the document project will be created. &#13;&#10;Example: &quot;C:\orchestra_data\artifacts\projects&quot;" id="587d5ae0-942c-43cb-af3e-9a39c2f577d6" name="documentaryProjects" userInput="false" value="\\IVV0010L\manual-wakeUpClock-WakeUpClock\Artefacts\GeneratedDocumentaryProjects"/>
+                    <tgo:param description="List of artefact URI to add to the project. You can specify a text file or define a list of Orchestra URI (syntax: orchestraURI[;orchestraURI]).&#13;&#10;Example:&#13;&#10;C:\artefactsList.txt&#13;&#10;orchestra://JPG/Blue%20hills;orchestra://JPG/Water%20lilies" id="5867ac4b-559a-4370-8fcb-1b5f757d7518" name="artefactsUrisList" userInput="false" value="orchestra://Doors/WakeUpClock/Module/51389318215a5a7c%2E00000544;orchestra://Doors/WakeUpClock/Module/4ca05e8652d31da4%2E00001a05;orchestra://Rhapsody/Modeling%2FRhapsody%2FWakeUpClock%2FWakeUpClock/SequenceDiagram/GUID%202504d281%2D6d0e%2D4514%2D9048%2D54230eb3aede;orchestra://Jira/WakeUpClock/Query/10506"/>
+                </tgo:action>
+            </tgo:activity>
+            <tgo:activity icon="tree_book1.png" id="9ac585ff-698b-4414-a25c-9f2c2ba61f43" name="Produce the Melody_Jira document">
+                <tgo:action id="8f958945-3ac3-44f3-8115-e9eac9fac5aa" name="Create Melody_Jira document" serviceId="Create documentary project from template and generate document" serviceResultBehaviour="Hide" visibleUnderServiceChilds="false">
+                    <tgo:param description="Name of the project template to use. &#13;&#10;Example: &quot;myProjectTemplate&quot;" id="05e54dc6-f93e-407f-8e7a-4d9ce4bcc8cf" name="projectTemplateName" userInput="false" value="Melody_Jira_template"/>
+                    <tgo:param description="Name of the documentary project. &#13;&#10;Example: &quot;myProject&quot;" id="9dfc87e4-2b0c-4aaa-a211-dd5977910b2a" name="projectName" userInput="false" value="Melody_Jira document"/>
+                    <tgo:param description="Physical location where the document project will be created. &#13;&#10;Example: &quot;C:\orchestra_data\artifacts\projects&quot;" id="51345a4b-c790-4835-9c97-00460e378baf" name="documentaryProjects" userInput="false" value="\\IVV0010L\manual-wakeUpClock-WakeUpClock\Artefacts\GeneratedDocumentaryProjects"/>
+                    <tgo:param description="List of artefact URI to add to the project. You can specify a text file or define a list of Orchestra URI (syntax: orchestraURI[;orchestraURI]).&#13;&#10;Example:&#13;&#10;C:\artefactsList.txt&#13;&#10;orchestra://JPG/Blue%20hills;orchestra://JPG/Water%20lilies" id="efbd4fff-f607-4400-af2e-575e7c22ff7f" name="artefactsUrisList" userInput="false" value="orchestra://Doors/WakeUpClock/Module/51389318215a5a7c%2E00000544;orchestra://Doors/WakeUpClock/Module/4ca05e8652d31da4%2E00001a05;orchestra://Melody/Modeling%2FMelody%2FWakeUp%2FWakeUp/Diagram/%5FVAoiYbBlEd%2DRJPVsCv88Rg;orchestra://Jira/WakeUpClock/Query/10506"/>
+                </tgo:action>
+            </tgo:activity>
+        </tgo:activity>
+        <tgo:activity description="Work on logical and physical architectures, define the EPBS level" icon="tree_uml.png" id="cc159cd2-e5fd-4c38-b572-9b3b0e98017f" name="Design the solution">
+            <tgo:variable category="Data" description="URI (Search) to Model" name="DESIGN_MODEL" value="orchestra://Rhapsody/Modeling%2FRhapsody%2F${PRJ_DATA_RHAP-PROJECT_NAME}%2F${PRJ_DATA_RHAP-PROJECT_NAME}"/>
+            <tgo:variable category="Data" description="URI (search) design model melody" name="MELODY_DESIGN_MODEL" value="orchestra://${MA_MODELING_TOOL}/Modeling%2F${MA_MODELING_TOOL}%2F${PRJ_DATA_MA-PROJECT_NAME}%2F${PRJ_DATA_MA-PROJECT_NAME}"/>
+            <tgo:variable category="Tool" description="Modeling tool" name="MA_MODELING_TOOL" value="Melody"/>
+            <tgo:actionGroup icon="Rhapsody.png" id="caa36bd2-a043-4416-b464-b7c53fdb8b4f" name="Rhapsody only" visibleUnderServiceChilds="false">
+                <tgo:action icon="usecases.png" id="3c5032b5-640d-4b87-bc31-1b4317531269" name="Open model" serviceId="Navigate" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                    <tgo:param description="URI to navigate" id="68f9cea4-92b5-431c-ae6a-7d47cc8a76a4" name="uri" userInput="false" value="${DESIGN_MODEL}"/>
+                </tgo:action>
+            </tgo:actionGroup>
+            <tgo:actionGroup icon="UML_Model_01.png" id="875fe0d0-04f7-446f-a0be-5b1336bf47f0" name="Melody only" visibleUnderServiceChilds="false">
+                <tgo:action icon="usecases.png" id="22fb6bfc-41cb-4330-b3ec-f850bba682ed" name="Open model" serviceId="Navigate" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                    <tgo:param description="URI to navigate" id="7fb6f8fa-11c0-46d9-aa2a-b6199b9f3b77" name="uri" userInput="false" value="${MELODY_DESIGN_MODEL}"/>
+                </tgo:action>
+            </tgo:actionGroup>
+            <tgo:activity description="Define the configuration items and, given the system design, allocate system requirements to sub-systems" icon="tree_orga.png" id="7f92f3ab-be4f-4c26-8444-691a26d7931d" name="Define configuration items and allocate requirements">
+                <tgo:roleFilter name=""/>
+                <tgo:action description="Define the configuration items" icon="orga.png" id="14d36f87-4908-41cd-bc59-530a33c07a31" name="Define configuration items" serviceId="Navigate" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                    <tgo:param description="URI to navigate" id="bde48b50-03f7-41e7-a818-910b5f53efa0" name="uri" userInput="false" value="${CUSTOMER_NEEDS_MODULE}"/>
+                </tgo:action>
+                <tgo:action description="Allocate system requirements to configuration items" icon="requirements.png" id="eb53789d-bc24-45ca-95e5-a20b1784b671" name="Allocate requirements" serviceId="Navigate" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                    <tgo:param description="URI to navigate" id="18c3bc7f-f93b-49d3-8bc8-0a1319e4ed3e" name="uri" userInput="false" value="${SYSTEM_BREAKDOWN_MODULE}"/>
+                </tgo:action>
+            </tgo:activity>
+            <tgo:activity icon="tree_book1.png" id="f3ff591a-ebd0-4901-a279-e21ffee8c3e2" name="SDD (MA)">
+                <tgo:variable category="Conf" name="DOC_SPECIFIC_ARTEFACTS" value="${DESIGN_MODEL};orchestra://Reqtify/TraceabilityProjects%2FSpecToCode%5F${MODELING_TOOL}%2FSpecToCode%5F${MODELING_TOOL}/LinkSet/Model%2Cspecification;orchestra://Reqtify/TraceabilityProjects%2FSpecToCode%5F${MODELING_TOOL}%2FSpecToCode%5F${MODELING_TOOL}/Query/TraceSpecDesign"/>
+                <tgo:variable category="Data" description="URI (Search) to Model" name="DESIGN_MODEL" value="orchestra://${MODELING_TOOL}/Modeling%2F${MODELING_TOOL}%2F${PRJ_DATA_PRJ-PROJECT_NAME}%5FMA"/>
+                <tgo:variable category="Tool" description="Modeling tool" name="MODELING_TOOL" value="Melody"/>
+                <tgo:variable category="Data" description="Modeling tag : Models or Melody" name="MODELING_TAG" value="Melody"/>
+                <tgo:variable category="Conf" name="DOC_ACRONYM" value="SDD"/>
+                <tgo:actionGroup icon="data_collection4.png" id="b6056f16-b17e-4a16-b68b-fc6166ca4af5" name="Update documentary fragments" visibleUnderServiceChilds="false">
+                    <tgo:action icon="create.png" id="fbef6979-2a1e-4dd6-9e5f-375cd4356ffa" name="Update changes" serviceId="Navigate" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                        <tgo:param description="URI to navigate" id="3f3f128c-9aaf-4371-a36e-409e992a2cb0" name="uri" userInput="false" value="orchestra://Excel/Documents%2FDocumentaryFragments%2F${DOC_ACRONYM}%2FChanges/Reference/Changes"/>
+                    </tgo:action>
+                    <tgo:action icon="create.png" id="c968a2d6-78f8-46ec-a9c8-f034bfaf7844" name="Update references" serviceId="Navigate" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                        <tgo:param description="URI to navigate" id="b7fa1646-1787-4100-ad46-50e1f6d90397" name="uri" userInput="false" value="orchestra://Excel/Documents%2FDocumentaryFragments%2F${DOC_ACRONYM}%2FReferences"/>
+                    </tgo:action>
+                    <tgo:action icon="create.png" id="68a7fd71-0563-4a75-9b8b-9403ef26a6a8" name="Update document overview" serviceId="Navigate" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                        <tgo:param description="URI to navigate" id="137ee00d-d0a6-4519-8a33-5d95abb531b6" name="uri" userInput="false" value="orchestra://Word/Documents%2FDocumentaryFragments%2F${DOC_ACRONYM}%2FDocOverview"/>
+                    </tgo:action>
+                </tgo:actionGroup>
+                <tgo:action icon="build.png" id="0fec2725-0fed-4127-8ce4-0c7cb31cc607" name="Generate the document" serviceId="Create documentary project from template and generate document" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                    <tgo:param description="Name of the project template to use. &#13;&#10;Example: &quot;myProjectTemplate&quot;" id="8f125351-649e-4766-9d07-86f540b6dc77" name="projectTemplateName" userInput="false" value="[R_OPUC13]_SRS_GEN_DOC_MA"/>
+                    <tgo:param description="Name of the documentary project. &#13;&#10;Example: &quot;myProject&quot;" id="0e4140eb-35bd-4473-b0ef-57b92c1ed513" name="projectName" userInput="false" value="${DOC_ACRONYM}"/>
+                    <tgo:param description="Physical location where the document project will be created. &#13;&#10;Example: &quot;C:\orchestra_data\artifacts\projects&quot;" id="ef64d2d1-5b68-4838-a325-c6f21f7e56ff" name="documentaryProjects" userInput="false" value="\\IVV0010L\manual-wakeUpClock-WakeUpClock\Artefacts\GeneratedDocumentaryProjects"/>
+                    <tgo:param description="Please leave all parameter as is but change the &lt;Please provide a date&gt; with the issue date." id="de9f085c-0310-4b29-88aa-9ba7aa3d5988" name="propertiesList" userInput="false" value="Document Title=${DOC_ACRONYM};Document Type=${DOC_ACRONYM};System Name=${PRJ_DATA_PRJ-PROJECT_NAME};Document Date=&lt;Please provide a date&gt;"/>
+                    <tgo:param description="List of artefact URI to add to the project. You can specify a text file or define a list of Orchestra URI (syntax: orchestraURI[;orchestraURI]).&#13;&#10;Example:&#13;&#10;C:\artefactsList.txt&#13;&#10;orchestra://JPG/Blue%20hills;orchestra://JPG/Water%20lilies" id="9ba7e5b4-523f-468e-bef5-c546c0b72840" name="artefactsUrisList" userInput="false" value="orchestra://Word/Documents%2FDocumentaryFragments%2FCommon%2FSystemOverview;orchestra://Word/Documents%2FDocumentaryFragments%2F${DOC_ACRONYM}%2FDocOverview;orchestra://Excel/Documents%2FDocumentaryFragments%2F${DOC_ACRONYM}%2FReferences;orchestra://Excel/Documents%2FDocumentaryFragments%2F${DOC_ACRONYM}%2FChanges/Reference/Changes;${DOC_SPECIFIC_ARTEFACTS}"/>
+                </tgo:action>
+                <tgo:action icon="book2.png" id="c9227a39-da1a-4f7a-9941-62008585b74d" name="Access the generated document" serviceId="Open generated document" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                    <tgo:param description="Name of the documentary project. &#13;&#10;Example: &quot;myProject&quot;" id="ba66b1a2-cacb-4a14-9dfd-39b08c47ab91" name="projectName" userInput="false" value="${DOC_ACRONYM}"/>
+                </tgo:action>
+                <tgo:action icon="book3.png" id="96fcfbb9-6b58-485e-9cf7-45fd1b2513eb" name="Access the doc generation project" serviceId="Open documentary project" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                    <tgo:param description="Name of the documentary project. &#13;&#10;Example: &quot;myProject&quot;" id="f829edb7-172b-4ca7-9d56-b88374f0f47f" name="projectName" userInput="false" value="${DOC_ACRONYM}"/>
+                </tgo:action>
+            </tgo:activity>
+            <tgo:activity icon="tree_book1.png" id="6ba9a8f1-6333-4cc9-8193-2e2bfcce0090" name="SDD (Rhap)">
+                <tgo:variable category="Conf" name="DOC_SPECIFIC_ARTEFACTS" value="${DESIGN_MODEL};orchestra://Reqtify/TraceabilityProjects%2FSpecToCode%5F${MODELING_TOOL}%2FSpecToCode%5F${MODELING_TOOL}/LinkSet/Model%2Cspecification;orchestra://Reqtify/TraceabilityProjects%2FSpecToCode%5F${MODELING_TOOL}%2FSpecToCode%5F${MODELING_TOOL/Query/TraceSpecDesign"/>
+                <tgo:variable category="Tool" name="MODELING_TOOL" value="Rhapsody"/>
+                <tgo:variable category="Conf" name="DOC_ACRONYM" value="SDD"/>
+                <tgo:actionGroup icon="data_collection4.png" id="56ee6c6f-a3ed-4be1-aa01-8823a6c1e1d0" name="Update documentary fragments" visibleUnderServiceChilds="false">
+                    <tgo:action icon="create.png" id="87b0d9c7-504c-43c7-bad6-641a4ae62b94" name="Update changes" serviceId="Navigate" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                        <tgo:param description="URI to navigate" id="493b72eb-a5b9-48ab-99e3-4413d9839d04" name="uri" userInput="false" value="orchestra://Excel/Documents%2FDocumentaryFragments%2F${DOC_ACRONYM}%2FChanges/Reference/Changes"/>
+                    </tgo:action>
+                    <tgo:action icon="create.png" id="3c35077c-14eb-4dd0-ac9c-db2e1817480b" name="Update references" serviceId="Navigate" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                        <tgo:param description="URI to navigate" id="1316b274-c2fa-4119-b188-0302b8fdc9b7" name="uri" userInput="false" value="orchestra://Excel/Documents%2FDocumentaryFragments%2F${DOC_ACRONYM}%2FReferences"/>
+                    </tgo:action>
+                    <tgo:action icon="create.png" id="7d9405b9-f329-4d79-b7f2-0486e2bde32e" name="Update document overview" serviceId="Navigate" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                        <tgo:param description="URI to navigate" id="2ee7e2b6-9f3c-4328-849f-dc1fe5012d2c" name="uri" userInput="false" value="orchestra://Word/Documents%2FDocumentaryFragments%2F${DOC_ACRONYM}%2FDocOverview"/>
+                    </tgo:action>
+                </tgo:actionGroup>
+                <tgo:action icon="build.png" id="d3ad598e-3c59-4a78-bfc0-d9070fbd2c76" name="Generate the document" serviceId="Create documentary project from template and generate document" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                    <tgo:param description="Name of the project template to use. &#13;&#10;Example: &quot;myProjectTemplate&quot;" id="30817452-b668-4b7f-a514-f5d9d2e849dc" name="projectTemplateName" userInput="false" value="SDD_Template"/>
+                    <tgo:param description="Name of the documentary project. &#13;&#10;Example: &quot;myProject&quot;" id="e6766fe7-7235-4dff-9924-f2dba74c63ef" name="projectName" userInput="false" value="${DOC_ACRONYM}"/>
+                    <tgo:param description="Physical location where the document project will be created. &#13;&#10;Example: &quot;C:\orchestra_data\artifacts\projects&quot;" id="7064c0c7-1413-4036-82ef-e8584fad49cf" name="documentaryProjects" userInput="false" value="${\Orchestra\Mozart\DocumentaryProjects}"/>
+                    <tgo:param description="Please leave all parameter as is but change the &lt;Please provide a date&gt; with the issue date." id="98cf651f-c15f-484f-91fb-aa39cbe02b29" name="propertiesList" userInput="false" value="Document Title=${DOC_ACRONYM};Document Type=${DOC_ACRONYM};System Name=${PRJ_DATA_PRJ-PROJECT_NAME};Document Date=&lt;Please provide a date&gt;"/>
+                    <tgo:param description="List of artefact URI to add to the project. You can specify a text file or define a list of Orchestra URI (syntax: orchestraURI[;orchestraURI]).&#13;&#10;Example:&#13;&#10;C:\artefactsList.txt&#13;&#10;orchestra://JPG/Blue%20hills;orchestra://JPG/Water%20lilies" id="695b1844-53c3-41f8-b6d4-8c500ac6c08a" name="artefactsUrisList" userInput="false" value="orchestra://Word/Documents%2FDocumentaryFragments%2FCommon%2FSystemOverview;orchestra://Word/Documents%2FDocumentaryFragments%2F${DOC_ACRONYM}%2FDocOverview;orchestra://Excel/Documents%2FDocumentaryFragments%2F${DOC_ACRONYM}%2FReferences;orchestra://Excel/Documents%2FDocumentaryFragments%2F${DOC_ACRONYM}%2FChanges/Reference/Changes;${DOC_SPECIFIC_ARTEFACTS}"/>
+                </tgo:action>
+                <tgo:action icon="book2.png" id="9ce9dec9-a769-46da-a285-10e9a7564a2e" name="Access the generated document" serviceId="Open generated document" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                    <tgo:param description="Name of the documentary project. &#13;&#10;Example: &quot;myProject&quot;" id="0d82ffd5-9ba2-4a55-b2ec-91d30a637632" name="projectName" userInput="false" value="${DOC_ACRONYM}"/>
+                </tgo:action>
+                <tgo:action icon="book3.png" id="2a93405d-412d-4913-96bc-852bcfd12424" name="Access the doc generation project" serviceId="Open documentary project" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                    <tgo:param description="Name of the documentary project. &#13;&#10;Example: &quot;myProject&quot;" id="4fe430e9-81b0-4e79-b54e-472250945bb8" name="projectName" userInput="false" value="${DOC_ACRONYM}"/>
+                </tgo:action>
+            </tgo:activity>
+        </tgo:activity>
+        <tgo:activity icon="tree_softTool.png" id="53c4f103-2cb7-4e7f-b44b-17a9e85ac141" name="Develop">
+            <tgo:action icon="taskman.png" id="a7ca4d77-355e-4dd7-bfef-dd4c3868c09d" name="Go to &quot;main()'" serviceId="Navigate" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                <tgo:param description="URI to navigate" id="f468a430-71b7-4373-920d-b984fd97c8c3" name="uri" userInput="false" value="orchestra://Jdt/Xdt%2FArtifacts%2FJavaProject/J%5FMETHOD/%2FJavaProject%2Fsrc%2Fcom%2Fgeniatis%2Floc2%2FCoolClasz3%2Ejava%21main%28String%5B%5D%20args%29%20%3Avoid?p0=%5BQString%3B&amp;plen=1&amp;simpleName=main"/>
+            </tgo:action>
+        </tgo:activity>
+        <tgo:activity id="159c9889-bf67-44df-a4cf-7ef4db1cc9f2" name="Integrate"/>
+        <tgo:activity description="Check that the systems behaves as defined in the system requirements" icon="tree_check2.png" id="756a6b98-a3d2-47da-924f-df68e7d4cee5" name="Verify the solution">
+            <tgo:activity description="Define the content of a test suite" icon="tree_check2.png" id="19904967-23a9-453c-993a-2fb3494e4bf2" name="Define test suite">
+                <tgo:roleFilter name=""/>
+                <tgo:action description="Identify the tests and their objectives, define which tests are part of the tests campaigns" icon="check1.png" id="f22d4091-4e3c-4dc6-8f85-846fed7e1be0" name="Identify tests" serviceId="Navigate" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                    <tgo:param description="URI to navigate" id="70f46eeb-476d-44d0-b1f7-fe3ddf9beb0b" name="uri" userInput="false" value="${SYSTEM_VERIFICATION_MODULE}"/>
+                </tgo:action>
+                <tgo:action description="Access the dashboards and use the one dedicated to the campaign of interest" icon="check2.png" id="81430125-392f-4be2-ac1a-12dc0fb80381" name="Initialise / update a campaign dashboard and repository" serviceId="Program launcher" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                    <tgo:param description="Command to launch. (Do not add program arguments here.)" id="1025df93-f371-4e0f-961f-d6511a8521e0" name="command" userInput="false" value="${\Orchestra installation\Products\IVVManagement\Executable}"/>
+                </tgo:action>
+            </tgo:activity>
+            <tgo:activity description="Define the content of a test campaign (which tests to perform)" icon="tree_check2.png" id="39f848ee-14a4-4ae5-be3b-aa001fa23fad" name="Define test campaign">
+                <tgo:roleFilter name=""/>
+                <tgo:action icon="sign6.png" id="375a441f-49ba-4c55-b777-fae9a0cf965e" name="Access test strategy" serviceId="Open file" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                    <tgo:param description="file to open" id="55c8270c-1803-4ba3-af21-82d308dde78e" name="filePath" userInput="false" value="${PRJ_DATA_HOME-ARTIFACTS_IVV}\SystemVerification.doc"/>
+                </tgo:action>
+                <tgo:action description="Identify the tests and their objectives, define which tests are part of the tests campaigns" icon="check1.png" id="9d6ee2ea-e834-4183-9f9f-e171b97a3d5a" name="Identify tests and allocate to test campaign" serviceId="Navigate" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                    <tgo:param description="URI to navigate" id="da12e8fd-f6a0-4019-b65a-6e4d88efb210" name="uri" userInput="false" value="${SYSTEM_VERIFICATION_MODULE}"/>
+                </tgo:action>
+                <tgo:action description="Access the dashboards and use the one dedicated to the campaign of interest" icon="check2.png" id="d8814d4a-02ac-4b38-aed1-65a9cb6a968e" name="Initialise / update a campaign dashboard and repository" serviceId="Program launcher" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                    <tgo:param description="Command to launch. (Do not add program arguments here.)" id="8e5b1d1a-5bf8-4856-8e28-751356a2ced4" name="command" userInput="false" value="${\Orchestra installation\Products\IVVManagement\Executable}"/>
+                </tgo:action>
+            </tgo:activity>
+            <tgo:activity description="Perform the tests for a defined test campaign" icon="tree_worker1.png" id="cd65e576-cdc8-4ddb-a5da-d0c30f12a449" name="Perform test campaign">
+                <tgo:roleFilter name=""/>
+                <tgo:action description="Access the dashboards and use the one dedicated to the campaign of interest" icon="check2.png" id="4f616537-cc89-4531-841a-cf0cd9217d40" name="Access a campaign dashboard" serviceId="Program launcher" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                    <tgo:param description="Command to launch. (Do not add program arguments here.)" id="a9efa4c8-4389-4a63-b6f3-e20a7f892bb8" name="command" userInput="false" value="${\Orchestra installation\Products\IVVManagement\Executable}"/>
+                </tgo:action>
+            </tgo:activity>
+            <tgo:activity description="Consolidate the test campaign results and establish traceability to test definition and requirements" icon="tree_taskcoach.png" id="1630b054-c141-473b-97ae-a84ac07e8b13" name="Consolidate test campaign">
+                <tgo:roleFilter name=""/>
+                <tgo:action description="Consolidate the test results and get detailled information for the related defects" icon="taskcoach.png" id="54acbd11-baf0-4674-b5f8-801d072de6b6" name="Consolidate results and defects" serviceId="Program launcher" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                    <tgo:param description="Command to launch. (Do not add program arguments here.)" id="84f11449-193d-48fe-bce5-b7e73bce41d2" name="command" userInput="false" value="${\Orchestra installation\Products\IVVManagement\Executable}"/>
+                </tgo:action>
+                <tgo:actionGroup description="Generate traceability matrixes between requirements, tests and results" icon="traceability2.png" id="8c64481f-f0dc-433e-ac52-6da677dc0bf1" name="Generate Traceability matrixes" visibleUnderServiceChilds="false">
+                    <tgo:action description="From the test campaign definition, establish traceability matrix test definition vs. test result" icon="traceability2.png" id="7156b3b1-0a00-4d0f-9f3b-927653e3f7d3" name="Generate tracability matrix test / results" serviceId="Navigate" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                        <tgo:param description="URI to navigate" id="193fa2aa-56e8-4a17-bb97-912ab7e65225" name="uri" userInput="false" value="${SYSTEM_VERIFICATION_MODULE}"/>
+                    </tgo:action>
+                    <tgo:action description="From the system requirements, establish traceability matrix requirement vs covering test definition vs test result" icon="traceability2.png" id="880417dc-79d5-4186-89a0-98c26f698b17" name="Generate traceability matrix requirements / tests / results" serviceId="Navigate" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                        <tgo:param description="URI to navigate" id="1700d0ca-2dda-4b37-a4c4-9009554760f7" name="uri" userInput="false" value="${SYSTEM_VERIFICATION_MODULE}"/>
+                    </tgo:action>
+                </tgo:actionGroup>
+            </tgo:activity>
+            <tgo:activity icon="tree_book1.png" id="e79fb3f5-721b-4dfd-a6d9-b7e8175f3996" name="STP">
+                <tgo:variable category="Conf" name="DOC_SPECIFIC_ARTEFACTS" value="${SYSTEM_SPECIFICATION_MODULE}|$|33. Verification Matrix;${VERIFICATION_JUSTIFICATION_MODULE};${SYSTEM_VERIFICATION_MODULE}|$|100. ORCH Document view;${SYSTEM_VERIFICATION_MODULE}|$|202. ORCH Test Order;${SYSTEM_VERIFICATION_MODULE}|$|30. IVV matrix;orchestra://Reqtify/SystemVerification%2FTestCampaignRepository%2F${VERIF_CAMPAIGN_NAME}%2FLinkManager%2FTCR%5F${VERIF_CAMPAIGN_NAME}/LinkSet/Model%2CVerification"/>
+                <tgo:variable category="Conf" name="DOC_ACRONYM" value="STP"/>
+                <tgo:actionGroup icon="data_collection4.png" id="fb491b0a-f15b-48cf-850c-9a9497cfb002" name="Update documentary fragments" visibleUnderServiceChilds="false">
+                    <tgo:action icon="create.png" id="21bdd202-1553-48d9-9753-2eb5bee04333" name="Update changes" serviceId="Navigate" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                        <tgo:param description="URI to navigate" id="0132d1d0-698b-4fc8-bc3e-53257a76455f" name="uri" userInput="false" value="orchestra://Excel/Documents%2FDocumentaryFragments%2F${DOC_ACRONYM}%2FChanges/Reference/Changes"/>
+                    </tgo:action>
+                    <tgo:action icon="create.png" id="9318c487-184d-4aee-8b3a-9732ba04d5c9" name="Update references" serviceId="Navigate" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                        <tgo:param description="URI to navigate" id="0221bdfc-a4b0-48e6-8082-612700f3e8fa" name="uri" userInput="false" value="orchestra://Excel/Documents%2FDocumentaryFragments%2F${DOC_ACRONYM}%2FReferences"/>
+                    </tgo:action>
+                    <tgo:action icon="create.png" id="8c0e8980-e3e8-4488-8ba5-fe602757a0cb" name="Update document overview" serviceId="Navigate" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                        <tgo:param description="URI to navigate" id="73d93798-11e9-4425-ade5-9857595750d5" name="uri" userInput="false" value="orchestra://Word/Documents%2FDocumentaryFragments%2F${DOC_ACRONYM}%2FDocOverview"/>
+                    </tgo:action>
+                </tgo:actionGroup>
+                <tgo:action icon="build.png" id="e74aa059-6661-4453-9f31-6242e555984f" name="Generate the document" serviceId="Create documentary project from template and generate document" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                    <tgo:param description="Name of the project template to use. &#13;&#10;Example: &quot;myProjectTemplate&quot;" id="0f239d4d-3895-4d35-a740-229128673555" name="projectTemplateName" userInput="false" value="STP_Template"/>
+                    <tgo:param description="Name of the documentary project. &#13;&#10;Example: &quot;myProject&quot;" id="55092c96-3b26-4e76-b4af-cadcf090edbb" name="projectName" userInput="false" value="${DOC_ACRONYM}"/>
+                    <tgo:param description="Physical location where the document project will be created. &#13;&#10;Example: &quot;C:\orchestra_data\artifacts\projects&quot;" id="0cf2797e-9535-437e-a8f7-769b284ae3e8" name="documentaryProjects" userInput="false" value="${\Orchestra\Mozart\DocumentaryProjects}"/>
+                    <tgo:param description="Please leave all parameter as is but change the &lt;Please provide a date&gt; with the issue date." id="2af14093-4df1-43f6-a832-2eb82ffbdd8d" name="propertiesList" userInput="false" value="Document Title=${DOC_ACRONYM};Document Type=${DOC_ACRONYM};System Name=${PRJ_DATA_PRJ-PROJECT_NAME};Document Date=&lt;Please provide a date&gt;"/>
+                    <tgo:param description="List of artefact URI to add to the project. You can specify a text file or define a list of Orchestra URI (syntax: orchestraURI[;orchestraURI]).&#13;&#10;Example:&#13;&#10;C:\artefactsList.txt&#13;&#10;orchestra://JPG/Blue%20hills;orchestra://JPG/Water%20lilies" id="4765cc56-76c7-427b-9281-5a6f9e7d46f1" name="artefactsUrisList" userInput="false" value="orchestra://Word/Documents%2FDocumentaryFragments%2FCommon%2FSystemOverview;orchestra://Word/Documents%2FDocumentaryFragments%2F${DOC_ACRONYM}%2FDocOverview;orchestra://Excel/Documents%2FDocumentaryFragments%2F${DOC_ACRONYM}%2FReferences;orchestra://Excel/Documents%2FDocumentaryFragments%2F${DOC_ACRONYM}%2FChanges/Reference/Changes;${DOC_SPECIFIC_ARTEFACTS}"/>
+                </tgo:action>
+                <tgo:action icon="book2.png" id="ef3c0ae4-f927-4210-a8e2-d543af0f57ff" name="Access the generated document" serviceId="Open generated document" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                    <tgo:param description="Name of the documentary project. &#13;&#10;Example: &quot;myProject&quot;" id="c2dbb9c9-701a-4b28-b03b-137f27578d1b" name="projectName" userInput="false" value="${DOC_ACRONYM}"/>
+                </tgo:action>
+                <tgo:action icon="book3.png" id="aedebbff-34c7-44d3-804e-94ae8875095c" name="Access the doc generation project" serviceId="Open documentary project" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                    <tgo:param description="Name of the documentary project. &#13;&#10;Example: &quot;myProject&quot;" id="e79ca71d-b848-4cc1-8081-8a91343e3108" name="projectName" userInput="false" value="${DOC_ACRONYM}"/>
+                </tgo:action>
+            </tgo:activity>
+            <tgo:activity description="Publish the STD for a specific campaign" icon="tree_book1.png" id="2ba43df8-40a7-4f03-b4c4-7a5c22875271" name="STD (Campaign related)">
+                <tgo:variable category="Conf" name="DOC_SPECIFIC_ARTEFACTS" value="${SYSTEM_SPECIFICATION_MODULE}|$|33. Verification Matrix;${SYSTEM_VERIFICATION_MODULE}|$|100. ORCH Document view;${SYSTEM_VERIFICATION_MODULE}|$|30. IVV matrix;orchestra://Ivv/SystemVerification%2FTestCampaignRepository%2F${VERIF_CAMPAIGN_NAME}%2FTCR%5F${VERIF_CAMPAIGN_NAME};orchestra://Reqtify/SystemVerification%2FTestCampaignRepository%2F${VERIF_CAMPAIGN_NAME}%2FLinkManager%2FTCR%5F${VERIF_CAMPAIGN_NAME}/SubSetCoverLink/TCR%5F${VERIF_CAMPAIGN_NAME}%2CVerification%2Cis%20identical%20to;orchestra://Reqtify/SystemVerification%2FTestCampaignRepository%2F${VERIF_CAMPAIGN_NAME}%2FLinkManager%2FTCR%5F${VERIF_CAMPAIGN_NAME}/SubSetCoverLink/PBS%2CSpecification%2Cis%20allocated%20by"/>
+                <tgo:variable category="Conf" name="DOC_ACRONYM" value="STD"/>
+                <tgo:actionGroup icon="data_collection4.png" id="5d1f283d-0970-4c43-b899-ba186136fc64" name="Update documentary fragments" visibleUnderServiceChilds="false">
+                    <tgo:action icon="create.png" id="29787ea7-100c-43d6-b90f-2526a3e75083" name="Update changes" serviceId="Navigate" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                        <tgo:param description="URI to navigate" id="4fae7ddd-0f08-4491-b088-f7a5b91ff819" name="uri" userInput="false" value="orchestra://Excel/Documents%2FDocumentaryFragments%2F${DOC_ACRONYM}%2FChanges/Reference/Changes"/>
+                    </tgo:action>
+                    <tgo:action icon="create.png" id="a5992f05-e3c8-4537-a0cc-7ff176a2ae1d" name="Update references" serviceId="Navigate" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                        <tgo:param description="URI to navigate" id="fe6913e5-02ea-465e-a431-2c270c109e2f" name="uri" userInput="false" value="orchestra://Excel/Documents%2FDocumentaryFragments%2F${DOC_ACRONYM}%2FReferences"/>
+                    </tgo:action>
+                    <tgo:action icon="create.png" id="da7eccce-12a2-4bef-91e4-f1e44d8c1c32" name="Update document overview" serviceId="Navigate" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                        <tgo:param description="URI to navigate" id="0891a8b2-f6aa-4473-be67-91b5ba45abe7" name="uri" userInput="false" value="orchestra://Word/Documents%2FDocumentaryFragments%2F${DOC_ACRONYM}%2FDocOverview"/>
+                    </tgo:action>
+                </tgo:actionGroup>
+                <tgo:action icon="build.png" id="480cdde5-5493-4d28-b081-35638aa9f4e8" name="Generate the document" serviceId="Create documentary project from template and generate document" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                    <tgo:param description="Name of the project template to use. &#13;&#10;Example: &quot;myProjectTemplate&quot;" id="19fa1708-222a-4c97-ba8b-5f5902aa8ce0" name="projectTemplateName" userInput="false" value="STD_Template_Example"/>
+                    <tgo:param description="Name of the documentary project. &#13;&#10;Example: &quot;myProject&quot;" id="870ccc60-dfee-402e-a839-e939db062e63" name="projectName" userInput="false" value="${DOC_ACRONYM}-${VERIF_CAMPAIGN_NAME}"/>
+                    <tgo:param description="Physical location where the document project will be created. &#13;&#10;Example: &quot;C:\orchestra_data\artifacts\projects&quot;" id="ea399747-6518-427d-803e-6ad977f5eacb" name="documentaryProjects" userInput="false" value="${\Orchestra\Mozart\DocumentaryProjects}"/>
+                    <tgo:param description="Please leave all parameter as is but change the &lt;Please provide a date&gt; with the issue date." id="aecef851-c2dd-4636-a55b-458ee48cae48" name="propertiesList" userInput="false" value="Document Title=${DOC_ACRONYM} for ${VERIF_CAMPAIGN_NAME} campaign;Document Type=${DOC_ACRONYM};System Name=${PRJ_DATA_PRJ-PROJECT_NAME};Document Date=&lt;Please provide a date&gt;"/>
+                    <tgo:param description="List of artefact URI to add to the project. You can specify a text file or define a list of Orchestra URI (syntax: orchestraURI[;orchestraURI]).&#13;&#10;Example:&#13;&#10;C:\artefactsList.txt&#13;&#10;orchestra://JPG/Blue%20hills;orchestra://JPG/Water%20lilies" id="1ae1223d-dbff-4602-ade6-d24083449295" name="artefactsUrisList" userInput="false" value="orchestra://Word/Documents%2FDocumentaryFragments%2FCommon%2FSystemOverview;orchestra://Word/Documents%2FDocumentaryFragments%2F${DOC_ACRONYM}%2FDocOverview;orchestra://Excel/Documents%2FDocumentaryFragments%2F${DOC_ACRONYM}%2FReferences;orchestra://Excel/Documents%2FDocumentaryFragments%2F${DOC_ACRONYM}%2FChanges/Reference/Changes;${DOC_SPECIFIC_ARTEFACTS}"/>
+                </tgo:action>
+                <tgo:action icon="book2.png" id="122cf120-d8ba-4e27-a42c-58ce89230f23" name="Access the generated document" serviceId="Open generated document" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                    <tgo:param description="Name of the documentary project. &#13;&#10;Example: &quot;myProject&quot;" id="b2f6d001-8c0e-4e08-a474-18181716c873" name="projectName" userInput="false" value="${DOC_ACRONYM}-${VERIF_CAMPAIGN_NAME}"/>
+                </tgo:action>
+                <tgo:action icon="book3.png" id="e5bdedb9-9405-4f44-94d0-14a2b90da3be" name="Access the doc generation project" serviceId="Open documentary project" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                    <tgo:param description="Name of the documentary project. &#13;&#10;Example: &quot;myProject&quot;" id="8b436a77-ac5d-440d-aa5f-89c7dae079fb" name="projectName" userInput="false" value="${DOC_ACRONYM}-${VERIF_CAMPAIGN_NAME}"/>
+                </tgo:action>
+            </tgo:activity>
+            <tgo:activity icon="tree_book1.png" id="9c2831bf-813d-450a-9705-ab4aa345d65e" name="STR">
+                <tgo:variable category="Conf" name="DOC_SPECIFIC_ARTEFACTS" value="orchestra://Ivv/SystemVerification%2FTestCampaignRepository%2F${VERIF_CAMPAIGN_NAME}%2FTCR%5F${VERIF_CAMPAIGN_NAME};orchestra://Reqtify/SystemVerification%2FTestCampaignRepository%2F${VERIF_CAMPAIGN_NAME}%2FLinkManager%2FTCR%5F${VERIF_CAMPAIGN_NAME}/Query/Orchestra%20Traceability%20Matrix%20%28all%20elements%29"/>
+                <tgo:variable category="Conf" name="DOC_ACRONYM" value="STR"/>
+                <tgo:actionGroup icon="data_collection4.png" id="b8981613-490b-4dd0-ae95-a63b6489ccfa" name="Update documentary fragments" visibleUnderServiceChilds="false">
+                    <tgo:action icon="create.png" id="2e4a8092-2300-40fe-a2a1-2413ef2aa9e4" name="Update changes" serviceId="Navigate" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                        <tgo:param description="URI to navigate" id="2dd3af15-900b-494e-bd65-88269114b568" name="uri" userInput="false" value="orchestra://Excel/Documents%2FDocumentaryFragments%2F${DOC_ACRONYM}%2FChanges/Reference/Changes"/>
+                    </tgo:action>
+                    <tgo:action icon="create.png" id="27456ce4-19e1-45ad-ada2-b86ceb5f30bd" name="Update references" serviceId="Navigate" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                        <tgo:param description="URI to navigate" id="ec4fa1f9-bd71-4eeb-bb79-923ecd839801" name="uri" userInput="false" value="orchestra://Excel/Documents%2FDocumentaryFragments%2F${DOC_ACRONYM}%2FReferences"/>
+                    </tgo:action>
+                    <tgo:action icon="create.png" id="24316e52-be0a-47e1-bf4a-2399c56f8747" name="Update document overview" serviceId="Navigate" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                        <tgo:param description="URI to navigate" id="44c780ec-158b-4db2-aac5-40a76862ac72" name="uri" userInput="false" value="orchestra://Word/Documents%2FDocumentaryFragments%2F${DOC_ACRONYM}%2FDocOverview"/>
+                    </tgo:action>
+                </tgo:actionGroup>
+                <tgo:action icon="build.png" id="fab67d05-4033-4297-9163-e6f62e005535" name="Generate the document" serviceId="Create documentary project from template and generate document" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                    <tgo:param description="Name of the project template to use. &#13;&#10;Example: &quot;myProjectTemplate&quot;" id="7682e77e-fec7-4d85-9026-6b54ddea0377" name="projectTemplateName" userInput="false" value="STR_Template_Example"/>
+                    <tgo:param description="Name of the documentary project. &#13;&#10;Example: &quot;myProject&quot;" id="33aec8d7-e972-43fa-b7d1-385a3a8c896f" name="projectName" userInput="false" value="${DOC_ACRONYM}-${VERIF_CAMPAIGN_NAME}"/>
+                    <tgo:param description="Physical location where the document project will be created. &#13;&#10;Example: &quot;C:\orchestra_data\artifacts\projects&quot;" id="1d9a95d6-1f78-4eb4-8537-d7b5c7595555" name="documentaryProjects" userInput="false" value="${\Orchestra\Mozart\DocumentaryProjects}"/>
+                    <tgo:param description="Please leave all parameter as is but change the &lt;Please provide a date&gt; with the issue date." id="dc4b48f5-edeb-4e58-bfad-ec33db503db2" name="propertiesList" userInput="false" value="Document Title=${DOC_ACRONYM} for ${VERIF_CAMPAIGN_NAME} campaign;Document Type=${DOC_ACRONYM};System Name=${PRJ_DATA_PRJ-PROJECT_NAME};Document Date=&lt;Please provide a date&gt;"/>
+                    <tgo:param description="List of artefact URI to add to the project. You can specify a text file or define a list of Orchestra URI (syntax: orchestraURI[;orchestraURI]).&#13;&#10;Example:&#13;&#10;C:\artefactsList.txt&#13;&#10;orchestra://JPG/Blue%20hills;orchestra://JPG/Water%20lilies" id="31813997-472d-4c5f-a5b7-42b4028d837b" name="artefactsUrisList" userInput="false" value="orchestra://Word/Documents%2FDocumentaryFragments%2FCommon%2FSystemOverview;orchestra://Word/Documents%2FDocumentaryFragments%2F${DOC_ACRONYM}%2FDocOverview;orchestra://Excel/Documents%2FDocumentaryFragments%2F${DOC_ACRONYM}%2FReferences;orchestra://Excel/Documents%2FDocumentaryFragments%2F${DOC_ACRONYM}%2FChanges/Reference/Changes;${DOC_SPECIFIC_ARTEFACTS}"/>
+                </tgo:action>
+                <tgo:action icon="book2.png" id="9091694b-4ac8-4b8a-8098-1ff812d72c96" name="Access the generated document" serviceId="Open generated document" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                    <tgo:param description="Name of the documentary project. &#13;&#10;Example: &quot;myProject&quot;" id="d52e6c57-f6e7-4b4a-87b2-03ee609c856a" name="projectName" userInput="false" value="${DOC_ACRONYM}-${VERIF_CAMPAIGN_NAME}"/>
+                </tgo:action>
+                <tgo:action icon="book3.png" id="690bbc65-d46d-4ede-b6d0-ee5cb47594fe" name="Access the doc generation project" serviceId="Open documentary project" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                    <tgo:param description="Name of the documentary project. &#13;&#10;Example: &quot;myProject&quot;" id="38155261-7303-417c-94ca-2fbc735008e6" name="projectName" userInput="false" value="${DOC_ACRONYM}-${VERIF_CAMPAIGN_NAME}"/>
+                </tgo:action>
+            </tgo:activity>
+        </tgo:activity>
+        <tgo:activity id="ce019cfc-6b9e-4909-b59b-0c0e1aa1e6f4" name="Validate"/>
+        <tgo:activity description="Manage the changes to the system" id="611766d7-b5ff-4971-9368-a3c26ff700a0" name="Manage changes" processMap="DevelopSolution-EN-ConfManagement.png">
+            <tgo:roleFilter name=""/>
+            <tgo:activity description="Perform the CCB meeting (preparation, meeting and report)" icon="tree_meeting4.png" id="89cccb60-27a9-48e8-b87b-56bd6bac5594" name="CCB">
+                <tgo:roleFilter name=""/>
+                <tgo:variable category="Data" name="PRJ_DATA_HOME-PROJECT" value="t:"/>
+                <tgo:actionGroup icon="xfmail.png" id="8baeba9f-c83b-4e84-9e92-48ca92d9a92e" name="Prepare CCB" visibleUnderServiceChilds="false">
+                    <tgo:action description="Update the attendees list" icon="32_yast_kuser.png" id="1573bdb2-21ee-46aa-b233-6c2df485059a" name="Define attendees" serviceId="Open file" serviceResultBehaviour="Hide" visibleUnderServiceChilds="false">
+                        <tgo:param description="Path of file to open" id="d039fd00-dacb-4770-9b73-361d7e9fedc3" name="filePath" userInput="false" value="${PRJ_DATA_HOME-ARTIFACTS_CCB}\CCBBroadcastList.xls"/>
+                    </tgo:action>
+                    <tgo:action description="Generate the inviting document with CR list" icon="32_tablet.png" id="28660a71-4b4f-47b1-b6ea-24d8ca294ba5" name="Generate inviting" serviceId="Create documentary project from template and generate document" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                        <tgo:param description="Name of the project template to use. &#13;&#10;Example: &quot;myProjectTemplate&quot;" id="5b074995-d13f-403a-bdef-be238bc45777" name="projectTemplateName" userInput="false" value="ORCSE_CCB_INVITATION_TEMPLATE"/>
+                        <tgo:param description="Documentary project name" id="c65bd4ca-e0cb-4983-99e0-ef83f3019b81" name="projectName" userInput="false" value="${PRJ_DOC_ID-ORCSE_CCB_INVITATION}"/>
+                        <tgo:param description="Physical location where the document project will be created. &#13;&#10;Example: &quot;C:\orchestra_data\artifacts\projects&quot;" id="2cd2b9ee-41b0-49d4-b2c9-e3266b54d6cb" name="documentaryProjects" userInput="false" value="T:\Artefacts\GeneratedDocumentaryProjects"/>
+                        <tgo:param description="List of artefact URI to add to the project. You can specify a text file or define a list of Orchestra URI (syntax: orchestraURI[;orchestraURI]).&#13;&#10;Example:&#13;&#10;C:\artefactsList.txt&#13;&#10;orchestra://JPG/Blue%20hills;orchestra://JPG/Water%20lilies" id="89b0119c-95ae-4339-971f-52c7fadc4336" name="artefactsUrisList" userInput="false" value="orchestra://Excel/ConfigurationManagement%2FCCB%2FCCBBroadcastList;orchestra://Clearquest/WakeUpClock/Query/Public%20Queries%2FOrchestra%2FCCB%2FPerformTheCCB%2FView%5FEvolution%5FRequest%5FTo%5FDiscuss;orchestra://Clearquest/WakeUpClock/Query/Public%20Queries%2FOrchestra%2FCCB%2FPerformTheCCB%2FView%5FProblem%5FReport%5FTo%5FDiscuss;orchestra://Clearquest/WakeUpClock/Query/Public%20Queries%2FOrchestra%2FCCB%2FPerformTheCCB%2FView%5FRequests%5FTo%5FClose"/>
+                    </tgo:action>
+                    <tgo:action description="Open the file explorer in the folder where the document has been created" icon="writeDoc.png" id="c570a23f-24b7-4171-bbe4-e9e6ebd17ed5" name="Edit inviting" serviceId="Open generated document" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                        <tgo:param description="Name of the documentary project. &#13;&#10;Example: &quot;myProject&quot;" id="1a864524-4f97-43df-8159-d4a80efc7b9a" name="projectName" userInput="false" value="${PRJ_DOC_ID-ORCSE_CCB_INVITATION}"/>
+                    </tgo:action>
+                    <tgo:action description="Plan and notify from Calendar" icon="calendar.png" id="ac15a74b-4a6d-4143-a46b-a8eb31485c08" name="Plan CCB" serviceId="Program launcher" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                        <tgo:param description="Command to launch. (Do not add program arguments here.)" id="754fc74a-55ca-44ca-ab59-7191a4c3f59a" name="command" userInput="false" value="${\Orchestra installation\COTS\Outlook\Current\Executable}"/>
+                    </tgo:action>
+                    <tgo:action description="Send the inviting document by email" icon="mail4.png" id="45d0f632-d1d0-4ee6-87aa-108c24ec6616" name="Broadcast inviting" serviceId="Send mail" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                        <tgo:param description="Address of the mailing server." id="3d1f470f-5950-4db0-a50a-47477dd197b5" name="emailServerAddress" userInput="false" value="${PRJ_TOOL_SRV-MAIL_SRVR_ADDR}"/>
+                        <tgo:param description="Sender's Internet address." id="2c4e7cc4-b52e-41ab-b430-9d13606aabbd" name="from" userInput="false" value="${\DataSet\EngineeringDesk\emailAddress}"/>
+                        <tgo:param description="List of contact : free text or ASCI file." id="440a71d0-c795-424e-a03b-942a016a5855" name="to" userInput="false" value="${PRJ_DATA_HOME-ARTIFACTS_CCB}\CCBMailingList.txt"/>
+                        <tgo:param description="Subject of the message." id="04d55076-1fe9-4cb7-b95a-1a868e2d91f8" name="subject" userInput="false" value="CCB Invitation - ${PRJ_DATA_PRJ-PROJECT_NAME}"/>
+                        <tgo:param description="List of attachment : file or folder containing files to attach." id="712ed69c-ed7f-4d58-b145-a3c9bfd586c9" name="attachmentPath" userInput="false" value="${PRJ_PATH_WSP-MOZART}\${PRJ_DOC_ID-REP_MOZART_CCB}\${PRJ_DOC_ID-ORCSE_CCB_INVITATION}\publisher\doc\CCB_INVITATION.doc"/>
+                        <tgo:param description="List of contact : free text or ASCII file." id="723739b8-4b9b-4bf7-a6c6-2ce23f2a055e" name="bcc" userInput="false" value="${\DataSet\EngineeringDesk\emailAddress}"/>
+                    </tgo:action>
+                </tgo:actionGroup>
+                <tgo:actionGroup icon="yast_sysadmin.png" id="4ee3f320-2a66-47d5-81d3-6e93b9c57f58" name="Lead CCB" visibleUnderServiceChilds="false">
+                    <tgo:action description="Record the start date and time of the meeting for report generation" icon="player_play.png" id="74f66f68-66ce-4ca4-9aeb-cb9a6bf68920" name="Start the meeting" serviceId="Program launcher" serviceResultBehaviour="Hide" visibleUnderServiceChilds="false">
+                        <tgo:param description="Command to launch. (Do not add program arguments here.)" id="26a2664d-7d42-49cc-9883-42744df23bc0" name="command" userInput="false" value="${PRJ_TOOL_HOME-CCB}\start_Meeting.bat"/>
+                        <tgo:param description="Working directory for the program execution." id="469fb809-8453-48a8-b1a2-4c1e17b9229c" name="workingDirectoryPath" userInput="false" value="${PRJ_TOOL_HOME-CCB}"/>
+                    </tgo:action>
+                    <tgo:action description="Display the list of problem reports that has to be treated" icon="conf_change.png" id="d822a73e-49d7-4424-a650-3f303504dbb2" name="Analyse the problems" serviceId="Load artifact in extractor view" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                        <tgo:param description="URI to open in the Extractor View. &#13;&#10;Use the syntax : &#13;&#10;For an URI : orchestra://Clearquest/prod/Query/Public%20Queries%2FMyPendingList)" id="f0fc05f0-ff0a-4cff-b317-d10b558783ac" name="uri" userInput="false" value="orchestra://Clearquest/WakeUpClock/Query/Public%20Queries%2FOrchestra%2FCCB%2FPerformTheCCB%2FView%5FProblem%5FReport%5FTo%5FDiscuss"/>
+                        <tgo:param description="Title of the view where the request is going to be displayed." id="58e84563-877e-49be-b5ec-5ce2d7e16b63" name="newViewTitleName" userInput="false" value="Analysed problems"/>
+                    </tgo:action>
+                    <tgo:action description="Display the list of enhancement requests that has to be treated" icon="conf_change.png" id="136d1a93-40f3-4e2c-96a3-4750461c971a" name="Analyse the enhancements" serviceId="Load artifact in extractor view" serviceResultBehaviour="Hide" visibleUnderServiceChilds="false">
+                        <tgo:param description="URI to open in the Extractor View. &#13;&#10;Use the syntax : &#13;&#10;For an URI : orchestra://Clearquest/prod/Query/Public%20Queries%2FMyPendingList)" id="d6adb223-dc7d-4fc9-87e0-cc32dacc0a22" name="uri" userInput="false" value="orchestra://Clearquest/WakeUpClock/Query/Public%20Queries%2FOrchestra%2FCCB%2FPerformTheCCB%2FView%5FEvolution%5FRequest%5FTo%5FDiscuss"/>
+                        <tgo:param description="Title of the view where the request is going to be displayed." id="25a67ae2-ba7e-4b6b-bc52-b967655b981e" name="newViewTitleName" userInput="false" value="Analysed enhancements"/>
+                    </tgo:action>
+                    <tgo:action description="Display the list of requests that have to be closed" icon="conf_change.png" id="ad4cfe69-d4ec-4f23-88d0-574358c47b0c" name="Analyse the requests to close" serviceId="Load artifact in extractor view" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                        <tgo:param description="URI to open in the Extractor View. &#13;&#10;Use the syntax : &#13;&#10;For an URI : orchestra://Clearquest/prod/Query/Public%20Queries%2FMyPendingList)" id="b20e1212-91b2-4f23-9795-7c39fed1186a" name="uri" userInput="false" value="orchestra://Clearquest/WakeUpClock/Query/Public%20Queries%2FOrchestra%2FCCB%2FPerformTheCCB%2FView%5FRequests%5FTo%5FClose"/>
+                        <tgo:param description="Title of the view where the request is going to be displayed." id="bca1cf05-3727-46e6-b731-4671c6723676" name="newViewTitleName" userInput="false" value="Requests to close"/>
+                    </tgo:action>
+                    <tgo:action description="Record the end date and time of the meeting for report generation" icon="player_stop.png" id="ca5da7cd-8d7c-4a18-8981-5869ec1fe5f7" name="End the meeting" serviceId="Program launcher" serviceResultBehaviour="Hide" visibleUnderServiceChilds="false">
+                        <tgo:param description="Command to launch. (Do not add program arguments here.)" id="86f595f6-791e-4756-9d0f-a5808903ed30" name="command" userInput="false" value="${PRJ_TOOL_HOME-CCB}\end_Meeting.bat"/>
+                        <tgo:param description="Working directory for the program execution." id="e0232952-65d7-4f2b-b252-20701bf8d4e3" name="workingDirectoryPath" userInput="false" value="${PRJ_TOOL_HOME-CCB}"/>
+                    </tgo:action>
+                </tgo:actionGroup>
+                <tgo:actionGroup icon="korganizer.png" id="12b059e9-d7b3-45c5-a3bf-02dc7e1531c8" name="Establish CCB report" visibleUnderServiceChilds="false">
+                    <tgo:action icon="32_yast_kuser.png" id="e7cacda2-e2ea-402d-9886-3e1db07617ff" name="Edit the attendees list" serviceId="Open file" serviceResultBehaviour="Hide" visibleUnderServiceChilds="false">
+                        <tgo:param description="Path of file to open" id="e158242e-e329-4fac-a6a9-0a22c65c432e" name="filePath" userInput="false" value="${PRJ_DATA_HOME-ARTIFACTS_CCB}\CCBBroadcastList.xls"/>
+                    </tgo:action>
+                    <tgo:action description="Analyse the related indicators" icon="32_kchart.png" id="119d18a7-5993-43e3-92d5-071cb634bcd3" name="Analyse indicators" serviceId="Open file" serviceResultBehaviour="Hide" visibleUnderServiceChilds="false">
+                        <tgo:param description="Path of file to open" id="befdfb4b-5cae-4769-bb39-0771f47cccbb" name="filePath" userInput="false" value="${PRJ_DATA_HOME-ARTIFACTS_CCB}\CCB_Metric.xls"/>
+                    </tgo:action>
+                    <tgo:action icon="xedit.png" id="244d32fa-f81f-4569-916c-ea601c58be7d" name="Edit the meeting characteristics" serviceId="Open file" serviceResultBehaviour="Hide" visibleUnderServiceChilds="false">
+                        <tgo:param description="Path of file to open" id="ba44fb19-0a69-4fec-8d29-019a33cfba9c" name="filePath" userInput="false" value="${PRJ_TOOL_HOME-CCB}\Last_CCB_Schedule.txt"/>
+                    </tgo:action>
+                    <tgo:action description="Update the queries according to the meeting time slot" icon="CQPerl.png" id="f3f18dc4-c075-4bcc-9a30-720b53e0c7d5" name="Update CCB Queries" serviceId="Program launcher" serviceResultBehaviour="Hide" visibleUnderServiceChilds="false">
+                        <tgo:param description="Command to launch. (Do not add program arguments here.)" id="f2d97186-122d-40e6-8765-a944cce53d8c" name="command" userInput="false" value="${PRJ_TOOL_HOME-CCB}\ModifyCCBQueries.bat"/>
+                        <tgo:param description="Working directory for the program execution." id="ab7e7d64-c4a0-4c76-832a-9c5a42e767a5" name="workingDirectoryPath" userInput="false" value="${PRJ_TOOL_HOME-CCB}"/>
+                    </tgo:action>
+                    <tgo:action description="Generate the CCB report" icon="32_tablet.png" id="764befbb-5f84-426b-bba6-12df9045211b" name="Generate the report" serviceId="Create documentary project from template and generate document" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                        <tgo:param description="Name of the project template to use. &#13;&#10;Example: &quot;myProjectTemplate&quot;" id="61245358-edfc-4d85-856f-a9466c13b5f0" name="projectTemplateName" userInput="false" value="ORCSE_CCB_REPORT_TEMPLATE"/>
+                        <tgo:param description="Documentary project name" id="77b159de-02bf-4276-812d-f5aefd684e17" name="projectName" userInput="false" value="${PRJ_DOC_ID-ORCSE_CCB_REPORT}"/>
+                        <tgo:param description="Physical location where the document project will be created. &#13;&#10;Example: &quot;C:\orchestra_data\artifacts\projects&quot;" id="16cf1a5f-ab75-4a9b-a98b-be270c44c4a9" name="documentaryProjects" userInput="false" value="T:\Artefacts\GeneratedDocumentaryProjects"/>
+                        <tgo:param description="List of artefact URI to add to the project. You can specify a text file or define a list of Orchestra URI (syntax: orchestraURI[;orchestraURI]).&#13;&#10;Example:&#13;&#10;C:\artefactsList.txt&#13;&#10;orchestra://JPG/Blue%20hills;orchestra://JPG/Water%20lilies" id="ada1cbf4-f7d0-4ff8-aff5-758ad203609b" name="artefactsUrisList" userInput="false" value="orchestra://Excel/ConfigurationManagement%2FCCB%2FCCBBroadcastList;orchestra://Clearquest/WakeUpClock/Query/Public%20Queries%2FOrchestra%2FCCB%2FReport%2FResult%2F0%5FProcessed%5FDuring%5FCCB;orchestra://Clearquest/WakeUpClock/Query/Public%20Queries%2FOrchestra%2FCCB%2FReport%2FResult%2F1%5FAccepted%5FPCR;orchestra://Clearquest/WakeUpClock/Query/Public%20Queries%2FOrchestra%2FCCB%2FReport%2FResult%2F2%5FPostponed%5FPCR;orchestra://Clearquest/WakeUpClock/Query/Public%20Queries%2FOrchestra%2FCCB%2FReport%2FResult%2F3%5FMore%5FInfo%5FRequired%5FPCR;orchestra://Clearquest/WakeUpClock/Query/Public%20Queries%2FOrchestra%2FCCB%2FReport%2FResult%2F4%5FRejected%5FPCR;orchestra://Clearquest/WakeUpClock/Query/Public%20Queries%2FOrchestra%2FCCB%2FReport%2FResult%2F5%5FClosed%5FPCR"/>
+                    </tgo:action>
+                    <tgo:action description="Edit the local temporary version of the report" icon="writeDoc.png" id="088eb823-7fc7-4b3f-8bd0-d566d0058312" name="Edit the report" serviceId="Open generated document" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                        <tgo:param description="Name of the documentary project. &#13;&#10;Example: &quot;myProject&quot;" id="87df3e6b-e591-42d6-9896-091df75d6377" name="projectName" userInput="false" value="${PRJ_DOC_ID-ORCSE_CCB_REPORT}"/>
+                    </tgo:action>
+                    <tgo:action description="Send the CCB report by email" icon="mail4.png" id="64acfff8-de06-43e7-9978-08dfe10c5665" name="Broadcast report" serviceId="Send mail" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                        <tgo:param description="Address of the mailing server." id="7f1b5883-54e2-40c3-8dfe-dd9f5709c43c" name="emailServerAddress" userInput="false" value="${PRJ_TOOL_SRV-MAIL_SRVR_ADDR}"/>
+                        <tgo:param description="Sender's Internet address." id="a7cf5978-c94f-49a7-8c37-d4bfc1a1f7bf" name="from" userInput="false" value="${\DataSet\EngineeringDesk\emailAddress}"/>
+                        <tgo:param description="List of contact : free text or ASCI file." id="32e919c6-c800-45b8-a9f8-8312ff80085e" name="to" userInput="false" value="${PRJ_DATA_HOME-ARTIFACTS_CCB}\CCBMailingList.txt"/>
+                        <tgo:param description="Subject of the message." id="3c8d8a15-f7c2-41f3-a5b2-2b34c65cd6d5" name="subject" userInput="false" value="CCB Report - ${PRJ_DATA_PRJ-PROJECT_NAME}"/>
+                        <tgo:param description="List of attachment : file or folder containing files to attach." id="05b2778d-9ab1-4402-85b5-8b2fa406f4d7" name="attachmentPath" userInput="false" value="${PRJ_PATH_WSP-MOZART}\${PRJ_DOC_ID-REP_MOZART_CCB}\${PRJ_DOC_ID-ORCSE_CCB_REPORT}\publisher\doc\CCB_REPORT.doc"/>
+                        <tgo:param description="List of contact : free text or ASCI file." id="d0ba2ccb-824e-4a7a-b174-4ceceea26a0e" name="bcc" userInput="false" value="${\DataSet\EngineeringDesk\emailAddress}"/>
+                    </tgo:action>
+                </tgo:actionGroup>
+            </tgo:activity>
+            <tgo:activity description="Perform the CCB meeting (preparation, meeting and report)" icon="tree_meeting4.png" id="0f9f5984-e0ad-48aa-8cd1-7b4f2d7acc21" name="CCB with Jira" processMap="DevelopSolution-EN-ManagementActivities.png">
+                <tgo:roleFilter name=""/>
+                <tgo:variable category="Data" name="CCB-FILTER6" value="10310"/>
+                <tgo:variable category="Data" name="CCB-FILTER5" value="10309"/>
+                <tgo:variable category="Data" name="CCB-FILTER4" value="10308"/>
+                <tgo:variable category="Data" name="CCB-FILTER3" value="10307"/>
+                <tgo:variable category="Data" name="CCB-FILTER1" value="10305"/>
+                <tgo:variable category="Data" name="CCB-FILTER2" value="10306"/>
+                <tgo:variable category="Data" name="MYSUBMITTED-FILTERID" value="10005"/>
+                <tgo:variable category="Data" name="CCB-TOCLOSE" value="10311"/>
+                <tgo:variable category="Data" name="PRJ_DOC_ID-ORCSE_CCB_REPORT" value="CCB_REPORT_JIRA"/>
+                <tgo:variable category="Data" name="CCB-PROJ-KEY" value="Orchestra"/>
+                <tgo:variable category="Data" name="PRJ_DOC_ID-ORCSE_CCB_INVITATION" value="ORCSE_CCB_INVITATION_JIRA"/>
+                <tgo:variable category="Data" name="CCB-ENHANCEMENTS" value="10303"/>
+                <tgo:variable category="Data" name="MYPENDING-FILTERID" value="10061"/>
+                <tgo:variable category="Data" name="CCB-PROBLEMS" value="10304"/>
+                <tgo:actionGroup icon="xfmail.png" id="9386c918-937a-4d76-80a4-abeca879db12" name="Prepare CCB" visibleUnderServiceChilds="false">
+                    <tgo:action description="Update the attendees list" icon="32_yast_kuser.png" id="f83db4a2-f17a-4493-b15c-0e326f2b99f0" name="Define attendees" serviceId="Open file" serviceResultBehaviour="Hide" visibleUnderServiceChilds="false">
+                        <tgo:param description="Path of file to open" id="b4830f29-38bf-40f4-b408-06cebb1bf79b" name="filePath" userInput="false" value="${PRJ_DATA_HOME-ARTIFACTS_CCB}\CCBBroadcastList.xls"/>
+                    </tgo:action>
+                    <tgo:action description="Generate the inviting document with CR list" icon="32_tablet.png" id="f867b5e8-6121-4253-acb5-dcd31bfc8f98" name="Generate inviting" serviceId="Create documentary project from template and generate document" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                        <tgo:param description="Name of the project template to use. &#13;&#10;Example: &quot;myProjectTemplate&quot;" id="4d97f965-e80e-4881-95ee-2634a3e8f969" name="projectTemplateName" userInput="false" value="ORCSE_CCB_INVITATION_JIRA_TEMPLATE"/>
+                        <tgo:param description="Documentary project name" id="c1e199b2-1f11-4921-ad43-eeed0fa9ad06" name="projectName" userInput="false" value="${PRJ_DOC_ID-ORCSE_CCB_INVITATION}"/>
+                        <tgo:param description="Physical location where the document project will be created. &#13;&#10;Example: &quot;C:\orchestra_data\artifacts\projects&quot;" id="245a28a5-7e71-4564-88cc-d1110b9b0217" name="documentaryProjects" userInput="false" value="D:\Orchestra_Data\02-Opuc\WakeUpClock\Artefacts\GeneratedDocumentaryProjects"/>
+                        <tgo:param description="List of artefact URI to add to the project. You can specify a text file or define a list of Orchestra URI (syntax: orchestraURI[;orchestraURI]).&#13;&#10;Example:&#13;&#10;C:\artefactsList.txt&#13;&#10;orchestra://JPG/Blue%20hills;orchestra://JPG/Water%20lilies" id="91399cd5-bf37-4372-ab1d-66a89c64ce33" name="artefactsUrisList" userInput="false" value="orchestra://Jira/Jira%2Fefxess110p/Query/10303;orchestra://Jira/Jira%2Fefxess110p/Query/10304;orchestra://Jira/Jira%2Fefxess110p/Query/10311;orchestra://Excel/ConfigurationManagement%2FCCB%2FCCBBroadcastList"/>
+                    </tgo:action>
+                    <tgo:action description="Open the file explorer in the folder where the document has been created" icon="writeDoc.png" id="128edab0-a3e7-4d71-9a3f-aca7b7944086" name="Edit inviting" serviceId="Open generated document" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                        <tgo:param description="Name of the documentary project. &#13;&#10;Example: &quot;myProject&quot;" id="43b2d56a-ed1c-45d1-ae7f-5062a9353d97" name="projectName" userInput="false" value="${PRJ_DOC_ID-ORCSE_CCB_INVITATION}"/>
+                    </tgo:action>
+                </tgo:actionGroup>
+                <tgo:actionGroup icon="yast_sysadmin.png" id="85c467a8-6b40-4c39-969e-a1f43de88e6c" name="Lead CCB" visibleUnderServiceChilds="false">
+                    <tgo:action description="Record the start date and time (e.g. 2011-08-19 08:00) of the meeting for report generation" icon="player_play.png" id="81007e76-6161-4620-865b-672f98e9c7b4" name="Launch the meeting" serviceId="Program launcher" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                        <tgo:param description="Path of the batch file to execute.(Do not add program arguments here.)" id="b81f386c-65df-422c-9dd0-62b690b7befa" name="command" userInput="false" value="${PRJ_TOOL_HOME-CCB}\GetCurrentDate.bat"/>
+                        <tgo:param description="Path of the working directory for the program execution." id="4c7599aa-4eb1-4e27-96cc-391a826b0b74" name="workingDirectoryPath" userInput="false" value="${PRJ_TOOL_HOME-CCB}"/>
+                    </tgo:action>
+                    <tgo:action description="Edit the current meeting tag" icon="xedit.png" id="29eb6986-8f78-4b03-b9ac-108f42ed502d" name="Edit the current meeting tag" serviceId="Open file" serviceResultBehaviour="Hide" visibleUnderServiceChilds="false">
+                        <tgo:param description="Path of file to open" id="1e2e0752-8823-4125-98df-cec2ee9c4f22" name="filePath" userInput="false" value="${PRJ_TOOL_HOME-CCB}\Last_CCB_Date.txt"/>
+                    </tgo:action>
+                    <tgo:action description="Display the list of problem reports that has to be treated" icon="conf_change.png" id="bb9486d9-55d5-44bc-9920-5c454b2c2def" name="Review the problems" serviceId="Load artifact in extractor view" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                        <tgo:param description="URI to open in the Extractor View. &#13;&#10;Used the syntax : &#13;&#10;For an URI : orchestra://Clearquest/prod/Query/Public%20Queries%2FMyPendingList)" id="738d86c3-dc0a-4bb2-a7ea-ef89e1d6c6a7" name="uri" userInput="false" value="orchestra://Jira/Jira%2F${CCB-HOST}/Query/${CCB-PROBLEMS}"/>
+                        <tgo:param description="Title of the view where the request is going to be displayed." id="e7701e63-9b64-4fe3-966c-57f7984e574f" name="newViewTitleName" userInput="false" value="Problems"/>
+                    </tgo:action>
+                    <tgo:action description="Display the list of enhancement requests that has to be treated" icon="conf_change.png" id="2b484429-ae59-481a-bd68-142411a52083" name="Review the enhancements" serviceId="Load artifact in extractor view" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                        <tgo:param description="URI to open in the Extractor View. &#13;&#10;Used the syntax : &#13;&#10;For an URI : orchestra://Clearquest/prod/Query/Public%20Queries%2FMyPendingList)" id="56e191a1-04a3-42ef-a21f-a45cebee8257" name="uri" userInput="false" value="orchestra://Jira/Jira%2F${CCB-HOST}/Query/${CCB-ENHANCEMENTS}"/>
+                        <tgo:param description="Title of the view where the request is going to be displayed." id="02215f28-4f29-462a-a4c5-2e0e5c101ef5" name="newViewTitleName" userInput="false" value="Enhancements"/>
+                    </tgo:action>
+                    <tgo:action description="Display the list of requests that have to be closed" icon="conf_change.png" id="84c00a19-e7db-4224-b5a8-bf5cc394b365" name="Review the requests to close" serviceId="Load artifact in extractor view" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                        <tgo:param description="URI to open in the Extractor View. &#13;&#10;Used the syntax : &#13;&#10;For an URI : orchestra://Clearquest/prod/Query/Public%20Queries%2FMyPendingList)" id="75bb6eec-a4d0-4216-bdde-93063577006e" name="uri" userInput="false" value="orchestra://Jira/Jira%2F${CCB-HOST}/Query/${CCB-TOCLOSE}"/>
+                        <tgo:param description="Title of the view where the request is going to be displayed." id="3fb9223d-3a3e-465e-9743-94ecd36796f0" name="newViewTitleName" userInput="false" value="Requests to close"/>
+                    </tgo:action>
+                </tgo:actionGroup>
+                <tgo:actionGroup description="Establish CCB report" icon="korganizer.png" id="340cc621-0f91-4ed3-8189-2267ed947744" name="Establish CCB report" visibleUnderServiceChilds="false">
+                    <tgo:action icon="32_yast_kuser.png" id="d099dbb6-51ce-473e-b87a-9884691c40a7" name="Edit the attendees list" serviceId="Open file" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                        <tgo:param description="Path of file to open" id="da8c8a2a-e65a-4357-8d13-060347ea6ec1" name="filePath" userInput="false" value="${PRJ_DATA_HOME-ARTIFACTS_CCB}\CCBBroadcastList.xls"/>
+                    </tgo:action>
+                    <tgo:action description="Edit the current meeting tag" icon="xedit.png" id="0b640846-c91f-4403-a4e6-96107c219fa8" name="Edit the current meeting tag" serviceId="Open file" serviceResultBehaviour="Hide" visibleUnderServiceChilds="false">
+                        <tgo:param description="Path of file to open" id="15e0e45f-dcdc-4da5-87a3-7c56fe2a93a0" name="filePath" userInput="false" value="${PRJ_TOOL_HOME-CCB}\Last_CCB_Date.txt"/>
+                    </tgo:action>
+                    <tgo:action description="Apply the current meeting tag for CCB report generation" icon="player_stop.png" id="b3427292-95b3-4ec5-b292-e82080786bd9" name="Apply the meeting tag" serviceId="Set variable with command result" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                        <tgo:param description="Path of the batch file to execute.(Do not add program arguments here.)" id="24324c1b-e4ff-4730-9cdf-6542dbede730" name="command" userInput="false" value="${PRJ_TOOL_HOME-CCB}\EchoCurrentDate.bat"/>
+                        <tgo:param description="Name of the project variable to change." id="09034e2b-22c7-4409-aa4a-9e6e6f2be58b" name="variableName" userInput="false" value="CCB-LABEL"/>
+                        <tgo:param description="Encoded the result or not" id="7fc4b121-6d52-434f-b9f4-cf4446d994d4" name="encodedResult" userInput="false" value="True"/>
+                        <tgo:param description="Path of the working directory for the program execution." id="3ddc2418-0055-458e-9240-b4c810faebbd" name="workingDirectoryPath" userInput="false" value="${PRJ_TOOL_HOME-CCB}"/>
+                    </tgo:action>
+                    <tgo:action description="Generate CCB report" icon="32_tablet.png" id="f46c6baf-710e-4b61-81e6-a06a862fe6a4" name="Create and generate CCB report" serviceId="Create documentary project from template and generate document" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                        <tgo:param description="Name of the project template to use. &#13;&#10;Example: &quot;myProjectTemplate&quot;" id="055b76c1-8b73-4960-8cbf-1181fb912874" name="projectTemplateName" userInput="false" value="CCB_REPORT_JIRA_TEMPLATE"/>
+                        <tgo:param description="Name of the documentary project. &#13;&#10;Example: &quot;myProject&quot;" id="f7691701-8814-44f1-bed4-764b08104a66" name="projectName" userInput="false" value="${PRJ_DOC_ID-ORCSE_CCB_REPORT}"/>
+                        <tgo:param description="Physical location where the document project will be created. &#13;&#10;Example: &quot;C:\orchestra_data\artifacts\projects&quot;" id="cfbc49e7-2c52-4ebb-a792-a692cef7df6a" name="documentaryProjects" userInput="false" value="D:\Orchestra_Data\02-Opuc\WakeUpClock\Artefacts\GeneratedDocumentaryProjects"/>
+                        <tgo:param description="List of fragments uri to add to the project. You can specify a text file or define a list of Orchestra URI (syntax: orchestraURI[;orchestraURI]).&#13;&#10;Example:&#13;&#10;C:\artefactsList.txt&#13;&#10;orchestra://JPG/Blue%20hills;orchestra://JPG/Water%20lilies" id="ea174cda-31f9-478e-8138-6a84a542154d" name="artefactsUrisList" userInput="false" value="orchestra://Jira/Jira%2FValidation/Query/10305"/>
+                    </tgo:action>
+                    <tgo:action description="Edit the local temporary version of the report" icon="writeDoc.png" id="5e851d66-cb1b-4015-9b60-2ce919d3f2a9" name="Edit the report" serviceId="Open generated document" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                        <tgo:param description="Name of the documentary project. &#13;&#10;Example: &quot;myProject&quot;" id="ec18c944-ce35-4e5d-bea2-83c680255314" name="projectName" userInput="false" value="${PRJ_DOC_ID-ORCSE_CCB_REPORT}"/>
+                    </tgo:action>
+                </tgo:actionGroup>
+                <tgo:action description="orchestra:ResetCreds://Jira/" icon="validate.png" id="64bd1b57-dfa8-46d0-92a8-63b30a9fa90c" name="Reinitialize Jira credantials" serviceId="Open URL" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                    <tgo:param description="URL to open. &#13;&#10;Used the syntax : &#13;&#10;For a file: file:///FilePath (ex: file:///C:\Program Files)&#13;&#10;For an URL : http://URL (ex: http://www.google.fr)" id="a41841e2-1d40-4015-a97e-102cc3cf8a9b" name="url" userInput="false" value="orchestra:ResetCreds://Jira/Jira%2F${CCB-HOST}"/>
+                </tgo:action>
+            </tgo:activity>
+        </tgo:activity>
+    </tgo:activity>
+    <tgo:activity description="Find here management activities (continuous improvement, progress meetings, ...)" id="bfeb555a-7d69-43b1-bbfe-96fb87ba4e24" name="Management activities" processMap="DevelopSolution-EN-ManagementActivities.png">
+        <tgo:roleFilter name=""/>
+        <tgo:activity description="Produce metrics related to engineering progress" icon="tree_indicator3.png" id="db86d24c-671b-4e51-b884-d46592168f37" name="Measure and analyse">
+            <tgo:roleFilter name=""/>
+            <tgo:action description="With query tool" icon="indicator6.png" id="c217c571-b73c-4fa8-a2ef-e35975edc6f2" name="Extract query" serviceId="Program launcher" serviceResultBehaviour="Hide" visibleUnderServiceChilds="false">
+                <tgo:roleFilter name=""/>
+                <tgo:param description="Command to launch. (Do not add program arguments here.)" id="6ebc2dbc-fe9e-47a2-9a36-ef531c3b7cf9" name="command" userInput="false" value="${\Host\Tool\SYS_TOOL_FILE_CMD-EXPLORER}"/>
+                <tgo:param description="When you add an argument containing spaces (a path for example), enclose argument using double-quotes (“)" id="6252cdb2-77f1-4751-9fa9-3c52263e2753" name="arg1" userInput="false" value="${\DataSet\EngineeringDesk\projectLocation}\Artefacts\Metrics\orchestra.query.tool"/>
+            </tgo:action>
+            <tgo:action description="Metrics dashboard" icon="indicator6.png" id="25f5e048-dcfb-4c1b-a301-902a6ac31df8" name="Extract and analyse data" serviceId="Program launcher" serviceResultBehaviour="Hide" visibleUnderServiceChilds="false">
+                <tgo:param description="Command to launch. (Do not add program arguments here.)" id="765f0f75-0c0d-4ac4-9131-cc9a2041a579" name="command" userInput="false" value="${\Host\Tool\SYS_TOOL_FILE_CMD-EXPLORER}"/>
+                <tgo:param description="When you add an argument containing spaces (a path for example), enclose argument using double-quotes (“)" id="edbca736-7a47-434e-a4fa-e26de492455e" name="arg1" userInput="false" value="${\DataSet\EngineeringDesk\projectLocation}\Artefacts\Metrics\technical.dashboard"/>
+            </tgo:action>
+        </tgo:activity>
+    </tgo:activity>
+    <tgo:activity description="Administration" id="c9d9fbe5-0cdb-46d6-b708-8ace06019e61" name="Administration">
+        <tgo:activity description="Update metrics folder with installed version templates" icon="tree_indicator2.png" id="7253df54-20eb-49f2-8160-10b42a34fc37" name="Update Metrics version" processMap="guide.png">
+            <tgo:variable category="Data" name="TRACEABILITY_PROJECT_NAME" value="SpecToCode"/>
+            <tgo:action description="Save metrics folder artefact" icon="data_collection1.png" id="ce520eb8-22f6-4ca9-9e49-d8ab12019980" name="Save metrics folder artefact before creating the new one" serviceId="Batch file launcher" serviceResultBehaviour="Display" visibleUnderServiceChilds="false">
+                <tgo:param description="Path of the batch file to execute.(Do not add program arguments here.)" id="75cc64a7-4a8d-44a1-9efd-166e2068c811" name="command" userInput="false" value="${\DataSet\EngineeringDesk\projectLocation}\Resources\Metrics\MoveFolder.bat"/>
+                <tgo:param description="source folder" id="0223b486-0e97-4f7b-8318-c72478354511" name="arg1" userInput="true" value="${PRJ_DATA_HOME-ARTIFACTS}\Metrics"/>
+                <tgo:param description="destination folder" id="8d604c0f-5f29-43aa-95d6-5535c322e4cd" name="arg2" userInput="true" value="${PRJ_DATA_HOME-ARTIFACTS}\Metrics_save"/>
+            </tgo:action>
+            <tgo:action icon="eraser2.png" id="8c30c1fc-4d8a-4091-87ac-a5a280e0fb5a" name="Delete existing metrics" serviceId="Batch file launcher" serviceResultBehaviour="Follow user preference" visibleUnderServiceChilds="false">
+                <tgo:param description="Command to launch. (Do not add program arguments here.)" id="e5970181-68bf-4e5b-ab4a-b16f4067ab5a" name="command" userInput="false" value="${\DataSet\EngineeringDesk\projectLocation}\Resources\Metrics\DelFolders.bat"/>
+                <tgo:param description="Metrics folder to delete" id="99690c88-37a6-4121-95f3-2772ad7bb4df" name="arg1" userInput="true" value="${PRJ_DATA_HOME-ARTIFACTS}\Metrics"/>
+            </tgo:action>
+            <tgo:actionGroup description="Update metrics from templates" icon="32_kchart.png" id="edd13493-8997-438e-adcc-04b5f1bd3d2c" name="Update metrics from templates" visibleUnderServiceChilds="false">
+                <tgo:action description="Create metrics folder" id="128e92ef-0bd6-4478-b14d-badf5d805b4d" name="Create metrics folder" serviceId="Batch file launcher" serviceResultBehaviour="Display" visibleUnderServiceChilds="false">
+                    <tgo:param description="Path of the batch file to execute.(Do not add program arguments here.)" id="db3e5645-57e4-4a25-813d-acfb22af9968" name="command" userInput="false" value="${\DataSet\EngineeringDesk\projectLocation}\Resources\Metrics\CreateFolder.bat"/>
+                    <tgo:param description="New metrics folder" id="0b0a565c-d8b4-490c-918c-03b6819ab8c1" name="arg1" userInput="true" value="${PRJ_DATA_HOME-ARTIFACTS}\Metrics"/>
+                </tgo:action>
+                <tgo:action description="Create metrics folder" id="842f9c88-c295-4ccc-9a95-a51ff3ed465b" name="Create metrics from templates" serviceId="Batch file launcher" serviceResultBehaviour="Display" visibleUnderServiceChilds="false">
+                    <tgo:param description="Path of the batch file to execute.(Do not add program arguments here.)" id="a6ea20b8-30d7-4018-b9e8-4cf3994ea334" name="command" userInput="false" value="${\DataSet\EngineeringDesk\projectLocation}\Resources\Metrics\CopyFolderContents.bat"/>
+                    <tgo:param description="Metrics folder to be updated" id="383c4a5c-e5a6-4c8e-9931-d5b2f000f7f1" name="arg1" userInput="true" value="${PRJ_DATA_HOME-ARTIFACTS}\Metrics"/>
+                    <tgo:param description="Metrics templates" id="eb06c03b-6a05-48f6-a612-320ba36d3926" name="arg2" userInput="true" value="${\Orchestra installation\Products\Metrics\InstallLocation}"/>
+                </tgo:action>
+            </tgo:actionGroup>
+            <tgo:action description="Metrics dashboard" icon="indicator6.png" id="5dd24548-aaac-4f51-9c55-0588597d4dee" name="Open Metrics folder" serviceId="Program launcher" serviceResultBehaviour="Hide" visibleUnderServiceChilds="false">
+                <tgo:param description="Command to launch. (Do not add program arguments here.)" id="c01ba015-b341-437f-8172-c0ef593a74df" name="command" userInput="false" value="${\Host\Tool\SYS_TOOL_FILE_CMD-EXPLORER}"/>
+                <tgo:param description="When you add an argument containing spaces (a path for example), enclose argument using double-quotes (“)" id="9e257a51-8e89-487e-a407-bb757e889bf4" name="arg1" userInput="false" value="${\DataSet\EngineeringDesk\projectLocation}\Artefacts\Metrics"/>
+            </tgo:action>
+        </tgo:activity>
+    </tgo:activity>
+    <tgo:activity id="634fb1cc-3ba7-43bf-8322-78573cc42d03" name="JiraActivity">
+        <tgo:roleFilter name="DM - Document Manager"/>
+        <tgo:roleFilter name="SD - Software Developper"/>
+        <tgo:roleFilter name="IE - IVV Engineer"/>
+        <tgo:roleFilter name="QA - Quality Engineer"/>
+        <tgo:roleFilter name="SE - System Engineer"/>
+        <tgo:roleFilter name="WPM - Work Package Manager"/>
+        <tgo:roleFilter name="CM - Configuration Manager"/>
+        <tgo:roleFilter name="IL - IVV Leader"/>
+        <tgo:action id="0d8b0950-b191-49c8-a5a1-3710e99dc98e" name="CreateDefect" serviceId="Create defect in Change Management" serviceResultBehaviour="Display" visibleUnderServiceChilds="false">
+            <tgo:roleFilter name="DM - Document Manager"/>
+            <tgo:roleFilter name="SD - Software Developper"/>
+            <tgo:roleFilter name="IE - IVV Engineer"/>
+            <tgo:roleFilter name="QA - Quality Engineer"/>
+            <tgo:roleFilter name="SE - System Engineer"/>
+            <tgo:roleFilter name="WPM - Work Package Manager"/>
+            <tgo:roleFilter name="CM - Configuration Manager"/>
+            <tgo:roleFilter name="IL - IVV Leader"/>
+            <tgo:param description="Root Orchestra Uri. Example: &quot;orchestra://Clearquest/train&quot; or &quot;orchestra://Jira/train&quot;" id="1ca82eaf-df6b-4fe9-a853-769b2a34219d" name="rootUri" userInput="false" value="orchestra://Jira/JIRA"/>
+            <tgo:param description="Type of the issue to create. This parameter is only used by the Jira connector.&#13;&#10; Example: 9996" id="e206be82-46a1-490e-8fdc-23b20e6b539c" name="issueType" userInput="false" value="9996"/>
+            <tgo:param description="The ID of the project. This parameter is only used by the Jira connector.&#13;&#10; Example: 10020" id="4cb805f5-221b-44b0-82df-dcf8d1237e6c" name="projectId" userInput="false" value="10000"/>
+        </tgo:action>
+    </tgo:activity>
+    <tgo:activity id="aae9c978-e341-4d53-a352-3cc44f2ba1bc" name="document generation">
+        <tgo:roleFilter name="DM - Document Manager"/>
+        <tgo:roleFilter name="SD - Software Developper"/>
+        <tgo:roleFilter name="IE - IVV Engineer"/>
+        <tgo:roleFilter name="QA - Quality Engineer"/>
+        <tgo:roleFilter name="SE - System Engineer"/>
+        <tgo:roleFilter name="WPM - Work Package Manager"/>
+        <tgo:roleFilter name="CM - Configuration Manager"/>
+        <tgo:roleFilter name="IL - IVV Leader"/>
+        <tgo:action id="f8c95735-618f-4311-bbd8-b00eba618c27" name="documentation generation" serviceId="Regenerate document" serviceResultBehaviour="Display" visibleUnderServiceChilds="false">
+            <tgo:roleFilter name="DM - Document Manager"/>
+            <tgo:roleFilter name="SD - Software Developper"/>
+            <tgo:roleFilter name="IE - IVV Engineer"/>
+            <tgo:roleFilter name="QA - Quality Engineer"/>
+            <tgo:roleFilter name="SE - System Engineer"/>
+            <tgo:roleFilter name="WPM - Work Package Manager"/>
+            <tgo:roleFilter name="CM - Configuration Manager"/>
+            <tgo:roleFilter name="IL - IVV Leader"/>
+            <tgo:param description="Name of the documentary project. &#13;&#10;Example: &quot;myProject&quot;" id="601bd275-6a3d-4bf3-b3cb-eab0e9c116c1" name="projectName" userInput="false" value="SRS"/>
+        </tgo:action>
+    </tgo:activity>
+</tgo:project>

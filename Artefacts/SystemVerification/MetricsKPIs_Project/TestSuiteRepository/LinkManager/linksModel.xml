@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generator: reqtify -->
+
+<ModificationDocument>
+<Requirement type="RhapsodySequenceDiagram" ident="orchestra://Rhapsody/WakeUpClock%2FWakeUpClock/SequenceDiagram/GUID%202504d281%2D6d0e%2D4514%2D9048%2D54230eb3aede" label="(WakeUpClock/WakeUpClock SequenceDiagram) SetTime">
+<Reference type="describes" ident="orchestra://Doors/WakeUpClock/Object/4ca05e8652d31da4%2E00001168%217" label="SVe-IVVP-003 - HMI ergonomy verification">
+</Reference>
+</Requirement>
+<Requirement type="RhapsodySequenceDiagram" ident="orchestra://Rhapsody/WakeUpClock%2FWakeUpClock/SequenceDiagram/GUID%20319c0fd6%2D5abb%2D4f8e%2Daa40%2D5c0749333f3f" label="(WakeUpClock/WakeUpClock SequenceDiagram) AlarmSetAndUse">
+<Reference type="describes" ident="orchestra://Doors/WakeUpClock/Object/4ca05e8652d31da4%2E00001168%215" label="SVe-IVVP-002 - Wake up activation scenario verification">
+</Reference>
+</Requirement>
+</ModificationDocument>

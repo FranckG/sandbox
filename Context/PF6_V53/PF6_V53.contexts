@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contexts:Context xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:contexts="http://com.thalesgroup.orchestra/framework/4_1_0/contexts" id="59cb9f6b-2778-4c84-a8ef-7e126f9686b0" name="PF6_V5.3">
+  <categories id="dc06b63d-ee98-4674-bb7a-c5192dcae95b" name="DataSet">
+    <variables id="2ac666b3-b4e7-44e4-bed4-d858cdee7dd3" name="ServerName">
+      <values id="9a7a1cde-d42a-4df9-a802-4ac3e1447153" value="IVV040S"/>
+    </variables>
+    <variables id="6ff0d91a-b8da-4561-852d-5382529ef8d8" name="ChangeManagementURI">
+      <values id="de8035f3-aab4-410d-a83e-b58e781a147d" value="orchestra://Jira/Jira%2FVMO690"/>
+    </variables>
+    <variables id="f10e6ab7-4972-4e4a-96cc-e39b20097959" name="OrchestraVersion">
+      <values id="473c8e93-0fec-4bb8-82d0-6192b973b222" value="5.3"/>
+    </variables>
+    <variables id="bbafae17-2769-463f-94b5-c791ceb85596" name="User">
+      <values id="8f0ee0c7-8976-425d-a127-af527287c04e" value="dsi_1"/>
+    </variables>
+    <categories id="7b9ff945-b182-4f93-bf7f-233c82c5c5b0" name="EngineeringDesk">
+      <variables id="0dd4fe6b-3e63-4374-8b98-fd015dd33d38" name="emailAddress">
+        <values id="0f0861d4-d8ee-44d6-adb6-e017e1fbdf90" value="xxx.xxx@thalesgroup.com"/>
+      </variables>
+      <variables id="9d808001-c1cb-4554-bb48-edadf6bfe0d1" name="projectLocation">
+        <values id="fb366d30-d1b3-465c-b37a-e8a86c3dcb10" value="T:"/>
+      </variables>
+      <variables id="38e73ba5-5d67-40ec-909a-5f9e3458ebff" name="projectName">
+        <values id="0d10a49c-c257-4c75-8005-733908be641a" value="WakeUpClock"/>
+      </variables>
+    </categories>
+  </categories>
+  <superContext href="../../plugin/com.thalesgroup.orchestra.framework.model.handler/context/default.contexts#9212e380-d34e-477d-bbae-0794a3b765e4"/>
+  <overridingVariables id="c0c3eca5-33db-49ea-8765-5f5c3926eb85">
+    <values xsi:type="contexts:EnvironmentVariableValue" id="17bd5760-63a5-40a8-b1f7-2f2bfe7819db" value="" environmentId="com.thalesgroup.orchestra.framework.environment.filesystem">
+      <values key="directories" value="N%3A%5C%24%7Bodm%3A%5CDataSet%5COrchestraVersion%7D%5CConfdirCCUCM"/>
+      <values key="EnvVersion" value="2.0.0"/>
+    </values>
+    <values xsi:type="contexts:EnvironmentVariableValue" id="3609b41a-2c71-4d58-b4b7-31f264f9a6ec" value="" environmentId="com.thalesgroup.orchestra.framework.environment.filesystem">
+      <values key="directories" value="N%3A%5C%24%7Bodm%3A%5CDataSet%5COrchestraVersion%7D%5CConfdirClearQuest"/>
+      <values key="EnvVersion" value="2.0.0"/>
+    </values>
+    <values xsi:type="contexts:EnvironmentVariableValue" id="a5681aab-65ee-4b5b-9ca2-b0e1e4a3224f" value="" environmentId="com.thalesgroup.orchestra.framework.environment.filesystem">
+      <values key="directories" value="N%3A%5C%24%7Bodm%3A%5CDataSet%5COrchestraVersion%7D%5CConfdirDOORS"/>
+      <values key="EnvVersion" value="2.0.0"/>
+    </values>
+    <values xsi:type="contexts:EnvironmentVariableValue" id="f06fc033-20eb-4bed-8424-4f5809ebca8b" value="" environmentId="com.thalesgroup.orchestra.framework.environment.filesystem">
+      <values key="directories" value="N%3A%5C%24%7Bodm%3A%5CDataSet%5COrchestraVersion%7D%5CConfdirEA"/>
+      <values key="EnvVersion" value="2.0.0"/>
+    </values>
+    <values xsi:type="contexts:EnvironmentVariableValue" id="3aa29edb-abdf-4e3b-a586-371679c57306" value="" environmentId="com.thalesgroup.orchestra.framework.environment.filesystem">
+      <values key="directories" value="N%3A%5C%24%7Bodm%3A%5CDataSet%5COrchestraVersion%7D%5CConfdirIVV"/>
+      <values key="EnvVersion" value="2.0.0"/>
+    </values>
+    <values xsi:type="contexts:EnvironmentVariableValue" id="5cd18339-61cd-49d2-b60f-66b676556eec" value="" environmentId="com.thalesgroup.orchestra.framework.environment.filesystem">
+      <values key="directories" value="N%3A%5C%24%7Bodm%3A%5CDataSet%5COrchestraVersion%7D%5CConfdirJIRA"/>
+      <values key="EnvVersion" value="2.0.0"/>
+    </values>
+    <values xsi:type="contexts:EnvironmentVariableValue" id="0eb8b313-144b-4184-b370-12df563e98e0" value="" environmentId="com.thalesgroup.orchestra.framework.environment.filesystem">
+      <values key="directories" value="N%3A%5C%24%7Bodm%3A%5CDataSet%5COrchestraVersion%7D%5CConfdirLinkManager"/>
+      <values key="EnvVersion" value="2.0.0"/>
+    </values>
+    <values xsi:type="contexts:EnvironmentVariableValue" id="ba757cb1-793a-4812-a8a0-ecb084e0b0a7" value="" environmentId="com.thalesgroup.orchestra.framework.environment.filesystem">
+      <values key="directories" value="N%3A%5C%24%7Bodm%3A%5CDataSet%5COrchestraVersion%7D%5CConfdirMelodyAdvance"/>
+      <values key="EnvVersion" value="2.0.0"/>
+    </values>
+    <values xsi:type="contexts:EnvironmentVariableValue" id="1f81c617-3fd0-4eea-98a2-91eac86f3d1f" value="" environmentId="com.thalesgroup.orchestra.framework.environment.filesystem">
+      <values key="directories" value="N%3A%5C%24%7Bodm%3A%5CDataSet%5COrchestraVersion%7D%5CConfdirMelodyCCM"/>
+      <values key="EnvVersion" value="2.0.0"/>
+    </values>
+    <values xsi:type="contexts:EnvironmentVariableValue" id="7f7bb26b-a20d-4d67-adb8-088a08afa67d" value="" environmentId="com.thalesgroup.orchestra.framework.environment.filesystem">
+      <values key="directories" value="N%3A%5C%24%7Bodm%3A%5CDataSet%5COrchestraVersion%7D%5CConfdirMozart"/>
+      <values key="EnvVersion" value="2.0.0"/>
+    </values>
+    <values xsi:type="contexts:EnvironmentVariableValue" id="fd023e33-fdad-4984-be9f-bfede98adcab" value="" environmentId="com.thalesgroup.orchestra.framework.environment.filesystem">
+      <values key="directories" value="N%3A%5C%24%7Bodm%3A%5CDataSet%5COrchestraVersion%7D%5CConfdirOffice"/>
+      <values key="EnvVersion" value="2.0.0"/>
+    </values>
+    <values xsi:type="contexts:EnvironmentVariableValue" id="a274104f-a2fd-4fdc-ae2b-aa01389fc83e" value="" environmentId="com.thalesgroup.orchestra.framework.environment.filesystem">
+      <values key="directories" value="N%3A%5C%24%7Bodm%3A%5CDataSet%5COrchestraVersion%7D%5CConfdirOrchestraFramework"/>
+      <values key="EnvVersion" value="2.0.0"/>
+    </values>
+    <values xsi:type="contexts:EnvironmentVariableValue" id="10bdda9f-6d08-4336-9b90-2a1bc981d791" value="" environmentId="com.thalesgroup.orchestra.framework.environment.filesystem">
+      <values key="directories" value="N%3A%5C%24%7Bodm%3A%5CDataSet%5COrchestraVersion%7D%5CConfdirRhapsody"/>
+      <values key="EnvVersion" value="2.0.0"/>
+    </values>
+    <values xsi:type="contexts:EnvironmentVariableValue" id="c14e0fd9-4a2f-4595-933e-7fa1c6f41c71" value="" environmentId="com.thalesgroup.orchestra.framework.environment.filesystem">
+      <values key="directories" value="N%3A%5C%24%7Bodm%3A%5CDataSet%5COrchestraVersion%7D%5CConfdirVisio"/>
+      <values key="EnvVersion" value="2.0.0"/>
+    </values>
+    <values xsi:type="contexts:EnvironmentVariableValue" id="9686e6b3-2b63-4888-a98d-627adb8860da" value="" environmentId="com.thalesgroup.orchestra.framework.environment.filesystem">
+      <values key="directories" value="N%3A%5C%24%7Bodm%3A%5CDataSet%5COrchestraVersion%7D%5CConfdirAgileScm"/>
+      <values key="EnvVersion" value="2.0.0"/>
+    </values>
+    <values xsi:type="contexts:EnvironmentVariableValue" id="b854a260-6772-4150-8bd6-8000d0336f1b" value="" environmentId="com.thalesgroup.orchestra.framework.environment.filesystem">
+      <values key="directories" value="N%3A%5C%24%7Bodm%3A%5CDataSet%5COrchestraVersion%7D%5CConfdirMozartLibraryForMelodyAdvance"/>
+      <values key="EnvVersion" value="2.0.0"/>
+    </values>
+    <values xsi:type="contexts:EnvironmentVariableValue" id="ac2928a1-e133-4e00-8eb7-c3c44a9b95b3" value="" environmentId="com.thalesgroup.orchestra.framework.environment.filesystem">
+      <values key="directories" value="N%3A%5C%24%7Bodm%3A%5CDataSet%5COrchestraVersion%7D%5CConfdirSonar"/>
+      <values key="EnvVersion" value="2.0.0"/>
+    </values>
+    <values xsi:type="contexts:EnvironmentVariableValue" id="544274e8-5d0d-498f-bc39-4d22bf1a587e" value="" environmentId="com.thalesgroup.orchestra.framework.environment.filesystem">
+      <values key="directories" value="N%3A%5C%24%7Bodm%3A%5CDataSet%5COrchestraVersion%7D%5CConfdirSQL"/>
+      <values key="EnvVersion" value="2.0.0"/>
+    </values>
+    <values xsi:type="contexts:EnvironmentVariableValue" id="7d771f13-ba7f-461b-9578-f2eaad527d61" value="" environmentId="com.thalesgroup.orchestra.framework.environment.filesystem">
+      <values key="directories" value="N%3A%5C%24%7Bodm%3A%5CDataSet%5COrchestraVersion%7D%5CConfdirXDT"/>
+      <values key="EnvVersion" value="2.0.0"/>
+    </values>
+    <overriddenVariable href="../../plugin/com.thalesgroup.orchestra.framework.model.handler/context/default.contexts#ee049f8c-d4ca-423f-ad37-fcdfa997e29a"/>
+  </overridingVariables>
+  <overridingVariables id="438fc06f-7707-4795-ba19-6ab917041773">
+    <values xsi:type="contexts:EnvironmentVariableValue" id="2ccf9bef-f261-4e2e-8e8e-defcbb05c55e" value="" environmentId="com.thalesgroup.orchestra.framework.environment.filesystem">
+      <values key="directories" value="T%3A%5CArtefacts"/>
+      <values key="EnvVersion" value="2.0.0"/>
+    </values>
+    <values xsi:type="contexts:EnvironmentVariableValue" id="b1382403-91b9-4b2d-8881-af81936d07c0" value="" environmentId="com.thalesgroup.orchestra.doors.framework.environment">
+      <values key="EnvVersion" value="2.2.0"/>
+      <values key="doors_environment_port" value="36677"/>
+      <values key="doors_projects" value="0000000b;RCM%20project;RCM%20project,0000000c;WakeUpClock;WakeUpClock"/>
+      <values key="doors_environment_db_name" value="%24%7Bodm%3A%5CDataSet%5CServerName%7D"/>
+    </values>
+    <values xsi:type="contexts:EnvironmentVariableValue" id="510a268b-5723-43db-8bdd-b10fb1ef1e34" value="" environmentId="com.thalesgroup.orchestra.clearquest.framework.environment">
+      <values key="EnvVersion" value="1.0.0"/>
+      <values key="Clearquest_logical_name" value="WakeUpClock"/>
+      <values key="Clearquest_database" value="IVVQ%40IVV"/>
+    </values>
+    <values xsi:type="contexts:EnvironmentVariableValue" id="bc8ab62a-2dbf-41ad-a205-3e6ab509e504" value="" environmentId="com.thalesgroup.orchestra.jira.framework.environment">
+      <values key="jira_server_url" value="http%3A%2F%2F%24%7Bodm%3A%5CDataSet%5CServerName%7D%3A8080"/>
+      <values key="jira_logical_name" value="WakeUpClock"/>
+      <values key="EnvVersion" value="6.0.0"/>
+    </values>
+    <values xsi:type="contexts:EnvironmentVariableValue" id="2b3881fa-1c95-4b9f-ac66-d0c4e0f1923d" value="" environmentId="com.thalesgroup.orchestra.ccucm.framework.environment">
+      <values key="ccucmcs_view_tag" value="%24%7Bodm%3A%5CDataSet%5CUser%7D%5FIVV%5FOrchestra"/>
+      <values key="ccucmcs_charm_artefact_uri" value="orchestra://Clearquest/WakeUpClock"/>
+      <values key="EnvVersion" value="1.0.0"/>
+      <values key="ccucmcs_charm_column_properties_variable" value="%5COrchestra%5CEnvironments%5CClearCaseUCMChangeSet%5CColumnProperties%5CClearquest%5CDefault%20%2B%20severity%20%2B%20Report%20type"/>
+      <values key="ccucmcs_project_name" value="IVV%5FOrchestra"/>
+      <values key="ccucmcs_charm_column_properties" value="Identifier%2C25%2Cid%3BTitle%2C50%2Cheadline%3BState%2C15%2Cstate%3BExternal%20Id%2C20%2CExternal%5Fid%3BSeverity%2C17%2Cseverity%3BReport%20Type%2C23%2CReport%5FType"/>
+      <values key="ccucmcs_project_vob_name" value="IVV%5FPVOB"/>
+      <values key="ccucmcs_stream_name" value="dsi%5F1%5FIVV%5FOrchestra"/>
+      <values key="ccucmcs_artefact_root_name" value="IVV%5FOrchestra"/>
+    </values>
+    <values xsi:type="contexts:EnvironmentVariableValue" id="15adc152-ae9b-4b0a-90e1-6bbfe1646d28" value="" environmentId="com.thalesgroup.orchestra.ccucm.framework.environment">
+      <values key="ccucmcs_view_tag" value="%24%7Bodm%3A%5CDataSet%5CUser%7D%5FJIRA%5FOrchestra"/>
+      <values key="ccucmcs_charm_artefact_uri" value="orchestra://Jira/WakeUpClock"/>
+      <values key="ccucmcs_project_name" value="JIRA%5FOrchestra"/>
+      <values key="ccucmcs_charm_column_properties_variable" value="%5COrchestra%5CEnvironments%5CClearCaseUCMChangeSet%5CColumnProperties%5CJira%5CDefault%20%2B%20severity%20%2B%20Report%20type"/>
+      <values key="ccucmcs_project_vob_name" value="IVV%5FPVOB"/>
+      <values key="ccucmcs_charm_column_properties" value="Identifier%2C25%2Cissuekey%3BTitle%2C50%2Csummary%3BState%2C15%2Cstatus%3BExternal%20Id%2C20%2Ccustomfield%5F9986%3BSeverity%2C17%2Ccustomfield%5F9994%3BReport%20Type%2C23%2C%20issuetype"/>
+      <values key="ccucmcs_stream_name" value="dsi%5F1%5FJIRA%5FOrchestra"/>
+      <values key="ccucmcs_artefact_root_name" value="JIRA%5FOrchestra"/>
+      <values key="EnvVersion" value="1.0.0"/>
+    </values>
+    <overriddenVariable href="../../plugin/com.thalesgroup.orchestra.framework.model.handler/context/default.contexts#abed1a39-0a7e-4c93-b5eb-0c83c6591d55"/>
+  </overridingVariables>
+  <overridingVariables id="07fb20a4-075f-40ad-b489-f43b33cbe340">
+    <values xsi:type="contexts:OverridingVariableValue" id="9495524e-f3fb-4005-9748-64274c2140c7" value="T:\Artefacts\GeneratedDocumentaryProjects">
+      <overriddenValue href="../../plugin/com.thalesgroup.orchestra.framework.model.handler/context/default.contexts#26b50008-e8a4-451e-a5ce-81ffbe5c3ca5"/>
+    </values>
+    <overriddenVariable href="../../plugin/com.thalesgroup.orchestra.framework.model.handler/context/default.contexts#1accd41a-47a6-4868-ae4a-1020a13ef6de"/>
+  </overridingVariables>
+  <overridingVariables id="3c11dadc-6291-4afa-80db-586c8a4bf9c9">
+    <values xsi:type="contexts:OverridingVariableValue" id="9fc67805-2843-47fd-ba37-a05f43df5f5a" value="true">
+      <overriddenValue href="../../plugin/com.thalesgroup.orchestra.framework.model.handler/context/default.contexts#d65a0ff0-1a02-4980-950a-f9644745ba8d"/>
+    </values>
+    <overriddenVariable href="../../plugin/com.thalesgroup.orchestra.framework.model.handler/context/default.contexts#2c21d5ea-c9ab-47ae-b6e2-cd2c53f76e7d"/>
+  </overridingVariables>
+  <overridingVariables id="df848bb9-8a74-4858-83b3-1cfa143819e4">
+    <values xsi:type="contexts:OverridingVariableValue" id="d6fc4d45-1178-44a6-a376-ff52a7b4418d" value="T:\Artefacts\SystemVerification\TestCampaignRepository">
+      <overriddenValue href="../../plugin/com.thalesgroup.orchestra.framework.model.handler/context/default.contexts#0a73060f-94fb-4621-a80d-c99881644d48"/>
+    </values>
+    <overriddenVariable href="../../plugin/com.thalesgroup.orchestra.framework.model.handler/context/default.contexts#f09abd89-a3ff-455b-9136-449698558b05"/>
+  </overridingVariables>
+  <overridingVariables id="1c2f0b01-029f-42f2-94da-7cd7699895d0">
+    <values xsi:type="contexts:OverridingVariableValue" id="cb539b90-1a9c-4665-9b93-472edce88fcd" value="T:\Artefacts\SystemVerification\TestSuiteRepository">
+      <overriddenValue href="../../plugin/com.thalesgroup.orchestra.framework.model.handler/context/default.contexts#9edee37e-a233-417b-b55f-02efe125148c"/>
+    </values>
+    <overriddenVariable href="../../plugin/com.thalesgroup.orchestra.framework.model.handler/context/default.contexts#c1a82d40-f309-4e1f-b1e4-c760a0f3322d"/>
+  </overridingVariables>
+  <superCategoryCategories id="2b9e903b-a888-433e-b047-d71db715187e" name="WakeUpClock">
+    <superCategory href="../../plugin/com.thalesgroup.orchestra.framework.model.handler/context/default.contexts#b68baca2-633b-4f9b-9d38-c8a3c372e44a"/>
+    <categories id="291df97f-9092-46c4-9d2d-2e7bf58a410a" name="Templates">
+      <variables xsi:type="contexts:FileVariable" id="08ef6275-e5d7-4b0c-ae9c-03c7b4e46bf2" name="MetricsTemplateFile" description="Path to the metrics template file.&#xD;&#xA;(Orchestra.IVVQ_Metrics.xls by default.)">
+        <values id="4a863c58-5ab9-46f1-be3a-de2fa8f7ed7a" value="${odm:\Orchestra installation\Products\IVVManagement\InstallLocation}\Templates\Orchestra.IVVQ_Metrics.xls"/>
+      </variables>
+      <variables xsi:type="contexts:FileVariable" id="4356496f-f7e5-4940-8523-f4fa270381c4" name="TraceabilityProjectTemplateFile" description="Path to the traceability project template file.&#xD;&#xA;(for instance, TSR.rqtf)">
+        <values id="10646112-e717-4e59-a8d0-ab7d949bdb2c" value="${odm:\Orchestra installation\Products\IVVManagement\InstallLocation}\Templates\TraceabilityProjectTemplate\TSR.rqtf"/>
+      </variables>
+      <variables xsi:type="contexts:FileVariable" id="946f860e-f1e7-4a06-ba08-4b06ae61bc4d" name="TestSuiteEditor" mandatory="true" description="Path to the TestSuite Editor (IVVQ_TestSuiteEditor.xlt file)">
+        <values id="a3056b17-aa46-4d78-a2b9-c5bd3e76d946" value="${odm:\Orchestra installation\Products\IVVManagement\InstallLocation}\Templates\TestSuiteEditor\IVVQ_TestSuiteEditor.xlt"/>
+      </variables>
+      <variables xsi:type="contexts:FolderVariable" id="62714589-dfe2-40c9-86d5-73832c0965f2" name="TestSuiteTemplate" description="The folder containing the TestSuite template xml files (TestSuiteTemplate_DOORS.xml and TestSuiteTemplate_IVV.xml)">
+        <values id="9e17eb5d-496b-449e-8f5b-66a9638a391e" value="${odm:\Orchestra installation\Products\IVVManagement\InstallLocation}\Templates\TestSuiteTemplate"/>
+      </variables>
+      <variables xsi:type="contexts:FileVariable" id="373092b2-4759-40f1-bc5c-6e8085789a1e" name="TestSuitesRepositoryDashboardTemplate" mandatory="true" description="Path to the TSR template file.&#xD;&#xA;(Orchestra.IVVQ_Dashboard-TSR.xls by default.)">
+        <values id="3f3db60f-b1e1-465b-8287-7023203e7232" value="${odm:\Orchestra installation\Products\IVVManagement\InstallLocation}\Templates\Orchestra.IVVQ_Dashboard-TSR.xls"/>
+      </variables>
+      <variables xsi:type="contexts:FileVariable" id="073c2738-5cf1-46b4-983b-7314009b0b85" name="TestCampaignRepositoryDashboardTemplate" mandatory="true" description="Path to the TCR template file.&#xD;&#xA;(Orchestra.IVVQ_Dashboard-TCR.xls by default.)">
+        <values id="04bbd324-8306-4208-abeb-7140acb6c99b" value="${odm:\Orchestra installation\Products\IVVManagement\InstallLocation}\Templates\Orchestra.IVVQ_Dashboard-TCR.xls"/>
+      </variables>
+    </categories>
+    <categories id="f36968ba-aa28-431d-9f80-d34ce157d13c" name="Repositories">
+      <variables xsi:type="contexts:FolderVariable" id="da033e63-d0e2-4927-a4d3-0aab1fc7166d" name="TestSuitesRepository" mandatory="true" description="The folder to the TestSuites repository  (previously known as TestCasesRepository)&#xD;&#xA;This folder should be located in an ArtefactPath folder.">
+        <values id="9b21f252-2092-4b42-856c-8a42a0022cd1" value="T:\Artefacts\SystemVerification\TestSuiteRepository"/>
+      </variables>
+      <variables xsi:type="contexts:FolderVariable" id="6362f791-4417-4dbb-bfa2-e79ea1a20cfa" name="TestCampaignRepository" mandatory="true" description="The folder to the Test campaign repository&#xD;&#xA;This file should be located in an ArtefactPath folder.">
+        <values id="3dfa4260-98e4-461b-a622-50793dd3e327" value="T:\Artefacts\SystemVerification\TestCampaignRepository"/>
+      </variables>
+    </categories>
+    <categories id="d24f1682-ab53-4133-884a-96cfbec6349f" name="ConfigurationManagement">
+      <variables id="f3c7bb3e-b388-4c71-9273-35c0f1860a25" name="Active" mandatory="true" description="This variable enables or disables the configuration management feature in IVVQ Management.&#xD;&#xA;This variable should be set to either 'true' or 'false'.">
+        <values id="9ee4baaf-6223-48be-9ff2-c9f9da9194a7" value="false"/>
+      </variables>
+    </categories>
+    <categories id="19484faa-784b-4dc5-8f4e-cb7faea80795" name="ChangeManagement">
+      <variables id="8e220755-27f3-46d0-b875-3fadec48aa14" name="ChangeManagementURI" description="Change Management Artefact URI.&#xD;&#xA;(e.g orchestra://Jira/myJiraRootName)">
+        <values id="46a473ab-b2dd-4a78-ab42-6f1a77c532e4"/>
+      </variables>
+    </categories>
+    <categories id="7302cf96-aa08-4edf-bb77-18c7966fc957" name="TestDefinitions">
+      <variables id="d46ba8b9-516e-437f-ae20-e3f22d8f8ef5" name="TestDefinitionsURIs" multiValued="true" description="Variable regrouping the test definition URIs (for instance, the DOORS modules' views URIs).&#xD;&#xA;You may use TestDefinitionFile instead.">
+        <values id="6a765b89-edbf-41d0-a89a-c00e451ee684"/>
+      </variables>
+    </categories>
+    <categories id="dd2bcde5-81f9-4dd0-b482-d710d23e7966" name="Requirements">
+      <variables id="07d8647e-c022-4ed7-8610-b098997f5009" name="RequirementsUris" multiValued="true" description="Variable regrouping the requirements URIs (the DOORS modules' views URIs).">
+        <values id="870d62e8-f203-435b-b846-934000108d0d"/>
+      </variables>
+    </categories>
+  </superCategoryCategories>
+  <selectedVersions id="1560cba9-b6f4-40e1-b071-026f49562634" referencePath="\Orchestra installation\COTS\EnterpriseArchitect\10"/>
+  <selectedVersions id="2361ed76-3204-4815-a0a6-462f6061edf4" referencePath="\Orchestra installation\COTS\AcrobatReader\10.0"/>
+  <selectedVersions id="36cb2556-8441-4b4b-bcf8-2e07b6847fc7" referencePath="\Orchestra installation\COTS\Excel\2010"/>
+  <selectedVersions id="f0e21a23-3b61-4e82-93cd-6a585e9879c2" referencePath="\Orchestra installation\COTS\JavaJDK\1.7.0.40"/>
+  <selectedVersions id="f8438f3d-7359-45b7-bc62-af6a87d6c55a" referencePath="\Orchestra installation\COTS\Paint\5.1.2600.5918"/>
+  <selectedVersions id="5f10f0df-e887-452c-8ece-4d58e0f6efac" referencePath="\Orchestra installation\COTS\Doors\9.5"/>
+  <selectedVersions id="c712e6b9-6f70-41b7-9190-f1c8ccb2d051" referencePath="\Orchestra installation\COTS\Visio\2003"/>
+  <selectedVersions id="401ff61e-668b-4f3d-891a-15666d820db3" referencePath="\Orchestra installation\COTS\7-zip\9.20"/>
+  <selectedVersions id="caddfde4-8b89-4fc8-9e40-c0a12819b4ee" referencePath="\Orchestra installation\COTS\Word\2010"/>
+  <selectedVersions id="47e1e017-9ec5-4c19-8865-3a9a2542d5dc" referencePath="\Orchestra installation\COTS\IRDRMFAO\6.1.0.3"/>
+  <selectedVersions id="77290e63-e60d-4c56-b855-a78ad8fffe46" referencePath="\Orchestra installation\COTS\Notepad\5.1.2600.5512"/>
+  <selectedVersions id="6841dd59-ceb5-47c8-a91a-7142ce0bb035" referencePath="\Orchestra installation\COTS\Reqtify\2013.2.1.389"/>
+  <selectedVersions id="98fb89be-8bc6-4c9d-ae72-983a2de3a8a1" referencePath="\Orchestra installation\COTS\Rhapsody\8.0.3.6107223"/>
+  <selectedVersions id="2f2c84d6-a595-4b8a-84fe-86ab83c7a121" referencePath="\Orchestra installation\COTS\FireFox\17.0.2.fr"/>
+  <selectedVersions id="005c670e-df82-4da8-a8b3-ef6d29d82823" referencePath="\Orchestra installation\COTS\PictureManager\14.0.4750.1000"/>
+  <selectedVersions id="347aad09-1926-4f1d-a9ff-bdc5b831cd41" referencePath="\Orchestra installation\COTS\OpenOffice\2.3.1"/>
+  <selectedVersions id="047a2705-8860-45aa-9e6d-9a2279a74c6a" referencePath="\Orchestra installation\COTS\Outlook\2010"/>
+  <selectedVersions id="284132a8-52da-469d-bdd9-7183f4f183e5" referencePath="\Orchestra installation\COTS\JavaJRE\1.4.2.10"/>
+  <selectedVersions id="e9cea04a-7edf-43ca-aa68-26179d7f053a" referencePath="\Orchestra installation\COTS\ClearCase\8.0.0.7"/>
+  <selectedVersions id="9bc20967-729c-4212-b7ad-3d407e4ee7e9" referencePath="\Orchestra installation\COTS\PowerPoint\2010"/>
+  <selectedVersions id="005bb3e1-09be-4fa5-b770-ec9e15160c29" referencePath="\Orchestra installation\TOTS\EclipseDev\6.1.0.130610a"/>
+</contexts:Context>

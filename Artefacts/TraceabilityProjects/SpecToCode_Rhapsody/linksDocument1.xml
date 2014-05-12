@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generator: reqtify -->
+
+<ModificationDocument>
+	<Requirement type="A_PROCEDURE_PUB" ident="orchestra://Xdt/Xdt%2FArtifacts%2Fadap/A%5FPROCEDURE%5FPUB/%2Fadap%2Fsrc%2Fsdsds%2Fmaind%2Eadb%21Cat%5FProcedure%5FPUB%21maind" label="maind">
+		<_Value name="invalidCardinalityRules"></_Value>
+		<_Value name="invalidIntegrityRules"></_Value>
+		<Reference type="describes" ident="orchestra://Doors/WakeUpClock/Object/4bf4db5d5f2471e2%2E00001180%2133" label="SSS-REQ-003 - The buzzer output level shall be adjustable by the user.">
+		</Reference>
+		<Reference type="satisfies" ident="orchestra://Doors/WakeUpClock/Object/4bf4db5d5f2471e2%2E00001180%2149" label="SSS-REQ-015 - The system shall provide an interface to set wake-up time (in 24h format).">
+		</Reference>
+	</Requirement>
+</ModificationDocument>

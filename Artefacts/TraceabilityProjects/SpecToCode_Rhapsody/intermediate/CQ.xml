@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generator: reqtify -->
+
+<Root>
+	<ELEMENT type="Query" label="(WakeUpClock Query) Public Queries/All Defects Security" fullName="Public Queries/All Defects Security" hash="2d396af2" uri="orchestra://Clearquest/WakeUpClock/Query/Public%20Queries%2FAll%20Defects%20Security">
+		<VERSION filePath="Public Queries/All Defects Security" version="11/07/2013 13:05:43" />
+		<PROPERTIES>
+			<PROPERTY name="id" type="Column">1</PROPERTY>
+			<PROPERTY name="Security" type="Column">1</PROPERTY>
+		</PROPERTIES>
+		<ELEMENT type="Defect" label="(WakeUpClock Defect) IVVQ00000015" fullName="IVVQ00000015" hash="5967faca" uri="orchestra://Clearquest/WakeUpClock/Defect/IVVQ00000015?queryName=Public%20Queries%2FAll%20Defects%20Security">
+			<VERSION filePath="Public Queries/All Defects Security" version="11/07/2013 13:05:43" />
+			<PROPERTIES>
+				<PROPERTY name="id" type="string">IVVQ00000015</PROPERTY>
+				<PROPERTY name="Security" type="string">CustomerNONENONENONE</PROPERTY>
+			</PROPERTIES>
+		</ELEMENT>
+		<ELEMENT type="Defect" label="(WakeUpClock Defect) IVVQ00000018" fullName="IVVQ00000018" hash="cc59b109" uri="orchestra://Clearquest/WakeUpClock/Defect/IVVQ00000018?queryName=Public%20Queries%2FAll%20Defects%20Security">
+			<VERSION filePath="Public Queries/All Defects Security" version="11/07/2013 13:05:43" />
+			<PROPERTIES>
+				<PROPERTY name="id" type="string">IVVQ00000018</PROPERTY>
+				<PROPERTY name="Security" type="string">CustomerNONENONENONE</PROPERTY>
+			</PROPERTIES>
+		</ELEMENT>
+		<ELEMENT type="Defect" label="(WakeUpClock Defect) IVVQ00000020" fullName="IVVQ00000020" hash="69e3b20c" uri="orchestra://Clearquest/WakeUpClock/Defect/IVVQ00000020?queryName=Public%20Queries%2FAll%20Defects%20Security">
+			<VERSION filePath="Public Queries/All Defects Security" version="11/07/2013 13:05:43" />
+			<PROPERTIES>
+				<PROPERTY name="id" type="string">IVVQ00000020</PROPERTY>
+				<PROPERTY name="Security" type="string">InternalNONENONENONE</PROPERTY>
+			</PROPERTIES>
+		</ELEMENT>
+		<ELEMENT type="Defect" label="(WakeUpClock Defect) IVVQ00000016" fullName="IVVQ00000016" hash="7bbaa563" uri="orchestra://Clearquest/WakeUpClock/Defect/IVVQ00000016?queryName=Public%20Queries%2FAll%20Defects%20Security">
+			<VERSION filePath="Public Queries/All Defects Security" version="11/07/2013 13:05:43" />
+			<PROPERTIES>
+				<PROPERTY name="id" type="string">IVVQ00000016</PROPERTY>
+				<PROPERTY name="Security" type="string">CustomerNONENONENONE</PROPERTY>
+			</PROPERTIES>
+		</ELEMENT>
+		<ELEMENT type="Defect" label="(WakeUpClock Defect) IVVQ00000019" fullName="IVVQ00000019" hash="2ad9ea40" uri="orchestra://Clearquest/WakeUpClock/Defect/IVVQ00000019?queryName=Public%20Queries%2FAll%20Defects%20Security">
+			<VERSION filePath="Public Queries/All Defects Security" version="11/07/2013 13:05:43" />
+			<PROPERTIES>
+				<PROPERTY name="id" type="string">IVVQ00000019</PROPERTY>
+				<PROPERTY name="Security" type="string">InternalNONENONENONE</PROPERTY>
+			</PROPERTIES>
+		</ELEMENT>
+		<ELEMENT type="Defect" label="(WakeUpClock Defect) IVVQ00000014" fullName="IVVQ00000014" hash="472ccfad" uri="orchestra://Clearquest/WakeUpClock/Defect/IVVQ00000014?queryName=Public%20Queries%2FAll%20Defects%20Security">
+			<VERSION filePath="Public Queries/All Defects Security" version="11/07/2013 13:05:43" />
+			<PROPERTIES>
+				<PROPERTY name="id" type="string">IVVQ00000014</PROPERTY>
+				<PROPERTY name="Security" type="string">CustomerNONENONENONE</PROPERTY>
+			</PROPERTIES>
+		</ELEMENT>
+		<ELEMENT type="Defect" label="(WakeUpClock Defect) IVVQ00000017" fullName="IVVQ00000017" hash="65f19004" uri="orchestra://Clearquest/WakeUpClock/Defect/IVVQ00000017?queryName=Public%20Queries%2FAll%20Defects%20Security">
+			<VERSION filePath="Public Queries/All Defects Security" version="11/07/2013 13:05:43" />
+			<PROPERTIES>
+				<PROPERTY name="id" type="string">IVVQ00000017</PROPERTY>
+				<PROPERTY name="Security" type="string">CustomerNONENONENONE</PROPERTY>
+			</PROPERTIES>
+		</ELEMENT>
+	</ELEMENT>
+</Root>

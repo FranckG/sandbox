@@ -1,0 +1,41 @@
+PUID	LMLabel	Test campaign	Test objectives	Regression	Method	Free_001	Free_002	Free_003	Free_004	Free_005
+prod00089592	1Manage concurrent access to IVV artefacts (Test suites)1	V1	"1Check that:
+- It is not possible to open the same testsuite twice.
+- Two different users cannot open the same testsuite at the same time. (e.g. when a testsuite is on a network drive).
+- If a testsuite is being edited from the TSE, it is not possible to perform an 'Allocate' on it from the TCRDashboard 
+However, the build/update from Doors can be done as there is no conflicts (just modification of _doors.xml)1"	No	OTHER	xxx1	yyy1	www1	zzz1	ttt1
+prod00089593	1Manage concurrent access to IVV artefacts (Test suites)2	V2	"1Check that:
+- It is not possible to open the same testsuite twice.
+- Two different users cannot open the same testsuite at the same time. (e.g. when a testsuite is on a network drive).
+- If a testsuite is being edited from the TSE, it is not possible to perform an 'Allocate' on it from the TCRDashboard 
+However, the build/update from Doors can be done as there is no conflicts (just modification of _doors.xml)1"	No	OTHER	xxx2	yyy2	www2	zzz2	ttt2
+prod00089594	1Manage concurrent access to IVV artefacts (Test suites)3	V1	"1Check that:
+- It is not possible to open the same testsuite twice.
+- Two different users cannot open the same testsuite at the same time. (e.g. when a testsuite is on a network drive).
+- If a testsuite is being edited from the TSE, it is not possible to perform an 'Allocate' on it from the TCRDashboard 
+However, the build/update from Doors can be done as there is no conflicts (just modification of _doors.xml)1"	No	OTHER	xxx3	yyy3	www3	zzz3	ttt3
+prod00089595	1Manage concurrent access to IVV artefacts (Test suites)4	V2	"1Check that:
+- It is not possible to open the same testsuite twice.
+- Two different users cannot open the same testsuite at the same time. (e.g. when a testsuite is on a network drive).
+- If a testsuite is being edited from the TSE, it is not possible to perform an 'Allocate' on it from the TCRDashboard 
+However, the build/update from Doors can be done as there is no conflicts (just modification of _doors.xml)1"	No	OTHER	xxx4	yyy4	www4	zzz4	ttt4
+prod00089596	1Manage concurrent access to IVV artefacts (Test suites)5	V1	"1Check that:
+- It is not possible to open the same testsuite twice.
+- Two different users cannot open the same testsuite at the same time. (e.g. when a testsuite is on a network drive).
+- If a testsuite is being edited from the TSE, it is not possible to perform an 'Allocate' on it from the TCRDashboard 
+However, the build/update from Doors can be done as there is no conflicts (just modification of _doors.xml)1"	No	OTHER	xxx5	yyy5	www5	zzz5	ttt5
+prod00089597	1Manage concurrent access to IVV artefacts (Test suites)6	V2	"1Check that:
+- It is not possible to open the same testsuite twice.
+- Two different users cannot open the same testsuite at the same time. (e.g. when a testsuite is on a network drive).
+- If a testsuite is being edited from the TSE, it is not possible to perform an 'Allocate' on it from the TCRDashboard 
+However, the build/update from Doors can be done as there is no conflicts (just modification of _doors.xml)1"	No	OTHER	xxx6	yyy6	www6	zzz6	ttt6
+prod00089598	1Manage concurrent access to IVV artefacts (Test suites)7	V1	"1Check that:
+- It is not possible to open the same testsuite twice.
+- Two different users cannot open the same testsuite at the same time. (e.g. when a testsuite is on a network drive).
+- If a testsuite is being edited from the TSE, it is not possible to perform an 'Allocate' on it from the TCRDashboard 
+However, the build/update from Doors can be done as there is no conflicts (just modification of _doors.xml)1"	No	OTHER	xxx7	yyy7	www7	zzz7	ttt7
+prod00089599	1Manage concurrent access to IVV artefacts (Test suites)8	V2	"1Check that:
+- It is not possible to open the same testsuite twice.
+- Two different users cannot open the same testsuite at the same time. (e.g. when a testsuite is on a network drive).
+- If a testsuite is being edited from the TSE, it is not possible to perform an 'Allocate' on it from the TCRDashboard 
+However, the build/update from Doors can be done as there is no conflicts (just modification of _doors.xml)1"	No	OTHER	xxx8	yyy8	www8	zzz8	ttt8

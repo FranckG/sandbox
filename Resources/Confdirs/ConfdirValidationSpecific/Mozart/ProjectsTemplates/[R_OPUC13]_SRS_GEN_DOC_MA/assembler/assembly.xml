@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?><AssemblyTree>
+  <AssemblyRoot id="w245017_5445179829690_0" publicationContextId="RootProvider" label="SOFTWARE REQUIREMENTS SPECIFICATION (SRS)" typeId="DocumentRoot">
+    <Property name="visible">true</Property>
+    <Property name="changeOrientation">No change</Property>
+    <Property name="pageBreakBefore">false</Property>
+    <Property name="pageBreakAfter">false</Property>
+    <Property name="lineBreakBefore">false</Property>
+    <Property name="lineBreakAfter">false</Property>
+    <Property name="projectContextFilter"></Property>
+    <SectionAssemblyContainer id="969643c9-4be5-4e42-b2f5-4c464fe7d60f_1387552225453@IVV033/150.2.38.152" publicationContextId="HeadingProvider" label="CQ" typeId="DocumentSection">
+      <Property name="visible">true</Property>
+      <Property name="changeOrientation">No change</Property>
+      <Property name="pageBreakBefore">false</Property>
+      <Property name="pageBreakAfter">false</Property>
+      <Property name="lineBreakBefore">false</Property>
+      <Property name="lineBreakAfter">false</Property>
+      <Property name="projectContextFilter"></Property>
+      <Property name="history">false</Property>
+      <Property name="appendix">false</Property>
+      <Property name="beforeTOC_Introduction">false</Property>
+      <Property name="bookmarkTag"></Property>
+      <AutomaticAssemblyContainer id="67a28e2e-790a-40ea-8f45-5f7c62247a6e_1387552290179@IVV033/150.2.38.152" publicationContextId="AutomaticAssemblyProvider" label="&lt;&lt; Automatic Assembly &gt;&gt;" typeId="AutomaticAssemblyDefault2">
+        <Property name="visible">true</Property>
+        <Property name="changeOrientation">No change</Property>
+        <Property name="pageBreakBefore">false</Property>
+        <Property name="pageBreakAfter">false</Property>
+        <Property name="lineBreakBefore">false</Property>
+        <Property name="lineBreakAfter">false</Property>
+        <Property name="projectContextFilter"></Property>
+        <Property name="selectScope">fragment</Property>
+        <Property name="selectScopeFragmentType">.*</Property>
+        <Property name="selectScopeFragment">.*</Property>
+        <Property name="selectScopeFragmentProperties"></Property>
+        <Property name="searchKind">children</Property>
+        <Property name="selectTypes">ClearquestDefect</Property>
+        <Property name="selectFragmentName">.*</Property>
+        <Property name="selectCaseSensitiveFragmentName">false</Property>
+        <Property name="nameProcessing">no</Property>
+        <Property name="selectProperties"></Property>
+        <Property name="includeScopeRoot">true</Property>
+        <Property name="directChildrenOnly">false</Property>
+        <Property name="recursiveSearch">false</Property>
+        <Property name="linkTypes">.*</Property>
+        <Property name="linkDirection">out</Property>
+        <Property name="linkLabel">.*</Property>
+        <Property name="sortNodeContent"></Property>
+        <Property name="keepChildren">true</Property>
+        <Property name="keepParentStructure">no</Property>
+        <Property name="setPublicationContextsForType"></Property>
+        <Property name="setPropertiesForType"></Property>
+        <Property name="addContainersForType"></Property>
+        <Property name="addContainers"></Property>
+        <ProgrammaticAssemblyRule nature="" freeze="false" description="Create the assembly nodes corresponding to the rule conditions: from scope root fragments, search fragments that match the rule (types, names and properties). Found fragments can be sorted." sortType="No" ascending="true" allowSynchro="false" initialize="true"></ProgrammaticAssemblyRule>
+      </AutomaticAssemblyContainer>
+    </SectionAssemblyContainer>
+    <SectionAssemblyContainer id="cddd8741-6139-47dc-bbac-c46693f75306_1387552228932@IVV033/150.2.38.152" publicationContextId="HeadingProvider" label="System Specification" typeId="DocumentSection">
+      <Property name="visible">true</Property>
+      <Property name="changeOrientation">No change</Property>
+      <Property name="pageBreakBefore">false</Property>
+      <Property name="pageBreakAfter">false</Property>
+      <Property name="lineBreakBefore">false</Property>
+      <Property name="lineBreakAfter">false</Property>
+      <Property name="projectContextFilter"></Property>
+      <Property name="appendix">false</Property>
+      <Property name="beforeTOC_Introduction">false</Property>
+      <Property name="bookmarkTag"></Property>
+      <AutomaticAssemblyContainer id="19c9e935-5dab-485c-9494-3e14594f177b_1387552298400@IVV033/150.2.38.152" publicationContextId="AutomaticAssemblyProvider" label="&lt;&lt; Automatic Assembly &gt;&gt;" typeId="AutomaticAssemblyDefault2">
+        <Property name="visible">true</Property>
+        <Property name="changeOrientation">No change</Property>
+        <Property name="pageBreakBefore">false</Property>
+        <Property name="pageBreakAfter">false</Property>
+        <Property name="lineBreakBefore">false</Property>
+        <Property name="lineBreakAfter">false</Property>
+        <Property name="projectContextFilter"></Property>
+        <Property name="selectScope">fragment</Property>
+        <Property name="selectScopeFragmentType">.*</Property>
+        <Property name="selectScopeFragment">.*</Property>
+        <Property name="selectScopeFragmentProperties"></Property>
+        <Property name="searchKind">children</Property>
+        <Property name="selectTypes">.*</Property>
+        <Property name="selectFragmentName">.*System Specification</Property>
+        <Property name="selectCaseSensitiveFragmentName">false</Property>
+        <Property name="nameProcessing">no</Property>
+        <Property name="selectProperties"></Property>
+        <Property name="includeScopeRoot">true</Property>
+        <Property name="directChildrenOnly">false</Property>
+        <Property name="recursiveSearch">false</Property>
+        <Property name="linkTypes">.*</Property>
+        <Property name="linkDirection">out</Property>
+        <Property name="linkLabel">.*</Property>
+        <Property name="sortNodeContent"></Property>
+        <Property name="keepChildren">true</Property>
+        <Property name="keepParentStructure">no</Property>
+        <Property name="setPublicationContextsForType"></Property>
+        <Property name="setPropertiesForType"></Property>
+        <Property name="addContainersForType"></Property>
+        <Property name="addContainers"></Property>
+        <ProgrammaticAssemblyRule nature="" freeze="false" description="Create the assembly nodes corresponding to the rule conditions: from scope root fragments, search fragments that match the rule (types, names and properties). Found fragments can be sorted." sortType="No" ascending="true" allowSynchro="false" initialize="true"></ProgrammaticAssemblyRule>
+      </AutomaticAssemblyContainer>
+    </SectionAssemblyContainer>
+    <SectionAssemblyContainer id="ea9b9f8d-7ab5-4d96-895c-d8b1e90c4b29_1387552237824@IVV033/150.2.38.152" publicationContextId="HeadingProvider" label="Customer Needs" typeId="DocumentSection">
+      <Property name="visible">true</Property>
+      <Property name="changeOrientation">No change</Property>
+      <Property name="pageBreakBefore">false</Property>
+      <Property name="pageBreakAfter">false</Property>
+      <Property name="lineBreakBefore">false</Property>
+      <Property name="lineBreakAfter">false</Property>
+      <Property name="projectContextFilter"></Property>
+      <Property name="appendix">false</Property>
+      <Property name="beforeTOC_Introduction">false</Property>
+      <Property name="bookmarkTag"></Property>
+      <AutomaticAssemblyContainer id="1467b79d-c991-4e1b-b2cb-dd7dc1d230a6_1387552306466@IVV033/150.2.38.152" publicationContextId="AutomaticAssemblyProvider" label="&lt;&lt; Automatic Assembly &gt;&gt;" typeId="AutomaticAssemblyDefault2">
+        <Property name="visible">true</Property>
+        <Property name="changeOrientation">No change</Property>
+        <Property name="pageBreakBefore">false</Property>
+        <Property name="pageBreakAfter">false</Property>
+        <Property name="lineBreakBefore">false</Property>
+        <Property name="lineBreakAfter">false</Property>
+        <Property name="projectContextFilter"></Property>
+        <Property name="selectScope">fragment</Property>
+        <Property name="selectScopeFragmentType">.*</Property>
+        <Property name="selectScopeFragment">.*</Property>
+        <Property name="selectScopeFragmentProperties"></Property>
+        <Property name="searchKind">children</Property>
+        <Property name="selectTypes">.*</Property>
+        <Property name="selectFragmentName">.*Customer needs</Property>
+        <Property name="selectCaseSensitiveFragmentName">false</Property>
+        <Property name="nameProcessing">no</Property>
+        <Property name="selectProperties"></Property>
+        <Property name="includeScopeRoot">true</Property>
+        <Property name="directChildrenOnly">false</Property>
+        <Property name="recursiveSearch">false</Property>
+        <Property name="linkTypes">.*</Property>
+        <Property name="linkDirection">out</Property>
+        <Property name="linkLabel">.*</Property>
+        <Property name="sortNodeContent"></Property>
+        <Property name="keepChildren">true</Property>
+        <Property name="keepParentStructure">no</Property>
+        <Property name="setPublicationContextsForType"></Property>
+        <Property name="setPropertiesForType"></Property>
+        <Property name="addContainersForType"></Property>
+        <Property name="addContainers"></Property>
+        <ProgrammaticAssemblyRule nature="" freeze="false" description="Create the assembly nodes corresponding to the rule conditions: from scope root fragments, search fragments that match the rule (types, names and properties). Found fragments can be sorted." sortType="No" ascending="true" allowSynchro="false" initialize="true"></ProgrammaticAssemblyRule>
+      </AutomaticAssemblyContainer>
+    </SectionAssemblyContainer>
+    <SectionAssemblyContainer id="4607a81f-6d5b-4ead-9021-2820dde3b020_1387552237824@IVV033/150.2.38.152" publicationContextId="HeadingProvider" label="Melody" typeId="DocumentSection">
+      <Property name="visible">true</Property>
+      <Property name="changeOrientation">No change</Property>
+      <Property name="pageBreakBefore">false</Property>
+      <Property name="pageBreakAfter">false</Property>
+      <Property name="lineBreakBefore">false</Property>
+      <Property name="lineBreakAfter">false</Property>
+      <Property name="projectContextFilter"></Property>
+      <Property name="appendix">false</Property>
+      <Property name="beforeTOC_Introduction">false</Property>
+      <Property name="bookmarkTag"></Property>
+      <AutomaticAssemblyContainer id="f38bd17a-3753-44d0-ae7d-c6d952550049_1387552312441@IVV033/150.2.38.152" publicationContextId="AutomaticAssemblyProvider" label="&lt;&lt; Automatic Assembly &gt;&gt;" typeId="AutomaticAssemblyDefault2">
+        <Property name="visible">true</Property>
+        <Property name="changeOrientation">No change</Property>
+        <Property name="pageBreakBefore">false</Property>
+        <Property name="pageBreakAfter">false</Property>
+        <Property name="lineBreakBefore">false</Property>
+        <Property name="lineBreakAfter">false</Property>
+        <Property name="projectContextFilter"></Property>
+        <Property name="selectScope">fragment</Property>
+        <Property name="selectScopeFragmentType">.*</Property>
+        <Property name="selectScopeFragment">.*</Property>
+        <Property name="selectScopeFragmentProperties"></Property>
+        <Property name="searchKind">children</Property>
+        <Property name="selectTypes">.*</Property>
+        <Property name="selectFragmentName">.*Set current time - Interface Scenario</Property>
+        <Property name="selectCaseSensitiveFragmentName">false</Property>
+        <Property name="nameProcessing">no</Property>
+        <Property name="selectProperties"></Property>
+        <Property name="includeScopeRoot">true</Property>
+        <Property name="directChildrenOnly">false</Property>
+        <Property name="recursiveSearch">false</Property>
+        <Property name="linkTypes">.*</Property>
+        <Property name="linkDirection">out</Property>
+        <Property name="linkLabel">.*</Property>
+        <Property name="sortNodeContent"></Property>
+        <Property name="keepChildren">true</Property>
+        <Property name="keepParentStructure">no</Property>
+        <Property name="setPublicationContextsForType"></Property>
+        <Property name="setPropertiesForType"></Property>
+        <Property name="addContainersForType"></Property>
+        <Property name="addContainers"></Property>
+        <ProgrammaticAssemblyRule nature="" freeze="false" description="Create the assembly nodes corresponding to the rule conditions: from scope root fragments, search fragments that match the rule (types, names and properties). Found fragments can be sorted." sortType="No" ascending="true" allowSynchro="false" initialize="true"></ProgrammaticAssemblyRule>
+      </AutomaticAssemblyContainer>
+    </SectionAssemblyContainer>
+  </AssemblyRoot>
+</AssemblyTree>

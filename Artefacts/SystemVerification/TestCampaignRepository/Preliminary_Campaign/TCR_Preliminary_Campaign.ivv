@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<IVVQManagement SchemaVersion="3">
+  <CurrentTestCampaign>
+    <ID><![CDATA[Preliminary]]></ID>
+    <Name><![CDATA[Preliminary_Campaign]]></Name>
+  </CurrentTestCampaign>
+  <ProjectName><![CDATA[WakeUpClock]]></ProjectName>
+</IVVQManagement>

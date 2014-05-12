@@ -1,0 +1,119 @@
+I-Logix-RPY-Archive version 8.6.0 * 4012249
+{ CGEMdiWorkspace 
+	- stubList = { IRPYRawContainer 
+		- size = 0;
+	}
+	- isLoadOnDemand = 0;
+	- myViewsWithID = { IRPYRawContainer 
+		- size = 3;
+		- value = 
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -8;
+				- m_ptMaxPositionY = -30;
+				- m_nLeft = 25;
+				- m_nTop = 25;
+				- m_nRight = 459;
+				- m_nBottom = 332;
+			}
+			- _wasOpenedOnCloseProject = 0;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "Model1";
+				- _id = GUID 0054fe17-fc88-4275-9556-9137ec64b332;
+			}
+			- _UpLeft = 0 0 ;
+			- _DownRight = 397 248 ;
+			- _instanceName = "";
+			- m_nDiagramIndex = 0;
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -8;
+				- m_ptMaxPositionY = -30;
+				- m_nLeft = 25;
+				- m_nTop = 25;
+				- m_nRight = 306;
+				- m_nBottom = 282;
+			}
+			- _wasOpenedOnCloseProject = 0;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IMSC";
+				- _filename = "System_Architecture\\B_ContextArchitecture\\B_ContextArchitecture.sbs";
+				- _subsystem = "System_Architecture::B_ContextArchitecture";
+				- _class = "";
+				- _name = "SetTime";
+				- _id = GUID 2504d281-6d0e-4514-9048-54230eb3aede;
+			}
+			- _UpLeft = 0 0 ;
+			- _DownRight = 534 389 ;
+			- _instanceName = "";
+			- m_nDiagramIndex = 0;
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = 0;
+				- m_ptMinPositionY = 539;
+				- m_ptMaxPositionX = -8;
+				- m_ptMaxPositionY = -30;
+				- m_nLeft = 75;
+				- m_nTop = 75;
+				- m_nRight = 639;
+				- m_nBottom = 444;
+			}
+			- _wasOpenedOnCloseProject = 0;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IMSC";
+				- _filename = "System_Architecture\\C_LogicalArchitecture\\C_LogicalArchitecture.sbs";
+				- _subsystem = "System_Architecture::C_LogicalArchitecture";
+				- _class = "";
+				- _name = "AlarmSetAndUse";
+				- _id = GUID bcc97d9c-99e0-458a-ae83-a53747b8716b;
+			}
+			- _UpLeft = 0 0 ;
+			- _DownRight = 974 536 ;
+			- _instanceName = "";
+			- m_nDiagramIndex = 0;
+		}
+	}
+	- _fullName = "D:\\Users\\se_1\\Desktop\\WakeUpClock_2\\WakeUpClock";
+	- m_SearchScopeList = { IRPYRawContainer 
+		- size = 0;
+	}
+	- bUsingCustomBrowserView = 0;
+	- bUsingQueries = 0;
+	- bApplyOnDiagrams = 0;
+	- liQueryIDs = { IRPYRawContainer 
+		- size = 0;
+	}
+	- liElementTypes = { IRPYRawContainer 
+		- size = 0;
+	}
+
+	- m_favoritesTree = {
+		count=1;
+		{ - favoritesItem
+			generation = 0;
+			name = Favorites;
+			idOrFolder = folder;
+		}
+	}
+
+}
+

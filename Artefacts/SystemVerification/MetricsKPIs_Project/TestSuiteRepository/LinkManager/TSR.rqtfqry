@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generator: reqtify -->
+
+<queries project="TSR">
+	<query id="Orchestra Traceability Matrix (only linked elements)" fullName="Orchestra Traceability Matrix (only linked elements)" filter="" reportModel="Orchestra Traceability Matrix (only linked elements)" outputFormat="">
+		<sources>
+			<source ident="Specification" />
+			<source ident="Verification" />
+			<source ident="Results" />
+			<source ident="TestMeans" />
+			<source ident="Model" />
+			<source ident="DefectsJira" />
+			<source ident="Melo" />
+		</sources>
+	</query>
+	<query id="Orchestra Traceability Matrix (all elements)" fullName="Orchestra Traceability Matrix (all elements)" filter="" reportModel="Orchestra Traceability Matrix (all elements)" outputFormat="">
+		<sources>
+			<source ident="Specification" />
+			<source ident="Verification" />
+			<source ident="Results" />
+			<source ident="TestMeans" />
+			<source ident="Model" />
+			<source ident="DefectsJira" />
+			<source ident="Melo" />
+		</sources>
+	</query>
+	<query id="Metrics RawData" fullName="Metrics RawData" filter="" reportModel="Metrics RawData" outputFormat="">
+		<sources>
+			<source ident="TSR" />
+		</sources>
+	</query>
+	<query id="Requirement (lvl1) - Suite" fullName="Requirement (lvl1) - Suite" filter="" reportModel="Requirement (lvl 1) - Suite" outputFormat="">
+		<sources>
+			<source ident="Specification" />
+			<source ident="TSR" />
+		</sources>
+	</query>
+	<query id="Requirement (lvl2) - Suite" fullName="Requirement (lvl2) - Suite" filter="" reportModel="Requirement (lvl 2) - Suite" outputFormat="">
+		<sources>
+			<source ident="Specification" />
+			<source ident="TSR" />
+		</sources>
+	</query>
+	<query id="Requirement (lvl 1) - Suite (last result)" fullName="Requirement (lvl 1) - Suite (last result)" filter="" reportModel="Requirement (lvl 1) - Suite (last result)" outputFormat="">
+		<sources>
+			<source ident="Specification" />
+			<source ident="TSR" />
+		</sources>
+	</query>
+	<query id="Requirement (lvl 2) - Suite (last result)" fullName="Requirement (lvl 2) - Suite (last result)" filter="" reportModel="Requirement (lvl 2) - Suite (last result)" outputFormat="">
+		<sources>
+			<source ident="Specification" />
+			<source ident="TSR" />
+		</sources>
+	</query>
+	<query id="Requirement (lvl 3) - Suite" fullName="Requirement (lvl 3) - Suite" filter="" reportModel="Requirement (lvl 3) - Suite" outputFormat="">
+		<sources>
+			<source ident="Specification" />
+			<source ident="TSR" />
+		</sources>
+	</query>
+	<query id="Requirement (lvl 3) - Suite (last result)" fullName="Requirement (lvl 3) - Suite (last result)" filter="" reportModel="Requirement (lvl 3) - Suite (last result)" outputFormat="">
+		<sources>
+			<source ident="Specification" />
+			<source ident="TSR" />
+		</sources>
+	</query>
+	<query id="Requirement (lvl 1) - Case" fullName="Requirement (lvl 1) - Case" filter="" reportModel="Requirement (lvl 1) - Case" outputFormat="">
+		<sources>
+			<source ident="Specification" />
+			<source ident="TSR" />
+		</sources>
+	</query>
+	<query id="Requirement (lvl 1) - Case (last result)" fullName="Requirement (lvl 1) - Case (last result)" filter="" reportModel="Requirement (lvl 1) - Case (last result)" outputFormat="">
+		<sources>
+			<source ident="Specification" />
+			<source ident="TSR" />
+		</sources>
+	</query>
+	<query id="Requirement (lvl 2) - Case" fullName="Requirement (lvl 2) - Case" filter="" reportModel="Requirement (lvl 2) - Case" outputFormat="">
+		<sources>
+			<source ident="Specification" />
+			<source ident="TSR" />
+		</sources>
+	</query>
+	<query id="Requirement (lvl 2) - Case (last result)" fullName="Requirement (lvl 2) - Case (last result)" filter="" reportModel="Requirement (lvl 2) - Case (last result)" outputFormat="">
+		<sources>
+			<source ident="Specification" />
+			<source ident="TSR" />
+		</sources>
+	</query>
+	<query id="Requirement (lvl 3) - Case" fullName="Requirement (lvl 3) - Case" filter="" reportModel="Requirement (lvl 3) - Case" outputFormat="">
+		<sources>
+			<source ident="Specification" />
+			<source ident="TSR" />
+		</sources>
+	</query>
+	<query id="Requirement (lvl 3) - Case (last result)" fullName="Requirement (lvl 3) - Case (last result)" filter="" reportModel="Requirement (lvl 3) - Case (last result)" outputFormat="">
+		<sources>
+			<source ident="Specification" />
+			<source ident="TSR" />
+		</sources>
+	</query>
+	<query id="Requirement (lvl 1) - Step (last result)" fullName="Requirement (lvl 1) - Step (last result)" filter="" reportModel="Requirement (lvl 1) - Step (last result)" outputFormat="">
+		<sources>
+			<source ident="Specification" />
+			<source ident="TSR" />
+		</sources>
+	</query>
+	<query id="Requirement (lvl 2) - Step" fullName="Requirement (lvl 2) - Step" filter="" reportModel="Requirement (lvl 2) - Step" outputFormat="">
+		<sources>
+			<source ident="Specification" />
+			<source ident="TSR" />
+		</sources>
+	</query>
+	<query id="Requirement (lvl 2) - Step (last result)" fullName="Requirement (lvl 2) - Step (last result)" filter="" reportModel="Requirement (lvl 2) - Step (last result)" outputFormat="">
+		<sources>
+			<source ident="Specification" />
+			<source ident="TSR" />
+		</sources>
+	</query>
+	<query id="Requirement (lvl 3) - Step" fullName="Requirement (lvl 3) - Step" filter="" reportModel="Requirement (lvl 3) - Step" outputFormat="">
+		<sources>
+			<source ident="Specification" />
+			<source ident="TSR" />
+		</sources>
+	</query>
+	<query id="Requirement (lvl 3) - Step (last result)" fullName="Requirement (lvl 3) - Step (last result)" filter="" reportModel="Requirement (lvl 3) - Step (last result)" outputFormat="">
+		<sources>
+			<source ident="Specification" />
+			<source ident="TSR" />
+		</sources>
+	</query>
+	<query id="Requirement - Defects (Suite)" fullName="Requirement - Defects (Suite)" filter="" reportModel="Requirement - Defects (Suite)" outputFormat="">
+		<sources>
+			<source ident="Specification" />
+			<source ident="TSR" />
+		</sources>
+	</query>
+	<query id="Requirement - Defects (Suite) (last result)" fullName="Requirement - Defects (Suite) (last result)" filter="" reportModel="Requirement - Defects (Suite) (last result)" outputFormat="">
+		<sources>
+			<source ident="Specification" />
+			<source ident="TSR" />
+		</sources>
+	</query>
+	<query id="Requirement - Defects (Case)" fullName="Requirement - Defects (Case)" filter="" reportModel="Requirement - Defects (Case)" outputFormat="">
+		<sources>
+			<source ident="Specification" />
+			<source ident="TSR" />
+		</sources>
+	</query>
+	<query id="Requirement - Defects (Case) (last result)" fullName="Requirement - Defects (Case) (last result)" filter="" reportModel="Requirement - Defects (Case) (last result)" outputFormat="">
+		<sources>
+			<source ident="Specification" />
+			<source ident="TSR" />
+		</sources>
+	</query>
+	<query id="Requirement - Defects (Step)" fullName="Requirement - Defects (Step)" filter="" reportModel="Requirement - Defects (Step)" outputFormat="">
+		<sources>
+			<source ident="Specification" />
+			<source ident="TSR" />
+		</sources>
+	</query>
+	<query id="Requirement - Defects (Step) (last result)" fullName="Requirement - Defects (Step) (last result)" filter="" reportModel="Requirement - Defects (Step) (last result)" outputFormat="">
+		<sources>
+			<source ident="Specification" />
+			<source ident="TSR" />
+		</sources>
+	</query>
+	<query id="Step - Defects (Suite)" fullName="Step - Defects (Suite)" filter="" reportModel="Step - Defects (Suite)" outputFormat="">
+		<sources>
+			<source ident="TSR" />
+		</sources>
+	</query>
+	<query id="Step - Defects (Case)" fullName="Step - Defects (Case)" filter="" reportModel="Step - Defects (Case)" outputFormat="">
+		<sources>
+			<source ident="TSR" />
+		</sources>
+	</query>
+	<query id="Step - Defects (Step)" fullName="Step - Defects (Step)" filter="" reportModel="Step - Defects (Step)" outputFormat="">
+		<sources>
+			<source ident="TSR" />
+		</sources>
+	</query>
+	<query id="Requirement (lvl 1) - Step" fullName="Requirement (lvl 1) - Step" filter="" reportModel="Requirement (lvl 1) - Step" outputFormat="">
+		<sources>
+			<source ident="Specification" />
+			<source ident="TSR" />
+		</sources>
+	</query>
+</queries>

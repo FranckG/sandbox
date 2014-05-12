@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generator: reqtify -->
+
+<Root>
+	<ELEMENT type="Module" label="(WakeUpClock Module) System.IVV.Verification.System verification" fullName="System.IVV.Verification.System+verification" hash="11/07/13 13:09:00" uri="orchestra://Doors/WakeUpClock/Module/4bf4db5d5f2471e2%2E0000160a">
+		<VERSION filePath="/WakeUpClock/System/IVV/Verification/System verification" version="11/07/13 13:09:00" />
+		<PROPERTIES>
+			<PROPERTY name="Created By" type="String">moi</PROPERTY>
+			<PROPERTY name="Created On" type="Date">16 December 2008</PROPERTY>
+			<PROPERTY name="Description" type="String">Integration, Verification or Validation Procedures Module</PROPERTY>
+			<PROPERTY name="IE IVV Procedure Number" type="Integer">9</PROPERTY>
+			<PROPERTY name="IE Mod LifeCycle Phase" type="IE Mod Life Cycle Phase" />
+			<PROPERTY name="IE Mod Type" type="IE Mod Type">Verification Procedures</PROPERTY>
+			<PROPERTY name="IE Release" type="String">6.0.0.2</PROPERTY>
+			<PROPERTY name="Last Modified By" type="String">swem</PROPERTY>
+			<PROPERTY name="Last Modified On" type="Date">07 November 2013</PROPERTY>
+			<PROPERTY name="Name" type="String">System verification</PROPERTY>
+			<PROPERTY name="ORCH Selected Test Campaign" type="ORCH Version List">V1</PROPERTY>
+			<PROPERTY name="ORCH Test Data Set Defined" type="Boolean" />
+			<PROPERTY name="ORCH Test Means Defined" type="Boolean" />
+			<PROPERTY name="ORCH Test Status" type="ORCH Test Status" />
+			<PROPERTY name="Orchestra Module Id" type="String">4bf4db5d5f2471e2.0000160a</PROPERTY>
+			<PROPERTY name="Prefix" type="String">SVe</PROPERTY>
+		</PROPERTIES>
+		<ELEMENT type="Object" label="" uri="orchestra://Doors/WakeUpClock/Object/4bf4db5d5f2471e2%2E0000160a%211">
+			<VERSION filePath="/WakeUpClock/System/IVV/Verification/System verification" version="11/07/13 13:09:00" />
+			<PROPERTIES>
+				<PROPERTY name="LMLabel" type="String">Functional</PROPERTY>
+				<PROPERTY name="toolId" type="String">00008280.1</PROPERTY>
+				<PROPERTY name="IE IVV Method" type="string" />
+				<PROPERTY name="IE Object Type" type="string" />
+				<PROPERTY name="IE PUID" type="string" />
+				<PROPERTY name="ORCH Test Data Set Defined" type="string" />
+				<PROPERTY name="ORCH Test Means Defined" type="string" />
+				<PROPERTY name="ORCH Test Status" type="string" />
+				<PROPERTY name="Object Text" type="string" />
+			</PROPERTIES>
+			<ELEMENT type="ivv procedure" label="" uri="orchestra://Doors/WakeUpClock/Object/4bf4db5d5f2471e2%2E0000160a%214">
+				<VERSION filePath="/WakeUpClock/System/IVV/Verification/System verification" version="11/07/13 13:09:00" />
+				<PROPERTIES>
+					<PROPERTY name="LMLabel" type="String">SVe-IVVP-001 - OPUC 10 testing description</PROPERTY>
+					<PROPERTY name="toolId" type="String">SVe-IVVP-001</PROPERTY>
+					<PROPERTY name="IE IVV Method" type="string">D</PROPERTY>
+					<PROPERTY name="IE Object Type" type="string">IVV Procedure</PROPERTY>
+					<PROPERTY name="IE PUID" type="string">SVe-IVVP-001</PROPERTY>
+					<PROPERTY name="ORCH Test Data Set Defined" type="string" />
+					<PROPERTY name="ORCH Test Means Defined" type="string" />
+					<PROPERTY name="ORCH Test Status" type="string" />
+					<PROPERTY name="Object Text" type="string">OPUC 10 testing description</PROPERTY>
+				</PROPERTIES>
+				<LINKS_TO_ELEMENTS>
+					<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/51389318215a5a7c%2E00000544%2148" fullName="SSS-REQ-014" label="SSS-REQ-014" linkType="verifies" linkDirection="out" />
+					<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/51389318215a5a7c%2E00000544%2167" fullName="SSS-REQ-016" label="SSS-REQ-016" linkType="verifies" linkDirection="out" />
+					<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/51389318215a5a7c%2E00000544%2169" fullName="SSS-REQ-019" label="SSS-REQ-019" linkType="verifies" linkDirection="out" />
+				</LINKS_TO_ELEMENTS>
+			</ELEMENT>
+			<ELEMENT type="ivv procedure" label="" uri="orchestra://Doors/WakeUpClock/Object/4bf4db5d5f2471e2%2E0000160a%215">
+				<VERSION filePath="/WakeUpClock/System/IVV/Verification/System verification" version="11/07/13 13:09:00" />
+				<PROPERTIES>
+					<PROPERTY name="LMLabel" type="String">SVe-IVVP-002 - Wake up activation scenario verification</PROPERTY>
+					<PROPERTY name="toolId" type="String">SVe-IVVP-002</PROPERTY>
+					<PROPERTY name="IE IVV Method" type="string">D</PROPERTY>
+					<PROPERTY name="IE Object Type" type="string">IVV Procedure</PROPERTY>
+					<PROPERTY name="IE PUID" type="string">SVe-IVVP-002</PROPERTY>
+					<PROPERTY name="ORCH Test Data Set Defined" type="string" />
+					<PROPERTY name="ORCH Test Means Defined" type="string" />
+					<PROPERTY name="ORCH Test Status" type="string" />
+					<PROPERTY name="Object Text" type="string">Wake up activation scenario verification</PROPERTY>
+				</PROPERTIES>
+				<LINKS_TO_ELEMENTS>
+					<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/51389318215a5a7c%2E00000544%2132" fullName="SSS-REQ-002" label="SSS-REQ-002" linkType="verifies" linkDirection="out" />
+					<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/51389318215a5a7c%2E00000544%2133" fullName="SSS-REQ-003" label="SSS-REQ-003" linkType="verifies" linkDirection="out" />
+					<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/51389318215a5a7c%2E00000544%2135" fullName="SSS-REQ-005" label="SSS-REQ-005" linkType="verifies" linkDirection="out" />
+					<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/51389318215a5a7c%2E00000544%2149" fullName="SSS-REQ-015" label="SSS-REQ-015" linkType="verifies" linkDirection="out" />
+					<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/51389318215a5a7c%2E00000544%2151" fullName="SSS-REQ-013" label="SSS-REQ-013" linkType="verifies" linkDirection="out" />
+					<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/51389318215a5a7c%2E00000544%2169" fullName="SSS-REQ-019" label="SSS-REQ-019" linkType="verifies" linkDirection="out" />
+				</LINKS_TO_ELEMENTS>
+			</ELEMENT>
+			<ELEMENT type="ivv procedure" label="" uri="orchestra://Doors/WakeUpClock/Object/4bf4db5d5f2471e2%2E0000160a%217">
+				<VERSION filePath="/WakeUpClock/System/IVV/Verification/System verification" version="11/07/13 13:09:00" />
+				<PROPERTIES>
+					<PROPERTY name="LMLabel" type="String">SVe-IVVP-003 - HMI ergonomy verification</PROPERTY>
+					<PROPERTY name="toolId" type="String">SVe-IVVP-003</PROPERTY>
+					<PROPERTY name="IE IVV Method" type="string">D</PROPERTY>
+					<PROPERTY name="IE Object Type" type="string">IVV Procedure</PROPERTY>
+					<PROPERTY name="IE PUID" type="string">SVe-IVVP-003</PROPERTY>
+					<PROPERTY name="ORCH Test Data Set Defined" type="string" />
+					<PROPERTY name="ORCH Test Means Defined" type="string" />
+					<PROPERTY name="ORCH Test Status" type="string" />
+					<PROPERTY name="Object Text" type="string">HMI ergonomy verification</PROPERTY>
+				</PROPERTIES>
+				<LINKS_TO_ELEMENTS>
+					<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/51389318215a5a7c%2E00000544%2131" fullName="SSS-REQ-001" label="SSS-REQ-001" linkType="verifies" linkDirection="out" />
+					<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/51389318215a5a7c%2E00000544%2169" fullName="SSS-REQ-019" label="SSS-REQ-019" linkType="verifies" linkDirection="out" />
+				</LINKS_TO_ELEMENTS>
+			</ELEMENT>
+			<ELEMENT type="ivv procedure" label="" uri="orchestra://Doors/WakeUpClock/Object/4bf4db5d5f2471e2%2E0000160a%2112">
+				<VERSION filePath="/WakeUpClock/System/IVV/Verification/System verification" version="11/07/13 13:09:00" />
+				<PROPERTIES>
+					<PROPERTY name="LMLabel" type="String">SVe-IVVP-004 - Display size verification</PROPERTY>
+					<PROPERTY name="toolId" type="String">SVe-IVVP-004</PROPERTY>
+					<PROPERTY name="IE IVV Method" type="string">I</PROPERTY>
+					<PROPERTY name="IE Object Type" type="string">IVV Procedure</PROPERTY>
+					<PROPERTY name="IE PUID" type="string">SVe-IVVP-004</PROPERTY>
+					<PROPERTY name="ORCH Test Data Set Defined" type="string" />
+					<PROPERTY name="ORCH Test Means Defined" type="string" />
+					<PROPERTY name="ORCH Test Status" type="string" />
+					<PROPERTY name="Object Text" type="string">Display size verification</PROPERTY>
+				</PROPERTIES>
+				<LINKS_TO_ELEMENTS>
+					<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/51389318215a5a7c%2E00000544%2134" fullName="SSS-REQ-004" label="SSS-REQ-004" linkType="verifies" linkDirection="out" />
+					<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/51389318215a5a7c%2E00000544%2135" fullName="SSS-REQ-005" label="SSS-REQ-005" linkType="verifies" linkDirection="out" />
+				</LINKS_TO_ELEMENTS>
+			</ELEMENT>
+			<ELEMENT type="ivv procedure" label="" uri="orchestra://Doors/WakeUpClock/Object/4bf4db5d5f2471e2%2E0000160a%2111">
+				<VERSION filePath="/WakeUpClock/System/IVV/Verification/System verification" version="11/07/13 13:09:00" />
+				<PROPERTIES>
+					<PROPERTY name="LMLabel" type="String">SVe-IVVP-007 - Auto power-supply verification</PROPERTY>
+					<PROPERTY name="toolId" type="String">SVe-IVVP-007</PROPERTY>
+					<PROPERTY name="IE IVV Method" type="string">D</PROPERTY>
+					<PROPERTY name="IE Object Type" type="string">IVV Procedure</PROPERTY>
+					<PROPERTY name="IE PUID" type="string">SVe-IVVP-007</PROPERTY>
+					<PROPERTY name="ORCH Test Data Set Defined" type="string" />
+					<PROPERTY name="ORCH Test Means Defined" type="string" />
+					<PROPERTY name="ORCH Test Status" type="string" />
+					<PROPERTY name="Object Text" type="string">Auto power-supply verification</PROPERTY>
+				</PROPERTIES>
+				<LINKS_TO_ELEMENTS>
+					<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/51389318215a5a7c%2E00000544%2142" fullName="SSS-REQ-010" label="SSS-REQ-010" linkType="verifies" linkDirection="out" />
+					<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/51389318215a5a7c%2E00000544%2143" fullName="SSS-REQ-011" label="SSS-REQ-011" linkType="verifies" linkDirection="out" />
+				</LINKS_TO_ELEMENTS>
+			</ELEMENT>
+		</ELEMENT>
+		<ELEMENT type="Object" label="" uri="orchestra://Doors/WakeUpClock/Object/4bf4db5d5f2471e2%2E0000160a%213">
+			<VERSION filePath="/WakeUpClock/System/IVV/Verification/System verification" version="11/07/13 13:09:00" />
+			<PROPERTIES>
+				<PROPERTY name="LMLabel" type="String">Performance, robustness, ...</PROPERTY>
+				<PROPERTY name="toolId" type="String">00008280.3</PROPERTY>
+				<PROPERTY name="IE IVV Method" type="string" />
+				<PROPERTY name="IE Object Type" type="string" />
+				<PROPERTY name="IE PUID" type="string" />
+				<PROPERTY name="ORCH Test Data Set Defined" type="string" />
+				<PROPERTY name="ORCH Test Means Defined" type="string" />
+				<PROPERTY name="ORCH Test Status" type="string" />
+				<PROPERTY name="Object Text" type="string" />
+			</PROPERTIES>
+			<LINKS_TO_ELEMENTS>
+				<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/51389318215a5a7c%2E00000544%2134" fullName="SSS-REQ-004" label="SSS-REQ-004" linkType="verifies" linkDirection="out" />
+			</LINKS_TO_ELEMENTS>
+			<ELEMENT type="ivv procedure" label="" uri="orchestra://Doors/WakeUpClock/Object/4bf4db5d5f2471e2%2E0000160a%219">
+				<VERSION filePath="/WakeUpClock/System/IVV/Verification/System verification" version="11/07/13 13:09:00" />
+				<PROPERTIES>
+					<PROPERTY name="LMLabel" type="String">SVe-IVVP-005 - Clock precision verification</PROPERTY>
+					<PROPERTY name="toolId" type="String">SVe-IVVP-005</PROPERTY>
+					<PROPERTY name="IE IVV Method" type="string">D</PROPERTY>
+					<PROPERTY name="IE Object Type" type="string">IVV Procedure</PROPERTY>
+					<PROPERTY name="IE PUID" type="string">SVe-IVVP-005</PROPERTY>
+					<PROPERTY name="ORCH Test Data Set Defined" type="string" />
+					<PROPERTY name="ORCH Test Means Defined" type="string" />
+					<PROPERTY name="ORCH Test Status" type="string" />
+					<PROPERTY name="Object Text" type="string">Clock precision verification</PROPERTY>
+				</PROPERTIES>
+				<LINKS_TO_ELEMENTS>
+					<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/51389318215a5a7c%2E00000544%2137" fullName="SSS-REQ-006" label="SSS-REQ-006" linkType="verifies" linkDirection="out" />
+				</LINKS_TO_ELEMENTS>
+			</ELEMENT>
+			<ELEMENT type="ivv procedure" label="" uri="orchestra://Doors/WakeUpClock/Object/4bf4db5d5f2471e2%2E0000160a%2110">
+				<VERSION filePath="/WakeUpClock/System/IVV/Verification/System verification" version="11/07/13 13:09:00" />
+				<PROPERTIES>
+					<PROPERTY name="LMLabel" type="String">SVe-IVVP-006 - Robustness in environment verification</PROPERTY>
+					<PROPERTY name="toolId" type="String">SVe-IVVP-006</PROPERTY>
+					<PROPERTY name="IE IVV Method" type="string">T</PROPERTY>
+					<PROPERTY name="IE Object Type" type="string">IVV Procedure</PROPERTY>
+					<PROPERTY name="IE PUID" type="string">SVe-IVVP-006</PROPERTY>
+					<PROPERTY name="ORCH Test Data Set Defined" type="string" />
+					<PROPERTY name="ORCH Test Means Defined" type="string" />
+					<PROPERTY name="ORCH Test Status" type="string" />
+					<PROPERTY name="Object Text" type="string">Robustness in environment verification</PROPERTY>
+				</PROPERTIES>
+				<LINKS_TO_ELEMENTS>
+					<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/51389318215a5a7c%2E00000544%2139" fullName="SSS-REQ-007" label="SSS-REQ-007" linkType="verifies" linkDirection="out" />
+					<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/51389318215a5a7c%2E00000544%2145" fullName="SSS-REQ-008" label="SSS-REQ-008" linkType="verifies" linkDirection="out" />
+				</LINKS_TO_ELEMENTS>
+			</ELEMENT>
+			<ELEMENT type="ivv procedure" label="" uri="orchestra://Doors/WakeUpClock/Object/4bf4db5d5f2471e2%2E0000160a%2115">
+				<VERSION filePath="/WakeUpClock/System/IVV/Verification/System verification" version="11/07/13 13:09:00" />
+				<PROPERTIES>
+					<PROPERTY name="LMLabel" type="String">SVe-IVVP-009 - Autonomy verification</PROPERTY>
+					<PROPERTY name="toolId" type="String">SVe-IVVP-009</PROPERTY>
+					<PROPERTY name="IE IVV Method" type="string">A</PROPERTY>
+					<PROPERTY name="IE Object Type" type="string">IVV Procedure</PROPERTY>
+					<PROPERTY name="IE PUID" type="string">SVe-IVVP-009</PROPERTY>
+					<PROPERTY name="ORCH Test Data Set Defined" type="string" />
+					<PROPERTY name="ORCH Test Means Defined" type="string" />
+					<PROPERTY name="ORCH Test Status" type="string" />
+					<PROPERTY name="Object Text" type="string">Autonomy verification</PROPERTY>
+				</PROPERTIES>
+				<LINKS_TO_ELEMENTS>
+					<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/51389318215a5a7c%2E00000544%2144" fullName="SSS-REQ-012" label="SSS-REQ-012" linkType="verifies" linkDirection="out" />
+				</LINKS_TO_ELEMENTS>
+			</ELEMENT>
+			<ELEMENT type="ivv procedure" label="" uri="orchestra://Doors/WakeUpClock/Object/4bf4db5d5f2471e2%2E0000160a%2114">
+				<VERSION filePath="/WakeUpClock/System/IVV/Verification/System verification" version="11/07/13 13:09:00" />
+				<PROPERTIES>
+					<PROPERTY name="LMLabel" type="String">SVe-IVVP-008 - Weight verification</PROPERTY>
+					<PROPERTY name="toolId" type="String">SVe-IVVP-008</PROPERTY>
+					<PROPERTY name="IE IVV Method" type="string">D</PROPERTY>
+					<PROPERTY name="IE Object Type" type="string">IVV Procedure</PROPERTY>
+					<PROPERTY name="IE PUID" type="string">SVe-IVVP-008</PROPERTY>
+					<PROPERTY name="ORCH Test Data Set Defined" type="string" />
+					<PROPERTY name="ORCH Test Means Defined" type="string" />
+					<PROPERTY name="ORCH Test Status" type="string" />
+					<PROPERTY name="Object Text" type="string">Weight verification</PROPERTY>
+				</PROPERTIES>
+				<LINKS_TO_ELEMENTS>
+					<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/51389318215a5a7c%2E00000544%2132" fullName="SSS-REQ-002" label="SSS-REQ-002" linkType="verifies" linkDirection="out" />
+					<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/51389318215a5a7c%2E00000544%2146" fullName="SSS-REQ-009" label="SSS-REQ-009" linkType="verifies" linkDirection="out" />
+					<ELEMENT_REFERENCE uri="orchestra://Doors/WakeUpClock/Object/51389318215a5a7c%2E00000544%2169" fullName="SSS-REQ-019" label="SSS-REQ-019" linkType="verifies" linkDirection="out" />
+				</LINKS_TO_ELEMENTS>
+			</ELEMENT>
+		</ELEMENT>
+	</ELEMENT>
+</Root>

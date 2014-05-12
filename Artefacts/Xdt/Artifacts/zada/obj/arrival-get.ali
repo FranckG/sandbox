@@ -1,0 +1,18 @@
+V "GNAT Lib v6.3"
+A -g
+A -g
+A -gnato
+A -gnatwa
+A -gnatQ
+A -gnat05
+A -gnatc
+A -gnatQ
+A -gnatA
+P CE NO ZX
+R nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnvnvnnnnnnnnnnnnnnnn
+
+U arrival.get%b		arrival-get.adb		3a1a7f57 OO
+
+D arrival-get.adb	20130314071550 3a1a7f57 arrival.get
+
+

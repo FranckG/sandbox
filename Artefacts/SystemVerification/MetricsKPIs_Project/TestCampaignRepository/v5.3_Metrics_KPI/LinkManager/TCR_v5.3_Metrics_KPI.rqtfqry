@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generator: reqtify -->
+
+<queries project="TCR_v5.3_Metrics_KPI">
+	<query id="SSS" fullName="KPI1" filter="" reportModel="Requirement Testability" outputFormat="gnagna">
+		<sources>
+			<source ident="SSS" />
+		</sources>
+	</query>
+	<query id="PBS" fullName="KPI2" filter="" reportModel="Requirement Coverage" outputFormat="gnagna">
+		<sources>
+			<source ident="PBS" />
+		</sources>
+	</query>
+	<query id="RPY" fullName="KPI2" filter="" reportModel="Requirement Coverage" outputFormat="gnagna">
+		<sources>
+			<source ident="RPY" />
+		</sources>
+	</query>
+	<query id="MA" fullName="KPI2" filter="" reportModel="Requirement Coverage" outputFormat="gnagna">
+		<sources>
+			<source ident="MA" />
+		</sources>
+	</query>
+	<query id="UR" fullName="KPI3" filter="" reportModel="Co-engineering Requirement Flow Down" outputFormat="gnagna">
+		<sources>
+			<source ident="UR" />
+		</sources>
+	</query>
+	<query id="MatrixAll_PBS-SSS" fullName="Traceability" filter="" reportModel="Orchestra Traceability Matrix (all elements)" outputFormat="gnagna">
+		<sources>
+			<source ident="SSS" />
+			<source ident="PBS" />
+		</sources>
+	</query>
+	<query id="MatrixAll_UR-SSS" fullName="Traceability" filter="" reportModel="Orchestra Traceability Matrix (all elements)" outputFormat="gnagna">
+		<sources>
+			<source ident="SSS" />
+			<source ident="UR" />
+		</sources>
+	</query>
+	<query id="MatrixAll_RPY-SSS" fullName="Traceability" filter="" reportModel="Orchestra Traceability Matrix (all elements)" outputFormat="gnagna">
+		<sources>
+			<source ident="SSS" />
+			<source ident="RPY" />
+		</sources>
+	</query>
+	<query id="MatrixAll_MA-SSS" fullName="Traceability" filter="" reportModel="Orchestra Traceability Matrix (all elements)" outputFormat="gnagna">
+		<sources>
+			<source ident="SSS" />
+			<source ident="MA" />
+		</sources>
+	</query>
+</queries>

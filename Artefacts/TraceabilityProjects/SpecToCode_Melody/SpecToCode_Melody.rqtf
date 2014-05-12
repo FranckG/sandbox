@@ -1,0 +1,69 @@
+[Files]
+Names=Specification,Customer needs,Model
+RepositoryTool=Boost
+
+[Specification]
+Cover1=Model
+Cover1Position=2030@1815
+GraphicPosition=1570@1230
+Variable1Name=Parameters
+Variable1Value=
+Variable2Name=selectedxmlnode
+Variable2Value=
+Variable3Name=SingleArtifact
+Variable3Value=true
+Variable4Name=selectedxmlnodes
+Variable4Value=<treeitem id="orchestra://Doors/WakeUpClock/View/51389318215a5a7c%2E00000544%2110%2E%20Document%20view" label="10. Document view" image="/..//images/doors_EPM_view.gif" type="View" project="WakeUpClock" tool="Doors" artifactParameters=""/>
+Variable5Name=tool
+Variable5Value=Doors
+Variable6Name=artefactId
+Variable6Value=orchestra://Doors/WakeUpClock/View/51389318215a5a7c%2E00000544%2110%2E%20Document%20view
+UseIntermediateFile=1
+Type=Orchestra Requirements
+ModificationDocument1=linksSpecification.xml
+ModificationDocument1Type=AddedOrchestraDoors
+Path=WakeUpClock.System.Specification.System specification.10. Document view
+GVPosition=7160,880,20600,12600
+
+[Customer needs]
+Cover1=Specification
+Cover1Position=1005@835
+Cover1Types=Orchestra Requirements.follows,AddedOrchestraDoors.is allocated by,Orchestra Requirements.refers to,AddedOrchestraDoors.verifies,Orchestra Requirements.is composed of,AddedOrchestraDoors.satisfies,AddedOrchestraDoors.is the result of,Orchestra Requirements.is justified by,AddedOrchestraDoors.describes,AddedOrchestraDoors.follows,Orchestra Requirements.is allocated by,AddedOrchestraDoors.refers to,Orchestra Requirements.verifies,Orchestra Requirements.describes,AddedOrchestraDoors.is composed of,Orchestra Requirements.satisfies,Orchestra Requirements.is the result of,AddedOrchestraDoors.is justified by
+GraphicPosition=640@600
+Variable1Name=artefactId
+Variable1Value=orchestra://Doors/WakeUpClock/Module/4ca05e8652d31da4%2E00001a05
+Variable2Name=selectedxmlnode
+Variable2Value=
+Variable3Name=Parameters
+Variable3Value=
+Variable4Name=SingleArtifact
+Variable4Value=true
+Variable5Name=tool
+Variable5Value=Doors
+Type=Orchestra Requirements
+ModificationDocument1=linksCustomer needs.xml
+ModificationDocument1Type=AddedOrchestraDoors
+Path=orchestra://Doors/WakeUpClock/Module/4ca05e8652d31da4%2E00001a05
+
+[Model]
+GraphicPosition=2690@2560
+Variable1Name=SingleArtifact
+Variable1Value=true
+Variable2Name=absolutePath
+Variable2Value=D:\\Orchestra_data\\WakeUpClock\\Artefacts\\Melody\\WakeUpClock\\WakeUpClock_MA.melodymodeller
+Variable3Name=selectedxmlnode
+Variable3Value=
+Variable4Name=Parameters
+Variable4Value=
+Variable5Name=selectedxmlnodes
+Variable5Value=<treeitem id="orchestra://Melody/Modeling%2FMelody%2FWakeUp%2FWakeUp" label="WakeUp" image="/..//images/melody_Project.gif" type="" project="Modeling/Melody/WakeUp/WakeUp" tool="Melody" artifactParameters=""/>
+Variable6Name=tool
+Variable6Value=Melody
+Variable7Name=artefactId
+Variable7Value=orchestra://Melody/Modeling%2FMelody%2FWakeUp%2FWakeUp
+Type=Orchestra Model Melody
+ModificationDocument1=linksModel.xml
+ModificationDocument1Type=AddedOrchestraMelody
+Path=Modeling.Melody.WakeUp.WakeUp
+GVPosition=23640,760,31380,67080
+

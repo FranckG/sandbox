@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.thalesgroup.mde.melody.data.melodymodeller="http://www.thalesgroup.com/mde/melody/modeller/3.0.0" xmlns:com.thalesgroup.mde.melody.data.pa="http://www.thalesgroup.com/mde/melody/pa/3.0.0" xmlns:description="http://www.obeo.fr/dsl/viewpoint/description/1.1.0" xmlns:filter="http://www.obeo.fr/dsl/viewpoint/description/filter/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.obeo.fr/dsl/viewpoint/description/style/1.1.0" xmlns:viewpoint="http://www.obeo.fr/dsl/viewpoint/1.1.0" xsi:schemaLocation="http://www.obeo.fr/dsl/viewpoint/description/1.1.0 http://www.obeo.fr/dsl/viewpoint/1.1.0#//description http://www.obeo.fr/dsl/viewpoint/description/filter/1.1.0 http://www.obeo.fr/dsl/viewpoint/1.1.0#//description/filter http://www.obeo.fr/dsl/viewpoint/description/style/1.1.0 http://www.obeo.fr/dsl/viewpoint/1.1.0#//description/style" xmi:id="_R88mwTfqEeOJ1JMn-AMxaw" selectedViews="_SIRF8DfqEeOJ1JMn-AMxaw _INyjgUeFEeOOue_tA-1wUw" version="6.7.0.201302181200">
+  <models xmi:type="com.thalesgroup.mde.melody.data.melodymodeller:Project" href="ComponentsCreation.melodymodeller#e1636a58-2976-43ea-9ee9-fb380566c19a"/>
+  <ownedViews xmi:type="viewpoint:DRepresentationContainer" xmi:id="_SIRF8DfqEeOJ1JMn-AMxaw" initialized="true">
+    <ownedRepresentations xmi:type="viewpoint:DSemanticDiagram" xmi:id="_Vkf8QDfqEeOJ1JMn-AMxaw" name="[PCBD] Physical System - Physical Component Breakdown">
+      <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_VlZUIDfqEeOJ1JMn-AMxaw" source="GMF_DIAGRAMS">
+        <data xmi:type="notation:Diagram" xmi:id="_VlZUITfqEeOJ1JMn-AMxaw" type="Viewpoint" element="_Vkf8QDfqEeOJ1JMn-AMxaw" measurementUnit="Pixel">
+          <children xmi:type="notation:Node" xmi:id="_Yx-k4DfqEeOJ1JMn-AMxaw" type="2001" element="_Yxh48DfqEeOJ1JMn-AMxaw">
+            <children xmi:type="notation:Node" xmi:id="_Yx-k4zfqEeOJ1JMn-AMxaw" type="5002">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_Yx-k5DfqEeOJ1JMn-AMxaw" y="5"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_YyHu0DfqEeOJ1JMn-AMxaw" type="3003" element="_YxrC4DfqEeOJ1JMn-AMxaw">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_YyHu0TfqEeOJ1JMn-AMxaw" fontName="Microsoft Sans Serif"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_YyHu0jfqEeOJ1JMn-AMxaw"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_Yx-k4TfqEeOJ1JMn-AMxaw" fontName="Microsoft Sans Serif" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Yx-k4jfqEeOJ1JMn-AMxaw" x="399" y="131" width="70" height="70"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Zl1DsDfqEeOJ1JMn-AMxaw" type="2001" element="_ZlrSsDfqEeOJ1JMn-AMxaw">
+            <children xmi:type="notation:Node" xmi:id="_Zl1DszfqEeOJ1JMn-AMxaw" type="5002">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_Zl1DtDfqEeOJ1JMn-AMxaw" y="5"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_Zl1DtTfqEeOJ1JMn-AMxaw" type="3003" element="_ZlrSsTfqEeOJ1JMn-AMxaw">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_Zl1DtjfqEeOJ1JMn-AMxaw" fontName="Microsoft Sans Serif"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Zl1DtzfqEeOJ1JMn-AMxaw"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_Zl1DsTfqEeOJ1JMn-AMxaw" fontName="Microsoft Sans Serif" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Zl1DsjfqEeOJ1JMn-AMxaw" x="425" y="277" width="70" height="70"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_aDU4ADfqEeOJ1JMn-AMxaw" type="2001" element="_aDLuEDfqEeOJ1JMn-AMxaw">
+            <children xmi:type="notation:Node" xmi:id="_aDU4AzfqEeOJ1JMn-AMxaw" type="5002">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_aDU4BDfqEeOJ1JMn-AMxaw" y="5"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_aDU4BTfqEeOJ1JMn-AMxaw" type="3003" element="_aDLuETfqEeOJ1JMn-AMxaw">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_aDU4BjfqEeOJ1JMn-AMxaw" fontName="Microsoft Sans Serif"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_aDU4BzfqEeOJ1JMn-AMxaw"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_aDU4ATfqEeOJ1JMn-AMxaw" fontName="Microsoft Sans Serif" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_aDU4AjfqEeOJ1JMn-AMxaw" x="631" y="212" width="70" height="70"/>
+          </children>
+          <styles xmi:type="notation:DiagramStyle" xmi:id="_VlZUIjfqEeOJ1JMn-AMxaw"/>
+        </data>
+      </ownedAnnotationEntries>
+      <ownedDiagramElements xmi:type="viewpoint:DNode" xmi:id="_Yxh48DfqEeOJ1JMn-AMxaw" name="PhysicalComponent 1" width="7" height="7" resizeKind="NSEW">
+        <target xmi:type="com.thalesgroup.mde.melody.data.pa:PhysicalComponent" href="ComponentsCreation.melodymodeller#947c3b59-fbd4-4e8f-90af-c8e2202cb5aa"/>
+        <semanticElements xmi:type="com.thalesgroup.mde.melody.data.pa:PhysicalComponent" href="ComponentsCreation.melodymodeller#947c3b59-fbd4-4e8f-90af-c8e2202cb5aa"/>
+        <ownedStyle xmi:type="viewpoint:Square" xmi:id="_YxrC4DfqEeOJ1JMn-AMxaw" labelPosition="node">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_YxrC4TfqEeOJ1JMn-AMxaw"/>
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/com.thalesgroup.mde.melody.doremi.analysis/description/physical.odesign#//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Component%20Breakdown']/@defaultLayer/@nodeMappings[name='PCB_PhysicalComponent']/@conditionnalStyles.2/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_YxrC4jfqEeOJ1JMn-AMxaw" red="252" green="233" blue="79"/>
+          <color xmi:type="viewpoint:RGBValues" xmi:id="_YxrC4zfqEeOJ1JMn-AMxaw" red="252" green="233" blue="79"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description:NodeMapping" href="platform:/plugin/com.thalesgroup.mde.melody.doremi.analysis/description/physical.odesign#//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Component%20Breakdown']/@defaultLayer/@nodeMappings[name='PCB_PhysicalComponent']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="viewpoint:DNode" xmi:id="_ZlrSsDfqEeOJ1JMn-AMxaw" name="PhysicalComponent 2" width="7" height="7" resizeKind="NSEW">
+        <target xmi:type="com.thalesgroup.mde.melody.data.pa:PhysicalComponent" href="ComponentsCreation.melodymodeller#9ef2c585-36a1-423a-8bbb-47d212a777ab"/>
+        <semanticElements xmi:type="com.thalesgroup.mde.melody.data.pa:PhysicalComponent" href="ComponentsCreation.melodymodeller#9ef2c585-36a1-423a-8bbb-47d212a777ab"/>
+        <ownedStyle xmi:type="viewpoint:Square" xmi:id="_ZlrSsTfqEeOJ1JMn-AMxaw" labelPosition="node">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_ZlrSsjfqEeOJ1JMn-AMxaw"/>
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/com.thalesgroup.mde.melody.doremi.analysis/description/physical.odesign#//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Component%20Breakdown']/@defaultLayer/@nodeMappings[name='PCB_PhysicalComponent']/@conditionnalStyles.2/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_ZlrSszfqEeOJ1JMn-AMxaw" red="252" green="233" blue="79"/>
+          <color xmi:type="viewpoint:RGBValues" xmi:id="_ZlrStDfqEeOJ1JMn-AMxaw" red="252" green="233" blue="79"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description:NodeMapping" href="platform:/plugin/com.thalesgroup.mde.melody.doremi.analysis/description/physical.odesign#//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Component%20Breakdown']/@defaultLayer/@nodeMappings[name='PCB_PhysicalComponent']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="viewpoint:DNode" xmi:id="_aDLuEDfqEeOJ1JMn-AMxaw" name="PhysicalComponent 3" width="7" height="7" resizeKind="NSEW">
+        <target xmi:type="com.thalesgroup.mde.melody.data.pa:PhysicalComponent" href="ComponentsCreation.melodymodeller#b28cfc73-e788-4a7b-9732-014083669b53"/>
+        <semanticElements xmi:type="com.thalesgroup.mde.melody.data.pa:PhysicalComponent" href="ComponentsCreation.melodymodeller#b28cfc73-e788-4a7b-9732-014083669b53"/>
+        <ownedStyle xmi:type="viewpoint:Square" xmi:id="_aDLuETfqEeOJ1JMn-AMxaw" labelPosition="node">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_aDLuEjfqEeOJ1JMn-AMxaw"/>
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/com.thalesgroup.mde.melody.doremi.analysis/description/physical.odesign#//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Component%20Breakdown']/@defaultLayer/@nodeMappings[name='PCB_PhysicalComponent']/@conditionnalStyles.2/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_aDLuEzfqEeOJ1JMn-AMxaw" red="252" green="233" blue="79"/>
+          <color xmi:type="viewpoint:RGBValues" xmi:id="_aDLuFDfqEeOJ1JMn-AMxaw" red="252" green="233" blue="79"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description:NodeMapping" href="platform:/plugin/com.thalesgroup.mde.melody.doremi.analysis/description/physical.odesign#//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Component%20Breakdown']/@defaultLayer/@nodeMappings[name='PCB_PhysicalComponent']"/>
+      </ownedDiagramElements>
+      <description xmi:type="description:DiagramDescription" href="platform:/plugin/com.thalesgroup.mde.melody.doremi.analysis/description/physical.odesign#//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Component%20Breakdown']"/>
+      <activatedFilters xmi:type="filter:CompositeFilterDescription" href="platform:/plugin/com.thalesgroup.mde.af.doremi.integration/description/af.odesign#//@ownedViewpoints[name='Architecture%20Framework']/@ownedRepresentations[name='AF%20diagram']/@filters[name='ModelExtensionFilter']"/>
+      <filterVariableHistory xmi:type="viewpoint:FilterVariableHistory" xmi:id="_Vkf8QTfqEeOJ1JMn-AMxaw"/>
+      <activatedLayers xmi:type="description:Layer" href="platform:/plugin/com.thalesgroup.mde.melody.doremi.analysis/description/physical.odesign#//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Component%20Breakdown']/@defaultLayer"/>
+      <target xmi:type="com.thalesgroup.mde.melody.data.pa:PhysicalComponent" href="ComponentsCreation.melodymodeller#0e5f7526-7564-416a-bdb9-e6fb7d00670a"/>
+    </ownedRepresentations>
+    <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/com.thalesgroup.mde.melody.doremi.analysis/description/physical.odesign#//@ownedViewpoints[name='Physical%20Architecture']"/>
+  </ownedViews>
+  <ownedViews xmi:type="viewpoint:DRepresentationContainer" xmi:id="_INyjgUeFEeOOue_tA-1wUw" initialized="true">
+    <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/com.thalesgroup.mde.af.doremi.integration/description/af.odesign#//@ownedViewpoints[name='Architecture%20Framework']"/>
+  </ownedViews>
+</viewpoint:DAnalysis>

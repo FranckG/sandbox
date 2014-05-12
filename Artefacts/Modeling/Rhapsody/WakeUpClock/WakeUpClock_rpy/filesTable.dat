@@ -1,0 +1,29 @@
+I-Logix-RPY-Archive version 8.6.0 * 4012249
+
+- filesTable = { IRPYRawContainer 
+	- size = 22;
+	- value = "WakeUpClock.rpy" ""
+	"WakeUpClock_rpy\\CGCompatibilityPre72Java\\CGCompatibilityPre72Java.sbs" "CGCompatibilityPre72Java"
+	"WakeUpClock_rpy\\CGCompatibilityPre73Cpp\\CGCompatibilityPre73Cpp.sbs" "CGCompatibilityPre73Cpp"
+	"WakeUpClock_rpy\\CGCompatibilityPre73Java\\CGCompatibilityPre73Java.sbs" "CGCompatibilityPre73Java"
+	"WakeUpClock_rpy\\CGCompatibilityPre751Cpp\\CGCompatibilityPre751Cpp.sbs" "CGCompatibilityPre751Cpp"
+	"WakeUpClock_rpy\\CGCompatibilityPre753Cpp\\CGCompatibilityPre753Cpp.sbs" "CGCompatibilityPre753Cpp"
+	"WakeUpClock_rpy\\CGCompatibilityPre75Cpp\\CGCompatibilityPre75Cpp.sbs" "CGCompatibilityPre75Cpp"
+	"WakeUpClock_rpy\\CGCompatibilityPre761Cpp.sbs" "CGCompatibilityPre761Cpp"
+	"WakeUpClock_rpy\\CGCompatibilityPre76Cpp\\CGCompatibilityPre76Cpp.sbs" "CGCompatibilityPre76Cpp"
+	"WakeUpClock_rpy\\DefaultComponent.cmp" "DefaultComponent"
+	"WakeUpClock_rpy\\Default\\Default.sbs" "Default"
+	"WakeUpClock_rpy\\Pre76GESkin\\Pre76GESkin.sbs" "Pre76GESkin"
+	"WakeUpClock_rpy\\System_Architecture\\A_Operationnal_Environement\\A_Operationnal_Environement.sbs" "System_Architecture::A_Operationnal_Environement"
+	"WakeUpClock_rpy\\System_Architecture\\B_ContextArchitecture\\B_ContextArchitecture.sbs" "System_Architecture::B_ContextArchitecture"
+	"WakeUpClock_rpy\\System_Architecture\\C_LogicalArchitecture\\C_LogicalArchitecture.sbs" "System_Architecture::C_LogicalArchitecture"
+	"WakeUpClock_rpy\\System_Architecture\\D_PhysicalArchitecture\\D_PhysicalArchitecture.sbs" "System_Architecture::D_PhysicalArchitecture"
+	"WakeUpClock_rpy\\System_Architecture\\E_EndProductBreakdownStructureArchitecture\\E_EndProductBreakdownStructureArchitecture.sbs" "System_Architecture::E_EndProductBreakdownStructureArchitecture"
+	"WakeUpClock_rpy\\System_Architecture\\PkgInterfaces\\Context\\Context.sbs" "System_Architecture::PkgInterfaces::Context"
+	"WakeUpClock_rpy\\System_Architecture\\PkgInterfaces\\Logical\\Logical.sbs" "System_Architecture::PkgInterfaces::Logical"
+	"WakeUpClock_rpy\\System_Architecture\\PkgInterfaces\\Physical\\Physical.sbs" "System_Architecture::PkgInterfaces::Physical"
+	"WakeUpClock_rpy\\System_Architecture\\PkgInterfaces\\PkgInterfaces.sbs" "System_Architecture::PkgInterfaces"
+	"WakeUpClock_rpy\\System_Architecture\\System_Architecture.sbs" "System_Architecture"
+	
+}
+
