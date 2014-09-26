@@ -1,6 +1,9 @@
 # An example content of .gitbugtraq to put in the repository root directory.
 # It could instead be added as an additional section to $GIT_DIR/config.
 # (note that '\' need to be escaped).
-[bugtraq]
-https://vmo954:10100/browse/%BUGID%
-logregex = (ORC-\\d+)
+# pouet
+[bugtraq "Jira"]
+  url = http://ivvws0033l:10100/browse/%BUGID%
+  logregex = ORC-\\d+
+  filter = 10506
+  loglinkregex = ORC-\\d+
