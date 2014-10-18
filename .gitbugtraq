@@ -2,7 +2,7 @@
 # It could instead be added as an additional section to $GIT_DIR/config.
 # (note that '\' need to be escaped).
 [bugtraq "Jira"]
-  url = https://vmo905:8443/browse/%BUGID%
-  logregex = ORC-\\d+
-  filter = 10700
-  loglinkregex = ORC-\\d+
+  url = https://prodtest01:8080/browse/%BUGID%
+  logregex = WAK-\\d+
+  filter = 10000
+  loglinkregex = WAK-\\d+
