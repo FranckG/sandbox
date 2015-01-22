@@ -5,8 +5,9 @@ my $curl=`curl -su  jenkins:tcinteg -H "Accept: application/json" -X GET $url`;
 `git reset --hard HEAD`;
 
 #print "$curl\n";
-my $id = $curl =~ /"customfield_10010":"(.*)"}}/;
-print "id = $id";
+$curl =~ /"customfield_10010":"(.*)"}}/;
+my $id = $1;
+print "id = $id\n";
 my $viewTag=fgi_ProjectA_int;
 `cleartool startview $viewTag`;
-print "clearfsimport -recurse -rmname -nsetevent . m:\%VIEW_TAG%\Test_comp\Test_CCEnv"
+print "clearfsimport -recurse -rmname -nsetevent . m:\$viewTag\Test_comp\Test_CCEnv"
