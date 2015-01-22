@@ -2,7 +2,7 @@ REM
 REM CLEAN GIT REPO
 REM
 git clean -dfx
-git reset -hard HEAD
+git reset --hard HEAD
 
 REM
 REM CLEARFSIMPORT
