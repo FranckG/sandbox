@@ -3,6 +3,7 @@ REM CLEAN GIT REPO
 REM
 git clean -dfx
 git reset --hard HEAD
+del /F /Q /Q .git*
 
 REM
 REM CLEARFSIMPORT
