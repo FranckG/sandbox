@@ -3,7 +3,8 @@ REM CLEAN GIT REPO
 REM
 git clean -dfx
 git reset --hard HEAD
-del /F /Q /Q .git .git* REM .git and .git * are not the same
+REM .git and .git * are not the same
+del /F /Q /Q .git .git* 
 
 REM
 REM CLEARFSIMPORT
