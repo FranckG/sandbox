@@ -4,7 +4,8 @@ REM
 git clean -dfx
 git reset --hard HEAD
 REM .git and .git * are not the same
-del /F /Q /Q .git .git* 
+del /F /Q /Q .git* 
+rmdir /Q /Q .git
 
 REM
 REM CLEARFSIMPORT
