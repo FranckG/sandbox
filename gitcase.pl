@@ -46,7 +46,7 @@ my $jiraId;
 if ($curl =~ /"attributes":{"jira-key":\["(.+-\d+)"\]}}/) {
   $jiraId = $1;
 } else {
-  die "Cannot find Jira issue\ncurl output:\n${curl}: $?";
+  die "Cannot find Jira issue\ncurl output:\n${curl}";
 }
 print "Jira ID: '$jiraId'\n";
 
@@ -58,7 +58,7 @@ my $clearQuestId;
 if ($curl =~ /"customfield_10010":"(.*)"}}/) {
   $clearQuestId = $1;
 } else {
-  die "Cannot find ClearQuest issue\ncurl output:\n${curl}: $?";
+  die "Cannot find ClearQuest issue\ncurl output:\n${curl}";
 }
 print "ClearQuest ID: '${clearQuestId}'\n";
 
