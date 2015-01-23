@@ -15,7 +15,7 @@ print "repository URL: '${repoUrl}'\n";
 my $branch = $ENV{'GIT_BRANCH'};
 print "Git branch: '${branch}'\n";
 
-if ($branch eq 'origin/develop') {
+if ($branch ne 'origin/develop') {
   print "Not working on develop branch: nothing to Synch with ClearQuest";
   exit 0;
 }
