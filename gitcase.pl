@@ -29,7 +29,7 @@ print "ClearQuest ID: '${clearQuestId}'\n";
 
 my $viewTag=fgi_ProjectA_int;
 `cleartool startview $viewTag`;
-`cleartool setactivity -c "link to Jira ${jiraId}" -view ${viewTag} ${clearQuestId}`
+`cleartool setactivity -c "link to Jira ${jiraId}" -view ${viewTag} ${clearQuestId}`;
 
 `git clean -dfx`;
 
