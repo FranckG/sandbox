@@ -5,6 +5,10 @@ my $viewTag     = 'fgi_ProjectA_int';
 my $customField = 'customfield_10010';
 my $user        = 'jenkins';
 my $password    = 'tcinteg';
+my $integrationBranch = 'origin/develop'; # can be retrieve from Stash repo?
+my $componentRootDir = 'Test_comp/Test_CCEnv';
+
+print "SYNCHRONIZE WITH CLEARCASE UCM";
 
 #use Env qw(GIT_COMMIT GIT_URL);
 #########################################################################
@@ -20,7 +24,7 @@ print "repository URL: '${repoUrl}'\n";
 my $branch = $ENV{'GIT_BRANCH'};
 print "Git branch: '${branch}'\n";
 
-if ($branch ne 'origin/develop') {  # can be retrieve dynamically ?
+if ($branch ne $integrationBranch) {  # can be retrieve dynamically ?
   print "Not working on develop branch: nothing to Synch with ClearQuest";
   exit 0;
 }
@@ -78,7 +82,7 @@ system(@args) == 0 or
 exit;
 
 # EXECUTE CLEARFSIMPORT
-@args = {'clearfsimport', '-recurse', '-rmname', '-nsetevent', '.', "m:/${viewTag}/Test_comp/Test_CCEnv"}; 
+@args = {'clearfsimport', '-recurse', '-rmname', '-nsetevent', '.', "m:/${viewTag}/${componentRootDir}"}; 
 system(@args) == 0 or
   die "cannot run clearfsimport: $?";
 
