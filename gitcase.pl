@@ -1,6 +1,11 @@
 use strict;
 use warnings;
 
+my $viewTag     = 'fgi_ProjectA_int';
+my $customField = 'customfield_10010';
+my $user        = 'jenkins';
+my $password    = 'tcinteg';
+
 #use Env qw(GIT_COMMIT GIT_URL);
 #########################################################################
 # GET ENVIRONMENT
@@ -15,7 +20,7 @@ print "repository URL: '${repoUrl}'\n";
 my $branch = $ENV{'GIT_BRANCH'};
 print "Git branch: '${branch}'\n";
 
-if ($branch ne 'origin/develop') {
+if ($branch ne 'origin/develop') {  # can be retrieve dynamically ?
   print "Not working on develop branch: nothing to Synch with ClearQuest";
   exit 0;
 }
@@ -28,7 +33,7 @@ print "repository slug: '${repositorySlug}'\n";
 #########################################################################
 # GET JIRA ISSUE
 my $stashApi="http://vmo10113:7990/rest/api/1.0/projects/${projectKey}/repos/${repositorySlug}/commits/${commitId}";
-my $curl=`curl -su  jenkins:tcinteg -H "Accept: application/json" -X GET $stashApi`;
+my $curl=`curl -su  ${user}:${password} -H "Accept: application/json" -X GET $stashApi`;
 #print  "Response from STASH:\n$curl\n";
 
 #"attributes":{"jira-key":["SSP-39"]}}
@@ -37,40 +42,47 @@ my $jiraId;
 if ($curl =~ /"attributes":{"jira-key":\["(.+-\d+)"\]}}/) {
   $jiraId = $1;
 } else {
-  print "Cannot find Jira issue\n";
-  print "curl output:\n${curl}\n";
-  exit 1;
+  die "Cannot find Jira issue\ncurl output:\n${curl}: $?";
 }
 print "Jira ID: '$jiraId'\n";
 
 #########################################################################
 # GET ClearQuest ID
-my $jiraApi="http://vmo10113:8080/rest/api/2/issue/${jiraId}?fields=customfield_10010";
-$curl=`curl -su  jenkins:tcinteg -H "Accept: application/json" -X GET $jiraApi`;
+my $jiraApi="http://vmo10113:8080/rest/api/2/issue/${jiraId}?fields=${customField}";
+$curl=`curl -su  ${user}:${password} -H "Accept: application/json" -X GET $jiraApi`;
 my $clearQuestId;
 if ($curl =~ /"customfield_10010":"(.*)"}}/) {
   $clearQuestId = $1;
 } else {
-  print "Cannot find ClearQuest issue\n";
-  print "curl output:\n${curl}\n";
-  exit 1;
+  die "Cannot find ClearQuest issue\ncurl output:\n${curl}: $?";
 }
 print "ClearQuest ID: '${clearQuestId}'\n";
 
-my $viewTag = 'fgi_ProjectA_int';
-`cleartool startview $viewTag`;
-`cleartool setactivity -c "link to Jira ${jiraId}" -view ${viewTag} ${clearQuestId}`;
+my @args = {'cleartool', 'startview', $viewTag};
+system(@args) == 0 or
+  die "cannot startview $viewTag: $?";
 
-`git clean -dfx`;
+@args = {'cleartool', 'setactivity', '-c', "link to Jira ${jiraId}", '-view', ${viewTag}, ${clearQuestId}}; 
+system(@args) == 0 or
+  die "cannot set activity '${clearQuestId}' in view '$viewTag': $?";
+
+@args = {'git', 'clean', '-dfx'}; 
+system(@args) == 0 or
+  die "cannot git clean: $?";
+
+# PREPARE SOURCE FOLDER
+@args = {'git', 'reset', '--hard', 'HEAD'}; 
+system(@args) == 0 or
+  die "cannot git reset: $?";
 
 exit;
 
-# PREPARE SOURCE FOLDER
-`git reset --hard HEAD`;
-
 # EXECUTE CLEARFSIMPORT
-print "clearfsimport -recurse -rmname -nsetevent . m:/${viewTag}/Test_comp/Test_CCEnv";
+@args = {'clearfsimport', '-recurse', '-rmname', '-nsetevent', '.', "m:/${viewTag}/Test_comp/Test_CCEnv"}; 
+system(@args) == 0 or
+  die "cannot run clearfsimport: $?";
 
+  
 1;
 
 __END__
