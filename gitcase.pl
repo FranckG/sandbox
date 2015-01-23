@@ -4,18 +4,18 @@ use warnings;
 #use Env qw(GIT_COMMIT GIT_URL);
 #########################################################################
 # GET ENVIRONMENT
-#my $commitId = "0c6f2cf570922152358d3359de839ad9d29c9561";
-my $commitId = $ENV{'GIT_COMMIT'};
+my $commitId = "0c6f2cf570922152358d3359de839ad9d29c9561";
+#my $commitId = $ENV{'GIT_COMMIT'};
 print "commit id: '${commitId}'\n";
 
-#my $repoUrl = "http://150.2.38.125:7990/scm/ssp/wakeupclock.git";
-my $repoUrl = $ENV{'GIT_URL'};
+my $repoUrl = "http://150.2.38.125:7990/scm/ssp/wakeupclock.git";
+#my $repoUrl = $ENV{'GIT_URL'};
 print "repository URL: '${repoUrl}'\n";
 
 
 my ($projectKey, $repositorySlug) = $repoUrl =~ 'https{0,}://.+:\d+/scm/(.+)/(.+)\.git';
-print "project key: '$projectKey'\n";
-print "repository slug: '$repositorySlug'\n";
+print "project key: '${projectKey}'\n";
+print "repository slug: '${repositorySlug}'\n";
 
 #########################################################################
 # GET JIRA ISSUE
@@ -25,17 +25,32 @@ my $curl=`curl -su  jenkins:tcinteg -H "Accept: application/json" -X GET $stashA
 
 #"attributes":{"jira-key":["SSP-39"]}}
 #my $jiraId = "STOF-5";
-my ($jiraId) = $curl =~ /"attributes":{"jira-key":\["(.+-\d+)"\]}}/;
+my $jiraId;
+if ($curl =~ /"attributes":{"jira-key":\["(.+-\d+)"\]}}/) {
+  $jiraId = $1;
+} else {
+  print "Cannot find Jira issue\n";
+  print "curl output:\n${curl}\n";
+  exit 1;
+}
+
 print "Jira ID: '$jiraId'\n";
 
 #########################################################################
 # GET ClearQuest ID
 my $jiraApi="http://vmo10113:8080/rest/api/2/issue/${jiraId}?fields=customfield_10010";
 $curl=`curl -su  jenkins:tcinteg -H "Accept: application/json" -X GET $jiraApi`;
-my ($clearQuestId) = $curl =~ /"customfield_10010":"(.*)"}}/;
+my $clearQuestId;
+if ($curl =~ /"customfield_10010":"(.*)"}}/) {
+  $clearQuestId = $1;
+} else {
+  print "Cannot find ClearQuest issue\n";
+  print "curl output:\n${curl}\n";
+  exit 1;
+}
 print "ClearQuest ID: '${clearQuestId}'\n";
 
-my $viewTag=fgi_ProjectA_int;
+my $viewTag = 'fgi_ProjectA_int';
 `cleartool startview $viewTag`;
 `cleartool setactivity -c "link to Jira ${jiraId}" -view ${viewTag} ${clearQuestId}`;
 
@@ -47,7 +62,7 @@ exit;
 `git reset --hard HEAD`;
 
 # EXECUTE CLEARFSIMPORT
-print "clearfsimport -recurse -rmname -nsetevent . m:\$viewTag\Test_comp\Test_CCEnv";
+print "clearfsimport -recurse -rmname -nsetevent . m:/${viewTag}/Test_comp/Test_CCEnv";
 
 1;
 
