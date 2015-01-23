@@ -4,18 +4,18 @@ use warnings;
 #use Env qw(GIT_COMMIT GIT_URL);
 #########################################################################
 # GET ENVIRONMENT
-my $commitId = "0c6f2cf570922152358d3359de839ad9d29c9561";
-#my $commitId = $ENV{'GIT_COMMIT'};
+#my $commitId = "0c6f2cf570922152358d3359de839ad9d29c9561";
+my $commitId = $ENV{'GIT_COMMIT'};
 print "commit id: '${commitId}'\n";
 
-my $repoUrl = "http://150.2.38.125:7990/scm/ssp/wakeupclock.git";
-#my $repoUrl = $ENV{'GIT_URL'};
+#my $repoUrl = "http://150.2.38.125:7990/scm/ssp/wakeupclock.git";
+my $repoUrl = $ENV{'GIT_URL'};
 print "repository URL: '${repoUrl}'\n";
-
 
 my ($projectKey, $repositorySlug) = $repoUrl =~ 'https{0,}://.+:\d+/scm/(.+)/(.+)\.git';
 print "project key: '${projectKey}'\n";
 print "repository slug: '${repositorySlug}'\n";
+
 
 #########################################################################
 # GET JIRA ISSUE
@@ -33,7 +33,6 @@ if ($curl =~ /"attributes":{"jira-key":\["(.+-\d+)"\]}}/) {
   print "curl output:\n${curl}\n";
   exit 1;
 }
-
 print "Jira ID: '$jiraId'\n";
 
 #########################################################################
