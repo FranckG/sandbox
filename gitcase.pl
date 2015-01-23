@@ -1,9 +1,9 @@
 #########################################################################
 # GET ENVIRONMENT
-#my $commitId = $ENV{GIT_COMMIT};
-my $commitId = "0c6f2cf570922152358d3359de839ad9d29c9561";
-#my $repoURL = $ENV{GIT_URL};
-my $repoUrl = "http://150.2.38.125:7990/scm/ssp/wakeupclock.git";
+my $commitId = $ENV{GIT_COMMIT};
+#my $commitId = "0c6f2cf570922152358d3359de839ad9d29c9561";
+my $repoURL = $ENV{GIT_URL};
+#my $repoUrl = "http://150.2.38.125:7990/scm/ssp/wakeupclock.git";
 
 my ($projectKey, $repositorySlug) = $repoUrl =~ 'https{0,}://.+:\d+/scm/(.+)/(.+)\.git';
 print "project key: '$projectKey'\n";
