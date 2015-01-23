@@ -12,6 +12,14 @@ print "commit id: '${commitId}'\n";
 my $repoUrl = $ENV{'GIT_URL'};
 print "repository URL: '${repoUrl}'\n";
 
+my $branch = $ENV{'GIT_BRANCH'};
+print "Git branch: '${branch}'\n";
+
+if ($branch eq 'origin/develop') {
+  print "Not working on develop branch: nothing to Synch with ClearQuest";
+  exit 0;
+}
+
 my ($projectKey, $repositorySlug) = $repoUrl =~ 'https{0,}://.+:\d+/scm/(.+)/(.+)\.git';
 print "project key: '${projectKey}'\n";
 print "repository slug: '${repositorySlug}'\n";
