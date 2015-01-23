@@ -8,7 +8,7 @@ my $password    = 'tcinteg';
 my $integrationBranch = 'origin/develop'; # can be retrieve from Stash repo?
 my $componentRootDir = 'Test_comp/Test_CCEnv';
 
-print "SYNCHRONIZE WITH CLEARCASE UCM";
+print "SYNCHRONIZE WITH CLEARCASE UCM\n";
 
 #use Env qw(GIT_COMMIT GIT_URL);
 #########################################################################
