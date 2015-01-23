@@ -62,27 +62,27 @@ if ($curl =~ /"customfield_10010":"(.*)"}}/) {
 }
 print "ClearQuest ID: '${clearQuestId}'\n";
 
-my @args = {'cleartool', 'startview', $viewTag};
+my @args = ('cleartool', 'startview', ${viewTag});
 system(@args) == 0 or
   die "cannot startview $viewTag: $?";
 
-@args = {'cleartool', 'setactivity', '-c', "link to Jira ${jiraId}", '-view', ${viewTag}, ${clearQuestId}}; 
+@args = ('cleartool', 'setactivity', '-c', "link to Jira ${jiraId}", '-view', ${viewTag}, ${clearQuestId}); 
 system(@args) == 0 or
   die "cannot set activity '${clearQuestId}' in view '$viewTag': $?";
 
-@args = {'git', 'clean', '-dfx'}; 
+@args = ('git', 'clean', '-dfx'); 
 system(@args) == 0 or
   die "cannot git clean: $?";
 
 # PREPARE SOURCE FOLDER
-@args = {'git', 'reset', '--hard', 'HEAD'}; 
+@args = ('git', 'reset', '--hard', 'HEAD'); 
 system(@args) == 0 or
   die "cannot git reset: $?";
 
-exit;
-
+# exit
+  
 # EXECUTE CLEARFSIMPORT
-@args = {'clearfsimport', '-recurse', '-rmname', '-nsetevent', '.', "m:/${viewTag}/${componentRootDir}"}; 
+@args = ('clearfsimport', '-recurse', '-rmname', '-nsetevent', '.', "m:/${viewTag}/${componentRootDir}"); 
 system(@args) == 0 or
   die "cannot run clearfsimport: $?";
 
