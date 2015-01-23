@@ -1,14 +1,42 @@
-my $jiraId = "STOF-5";
-my $url="http://vmo10113:8080/rest/api/2/issue/$jiraId?fields=customfield_10010";
-my $curl=`curl -su  jenkins:tcinteg -H "Accept: application/json" -X GET $url`;
+#########################################################################
+# GET ENVIRONMENT
+
+#my $commitId = $ENV{GIT_COMMIT};
+my $commitId = "0a7a9f51c148aad476b722e3768ddad0b7ebdcd0";
+#my $repoURL = $ENV{GIT_URL};
+my $repoUrl = "http://150.2.38.125:7990/scm/ssp/wakeupclock.git";
+
+my ($projectKey, $repositorySlug) = $repoUrl =~ 'https+://.*:\d+/scm/(.+)\/(.+)\.git';
+print "project key: '$projectKey'\n";
+print "repository slug: '$repositorySlug'\n";
+
+#########################################################################
+# GET JIRA ISSUE
+my $stashApi="http://vmo10113:7990/rest/api/1.0/projects/${projectKey}/repos/${repositorySlug}/commits/${commitId}";
+my $curl=`curl -su  jenkins:tcinteg -H "Accept: application/json" -X GET $stashApi`;
+
+#"attributes":{"jira-key":["SSP-39"]}}
+#my $jiraId = "STOF-5";
+my ($jiraId) = $curl =~ /"attributes":{"jira-key":\["(.+-\d+)"\]}}/;
+print "Jira ID: '$jiraId'\n";
+
+#########################################################################
+# GET ClearQuest ID
+my $jiraApi="http://vmo10113:8080/rest/api/2/issue/$jiraId?fields=customfield_10010";
+$curl=`curl -su  jenkins:tcinteg -H "Accept: application/json" -X GET $url`;
+my ($clearQuestId) = $curl =~ /"customfield_10010":"(.*)"}}/;
+print "ClearQuest ID: '$clearQuestId'\n";
+
+exit;
 
 `git clean -dfx`;
 `git reset --hard HEAD`;
 
 #print "$curl\n";
-$curl =~ /"customfield_10010":"(.*)"}}/;
-my $cqProd = $1
-print "cqProd = $cqProd\n";
 my $viewTag=fgi_ProjectA_int;
 `cleartool startview $viewTag`;
 print "clearfsimport -recurse -rmname -nsetevent . m:\$viewTag\Test_comp\Test_CCEnv"
+
+1;
+
+__END__
