@@ -1,0 +1,3 @@
+[submodule "padns"]
+	path = padns
+	url = http://prodtest01:7990/scm/sdx/passivedns.git

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dictionary>
+  <item>
+    <key>
+      <string>BuildServer.Jenkins.BuildServerUrl</string>
+    </key>
+    <value>
+      <string>http://150.2.60.41:8081</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>BuildServer.Jenkins.ProjectName</string>
+    </key>
+    <value>
+      <string>wakeupclock</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>BuildServer.Type</string>
+    </key>
+    <value>
+      <string>Jenkins</string>
+    </value>
+  </item>
+</dictionary>
