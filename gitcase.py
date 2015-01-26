@@ -8,7 +8,8 @@ customField = 'customfield_10010';
 user        = 'jenkins';
 password    = 'tcinteg';
 integrationBranch = 'origin/develop'; # can be retrieve from Stash repo?
-componentRootDir = 'Test_comp/Test_CCEnv';
+componentVob = 'Test_comp'
+componentRootDir = 'Test_CCEnv'
 
 
 #########################################################################
@@ -99,6 +100,7 @@ copytree(os.getcwd(), 'tmp', ignore=ignore_patterns('.git*'))
    
 # EXECUTE CLEARFSIMPORT
 #return_code = subprocess.call(['clearfsimport', '-recurse', '-rmname', '-nsetevent', '.', os.path.join('M:', viewTag, componentRootDir)], shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
-return_code = subprocess.call(['clearfsimport', '-recurse', '-rmname', '-nsetevent', os.path.join('tmp', '*'), os.path.join('M:', viewTag, componentRootDir)])
+return_code = subprocess.call(['clearfsimport', '-recurse', '-rmname', '-nsetevent', os.path.join('tmp', '*'), os.path.join('M:', viewTag, componentVob, componentRootDir)])
+
 if return_code != 0:
    sys.exit(1)
