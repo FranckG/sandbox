@@ -94,7 +94,7 @@ if return_code != 0:
 
 import shutil
 # remove .git folder
-shutil.rmtree('.git', ignore_errors=True)
+shutil.rmtree('.git', ignore_errors=False)
 
 # remove .gitignore file
 os.remove('.gitignore')
