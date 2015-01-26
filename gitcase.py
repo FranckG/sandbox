@@ -69,7 +69,7 @@ except KeyError:
    print ('No clearquest issue found')
    sys.exit(1)
 
-if clearquestId is 'null':
+if clearquestId is None:
    print ('No clearquest issue found')
    sys.exit(1)
    
