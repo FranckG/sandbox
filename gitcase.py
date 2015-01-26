@@ -48,7 +48,12 @@ url = "http://vmo10113:7990/rest/api/1.0/projects/"+projectKey+"/repos/"+reposit
 r = requests.get(url, auth=(user, password))
 jsonResponse = r.json()
 #print json.dumps(jsonResponse, indent=4, sort_keys=True)
-jiraId = jsonResponse['attributes']['jira-key'][0]
+try:
+   jiraId = jsonResponse['attributes']['jira-key'][0]
+except NameError:
+   print ('Not jira issue found')
+   sys.exit(1)
+   
 print ("Jira ID: '"+jiraId+"'")
 
 #########################################################################
