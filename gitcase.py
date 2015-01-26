@@ -51,7 +51,7 @@ jsonResponse = r.json()
 try:
    jiraId = jsonResponse['attributes']['jira-key'][0]
 except KeyError:
-   print ('Not jira issue found')
+   print ('No jira issue found')
    sys.exit(1)
 
 print ("Jira ID: '"+jiraId+"'")
@@ -66,7 +66,7 @@ jsonResponse = r.json()
 try:   
    clearQuestId = jsonResponse['fields']['customfield_10010']
 except KeyError:
-   print ('Not clearQuest issue found')
+   print ('No clearQuest issue found')
    sys.exit(1)
    
 print ("ClearQuest ID: '"+clearQuestId+"'")
