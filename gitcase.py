@@ -92,6 +92,13 @@ return_code = subprocess.call(['git', 'reset', '--hard', 'HEAD'], shell=True)
 if return_code != 0:
    sys.exit(1)
 
+import shutil
+# remove .git folder
+shutil.rmtree('.git')
+
+# remove .gitignore file
+os.remove('.gitignore')
+   
 # EXECUTE CLEARFSIMPORT
 #return_code = subprocess.call(['clearfsimport', '-recurse', '-rmname', '-nsetevent', '.', os.path.join('M:', viewTag, componentRootDir)], shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
 return_code = subprocess.call(['clearfsimport', '-recurse', '-rmname', '-nsetevent', '.', os.path.join('M:', viewTag, componentRootDir)], shell=True)
