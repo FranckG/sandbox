@@ -64,31 +64,37 @@ jsonResponse = r.json()
 #print json.dumps(jsonResponse, indent=4, sort_keys=True)
 
 try:   
-   clearQuestId = jsonResponse['fields']['customfield_10010']
+   clearquestId = jsonResponse['fields']['customfield_10010']
 except KeyError:
-   print ('No clearQuest issue found')
+   print ('No clearquest issue found')
+   sys.exit(1)
+
+if clearquestId is 'null':
+   print ('No clearquest issue found')
    sys.exit(1)
    
-print ("ClearQuest ID: '"+clearQuestId+"'")
+print ("ClearQuest ID: '"+clearquestId+"'")
 
 return_code = subprocess.call(['cleartool', 'startview', viewTag], shell=True)
 if return_code != 0:
    sys.exit(1)
 
-return_code = subprocess.call(['cleartool', 'setactivity', '-c', "link to Jira '"+jiraId+"'", '-view', viewTag, clearQuestId], shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+return_code = subprocess.call(['cleartool', 'setactivity', '-c', "link to Jira '"+jiraId+"'", '-view', viewTag, clearQuestId], shell=True)
 if return_code != 0:
    sys.exit(1)
 
 # PREPARE SOURCE FOLDER
-return_code = subprocess.call(['git', 'clean', '-dfx'], shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+return_code = subprocess.call(['git', 'clean', '-dfx'], shell=True)
 if return_code != 0:
    sys.exit(1)
 
-return_code = subprocess.call(['git', 'reset', '--hard', 'HEAD'], shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+return_code = subprocess.call(['git', 'reset', '--hard', 'HEAD'], shell=True)
 if return_code != 0:
    sys.exit(1)
 
 # EXECUTE CLEARFSIMPORT
-return_code = subprocess.call(['clearfsimport', '-recurse', '-rmname', '-nsetevent', '.', os.path.join('M:', viewTag, componentRootDir)], shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+#return_code = subprocess.call(['clearfsimport', '-recurse', '-rmname', '-nsetevent', '.', os.path.join('M:', viewTag, componentRootDir)], shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+return_code = subprocess.call(['clearfsimport', '-recurse', '-rmname', '-nsetevent', '.', os.path.join('M:', viewTag, componentRootDir)], shell=True)
 if return_code != 0:
    sys.exit(1)
+   
