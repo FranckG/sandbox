@@ -79,7 +79,7 @@ return_code = subprocess.call(['cleartool', 'startview', viewTag], shell=True)
 if return_code != 0:
    sys.exit(1)
 
-return_code = subprocess.call(['cleartool', 'setactivity', '-c', "link to Jira '"+jiraId+"'", '-view', viewTag, clearQuestId], shell=True)
+return_code = subprocess.call(['cleartool', 'setactivity', '-c', "link to Jira '"+jiraId+"'", '-view', viewTag, clearquestId], shell=True)
 if return_code != 0:
    sys.exit(1)
 
