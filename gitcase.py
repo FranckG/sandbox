@@ -3,7 +3,6 @@ import requests, json
 import re
 import subprocess 
 
-
 viewTag     = 'fgi_ProjectA_int';
 customField = 'customfield_10010';
 user        = 'jenkins';
@@ -14,16 +13,16 @@ componentRootDir = 'Test_comp/Test_CCEnv';
 
 #########################################################################
 # GET ENVIRONMENT
-gitCommit = "8f5f090ea5d977d5d3097818b3980715d9553a70";
-#gitCommit = os.environ['GIT_COMMIT']
+#gitCommit = "8f5f090ea5d977d5d3097818b3980715d9553a70";
+gitCommit = os.environ['GIT_COMMIT']
 print ("git commit: '"+gitCommit+"'")
 
-repoUrl = "http://150.2.38.125:7990/scm/ssp/wakeupclock.git";
-#repoUrl = os.environ['GIT_URL']
+#repoUrl = "http://150.2.38.125:7990/scm/ssp/wakeupclock.git";
+repoUrl = os.environ['GIT_URL']
 print ("repository URL: '"+repoUrl+"'")
 
-#branch = os.environ['GIT_BRANCH'];
-branch = integrationBranch
+branch = os.environ['GIT_BRANCH'];
+#branch = integrationBranch
 print ("Git branch: '"+branch+"'")
 
 import sys
@@ -38,10 +37,10 @@ if matchObj:
   repositorySlug =  matchObj.group(2)
 else:
   print ('No match')
+  sys.exit(1)
 
 print ("project key:     '"+projectKey+"'")
 print ("repository slug: '"+repositorySlug+"'")
-
 
 #########################################################################
 # GET JIRA ISSUE
@@ -62,15 +61,23 @@ clearQuestId = jsonResponse['fields']['customfield_10010']
 print ("ClearQuest ID: '"+clearQuestId+"'")
 
 return_code = subprocess.call(['cleartool', 'startview', viewTag], shell=True)
+if return_code != 0:
+   sys.exit(1)
+
 return_code = subprocess.call(['cleartool', 'setactivity', '-c', "link to Jira '"+jiraId+"'", '-view', viewTag, clearQuestId], shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+if return_code != 0:
+   sys.exit(1)
 
 # PREPARE SOURCE FOLDER
 return_code = subprocess.call(['git', 'clean', '-dfx'], shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
-
-
-sys.exit(0)
+if return_code != 0:
+   sys.exit(1)
 
 return_code = subprocess.call(['git', 'reset', '--hard', 'HEAD'], shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+if return_code != 0:
+   sys.exit(1)
 
 # EXECUTE CLEARFSIMPORT
 return_code = subprocess.call(['clearfsimport', '-recurse', '-rmname', '-nsetevent', '.', os.path.join('M:', viewTag, componentRootDir)], shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+if return_code != 0:
+   sys.exit(1)
