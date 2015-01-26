@@ -76,20 +76,20 @@ if clearquestId is None:
    
 print ("ClearQuest ID: '"+clearquestId+"'")
 
-return_code = subprocess.call(['cleartool', 'startview', viewTag], shell=True)
+return_code = subprocess.call(['cleartool', 'startview', viewTag])
 if return_code != 0:
    sys.exit(1)
 
-return_code = subprocess.call(['cleartool', 'setactivity', '-c', "link to Jira '"+jiraId+"'", '-view', viewTag, clearquestId], shell=True)
+return_code = subprocess.call(['cleartool', 'setactivity', '-c', "link to Jira '"+jiraId+"'", '-view', viewTag, clearquestId])
 if return_code != 0:
    sys.exit(1)
 
 # PREPARE SOURCE FOLDER
-return_code = subprocess.call(['git', 'clean', '-dfx'], shell=True)
+return_code = subprocess.call(['git', 'clean', '-dfx'])
 if return_code != 0:
    sys.exit(1)
 
-return_code = subprocess.call(['git', 'reset', '--hard', 'HEAD'], shell=True)
+return_code = subprocess.call(['git', 'reset', '--hard', 'HEAD'])
 if return_code != 0:
    sys.exit(1)
 
@@ -101,6 +101,5 @@ copytree(os.getcwd(), 'tmp', ignore=ignore_patterns('.git*'))
 # EXECUTE CLEARFSIMPORT
 #return_code = subprocess.call(['clearfsimport', '-recurse', '-rmname', '-nsetevent', '.', os.path.join('M:', viewTag, componentRootDir)], shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
 return_code = subprocess.call(['clearfsimport', '-recurse', '-rmname', '-nsetevent', os.path.join('tmp', '*'), '"'+os.path.join('M:', viewTag, componentVob, componentRootDir)+'"'])
-
 if return_code != 0:
    sys.exit(1)
