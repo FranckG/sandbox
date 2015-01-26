@@ -47,12 +47,13 @@ print ("repository slug: '"+repositorySlug+"'")
 url = "http://vmo10113:7990/rest/api/1.0/projects/"+projectKey+"/repos/"+repositorySlug+"/commits/"+gitCommit
 r = requests.get(url, auth=(user, password))
 jsonResponse = r.json()
-#print json.dumps(jsonResponse, indent=4, sort_keys=True)
-if jsonResponse['attributes'] is 'null':
+#print json.dumps(jsonResponse, indent=4, sort_keys=True)   
+try:
+   jiraId = jsonResponse['attributes']['jira-key'][0]
+except KeyError:
    print ('Not jira issue found')
    sys.exit(1)
 
-jiraId = jsonResponse['attributes']['jira-key'][0]
 print ("Jira ID: '"+jiraId+"'")
 
 #########################################################################
@@ -61,11 +62,13 @@ url="http://vmo10113:8080/rest/api/2/issue/"+jiraId+"?fields="+customField
 r = requests.get(url, auth=(user, password))
 jsonResponse = r.json()
 #print json.dumps(jsonResponse, indent=4, sort_keys=True)
-if jsonResponse['fields']['customfield_10010'] is 'null':
+
+try:   
+   clearQuestId = jsonResponse['fields']['customfield_10010']
+except KeyError:
    print ('Not clearQuest issue found')
    sys.exit(1)
-
-clearQuestId = jsonResponse['fields']['customfield_10010']
+   
 print ("ClearQuest ID: '"+clearQuestId+"'")
 
 return_code = subprocess.call(['cleartool', 'startview', viewTag], shell=True)
