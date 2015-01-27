@@ -9,7 +9,7 @@ user        = 'jenkins';
 password    = 'tcinteg';
 integrationBranch = 'origin/develop'; # can be retrieve from Stash repo?
 componentVob = 'Test_comp'
-componentRootDir = 'Test_CCEnv'
+componentName = 'Test_CCEnv'
 
 
 #########################################################################
@@ -76,31 +76,30 @@ if clearquestId is None:
    
 print ("ClearQuest ID: '"+clearquestId+"'")
 
-return_code = subprocess.call(['cleartool', 'startview', viewTag], shell=True)
+return_code = subprocess.call(['cleartool', 'startview', viewTag])
 if return_code != 0:
-   sys.exit(1)
+   sys.exit(return_code)
 
-return_code = subprocess.call(['cleartool', 'setactivity', '-c', "link to Jira '"+jiraId+"'", '-view', viewTag, clearquestId], shell=True)
+return_code = subprocess.call(['cleartool', 'setactivity', '-c', "link to Jira '"+jiraId+"'", '-view', viewTag, clearquestId])
 if return_code != 0:
-   sys.exit(1)
+   sys.exit(return_code)
 
 # PREPARE SOURCE FOLDER
-return_code = subprocess.call(['git', 'clean', '-dfx'], shell=True)
+return_code = subprocess.call(['git', 'clean', '-dfx'])
 if return_code != 0:
-   sys.exit(1)
+   sys.exit(return_code)
 
-return_code = subprocess.call(['git', 'reset', '--hard', 'HEAD'], shell=True)
+return_code = subprocess.call(['git', 'reset', '--hard', 'HEAD'])
 if return_code != 0:
-   sys.exit(1)
+   sys.exit(return_code)
 
-# remove .gitignore file
-from shutil import copytree, ignore_patterns
 
-copytree(os.getcwd(), 'tmp', ignore=ignore_patterns('.git*'))
-   
 # EXECUTE CLEARFSIMPORT
-#return_code = subprocess.call(['clearfsimport', '-recurse', '-rmname', '-nsetevent', '.', os.path.join('M:', viewTag, componentRootDir)], shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
-return_code = subprocess.call(['clearfsimport', '-recurse', '-rmname', '-nsetevent', os.path.join('tmp', '*'), '"'+os.path.join('M:', viewTag, componentVob, componentRootDir)+'"'])
-
-if return_code != 0:
-   sys.exit(1)
+path = os.path.join(os.getcwd())
+for file in os.listdir(path):
+   if re.match('^\.git.*', file):
+      continue
+   current = '"'+os.path.join(path, file)+'"'
+   return_code = subprocess.call(['clearfsimport', '-recurse', '-rmname', '-nsetevent', current, '"'+os.path.join('M:/', viewTag, componentVob, componentName)+'"'])
+   if return_code != 0:
+      sys.exit(return_code)
