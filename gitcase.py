@@ -100,6 +100,7 @@ for file in os.listdir(path):
    if re.match('^\.git.*', file):
       continue
    current = '"'+os.path.join(path, file)+'"'
-   return_code = subprocess.call(['clearfsimport', '-recurse', '-rmname', '-nsetevent', current, '"'+os.path.join('M:/', viewTag, componentVob, componentName)+'"'])
+   #return_code = subprocess.call(['clearfsimport', '-recurse', '-rmname', '-nsetevent', current, '"'+os.path.join('M:/', viewTag, componentVob, componentName)+'"'])
+   return_code = subprocess.call(['clearfsimport', '-recurse', '-rmname', '-nsetevent', '-preview', current, '"'+os.path.join('M:/', viewTag, componentVob, componentName)+'"'])
    if return_code != 0:
       sys.exit(return_code)
