@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project version="5.3">
-  <ProjectConfiguration context="General">
+  <ProjectConfiguration context="General" language="">
     <GeneratedDocumentConfiguration publishOutput="publisher\doc\output.doc" isMaster="true" publishTemplate="template_eng.dot"></GeneratedDocumentConfiguration>
     <DocumentProperty id="doc.title" name="Document Title" value="VERSION DELIVERY DESCRIPTION" type="string"></DocumentProperty>
     <DocumentProperty id="doc.type" name="Document Type" value="VDD" type="string"></DocumentProperty>
