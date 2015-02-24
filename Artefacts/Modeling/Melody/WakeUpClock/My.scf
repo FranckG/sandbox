@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<filter:Not xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:filter="http://www.thalesgroup.com/mde/melody/semantic/connector/filter/1.0">
-  <filter xsi:type="filter:SimpleModelElementFilter">
-    <elements xsi:type="ecore:EClass" href="http://www.thalesgroup.com/mde/shared/activity/2.4.0#//AbstractAction"/>
-  </filter>
-</filter:Not>

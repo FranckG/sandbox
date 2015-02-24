@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<IVVQManagement SchemaVersion="3">
-  <CurrentTestCampaign>
-    <ID><![CDATA[V1_MetricsKPI]]></ID>
-    <Name><![CDATA[v5.3_Metrics_KPI]]></Name>
-  </CurrentTestCampaign>
-  <ProjectName><![CDATA[MetricsKPIs]]></ProjectName>
-</IVVQManagement>

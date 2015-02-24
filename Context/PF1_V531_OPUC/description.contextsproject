@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<contextsproject:ContextsProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:contextsproject="http://com.thalesgroup.orchestra/framework/4_0_13/contextsproject">
-  <administrators id="dsi_1"/>
-  <contextReferences uri="platform:/resource/PF1_V531_OPUC/PF1_V531_OPUC.contexts" id="e1af75e0-567b-4a85-9092-47112f1c267f" name="PF1_V5.3.1_OPUC"/>
-</contextsproject:ContextsProject>

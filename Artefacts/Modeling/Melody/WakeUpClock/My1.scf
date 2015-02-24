@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<filter:Not xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:filter="http://www.thalesgroup.com/mde/melody/semantic/connector/filter/1.0">
-  <filter xsi:type="filter:SimpleModelElementFilter"/>
-</filter:Not>
