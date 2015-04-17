@@ -1,0 +1,6 @@
+/*
+ * Orchestra Link Manager LinkWith
+ */
+#include <LinkManagement/OrchestraLinkManager.inc>
+
+orclm_LinkManagerExecuteCommand("LMNavigate", true)

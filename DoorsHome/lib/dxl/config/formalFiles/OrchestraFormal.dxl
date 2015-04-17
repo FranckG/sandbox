@@ -1,0 +1,13 @@
+#include <OrchestraInstall.inc>
+
+createMenu(alwaysOn, "Orchestra", 'O', null)
+	if (checkIVVscripts == true) { IVVmenuON }
+		else { IVVmenuOFF }
+	createItem(forProjectManagerOnly_Papeete, "Select Mozart display attribute...", 's', null, null, null, null, null, "", CInstallDirectory.."DefineMozartFullNameForTheModule.dxl")
+	createMenu(alwaysOn, "LinkManager", 'L', null)
+		createItem(OrchestraLMInstalled_, "Display Status Link against the current LM context", 'M', null, null, null, null, null, "", CInstallDirectory.."\\LinkManagement\\ShowStatusInLinkManagementProject.dxl")
+	end menu
+	createMenu(inASurrogateModule, "Migration", 'M', null)
+		createItem(inASurrogateModule, "Generate file for migration to the LinkManager", '4',null, null, null, null, null, "", CInstallDirectory.."Migration\\OrchestraMigrateSMtoLM.dxl")
+	end menu
+end menu

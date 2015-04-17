@@ -1,0 +1,20 @@
+pragma encoding, "UTF-8"
+pragma runLim, 0
+
+#include <OrchestraConstantes.inc>
+#include <OrchestraInstall.inc>
+#include <OMIManagement/OrchestraManageOMI.inc>
+
+Skip otop_selectedItems = getSelectedItems()
+Item otop_selectedItem
+Skip tpfo_skpProjectList = createString
+
+for otop_selectedItem in otop_selectedItems do {
+	if (type(otop_selectedItem) == CProject) {
+		put(tpfo_skpProjectList, fullName(otop_selectedItem), fullName(otop_selectedItem))
+	}
+}
+
+#include <OMIManagement/tagProjectForOrchestra.inc>
+
+tpfo_TagProjectList()

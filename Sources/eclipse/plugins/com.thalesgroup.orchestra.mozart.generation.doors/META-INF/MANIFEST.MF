@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Doors Default Generation Plugin
+Bundle-SymbolicName: com.thalesgroup.orchestra.mozart.generation.doors;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Require-Bundle: org.eclipse.core.runtime;bundle-version="3.5.0",
+ com.thalesgroup.orchestra.mozart.generation.generic;bundle-version="1.0.0"
+Bundle-Vendor: THALESGROUP
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-Activator: com.thalesgroup.orchestra.mozart.generation.doors.Activator
+Bundle-ActivationPolicy: lazy
+Export-Package: com.thalesgroup.orchestra.mozart.generation.doors.handlers,
+ com.thalesgroup.orchestra.mozart.generation.doors.velocity

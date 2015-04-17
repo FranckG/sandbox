@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="8.0.2" version="8.0.2" Modules="enterprise" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_MINDOTNETVERSION" MultiBuildValue="DefaultBuild:4.0" ValueLocId="-"/>
+    <ROW Property="AI_PRODUCTNAME_ARP" Value="[|Manufacturer] - [|ProductName] [|ProductVersion]"/>
+    <ROW Property="AI_UNINSTALLER" Value="msiexec.exe"/>
+    <ROW Property="ALLUSERS" Value="2"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="ARPCONTACT" Value="orchestra-support@thalesgroup.com"/>
+    <ROW Property="ARPHELPLINK" Value="http://wiki.corp.thales/display/sswb/Support"/>
+    <ROW Property="ARPHELPTELEPHONE" Value="+33 1 73 22 31 37"/>
+    <ROW Property="ARPNOMODIFY" MultiBuildValue="DefaultBuild:1"/>
+    <ROW Property="ARPNOREPAIR" Value="1"/>
+    <ROW Property="ARPPRODUCTICON" Value="Orchestra.exe" Type="8"/>
+    <ROW Property="ARPSYSTEMCOMPONENT" Value="1"/>
+    <ROW Property="ARPURLINFOABOUT" Value="http://intranet.corp.thales/orchestra/pub/"/>
+    <ROW Property="BannerBitmap" MultiBuildValue="DefaultBuild:orchestra_banner.bmp" Type="1"/>
+    <ROW Property="BuildNumber" Value="0"/>
+    <ROW Property="Company" Value="Thales"/>
+    <ROW Property="DialogBitmap" MultiBuildValue="DefaultBuild:orchestra_dialog.bmp" Type="1"/>
+    <ROW Property="Division" Value="EPM" Options="1"/>
+    <ROW Property="LicenceFile" Value="no file"/>
+    <ROW Property="MSIFASTINSTALL" MultiBuildValue="DefaultBuild:3"/>
+    <ROW Property="Manufacturer" Value="Orchestra" ValueLocId="*"/>
+    <ROW Property="ProductCode" Value="1033:{093831FD-4E1D-444D-B518-33CCC16B2352} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="Your Application" ValueLocId="*"/>
+    <ROW Property="ProductVersion" Value="1.0.0"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="SupportedVersionsOfDoors" Value="9.5"/>
+    <ROW Property="UpgradeCode" Value="{1F83D3E3-AEBC-44B6-876A-E58818AEAB4E}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="Compatibilities_DIR" Directory_Parent="OrchestraDoctor_DIR" DefaultDir="Compat~1|Compatibilities"/>
+    <ROW Directory="OrchestraDoctor_DIR" Directory_Parent="SHAREDDIRECTORY" DefaultDir="Orches~1|OrchestraDoctor"/>
+    <ROW Directory="SHAREDDIRECTORY" Directory_Parent="TARGETDIR" DefaultDir="SHARED~1|SHAREDDIRECTORY" IsPseudoRoot="1"/>
+    <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="AI_CustomARPName" ComponentId="{61AF6239-A398-4FDF-B085-E1BF0E47F188}" Directory_="APPDIR" Attributes="4" KeyPath="DisplayName" Options="1"/>
+    <ROW Component="AI_DisableModify" ComponentId="{3BD3640C-3387-44C8-8ECE-AFD40A889392}" Directory_="APPDIR" Attributes="4" KeyPath="NoModify" Options="1"/>
+    <ROW Component="DoorsConnector.exe" ComponentId="{3A351880-DE68-49AF-AEFA-60165CF6A1F6}" Directory_="APPDIR" Attributes="0" KeyPath="DoorsConnector.exe"/>
+    <ROW Component="DoorsEnvironment.dll" ComponentId="{7ACE8C3E-29C4-4237-B9D3-478E7831A2A5}" Directory_="APPDIR" Attributes="0" KeyPath="DoorsEnvironment.dll"/>
+    <ROW Component="Interop.DoorsTypeLibrary.dll" ComponentId="{8BD24E99-41FD-4A56-AD5E-842E9429AB00}" Directory_="APPDIR" Attributes="0" KeyPath="Interop.DoorsTypeLibrary.dll"/>
+    <ROW Component="MsiActions.dll" ComponentId="{2C523641-2DBD-4A37-9912-08E1134C430A}" Directory_="APPDIR" Attributes="0" KeyPath="MsiActions.dll"/>
+    <ROW Component="compatibilityConnectorDOORS.xml" ComponentId="{D8AE3E88-C264-4666-B1A3-89383EEE4E0E}" Directory_="Compatibilities_DIR" Attributes="0" KeyPath="compatibilityConnectorDOORS.xml" Type="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="Doors95" Title="Doors95" Description="Description" Display="7" Level="4" Directory_="APPDIR" Attributes="0" Options="32" Components="AI_CustomARPName AI_DisableModify"/>
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="5" Level="1" Directory_="APPDIR" Attributes="0" Components="AI_CustomARPName AI_DisableModify DoorsEnvironment.dll MsiActions.dll DoorsConnector.exe Interop.DoorsTypeLibrary.dll compatibilityConnectorDOORS.xml"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="DoorsConnector.exe" Component_="DoorsConnector.exe" FileName="DoorsC~1.exe|DoorsConnector.exe" Attributes="1" SourcePath="&lt;WORKSPACE&gt;ConnectorHome\DoorsConnector-x86.exe" SelfReg="false" Sequence="3"/>
+    <ROW File="DoorsEnvironment.dll" Component_="DoorsEnvironment.dll" FileName="DoorsE~1.dll|DoorsEnvironment.dll" Attributes="1" SourcePath="&lt;WORKSPACE&gt;ConnectorHome\DoorsEnvironment.dll" SelfReg="dotNetComInterop" RegSynch="build" Sequence="1"/>
+    <ROW File="Interop.DoorsTypeLibrary.dll" Component_="Interop.DoorsTypeLibrary.dll" FileName="Intero~1.dll|Interop.DoorsTypeLibrary.dll" Attributes="1" SourcePath="&lt;WORKSPACE&gt;ConnectorHome\x86\Interop.DoorsTypeLibrary.dll" SelfReg="false" Sequence="4"/>
+    <ROW File="MsiActions.dll" Component_="MsiActions.dll" FileName="MsiAct~1.dll|MsiActions.dll" Attributes="1" SourcePath="&lt;WORKSPACE&gt;ConnectorHome\MsiActions.dll" SelfReg="false" Sequence="2"/>
+    <ROW File="compatibilityConnectorDOORS.xml" Component_="compatibilityConnectorDOORS.xml" FileName="compat~1.xml|compatibilityConnectorDOORS.xml" Attributes="0" SourcePath="&lt;WORKSPACE&gt;Compatibility\compatibilityConnectorDOORS.xml" SelfReg="false" Sequence="5"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="1" PackageFolder="..\..\..\..\rj_P_PackagingAdvInst_int\ORCHESTRA2\PackagingAdvInst\templates" PackageFileName="setup" Languages="en" InstallationType="4"/>
+    <ATTRIBUTE name="CurrentBuild" value="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.CacheComponent">
+    <ATTRIBUTE name="Enable" value="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="LicenseAgreementDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\LicenseAgreementDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiAppSearchComponent">
+    <ROW Property="AI_DOTNET40_SEARCH" Signature_="AI_DotNet40SearchSgn" Builds="DefaultBuild"/>
+    <ROW Property="DOORS_HOME_95" Signature_="AppSearchSign_1"/>
+    <ROW Property="ORC_FMK_INSTALL_DIR" Signature_="AppSearchSign_2"/>
+    <ROW Property="SHAREDDIRECTORY" Signature_="AppSearchSign_3"/>
+    <ROW Property="LINK_MANAGER_INSTALL_DIR" Signature_="AppSearchSign_4"/>
+    <ROW Property="REGASM_40_PATH" Signature_="FileSearchSign"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+    <ROW Name="dotNetCustAct.dll" SourcePath="&lt;AI_CUSTACTS&gt;dotNetCustAct.dll"/>
+    <ROW Name="dotNetCustAct.dll_1" SourcePath="&lt;AI_CUSTACTS64&gt;dotNetCustAct.dll"/>
+    <ROW Name="extract_parent_dir.vbs" SourcePath="&lt;MSI_RESOURCES&gt;scripts\extract_parent_dir.vbs"/>
+    <ROW Name="orchestra_banner.bmp" SourcePath="&lt;MSI_RESOURCES&gt;images\orchestra-banner.bmp"/>
+    <ROW Name="orchestra_dialog.bmp" SourcePath="&lt;MSI_RESOURCES&gt;images\orchestra-dialog.bmp"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiConditionComponent">
+    <ROW Feature_="Doors95" Level="1" Condition="DOORS_HOME_95" Options="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlComponent">
+    <ROW Dialog_="LicenseAgreementDlg" Control="AgreementText" Type="FileScrollableText" X="20" Y="60" Width="330" Height="120" Attributes="7" Text="&lt;MSI_RESOURCES&gt;Licenses\Orchestra_License_Agreement.rtf" Control_Next="Buttons" TextLocId="Control.Text.LicenseAgreementDlg#AgreementText_2" MsiKey="LicenseAgreementDlg#AgreementText"/>
+    <ROW Dialog_="FolderDlg" Control="Description" Type="Text" X="25" Y="23" Width="215" Height="15" Attributes="196611" Text="This is the folder where [ProductName] will be installed." Control_Next="BannerLine" TextLocId="Control.Text.FolderDlg#Description" MsiKey="FolderDlg#Description"/>
+    <ROW Dialog_="AdminBrowseDlg" Control="Description" Type="Text" X="25" Y="23" Width="215" Height="15" Attributes="196611" Text="Browse to the destination folder" Control_Next="BannerLine" TextLocId="Control.Text.AdminBrowseDlg#Description" MsiKey="AdminBrowseDlg#Description"/>
+    <ROW Dialog_="AdminInstallPointDlg" Control="Description" Type="Text" X="25" Y="20" Width="217" Height="20" Attributes="196611" Text="Please specify a network location for the server image of [ProductName] product" Control_Next="BannerLine" TextLocId="Control.Text.AdminInstallPointDlg#Description" MsiKey="AdminInstallPointDlg#Description"/>
+    <ROW Dialog_="AdminRegistrationDlg" Control="Description" Type="Text" X="25" Y="23" Width="215" Height="15" Attributes="196611" Text="Please enter your company information" Control_Next="BannerLine" TextLocId="Control.Text.AdminRegistrationDlg#Description" MsiKey="AdminRegistrationDlg#Description"/>
+    <ROW Dialog_="BrowseDlg" Control="Description" Type="Text" X="25" Y="23" Width="215" Height="15" Attributes="196611" Text="Browse to the destination folder" Control_Next="BannerLine" TextLocId="Control.Text.BrowseDlg#Description" MsiKey="BrowseDlg#Description"/>
+    <ROW Dialog_="CustomizeDlg" Control="Description" Type="Text" X="25" Y="23" Width="215" Height="15" Attributes="196611" Text="Select the way you want features to be installed." Control_Next="Box" TextLocId="Control.Text.CustomizeDlg#Description" MsiKey="CustomizeDlg#Description"/>
+    <ROW Dialog_="DiskCostDlg" Control="Description" Type="Text" X="20" Y="20" Width="206" Height="20" Attributes="196611" Text="The disk space required for the installation of the selected features." Control_Next="BannerLine" TextLocId="Control.Text.DiskCostDlg#Description" MsiKey="DiskCostDlg#Description"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control="Description" Type="Text" X="25" Y="23" Width="248" Height="20" Attributes="196611" Text="Select the operation you wish to perform." Control_Next="ChangeText" TextLocId="Control.Text.MaintenanceTypeDlg#Description" MsiKey="MaintenanceTypeDlg#Description"/>
+    <ROW Dialog_="OutOfDiskDlg" Control="Description" Type="Text" X="20" Y="20" Width="206" Height="20" Attributes="196611" Text="Disk space required for the installation exceeds available disk space." Control_Next="BannerLine" TextLocId="Control.Text.OutOfDiskDlg#Description" MsiKey="OutOfDiskDlg#Description"/>
+    <ROW Dialog_="OutOfRbDiskDlg" Control="Description" Type="Text" X="20" Y="20" Width="206" Height="20" Attributes="196611" Text="Disk space required for the installation exceeds available disk space." Control_Next="BannerLine" TextLocId="Control.Text.OutOfRbDiskDlg#Description" MsiKey="OutOfRbDiskDlg#Description"/>
+    <ROW Dialog_="VerifyReadyDlg" Control="Description" Type="Text" X="25" Y="23" Width="249" Height="15" Attributes="196611" Text="The [Wizard] is ready to begin the [ProductName] installation" Control_Next="BannerLine" TextLocId="Control.Text.VerifyReadyDlg#Description" MsiKey="VerifyReadyDlg#Description"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control="Description" Type="Text" X="25" Y="23" Width="215" Height="15" Attributes="196611" Text="You have chosen to remove the program from your computer." Control_Next="BannerLine" TextLocId="Control.Text.VerifyRemoveDlg#Description" MsiKey="VerifyRemoveDlg#Description"/>
+    <ROW Dialog_="VerifyRepairDlg" Control="Description" Type="Text" X="25" Y="23" Width="215" Height="15" Attributes="196611" Text="The [Wizard] is ready to begin the repair of [ProductName]." Control_Next="BannerLine" TextLocId="Control.Text.VerifyRepairDlg#Description" MsiKey="VerifyRepairDlg#Description"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control="Description" Type="Text" X="25" Y="23" Width="249" Height="15" Attributes="196611" Text="Please read the following license agreement carefully" Control_Next="Title" TextLocId="Control.Text.LicenseAgreementDlg#Description" MsiKey="LicenseAgreementDlg#Description"/>
+    <ATTRIBUTE name="FixedSizeBitmaps" value="2"/>
+    <ATTRIBUTE name="MultiBuildFixedSizeBitmaps" value="DefaultBuild:0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="LicenseAgreementDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="LicenseAgreementDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="301"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_DATA_SETTER" Type="51" Source="CustomActionData" Target="APPDIR|DEFAULT_LOCATION"/>
+    <ROW Action="AI_DATA_SETTER_1" Type="51" Source="INSTALL_ACTIONS" Target="/LogFile= /ReqVersion=4.0 /InstallType=notransaction /Action=Install /SV=&quot;[SupportedVersionsOfDoors]&quot; &quot;[#MsiActions.dll]&quot; &quot;[TempFolder]dotNetCustAct.dll_Config.xml&quot;"/>
+    <ROW Action="AI_DATA_SETTER_2" Type="51" Source="INSTALL_ACTIONS_64" Target="/LogFile= /ReqVersion=4.0 /InstallType=notransaction /Action=Install /SV=&quot;[SupportedVersionsOfDoors]&quot; &quot;[#MsiActions.dll]&quot; &quot;[TempFolder]dotNetCustAct.dll_Config.xml&quot;"/>
+    <ROW Action="AI_DATA_SETTER_3" Type="51" Source="UNINSTALL_ACTIONS" Target="/LogFile= /ReqVersion=4.0 /InstallType=notransaction /Action=Uninstall &quot;[#MsiActions.dll]&quot; &quot;[TempFolder]dotNetCustAct.dll_2_Config.xml&quot;"/>
+    <ROW Action="AI_DATA_SETTER_4" Type="51" Source="UNINSTALL_ACTIONS_64" Target="/LogFile= /ReqVersion=4.0 /InstallType=notransaction /Action=Uninstall &quot;[#MsiActions.dll]&quot; &quot;[TempFolder]dotNetCustAct.dll_2_Config.xml&quot;"/>
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_GetArpIconPath" Type="1" Source="aicustact.dll" Target="GetArpIconPath"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="APPEND_PRODUCT_NAME" Type="307" Source="INSTALL_LOCATION" Target="[DEFAULT_LOCATION][ProductName]\"/>
+    <ROW Action="DEFAULT_LOCATION_FALLBACK" Type="307" Source="DEFAULT_LOCATION" Target="[WindowsVolume][Manufacturer]\[Company]"/>
+    <ROW Action="FORMAT_DEFAULT_LOCATION" Type="307" Source="DEFAULT_LOCATION" Target="[DEFAULT_LOCATION]\"/>
+    <ROW Action="INSTALL_ACTIONS" Type="3073" Source="dotNetCustAct.dll" Target="LaunchDotNetCustomAction"/>
+    <ROW Action="INSTALL_ACTIONS_64" Type="3073" Source="dotNetCustAct.dll_1" Target="LaunchDotNetCustomAction"/>
+    <ROW Action="RegasmInstall" Type="3106" Source="APPDIR" Target="[REGASM_40_PATH] &quot;[#DoorsConnector.exe]&quot;"/>
+    <ROW Action="RegasmUninstall" Type="3106" Source="APPDIR" Target="[REGASM_40_PATH] /u &quot;[#DoorsConnector.exe]&quot;"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[APPDIR]" MultiBuildTarget="DefaultBuild:[INSTALL_LOCATION]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+    <ROW Action="SHORTCUTDIR" Type="35" Source="SHORTCUTDIR" Target="[ProgramMenuFolder]\[Manufacturer]\OrchestraFramework"/>
+    <ROW Action="UNINSTALL_ACTIONS" Type="3073" Source="dotNetCustAct.dll" Target="LaunchDotNetCustomAction"/>
+    <ROW Action="UNINSTALL_ACTIONS_64" Type="3073" Source="dotNetCustAct.dll_1" Target="LaunchDotNetCustomAction"/>
+    <ROW Action="extract_parent_dir.vbs" Type="6" Source="extract_parent_dir.vbs" Target="Main"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDrLocatorComponent">
+    <ROW Signature_="FileSearchSign" Path="[WindowsFolder]Microsoft.NET\Framework\v4.0.30319" Depth="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="Orchestra.exe" SourcePath="&lt;MSI_RESOURCES&gt;icons\Orchestra.ico" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="Not Installed" Sequence="1503"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_GetArpIconPath" Sequence="51"/>
+    <ROW Action="APPEND_PRODUCT_NAME" Condition="(NOT Installed) AND (NOT APPDIR)" Sequence="603"/>
+    <ROW Action="FORMAT_DEFAULT_LOCATION" Condition="NOT (DEFAULT_LOCATION &gt;&gt; &quot;\&quot;)" Sequence="602"/>
+    <ROW Action="extract_parent_dir.vbs" Condition="(Not Installed)" Sequence="1502" AdditionalSeq="AI_DATA_SETTER"/>
+    <ROW Action="AI_DATA_SETTER" Condition="(Not Installed)" Sequence="1501"/>
+    <ROW Action="DEFAULT_LOCATION_FALLBACK" Condition="(NOT DEFAULT_LOCATION) AND (NOT Installed)" Sequence="601"/>
+    <ROW Action="SHORTCUTDIR" Sequence="1001"/>
+    <ROW Action="RegasmInstall" Condition="NOT Installed" Sequence="5935"/>
+    <ROW Action="RegasmUninstall" Condition="REMOVE=&quot;ALL&quot;" Sequence="1651"/>
+    <ROW Action="INSTALL_ACTIONS" Condition="( NOT Installed ) AND ( NOT (VersionNT64) )" Sequence="5937" AdditionalSeq="AI_DATA_SETTER_1"/>
+    <ROW Action="INSTALL_ACTIONS_64" Condition="( NOT Installed ) AND ( VersionNT64 )" Sequence="5939" AdditionalSeq="AI_DATA_SETTER_2"/>
+    <ROW Action="AI_DATA_SETTER_1" Condition="( NOT Installed ) AND ( NOT (VersionNT64) )" Sequence="5936"/>
+    <ROW Action="AI_DATA_SETTER_2" Condition="( NOT Installed ) AND ( VersionNT64 )" Sequence="5938"/>
+    <ROW Action="UNINSTALL_ACTIONS" Condition="( REMOVE=&quot;ALL&quot; ) AND ( NOT (VersionNT64) )" Sequence="1653" AdditionalSeq="AI_DATA_SETTER_3"/>
+    <ROW Action="UNINSTALL_ACTIONS_64" Condition="( REMOVE=&quot;ALL&quot; ) AND ( VersionNT64 )" Sequence="1655" AdditionalSeq="AI_DATA_SETTER_4"/>
+    <ROW Action="AI_DATA_SETTER_3" Condition="( REMOVE=&quot;ALL&quot; ) AND ( NOT (VersionNT64) )" Sequence="1652"/>
+    <ROW Action="AI_DATA_SETTER_4" Condition="( REMOVE=&quot;ALL&quot; ) AND ( VersionNT64 )" Sequence="1654"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="51"/>
+    <ROW Action="APPEND_PRODUCT_NAME" Condition="(NOT Installed) AND (NOT APPDIR)" Sequence="603"/>
+    <ROW Action="FORMAT_DEFAULT_LOCATION" Condition="NOT (DEFAULT_LOCATION &gt;&gt; &quot;\&quot;)" Sequence="602"/>
+    <ROW Action="DEFAULT_LOCATION_FALLBACK" Condition="(NOT DEFAULT_LOCATION) AND (NOT Installed)" Sequence="601"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="(AI_DOTNET40_SEARCH = &quot;#1&quot;)" Description="[ProductName] cannot be installed on systems with .NET Framework version lower than [AI_MINDOTNETVERSION]" DescriptionLocId="AI.LaunchCondition.DotNET" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="DOORS_HOME_95" Description="Please install DOORS (9.5.1) prior to installing this product."/>
+    <ROW Condition="ORC_FMK_INSTALL_DIR" Description="Please install OrchestraFramework prior to installing this product."/>
+    <ROW Condition="Privileged" Description="[ProductName] requires administrative privileges to install." DescriptionLocId="AI.LaunchCondition.Privileged" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="SHAREDDIRECTORY" Description="Registry value &quot;HKLM\SOFTWARE\Thales\EPM\Orchestra\Products\SharedDirectory&quot; is missing"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]" DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRadioButtonComponent">
+    <ROW Property="IAgree" Order="1" Value="Yes" X="5" Y="6" Width="250" Height="15" Text="I &amp;accept the terms in the License Agreement" TextStyle="DlgFont8" TextLocId="RadioButton.Text.IAgree#1" MsiKey="IAgree#1"/>
+    <ROW Property="IAgree" Order="2" Value="No" X="5" Y="21" Width="250" Height="15" Text="I &amp;do not accept the terms in the License Agreement" TextStyle="DlgFont8" TextLocId="RadioButton.Text.IAgree#2" MsiKey="IAgree#2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegLocatorComponent">
+    <ROW Signature_="AI_DotNet40SearchSgn" Root="2" Key="SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full" Name="Install" Type="2"/>
+    <ROW Signature_="AppSearchSign_1" Root="2" Key="SOFTWARE\Telelogic\DOORS\9.5" Name="InstallationDirectory" Type="2"/>
+    <ROW Signature_="AppSearchSign_2" Root="2" Key="SOFTWARE\Thales\EPM\Orchestra\Products\OrchestraFramework" Name="InstallLocation" Type="2"/>
+    <ROW Signature_="AppSearchSign_3" Root="2" Key="SOFTWARE\Thales\EPM\Orchestra\Products" Name="SharedDirectory" Type="2"/>
+    <ROW Signature_="AppSearchSign_4" Root="2" Key="SOFTWARE\Thales\EPM\Orchestra\Products\LinkManager" Name="InstallLocation" Type="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="Comments" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName]" Name="Comments" Value="This installer database contains the logic and data required to install [ProductName]." Component_="AI_CustomARPName"/>
+    <ROW Registry="Contact" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName]" Name="Contact" Value="orchestra-support@thalesgroup.com" Component_="AI_CustomARPName"/>
+    <ROW Registry="DisplayIcon" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName]" Name="DisplayIcon" Value="[ARP_ICON_PATH]" Component_="AI_CustomARPName"/>
+    <ROW Registry="DisplayName" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName]" Name="DisplayName" Value="[AI_PRODUCTNAME_ARP]" Component_="AI_CustomARPName"/>
+    <ROW Registry="DisplayVersion" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName]" Name="DisplayVersion" Value="1.0.0" Component_="AI_CustomARPName"/>
+    <ROW Registry="HelpLink" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName]" Name="HelpLink" Value="http://wiki.corp.thales/display/sswb/Support" Component_="AI_CustomARPName"/>
+    <ROW Registry="HelpTelephone" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName]" Name="HelpTelephone" Value="+33 1 73 22 31 37" Component_="AI_CustomARPName"/>
+    <ROW Registry="InstallLocation" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName]" Name="InstallLocation" Value="[APPDIR]" Component_="AI_CustomARPName"/>
+    <ROW Registry="ModifyPath" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName]" Name="ModifyPath" Value="[AI_UNINSTALLER] /I [ProductCode]" Component_="AI_CustomARPName"/>
+    <ROW Registry="NoModify" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName]" Name="NoModify" Value="#1" Component_="AI_DisableModify"/>
+    <ROW Registry="Publisher" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName]" Name="Publisher" Value="Orchestra" Component_="AI_CustomARPName"/>
+    <ROW Registry="URLInfoAbout" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName]" Name="URLInfoAbout" Value="http://intranet.corp.thales/orchestra/pub/" Component_="AI_CustomARPName"/>
+    <ROW Registry="URLUpdateInfo" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName]" Name="URLUpdateInfo" Component_="AI_CustomARPName"/>
+    <ROW Registry="UninstallString" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName]" Name="UninstallString" Value="[AI_UNINSTALLER] /x [ProductCode]" Component_="AI_CustomARPName"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiSignatureComponent">
+    <ROW Signature="FileSearchSign" FileName="regasm.exe" MinVersion="4.0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMax="[|ProductVersion]" Attributes="1025" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+</DOCUMENT>

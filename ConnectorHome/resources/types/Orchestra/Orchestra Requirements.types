@@ -1,0 +1,138 @@
+
+[Types]
+Names=Orchestra Requirements
+
+[Orchestra Requirements]
+Tool=Papeete
+Image=doors_EPM_project
+Print=$i (version ${ModuleVersion})
+Variable1Name=FmkExtMethod
+Variable1Label=Extraction Type
+Variable1Type=enum
+Variable1EnumValues=XML_LM,XML_DOC
+IsFileBased=0
+Requirement1Name=DoorsRequirement
+Requirement1Print=$l
+Requirement1Image=doors_requirement
+Requirement1Tree=<ELEMENT type="^requirement$" uri="$u([^\?]*)"><PROPERTIES><PROPERTY name="LMLabel">$l</PROPERTY><PROPERTY name="toolId">$i</PROPERTY><PROPERTY name="^Object Text$">$t$o</PROPERTY></PROPERTIES></ELEMENT>
+Requirement2Name=DoorsFunction
+Requirement2Print=$l
+Requirement2Image=doors_function
+Requirement2Tree=<ELEMENT uri="$u([^\?]*)" type="^function$"><PROPERTIES><PROPERTY name="toolId">$i</PROPERTY><PROPERTY name="LMLabel">$l</PROPERTY><PROPERTY name="^Object Text$">$t$o</PROPERTY></PROPERTIES></ELEMENT>
+Requirement3Name=DoorsCapability
+Requirement3Print=$l
+Requirement3Image=doors_capability
+Requirement3Tree=<ELEMENT uri="$u([^\?]*)" type="^capability$"><PROPERTIES><PROPERTY name="toolId">$i</PROPERTY><PROPERTY name="LMLabel">$l</PROPERTY><PROPERTY name="^Object Text$">$t$o</PROPERTY></PROPERTIES></ELEMENT>
+Requirement4Name=Doorsconfiguration item
+Requirement4Print=$l
+Requirement4Image=doors_untyped_node
+Requirement4Tree=<ELEMENT type="^configuration item$" uri="$u([^\?]*)"><PROPERTIES><PROPERTY name="toolId">$i</PROPERTY><PROPERTY name="LMLabel">$l</PROPERTY><PROPERTY name="^Object Text$">$t$o</PROPERTY></PROPERTIES></ELEMENT>
+Requirement5Name=Doorstechnical function
+Requirement5Print=$l
+Requirement5Image=doors_untyped_node
+Requirement5Tree=<ELEMENT type="^technical function$" uri="$u([^\?]*)"><PROPERTIES><PROPERTY name="toolId">$i</PROPERTY><PROPERTY name="LMLabel">$l</PROPERTY><PROPERTY name="^Object Text$">$t$o</PROPERTY></PROPERTIES></ELEMENT>
+Requirement6Name=Doorstest evidence
+Requirement6Print=$l
+Requirement6Image=doors_untyped_node
+Requirement6Tree=<ELEMENT type="^test evidence$" uri="$u([^\?]*)"><PROPERTIES><PROPERTY name="toolId">$i</PROPERTY><PROPERTY name="LMLabel">$l</PROPERTY><PROPERTY name="^Object Text$">$t$o</PROPERTY></PROPERTIES></ELEMENT>
+Requirement7Name=Doorsissue-decision
+Requirement7Print=$l
+Requirement7Image=doors_untyped_node
+Requirement7Tree=<ELEMENT type="^issue-decision$" uri="$u([^\?]*)"><PROPERTIES><PROPERTY name="toolId">$i</PROPERTY><PROPERTY name="LMLabel">$l</PROPERTY><PROPERTY name="^Object Text$">$t$o</PROPERTY></PROPERTIES></ELEMENT>
+Requirement8Name=Doorsmeasure
+Requirement8Print=$l
+Requirement8Image=doors_untyped_node
+Requirement8Tree=<ELEMENT type="^measure$" uri="$u([^\?]*)"><PROPERTIES><PROPERTY name="toolId">$i</PROPERTY><PROPERTY name="LMLabel">$l</PROPERTY><PROPERTY name="^Object Text$">$t$o</PROPERTY></PROPERTIES></ELEMENT>
+Requirement9Name=Doorsdocument
+Requirement9Print=$l
+Requirement9Image=doors_untyped_node
+Requirement9Tree=<ELEMENT type="^document$" uri="$u([^\?]*)"><PROPERTIES><PROPERTY name="toolId">$i</PROPERTY><PROPERTY name="LMLabel">$l</PROPERTY><PROPERTY name="^Object Text$">$t$o</PROPERTY></PROPERTIES></ELEMENT>
+Requirement10Name=Doorsreference
+Requirement10Print=$l
+Requirement10Image=doors_untyped_node
+Requirement10Tree=<ELEMENT type="^reference$" uri="$u([^\?]*)"><PROPERTIES><PROPERTY name="toolId">$i</PROPERTY><PROPERTY name="LMLabel">$l</PROPERTY><PROPERTY name="^Object Text$">$t$o</PROPERTY></PROPERTIES></ELEMENT>
+Requirement11Name=Doorsjustification
+Requirement11Print=$l
+Requirement11Image=doors_untyped_node
+Requirement11Tree=<ELEMENT type="^justification$" uri="$u([^\?]*)"><PROPERTIES><PROPERTY name="toolId">$i</PROPERTY><PROPERTY name="LMLabel">$l</PROPERTY><PROPERTY name="^Object Text$">$t$o</PROPERTY></PROPERTIES></ELEMENT>
+Requirement12Name=Element
+Requirement12Print=$l
+Requirement12Image=doors_EPM_object
+Requirement12Tree=<ELEMENT uri="$u([^\?]*)" type="^Object$">$p<PROPERTIES><PROPERTY name="toolId">$i</PROPERTY><PROPERTY name="LMLabel">$l</PROPERTY><PROPERTY name="^Object Text$">$t$o</PROPERTY></PROPERTIES></ELEMENT>
+Requirement13Name=DoorsCR Impact
+Requirement13Print=$l
+Requirement13Image=doors_untyped_node
+Requirement13Tree=<ELEMENT type="^cr impact$" uri="$u([^\?]*)"><PROPERTIES><PROPERTY name="toolId">$i</PROPERTY><PROPERTY name="LMLabel">$l</PROPERTY><PROPERTY name="^Object Text$">$t$o</PROPERTY></PROPERTIES></ELEMENT>
+Requirement14Name=DoorsNonDocCR
+Requirement14Print=$l
+Requirement14Image=doors_untyped_node
+Requirement14Tree=<ELEMENT type="^non doc cr$" uri="$u([^\?]*)"><PROPERTIES><PROPERTY name="toolId">$i</PROPERTY><PROPERTY name="LMLabel">$l</PROPERTY><PROPERTY name="^Object Text$">$t$o</PROPERTY></PROPERTIES></ELEMENT>
+Requirement15Name=DoorsMission
+Requirement15Print=$l
+Requirement15Image=doors_untyped_node
+Requirement15Tree=<ELEMENT type="^mission$" uri="$u([^\?]*)"><PROPERTIES><PROPERTY name="toolId">$i</PROPERTY><PROPERTY name="LMLabel">$l</PROPERTY><PROPERTY name="^Object Text$">$t$o</PROPERTY></PROPERTIES></ELEMENT>
+Requirement16Name=DoorsNode
+Requirement16Print=$l
+Requirement16Image=doors_node
+Requirement16Tree=<ELEMENT type="^node$" uri="$u([^\?]*)"><PROPERTIES><PROPERTY name="LMLabel">$l</PROPERTY><PROPERTY name="toolId">$i</PROPERTY><PROPERTY name="^Object Text$">$t$o</PROPERTY></PROPERTIES></ELEMENT>
+Requirement17Name=DoorsText
+Requirement17Print=$l
+Requirement17Image=doors_text
+Requirement17Tree=<ELEMENT type="^text$" uri="$u([^\?]*)"><PROPERTIES><PROPERTY name="LMLabel">$l</PROPERTY><PROPERTY name="toolId">$i</PROPERTY><PROPERTY name="^Object Text$">$t$o</PROPERTY></PROPERTIES></ELEMENT>
+Requirement18Name=DoorsUntyped_node
+Requirement18Print=$l
+Requirement18Image=doors_untyped_node
+Requirement18Tree=<ELEMENT uri="$u([^\?]*)" type="^untyped_node$">$p<PROPERTIES><PROPERTY name="toolId">$i</PROPERTY><PROPERTY name="LMLabel">$l</PROPERTY><PROPERTY name="^Object Text$">$t$o</PROPERTY></PROPERTIES></ELEMENT>
+Requirement19Name=DoorsSourcedata
+Requirement19Print=$l
+Requirement19Image=doors_untyped_node
+Requirement19Tree=<ELEMENT uri="$u([^\?]*)" type="^source/data$">$p<PROPERTIES><PROPERTY name="toolId">$i</PROPERTY><PROPERTY name="LMLabel">$l</PROPERTY><PROPERTY name="^Object Text$">$t$o</PROPERTY></PROPERTIES></ELEMENT>
+Requirement20Name=DoorsTable
+Requirement20Print=$l
+Requirement20Image=doors_table
+Requirement20Tree=<ELEMENT uri="$u([^\?]*)" type="^Table$">$p<PROPERTIES><PROPERTY name="toolId">$i</PROPERTY><PROPERTY name="LMLabel">$l</PROPERTY><PROPERTY name="^Object Text$">$t$o</PROPERTY></PROPERTIES></ELEMENT>
+Reference1Name=satisfies
+Reference1Tree=<Element uri="$p([^\?]*)"><LINKS_TO_ELEMENTS><ELEMENT_REFERENCE linkDirection="^out$" uri="$i" linktype="^satisfies$"></ELEMENT_REFERENCE></LINKS_TO_ELEMENTS></Element>
+Reference2Name=verifies
+Reference2Tree=<Element uri="$p([^\?]*)"><LINKS_TO_ELEMENTS><ELEMENT_REFERENCE linkDirection="^out$" uri="$i" linktype="^verifies$"></ELEMENT_REFERENCE></LINKS_TO_ELEMENTS></Element>
+Reference3Name=is allocated by
+Reference3Tree=<Element uri="$p([^\?]*)"><LINKS_TO_ELEMENTS><ELEMENT_REFERENCE linkDirection="^out$" uri="$i" linktype="^is allocated by$"></ELEMENT_REFERENCE></LINKS_TO_ELEMENTS></Element>
+Reference4Name=is justified by
+Reference4Tree=<Element uri="$p([^\?]*)"><LINKS_TO_ELEMENTS><ELEMENT_REFERENCE linkDirection="^out$" uri="$i" linktype="^is justified by$"></ELEMENT_REFERENCE></LINKS_TO_ELEMENTS></Element>
+Reference5Name=is composed of
+Reference5Tree=<Element uri="$p([^\?]*)"><LINKS_TO_ELEMENTS><ELEMENT_REFERENCE linkDirection="^out$" uri="$i" linktype="^is composed of$"></ELEMENT_REFERENCE></LINKS_TO_ELEMENTS></Element>
+Reference6Name=refers to
+Reference6Tree=<Element uri="$p([^\?]*)"><LINKS_TO_ELEMENTS><ELEMENT_REFERENCE linkDirection="^out$" uri="$i" linktype="^refers to$"></ELEMENT_REFERENCE></LINKS_TO_ELEMENTS></Element>
+Reference7Name=follows
+Reference7Tree=<Element uri="$p([^\?]*)"><LINKS_TO_ELEMENTS><ELEMENT_REFERENCE linkDirection="^out$" uri="$i" linktype="^follows$"></ELEMENT_REFERENCE></LINKS_TO_ELEMENTS></Element>
+Reference8Name=is the result of
+Reference8Tree=<Element uri="$p([^\?]*)"><LINKS_TO_ELEMENTS><ELEMENT_REFERENCE linkDirection="^out$" uri="$i" linktype="^is the result of$"></ELEMENT_REFERENCE></LINKS_TO_ELEMENTS></Element>
+Reference9Name=describes
+Reference9Tree=<Element uri="$p([^\?]*)"><LINKS_TO_ELEMENTS><ELEMENT_REFERENCE linkDirection="^out$" uri="$i" linktype="^describes$"></ELEMENT_REFERENCE></LINKS_TO_ELEMENTS></Element>
+Attribute1Name=OriginalType
+Attribute1IsVisible=0
+Attribute1Tree=<ELEMENT type="$i" type="^Object$|^requirement$|^function$|^capability$|^configuration item$|^technical function$|^ivv procedure$|^test evidence$|^issue-decision$|^measure$|^document$|^reference$|^justification$|^cr impact$|^non doc cr$|^mission$|^node$|^text$|^untyped_node$|^source/data$|^Table$"></ELEMENT>
+Attribute2Name=uri
+Attribute2IsVisible=0
+Attribute2Tree=<ELEMENT uri="$i" type="^Object$|^requirement$|^function$|^capability$|^configuration item$|^technical function$|^ivv procedure$|^test evidence$|^issue-decision$|^measure$|^document$|^reference$|^justification$|^Module$|^View$|^cr impact$|^non doc cr$|^mission$|^node$|^text$|^untyped_node$|^source/data$|^Table$"></ELEMENT>
+Attribute3Name=ModuleVersion
+Attribute3IsVisible=0
+Attribute3Tree=<ELEMENT type="^Module$|^View$"><VERSION version="$i"></VERSION></ELEMENT>
+Attribute4Name=IE PUID
+Attribute4Print=$t : $i
+Attribute4Tree=<ELEMENT type="^requirement$"><PROPERTIES><PROPERTY name="IE PUID">$i</PROPERTY><PROPERTY name="IE PUID">$!^$</PROPERTY></PROPERTIES></ELEMENT>
+Attribute5Name=IE Test Method Expected
+Attribute5Print=$t : $i
+Attribute5Tree=<ELEMENT type="^requirement$"><PROPERTIES><PROPERTY name="^IE Test Method Expected$">$i</PROPERTY><PROPERTY name="^IE Test Method Expected$">$!^$</PROPERTY></PROPERTIES></ELEMENT>
+Attribute6Name=IE Req Status
+Attribute6Print=$t : $i
+Attribute6Tree=<ELEMENT type="^requirement$"><PROPERTIES><PROPERTY name="^IE Req Status$">$i</PROPERTY><PROPERTY name="^IE Req Status$">$!^$</PROPERTY></PROPERTIES></ELEMENT>
+Attribute7Name=RCM Version
+Attribute7Print=$t : $i
+Attribute7Tree=<ELEMENT type="^requirement$"><PROPERTIES><PROPERTY name="^RCM Version$">$i</PROPERTY><PROPERTY name="^RCM Version$">$!^$</PROPERTY></PROPERTIES></ELEMENT>
+Attribute8Name=IE Req Version
+Attribute8Print=$t : $i
+Attribute8Tree=<ELEMENT type="^requirement$"><PROPERTIES><PROPERTY name="^IE Req Version$">$i</PROPERTY><PROPERTY name="^IE Req Version$">$!^$</PROPERTY></PROPERTIES></ELEMENT>
+FileExtension=xml
+Type=xml
+

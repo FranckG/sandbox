@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         id="com.thalesgroup.orchestra.mozart.publicationContexts.doors.default"
+         name="com.thalesgroup.orchestra.mozart.publicationContexts.doors.default"
+         point="com.thalesgroup.orchestra.mozart.publicationContexts">
+   </extension>
+
+</plugin>

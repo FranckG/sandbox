@@ -1,0 +1,88 @@
+string OrchestraSegmentName = null
+
+string GetOrchestraSegmentName() {
+	OleAutoObj segmentNameObject = oleCreateAutoObject("Orchestra.VariableManager")
+	string sRetour
+	string sError
+	OleAutoArgs autoArgs = create
+	put(autoArgs, "\\Orchestra\\Segment")
+	sError = oleMethod(segmentNameObject, "GetVariableSeparatedBySemicolons", autoArgs, sRetour)
+	delete(autoArgs)
+	oleCloseAutoObject(segmentNameObject)
+	if (sError == null && sRetour != null)
+	{
+		return sRetour
+	}
+	else
+	{
+		return "Gold"
+	}
+}
+
+OrchestraSegmentName = GetOrchestraSegmentName()
+
+int LMNeedsCurrentObject() {
+	#include <OrchestraInstall.inc>
+	int intRetour = needsCurrentObject()
+	
+	if (length(COrchestraLMFullPath) == 0)
+	{
+		intRetour = menuInvisible_
+	}
+	else
+	{
+		if (null != OrchestraSegmentName && OrchestraSegmentName == "Silver")
+		{
+			return menuUnavailable_
+		}
+	}
+
+	return intRetour
+}
+
+int OrchestraPopupmenuOn() {
+	if (LMNeedsCurrentObject() == menuInvisible_)
+		return menuInvisible_
+	else
+		return menuAvailable_
+}
+
+//start IVV region
+int IVVoff () {
+    return menuUnavailable_
+}
+
+void IVVmenuON(){}
+void IVVmenuOFF(){}
+bool checkIVVscripts(){
+	return false
+}
+
+bool OrchestraFindFileInAddins (string sFileName)
+{
+    string addins = getenv "DOORSADDINS"
+    if (length(addins) > 0)
+    {
+		string paths = addins
+		string file
+		Stat st = null
+		while ( null st && matches("(^|;)([^;]+)(;|$)", lower(paths)) )
+		{
+			file = paths[match 2] FileSep_ sFileName
+			st = create(file)
+			if (! null st)
+			{
+				delete st
+				return true
+			}
+			paths = paths[end(0)+1:]
+		}
+	}
+    return false
+}
+
+if (OrchestraFindFileInAddins("IVVmenu.dxl")){
+	evalTop_ "#include <IVVmenu.dxl>" 
+}
+
+//end IVV region

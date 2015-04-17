@@ -1,0 +1,105 @@
+pragma encoding, "UTF-8"
+noError()
+Module orchestraTrigger_mCurrent = current
+if (null orchestraTrigger_mCurrent) halt
+Project orct_pCurrent = getParentProject(orchestraTrigger_mCurrent)
+if (null orct_pCurrent) halt
+string orct_ConfigFolder = fullName(orct_pCurrent) "/Config/"
+if (matches(orct_ConfigFolder, fullName(orchestraTrigger_mCurrent))) halt
+if (!isEdit orchestraTrigger_mCurrent) halt
+Module orchestraTrigger_CacheModule
+string orchestraTrigger_nameOfCacheModule = "/Orchestra Configuration/Orchestra Cache"
+if (fullName(orchestraTrigger_mCurrent) == orchestraTrigger_nameOfCacheModule) halt
+if (!module(orchestraTrigger_nameOfCacheModule)) {
+	if (!folder("/Orchestra Configuration")) {
+		Folder orchestraTrigger_f = create("/Orchestra Configuration", "Configuration folder for Orchestra")
+		if (null orchestraTrigger_f) halt
+		specific(orchestraTrigger_f)
+		set(orchestraTrigger_f, read|modify|create, "")
+	}
+	orchestraTrigger_CacheModule = create(orchestraTrigger_nameOfCacheModule, "Orchestra cache", "", 1, false)
+	if (null orchestraTrigger_CacheModule) halt
+	specific(orchestraTrigger_CacheModule)
+	set(orchestraTrigger_CacheModule, delete|create, "")
+}
+orchestraTrigger_CacheModule = edit(orchestraTrigger_nameOfCacheModule, false)
+if (null orchestraTrigger_CacheModule) halt
+current = orchestraTrigger_mCurrent
+Project orchestraTrigger_projectOfCurrentModule = getParentProject(orchestraTrigger_mCurrent)
+if (null orchestraTrigger_projectOfCurrentModule) {
+	if (open module orchestraTrigger_nameOfCacheModule){save(orchestraTrigger_CacheModule); close(orchestraTrigger_CacheModule)}
+	halt
+}
+string orchestraTrigger_currentProjectId = uniqueID(orchestraTrigger_projectOfCurrentModule)
+string orchestraTrigger_currentModuleId = uniqueID(module(fullName(orchestraTrigger_mCurrent)))
+AttrDef orchestraTrigger_attributDefinition = find (orchestraTrigger_mCurrent, "Orchestra Module Id")
+bool orchestraTrigger_attributeCreated = false
+string orchestraTrigger_IdForCreation = ( getDatabaseIdentifier ).."."..orchestraTrigger_currentModuleId
+if (null orchestraTrigger_attributDefinition && canCreate(orchestraTrigger_mCurrent)) {
+	orchestraTrigger_attributDefinition = create module type "string" attribute "Orchestra Module Id" default orchestraTrigger_IdForCreation""
+	orchestraTrigger_attributeCreated = true
+}
+if (null orchestraTrigger_attributDefinition) {
+	if (open module orchestraTrigger_nameOfCacheModule){save(orchestraTrigger_CacheModule); close(orchestraTrigger_CacheModule)}
+	halt
+}
+save orchestraTrigger_mCurrent
+Object orchestraTrigger_objectForProject
+Object orchestraTrigger_objectForModule
+bool orchestraTrigger_foundProject = false
+bool orchestraTrigger_foundModule = false
+string orchestraIDInCache
+string orchestraTrigger_doorsIdInCache
+string orchestraID = orchestraTrigger_mCurrent."Orchestra Module Id"
+if (length(orchestraID) == 0 || !matches("\\.",orchestraID)) {
+	orchestraTrigger_mCurrent."Orchestra Module Id" = orchestraTrigger_IdForCreation
+	orchestraID = orchestraTrigger_IdForCreation
+	save orchestraTrigger_mCurrent
+}
+for orchestraTrigger_objectForProject in top(orchestraTrigger_CacheModule) do {
+	orchestraTrigger_doorsIdInCache = orchestraTrigger_objectForProject."Object Heading"
+	if (!null orchestraTrigger_doorsIdInCache && orchestraTrigger_doorsIdInCache == orchestraTrigger_currentProjectId) {
+		orchestraTrigger_foundProject = true
+		if (!orchestraTrigger_attributeCreated) {
+			for orchestraTrigger_objectForModule in orchestraTrigger_objectForProject do {
+				orchestraIDInCache = orchestraTrigger_objectForModule."Object Short Text"
+				if (!null orchestraIDInCache && orchestraIDInCache == orchestraID) {
+					orchestraTrigger_foundModule = true
+					break
+				}
+			}
+		}
+		break
+	}
+}
+if (!orchestraTrigger_foundProject) {
+	orchestraTrigger_objectForProject = create orchestraTrigger_CacheModule
+	orchestraTrigger_objectForProject."Object Heading" = orchestraTrigger_currentProjectId
+}
+if (!null orchestraTrigger_objectForProject && !orchestraTrigger_foundModule) {
+	current = orchestraTrigger_CacheModule
+	orchestraTrigger_objectForModule = create below orchestraTrigger_objectForProject
+	orchestraTrigger_objectForModule."Object Heading" = orchestraTrigger_currentModuleId
+	orchestraTrigger_objectForModule."Object Short Text" = orchestraID
+	current = orchestraTrigger_mCurrent
+} else {
+	if (orchestraTrigger_foundModule) {
+		orchestraTrigger_doorsIdInCache = orchestraTrigger_objectForModule."Object Heading"
+		if (orchestraTrigger_doorsIdInCache == orchestraTrigger_currentModuleId) {
+			if (open module orchestraTrigger_nameOfCacheModule){save(orchestraTrigger_CacheModule); close(orchestraTrigger_CacheModule)}
+			halt
+		}
+		if (null itemFromID orchestraTrigger_doorsIdInCache) {
+			orchestraTrigger_objectForModule."Object Heading" = orchestraTrigger_currentModuleId
+		} else {
+			orchestraTrigger_mCurrent."Orchestra Module Id" = orchestraTrigger_IdForCreation
+			save orchestraTrigger_mCurrent
+			current = orchestraTrigger_CacheModule
+			orchestraTrigger_objectForModule = create below orchestraTrigger_objectForProject
+			orchestraTrigger_objectForModule."Object Heading" = orchestraTrigger_currentModuleId
+			orchestraTrigger_objectForModule."Object Short Text" = orchestraTrigger_IdForCreation
+			current = orchestraTrigger_mCurrent
+		}
+	}
+}
+if (open module orchestraTrigger_nameOfCacheModule){save(orchestraTrigger_CacheModule); close(orchestraTrigger_CacheModule)}

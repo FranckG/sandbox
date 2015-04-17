@@ -1,0 +1,12 @@
+#include <OrchestraConstantes.inc>
+#include <OrchestraStatus.inc>
+#include <OrchestraString.inc>
+#include <OMIManagement/OrchestraManageOMI.inc>
+#include <OrchestraUri.inc>
+#include <OrchestraGef.inc>
+#include <Environment/OrchestraDoorsEnvironment.inc>
+#include <Migration/OrchestraMigrateSMtoLM.inc>
+
+string strFullCurrentModuleName = fullName(current Module)
+
+MigrateToLM(strFullCurrentModuleName,"")

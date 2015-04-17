@@ -1,0 +1,58 @@
+#include <OrchestraConstantes.inc>
+
+int intNbOfObjectAttribute
+AttrDef ad
+DB AttributeShow = create "Attributes"
+
+intNbOfObjectAttribute=0
+
+for ad in current Module do
+	if (isVisibleAttribute(ad))
+		intNbOfObjectAttribute++
+
+intNbOfObjectAttribute++
+
+string attributesName[intNbOfObjectAttribute]
+intNbOfObjectAttribute=0
+
+attributesName[intNbOfObjectAttribute++] = ""
+
+for ad in current Module do
+	if (isVisibleAttribute(ad))
+		attributesName[intNbOfObjectAttribute++] = ad.name
+
+DBE AttributesList = list(AttributeShow, "Select an attribute for Mozart label:", 300, 15, attributesName)
+
+void AffectMozartModuleAttribute(string strValue) {
+	Module moduleRef = current Module
+	moduleRef.CModuleAttributeNameForMozartFullName = strValue
+}
+
+void CreateMozartModuleAttribute() {
+	create module type "String" attribute CModuleAttributeNameForMozartFullName
+}
+
+void VerifyMozartModuleAttribute(string strValue) {
+	if (exists attribute CModuleAttributeNameForMozartFullName) {
+		ad = find(current Module, CModuleAttributeNameForMozartFullName)
+		if (!ad.module)
+			CreateMozartModuleAttribute()
+	} else {
+		CreateMozartModuleAttribute()
+	}
+	ad = find(current Module, CModuleAttributeNameForMozartFullName)
+	if (!null ad)
+		if (ad.canWrite)
+			AffectMozartModuleAttribute(strValue)
+	save(current Module)
+}
+
+void selectAttrs(DB box) {
+    string attrName = get AttributesList
+    hide box
+    VerifyMozartModuleAttribute(attrName)
+}
+
+apply(AttributeShow, "Select", selectAttrs)
+
+show AttributeShow
