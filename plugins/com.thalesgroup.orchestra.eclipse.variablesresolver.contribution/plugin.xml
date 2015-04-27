@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.core.variables.dynamicVariables">
+      <variable
+            description="ODM Variables Resolver for Eclipse"
+            name="odm"
+            resolver="com.thalesgroup.orchestra.eclipse.variablesresolver.contribution.OdmVariableResolver"
+            supportsArgument="true">
+      </variable>
+   </extension>
+   <extension
+         point="org.eclipse.core.resources.variableResolvers">
+      <variableResolver
+            class="com.thalesgroup.orchestra.eclipse.variablesresolver.contribution.OdmPathVariableResolver"
+            variable="odm">
+      </variableResolver>
+   </extension>
+
+</plugin>

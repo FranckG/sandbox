@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contexts:Context xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:contexts="http://com.thalesgroup.orchestra/framework/4_1_0/contexts" id="939479bd-7fba-4384-aa39-ff6b4d2f9468" name="participationToYyy">
+  <superContext href="../yyy.contexts#9b3d24c2-19b4-446b-b23a-8c387956d476"/>
+</contexts:Context>

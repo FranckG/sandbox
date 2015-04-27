@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: com.thalesgroup.orchestra.server.webservices.client.test
+Bundle-SymbolicName: com.thalesgroup.orchestra.framework.webservices.client.test
+Bundle-Version: 4.1.4.qualifier
+Bundle-Vendor: THALESGROUP
+Fragment-Host: com.thalesgroup.orchestra.framework.webservices.client;bundle-version="4.0.3"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.junit4;bundle-version="4.3.1",
+ com.thalesgroup.orchestra.framework.common;bundle-version="1.0.0"

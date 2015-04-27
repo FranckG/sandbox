@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Schema file written by PDE -->
+<schema targetNamespace="com.thalesgroup.orchestra.framework.environment" xmlns="http://www.w3.org/2001/XMLSchema">
+<annotation>
+      <appinfo>
+         <meta.schema plugin="com.thalesgroup.orchestra.framework.environment" id="environmentDeclaration" name="Environment declaration to the Framework"/>
+      </appinfo>
+      <documentation>
+         An environment implementation contribution.
+      </documentation>
+   </annotation>
+
+   <element name="extension">
+      <annotation>
+         <appinfo>
+            <meta.element />
+         </appinfo>
+      </annotation>
+      <complexType>
+         <sequence minOccurs="1" maxOccurs="unbounded">
+            <element ref="environment"/>
+         </sequence>
+         <attribute name="point" type="string" use="required">
+            <annotation>
+               <documentation>
+                  
+               </documentation>
+            </annotation>
+         </attribute>
+         <attribute name="id" type="string">
+            <annotation>
+               <documentation>
+                  
+               </documentation>
+            </annotation>
+         </attribute>
+         <attribute name="name" type="string">
+            <annotation>
+               <documentation>
+                  
+               </documentation>
+               <appinfo>
+                  <meta.attribute translatable="true"/>
+               </appinfo>
+            </annotation>
+         </attribute>
+      </complexType>
+   </element>
+
+   <element name="environment">
+      <complexType>
+         <attribute name="id" type="string" use="required">
+            <annotation>
+               <documentation>
+                  The environment unique identifier (this is up to the provider to ensure unicity).
+The best option is to prefix the id by the contributor symbolic name and to suffix it by a specific identifier.
+               </documentation>
+            </annotation>
+         </attribute>
+         <attribute name="category" type="string">
+            <annotation>
+               <documentation>
+                  A textual category name, presented as a logical container in the new environment wizard.
+If none is specified, the environment type simply appears as a root element of the tree.
+               </documentation>
+            </annotation>
+         </attribute>
+         <attribute name="class" type="string" use="required">
+            <annotation>
+               <documentation>
+                  The environment implementation.
+Must conform to IEnvironment interface.
+There is no need for the implementation to be uniquely bound to an ID.
+Several IDs might refer to the same implementation.
+               </documentation>
+               <appinfo>
+                  <meta.attribute kind="java" basedOn=":com.thalesgroup.orchestra.framework.environment.IEnvironment"/>
+               </appinfo>
+            </annotation>
+         </attribute>
+         <attribute name="handler" type="string" use="required">
+            <annotation>
+               <documentation>
+                  An implementation that provides with user interactions and model persistence.
+               </documentation>
+               <appinfo>
+                  <meta.attribute kind="java" basedOn=":com.thalesgroup.orchestra.framework.environment.IEnvironmentHandler"/>
+               </appinfo>
+            </annotation>
+         </attribute>
+         <attribute name="label" type="string">
+            <annotation>
+               <documentation>
+                  A displayable name for this environment type.
+If none is provided, the id is used instead.
+               </documentation>
+            </annotation>
+         </attribute>
+         <attribute name="version" type="string">
+            <annotation>
+               <documentation>
+                  Then environment implementation version.
+Will be injected into the environment attributes at runtime.
+Should be used to allow for version changes detection and possibly migration support.
+               </documentation>
+            </annotation>
+         </attribute>
+      </complexType>
+   </element>
+
+   <annotation>
+      <appinfo>
+         <meta.section type="since"/>
+      </appinfo>
+      <documentation>
+         4.1.1
+      </documentation>
+   </annotation>
+
+   <annotation>
+      <appinfo>
+         <meta.section type="examples"/>
+      </appinfo>
+      <documentation>
+         [Enter extension point usage example here.]
+      </documentation>
+   </annotation>
+
+   <annotation>
+      <appinfo>
+         <meta.section type="apiinfo"/>
+      </appinfo>
+      <documentation>
+         Defines both an unique ID to identify the environment, and an implementation class.
+This is the only way to add a new environment implementation to the framework.
+      </documentation>
+   </annotation>
+
+   <annotation>
+      <appinfo>
+         <meta.section type="implementation"/>
+      </appinfo>
+      <documentation>
+         [Enter information about supplied implementation of this extension point.]
+      </documentation>
+   </annotation>
+
+   <annotation>
+      <appinfo>
+         <meta.section type="copyright"/>
+      </appinfo>
+      <documentation>
+         THALESGROUP, 2011
+      </documentation>
+   </annotation>
+
+</schema>

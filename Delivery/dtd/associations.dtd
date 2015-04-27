@@ -1,0 +1,23 @@
+<!ELEMENT association_list (association*)>
+<!ATTLIST association
+ balanced (true|false) #REQUIRED
+ relational_type CDATA #REQUIRED
+ valid (true|false) #REQUIRED
+>
+
+<!ELEMENT association (artifact1, artifact2)>
+<!ELEMENT artifact1 (#PCDATA) >
+<!ATTLIST artifact1
+ tool CDATA #REQUIRED
+ type CDATA #IMPLIED
+ id CDATA #IMPLIED
+>
+
+<!ELEMENT artifact2 (#PCDATA) >
+<!ATTLIST artifact2
+ tool CDATA #REQUIRED
+ type CDATA #IMPLIED
+ id CDATA #IMPLIED
+>
+
+

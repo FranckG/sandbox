@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connector:connectorDefinition xmlns:connector="http://www.thalesgroup.com/orchestra/framework/4_0_24/Connector">
+  <connector connectorId="TextConnector">
+  	<type name="Text"/>
+  	<type name="CppAsText"/>
+  	<type name="Log"/>
+  	<unsupportedService serviceName="Create"/>
+  	<unsupportedService serviceName="Expand"/>
+  	<launchArguments name="\Orchestra\Connectors\Text\LaunchArguments"/>
+  </connector>
+</connector:connectorDefinition>

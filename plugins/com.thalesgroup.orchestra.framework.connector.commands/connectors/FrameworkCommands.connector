@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connector:connectorDefinition xmlns:connector="http://www.thalesgroup.com/orchestra/framework/4_0_24/Connector">
+  <connector connectorId="OF_Commands">
+  	<type name="FrameworkCommands"/>
+  	<type name="ArtefactSet"/>
+  	<unsupportedService serviceName="Create"/>
+  	<unsupportedService serviceName="Expand"/>
+  	<unsupportedService serviceName="ExportDoc"/>
+  	<unsupportedService serviceName="ExportLM"/>
+  	<unsupportedService serviceName="Navigate"/>
+  </connector>
+</connector:connectorDefinition>

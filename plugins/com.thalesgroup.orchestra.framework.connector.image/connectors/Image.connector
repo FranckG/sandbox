@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connector:connectorDefinition xmlns:connector="http://www.thalesgroup.com/orchestra/framework/4_0_24/Connector">
+  <connector connectorId="ImageConnector">
+  	<type name="JPG"/>
+  	<type name="JPEG"/>
+  	<type name="BMP"/>
+  	<type name="GIF"/>
+  	<type name="PNG"/>
+  	<type name="PCX"/>
+  	<type name="TIFF"/>
+  	<unsupportedService serviceName="Create"/>
+  	<unsupportedService serviceName="Expand"/>
+  	<launchArguments name="\Orchestra\Connectors\Image\LaunchArguments"/>
+  </connector>
+</connector:connectorDefinition>

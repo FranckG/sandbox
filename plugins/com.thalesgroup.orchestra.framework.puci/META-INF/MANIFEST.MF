@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Papeete Universal Client Interface Plug-in
+Bundle-SymbolicName: com.thalesgroup.orchestra.framework.puci
+Bundle-Version: 4.4.0.qualifier
+Bundle-Vendor: THALESGROUP
+Require-Bundle: com.thalesgroup.orchestra.framework.lib;visibility:=reexport,
+ org.eclipse.core.runtime,
+ org.eclipse.jetty.client;bundle-version="7.1.5";visibility:=reexport,
+ org.eclipse.jetty.http;bundle-version="7.1.5";visibility:=reexport,
+ org.eclipse.jetty.io;bundle-version="7.1.5";visibility:=reexport,
+ org.eclipse.jetty.util;bundle-version="7.1.5";visibility:=reexport
+Eclipse-LazyStart: true
+Bundle-ClassPath: .
+Export-Package: com.thalesgroup.orchestra.framework.puci
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-Activator: com.thalesgroup.orchestra.framework.puci.PuciActivator
+
+

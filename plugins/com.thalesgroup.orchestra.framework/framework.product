@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="Orchestra Framework" id="com.thalesgroup.orchestra.framework.product" application="com.thalesgroup.orchestra.framework.application" version="4.4.1" useFeatures="true" includeLaunchers="true">
+
+   <aboutInfo>
+      <image path="icons/OrchestraFmk-16x16.png"/>
+      <text>
+         %aboutText
+      </text>
+   </aboutInfo>
+
+   <configIni use="default">
+      <win32>/com.thalesgroup.orchestra.framework/config.ini</win32>
+   </configIni>
+
+   <launcherArgs>
+      <programArgs>-clean</programArgs>
+      <vmArgs>-agentlib:OrchestraAgent -Dorg.eclipse.equinox.http.jetty.customizer.class=com.thalesgroup.orchestra.framework.webservices.jettyConfigurator.DynamicPortJettyCustomizer -Dorg.eclipse.ecf.provider.remoteservice.addRegistrationRequestTimeout=500</vmArgs>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
+   </launcherArgs>
+
+   <windowImages i16="icons/OrchestraFmk-16x16.png" i32="icons/Papeete32.gif"/>
+
+   <splash
+      startupProgressRect="0,315,500,15"
+      startupMessageRect="5,295,495,20"
+      startupForegroundColor="FFFFFF" />
+   <launcher name="framework">
+      <solaris/>
+      <win useIco="true">
+         <ico path="/com.thalesgroup.orchestra.framework/icons/OrchestraFmk.ico"/>
+         <bmp/>
+      </win>
+   </launcher>
+
+   <vm>
+      <windows include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7</windows>
+   </vm>
+
+   <plugins>
+      <plugin id="com.google.gdata.core" version="1.0.0"/>
+      <plugin id="com.ibm.icu" version="4.4.2.v20110823"/>
+      <plugin id="com.jacob" version="1.17.0.M2"/>
+      <plugin id="com.thalesgroup.orc.ldap"/>
+      <plugin id="com.thalesgroup.orchestra.framework"/>
+      <plugin id="com.thalesgroup.orchestra.framework.common"/>
+      <plugin id="com.thalesgroup.orchestra.framework.common.ui"/>
+      <plugin id="com.thalesgroup.orchestra.framework.connector"/>
+      <plugin id="com.thalesgroup.orchestra.framework.connector.baseconnector"/>
+      <plugin id="com.thalesgroup.orchestra.framework.connector.com"/>
+      <plugin id="com.thalesgroup.orchestra.framework.connector.commands"/>
+      <plugin id="com.thalesgroup.orchestra.framework.connector.ecf"/>
+      <plugin id="com.thalesgroup.orchestra.framework.connector.gimp"/>
+      <plugin id="com.thalesgroup.orchestra.framework.connector.migration"/>
+      <plugin id="com.thalesgroup.orchestra.framework.connector.models"/>
+      <plugin id="com.thalesgroup.orchestra.framework.connector.notepad"/>
+      <plugin id="com.thalesgroup.orchestra.framework.connector.services"/>
+      <plugin id="com.thalesgroup.orchestra.framework.ecf.services"/>
+      <plugin id="com.thalesgroup.orchestra.framework.environment"/>
+      <plugin id="com.thalesgroup.orchestra.framework.exchange"/>
+      <plugin id="com.thalesgroup.orchestra.framework.lib"/>
+      <plugin id="com.thalesgroup.orchestra.framework.lib.base"/>
+      <plugin id="com.thalesgroup.orchestra.framework.model"/>
+      <plugin id="com.thalesgroup.orchestra.framework.model.baseline"/>
+      <plugin id="com.thalesgroup.orchestra.framework.model.edit"/>
+      <plugin id="com.thalesgroup.orchestra.framework.model.handler"/>
+      <plugin id="com.thalesgroup.orchestra.framework.model.install"/>
+      <plugin id="com.thalesgroup.orchestra.framework.model.migration"/>
+      <plugin id="com.thalesgroup.orchestra.framework.model.validation"/>
+      <plugin id="com.thalesgroup.orchestra.framework.project"/>
+      <plugin id="com.thalesgroup.orchestra.framework.puci"/>
+      <plugin id="com.thalesgroup.orchestra.framework.remote.services"/>
+      <plugin id="com.thalesgroup.orchestra.framework.root.ui"/>
+      <plugin id="com.thalesgroup.orchestra.framework.ui"/>
+      <plugin id="com.thalesgroup.orchestra.framework.variablemanager.server.model"/>
+      <plugin id="com.thalesgroup.orchestra.framework.webservices"/>
+      <plugin id="com.thalesgroup.orchestra.framework.webservices.client"/>
+      <plugin id="com.thalesgroup.orchestra.framework.webservices.jettyConfig" fragment="true"/>
+      <plugin id="com.thalesgroup.orchestra.variablemanager.api"/>
+      <plugin id="javax.activation" version="1.1.0.v201108011116"/>
+      <plugin id="javax.servlet" version="3.0.0.v201112011016"/>
+      <plugin id="javax.wsdl" version="1.6.2.v201012040545"/>
+      <plugin id="javax.xml" version="1.3.4.v201005080400"/>
+      <plugin id="javax.xml.rpc" version="1.1.0.v201005080400"/>
+      <plugin id="javax.xml.soap" version="1.3.0.v201105210645"/>
+      <plugin id="org.apache.axis" version="1.4.0.v201005080400"/>
+      <plugin id="org.apache.commons.discovery" version="0.2.0.v201004190315"/>
+      <plugin id="org.apache.commons.io" version="2.0.1.v201105210651"/>
+      <plugin id="org.apache.commons.lang" version="2.6.0.v201205030909"/>
+      <plugin id="org.apache.commons.logging" version="1.0.4.v201101211617"/>
+      <plugin id="org.apache.log4j"/>
+      <plugin id="org.apache.xerces" version="2.9.0.v201101211617"/>
+      <plugin id="org.apache.xml.resolver" version="1.2.0.v201005080400"/>
+      <plugin id="org.apache.xml.serializer" version="2.7.1.v201005080400"/>
+      <plugin id="org.eclipse.compare"/>
+      <plugin id="org.eclipse.compare.core"/>
+      <plugin id="org.eclipse.core.commands"/>
+      <plugin id="org.eclipse.core.contenttype"/>
+      <plugin id="org.eclipse.core.databinding"/>
+      <plugin id="org.eclipse.core.databinding.beans"/>
+      <plugin id="org.eclipse.core.databinding.observable"/>
+      <plugin id="org.eclipse.core.databinding.property"/>
+      <plugin id="org.eclipse.core.expressions"/>
+      <plugin id="org.eclipse.core.filebuffers"/>
+      <plugin id="org.eclipse.core.filesystem"/>
+      <plugin id="org.eclipse.core.jobs"/>
+      <plugin id="org.eclipse.core.net"/>
+      <plugin id="org.eclipse.core.resources"/>
+      <plugin id="org.eclipse.core.runtime"/>
+      <plugin id="org.eclipse.core.runtime.compatibility"/>
+      <plugin id="org.eclipse.core.runtime.compatibility.auth"/>
+      <plugin id="org.eclipse.core.runtime.compatibility.registry" fragment="true"/>
+      <plugin id="org.eclipse.core.variables"/>
+      <plugin id="org.eclipse.debug.core"/>
+      <plugin id="org.eclipse.ecf"/>
+      <plugin id="org.eclipse.ecf.discovery"/>
+      <plugin id="org.eclipse.ecf.filetransfer"/>
+      <plugin id="org.eclipse.ecf.identity"/>
+      <plugin id="org.eclipse.ecf.provider"/>
+      <plugin id="org.eclipse.ecf.provider.filetransfer"/>
+      <plugin id="org.eclipse.ecf.provider.filetransfer.ssl" fragment="true"/>
+      <plugin id="org.eclipse.ecf.provider.remoteservice"/>
+      <plugin id="org.eclipse.ecf.remoteservice"/>
+      <plugin id="org.eclipse.ecf.server"/>
+      <plugin id="org.eclipse.ecf.server.generic"/>
+      <plugin id="org.eclipse.ecf.sharedobject"/>
+      <plugin id="org.eclipse.ecf.ssl" fragment="true"/>
+      <plugin id="org.eclipse.emf"/>
+      <plugin id="org.eclipse.emf.common"/>
+      <plugin id="org.eclipse.emf.common.ui"/>
+      <plugin id="org.eclipse.emf.databinding"/>
+      <plugin id="org.eclipse.emf.ecore"/>
+      <plugin id="org.eclipse.emf.ecore.change"/>
+      <plugin id="org.eclipse.emf.ecore.xmi"/>
+      <plugin id="org.eclipse.emf.edit"/>
+      <plugin id="org.eclipse.emf.edit.ui"/>
+      <plugin id="org.eclipse.emf.mapping.ecore2xml"/>
+      <plugin id="org.eclipse.emf.validation"/>
+      <plugin id="org.eclipse.equinox.app"/>
+      <plugin id="org.eclipse.equinox.common"/>
+      <plugin id="org.eclipse.equinox.concurrent"/>
+      <plugin id="org.eclipse.equinox.http.jetty"/>
+      <plugin id="org.eclipse.equinox.http.registry"/>
+      <plugin id="org.eclipse.equinox.http.servlet"/>
+      <plugin id="org.eclipse.equinox.p2.artifact.repository"/>
+      <plugin id="org.eclipse.equinox.p2.core"/>
+      <plugin id="org.eclipse.equinox.p2.engine"/>
+      <plugin id="org.eclipse.equinox.p2.jarprocessor"/>
+      <plugin id="org.eclipse.equinox.p2.metadata"/>
+      <plugin id="org.eclipse.equinox.p2.metadata.repository"/>
+      <plugin id="org.eclipse.equinox.p2.repository"/>
+      <plugin id="org.eclipse.equinox.preferences"/>
+      <plugin id="org.eclipse.equinox.registry"/>
+      <plugin id="org.eclipse.equinox.security"/>
+      <plugin id="org.eclipse.help"/>
+      <plugin id="org.eclipse.jetty.client" version="8.1.14.v20131031"/>
+      <plugin id="org.eclipse.jetty.continuation" version="8.1.3.v20120522"/>
+      <plugin id="org.eclipse.jetty.http" version="8.1.3.v20120522"/>
+      <plugin id="org.eclipse.jetty.io" version="8.1.3.v20120522"/>
+      <plugin id="org.eclipse.jetty.security" version="8.1.3.v20120522"/>
+      <plugin id="org.eclipse.jetty.server" version="8.1.3.v20120522"/>
+      <plugin id="org.eclipse.jetty.servlet" version="8.1.3.v20120522"/>
+      <plugin id="org.eclipse.jetty.util" version="8.1.3.v20120522"/>
+      <plugin id="org.eclipse.jface"/>
+      <plugin id="org.eclipse.jface.databinding"/>
+      <plugin id="org.eclipse.jface.text"/>
+      <plugin id="org.eclipse.ltk.core.refactoring" version="3.6.0.v20120523-1543"/>
+      <plugin id="org.eclipse.ltk.ui.refactoring" version="3.7.0.v20120523-1543"/>
+      <plugin id="org.eclipse.osgi"/>
+      <plugin id="org.eclipse.osgi.services"/>
+      <plugin id="org.eclipse.rcp"/>
+      <plugin id="org.eclipse.swt"/>
+      <plugin id="org.eclipse.team.core"/>
+      <plugin id="org.eclipse.team.ui"/>
+      <plugin id="org.eclipse.text"/>
+      <plugin id="org.eclipse.ui"/>
+      <plugin id="org.eclipse.ui.console"/>
+      <plugin id="org.eclipse.ui.editors"/>
+      <plugin id="org.eclipse.ui.forms"/>
+      <plugin id="org.eclipse.ui.ide"/>
+      <plugin id="org.eclipse.ui.navigator"/>
+      <plugin id="org.eclipse.ui.navigator.resources"/>
+      <plugin id="org.eclipse.ui.views"/>
+      <plugin id="org.eclipse.ui.views.properties.tabbed"/>
+      <plugin id="org.eclipse.ui.workbench"/>
+      <plugin id="org.eclipse.ui.workbench.texteditor"/>
+      <plugin id="org.eclipse.update.configurator"/>
+      <plugin id="org.hamcrest.core" version="1.1.0.v20090501071000"/>
+   </plugins>
+
+   <features>
+      <feature id="com.thalesgroup.orchestra.framework.feature" version="4.4.1.qualifier"/>
+   </features>
+
+
+</product>

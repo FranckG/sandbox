@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Orchestra framework common UI plug-in
+Bundle-SymbolicName: com.thalesgroup.orchestra.framework.common.ui
+Bundle-Version: 4.1.4.qualifier
+Bundle-Vendor: THALESGROUP
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.ui.forms;bundle-version="3.4.1";visibility:=reexport,
+ com.thalesgroup.orchestra.framework.common;bundle-version="1.0.0";visibility:=reexport,
+ org.eclipse.emf.ecore.change;bundle-version="2.5.0",
+ com.thalesgroup.orchestra.framework.root.ui;bundle-version="4.3.0";visibility:=reexport
+Export-Package: com.thalesgroup.orchestra.framework.common.ui.dialog,
+ com.thalesgroup.orchestra.framework.common.ui.wizards

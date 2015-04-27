@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Integration Test Mock Java Connector
+Bundle-SymbolicName: com.thalesgroup.orchestra.framework.integration.tests.connector.mock;singleton:=true
+Bundle-Version: 4.2.7.qualifier
+Bundle-Vendor: THALESGROUP
+Require-Bundle: com.thalesgroup.orchestra.framework.connector;bundle-version="4.0.25",
+ com.ice.jni.registry.Registry;bundle-version="3.1.3",
+ com.thalesgroup.orchestra.framework.integration.tests.initializer,
+ com.thalesgroup.orchestra.framework.integration.tests,
+ org.eclipse.core.runtime;bundle-version="3.5.0",
+ org.apache.commons.io;bundle-version="1.4.0",
+ com.thalesgroup.orchestra.framework.common;bundle-version="4.0.38"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Import-Package: com.thalesgroup.orchestra.framework.model.contexts
+Bundle-Activator: com.thalesgroup.orchestra.framework.integration.tests.connector.mock.MockConnectorActivator
+Bundle-ActivationPolicy: lazy
+Export-Package: com.thalesgroup.orchestra.framework.integration.tests.connector.mock.configuration

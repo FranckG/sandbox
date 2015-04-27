@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="2.0.0" Type="ProjectGroup"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <Name>Orchestra Connector</Name>
+    <Description>Orchestra Connector Template for C#</Description>
+    <Icon>OrchestraConnectorTemplateCSharp.ico</Icon>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>Windows</ProjectSubType>
+  </TemplateData>
+  <TemplateContent>
+    <ProjectCollection>
+      <!--<SolutionFolder Name="Sources">-->
+        <ProjectTemplateLink ProjectName="Connector$toolname$">
+          Sources\Library\ConnectorLibrary.vstemplate
+        </ProjectTemplateLink>
+        <ProjectTemplateLink ProjectName="Test $toolname$">
+          Sources\Test\ConnectorTest.vstemplate
+        </ProjectTemplateLink>
+        <ProjectTemplateLink ProjectName="SolutionItemsContainer">
+          Sources\Items\SolutionItemsContainer.vstemplate
+        </ProjectTemplateLink>
+    </ProjectCollection>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>OrchestraConnectorWizard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=df1485d8971af423</Assembly>
+    <FullClassName>Orchestra.Connector.Wizard.Solution</FullClassName>
+  </WizardExtension>
+</VSTemplate>

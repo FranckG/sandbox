@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Template of framework connector
+Bundle-SymbolicName: com.thalesgroup.orchestra.template.framework.connector;singleton:=true
+Bundle-Version: 4.2.7.qualifier
+Bundle-Vendor: THALESGROUP
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: com.thalesgroup.orchestra.framework.connector,
+ com.thalesgroup.orchestra.framework.exchange,
+ com.thalesgroup.orchestra.framework.ecf.services,
+ org.eclipse.core.runtime

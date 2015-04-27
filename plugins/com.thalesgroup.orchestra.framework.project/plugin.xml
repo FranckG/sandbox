@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://com.thalesgroup.orchestra/framework/4_0_13/contextsproject"
+            class="com.thalesgroup.orchestra.framework.contextsproject.ContextsProjectPackage"
+            genModel="model/contextsProject.genmodel"/>
+   </extension>
+   <extension
+         id="com.thalesgroup.orchestra.framework.project"
+         name="The Orchestra Framework Context project nature."
+         point="org.eclipse.core.resources.natures">
+      <runtime>
+         <run
+               class="com.thalesgroup.orchestra.framework.project.nature.ProjectNature">
+         </run>
+      </runtime>
+   </extension>
+   <extension
+         id="baseline"
+         name="Orchestra Framework baseline context nature."
+         point="org.eclipse.core.resources.natures">
+      <runtime>
+         <run
+               class="com.thalesgroup.orchestra.framework.project.nature.BaselineNature">
+         </run>
+      </runtime>
+   </extension>
+
+</plugin>

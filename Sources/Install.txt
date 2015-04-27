@@ -1,7 +1,0 @@
-Rajouter dans la base de registre
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Telelogic\DOORS\x.y\Config]
-"addins"="zzzzz\\Doors"
-
-Remplacer x.y par les versions de Doors présentes sur la machine
-Remplacer zzzzz par le chemin absolu vers le répertoire d'install du connecteur Doors

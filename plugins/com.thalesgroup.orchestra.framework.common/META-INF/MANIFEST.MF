@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Orchestra framework common plug-in
+Bundle-SymbolicName: com.thalesgroup.orchestra.framework.common;singleton:=true
+Bundle-Version: 4.4.0.qualifier
+Bundle-Vendor: THALESGROUP
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.core.runtime;bundle-version="3.5.0";visibility:=reexport,
+ org.eclipse.emf;bundle-version="2.5.0";visibility:=reexport,
+ org.eclipse.core.resources;bundle-version="3.5.1";visibility:=reexport,
+ org.eclipse.emf.common;bundle-version="2.5.0";visibility:=reexport,
+ org.eclipse.emf.ecore.change;bundle-version="2.5.0";visibility:=reexport,
+ org.eclipse.emf.edit;bundle-version="2.5.0";visibility:=reexport,
+ org.apache.commons.io;bundle-version="1.4.0";visibility:=reexport
+Export-Package: com.thalesgroup.orchestra.framework.common,
+ com.thalesgroup.orchestra.framework.common.activator,
+ com.thalesgroup.orchestra.framework.common.command,
+ com.thalesgroup.orchestra.framework.common.helper,
+ com.thalesgroup.orchestra.framework.common.job,
+ com.thalesgroup.orchestra.framework.common.model,
+ com.thalesgroup.orchestra.framework.common.util
+Bundle-Activator: com.thalesgroup.orchestra.framework.common.CommonActivator

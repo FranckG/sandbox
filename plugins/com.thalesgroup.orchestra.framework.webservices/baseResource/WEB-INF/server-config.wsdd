@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deployment name="defaultClientConfig" xmlns="http://xml.apache.org/axis/wsdd/"
+	xmlns:java="http://xml.apache.org/axis/wsdd/providers/java"
+	xmlns:handler="http://xml.apache.org/axis/wsdd/providers/handler">
+	<globalConfiguration>
+		<parameter name="disablePrettyXML" value="true" />
+		<parameter name="dotNetSoapEncFix" value="true" />
+		<parameter name="enableNamespacePrefixOptimization" value="false" />
+		<requestFlow>
+			<handler type="java:org.apache.axis.handlers.JWSHandler">
+				<parameter name="scope" value="session" />
+			</handler>
+			<handler type="java:org.apache.axis.handlers.JWSHandler">
+				<parameter name="scope" value="request" />
+				<parameter name="extension" value=".jwr" />
+			</handler>
+			<!-- uncomment this if you want the SOAP monitor -->
+			<!--
+				<handler type="java:org.apache.axis.handlers.SOAPMonitorHandler"/>
+			-->
+		</requestFlow>
+		<!-- uncomment this if you want the SOAP monitor -->
+		<!--
+			<responseFlow> <handler
+			type="java:org.apache.axis.handlers.SOAPMonitorHandler"/>
+			</responseFlow>
+		-->
+	</globalConfiguration>
+	<handler type="java:org.apache.axis.handlers.http.URLMapper"
+		name="URLMapper" />
+	<handler type="java:org.apache.axis.transport.local.LocalResponder"
+		name="LocalResponder" />
+	<handler type="java:org.apache.axis.handlers.SimpleAuthenticationHandler"
+		name="Authenticate" />
+
+	<!-- Do not expose Admin service. -->
+	<!--
+		<service name="AdminService" provider="java:MSG">
+		<namespace>http://xml.apache.org/axis/wsdd/</namespace> <parameter
+		name="allowedMethods" value="AdminService" /> <parameter
+		name="enableRemoteAdmin" value="false" /> <parameter name="className"
+		value="org.apache.axis.utils.Admin" /> </service>
+	-->
+
+	<!-- Do not expose Version service. -->
+	<!--
+		<service name="Version" provider="java:RPC"> <parameter
+		name="allowedMethods" value="getVersion" /> <parameter
+		name="className" value="org.apache.axis.Version" /> </service>
+	-->
+
+	<!-- Orchestra Framework services generated -->
+	<!-- Service from VariableManager WSDL service -->
+	<service name="VariableManager" provider="java:RPC" style="rpc"
+		use="encoded">
+		<parameter name="wsdlTargetNamespace"
+			value="http://com.thalesgroup.orchestra.framework/VariableManager" />
+		<parameter name="wsdlServiceElement" value="VariableManagerWSAdapterService" />
+		<parameter name="schemaUnqualified"
+			value="http://xml.apache.org/xml-soap,http://com.thalesgroup.orchestra.framework/VariableManager" />
+		<parameter name="wsdlServicePort" value="VariableManager" />
+		<parameter name="className"
+			value="framework.orchestra.thalesgroup.com.VariableManager.VariableManagerService" />
+		<parameter name="wsdlPortType" value="VariableManagerWSAdapter" />
+		<parameter name="typeMappingVersion" value="1.2" />
+		<parameter name="allowedMethods" value="*" />
+		<typeMapping
+			xmlns:ns="http://com.thalesgroup.orchestra.framework/VariableManager"
+			qname="ns:VariableWS"
+			type="java:framework.orchestra.thalesgroup.com.VariableManager.VariableWS"
+			serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+			deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+			encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+		<typeMapping
+			xmlns:ns="http://com.thalesgroup.orchestra.framework/VariableManager"
+			qname="ns:EnvironmentVariableWS"
+			type="java:framework.orchestra.thalesgroup.com.VariableManager.EnvironmentVariableWS"
+			serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+			deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+			encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+		<typeMapping
+			xmlns:ns="http://com.thalesgroup.orchestra.framework/VariableManager"
+			qname="ns:EnvironmentWS"
+			type="java:framework.orchestra.thalesgroup.com.VariableManager.EnvironmentWS"
+			serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+			deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+			encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+		<typeMapping
+			xmlns:ns="http://com.thalesgroup.orchestra.framework/VariableManager"
+			qname="ns:EnvironmentValueWS"
+			type="java:framework.orchestra.thalesgroup.com.VariableManager.EnvironmentValueWS"
+			serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+			deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+			encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+		<arrayMapping
+			xmlns:ns="http://com.thalesgroup.orchestra.framework/VariableManager"
+			qname="ns:ArrayOf_xsd_string" type="java:java.lang.String[]"
+			innerType="cmp-ns:string" xmlns:cmp-ns="http://www.w3.org/2001/XMLSchema"
+			encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+		<arrayMapping
+			xmlns:ns="http://com.thalesgroup.orchestra.framework/VariableManager"
+			qname="ns:ArrayOf_impl_VariableWS"
+			type="java:framework.orchestra.thalesgroup.com.VariableManager.VariableWS[]"
+			innerType="cmp-ns:VariableWS"
+			xmlns:cmp-ns="http://com.thalesgroup.orchestra.framework/VariableManager"
+			encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+		<arrayMapping
+			xmlns:ns="http://com.thalesgroup.orchestra.framework/VariableManager"
+			qname="ns:ArrayOf_impl_EnvironmentWS"
+			type="java:framework.orchestra.thalesgroup.com.VariableManager.EnvironmentWS[]"
+			innerType="cmp-ns:EnvironmentWS"
+			xmlns:cmp-ns="http://com.thalesgroup.orchestra.framework/VariableManager"
+			encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+		<arrayMapping
+			xmlns:ns="http://com.thalesgroup.orchestra.framework/VariableManager"
+			qname="ns:ArrayOf_impl_EnvironmentValueWS"
+			type="java:framework.orchestra.thalesgroup.com.VariableManager.EnvironmentValueWS[]"
+			innerType="cmp-ns:EnvironmentValueWS"
+			xmlns:cmp-ns="http://com.thalesgroup.orchestra.framework/VariableManager"
+			encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+		<arrayMapping
+			xmlns:ns="http://com.thalesgroup.orchestra.framework/VariableManager"
+			qname="ns:ConfDirDeltas"
+			type="java:framework.orchestra.thalesgroup.com.VariableManager.ConfDirDelta[]"
+			innerType="cmp-ns:ConfDirDelta"
+			xmlns:cmp-ns="http://com.thalesgroup.orchestra.framework/VariableManager"
+			encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+		<typeMapping
+			xmlns:ns="http://com.thalesgroup.orchestra.framework/VariableManager"
+			qname="ns:ConfDirDelta"
+			type="java:framework.orchestra.thalesgroup.com.VariableManager.ConfDirDelta"
+			serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+			deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+			encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+
+		<typeMapping
+			xmlns:ns="http://com.thalesgroup.orchestra.framework/VariableManager"
+			qname="ns:confDirDelta"
+			type="java:framework.orchestra.thalesgroup.com.VariableManager.ConfDirDelta"
+			serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+			deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+			encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+		<typeMapping
+			xmlns:ns="http://com.thalesgroup.orchestra.framework/VariableManager"
+			qname="ns:>confDirDelta>deltaType"
+			type="java:framework.orchestra.thalesgroup.com.VariableManager.ConfDirDeltaDeltaType"
+			serializer="org.apache.axis.encoding.ser.EnumSerializerFactory"
+			deserializer="org.apache.axis.encoding.ser.EnumDeserializerFactory"
+			encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+		<arrayMapping
+			xmlns:ns="http://com.thalesgroup.orchestra.framework/VariableManager"
+			qname="ns:DeltaStates"
+			type="java:framework.orchestra.thalesgroup.com.VariableManager.DeltaState[]"
+			innerType="cmp-ns:DeltaState"
+			xmlns:cmp-ns="http://com.thalesgroup.orchestra.framework/VariableManager"
+			encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+		<typeMapping
+			xmlns:ns="http://com.thalesgroup.orchestra.framework/VariableManager"
+			qname="ns:DeltaState"
+			type="java:framework.orchestra.thalesgroup.com.VariableManager.DeltaState"
+			serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+			deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+			encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+	</service>
+
+	<!-- Service from Connector WSDL service -->
+	<service name="connector" provider="java:RPC" style="rpc" use="encoded">
+		<parameter name="wsdlTargetNamespace"
+			value="http://webservices.framework.orchestra.thalesgroup.com/connector" />
+		<parameter name="wsdlServiceElement" value="ConnectorWSAdapterService" />
+		<parameter name="schemaUnqualified"
+			value="http://webservices.framework.orchestra.thalesgroup.com/connector" />
+		<parameter name="wsdlServicePort" value="connector" />
+		<parameter name="className"
+			value="com.thalesgroup.orchestra.framework.webservices.connector.ConnectorSoapBindingSkeleton" />
+		<parameter name="wsdlPortType" value="ConnectorWSAdapter" />
+		<parameter name="typeMappingVersion" value="1.2" />
+		<parameter name="allowedMethods" value="*" />
+		<typeMapping
+			xmlns:ns="http://webservices.framework.orchestra.thalesgroup.com/connector"
+			qname="ns:AssociationWS"
+			type="java:com.thalesgroup.orchestra.framework.webservices.connector.AssociationWS"
+			serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+			deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+			encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+		<arrayMapping
+			xmlns:ns="http://com.thalesgroup.orchestra.framework/VariableManager"
+			qname="ns:ArrayOf_xsd_string" type="java:java.lang.String[]"
+			innerType="cmp-ns:string" xmlns:cmp-ns="http://www.w3.org/2001/XMLSchema"
+			encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+		<arrayMapping
+			xmlns:ns="http://webservices.framework.orchestra.thalesgroup.com/connector"
+			qname="ns:ArrayOf_impl_ConnectorWS"
+			type="java:com.thalesgroup.orchestra.framework.webservices.connector.ConnectorWS[]"
+			innerType="cmp-ns:ConnectorWS"
+			xmlns:cmp-ns="http://webservices.framework.orchestra.thalesgroup.com/connector"
+			encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+		<typeMapping
+			xmlns:ns="http://webservices.framework.orchestra.thalesgroup.com/connector"
+			qname="ns:ConnectorWS"
+			type="java:com.thalesgroup.orchestra.framework.webservices.connector.ConnectorWS"
+			serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+			deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+			encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+	</service>
+	<!-- End Orchestra Framework services generated -->
+	<transport name="http">
+		<parameter name="qs:list"
+			value="org.apache.axis.transport.http.QSListHandler" />
+		<parameter name="qs:method"
+			value="org.apache.axis.transport.http.QSMethodHandler" />
+		<parameter name="qs:wsdl"
+			value="org.apache.axis.transport.http.QSWSDLHandler" />
+		<requestFlow>
+			<handler type="URLMapper" />
+			<handler type="java:org.apache.axis.handlers.http.HTTPAuthHandler" />
+		</requestFlow>
+	</transport>
+	<transport name="local">
+		<responseFlow>
+			<handler type="LocalResponder" />
+		</responseFlow>
+	</transport>
+</deployment>

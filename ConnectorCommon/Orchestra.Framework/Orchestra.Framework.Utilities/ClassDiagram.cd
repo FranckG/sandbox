@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Orchestra.Framework.Core.Artefact" Collapsed="true">
+    <Position X="3.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ECgGIAgAAQAAAAAUAAkABAADAAAQCIAACYAEIAAMAAQ=</HashCode>
+      <FileName>Artefact.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="Orchestra.Framework.Utilities.IUri" Collapsed="true">
+    <Position X="5.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAGIAAAAQAAAAAQAAAAAAACAAAQAAAACQAAAAAMAAQ=</HashCode>
+      <FileName>URI Management\IUri.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

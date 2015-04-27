@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Schema file written by PDE -->
+<schema targetNamespace="com.thalesgroup.orchestra.framework.connector" xmlns="http://www.w3.org/2001/XMLSchema">
+<annotation>
+      <appinfo>
+         <meta.schema plugin="com.thalesgroup.orchestra.framework.connector" id="connectorDeclaration" name="Orchestra Framework Connector Declaration"/>
+      </appinfo>
+      <documentation>
+         A connector implementation contribution.
+      </documentation>
+   </annotation>
+
+   <element name="extension">
+      <annotation>
+         <appinfo>
+            <meta.element />
+         </appinfo>
+      </annotation>
+      <complexType>
+         <sequence minOccurs="1" maxOccurs="unbounded">
+            <element ref="connector"/>
+         </sequence>
+         <attribute name="point" type="string" use="required">
+            <annotation>
+               <documentation>
+                  
+               </documentation>
+            </annotation>
+         </attribute>
+         <attribute name="id" type="string">
+            <annotation>
+               <documentation>
+                  
+               </documentation>
+            </annotation>
+         </attribute>
+         <attribute name="name" type="string">
+            <annotation>
+               <documentation>
+                  
+               </documentation>
+               <appinfo>
+                  <meta.attribute translatable="true"/>
+               </appinfo>
+            </annotation>
+         </attribute>
+      </complexType>
+   </element>
+
+   <element name="connector">
+      <annotation>
+         <documentation>
+            A new connector contribution.
+         </documentation>
+      </annotation>
+      <complexType>
+         <attribute name="id" type="string" use="required">
+            <annotation>
+               <documentation>
+                  The connector unique identifier.
+This is up to the provider to ensure that this is indeed unique.
+The best option is to prefix the id by the contributor symbolic name and to suffix it by a specific identifier.
+               </documentation>
+               <appinfo>
+                  <meta.attribute kind="identifier"/>
+               </appinfo>
+            </annotation>
+         </attribute>
+         <attribute name="class" type="string" use="required">
+            <annotation>
+               <documentation>
+                  The connector implementation.
+This must conform to IConnector interface.
+There is no need for the implementation to be uniquely bound to an ID.
+Several IDs might refer to the same implementation, although that does not provide with greater flexibility.
+               </documentation>
+               <appinfo>
+                  <meta.attribute kind="java" basedOn=":com.thalesgroup.orchestra.framework.connector.IConnector"/>
+               </appinfo>
+            </annotation>
+         </attribute>
+         <attribute name="logicalOnly" type="boolean">
+            <annotation>
+               <documentation>
+                  Does the connector handle only logical spacenames ?
+Such a connector would never be provided with transcripted (logical to physical) URIs in the calling context.
+This is useful when connectors provide with new specific services that do not handle physical data, but logical ones instead. In this case, the transcription mechanism should never be called.
+               </documentation>
+            </annotation>
+         </attribute>
+      </complexType>
+   </element>
+
+   <annotation>
+      <appinfo>
+         <meta.section type="since"/>
+      </appinfo>
+      <documentation>
+         4.0.24
+      </documentation>
+   </annotation>
+
+   <annotation>
+      <appinfo>
+         <meta.section type="examples"/>
+      </appinfo>
+      <documentation>
+         [Enter extension point usage example here.]
+      </documentation>
+   </annotation>
+
+   <annotation>
+      <appinfo>
+         <meta.section type="apiinfo"/>
+      </appinfo>
+      <documentation>
+         Defines both a unique ID to identify the connector, and an implementation class.
+This is the only way to add new connector implementations to the framework.
+The ID is also used in the connector configuration file (outside Eclipse) to refer to the implementation.
+      </documentation>
+   </annotation>
+
+   <annotation>
+      <appinfo>
+         <meta.section type="implementation"/>
+      </appinfo>
+      <documentation>
+         [Enter information about supplied implementation of this extension point.]
+      </documentation>
+   </annotation>
+
+   <annotation>
+      <appinfo>
+         <meta.section type="copyright"/>
+      </appinfo>
+      <documentation>
+         THALESGROUP, 2010
+      </documentation>
+   </annotation>
+
+</schema>

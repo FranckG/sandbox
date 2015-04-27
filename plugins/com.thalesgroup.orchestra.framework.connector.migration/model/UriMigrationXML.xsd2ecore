@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd2ecore:XSD2EcoreMappingRoot xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsd2ecore="http://www.eclipse.org/emf/2002/XSD2Ecore" inputs="UriMigration.ecore#/" outputs="UriMigrationXML.xsd#/">
+  <nested inputs="UriMigration.ecore#/" outputs="UriMigrationXML.xsd#/">
+    <nested inputs="UriMigration.ecore#//Migration" outputs="UriMigrationXML.xsd#//Migration;XSDComplexTypeDefinition">
+      <nested inputs="UriMigration.ecore#//Migration/toolName" outputs="UriMigrationXML.xsd#//Migration;XSDComplexTypeDefinition/XSDAttributeUse"/>
+      <nested inputs="UriMigration.ecore#//Migration/rootType" outputs="UriMigrationXML.xsd#//Migration;XSDComplexTypeDefinition/XSDAttributeUse=1"/>
+      <nested inputs="UriMigration.ecore#//Migration/invokeConnector" outputs="UriMigrationXML.xsd#//Migration;XSDComplexTypeDefinition/XSDAttributeUse=2"/>
+    </nested>
+    <nested inputs="UriMigration.ecore#//Migration" outputs="UriMigrationXML.xsd#//Migration;XSDElementDeclaration"/>
+    <nested inputs="UriMigration.ecore#//MigrationDefinition" outputs="UriMigrationXML.xsd#//MigrationDefinition;XSDComplexTypeDefinition=1">
+      <nested inputs="UriMigration.ecore#//MigrationDefinition/migrations" outputs="UriMigrationXML.xsd#//MigrationDefinition;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle"/>
+    </nested>
+    <nested inputs="UriMigration.ecore#//MigrationDefinition" outputs="UriMigrationXML.xsd#//MigrationDefinition;XSDElementDeclaration=1"/>
+  </nested>
+</xsd2ecore:XSD2EcoreMappingRoot>

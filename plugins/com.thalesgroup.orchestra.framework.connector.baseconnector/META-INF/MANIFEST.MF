@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Base Connector For Notepad and Gimp
+Bundle-SymbolicName: com.thalesgroup.orchestra.framework.connector.baseconnector
+Bundle-Version: 4.4.0.qualifier
+Bundle-Vendor: THALESGROUP
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Require-Bundle: com.thalesgroup.orchestra.framework.connector;visibility:=reexport,
+ org.eclipse.core.runtime,
+ com.thalesgroup.orchestra.framework.exchange,
+ org.apache.commons.io;bundle-version="1.3.0",
+ com.thalesgroup.orchestra.framework,
+ com.thalesgroup.orchestra.framework.connector.services
+Export-Package: com.thalesgroup.orchestra.framework.connector.baseconnector

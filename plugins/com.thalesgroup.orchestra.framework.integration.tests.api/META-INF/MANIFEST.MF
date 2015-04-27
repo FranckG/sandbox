@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Api
+Bundle-SymbolicName: com.thalesgroup.orchestra.framework.integration.tests.api
+Bundle-Version: 4.2.7.qualifier
+Bundle-Vendor: THALESGROUP
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.junit4;bundle-version="4.5.0",
+ com.thalesgroup.orchestra.framework;bundle-version="4.1.13",
+ com.thalesgroup.orchestra.framework.lib.base;bundle-version="4.1.13",
+ com.thalesgroup.orchestra.framework.model.migration;bundle-version="4.1.4",
+ com.thalesgroup.orchestra.framework.puci;bundle-version="4.1.11",
+ com.thalesgroup.orchestra.framework.exchange;bundle-version="4.1.3",
+ org.eclipse.swtbot.junit4_x;bundle-version="2.0.0"

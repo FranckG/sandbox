@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contexts:Context xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:contexts="http://com.thalesgroup.orchestra/framework/4_0_18/contexts" name="junit context">
+  <categories name="category">
+    <variables name="junit variable" mandatory="true">
+        <values value="junit variable value"/>
+    </variables>
+    <variables name="junit variable 2">
+        <values  value="${odm:\category\junit variable}"/>
+    </variables>
+    <variables name="junit variable 3" mandatory="true">
+        <values  value="${odm:\category\junit variable}"/>
+    </variables>
+    <variables name="junit variable 4" final="true">
+        <values  value="toto"/>
+    </variables>
+    <variables name="junit variable 5" mandatory="true">
+        <values  value="${odm:\category\junit variable 4}"/>
+    </variables>
+    <variables name="junit variable 6" mandatory="true">
+        <values  value="${env_var:windir}pre${odm:\category\junit variable 4}post${env_var:windir}"/>
+    </variables>
+    <variables name="substitution to child category" mandatory="true">
+        <values  value="${odm:\category\child category\variable 42}"/>
+    </variables>
+    <categories name="child category">
+      <variables name="variable 42">
+        <values  value="42"/>
+      </variables>
+      <variables name="substitution to parent category">
+        <values  value="${odm:\category\junit variable}"/>
+      </variables>
+    </categories>
+  </categories>
+  <superContext href="platform:/plugin/com.thalesgroup.orchestra.framework.model.handler/context/default.contexts#/"/>
+</contexts:Context>

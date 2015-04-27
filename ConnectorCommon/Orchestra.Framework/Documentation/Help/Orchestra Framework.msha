@@ -1,0 +1,20 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Orchestra Framework Help 5.2</title>
+</head>
+<body class="vendor-book">
+    <div class="details">
+        <span class="vendor">Vendor Name</span>
+        <span class="locale">en-us</span>
+        <span class="product">Orchestra Framework Help 5.2</span>
+        <span class="name">Orchestra Framework Help 5.2</span>
+    </div>
+    <div class="package-list">
+        <div class="package">
+            <!-- NOTE: The "name" span value cannot contain any periods! -->
+            <span class="name">Orchestra Framework</span>
+            <a class="current-link" href="Orchestra Framework.mshc">Orchestra Framework.mshc</a>
+        </div>
+    </div>
+</body>
+</html>

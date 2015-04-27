@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.thalesgroup.orchestra.framework.tests.feature"
+      label="Feature"
+      version="4.2.9.qualifier"
+      provider-name="THALESGROUP">
+
+   <description url="http://www.example.com/description">
+      [Enter Feature Description here.]
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      [Enter Copyright Description here.]
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      [Enter License Description here.]
+   </license>
+
+   <requires>
+      <import plugin="com.thalesgroup.orchestra.framework"/>
+      <import plugin="com.thalesgroup.orchestra.framework.ui"/>
+      <import plugin="com.thalesgroup.orchestra.framework.model.validation"/>
+      <import feature="com.thalesgroup.orchestra.framework.webservices.feature"/>
+      <import feature="com.thalesgroup.orchestra.framework.migration.feature"/>
+      <import feature="feature_orcLdap"/>
+      <import feature="org.eclipse.platform"/>
+      <import feature="org.eclipse.pde"/>
+   </requires>
+
+   <plugin
+         id="com.thalesgroup.orchestra.framework.project.test"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+   <plugin
+         id="com.thalesgroup.orchestra.framework.tests"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         fragment="true"/>
+
+   <plugin
+         id="com.thalesgroup.orchestra.framework.test"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         fragment="true"/>
+
+   <plugin
+         id="com.thalesgroup.orchestra.framework.common.test"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         fragment="true"
+         unpack="false"/>
+
+   <plugin
+         id="com.thalesgroup.orchestra.framework.model.migration.test"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         fragment="true"
+         unpack="false"/>
+
+   <plugin
+         id="com.thalesgroup.orchestra.framework.ui.tests"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.thalesgroup.orchestra.framework.integration.tests"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.thalesgroup.orchestra.framework.integration.tests.application"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.thalesgroup.orchestra.framework.integration.tests.connector.mock"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.thalesgroup.orchestra.framework.integration.tests.connector.mockecf"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.thalesgroup.orchestra.framework.integration.tests.connector.mockecf.launcher"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.thalesgroup.orchestra.framework.integration.tests.initializer"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.thalesgroup.orchestra.framework.integration.tests.api"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.ice.jni.registry.Registry"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>

@@ -1,0 +1,208 @@
+/**
+ * Copyright (c) THALES, 2011. All rights reserved.
+ */
+package com.thalesgroup.orchestra.framework.transcription.tests;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
+import org.eclipse.core.runtime.IStatus;
+import org.junit.After;
+import org.junit.Test;
+
+import com.thalesgroup.orchestra.framework.common.helper.FileHelper;
+import com.thalesgroup.orchestra.framework.lib.utils.uri.OrchestraURI;
+import com.thalesgroup.orchestra.framework.transcription.TranscriptionHelper;
+import com.thalesgroup.orchestra.framework.transcription.tests.TranscriptionTestHelper.AssociationInfo;
+
+import junit.framework.Assert;
+import junit.framework.TestCase;
+
+/**
+ * @author T0052089
+ */
+@SuppressWarnings("nls")
+public class TranscriptionTest extends TestCase {
+  public static final String artefactPath1 = "Artefacts1";
+  public static final String artefactPath2 = "Artefacts2";
+
+  private void checkLogicalToPhysicalTranscription(TranscriptionHelper transcriptionHelper_p, String artefactRootType_p, String artefactLogicalName_p,
+      String expectedArtefactPhysicalPath_p, boolean isOKexpected_p) {
+    final OrchestraURI artefactURI = new OrchestraURI(artefactRootType_p, artefactLogicalName_p);
+    // Transcription Logical -> Physical.
+    IStatus transcriptionResult = transcriptionHelper_p.transcript(artefactURI);
+    if (isOKexpected_p) {
+      Assert.assertTrue("Expecting to have an OK transcription and the correct physical path.",
+          transcriptionResult.isOK() && expectedArtefactPhysicalPath_p.equals(transcriptionResult.getMessage()));
+    } else {
+      Assert.assertFalse("Expecting to have a  NOK transcription.", transcriptionResult.isOK());
+    }
+  }
+
+  private void checkPhysicalToLogicalTranscription(TranscriptionHelper transcriptionHelper_p, String artefactPhysicalPath_p, String expectedArtefactRootType_p,
+      String expectedArtefactLogicalName_p, boolean isOKexpected_p) {
+    final OrchestraURI expectedArtefactURI = new OrchestraURI(expectedArtefactRootType_p, expectedArtefactLogicalName_p);
+    // Transcription Physical -> Logical.
+    IStatus transcriptionResult = transcriptionHelper_p.transcript(new OrchestraURI("FILESYSTEM", artefactPhysicalPath_p));
+    if (isOKexpected_p) {
+      Assert.assertTrue("Expecting to have an OK transcription and the correct logical URI.",
+          transcriptionResult.isOK() && expectedArtefactURI.getAbsoluteUri().equals(transcriptionResult.getMessage()));
+    } else {
+      Assert.assertFalse("Expecting to have a  NOK transcription.", transcriptionResult.isOK());
+    }
+  }
+
+  @After
+  public void cleanUp() throws IOException {
+    FileHelper.cleanDirectoryExceptDirectories(TranscriptionTestHelper.getTempDirectoryAbsolutePath(), Collections.<String> emptyList());
+  }
+
+  @Test
+  public void testConflictingAssociationsDetection() {
+    List<AssociationInfo> associationInfos = new ArrayList<AssociationInfo>();
+    associationInfos.add(new AssociationInfo("TXT", "*", "FILESYSTEM", "*.txt"));
+    associationInfos.add(new AssociationInfo("DOC", "*", "FILESYSTEM", "*.txt"));
+    List<String> artefactPaths =
+        Arrays.asList(TranscriptionTestHelper.getTempDirectoryAbsolutePath() + "\\" + artefactPath1, TranscriptionTestHelper.getTempDirectoryAbsolutePath()
+                                                                                                     + "\\" + artefactPath2);
+    TranscriptionHelper transcriptionHelper = TranscriptionTestHelper.getInitializedTranscriptionHelper(associationInfos, artefactPaths);
+    Assert.assertTrue("Expecting to find two conflicting associations.", 2 == transcriptionHelper.getConflictingAssociations().size());
+  }
+
+  @Test
+  public void testErroneousAssociationsDetection() {
+    List<AssociationInfo> associationInfos = new ArrayList<AssociationInfo>();
+    associationInfos.add(new AssociationInfo("TXT", "*", "FILESYSTEM", "*.txt*"));
+    associationInfos.add(new AssociationInfo("DOC", "*", "FILESYSTEM", "*.doc"));
+    List<String> artefactPaths =
+        Arrays.asList(TranscriptionTestHelper.getTempDirectoryAbsolutePath() + "\\" + artefactPath1, TranscriptionTestHelper.getTempDirectoryAbsolutePath()
+                                                                                                     + "\\" + artefactPath2);
+    TranscriptionHelper transcriptionHelper = TranscriptionTestHelper.getInitializedTranscriptionHelper(associationInfos, artefactPaths);
+    Assert.assertTrue("Expecting to find one erroneous association.", 1 == transcriptionHelper.getErrorneousAssocations().size());
+  }
+
+  @Test
+  public void testTranscriptionsExtensionWithOneWildCard() throws IOException {
+    transcriptionExtensionWithOneWildCard("", "", "");
+    transcriptionExtensionWithOneWildCard("", "prefix", "");
+    transcriptionExtensionWithOneWildCard("", "", "suffix");
+    transcriptionExtensionWithOneWildCard("", "prefix", "suffix");
+    transcriptionExtensionWithOneWildCard("subdir", "", "");
+    transcriptionExtensionWithOneWildCard("subdir", "prefix", "");
+    transcriptionExtensionWithOneWildCard("subdir", "", "suffix");
+    transcriptionExtensionWithOneWildCard("subdir", "prefix", "suffix");
+  }
+
+  @Test
+  public void testTranscriptionsWithOneWildCard() throws IOException {
+    transcriptionWithOneWildCard("", "", "");
+    transcriptionWithOneWildCard("", "prefix", "");
+    transcriptionWithOneWildCard("", "", "suffix");
+    transcriptionWithOneWildCard("", "prefix", "suffix");
+    transcriptionWithOneWildCard("subdir", "", "");
+    transcriptionWithOneWildCard("subdir", "prefix", "");
+    transcriptionWithOneWildCard("subdir", "", "suffix");
+    transcriptionWithOneWildCard("subdir", "prefix", "suffix");
+  }
+
+  @Test
+  public void testTranscriptionsWithTwoWildCards() throws IOException {
+    transcriptionWithTwoWildCards("", "", "");
+    transcriptionWithTwoWildCards("", "prefix", "");
+    transcriptionWithTwoWildCards("", "", "suffix");
+    transcriptionWithTwoWildCards("", "prefix", "suffix");
+    transcriptionWithTwoWildCards("subdir", "", "");
+    transcriptionWithTwoWildCards("subdir", "prefix", "");
+    transcriptionWithTwoWildCards("subdir", "", "suffix");
+    transcriptionWithTwoWildCards("subdir", "prefix", "suffix");
+  }
+
+  @Test
+  public void testTranscriptionWithOneWildCardMultiArtefactPathsMultiTypes() throws IOException {
+    final String txtArtefact1LogicalName = "testArtefact1";
+    final String txtArtefact1PhysicalPath = TranscriptionTestHelper.createArtefactInTempDirectory(artefactPath1 + "\\" + txtArtefact1LogicalName + ".txt");
+    final String txtArtefact2LogicalName = "testArtefact2";
+    final String txtArtefact2PhysicalPath = TranscriptionTestHelper.createArtefactInTempDirectory(artefactPath2 + "\\" + txtArtefact2LogicalName + ".txt");
+    final String docArtefact1LogicalName = "testArtefact1";
+    final String docArtefact1PhysicalPath = TranscriptionTestHelper.createArtefactInTempDirectory(artefactPath1 + "\\" + docArtefact1LogicalName + ".doc");
+    final String docArtefact2LogicalName = "testArtefact2";
+    final String docArtefact2PhysicalPath = TranscriptionTestHelper.createArtefactInTempDirectory(artefactPath2 + "\\" + docArtefact2LogicalName + ".doc");
+
+    List<AssociationInfo> associationInfos = new ArrayList<AssociationInfo>();
+    associationInfos.add(new AssociationInfo("TXT", "*", "FILESYSTEM", "*.txt"));
+    associationInfos.add(new AssociationInfo("DOC", "*", "FILESYSTEM", "*.doc"));
+    List<String> artefactPaths =
+        Arrays.asList(TranscriptionTestHelper.getTempDirectoryAbsolutePath() + "\\" + artefactPath1, TranscriptionTestHelper.getTempDirectoryAbsolutePath()
+                                                                                                     + "\\" + artefactPath2);
+    TranscriptionHelper transcriptionHelper = TranscriptionTestHelper.getInitializedTranscriptionHelper(associationInfos, artefactPaths);
+
+    // OK transcription txt artefact 1.
+    checkLogicalToPhysicalTranscription(transcriptionHelper, "TXT", txtArtefact1LogicalName, txtArtefact1PhysicalPath, true);
+    checkPhysicalToLogicalTranscription(transcriptionHelper, txtArtefact1PhysicalPath, "TXT", txtArtefact1LogicalName, true);
+    // OK transcription txt artefact 2.
+    checkLogicalToPhysicalTranscription(transcriptionHelper, "TXT", txtArtefact2LogicalName, txtArtefact2PhysicalPath, true);
+    checkPhysicalToLogicalTranscription(transcriptionHelper, txtArtefact2PhysicalPath, "TXT", txtArtefact2LogicalName, true);
+    // OK transcription doc artefact 1.
+    checkLogicalToPhysicalTranscription(transcriptionHelper, "DOC", docArtefact1LogicalName, docArtefact1PhysicalPath, true);
+    checkPhysicalToLogicalTranscription(transcriptionHelper, docArtefact1PhysicalPath, "DOC", docArtefact1LogicalName, true);
+    // OK transcription doc artefact 2.
+    checkLogicalToPhysicalTranscription(transcriptionHelper, "DOC", docArtefact2LogicalName, docArtefact2PhysicalPath, true);
+    checkPhysicalToLogicalTranscription(transcriptionHelper, docArtefact2PhysicalPath, "DOC", docArtefact2LogicalName, true);
+  }
+
+  private void transcriptionExtensionWithOneWildCard(String subDirectory, String prefix_p, String suffix_p) throws IOException {
+    final String artefactLogicalName = "test/artefact";
+    final String subDirectoryPathElement = subDirectory + ((!subDirectory.isEmpty()) ? "\\" : "");
+    final String artefactPhysicalPath =
+        TranscriptionTestHelper.createArtefactInTempDirectory(artefactPath1 + "\\" + subDirectoryPathElement + artefactLogicalName + "/.txt");
+
+    // TranscriptionHelper initialization.
+    List<AssociationInfo> associationInfos = new ArrayList<AssociationInfo>();
+    String targetArtefactContent = subDirectory + ((!subDirectory.isEmpty()) ? "/" : "");
+    associationInfos.add(new AssociationInfo("TXT", prefix_p + "*" + suffix_p, "FILESYSTEM", targetArtefactContent + "*/.txt"));
+    List<String> artefactPaths = Arrays.asList(TranscriptionTestHelper.getTempDirectoryAbsolutePath() + "\\" + artefactPath1);
+    TranscriptionHelper transcriptionHelper = TranscriptionTestHelper.getInitializedTranscriptionHelper(associationInfos, artefactPaths);
+
+    checkLogicalToPhysicalTranscription(transcriptionHelper, "TXT", prefix_p + artefactLogicalName + suffix_p, artefactPhysicalPath, true);
+    checkPhysicalToLogicalTranscription(transcriptionHelper, artefactPhysicalPath, "TXT", prefix_p + artefactLogicalName + suffix_p, true);
+  }
+
+  private void transcriptionWithOneWildCard(String subDirectory_p, String prefix_p, String suffix_p) throws IOException {
+    final String artefactLogicalName = "testArtefact1";
+    final String subDirectoryPathElement = subDirectory_p + ((!subDirectory_p.isEmpty()) ? "\\" : "");
+    final String artefactPhysicalPath =
+        TranscriptionTestHelper.createArtefactInTempDirectory(artefactPath1 + "\\" + subDirectoryPathElement + artefactLogicalName + ".txt");
+
+    // TranscriptionHelper initialization.
+    List<AssociationInfo> associationInfos = new ArrayList<AssociationInfo>();
+    String targetArtefactContent = subDirectory_p + ((!subDirectory_p.isEmpty()) ? "/" : "");
+    associationInfos.add(new AssociationInfo("TXT", prefix_p + "*" + suffix_p, "FILESYSTEM", targetArtefactContent + "*.txt"));
+    List<String> artefactPaths = Arrays.asList(TranscriptionTestHelper.getTempDirectoryAbsolutePath() + "\\" + artefactPath1);
+    TranscriptionHelper transcriptionHelper = TranscriptionTestHelper.getInitializedTranscriptionHelper(associationInfos, artefactPaths);
+
+    checkLogicalToPhysicalTranscription(transcriptionHelper, "TXT", prefix_p + artefactLogicalName + suffix_p, artefactPhysicalPath, true);
+    checkPhysicalToLogicalTranscription(transcriptionHelper, artefactPhysicalPath, "TXT", prefix_p + artefactLogicalName + suffix_p, true);
+  }
+
+  private void transcriptionWithTwoWildCards(String subDirectory, String prefix_p, String suffix_p) throws IOException {
+    final String artefactLogicalName = "artefact";
+    final String subDirectoryPathElement = subDirectory + ((!subDirectory.isEmpty()) ? "/" : "");
+    final String artefactPhysicalPath =
+        TranscriptionTestHelper.createArtefactInTempDirectory(artefactPath1 + "/" + subDirectoryPathElement + "/" + artefactLogicalName + "/"
+                                                              + artefactLogicalName + ".txt");
+
+    // TranscriptionHelper initialization.
+    List<AssociationInfo> associationInfos = new ArrayList<AssociationInfo>();
+    String targetArtefactContent = subDirectory + ((!subDirectory.isEmpty()) ? "/" : "");
+    associationInfos.add(new AssociationInfo("TXT", prefix_p + "*" + suffix_p, "FILESYSTEM", targetArtefactContent + "*/*.txt"));
+    List<String> artefactPaths = Arrays.asList(TranscriptionTestHelper.getTempDirectoryAbsolutePath() + "\\" + artefactPath1);
+    TranscriptionHelper transcriptionHelper = TranscriptionTestHelper.getInitializedTranscriptionHelper(associationInfos, artefactPaths);
+
+    checkLogicalToPhysicalTranscription(transcriptionHelper, "TXT", prefix_p + artefactLogicalName + suffix_p, artefactPhysicalPath, true);
+    checkPhysicalToLogicalTranscription(transcriptionHelper, artefactPhysicalPath, "TXT", prefix_p + artefactLogicalName + suffix_p, true);
+  }
+
+}

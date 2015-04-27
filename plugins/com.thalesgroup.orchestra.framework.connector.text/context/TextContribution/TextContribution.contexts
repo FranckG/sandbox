@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contexts:Context xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:contexts="http://com.thalesgroup.orchestra/framework/4_1_0/contexts" id="cd22d0a8-5469-4005-83ff-22615efd3bb6" name="TextContribution">
+  <superContext href="../../plugin/com.thalesgroup.orchestra.framework.model.handler/context/default.contexts#9212e380-d34e-477d-bbae-0794a3b765e4"/>
+        <superCategoryCategories id="a8938603-905f-4597-9c52-de93c8066489" name="Orchestra Text File">
+        <superCategory href="../../plugin/com.thalesgroup.orchestra.framework.model.handler/context/default.contexts#10c81e9d-68e2-4e2e-ad4e-815f7dfc5e94"/>
+          <variables id="ec00a4c6-7406-48c4-b1e9-24a578d75e47" name="Text">
+            <values id="cefb1e8e-5ee7-4ca6-9bb7-946f301c1224" value="AddedOrchestraText"/>
+          </variables>
+          <variables id="6a49b9f6-5eb8-487c-bbb2-e901de9b153d" name="CppAsText">
+            <values id="6aeaab9d-bd6b-44d8-ab73-71b6e0a4805a" value="AddedOrchestraText"/>
+          </variables>
+        </superCategoryCategories>
+        <superCategoryCategories id="096cf8a3-4452-4bb5-a5ea-4228ef3084b0" name="Text">
+          <superCategory href="../../plugin/com.thalesgroup.orchestra.framework.model.handler/context/default.contexts#b7e39bc1-b760-4d04-917a-138c9872e1d6"/>
+          <variables xsi:type="contexts:FileVariable" id="ee966041-8da8-4f63-92a8-d663531dddf7" name="Path">
+            <values id="64ea98db-d5cf-4781-844c-304bf0440bf5" value="${odm:\Orchestra installation\COTS\Notepad\Current\Executable}"/>
+          </variables>
+          <variables id="f359a634-4e00-43b3-b5c4-8edf4ec054ac" name="LaunchArguments">
+            <values id="ea7d4e63-e43a-462a-9d8d-0f0fffec08fc" value="%PATH%"/>
+          </variables>
+        </superCategoryCategories>
+</contexts:Context>

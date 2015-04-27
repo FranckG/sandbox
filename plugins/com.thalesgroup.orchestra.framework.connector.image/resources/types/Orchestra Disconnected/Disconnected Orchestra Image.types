@@ -1,0 +1,21 @@
+
+[Types]
+Names=Disconnected Orchestra Image
+
+[Disconnected Orchestra Image]
+Tool=Text
+ToolEdit=Papeete
+Image=gimp
+Requirement1Name=Image
+Requirement1Print=$l
+Requirement1Image=gimp
+Requirement1Tree=<ELEMENT label="$l" uri="$u"></ELEMENT>
+Attribute1Name=OriginalType
+Attribute1IsVisible=0
+Attribute1Tree=<ELEMENT type="$i"></ELEMENT>
+Attribute2Name=uri
+Attribute2IsVisible=0
+Attribute2Tree=<ELEMENT uri="$i"></ELEMENT>
+FileExtension=gef
+Type=xml
+

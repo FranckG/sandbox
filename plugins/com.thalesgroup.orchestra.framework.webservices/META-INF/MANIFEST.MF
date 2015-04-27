@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: com.thalesgroup.orchestra.server.webservices
+Bundle-SymbolicName: com.thalesgroup.orchestra.framework.webservices;singleton:=true
+Bundle-Version: 4.1.3.qualifier
+Bundle-Vendor: THALESGROUP
+Require-Bundle: com.thalesgroup.orchestra.framework,
+ org.eclipse.core.runtime,
+ com.thalesgroup.orchestra.framework.lib,
+ org.apache.axis;bundle-version="1.4.0",
+ javax.xml.rpc;bundle-version="1.1.0",
+ javax.servlet;bundle-version="2.4.0"
+Eclipse-RegisterBuddy: org.apache.axis
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy

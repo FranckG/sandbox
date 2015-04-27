@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Orchestra Framework Lib Plug-in
+Bundle-SymbolicName: com.thalesgroup.orchestra.framework.lib;singleton:=true
+Bundle-Version: 4.4.1.qualifier
+Bundle-Vendor: THALESGROUP
+Export-Package: com.thalesgroup.orchestra.framework.lib,
+ com.thalesgroup.orchestra.framework.lib.constants,
+ com.thalesgroup.orchestra.framework.lib.helper,
+ com.thalesgroup.orchestra.framework.lib.utils,
+ com.thalesgroup.orchestra.framework.lib.utils.uri
+Require-Bundle: com.thalesgroup.orchestra.framework.lib.base;visibility:=reexport,
+ org.eclipse.core.runtime,
+ org.eclipse.emf.common;visibility:=reexport,
+ com.google.gdata.core;bundle-version="1.0.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6

@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Test
+Bundle-SymbolicName: com.thalesgroup.orchestra.framework.common.test
+Bundle-Version: 4.0.27.qualifier
+Bundle-Vendor: THALESGROUP
+Fragment-Host: com.thalesgroup.orchestra.framework.common;bundle-version="4.0.14"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.junit

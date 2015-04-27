@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Framework External Commands
+Bundle-SymbolicName: com.thalesgroup.orchestra.framework.connector.commands;singleton:=true
+Bundle-Version: 4.4.0.qualifier
+Bundle-Vendor: THALESGROUP
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: com.thalesgroup.orchestra.framework.connector;bundle-version="4.0.25",
+ org.eclipse.core.runtime;bundle-version="3.5.0",
+ com.thalesgroup.orchestra.framework.ui;bundle-version="4.0.30",
+ com.thalesgroup.orchestra.framework.model.handler;bundle-version="4.0.31",
+ com.thalesgroup.orchestra.framework;bundle-version="4.0.31",
+ com.thalesgroup.orchestra.security;bundle-version="1.0.0",
+ com.thalesgroup.orchestra.framework.ae;bundle-version="4.4.1"

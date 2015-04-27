@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Variable Manager Api
+Bundle-SymbolicName: com.thalesgroup.orchestra.variablemanager.api
+Bundle-Version: 4.1.3.qualifier
+Bundle-Vendor: THALESGROUP
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: com.thalesgroup.orchestra.framework.model
+Bundle-ActivationPolicy: lazy

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.thalesgroup.orchestra.framework.ae.feature"
+      label="Orchestra Explorer Feature"
+      version="4.4.0.qualifier"
+      provider-name="THALESGROUP">
+
+   <description url="http://www.example.com/description">
+      [Enter Feature Description here.]
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      [Enter Copyright Description here.]
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      [Enter License Description here.]
+   </license>
+
+   <requires>
+      <import plugin="org.apache.xerces"/>
+      <import feature="org.eclipse.rcp"/>
+      <import feature="org.eclipse.platform"/>
+      <import feature="com.thalesgroup.orchestra.framework.puci.feature" version="4.0.19.qualifier" match="greaterOrEqual"/>
+      <import feature="com.thalesgroup.orchestra.framework.webservices.feature" version="4.0.7.qualifier" match="greaterOrEqual"/>
+      <import feature="com.thalesgroup.orchestra.framework.root.ui.feature" version="4.0.17.qualifier" match="greaterOrEqual"/>
+      <import feature="com.thalesgroup.orchestra.framework.connector.contribution.feature" version="4.0.20.qualifier" match="greaterOrEqual"/>
+      <import feature="com.thalesgroup.orchestra.framework.exchange.feature" version="4.0.22.qualifier" match="greaterOrEqual"/>
+      <import feature="com.thalesgroup.orchestra.framework.ae.creation.feature" version="4.4.0" match="greaterOrEqual"/>
+   </requires>
+
+   <plugin
+         id="com.thalesgroup.orchestra.framework.ae"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>

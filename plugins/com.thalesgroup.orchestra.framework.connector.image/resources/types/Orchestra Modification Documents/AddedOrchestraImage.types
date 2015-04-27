@@ -1,0 +1,13 @@
+
+[Types]
+Names=AddedOrchestraImage
+
+[AddedOrchestraImage]
+Tool=text
+Requirement1Name=Image
+Requirement1Image=gimp
+Reference1Name=describes
+Reference2Name=satisfies
+FileExtension=xml
+Type=automatic
+

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/com.thalesgroup.orchestra.framework.connector.models/generated"
+    modelPluginID="com.thalesgroup.orchestra.framework.connector.models" modelName="Context"
+    importerID="org.eclipse.xsd.ecore.importer" complianceLevel="6.0" copyrightFields="false"
+    runtimeVersion="2.8">
+  <foreignModel>../xsd/Context.xsd</foreignModel>
+  <genPackages prefix="Context" basePackage="com.thalesgroup.orchestra.framework.models"
+      resource="XML" disposableProviderFactory="true" ecorePackage="context.ecore#/">
+    <genClasses ecoreClass="context.ecore#//Artifact">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute context.ecore#//Artifact/group"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference context.ecore#//Artifact/environmentProperties"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute context.ecore#//Artifact/environmentId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute context.ecore#//Artifact/rootPhysicalPath"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute context.ecore#//Artifact/uri"/>
+    </genClasses>
+    <genClasses ecoreClass="context.ecore#//Context">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute context.ecore#//Context/group"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference context.ecore#//Context/artifact"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute context.ecore#//Context/exportFilePath"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute context.ecore#//Context/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute context.ecore#//Context/keepOpen"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute context.ecore#//Context/launchArguments"/>
+    </genClasses>
+    <genClasses ecoreClass="context.ecore#//ContextDefinition">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference context.ecore#//ContextDefinition/context"/>
+    </genClasses>
+    <genClasses ecoreClass="context.ecore#//DocumentRoot">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute context.ecore#//DocumentRoot/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference context.ecore#//DocumentRoot/xMLNSPrefixMap"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference context.ecore#//DocumentRoot/xSISchemaLocation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference context.ecore#//DocumentRoot/contextDefinition"/>
+    </genClasses>
+    <genClasses ecoreClass="context.ecore#//EnvironmentProperty">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute context.ecore#//EnvironmentProperty/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute context.ecore#//EnvironmentProperty/value"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

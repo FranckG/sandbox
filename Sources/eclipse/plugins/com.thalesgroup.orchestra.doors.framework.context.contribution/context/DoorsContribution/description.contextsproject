@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<contextsproject:ContextsProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:contextsproject="http://com.thalesgroup.orchestra/framework/4_0_13/contextsproject">
-  <administrators id="t0008293"/>
-  <contextReferences uri="platform:/resource/DoorsContribution/DoorsContribution.contexts" id="c8197f56-402f-44a3-89c8-c4f1f973f654" name="DoorsContribution"/>
-</contextsproject:ContextsProject>

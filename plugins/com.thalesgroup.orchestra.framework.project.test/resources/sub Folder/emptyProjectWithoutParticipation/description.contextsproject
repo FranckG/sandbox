@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contextsproject:ContextsProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:contextsproject="http://com.thalesgroup.orchestra/framework/4_0_13/contextsproject">
+  <administrators id="s0011584"/>
+  <contextReferences uri="platform:/resource/emptyProjectWithoutParticipation/emptyProjectWithoutParticipation.contexts" id="92e151c2-5afc-4048-88c0-9c7c3bd72c1d" name="emptyProjectWithoutParticipation"/>
+</contextsproject:ContextsProject>

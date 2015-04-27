@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Application Tests
+Bundle-SymbolicName: com.thalesgroup.orchestra.framework.integration.tests.application;singleton:=true
+Bundle-Version: 4.0.41.qualifier
+Bundle-Activator: com.thalesgroup.orchestra.framework.integration.tests.application.FrameworkApplicationTestActivator
+Bundle-Vendor: THALESGROUP
+Require-Bundle: org.eclipse.core.runtime,
+ com.thalesgroup.orchestra.framework.root.ui;bundle-version="4.0.25",
+ com.thalesgroup.orchestra.framework.common;bundle-version="4.0.38"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy
+Export-Package: com.thalesgroup.orchestra.framework.integration.tests.application.handler

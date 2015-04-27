@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.startup">
+      <startup
+            class="com.thalesgroup.orchestra.framework.ecf.tests.StartupHandler">
+      </startup>
+   </extension>
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="org.eclipse.ui.ide.workbench"
+            name="Connector Ecf test product">
+         <property
+               name="appName"
+               value="Connector Ecf test product">
+         </property>
+      </product>
+   </extension>
+   <extension
+         id="id1"
+         point="org.eclipse.core.runtime.applications">
+      <application
+            cardinality="singleton-global"
+            thread="main"
+            visible="true">
+         <run
+               class="com.thalesgroup.orchestra.framework.ecf.tests.EcfTestApplication">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="com.thalesgroup.orchestra.framework.ecf.services.launcher">
+      <launcher
+            type="EcfTest">
+         <applicationPath
+               path="\Orchestra\Ecf\Ecf Test Application"
+               type="VARIABLE">
+         </applicationPath>
+      </launcher>
+   </extension>
+</plugin>

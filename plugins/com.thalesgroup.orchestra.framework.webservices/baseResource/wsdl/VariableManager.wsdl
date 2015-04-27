@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions
+	targetNamespace="http://com.thalesgroup.orchestra.framework/VariableManager"
+	xmlns:apachesoap="http://xml.apache.org/xml-soap"
+	xmlns:impl="http://com.thalesgroup.orchestra.framework/VariableManager"
+	xmlns:intf="http://com.thalesgroup.orchestra.framework/VariableManager"
+	xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+	xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<!--
+		WSDL created by Apache Axis version: 1.4 Built on Apr 22, 2006
+		(06:55:48 PDT)
+	-->
+	<wsdl:types>
+		<schema targetNamespace="http://com.thalesgroup.orchestra.framework/VariableManager"
+			xmlns="http://www.w3.org/2001/XMLSchema">
+			<import namespace="http://xml.apache.org/xml-soap" />
+			<import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+			<complexType name="ArrayOf_xsd_string">
+				<complexContent>
+					<restriction base="soapenc:Array">
+						<attribute ref="soapenc:arrayType" wsdl:arrayType="xsd:string[]" />
+					</restriction>
+				</complexContent>
+			</complexType>
+			<complexType name="ArrayOf_impl_VariableWS">
+				<complexContent>
+					<restriction base="soapenc:Array">
+						<attribute ref="soapenc:arrayType" wsdl:arrayType="impl:VariableWS[]" />
+					</restriction>
+				</complexContent>
+			</complexType>
+			<complexType name="ArrayOf_impl_EnvironmentWS">
+				<complexContent>
+					<restriction base="soapenc:Array">
+						<attribute ref="soapenc:arrayType" wsdl:arrayType="impl:EnvironmentWS[]" />
+					</restriction>
+				</complexContent>
+			</complexType>
+			<complexType name="ArrayOf_impl_EnvironmentValueWS">
+				<complexContent>
+					<restriction base="soapenc:Array">
+						<attribute ref="soapenc:arrayType" wsdl:arrayType="impl:EnvironmentValueWS[]" />
+					</restriction>
+				</complexContent>
+			</complexType>
+			<complexType name="VariableWS">
+				<sequence>
+					<element name="description" nillable="true" type="xsd:string" />
+					<element name="multiValued" nillable="false" type="xsd:boolean" />
+					<element name="name" nillable="true" type="xsd:string" />
+					<element name="path" nillable="true" type="xsd:string" />
+					<element name="values" nillable="true" type="impl:ArrayOf_xsd_string" />
+				</sequence>
+			</complexType>
+			<complexType name="EnvironmentWS">
+				<sequence>
+					<element name="environmentId" type="string"></element>
+					<element name="environmentCategory" type="string"></element>
+					<element name="values" type="impl:ArrayOf_impl_EnvironmentValueWS"></element>
+				</sequence>
+			</complexType>
+			<complexType name="EnvironmentValueWS">
+				<sequence>
+					<element name="key" nillable="true" type="xsd:string" />
+					<element name="values" nillable="true" type="impl:ArrayOf_xsd_string" />
+				</sequence>
+			</complexType>
+			<complexType name="EnvironmentVariableWS">
+				<complexContent>
+					<extension base="impl:VariableWS">
+						<sequence>							<element name="environments" type="impl:ArrayOf_impl_EnvironmentWS"></element>
+						</sequence>
+					</extension>
+				</complexContent>
+			</complexType>
+			<complexType name="ConfDirDelta">
+				<attribute name="subPath" type="string"></attribute>
+				<attribute name="deltaType">
+					<simpleType>
+						<restriction base="string">
+							<enumeration value="ADD"></enumeration>
+							<enumeration value="DEL"></enumeration>
+							<enumeration value="MOD"></enumeration>
+						</restriction>
+					</simpleType>
+				</attribute>
+			</complexType>
+			<complexType name="ConfDirDeltas">
+				<sequence>
+					<element name="delta" type="impl:ConfDirDelta" maxOccurs="unbounded"
+						minOccurs="1"></element>
+				</sequence>
+			</complexType>
+			<complexType name="DeltaState">
+				<sequence>
+					<element name="delta" type="impl:ConfDirDelta" maxOccurs="1"
+						minOccurs="1">
+					</element>
+				</sequence>
+				<attribute name="success" type="boolean"></attribute>
+				<attribute name="description" type="string"></attribute>
+			</complexType>
+			<complexType name="DeltaStates">
+				<sequence>
+					<element name="deltaState" type="impl:DeltaState"
+						maxOccurs="unbounded" minOccurs="1"></element>
+				</sequence>
+			</complexType>
+		</schema>
+		<schema targetNamespace="http://xml.apache.org/xml-soap" xmlns="http://www.w3.org/2001/XMLSchema">
+			<import namespace="http://com.thalesgroup.orchestra.framework/VariableManager" />
+			<import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+			<complexType name="Vector">
+				<sequence>
+					<element maxOccurs="unbounded" minOccurs="0" name="item"
+						type="xsd:anyType" />
+				</sequence>
+			</complexType>
+		</schema>
+	</wsdl:types>
+	<wsdl:message name="variableMessage">
+		<wsdl:part name="variable" type="impl:VariableWS" />
+	</wsdl:message>
+	<wsdl:message name="toolInstanceIDMessage">
+		<wsdl:part name="toolInstanceID" type="xsd:string" />
+	</wsdl:message>
+	<wsdl:message name="variablePathMessage">
+		<wsdl:part name="variablePath" type="xsd:string" />
+	</wsdl:message>
+	<wsdl:message name="categoryPathMessage">
+		<wsdl:part name="categoryPath" type="xsd:string" />
+	</wsdl:message>
+	<wsdl:message name="localeMessage">
+		<wsdl:part name="locale" type="xsd:string" />
+	</wsdl:message>
+	<wsdl:message name="categoryPathAndlocaleMessage">
+		<wsdl:part name="categoryPath" type="xsd:string" />
+		<wsdl:part name="locale" type="xsd:string" />
+	</wsdl:message>
+	<wsdl:message name="variablePathAndlocaleMessage">
+		<wsdl:part name="variablePath" type="xsd:string" />
+		<wsdl:part name="locale" type="xsd:string" />
+	</wsdl:message>
+	<wsdl:message name="variableValueMessage">
+		<wsdl:part name="value" type="xsd:string" />
+	</wsdl:message>
+	<wsdl:message name="currentContextNameMessage">
+		<wsdl:part name="currentContextName" type="xsd:string" />
+	</wsdl:message>
+	<wsdl:message name="categorySeparatorMessage">
+		<wsdl:part name="categorySeparator" type="xsd:string" />
+	</wsdl:message>
+	<wsdl:message name="emptyMessage" />
+	<wsdl:message name="variablesMessage">
+		<wsdl:part name="variables" type="impl:ArrayOf_impl_VariableWS" />
+	</wsdl:message>
+	<wsdl:message name="categoriesMessage">
+		<wsdl:part name="categories" type="impl:ArrayOf_xsd_string" />
+	</wsdl:message>
+	<wsdl:message name="contextNamesMessage">
+		<wsdl:part name="contextNames" type="impl:ArrayOf_xsd_string" />
+	</wsdl:message>
+	<wsdl:message name="configurationDirectoryUpdatedRequest">
+		<wsdl:part name="confDirPath" type="xsd:string"></wsdl:part>
+		<wsdl:part name="deltas" type="impl:ConfDirDeltas"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="configurationDirectoryUpdatedResponse">
+		<wsdl:part name="result" type="impl:DeltaStates"></wsdl:part>
+	</wsdl:message>
+	<wsdl:portType name="VariableManagerWSAdapter">
+		<wsdl:operation name="getCategories" parameterOrder="categoryPath">
+			<wsdl:input message="impl:categoryPathMessage" name="getCategoriesRequest" />
+			<wsdl:output message="impl:categoriesMessage" name="getCategoriesResponse" />
+		</wsdl:operation>
+		<wsdl:operation name="getVariable" parameterOrder="variablePath">
+			<wsdl:input message="impl:variablePathMessage" name="getVariableRequest" />
+			<wsdl:output message="impl:variableMessage" name="getVariableResponse" />
+		</wsdl:operation>
+		<wsdl:operation name="getAllContextNames">
+			<wsdl:input message="impl:emptyMessage" name="getAllContextNamesRequest" />
+			<wsdl:output message="impl:contextNamesMessage" name="getAllContextNamesResponse" />
+		</wsdl:operation>
+		<wsdl:operation name="getAllVariables">
+			<wsdl:input message="impl:emptyMessage" name="getAllVariablesRequest" />
+			<wsdl:output message="impl:variablesMessage" name="getAllVariablesResponse" />
+		</wsdl:operation>
+		<wsdl:operation name="getVariables" parameterOrder="categoryPath">
+			<wsdl:input message="impl:categoryPathMessage" name="getVariablesRequest" />
+			<wsdl:output message="impl:variablesMessage" name="getVariablesResponse" />
+		</wsdl:operation>
+		<wsdl:operation name="getCurrentContextName">
+			<wsdl:input message="impl:emptyMessage" name="getCurrentContextNameRequest" />
+			<wsdl:output message="impl:currentContextNameMessage"
+				name="getCurrentContextNameResponse" />
+		</wsdl:operation>
+		<wsdl:operation name="getSubstitutedValue"
+			parameterOrder="variablePath">
+			<wsdl:input message="impl:variablePathMessage" name="getSubstitutedValueRequest" />
+			<wsdl:output message="impl:variableValueMessage" name="getSubstitutedValueResponse" />
+		</wsdl:operation>
+		<wsdl:operation name="registerAsVariableConsumer"
+			parameterOrder="toolInstanceID">
+			<wsdl:input message="impl:toolInstanceIDMessage" name="registerAsVariableConsumerRequest" />
+			<wsdl:output message="impl:emptyMessage" name="registerAsVariableConsumerResponse" />
+		</wsdl:operation>
+		<wsdl:operation name="unregisterAsVariableConsumer"
+			parameterOrder="toolInstanceID">
+			<wsdl:input message="impl:toolInstanceIDMessage" name="unregisterAsVariableConsumerRequest" />
+			<wsdl:output message="impl:emptyMessage"
+				name="unregisterAsVariableConsumerResponse" />
+		</wsdl:operation>
+		<wsdl:operation name="getAllVariablesLocalized"
+			parameterOrder="locale">
+			<wsdl:input message="impl:localeMessage" name="getAllVariablesLocalizedRequest" />
+			<wsdl:output message="impl:variablesMessage" name="getAllVariablesLocalizedResponse" />
+		</wsdl:operation>
+		<wsdl:operation name="getVariableLocalized"
+			parameterOrder="variablePath locale">
+			<wsdl:input message="impl:variablePathAndlocaleMessage"
+				name="getVariableLocalizedRequest" />
+			<wsdl:output message="impl:variableMessage" name="getVariableLocalizedResponse" />
+		</wsdl:operation>
+		<wsdl:operation name="getVariablesLocalized"
+			parameterOrder="categoryPath locale">
+			<wsdl:input message="impl:categoryPathAndlocaleMessage"
+				name="getVariablesLocalizedRequest" />
+			<wsdl:output message="impl:variablesMessage" name="getVariablesLocalizedResponse" />
+		</wsdl:operation>
+		<wsdl:operation name="getVariableArtefactPath">
+			<wsdl:input message="impl:emptyMessage" name="getVariableArtefactPathRequest" />
+			<wsdl:output message="impl:variableMessage" name="getVariableArtefactPathResponse" />
+		</wsdl:operation>
+		<wsdl:operation name="getVariableConfigurationDirectory">
+			<wsdl:input message="impl:emptyMessage"
+				name="getVariableConfigurationDirectoryRequest" />
+			<wsdl:output message="impl:variableMessage"
+				name="getVariableConfigurationDirectoryResponse" />
+		</wsdl:operation>
+		<wsdl:operation name="getVariableSharedDirectory">
+			<wsdl:input message="impl:emptyMessage" name="getVariableSharedDirectoryRequest" />
+			<wsdl:output message="impl:variableMessage" name="getVariableSharedDirectoryResponse" />
+		</wsdl:operation>
+		<wsdl:operation name="getVariableTemporaryDirectory">
+			<wsdl:input message="impl:emptyMessage" name="getVariableTemporaryDirectoryRequest" />
+			<wsdl:output message="impl:variableMessage"
+				name="getVariableTemporaryDirectoryResponse" />
+		</wsdl:operation>
+		<wsdl:operation name="getCategorySeparator">
+			<wsdl:input message="impl:emptyMessage" name="getCategorySeparatorRequest" />
+			<wsdl:output message="impl:categorySeparatorMessage"
+				name="getCategorySeparatorResponse" />
+		</wsdl:operation>
+		<wsdl:operation name="configurationDirectoryUpdated">
+			<wsdl:input message="impl:configurationDirectoryUpdatedRequest"></wsdl:input>
+			<wsdl:output message="impl:configurationDirectoryUpdatedResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="VariableManagerSoapBinding" type="impl:VariableManagerWSAdapter">
+		<wsdlsoap:binding style="rpc"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="getCategories">
+			<wsdlsoap:operation soapAction="" />
+			<wsdl:input name="getCategoriesRequest">
+				<wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+					namespace="http://com.thalesgroup.orchestra.framework/VariableManager"
+					use="encoded" />
+			</wsdl:input>
+			<wsdl:output name="getCategoriesResponse">
+				<wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+					namespace="http://com.thalesgroup.orchestra.framework/VariableManager"
+					use="encoded" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="getVariable">
+			<wsdlsoap:operation soapAction="" />
+			<wsdl:input name="getVariableRequest">
+				<wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+					namespace="http://com.thalesgroup.orchestra.framework/VariableManager"
+					use="encoded" />
+			</wsdl:input>
+			<wsdl:output name="getVariableResponse">
+				<wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+					namespace="http://com.thalesgroup.orchestra.framework/VariableManager"
+					use="encoded" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="getAllContextNames">
+			<wsdlsoap:operation soapAction="" />
+			<wsdl:input name="getAllContextNamesRequest">
+				<wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+					namespace="http://com.thalesgroup.orchestra.framework/VariableManager"
+					use="encoded" />
+			</wsdl:input>
+			<wsdl:output name="getAllContextNamesResponse">
+				<wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+					namespace="http://com.thalesgroup.orchestra.framework/VariableManager"
+					use="encoded" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="getAllVariables">
+			<wsdlsoap:operation soapAction="" />
+			<wsdl:input name="getAllVariablesRequest">
+				<wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+					namespace="http://com.thalesgroup.orchestra.framework/VariableManager"
+					use="encoded" />
+			</wsdl:input>
+			<wsdl:output name="getAllVariablesResponse">
+				<wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+					namespace="http://com.thalesgroup.orchestra.framework/VariableManager"
+					use="encoded" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="getVariables">
+			<wsdlsoap:operation soapAction="" />
+			<wsdl:input name="getVariablesRequest">
+				<wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+					namespace="http://com.thalesgroup.orchestra.framework/VariableManager"
+					use="encoded" />
+			</wsdl:input>
+			<wsdl:output name="getVariablesResponse">
+				<wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+					namespace="http://com.thalesgroup.orchestra.framework/VariableManager"
+					use="encoded" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="getCurrentContextName">
+			<wsdlsoap:operation soapAction="" />
+			<wsdl:input name="getCurrentContextNameRequest">
+				<wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+					namespace="http://com.thalesgroup.orchestra.framework/VariableManager"
+					use="encoded" />
+			</wsdl:input>
+			<wsdl:output name="getCurrentContextNameResponse">
+				<wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+					namespace="http://com.thalesgroup.orchestra.framework/VariableManager"
+					use="encoded" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="getSubstitutedValue">
+			<wsdlsoap:operation soapAction="" />
+			<wsdl:input name="getSubstitutedValueRequest">
+				<wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+					namespace="http://com.thalesgroup.orchestra.framework/VariableManager"
+					use="encoded" />
+			</wsdl:input>
+			<wsdl:output name="getSubstitutedValueResponse">
+				<wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+					namespace="http://com.thalesgroup.orchestra.framework/VariableManager"
+					use="encoded" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="registerAsVariableConsumer">
+			<wsdlsoap:operation soapAction="" />
+			<wsdl:input name="registerAsVariableConsumerRequest">
+				<wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+					namespace="http://com.thalesgroup.orchestra.framework/VariableManager"
+					use="encoded" />
+			</wsdl:input>
+			<wsdl:output name="registerAsVariableConsumerResponse">
+				<wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+					namespace="http://com.thalesgroup.orchestra.framework/VariableManager"
+					use="encoded" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="unregisterAsVariableConsumer">
+			<wsdlsoap:operation soapAction="" />
+			<wsdl:input name="unregisterAsVariableConsumerRequest">
+				<wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+					namespace="http://com.thalesgroup.orchestra.framework/VariableManager"
+					use="encoded" />
+			</wsdl:input>
+			<wsdl:output name="unregisterAsVariableConsumerResponse">
+				<wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+					namespace="http://com.thalesgroup.orchestra.framework/VariableManager"
+					use="encoded" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="getAllVariablesLocalized">
+			<wsdlsoap:operation soapAction="" />
+			<wsdl:input name="getAllVariablesLocalizedRequest">
+				<wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+					namespace="http://com.thalesgroup.orchestra.framework/VariableManager"
+					use="encoded" />
+			</wsdl:input>
+			<wsdl:output name="getAllVariablesLocalizedResponse">
+				<wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+					namespace="http://com.thalesgroup.orchestra.framework/VariableManager"
+					use="encoded" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="getVariableLocalized">
+			<wsdlsoap:operation soapAction="" />
+			<wsdl:input name="getVariableLocalizedRequest">
+				<wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+					namespace="http://com.thalesgroup.orchestra.framework/VariableManager"
+					use="encoded" />
+			</wsdl:input>
+			<wsdl:output name="getVariableLocalizedResponse">
+				<wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+					namespace="http://com.thalesgroup.orchestra.framework/VariableManager"
+					use="encoded" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="getVariablesLocalized">
+			<wsdlsoap:operation soapAction="" />
+			<wsdl:input name="getVariablesLocalizedRequest">
+				<wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+					namespace="http://com.thalesgroup.orchestra.framework/VariableManager"
+					use="encoded" />
+			</wsdl:input>
+			<wsdl:output name="getVariablesLocalizedResponse">
+				<wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+					namespace="http://com.thalesgroup.orchestra.framework/VariableManager"
+					use="encoded" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="getVariableArtefactPath">
+			<wsdlsoap:operation soapAction="" />
+			<wsdl:input name="getVariableArtefactPathRequest">
+				<wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+					namespace="http://com.thalesgroup.orchestra.framework/VariableManager"
+					use="encoded" />
+			</wsdl:input>
+			<wsdl:output name="getVariableArtefactPathResponse">
+				<wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+					namespace="http://com.thalesgroup.orchestra.framework/VariableManager"
+					use="encoded" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="getVariableConfigurationDirectory">
+			<wsdlsoap:operation soapAction="" />
+			<wsdl:input name="getVariableConfigurationDirectoryRequest">
+				<wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+					namespace="http://com.thalesgroup.orchestra.framework/VariableManager"
+					use="encoded" />
+			</wsdl:input>
+			<wsdl:output name="getVariableConfigurationDirectoryResponse">
+				<wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+					namespace="http://com.thalesgroup.orchestra.framework/VariableManager"
+					use="encoded" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="getVariableSharedDirectory">
+			<wsdlsoap:operation soapAction="" />
+			<wsdl:input name="getVariableSharedDirectoryRequest">
+				<wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+					namespace="http://com.thalesgroup.orchestra.framework/VariableManager"
+					use="encoded" />
+			</wsdl:input>
+			<wsdl:output name="getVariableSharedDirectoryResponse">
+				<wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+					namespace="http://com.thalesgroup.orchestra.framework/VariableManager"
+					use="encoded" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="getVariableTemporaryDirectory">
+			<wsdlsoap:operation soapAction="" />
+			<wsdl:input name="getVariableTemporaryDirectoryRequest">
+				<wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+					namespace="http://com.thalesgroup.orchestra.framework/VariableManager"
+					use="encoded" />
+			</wsdl:input>
+			<wsdl:output name="getVariableTemporaryDirectoryResponse">
+				<wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+					namespace="http://com.thalesgroup.orchestra.framework/VariableManager"
+					use="encoded" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="getCategorySeparator">
+			<wsdlsoap:operation soapAction="" />
+			<wsdl:input name="getCategorySeparatorRequest">
+				<wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+					namespace="http://com.thalesgroup.orchestra.framework/VariableManager"
+					use="encoded" />
+			</wsdl:input>
+			<wsdl:output name="getCategorySeparatorResponse">
+				<wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+					namespace="http://com.thalesgroup.orchestra.framework/VariableManager"
+					use="encoded" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="configurationDirectoryUpdated">
+			<wsdlsoap:operation
+				soapAction="http://com.thalesgroup.orchestra.framework/VariableManager/configurationDirectoryUpdated" />
+			<wsdl:input>
+				<wsdlsoap:body use="literal"
+					namespace="http://com.thalesgroup.orchestra.framework/VariableManager"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</wsdl:input>
+			<wsdl:output>
+				<wsdlsoap:body use="literal"
+					namespace="http://com.thalesgroup.orchestra.framework/VariableManager"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="VariableManagerWSAdapterService">
+		<wsdl:port binding="impl:VariableManagerSoapBinding" name="VariableManager">
+			<wsdlsoap:address location="http://localhost:8097/services/VariableManager" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

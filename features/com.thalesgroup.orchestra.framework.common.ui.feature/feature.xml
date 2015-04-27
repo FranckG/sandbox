@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.thalesgroup.orchestra.framework.common.ui.feature"
+      label="Framework common UI feature"
+      version="4.1.4.qualifier"
+      provider-name="THALESGROUP">
+
+   <description url="http://www.example.com/description">
+      [Enter Feature Description here.]
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      [Enter Copyright Description here.]
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      [Enter License Description here.]
+   </license>
+
+   <includes
+         id="com.thalesgroup.orchestra.framework.common.ui.feature.source"
+         version="0.0.0"/>
+
+   <requires>
+      <import feature="com.thalesgroup.orchestra.framework.root.ui.feature"/>
+      <import feature="com.thalesgroup.orchestra.framework.common.feature"/>
+   </requires>
+
+   <plugin
+         id="com.thalesgroup.orchestra.framework.common.ui"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>

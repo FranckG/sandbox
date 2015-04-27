@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: COM connector plug-in
+Bundle-SymbolicName: com.thalesgroup.orchestra.framework.connector.com;singleton:=true
+Bundle-Version: 4.1.11.qualifier
+Bundle-Vendor: THALESGROUP
+Require-Bundle: org.eclipse.core.runtime,
+ com.thalesgroup.orchestra.framework.connector,
+ com.jacob;bundle-version="1.11.1",
+ com.thalesgroup.orchestra.framework.connector.models,
+ com.thalesgroup.orchestra.framework.exchange
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6

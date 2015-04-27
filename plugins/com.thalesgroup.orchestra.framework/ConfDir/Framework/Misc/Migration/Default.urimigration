@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UriMigration:MigrationDefinition xmlns:UriMigration="http://www.thalesgroup.com/orchestra/framework/4_0_27/UriMigration">
+  <migrations toolName="Notepad" rootType="CppAsText"/>
+  <migrations toolName="Gimp" rootType="PNG"/>
+  <migrations toolName="Paint" rootType="JPEG"/>
+  <migrations toolName="Photoeditor" rootType="JPG"/>
+</UriMigration:MigrationDefinition>

@@ -1,0 +1,13 @@
+
+[Types]
+Names=AddedOrchestraText
+
+[AddedOrchestraText]
+Tool=text
+Requirement1Name=Text
+Requirement1Image=notepad
+Reference1Name=describes
+Reference2Name=satisfies
+FileExtension=xml
+Type=automatic
+

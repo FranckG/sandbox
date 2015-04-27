@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Schema file written by PDE -->
+<schema targetNamespace="com.thalesgroup.orchestra.framework.environment" xmlns="http://www.w3.org/2001/XMLSchema">
+<annotation>
+      <appinfo>
+         <meta.schema plugin="com.thalesgroup.orchestra.framework.environment" id="environmentValidationRule" name="Environment specific validation rule"/>
+      </appinfo>
+      <documentation>
+         An environment specific validation rule contribution.
+      </documentation>
+   </annotation>
+
+   <element name="extension">
+      <annotation>
+         <appinfo>
+            <meta.element />
+         </appinfo>
+      </annotation>
+      <complexType>
+         <sequence minOccurs="1" maxOccurs="unbounded">
+            <element ref="validationRuleGroup"/>
+         </sequence>
+         <attribute name="point" type="string" use="required">
+            <annotation>
+               <documentation>
+                  
+               </documentation>
+            </annotation>
+         </attribute>
+         <attribute name="id" type="string">
+            <annotation>
+               <documentation>
+                  
+               </documentation>
+            </annotation>
+         </attribute>
+         <attribute name="name" type="string">
+            <annotation>
+               <documentation>
+                  
+               </documentation>
+               <appinfo>
+                  <meta.attribute translatable="true"/>
+               </appinfo>
+            </annotation>
+         </attribute>
+      </complexType>
+   </element>
+
+   <element name="validationRuleGroup">
+      <annotation>
+         <documentation>
+            A group of rules applying to the same environment id.
+         </documentation>
+      </annotation>
+      <complexType>
+         <sequence minOccurs="1" maxOccurs="unbounded">
+            <element ref="validationRule"/>
+         </sequence>
+         <attribute name="environmentDeclarationId" type="string" use="required">
+            <annotation>
+               <documentation>
+                  The environment declaration ID targeted by this rule, as defined by the environmentDeclaration extension point.
+               </documentation>
+            </annotation>
+         </attribute>
+      </complexType>
+   </element>
+
+   <element name="validationRule">
+      <complexType>
+         <attribute name="class" type="string" use="required">
+            <annotation>
+               <documentation>
+                  A validation rule implementation.
+Must conform to AbstractEnvironmentRule.
+               </documentation>
+               <appinfo>
+                  <meta.attribute kind="java" basedOn="com.thalesgroup.orchestra.framework.environment.validation.AbstractEnvironmentRule:"/>
+               </appinfo>
+            </annotation>
+         </attribute>
+         <attribute name="ruleScope" use="default" value="NOMINAL_TYPE">
+            <annotation>
+               <documentation>
+                  The rule scope defines when the rule is applied.
+----
+NOMINAL_TYPE is the default value, if none is provided.
+NOMINAL_TYPE means that whenever a context is validated, this rule will be applied.
+----
+MAKE_BASELINE_TYPE means the rule only applies when a new Make Baseline order is processed.
+----
+USE_BASELINE_TYPE means the rule only applies when a Use Baseline as Starting Point order is issued.
+               </documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <enumeration value="NOMINAL_TYPE">
+                  </enumeration>
+                  <enumeration value="MAKE_BASELINE_TYPE">
+                  </enumeration>
+                  <enumeration value="USE_BASELINE_TYPE">
+                  </enumeration>
+               </restriction>
+            </simpleType>
+         </attribute>
+      </complexType>
+   </element>
+
+   <annotation>
+      <appinfo>
+         <meta.section type="since"/>
+      </appinfo>
+      <documentation>
+         4.1.4
+      </documentation>
+   </annotation>
+
+   <annotation>
+      <appinfo>
+         <meta.section type="examples"/>
+      </appinfo>
+      <documentation>
+         [Enter extension point usage example here.]
+      </documentation>
+   </annotation>
+
+   <annotation>
+      <appinfo>
+         <meta.section type="apiinfo"/>
+      </appinfo>
+      <documentation>
+         Defines both the applicable environment ID and an implementation class.
+There is no restriction as to how many rules can be contributed to the same environment ID.
+      </documentation>
+   </annotation>
+
+   <annotation>
+      <appinfo>
+         <meta.section type="implementation"/>
+      </appinfo>
+      <documentation>
+         [Enter information about supplied implementation of this extension point.]
+      </documentation>
+   </annotation>
+
+   <annotation>
+      <appinfo>
+         <meta.section type="copyright"/>
+      </appinfo>
+      <documentation>
+         THALESGROUP, 2011
+      </documentation>
+   </annotation>
+
+</schema>

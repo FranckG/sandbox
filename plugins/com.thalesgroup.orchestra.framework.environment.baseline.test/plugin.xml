@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="com.thalesgroup.orchestra.framework.environment.environmentDeclaration">
+      <environment
+            category="File System"
+            class="com.thalesgroup.orchestra.framework.environment.baseline.test.ExtendedFSEnvironment"
+            handler="com.thalesgroup.orchestra.framework.environment.baseline.test.ExtendedFSEnvironmentHandler"
+            id="com.thalesgroup.orchestra.framework.environment.baseline.test.environment"
+            label="Directories on File System with Make Baseline support">
+      </environment>
+   </extension>
+
+</plugin>

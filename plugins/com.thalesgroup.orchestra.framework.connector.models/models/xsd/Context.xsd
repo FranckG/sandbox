@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns:context="http://www.thalesgroup.com/orchestra/framework/4_1_2/Context" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.thalesgroup.com/orchestra/framework/4_1_2/Context">
+	<xs:element name="contextDefinition" type="context:ContextDefinition"/>
+	<xs:complexType name="ContextDefinition">
+		<xs:sequence maxOccurs="1" minOccurs="1">
+			<xs:element name="context" type="context:Context"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Context">
+		<xs:sequence maxOccurs="unbounded" minOccurs="1">
+			<xs:element name="artifact" type="context:Artifact"/>
+		</xs:sequence>
+		<xs:attribute name="type" type="xs:string" use="required"/>
+		<xs:attribute name="exportFilePath" type="xs:string" use="required"/>
+		<xs:attribute name="keepOpen" type="xs:string" use="optional"/>
+		<xs:attribute name="launchArguments" type="xs:string" use="optional"/>
+	</xs:complexType>
+	<xs:complexType name="Artifact">
+		<xs:sequence maxOccurs="unbounded" minOccurs="1">
+			<xs:element name="environmentProperties" type="context:EnvironmentProperty"/>
+		</xs:sequence>
+		<xs:attribute name="uri" type="xs:string" use="required"/>
+		<xs:attribute name="rootPhysicalPath" type="xs:string" use="optional"/>
+		<xs:attribute name="environmentId" type="xs:string" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="EnvironmentProperty">
+		<xs:attribute name="name" type="xs:string" use="required"/>
+		<xs:attribute name="value" type="xs:string" use="required"/>
+	</xs:complexType>
+</xs:schema>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contexts:Context xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:contexts="http://com.thalesgroup.orchestra/framework/4_1_0/contexts" id="9212e380-d34e-477d-bbae-0794a3b765e4" name="Default Context">
+  <categories id="0e4b243d-0fca-4789-8b55-6f55d4b2dade" name="Orchestra">
+    <variables xsi:type="contexts:EnvironmentVariable" id="abed1a39-0a7e-4c93-b5eb-0c83c6591d55" name="ArtefactPath" multiValued="true" mandatory="true"/>
+    <variables xsi:type="contexts:FolderVariable" id="070d071b-1a7d-468f-8576-739be303d7d9" name="ConfigurationDirectory" description="The folder where the configuration directories set by the variable &quot;/Orchestra/Configuration Directories&quot; are merged at context switch.">
+      <values id="881b7a48-0f3e-49b5-a0b1-195d88cdc47a" value="${env_var:APPDATA}\Orchestra\OrchestraFramework\ConfdirExtracted"/>
+    </variables>
+    <variables xsi:type="contexts:EnvironmentVariable" id="ee049f8c-d4ca-423f-ad37-fcdfa997e29a" name="ConfigurationDirectories" multiValued="true" description="Contain folders to merge at context switch in order to dynamically build the merged Orchestra configuration directory." mandatory="true"/>
+    <variables xsi:type="contexts:FolderVariable" id="ce6cab9e-d9c8-4b99-a55a-57406aa90853" name="SharedDirectory">
+      <values id="aea4bf98-9801-4785-b891-d08facdfb86f" value="${env_var:USERPROFILE}\Local Settings\Temp\OF\Shared"/>
+    </variables>
+    <variables xsi:type="contexts:FolderVariable" id="234ad35b-8ca6-40d3-a96f-6b8a2bd3d194" name="TemporaryDirectory">
+      <values id="29790b92-8eaa-4c62-ac2a-1ce02ecfbd2e" value="${env_var:USERPROFILE}\Local Settings\Temp\OF\Tmp"/>
+    </variables>
+    <categories id="15acf6f2-66ab-470e-9b3f-b6510c5e9c5a" name="Scripts">
+      <variables id="bb10a6b7-6999-4187-9229-de2c3ba895f0" name="PreUnload" description="The path to a script executable, or NO_SCRIPT.&#xD;&#xA;If parameters are to be provided to the executable, define a &quot;PreUnload arguments&quot; variable (multivalued for multiple arguments) in this category (same namespace).">
+        <values id="346cfce2-ea17-46f6-81ed-f1c89bf7bf59" value="NO_SCRIPT"/>
+      </variables>
+      <variables id="ff1bf851-0d9d-4f85-84c6-31f1276ffebc" name="PreLoad" description="The path to a script executable, or NO_SCRIPT.&#xD;&#xA;If parameters are to be provided to the executable, define a &quot;PreLoad arguments&quot; variable (multivalued for multiple arguments) in this category (same namespace).">
+        <values id="c91c371e-a08d-4078-82b7-70c302a558cb" value="NO_SCRIPT"/>
+      </variables>
+      <variables id="1243dc85-c0ca-4fda-a409-a2d6f50af4d1" name="PostLoad" description="The path to a script executable, or NO_SCRIPT.&#xD;&#xA;If parameters are to be provided to the executable, define a &quot;PostLoad arguments&quot; variable (multivalued for multiple arguments) in this category (same namespace).">
+        <values id="fb9e1260-0225-419c-a52a-7d31f5a21242" value="NO_SCRIPT"/>
+      </variables>
+    </categories>
+    <categories id="18d4f9d4-5731-4e9b-92e6-50b783a6f48a" name="LinkManager">
+      <categories id="10c81e9d-68e2-4e2e-ad4e-815f7dfc5e94" name="Associations"/>
+    </categories>
+    <categories id="b7e39bc1-b760-4d04-917a-138c9872e1d6" name="Connectors">
+    </categories>
+    <categories id="74ef1892-e8bd-457b-adbf-133b4e7279ff" name="Environments">
+      <categories id="8e75aeb2-698c-4ff3-9a7a-df6463a7f695" name="ChangeSet">
+        <categories id="dc8edac0-aa22-42b5-a234-a594f32dad3f" name="ColumnProperties"/>
+      </categories>
+    </categories>
+    <categories id="63bed31d-9207-4cd5-9209-d144dfe0167d" name="Security">
+      <variables xsi:type="contexts:FileVariable" id="5d64cdf4-1595-45db-a5ca-b7396f03eb5f" name="CredentialsLocation" mandatory="true">
+        <values id="bbdd22d1-9f75-49fa-9969-7b706637b7a9" value="${env_var:APPDATA}\Orchestra\OrchestraFramework\credentials.db"/>
+      </variables>
+    </categories>
+    <variables id="dc9d686d-a76c-4870-b707-caa8cf43faef" name="Segment" mandatory="true">
+      <values id="44bbb259-aeda-456a-9ca7-27735079722e" value="Gold"/>
+    </variables>
+  </categories>
+</contexts:Context>

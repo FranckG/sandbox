@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Schema file written by PDE -->
+<schema targetNamespace="com.thalesgroup.orchestra.framework.ecf.services" xmlns="http://www.w3.org/2001/XMLSchema">
+<annotation>
+      <appInfo>
+         <meta.schema plugin="com.thalesgroup.orchestra.framework.ecf.services" id="launcher" name="RCP application launcher"/>
+      </appInfo>
+      <documentation>
+         The Orchestra Framework application launcher extension point.
+Allows for applicative requests to be handled even if the targeted application is not launched.
+Handles the application launching.
+      </documentation>
+   </annotation>
+
+   <element name="extension">
+      <annotation>
+         <appInfo>
+            <meta.element />
+         </appInfo>
+      </annotation>
+      <complexType>
+         <sequence>
+            <element ref="launcher"/>
+         </sequence>
+         <attribute name="point" type="string" use="required">
+            <annotation>
+               <documentation>
+                  
+               </documentation>
+            </annotation>
+         </attribute>
+         <attribute name="id" type="string">
+            <annotation>
+               <documentation>
+                  
+               </documentation>
+            </annotation>
+         </attribute>
+         <attribute name="name" type="string">
+            <annotation>
+               <documentation>
+                  
+               </documentation>
+               <appInfo>
+                  <meta.attribute translatable="true"/>
+               </appInfo>
+            </annotation>
+         </attribute>
+      </complexType>
+   </element>
+
+   <element name="launcher">
+      <complexType>
+         <choice>
+            <element ref="launcherClass"/>
+            <element ref="applicationPath"/>
+         </choice>
+         <attribute name="type" type="string" use="required">
+            <annotation>
+               <documentation>
+                  The type, as described in its definition file (cf associations), that should be launched by this launcher.
+               </documentation>
+            </annotation>
+         </attribute>
+         <attribute name="launchTime" type="string">
+            <annotation>
+               <documentation>
+                  An optional wait time (in seconds) before the launcher stops awaiting for the application to start, and returns on failure for current request.
+               </documentation>
+               <appInfo>
+                  <meta.attribute translatable="true"/>
+               </appInfo>
+            </annotation>
+         </attribute>
+      </complexType>
+   </element>
+
+   <element name="launcherClass">
+      <annotation>
+         <documentation>
+            The launcher implementation class.
+         </documentation>
+      </annotation>
+      <complexType>
+         <attribute name="class" type="string" use="required">
+            <annotation>
+               <documentation>
+                  The launcher implementation class.
+               </documentation>
+               <appInfo>
+                  <meta.attribute kind="java" basedOn=":com.thalesgroup.orchestra.framework.ecf.services.launcher.ILauncher"/>
+               </appInfo>
+            </annotation>
+         </attribute>
+      </complexType>
+   </element>
+
+   <element name="applicationPath">
+      <annotation>
+         <documentation>
+            An ODM path to either a category or a variable.
+         </documentation>
+      </annotation>
+      <complexType>
+         <attribute name="path" type="string" use="required">
+            <annotation>
+               <documentation>
+                  The path (starting with a \) to an ODM category, or to an ODM variable describing the application to launch.
+The category should contain the following variable : Executable (the absolute path to the application executable).
+The variable should be a path (most probably an absolute one) to an executable launcher (whatever the system is supporting, for instance, for windows, an exe, bat, cmd, ... file).
+               </documentation>
+            </annotation>
+         </attribute>
+         <attribute name="type" use="required">
+            <annotation>
+               <documentation>
+                  The element type pointed by the path.
+Either a category or a variable.
+               </documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <enumeration value="CATEGORY">
+                  </enumeration>
+                  <enumeration value="VARIABLE">
+                  </enumeration>
+               </restriction>
+            </simpleType>
+         </attribute>
+      </complexType>
+   </element>
+
+   <annotation>
+      <appInfo>
+         <meta.section type="since"/>
+      </appInfo>
+      <documentation>
+         4.0.22
+      </documentation>
+   </annotation>
+
+   <annotation>
+      <appInfo>
+         <meta.section type="examples"/>
+      </appInfo>
+      <documentation>
+         [Enter extension point usage example here.]
+      </documentation>
+   </annotation>
+
+   <annotation>
+      <appInfo>
+         <meta.section type="apiinfo"/>
+      </appInfo>
+      <documentation>
+         [Enter API information here.]
+      </documentation>
+   </annotation>
+
+   <annotation>
+      <appInfo>
+         <meta.section type="implementation"/>
+      </appInfo>
+      <documentation>
+         [Enter information about supplied implementation of this extension point.]
+      </documentation>
+   </annotation>
+
+
+</schema>

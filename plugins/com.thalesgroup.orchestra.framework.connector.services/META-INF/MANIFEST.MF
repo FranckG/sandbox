@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Framework connector services
+Bundle-SymbolicName: com.thalesgroup.orchestra.framework.connector.services
+Bundle-Version: 4.1.2.qualifier
+Bundle-Vendor: THALESGROUP
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: com.thalesgroup.orchestra.framework.connector,
+ com.thalesgroup.orchestra.framework.puci,
+ org.eclipse.core.runtime
+Export-Package: com.thalesgroup.orchestra.framework.connector.services

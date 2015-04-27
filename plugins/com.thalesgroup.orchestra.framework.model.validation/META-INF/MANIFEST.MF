@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Orchestra Framework Model Validation
+Bundle-SymbolicName: com.thalesgroup.orchestra.framework.model.validation;singleton:=true
+Bundle-Version: 4.4.0.qualifier
+Bundle-Vendor: THALESGROUP
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.eclipse.emf.validation,
+ org.eclipse.core.runtime,
+ org.eclipse.core.variables,
+ com.thalesgroup.orchestra.framework.model.handler,
+ com.thalesgroup.orchestra.framework.environment,
+ org.apache.commons.lang;bundle-version="2.3.0"
+Export-Package: com.thalesgroup.orchestra.framework.model.validation,
+ com.thalesgroup.orchestra.framework.model.validation.baseline,
+ com.thalesgroup.orchestra.framework.model.validation.constraint,
+ com.thalesgroup.orchestra.framework.model.validation.constraint.name,
+ com.thalesgroup.orchestra.framework.model.validation.constraint.structure,
+ com.thalesgroup.orchestra.framework.model.validation.constraint.value
+Bundle-ActivationPolicy: lazy
+Bundle-Activator: com.thalesgroup.orchestra.framework.model.validation.ModelValidationActivator

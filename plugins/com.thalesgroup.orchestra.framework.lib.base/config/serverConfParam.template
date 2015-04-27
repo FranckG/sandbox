@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Server Configuration File -->
+<!DOCTYPE ConfigServer [
+<!ELEMENT ConfigServer (papeeteServer,ecfServer)>
+<!ELEMENT papeeteServer (papeetePort)>
+<!ATTLIST papeeteServer
+	port CDATA #REQUIRED
+	portRange CDATA #REQUIRED
+>
+<!ELEMENT papeetePort EMPTY>
+<!ATTLIST papeetePort
+	mode (static | dynamic) #REQUIRED
+>
+<!ELEMENT ecfServer EMPTY>
+<!ATTLIST ecfServer
+	location CDATA #REQUIRED
+	timeout CDATA #REQUIRED
+>
+]>
+<ConfigServer>
+	<papeeteServer port="4500" portRange="1024-4999">
+		<papeetePort mode="dynamic"/>
+	</papeeteServer>
+	<ecfServer location="ecftcp://localhost:4550/server" timeout="8640000000"/>
+</ConfigServer>

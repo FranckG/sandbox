@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl>http://wiki.corp.thales/display/sswb/Wiki+Orchestra</licenseUrl>
+    <projectUrl>http://jiradev.orchestra/browse/ORCFMK/?selectedTab=com.atlassian.jira.jira-projects-plugin:summary-panel</projectUrl>
+    <iconUrl>http://vmo10113.orchestra:7990/projects/DAM/avatar.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <copyright>Copyright 2015</copyright>
+  </metadata>
+</package>

@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Environment Make Baseline plug-in test
+Bundle-SymbolicName: com.thalesgroup.orchestra.framework.environment.baseline.test;singleton:=true
+Bundle-Version: 4.3.0.qualifier
+Bundle-Vendor: THALESGROUP
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: com.thalesgroup.orchestra.framework.environment
+Export-Package: com.thalesgroup.orchestra.framework.environment.baseline.test

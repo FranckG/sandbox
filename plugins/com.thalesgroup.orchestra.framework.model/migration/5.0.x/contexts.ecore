@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="contexts"
+    nsURI="http://com.thalesgroup.orchestra/framework/4_0_18/contexts" nsPrefix="contexts">
+  <eClassifiers xsi:type="ecore:EClass" name="Category" eSuperTypes="#//NamedElement #//ContributedElement #//ReferenceableElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="variables" upperBound="-1"
+        eType="#//Variable" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="categories" upperBound="-1"
+        eType="#//Category" containment="true" resolveProxies="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Context" eSuperTypes="#//NamedElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="categories" upperBound="-1"
+        eType="#//Category" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="superContext" eType="#//Context"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="transientCategories" upperBound="-1"
+        eType="#//Category" transient="true" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="superCategoryVariables"
+        upperBound="-1" eType="#//Variable" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="overridingVariables" upperBound="-1"
+        eType="#//OverridingVariable" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="superCategoryCategories"
+        upperBound="-1" eType="#//Category" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Variable" eSuperTypes="#//AbstractVariable #//ContributedElement #//ReferenceableElement">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="mandatory" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Boolean"
+        defaultValueLiteral="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FileVariable" eSuperTypes="#//Variable"/>
+  <eClassifiers xsi:type="ecore:EClass" name="FolderVariable" eSuperTypes="#//Variable"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ModelElement" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        iD="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="NamedElement" abstract="true" eSuperTypes="#//ModelElement">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AbstractVariable" abstract="true" eSuperTypes="#//NamedElement">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="final" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="multiValued" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Boolean"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="values" upperBound="-1"
+        eType="#//VariableValue" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="OverridingVariable" eSuperTypes="#//AbstractVariable #//ReferencingElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="overriddenVariable" lowerBound="1"
+        eType="#//Variable"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="VariableValue" eSuperTypes="#//ModelElement #//ReferenceableElement">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PendingElementsCategory" eSuperTypes="#//Category"/>
+  <eClassifiers xsi:type="ecore:EClass" name="OverridingVariableValue" eSuperTypes="#//VariableValue #//ReferencingElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="overriddenValue" eType="#//VariableValue"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="InstallationCategory" eSuperTypes="#//Category"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ContributedElement" eSuperTypes="#//ReferencingElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="superCategory" eType="#//Category"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ReferenceableElement">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="referencedByPath" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"
+        defaultValueLiteral=""/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ReferencingElement">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="referencePath" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+</ecore:EPackage>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contextsproject:ContextsProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:contextsproject="http://com.thalesgroup.orchestra/framework/4_0_13/contextsproject">
+  <administrators id="t0076261"/>
+  <contextReferences uri="platform:/resource/TextContribution/TextContribution.contexts" id="cd22d0a8-5469-4005-83ff-22615efd3bb6" name="TextContribution"/>
+</contextsproject:ContextsProject>

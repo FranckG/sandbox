@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contexts:Context xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:contexts="http://com.thalesgroup.orchestra/framework/4_0_18/contexts" name="StandardOrchestra">
+	<categories name="category">
+		<variables final="true" name="Empty" description="" mandatory="true" />
+		<categories name="category" />
+	</categories>
+	<categories name="category2">
+		<variables final="false" name="" description="" mandatory="false" />
+		<categories name="Data">
+			<variables final="false" mandatory="false" name="GEN_SVC_URL-FILE_NOT_AVAILABLE"
+				description="edit me">
+        		<values  value="file:///P:/Reference/Desk/HtmlMessages/FileNotAvailable.html"/>
+    		</variables>
+			<variables final="false" mandatory="false" name="GEN_SVC_URL-JUST_AN_INFO"
+				description="edit me">
+        		<values  value="file:///P:/Reference/Desk/HtmlMessages/Info.html"/>
+    		</variables>
+			<variables final="false" mandatory="false" name="HOME-SERVICE_DESK"
+				description="edit me">
+		        <values  value="${HOME-SYS_SUPPORT}\06_Service_Desk"/>
+		    </variables>
+		</categories>
+		<categories name="Tool">
+			<variables final="false" mandatory="false" name="HOME-MAIN" description="edit me">
+		        <values  value="file:///P:/Reference/Desk/HtmlMessages/FileNotAvailable.html"/>
+		    </variables>
+			<categories name="Orchestra">
+				<variables final="false" mandatory="false" name="HOME-ENGDSK" description="edit me">
+			        <values  value="${HOME-THALES}\EngineeringDesk"/>
+			    </variables>
+				<variables final="false" mandatory="false" name="HOME-MOZART" description="edit me">
+			        <values value="${HOME-THALES}\Mozart"/>
+			    </variables>
+				<variables final="false" mandatory="false" name="EXE-MOZART" description="edit me">
+			        <values	value="${HOME-MOZART}\Mozart.exe"/>
+			    </variables>
+			</categories>
+			<categories name="COTS">
+				<variables final="false" mandatory="false" name="HOME-FFOX" description="edit me">
+		        <values	value="${SYS_TOOL_HOME-MAIN}\Mozilla Firefox"/>
+		    </variables>
+			</categories>
+		</categories>
+		<categories name="Doc">
+			<variables final="false" mandatory="false"
+				name="GEN_DOC_GUIDE_URL-8710098.SE Handbook.Measure And Analyse"
+				description="edit me">
+		        <values value="${GEN_DOC_GUIDE_URL-DUMMY_CHORUS}"/>
+		    </variables>
+			<variables final="false" mandatory="false"
+				name="GEN_DOC_GUIDE_URL-8710098.SE Handbook.Analyse And Decide"
+				description="edit me">
+		        <values value="${GEN_DOC_GUIDE_URL-DUMMY_CHORUS}"/>
+		    </variables>
+		</categories>
+	</categories>
+	<superContext href="platform:/plugin/com.thalesgroup.orchestra.framework.model.handler/context/default.contexts#/"/>
+</contexts:Context>

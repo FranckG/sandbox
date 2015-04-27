@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="8.0.2" version="8.0.2" Modules="enterprise" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_CLEAN_RESOURCES_DISABLE_UPGRADE" Value="1"/>
+    <ROW Property="AI_CLEAN_RESOURCES_UNINSTALL" Value="1"/>
+    <ROW Property="AI_CLEAN_RESOURCES_USER_PROMPT_BASIC_UI" Value="0"/>
+    <ROW Property="AI_CLEAN_RESOURCES_USER_PROMPT_FULL_UI" Value="1"/>
+    <ROW Property="AI_MINDOTNETVERSION" MultiBuildValue="DefaultBuild:4.0" ValueLocId="-"/>
+    <ROW Property="AI_PRODUCTNAME_ARP" Value="[|Manufacturer] - [|ProductName] [|ProductVersion]"/>
+    <ROW Property="AI_UNINSTALLER" Value="msiexec.exe"/>
+    <ROW Property="ALLUSERS" Value="2" MultiBuildValue="DefaultBuild:1"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="ARPCONTACT" Value="orchestra-support@thalesgroup.com"/>
+    <ROW Property="ARPHELPLINK" Value="http://wiki.corp.thales/display/sswb/Support"/>
+    <ROW Property="ARPHELPTELEPHONE" Value="+33 1 73 22 31 37"/>
+    <ROW Property="ARPNOMODIFY" MultiBuildValue="DefaultBuild:1"/>
+    <ROW Property="ARPNOREPAIR" Value="1"/>
+    <ROW Property="ARPPRODUCTICON" Value="Orchestra.exe" Type="8"/>
+    <ROW Property="ARPSYSTEMCOMPONENT" Value="1"/>
+    <ROW Property="ARPURLINFOABOUT" Value="http://intranet.corp.thales/orchestra/pub/"/>
+    <ROW Property="BannerBitmap" MultiBuildValue="DefaultBuild:orchestra_banner.bmp" Type="1"/>
+    <ROW Property="BuildNumber" Value="0"/>
+    <ROW Property="Company" Value="Thales"/>
+    <ROW Property="DODTimeStamp" Value="0"/>
+    <ROW Property="DialogBitmap" MultiBuildValue="DefaultBuild:orchestra_dialog.bmp" Type="1"/>
+    <ROW Property="Division" Value="EPM" Options="1"/>
+    <ROW Property="ECLIPSE_INI" Value="empty"/>
+    <ROW Property="LicenceFile" Value="no file"/>
+    <ROW Property="MSIFASTINSTALL" MultiBuildValue="DefaultBuild:1"/>
+    <ROW Property="Manufacturer" Value="Thales" ValueLocId="*"/>
+    <ROW Property="Name" Value="OrchestraFramework"/>
+    <ROW Property="ProductCode" Value="1033:{D507BEFD-2BA4-486C-AA6E-75A4461B5F54} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="OrchestraFramework" ValueLocId="*"/>
+    <ROW Property="ProductVersion" Value="1.0.0"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{B3BCE449-1C5B-4F77-88FF-99E37158F949}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="Compatibilities_DIR" Directory_Parent="OrchestraDoctor_DIR" DefaultDir="Compat~1|Compatibilities"/>
+    <ROW Directory="OrchestraDoctor_DIR" Directory_Parent="SHAREDDIR" DefaultDir="Orches~1|OrchestraDoctor"/>
+    <ROW Directory="SHAREDDIR" Directory_Parent="TARGETDIR" DefaultDir="SHARED~1|SHAREDDIR" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="ToRegistered_DIR" Directory_Parent="lib_DIR" DefaultDir="Helper~1|HelpersC#"/>
+    <ROW Directory="lib_DIR" Directory_Parent="APPDIR" DefaultDir="lib"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="AI_CustomARPName" ComponentId="{711171C4-2ACF-4529-B592-204773EFD9FC}" Directory_="APPDIR" Attributes="4" KeyPath="DisplayName" Options="1"/>
+    <ROW Component="AI_DisableModify" ComponentId="{7866EC04-9EEA-4B74-B9F2-924978C16EDB}" Directory_="APPDIR" Attributes="4" KeyPath="NoModify" Options="1"/>
+    <ROW Component="ARPNOMODIFY" ComponentId="{B3FFC78F-D674-4080-92BD-57BD73A5ED7B}" Directory_="APPDIR" Attributes="4" KeyPath="ARPNOMODIFY"/>
+    <ROW Component="AppChk" ComponentId="{B654E5DD-4ED6-4CC7-83A7-6B9E74D9FB03}" Directory_="APPDIR" Attributes="4" KeyPath="AppChk"/>
+    <ROW Component="CRC.dll" ComponentId="{029BCBB2-14A4-4684-95E1-06AA6A54645A}" Directory_="lib_DIR" Attributes="0" KeyPath="CRC.dll"/>
+    <ROW Component="DMSREF" ComponentId="{63A3DE5B-09ED-4A24-B471-5C0BCC28BE42}" Directory_="APPDIR" Attributes="20" KeyPath="DMSREF"/>
+    <ROW Component="ITN" ComponentId="{8488C83D-AA0F-4E1D-8FD2-50CD11B8F2FE}" Directory_="APPDIR" Attributes="20" KeyPath="ITN"/>
+    <ROW Component="InstallDate" ComponentId="{509BE603-ECF2-42F5-9008-C20428B60FBB}" Directory_="APPDIR" Attributes="20" KeyPath="InstallDate"/>
+    <ROW Component="ManagedWinapi.dll" ComponentId="{3F8B99FD-6878-4E8D-B1B7-382997434D3B}" Directory_="lib_DIR" Attributes="0" KeyPath="ManagedWinapi.dll"/>
+    <ROW Component="MsiActions.dll" ComponentId="{85C6AFDF-DEDA-4E34-8BB4-A1A0E1938854}" Directory_="lib_DIR" Attributes="0" KeyPath="MsiActions.dll"/>
+    <ROW Component="MsiProperty01" ComponentId="{78DD9F8E-3E13-43FD-941B-E8388404F04E}" Directory_="APPDIR" Attributes="4" KeyPath="MsiProperty01"/>
+    <ROW Component="MsiProperty02" ComponentId="{3D2D0C8B-59FF-4DF6-A2E1-CCAD2D9161B1}" Directory_="APPDIR" Attributes="4" KeyPath="MsiProperty02"/>
+    <ROW Component="MsiProperty04" ComponentId="{40B5A5DB-8070-414C-8F7F-3AE16FE8A1CF}" Directory_="APPDIR" Attributes="4" KeyPath="MsiProperty04"/>
+    <ROW Component="MsiProperty05" ComponentId="{3C65105B-E325-4C3B-A744-08585EC500F0}" Directory_="APPDIR" Attributes="4" KeyPath="MsiProperty05"/>
+    <ROW Component="MsiProperty07" ComponentId="{25FE61C6-14A0-4638-A81F-DCCC4C1EC103}" Directory_="APPDIR" Attributes="4" KeyPath="MsiProperty07"/>
+    <ROW Component="Orchestra.Framework.Artefact.dll" ComponentId="{94E14114-3B9F-4352-8AB4-53A8CEBE09DB}" Directory_="lib_DIR" Attributes="0" KeyPath="Orchestra.Framework.Artefact.dll"/>
+    <ROW Component="Orchestra.Framework.Artefact.dll_1" ComponentId="{5A61ACBD-318D-4D9E-A071-2AE5ECDE3B30}" Directory_="ToRegistered_DIR" Attributes="0" KeyPath="Orchestra.Framework.Artefact.dll_1"/>
+    <ROW Component="Orchestra.Framework.Connector.Common.d_1" ComponentId="{3A8A6388-271D-40DB-8FBA-29AC628B031F}" Directory_="ToRegistered_DIR" Attributes="0" KeyPath="Orchestra.Framework.Connector.Common.dll_1"/>
+    <ROW Component="Orchestra.Framework.Connector.Common.dll" ComponentId="{92A78DEC-AEF0-44F5-83EA-2C7D06F0A187}" Directory_="lib_DIR" Attributes="0" KeyPath="Orchestra.Framework.Connector.Common.dll"/>
+    <ROW Component="Orchestra.Framework.Connector.Common.xml" ComponentId="{81394296-6F06-414B-8E4C-ED4371215741}" Directory_="ToRegistered_DIR" Attributes="0" KeyPath="Orchestra.Framework.Connector.Common.xml" Type="0"/>
+    <ROW Component="Orchestra.Framework.Utilities.dll" ComponentId="{E9C53360-B46A-4BB2-9FE9-65993B00E7CF}" Directory_="lib_DIR" Attributes="0" KeyPath="Orchestra.Framework.Utilities.dll"/>
+    <ROW Component="Orchestra.Framework.Utilities.dll_1" ComponentId="{4C9723D8-6D82-4A58-BD4E-4AD8DF81FBF4}" Directory_="ToRegistered_DIR" Attributes="0" KeyPath="Orchestra.Framework.Utilities.dll_1"/>
+    <ROW Component="Orchestra.Framework.VariableManager.XmlS" ComponentId="{12C01AC3-B79D-40E8-AC2A-84A3A4456236}" Directory_="lib_DIR" Attributes="0" KeyPath="Orchestra.Framework.VariableManager.XmlSerializers.dll"/>
+    <ROW Component="Orchestra.Framework.VariableManager.dl_1" ComponentId="{78FBB978-5BBF-4205-B39D-4CB084DEFF8A}" Directory_="ToRegistered_DIR" Attributes="0" KeyPath="Orchestra.Framework.VariableManager.dll_1"/>
+    <ROW Component="Orchestra.Framework.VariableManager.dll" ComponentId="{2D4F07D1-4912-4B99-8056-BCE8701D3063}" Directory_="lib_DIR" Attributes="0" KeyPath="Orchestra.Framework.VariableManager.dll"/>
+    <ROW Component="Orchestra_Protocol.exe" ComponentId="{02D1D53F-66E7-4E34-A9E5-7DE9C8012FDC}" Directory_="lib_DIR" Attributes="0" KeyPath="Orchestra_Protocol.exe"/>
+    <ROW Component="PackageID" ComponentId="{DB24B14F-F26D-479A-8DE1-58F863777DA2}" Directory_="APPDIR" Attributes="4" KeyPath="PackageID"/>
+    <ROW Component="SoftwareVersion" ComponentId="{DF037814-754B-4A47-AAEF-9CCC9112E4CA}" Directory_="APPDIR" Attributes="4" KeyPath="SoftwareVersion"/>
+    <ROW Component="URL_Protocol" ComponentId="{6427A21F-BF70-4C91-8E44-A4D415F0F79F}" Directory_="APPDIR" Attributes="4" KeyPath="URL_Protocol"/>
+    <ROW Component="_" ComponentId="{96029303-A22B-4615-A58C-883F2DA0F339}" Directory_="APPDIR" Attributes="4" KeyPath="_"/>
+    <ROW Component="__1" ComponentId="{2BD64F42-B1D3-4DCE-96DA-75C06B298B86}" Directory_="APPDIR" Attributes="4" KeyPath="__1"/>
+    <ROW Component="__2" ComponentId="{D51D6194-CFBC-4424-B421-32A45C398D8B}" Directory_="APPDIR" Attributes="4" KeyPath="__2"/>
+    <ROW Component="__3" ComponentId="{9BBBE231-A128-425A-ABCC-6556DFDDE631}" Directory_="APPDIR" Attributes="4" KeyPath="__3"/>
+    <ROW Component="compatibilityOrchestraFramework.xml" ComponentId="{60100BBC-A3CE-4566-9177-8B618B2B3A19}" Directory_="Compatibilities_DIR" Attributes="0" KeyPath="compatibilityOrchestraFramework.xml" Type="0"/>
+    <ROW Component="configConnector" ComponentId="{C6CE7489-9DB8-4658-94AD-DD11A47BE002}" Directory_="APPDIR" Attributes="4" KeyPath="configConnector"/>
+    <ROW Component="configConnector_1" ComponentId="{22AAE17B-F55F-407B-ADD8-5FAC8E662169}" Directory_="APPDIR" Attributes="4" KeyPath="configConnector_1"/>
+    <ROW Component="configConnector_2" ComponentId="{17DFF3F9-7AB7-45B3-AA4D-A9C880EF8226}" Directory_="APPDIR" Attributes="4" KeyPath="configConnector_2"/>
+    <ROW Component="configConnector_3" ComponentId="{E166DF4F-2774-4934-8F0E-B19449330046}" Directory_="APPDIR" Attributes="4" KeyPath="configConnector_3"/>
+    <ROW Component="iconPath" ComponentId="{8EC0D0BC-16AA-476A-80C7-13D9169F1A4A}" Directory_="APPDIR" Attributes="4" KeyPath="iconPath"/>
+    <ROW Component="iconPath_1" ComponentId="{D04823B8-8AB9-4246-8BCB-8BDDBF95B902}" Directory_="APPDIR" Attributes="4" KeyPath="iconPath_1"/>
+    <ROW Component="iconPath_2" ComponentId="{789207FD-CE9A-4EBC-AAA2-8BC6456DEC30}" Directory_="APPDIR" Attributes="4" KeyPath="iconPath_2"/>
+    <ROW Component="policy.1.0.Orchestra.Framework.Connector" ComponentId="{DC8E4E11-0849-4FEE-B82E-C34ED5AEA57A}" Directory_="lib_DIR" Attributes="0" KeyPath="policy.1.0.Orchestra.Framework.Connector.Common.dll"/>
+    <ROW Component="policy.1.2.Orchestra.Framework.VariableM" ComponentId="{3C9C6DC6-EAFE-4486-88AC-0441E0E656AB}" Directory_="lib_DIR" Attributes="0" KeyPath="policy.1.2.Orchestra.Framework.VariableManager.dll"/>
+    <ROW Component="policy.1.3.Orchestra.Framework.Artefact." ComponentId="{42AB40D6-FB7E-4D26-8595-AD9BC3E13970}" Directory_="lib_DIR" Attributes="0" KeyPath="policy.1.3.Orchestra.Framework.Artefact.dll"/>
+    <ROW Component="policy.1.3.Orchestra.Framework.Utilities" ComponentId="{E62A94EA-1278-49A0-94A6-C22CF5DDD2BD}" Directory_="lib_DIR" Attributes="0" KeyPath="policy.1.3.Orchestra.Framework.Utilities.dll"/>
+    <ROW Component="policy.1.3.Orchestra.Framework.VariableM" ComponentId="{07EFF987-1C9E-4AE0-9D77-E51B72BAD1BC}" Directory_="lib_DIR" Attributes="0" KeyPath="policy.1.3.Orchestra.Framework.VariableManager.dll"/>
+    <ROW Component="policy.1.4.Orchestra.Framework.Artefact." ComponentId="{06D80ABF-DC56-4233-A74A-C0349C8D8DBA}" Directory_="lib_DIR" Attributes="0" KeyPath="policy.1.4.Orchestra.Framework.Artefact.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0" Components="AI_CustomARPName AI_DisableModify CRC.dll ManagedWinapi.dll Orchestra_Protocol.exe Orchestra.Framework.Artefact.dll Orchestra.Framework.Utilities.dll Orchestra.Framework.VariableManager.dll Orchestra.Framework.VariableManager.XmlS _ __1 __2 URL_Protocol policy.1.2.Orchestra.Framework.VariableM policy.1.3.Orchestra.Framework.Utilities policy.1.3.Orchestra.Framework.Artefact. policy.1.3.Orchestra.Framework.VariableM Orchestra.Framework.Artefact.dll_1 Orchestra.Framework.Utilities.dll_1 Orchestra.Framework.VariableManager.dl_1 MsiActions.dll Orchestra.Framework.Connector.Common.dll policy.1.0.Orchestra.Framework.Connector Orchestra.Framework.Connector.Common.d_1 __3 Orchestra.Framework.Connector.Common.xml compatibilityOrchestraFramework.xml policy.1.4.Orchestra.Framework.Artefact. PackageID DMSREF InstallDate SoftwareVersion MsiProperty01 MsiProperty02 ARPNOMODIFY MsiProperty04 MsiProperty05 MsiProperty07 ITN AppChk configConnector iconPath configConnector_1 iconPath_1 configConnector_2 configConnector_3 iconPath_2"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="CRC.dll" Component_="CRC.dll" FileName="CRC.dll" Attributes="0" SourcePath="&lt;WORKSPACE&gt;ConnectorCommon\CRC32\release\CRC.dll" SelfReg="false" Sequence="1"/>
+    <ROW File="ManagedWinapi.dll" Component_="ManagedWinapi.dll" FileName="Manage~1.dll|ManagedWinapi.dll" Attributes="0" SourcePath="&lt;WORKSPACE&gt;ConnectorCommon\Orchestra.Framework\ManagedWinApi\ManagedWinapi.dll" SelfReg="false" Sequence="2"/>
+    <ROW File="MsiActions.dll" Component_="MsiActions.dll" FileName="MsiAct~1.dll|MsiActions.dll" Attributes="1" SourcePath="&lt;WORKSPACE&gt;ConnectorCommon\Orchestra.Framework\MsiActions\bin\Release\MsiActions.dll" SelfReg="false" Sequence="19"/>
+    <ROW File="Orchestra.Framework.Artefact.dll" Component_="Orchestra.Framework.Artefact.dll" FileName="Orches~1.dll|Orchestra.Framework.Artefact.dll" Attributes="0" SourcePath="&lt;WORKSPACE&gt;ConnectorCommon\Orchestra.Framework\Orchestra.Framework.Artefact\bin\Release\Orchestra.Framework.Artefact.dll" SelfReg="false" Sequence="4"/>
+    <ROW File="Orchestra.Framework.Artefact.dll_1" Component_="Orchestra.Framework.Artefact.dll_1" FileName="Orches~1.dll|Orchestra.Framework.Artefact.dll" Attributes="1" SourcePath="&lt;WORKSPACE&gt;ConnectorCommon\Orchestra.Framework\Orchestra.Framework.Artefact\bin\Release\Orchestra.Framework.Artefact.dll" SelfReg="false" Sequence="16"/>
+    <ROW File="Orchestra.Framework.Artefact.xml" Component_="Orchestra.Framework.Connector.Common.xml" FileName="Orches~2.xml|Orchestra.Framework.Artefact.xml" Attributes="1" SourcePath="&lt;WORKSPACE&gt;ConnectorCommon\Orchestra.Framework\Orchestra.Framework.Artefact\bin\Release\Orchestra.Framework.Artefact.xml" SelfReg="false" Sequence="25"/>
+    <ROW File="Orchestra.Framework.Connector.Common.dll" Component_="Orchestra.Framework.Connector.Common.dll" FileName="Orches~5.dll|Orchestra.Framework.Connector.Common.dll" Attributes="1" SourcePath="&lt;WORKSPACE&gt;ConnectorCommon\Orchestra.Framework\Orchestra.Framework.Connector.Common\bin\Release\Orchestra.Framework.Connector.Common.dll" SelfReg="false" Sequence="20"/>
+    <ROW File="Orchestra.Framework.Connector.Common.dll_1" Component_="Orchestra.Framework.Connector.Common.d_1" FileName="Orches~4.dll|Orchestra.Framework.Connector.Common.dll" Attributes="1" SourcePath="&lt;WORKSPACE&gt;ConnectorCommon\Orchestra.Framework\Orchestra.Framework.Connector.Common\bin\Release\Orchestra.Framework.Connector.Common.dll" SelfReg="false" Sequence="23"/>
+    <ROW File="Orchestra.Framework.Connector.Common.xml" Component_="Orchestra.Framework.Connector.Common.xml" FileName="Orches~1.xml|Orchestra.Framework.Connector.Common.xml" Attributes="1" SourcePath="&lt;WORKSPACE&gt;ConnectorCommon\Orchestra.Framework\Orchestra.Framework.Connector.Common\bin\Release\Orchestra.Framework.Connector.Common.xml" SelfReg="false" Sequence="24"/>
+    <ROW File="Orchestra.Framework.Utilities.dll" Component_="Orchestra.Framework.Utilities.dll" FileName="Orches~2.dll|Orchestra.Framework.Utilities.dll" Attributes="0" SourcePath="&lt;WORKSPACE&gt;ConnectorCommon\Orchestra.Framework\Orchestra.Framework.Utilities\bin\Release\Orchestra.Framework.Utilities.dll" SelfReg="false" Sequence="5"/>
+    <ROW File="Orchestra.Framework.Utilities.dll_1" Component_="Orchestra.Framework.Utilities.dll_1" FileName="Orches~2.dll|Orchestra.Framework.Utilities.dll" Attributes="1" SourcePath="&lt;WORKSPACE&gt;ConnectorCommon\Orchestra.Framework\Orchestra.Framework.Utilities\bin\Release\Orchestra.Framework.Utilities.dll" SelfReg="false" Sequence="17"/>
+    <ROW File="Orchestra.Framework.Utilities.xml" Component_="Orchestra.Framework.Connector.Common.xml" FileName="Orches~3.xml|Orchestra.Framework.Utilities.xml" Attributes="1" SourcePath="&lt;WORKSPACE&gt;ConnectorCommon\Orchestra.Framework\Orchestra.Framework.Utilities\bin\Release\Orchestra.Framework.Utilities.xml" SelfReg="false" Sequence="26"/>
+    <ROW File="Orchestra.Framework.VariableManager.XmlSerializers.dll" Component_="Orchestra.Framework.VariableManager.XmlS" FileName="Orches~4.dll|Orchestra.Framework.VariableManager.XmlSerializers.dll" Attributes="0" SourcePath="&lt;WORKSPACE&gt;ConnectorCommon\Orchestra.Framework\Orchestra.Framework.VariableManager\bin\Release\Orchestra.Framework.VariableManager.XmlSerializers.dll" SelfReg="false" Sequence="7"/>
+    <ROW File="Orchestra.Framework.VariableManager.dll" Component_="Orchestra.Framework.VariableManager.dll" FileName="Orches~3.dll|Orchestra.Framework.VariableManager.dll" Attributes="0" SourcePath="&lt;WORKSPACE&gt;ConnectorCommon\Orchestra.Framework\Orchestra.Framework.VariableManager\bin\Release\Orchestra.Framework.VariableManager.dll" SelfReg="false" Sequence="6"/>
+    <ROW File="Orchestra.Framework.VariableManager.dll_1" Component_="Orchestra.Framework.VariableManager.dl_1" FileName="Orches~3.dll|Orchestra.Framework.VariableManager.dll" Attributes="1" SourcePath="&lt;WORKSPACE&gt;ConnectorCommon\Orchestra.Framework\Orchestra.Framework.VariableManager\bin\Release\Orchestra.Framework.VariableManager.dll" SelfReg="false" Sequence="18"/>
+    <ROW File="Orchestra.Framework.VariableManager.xml" Component_="Orchestra.Framework.Connector.Common.xml" FileName="Orches~4.xml|Orchestra.Framework.VariableManager.xml" Attributes="1" SourcePath="&lt;WORKSPACE&gt;ConnectorCommon\Orchestra.Framework\Orchestra.Framework.VariableManager\bin\Release\Orchestra.Framework.VariableManager.xml" SelfReg="false" Sequence="27"/>
+    <ROW File="Orchestra_Protocol.exe" Component_="Orchestra_Protocol.exe" FileName="Orches~1.exe|Orchestra Protocol.exe" Attributes="0" SourcePath="&lt;WORKSPACE&gt;ConnectorCommon\Orchestra.Framework\Orchestra.Framework.Protocol\bin\Release\Orchestra Protocol.exe" SelfReg="false" Sequence="3"/>
+    <ROW File="compatibilityOrchestraFramework.xml" Component_="compatibilityOrchestraFramework.xml" FileName="compat~1.xml|compatibilityOrchestraFramework.xml" Attributes="1" SourcePath="&lt;WORKSPACE&gt;Compatibility\compatibilityOrchestraFramework.xml" SelfReg="false" Sequence="28"/>
+    <ROW File="policy.1.0.Orchestra.Framework.Connector.Common.dll" Component_="policy.1.0.Orchestra.Framework.Connector" FileName="policy~5.dll|policy.1.0.Orchestra.Framework.Connector.Common.dll" Attributes="1" SourcePath="&lt;WORKSPACE&gt;ConnectorCommon\Orchestra.Framework\Orchestra.Framework.Connector.Common\bin\Release\policy.1.0.Orchestra.Framework.Connector.Common.dll" SelfReg="false" Sequence="21"/>
+    <ROW File="policy.1.2.Orchestra.Framework.VariableManager.dll" Component_="policy.1.2.Orchestra.Framework.VariableM" FileName="policy~1.dll|policy.1.2.Orchestra.Framework.VariableManager.dll" Attributes="0" SourcePath="&lt;WORKSPACE&gt;ConnectorCommon\Orchestra.Framework\Orchestra.Framework.VariableManager\bin\Release\policy.1.2.Orchestra.Framework.VariableManager.dll" SelfReg="false" Sequence="8"/>
+    <ROW File="policy.1.3.Orchestra.Framework.Artefact.dll" Component_="policy.1.3.Orchestra.Framework.Artefact." FileName="policy~2.dll|policy.1.3.Orchestra.Framework.Artefact.dll" Attributes="0" SourcePath="&lt;WORKSPACE&gt;ConnectorCommon\Orchestra.Framework\Orchestra.Framework.Artefact\bin\Release\policy.1.3.Orchestra.Framework.Artefact.dll" SelfReg="false" Sequence="9"/>
+    <ROW File="policy.1.3.Orchestra.Framework.Utilities.dll" Component_="policy.1.3.Orchestra.Framework.Utilities" FileName="policy~3.dll|policy.1.3.Orchestra.Framework.Utilities.dll" Attributes="0" SourcePath="&lt;WORKSPACE&gt;ConnectorCommon\Orchestra.Framework\Orchestra.Framework.Utilities\bin\Release\policy.1.3.Orchestra.Framework.Utilities.dll" SelfReg="false" Sequence="10"/>
+    <ROW File="policy.1.3.Orchestra.Framework.VariableManager.dll" Component_="policy.1.3.Orchestra.Framework.VariableM" FileName="policy~4.dll|policy.1.3.Orchestra.Framework.VariableManager.dll" Attributes="0" SourcePath="&lt;WORKSPACE&gt;ConnectorCommon\Orchestra.Framework\Orchestra.Framework.VariableManager\bin\Release\policy.1.3.Orchestra.Framework.VariableManager.dll" SelfReg="false" Sequence="14"/>
+    <ROW File="policy.1.4.Orchestra.Framework.Artefact.dll" Component_="policy.1.4.Orchestra.Framework.Artefact." FileName="policy~6.dll|policy.1.4.Orchestra.Framework.Artefact.dll" Attributes="1" SourcePath="&lt;WORKSPACE&gt;ConnectorCommon\Orchestra.Framework\Orchestra.Framework.Artefact\bin\Release\policy.1.4.Orchestra.Framework.Artefact.dll" SelfReg="false" Sequence="29"/>
+    <ROW File="publisher_1.0.Connector.Common.config" Component_="policy.1.0.Orchestra.Framework.Connector" FileName="publis~5.con|publisher 1.0.Connector.Common.config" Attributes="1" SourcePath="&lt;WORKSPACE&gt;ConnectorCommon\Orchestra.Framework\Orchestra.Framework.Connector.Common\publisher 1.0.Connector.Common.config" SelfReg="false" Sequence="22"/>
+    <ROW File="publisher_1.2.VariableManager.config" Component_="policy.1.2.Orchestra.Framework.VariableM" FileName="publis~1.con|publisher 1.2.VariableManager.config" Attributes="0" SourcePath="&lt;WORKSPACE&gt;ConnectorCommon\Orchestra.Framework\Orchestra.Framework.VariableManager\publisher 1.2.VariableManager.config" SelfReg="false" Sequence="11"/>
+    <ROW File="publisher_1.3.Artefact.config" Component_="policy.1.3.Orchestra.Framework.Artefact." FileName="publis~2.con|publisher 1.3.Artefact.config" Attributes="0" SourcePath="&lt;WORKSPACE&gt;ConnectorCommon\Orchestra.Framework\Orchestra.Framework.Artefact\publisher 1.3.Artefact.config" SelfReg="false" Sequence="12"/>
+    <ROW File="publisher_1.3.Utilities.config" Component_="policy.1.3.Orchestra.Framework.Utilities" FileName="publis~3.con|publisher 1.3.Utilities.config" Attributes="0" SourcePath="&lt;WORKSPACE&gt;ConnectorCommon\Orchestra.Framework\Orchestra.Framework.Utilities\publisher 1.3.Utilities.config" SelfReg="false" Sequence="13"/>
+    <ROW File="publisher_1.3.VariableManager.config" Component_="policy.1.3.Orchestra.Framework.VariableM" FileName="publis~4.con|publisher 1.3.VariableManager.config" Attributes="0" SourcePath="&lt;WORKSPACE&gt;ConnectorCommon\Orchestra.Framework\Orchestra.Framework.VariableManager\publisher 1.3.VariableManager.config" SelfReg="false" Sequence="15"/>
+    <ROW File="publisher_1.4.Artefact.config" Component_="policy.1.4.Orchestra.Framework.Artefact." FileName="publis~6.con|publisher 1.4.Artefact.config" Attributes="1" SourcePath="&lt;WORKSPACE&gt;ConnectorCommon\Orchestra.Framework\Orchestra.Framework.Artefact\publisher 1.4.Artefact.config" SelfReg="false" Sequence="30"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.AiRemoveFileComponent">
+    <ROW RemoveFile="_" Condition="(AI_CLEAN_RESOURCES_UNINSTALL = &quot;1&quot;) AND (NOT UPGRADINGPRODUCTCODE)" Options="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="1" PackageFolder="..\..\AdvancedInstaller_DATA" PackageFileName="setup" Languages="en" InstallationType="4"/>
+    <ATTRIBUTE name="CurrentBuild" value="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.CacheComponent">
+    <ATTRIBUTE name="Enable" value="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="LicenseAgreementDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\LicenseAgreementDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiActionTextComponent">
+    <ROW Action="AI_AiRemoveFilesCommit" Description="Executing file removal operations." Template="Removing file: [1]" DescriptionLocId="ActionText.Description.AI_AiRemoveFilesCommit" TemplateLocId="ActionText.Template.AI_AiRemoveFilesCommit"/>
+    <ROW Action="AI_AiRemoveFilesDeferred" Description="Executing file removal operations." Template="Removing file: [1]" DescriptionLocId="ActionText.Description.AI_AiRemoveFilesDeferred" TemplateLocId="ActionText.Template.AI_AiRemoveFilesDeferred"/>
+    <ROW Action="AI_AiRemoveFilesImmediate" Description="Generating actions to remove files." DescriptionLocId="ActionText.Description.AI_AiRemoveFilesImmediate"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiAppSearchComponent">
+    <ROW Property="AI_DOTNET40_SEARCH" Signature_="AI_DotNet40SearchSgn" Builds="DefaultBuild"/>
+    <ROW Property="JAVA_AGENT_HOME" Signature_="AppSearchSign"/>
+    <ROW Property="ORCHESTRA_DOCTOR_HOME" Signature_="AppSearchSign_1"/>
+    <ROW Property="SHAREDDIR" Signature_="AppSearchSign_1_1"/>
+    <ROW Property="REGASM64_40_PATH" Signature_="FileSearchSign"/>
+    <ROW Property="REGASM86_40_PATH" Signature_="FileSearchSign_1"/>
+    <ROW Property="REGSVR32_PATH" Signature_="Regsvr32Sign"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiAssemblyComponent">
+    <ROW Component_="ManagedWinapi.dll" Feature_="MainFeature" Attributes="0"/>
+    <ROW Component_="Orchestra.Framework.Artefact.dll" Feature_="MainFeature" Attributes="0"/>
+    <ROW Component_="Orchestra.Framework.Connector.Common.dll" Feature_="MainFeature" Attributes="0"/>
+    <ROW Component_="Orchestra.Framework.Utilities.dll" Feature_="MainFeature" Attributes="0"/>
+    <ROW Component_="Orchestra.Framework.VariableManager.dll" Feature_="MainFeature" Attributes="0"/>
+    <ROW Component_="Orchestra.Framework.VariableManager.XmlS" Feature_="MainFeature" Attributes="0"/>
+    <ROW Component_="policy.1.0.Orchestra.Framework.Connector" Feature_="MainFeature" Attributes="0"/>
+    <ROW Component_="policy.1.2.Orchestra.Framework.VariableM" Feature_="MainFeature" Attributes="0"/>
+    <ROW Component_="policy.1.3.Orchestra.Framework.Artefact." Feature_="MainFeature" Attributes="0"/>
+    <ROW Component_="policy.1.3.Orchestra.Framework.Utilities" Feature_="MainFeature" Attributes="0"/>
+    <ROW Component_="policy.1.3.Orchestra.Framework.VariableM" Feature_="MainFeature" Attributes="0"/>
+    <ROW Component_="policy.1.4.Orchestra.Framework.Artefact." Feature_="MainFeature" Attributes="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiAssemblyNameComponent">
+    <ROW Component_="ManagedWinapi.dll" Name="Name" Value="ManagedWinapi" Sync="false"/>
+    <ROW Component_="ManagedWinapi.dll" Name="Culture" Value="neutral" Sync="false"/>
+    <ROW Component_="ManagedWinapi.dll" Name="Version" Value="0.3.3432.29465" Sync="false"/>
+    <ROW Component_="ManagedWinapi.dll" Name="PublicKeyToken" Value="e2ec263c0d5d3031" Sync="false"/>
+    <ROW Component_="ManagedWinapi.dll" Name="ProcessorArchitecture" Value="MSIL" Sync="false"/>
+    <ROW Component_="Orchestra.Framework.Artefact.dll" Name="Name" Value="Orchestra.Framework.Artefact" Sync="false"/>
+    <ROW Component_="Orchestra.Framework.Artefact.dll" Name="Culture" Value="neutral" Sync="false"/>
+    <ROW Component_="Orchestra.Framework.Artefact.dll" Name="Version" Value="1.4.0.0" Sync="false"/>
+    <ROW Component_="Orchestra.Framework.Artefact.dll" Name="PublicKeyToken" Value="90fff056874d238f" Sync="false"/>
+    <ROW Component_="Orchestra.Framework.Artefact.dll" Name="ProcessorArchitecture" Value="MSIL" Sync="false"/>
+    <ROW Component_="Orchestra.Framework.Connector.Common.dll" Name="Name" Value="Orchestra.Framework.Connector.Common" Sync="false"/>
+    <ROW Component_="Orchestra.Framework.Connector.Common.dll" Name="Culture" Value="neutral" Sync="false"/>
+    <ROW Component_="Orchestra.Framework.Connector.Common.dll" Name="Version" Value="1.0.0.0" Sync="true"/>
+    <ROW Component_="Orchestra.Framework.Connector.Common.dll" Name="PublicKeyToken" Value="90fff056874d238f" Sync="false"/>
+    <ROW Component_="Orchestra.Framework.Connector.Common.dll" Name="ProcessorArchitecture" Value="MSIL" Sync="false"/>
+    <ROW Component_="Orchestra.Framework.Utilities.dll" Name="Name" Value="Orchestra.Framework.Utilities" Sync="false"/>
+    <ROW Component_="Orchestra.Framework.Utilities.dll" Name="Culture" Value="neutral" Sync="false"/>
+    <ROW Component_="Orchestra.Framework.Utilities.dll" Name="Version" Value="1.3.9.0" Sync="false"/>
+    <ROW Component_="Orchestra.Framework.Utilities.dll" Name="PublicKeyToken" Value="90fff056874d238f" Sync="false"/>
+    <ROW Component_="Orchestra.Framework.Utilities.dll" Name="ProcessorArchitecture" Value="MSIL" Sync="false"/>
+    <ROW Component_="Orchestra.Framework.VariableManager.dll" Name="Name" Value="Orchestra.Framework.VariableManager" Sync="false"/>
+    <ROW Component_="Orchestra.Framework.VariableManager.dll" Name="Culture" Value="neutral" Sync="false"/>
+    <ROW Component_="Orchestra.Framework.VariableManager.dll" Name="Version" Value="1.3.1.0" Sync="false"/>
+    <ROW Component_="Orchestra.Framework.VariableManager.dll" Name="PublicKeyToken" Value="90fff056874d238f" Sync="false"/>
+    <ROW Component_="Orchestra.Framework.VariableManager.dll" Name="ProcessorArchitecture" Value="MSIL" Sync="false"/>
+    <ROW Component_="Orchestra.Framework.VariableManager.XmlS" Name="Name" Value="Orchestra.Framework.VariableManager.XmlSerializers" Sync="false"/>
+    <ROW Component_="Orchestra.Framework.VariableManager.XmlS" Name="Culture" Value="neutral" Sync="false"/>
+    <ROW Component_="Orchestra.Framework.VariableManager.XmlS" Name="Version" Value="1.3.1.0" Sync="false"/>
+    <ROW Component_="Orchestra.Framework.VariableManager.XmlS" Name="PublicKeyToken" Value="90fff056874d238f" Sync="false"/>
+    <ROW Component_="Orchestra.Framework.VariableManager.XmlS" Name="ProcessorArchitecture" Value="MSIL" Sync="false"/>
+    <ROW Component_="policy.1.0.Orchestra.Framework.Connector" Name="Name" Value="policy.1.0.Orchestra.Framework.Connector.Common" Sync="false"/>
+    <ROW Component_="policy.1.0.Orchestra.Framework.Connector" Name="Culture" Value="neutral" Sync="false"/>
+    <ROW Component_="policy.1.0.Orchestra.Framework.Connector" Name="Version" Value="1.0.0.0" Sync="false"/>
+    <ROW Component_="policy.1.0.Orchestra.Framework.Connector" Name="PublicKeyToken" Value="90fff056874d238f" Sync="false"/>
+    <ROW Component_="policy.1.0.Orchestra.Framework.Connector" Name="ProcessorArchitecture" Value="MSIL" Sync="false"/>
+    <ROW Component_="policy.1.2.Orchestra.Framework.VariableM" Name="Name" Value="policy.1.2.Orchestra.Framework.VariableManager" Sync="false"/>
+    <ROW Component_="policy.1.2.Orchestra.Framework.VariableM" Name="Culture" Value="neutral" Sync="false"/>
+    <ROW Component_="policy.1.2.Orchestra.Framework.VariableM" Name="Version" Value="1.3.1.0" Sync="false"/>
+    <ROW Component_="policy.1.2.Orchestra.Framework.VariableM" Name="PublicKeyToken" Value="90fff056874d238f" Sync="false"/>
+    <ROW Component_="policy.1.2.Orchestra.Framework.VariableM" Name="ProcessorArchitecture" Value="MSIL" Sync="false"/>
+    <ROW Component_="policy.1.3.Orchestra.Framework.Artefact." Name="Name" Value="policy.1.3.Orchestra.Framework.Artefact" Sync="false"/>
+    <ROW Component_="policy.1.3.Orchestra.Framework.Artefact." Name="Culture" Value="neutral" Sync="false"/>
+    <ROW Component_="policy.1.3.Orchestra.Framework.Artefact." Name="Version" Value="1.4.0.0" Sync="false"/>
+    <ROW Component_="policy.1.3.Orchestra.Framework.Artefact." Name="PublicKeyToken" Value="90fff056874d238f" Sync="false"/>
+    <ROW Component_="policy.1.3.Orchestra.Framework.Artefact." Name="ProcessorArchitecture" Value="MSIL" Sync="false"/>
+    <ROW Component_="policy.1.3.Orchestra.Framework.Utilities" Name="Name" Value="policy.1.3.Orchestra.Framework.Utilities" Sync="false"/>
+    <ROW Component_="policy.1.3.Orchestra.Framework.Utilities" Name="Culture" Value="neutral" Sync="false"/>
+    <ROW Component_="policy.1.3.Orchestra.Framework.Utilities" Name="Version" Value="1.3.9.0" Sync="false"/>
+    <ROW Component_="policy.1.3.Orchestra.Framework.Utilities" Name="PublicKeyToken" Value="90fff056874d238f" Sync="false"/>
+    <ROW Component_="policy.1.3.Orchestra.Framework.Utilities" Name="ProcessorArchitecture" Value="MSIL" Sync="false"/>
+    <ROW Component_="policy.1.3.Orchestra.Framework.VariableM" Name="Name" Value="policy.1.3.Orchestra.Framework.VariableManager" Sync="false"/>
+    <ROW Component_="policy.1.3.Orchestra.Framework.VariableM" Name="Culture" Value="neutral" Sync="false"/>
+    <ROW Component_="policy.1.3.Orchestra.Framework.VariableM" Name="Version" Value="1.3.1.0" Sync="false"/>
+    <ROW Component_="policy.1.3.Orchestra.Framework.VariableM" Name="PublicKeyToken" Value="90fff056874d238f" Sync="false"/>
+    <ROW Component_="policy.1.3.Orchestra.Framework.VariableM" Name="ProcessorArchitecture" Value="MSIL" Sync="false"/>
+    <ROW Component_="policy.1.4.Orchestra.Framework.Artefact." Name="Name" Value="policy.1.4.Orchestra.Framework.Artefact" Sync="false"/>
+    <ROW Component_="policy.1.4.Orchestra.Framework.Artefact." Name="Culture" Value="neutral" Sync="false"/>
+    <ROW Component_="policy.1.4.Orchestra.Framework.Artefact." Name="Version" Value="1.4.0.0" Sync="false"/>
+    <ROW Component_="policy.1.4.Orchestra.Framework.Artefact." Name="PublicKeyToken" Value="90fff056874d238f" Sync="false"/>
+    <ROW Component_="policy.1.4.Orchestra.Framework.Artefact." Name="ProcessorArchitecture" Value="MSIL" Sync="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="ResourceCleaner.dll" SourcePath="&lt;AI_CUSTACTS&gt;ResourceCleaner.dll"/>
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+    <ROW Name="dotNetCustAct.dll_1" SourcePath="&lt;AI_CUSTACTS64&gt;dotNetCustAct.dll"/>
+    <ROW Name="extract_parent_dir.vbs" SourcePath="&lt;MSI_RESOURCES&gt;scripts\extract_parent_dir.vbs"/>
+    <ROW Name="insertHklmRegistyValue.vbs" SourcePath="&lt;MSI_RESOURCES&gt;scripts\insertHklmRegistyValue.vbs"/>
+    <ROW Name="insert_jvm.vbs_1" SourcePath="&lt;MSI_RESOURCES&gt;scripts\insert_jvm.vbs"/>
+    <ROW Name="orchestra_banner.bmp" SourcePath="&lt;MSI_RESOURCES&gt;images\orchestra-banner.bmp"/>
+    <ROW Name="orchestra_dialog.bmp" SourcePath="&lt;MSI_RESOURCES&gt;images\orchestra-dialog.bmp"/>
+    <ROW Name="replace_variables.vbs_1" SourcePath="&lt;MSI_RESOURCES&gt;scripts\replace_variables.vbs"/>
+    <ROW Name="retrieve_eclipse_ini.vbs" SourcePath="&lt;MSI_RESOURCES&gt;scripts\retrieve_eclipse_ini.vbs"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCheckBoxComponent">
+    <ROW Property="AI_CLEAN_RESOURCES_UNINSTALL" Value="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlComponent">
+    <ROW Dialog_="LicenseAgreementDlg" Control="AgreementText" Type="FileScrollableText" X="20" Y="60" Width="330" Height="120" Attributes="7" Text="&lt;MSI_RESOURCES&gt;Licenses\Orchestra_License_Agreement.rtf" Control_Next="Buttons" TextLocId="Control.Text.LicenseAgreementDlg#AgreementText_2" MsiKey="LicenseAgreementDlg#AgreementText"/>
+    <ROW Dialog_="FolderDlg" Control="Description" Type="Text" X="25" Y="23" Width="235" Height="15" Attributes="196611" Text="This is the folder where [ProductName] will be installed." Control_Next="BannerLine" TextLocId="Control.Text.FolderDlg#Description" MsiKey="FolderDlg#Description"/>
+    <ROW Dialog_="AdminBrowseDlg" Control="Description" Type="Text" X="25" Y="23" Width="235" Height="15" Attributes="196611" Text="Browse to the destination folder" Control_Next="BannerLine" TextLocId="Control.Text.AdminBrowseDlg#Description" MsiKey="AdminBrowseDlg#Description"/>
+    <ROW Dialog_="AdminInstallPointDlg" Control="Description" Type="Text" X="25" Y="20" Width="217" Height="20" Attributes="196611" Text="Please specify a network location for the server image of [ProductName] product" Control_Next="BannerLine" TextLocId="Control.Text.AdminInstallPointDlg#Description" MsiKey="AdminInstallPointDlg#Description"/>
+    <ROW Dialog_="AdminRegistrationDlg" Control="Description" Type="Text" X="25" Y="23" Width="235" Height="15" Attributes="196611" Text="Please enter your company information" Control_Next="BannerLine" TextLocId="Control.Text.AdminRegistrationDlg#Description" MsiKey="AdminRegistrationDlg#Description"/>
+    <ROW Dialog_="BrowseDlg" Control="Description" Type="Text" X="25" Y="23" Width="235" Height="15" Attributes="196611" Text="Browse to the destination folder" Control_Next="BannerLine" TextLocId="Control.Text.BrowseDlg#Description" MsiKey="BrowseDlg#Description"/>
+    <ROW Dialog_="CustomizeDlg" Control="Description" Type="Text" X="25" Y="23" Width="235" Height="15" Attributes="196611" Text="Select the way you want features to be installed." Control_Next="Box" TextLocId="Control.Text.CustomizeDlg#Description" MsiKey="CustomizeDlg#Description"/>
+    <ROW Dialog_="DiskCostDlg" Control="Description" Type="Text" X="20" Y="20" Width="206" Height="20" Attributes="196611" Text="The disk space required for the installation of the selected features." Control_Next="BannerLine" TextLocId="Control.Text.DiskCostDlg#Description" MsiKey="DiskCostDlg#Description"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control="Description" Type="Text" X="25" Y="23" Width="248" Height="20" Attributes="196611" Text="Select the operation you wish to perform." Control_Next="ChangeText" TextLocId="Control.Text.MaintenanceTypeDlg#Description" MsiKey="MaintenanceTypeDlg#Description"/>
+    <ROW Dialog_="OutOfDiskDlg" Control="Description" Type="Text" X="20" Y="20" Width="206" Height="20" Attributes="196611" Text="Disk space required for the installation exceeds available disk space." Control_Next="BannerLine" TextLocId="Control.Text.OutOfDiskDlg#Description" MsiKey="OutOfDiskDlg#Description"/>
+    <ROW Dialog_="OutOfRbDiskDlg" Control="Description" Type="Text" X="20" Y="20" Width="206" Height="20" Attributes="196611" Text="Disk space required for the installation exceeds available disk space." Control_Next="BannerLine" TextLocId="Control.Text.OutOfRbDiskDlg#Description" MsiKey="OutOfRbDiskDlg#Description"/>
+    <ROW Dialog_="VerifyReadyDlg" Control="Description" Type="Text" X="25" Y="23" Width="249" Height="15" Attributes="196611" Text="The [Wizard] is ready to begin the [ProductName] installation" Control_Next="BannerLine" TextLocId="Control.Text.VerifyReadyDlg#Description" MsiKey="VerifyReadyDlg#Description"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control="Description" Type="Text" X="25" Y="23" Width="235" Height="15" Attributes="196611" Text="You have chosen to remove the program from your computer." Control_Next="BannerLine" TextLocId="Control.Text.VerifyRemoveDlg#Description" MsiKey="VerifyRemoveDlg#Description"/>
+    <ROW Dialog_="VerifyRepairDlg" Control="Description" Type="Text" X="25" Y="23" Width="235" Height="15" Attributes="196611" Text="The [Wizard] is ready to begin the repair of [ProductName]." Control_Next="BannerLine" TextLocId="Control.Text.VerifyRepairDlg#Description" MsiKey="VerifyRepairDlg#Description"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control="Description" Type="Text" X="25" Y="23" Width="249" Height="15" Attributes="196611" Text="Please read the following license agreement carefully" Control_Next="Title" TextLocId="Control.Text.LicenseAgreementDlg#Description" MsiKey="LicenseAgreementDlg#Description"/>
+    <ROW Dialog_="FolderDlg" Control="Browse" Type="PushButton" X="276" Y="126" Width="83" Height="18" Attributes="3" Text="[ButtonText_Browse]" Control_Next="BottomLine" Help="|" TextLocId="-" HelpLocId="Control.Help.FolderDlg#Browse" MsiKey="FolderDlg#Browse"/>
+    <ROW Dialog_="FolderDlg" Control="FolderLabel" Type="Text" X="20" Y="114" Width="165" Height="12" Attributes="3" Text="&amp;Folder:" Control_Next="FolderEdit" Help="|" TextLocId="Control.Text.FolderDlg#FolderLabel" HelpLocId="Control.Help.FolderDlg#FolderLabel" MsiKey="FolderDlg#FolderLabel"/>
+    <ROW Dialog_="BrowsePath" Control="BottomLine" Type="Line" X="6" Y="235" Width="363" Height="2" Attributes="1" Control_Next="OK"/>
+    <ROW Dialog_="BrowsePath" Control="Logo" Type="Text" X="6" Y="229" Width="70" Height="12" Attributes="1" Text="Advanced Installer" Control_Next="BannerBitmap" TextLocId="Control.Text.BrowseDlg#Logo"/>
+    <ROW Dialog_="BrowsePath" Control="OK" Type="PushButton" X="239" Y="244" Width="56" Height="17" Attributes="3" Text="[ButtonText_OK]" Control_Next="Cancel" TextLocId="-"/>
+    <ROW Dialog_="BrowsePath" Control="Cancel" Type="PushButton" X="303" Y="244" Width="56" Height="17" Attributes="3" Text="[ButtonText_Cancel]" Control_Next="Logo" TextLocId="-"/>
+    <ROW Dialog_="BrowsePath" Control="BannerBitmap" Type="Bitmap" X="0" Y="0" Width="370" Height="44" Attributes="1048577" Text="[BannerBitmap]" Control_Next="Title"/>
+    <ROW Dialog_="BrowsePath" Control="Title" Type="Text" X="15" Y="6" Width="200" Height="15" Attributes="196611" Text="Select path" TextStyle="[DlgTitleFont]" Control_Next="Description" TextLocId="Control.Text.BrowseDlg#Title"/>
+    <ROW Dialog_="BrowsePath" Control="Description" Type="Text" X="25" Y="23" Width="235" Height="15" Attributes="196611" Text="Browse to a directory" Control_Next="PathEdit" TextLocId="Control.Text.BrowseDlg#Description"/>
+    <ROW Dialog_="BrowsePath" Control="PathEdit" Type="PathEdit" X="100" Y="202" Width="246" Height="18" Attributes="11" Property="_BrowseProperty" Control_Next="ComboLabel"/>
+    <ROW Dialog_="BrowsePath" Control="ComboLabel" Type="Text" X="25" Y="58" Width="60" Height="10" Attributes="3" Text="&amp;Look in:" Control_Next="DirectoryCombo" TextLocId="Control.Text.BrowseDlg#ComboLabel"/>
+    <ROW Dialog_="BrowsePath" Control="DirectoryCombo" Type="DirectoryCombo" X="86" Y="55" Width="204" Height="80" Attributes="393227" Property="_BrowseProperty" Control_Next="Up"/>
+    <ROW Dialog_="BrowsePath" Control="Up" Type="PushButton" X="298" Y="55" Width="19" Height="19" Attributes="3670019" Text="[UpDirIcon]" Control_Next="NewFolder" Help="Up One Level|" HelpLocId="Control.Help.BrowseDlg#Up"/>
+    <ROW Dialog_="BrowsePath" Control="NewFolder" Type="PushButton" X="325" Y="55" Width="19" Height="19" Attributes="3670019" Text="[NewDirIcon]" Control_Next="DirectoryList" Help="Create A New Folder|" HelpLocId="Control.Help.BrowseDlg#NewFolder"/>
+    <ROW Dialog_="BrowsePath" Control="DirectoryList" Type="DirectoryList" X="25" Y="83" Width="320" Height="110" Attributes="15" Property="_BrowseProperty" Control_Next="PathLabel"/>
+    <ROW Dialog_="BrowsePath" Control="PathLabel" Type="Text" X="25" Y="205" Width="75" Height="10" Attributes="3" Text="&amp;Folder name:" Control_Next="BottomLine" TextLocId="Control.Text.BrowseDlg#PathLabel"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control="BannerLine" Type="Line" X="0" Y="44" Width="372" Height="0" Attributes="1" Control_Next="UnistallCleanupCheckBox" MsiKey="VerifyRemoveDlg#BannerLine"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control="UnistallCleanupCheckBox" Type="CheckBox" X="25" Y="150" Width="320" Height="11" Attributes="3" Property="AI_CLEAN_RESOURCES_UNINSTALL" Text="Remove [ProductName] settings and temporary files." Control_Next="Back"/>
+    <ATTRIBUTE name="FixedSizeBitmaps" value="2"/>
+    <ATTRIBUTE name="MultiBuildFixedSizeBitmaps" value="DefaultBuild:0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="LicenseAgreementDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="LicenseAgreementDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="301"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="BrowsePath" Control_="OK" Event="EndDialog" Argument="Return" Condition="1" Ordering="200"/>
+    <ROW Dialog_="BrowsePath" Control_="Up" Event="DirectoryListUp" Argument="0" Condition="1" Ordering="100"/>
+    <ROW Dialog_="BrowsePath" Control_="Cancel" Event="EndDialog" Argument="Return" Condition="1" Ordering="200"/>
+    <ROW Dialog_="BrowsePath" Control_="Cancel" Event="Reset" Argument="0" Condition="1" Ordering="100"/>
+    <ROW Dialog_="BrowsePath" Control_="NewFolder" Event="DirectoryListNew" Argument="0" Condition="1" Ordering="100"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_AiRemoveFilesCommit" Type="11777" Source="ResourceCleaner.dll" Target="OnAiRemoveFiles" WithoutSeq="true"/>
+    <ROW Action="AI_AiRemoveFilesDeferred" Type="11265" Source="ResourceCleaner.dll" Target="OnAiRemoveFiles" WithoutSeq="true"/>
+    <ROW Action="AI_AiRemoveFilesImmediate" Type="1" Source="ResourceCleaner.dll" Target="OnAiRemoveFilesImmediate"/>
+    <ROW Action="AI_DATA_SETTER" Type="51" Source="oe.link" Target="[APPDIR]eclipse\links\com.thalesgroup.orchestra.framework.oe.link|${FRAMEWORK_INSTALL_DIR}|[APPDIR]|/"/>
+    <ROW Action="AI_DATA_SETTER_1" Type="51" Source="oe.contributions.link" Target="[APPDIR]eclipse\links\com.thalesgroup.orchestra.framework.oe.contributions.link|${FRAMEWORK_INSTALL_DIR}|[APPDIR]|/"/>
+    <ROW Action="AI_DATA_SETTER_10" Type="51" Source="Uninstall_MsiActions.dll_x64" Target="/LogFile= /ReqVersion=4.0 /InstallType=notransaction /Action=Uninstall &quot;[#MsiActions.dll]&quot; &quot;[TempFolder]dotNetCustAct.dll_Config.xml&quot;"/>
+    <ROW Action="AI_DATA_SETTER_11" Type="51" Source="insertUninstallDate.vbs" Target="SOFTWARE\[Company]\DOD\Layer4\[ProductName]-[ProductVersion]|UninstallDate|[Date] - [Time]"/>
+    <ROW Action="AI_DATA_SETTER_2" Type="51" Source="insert_jvm.vbs" Target="[APPDIR]eclipse\framework.ini|[JAVA_AGENT_HOME]|\"/>
+    <ROW Action="AI_DATA_SETTER_3" Type="51" Source="CustomActionData" Target="APPDIR|DEFAULT_LOCATION"/>
+    <ROW Action="AI_DATA_SETTER_4" Type="51" Source="environment.contributions.link" Target="[APPDIR]eclipse\links\com.thalesgroup.orchestra.framework.environment.contributions.link|${FRAMEWORK_INSTALL_DIR}|[APPDIR]|/"/>
+    <ROW Action="AI_DATA_SETTER_5" Type="51" Source="launcher.contributions.link" Target="[APPDIR]eclipse\links\com.thalesgroup.orchestra.framework.launcher.contributions.link|${FRAMEWORK_INSTALL_DIR}|[APPDIR]|/"/>
+    <ROW Action="AI_DATA_SETTER_6" Type="51" Source="context.contributions.link" Target="[APPDIR]eclipse\links\com.thalesgroup.orchestra.framework.context.contributions.link|${FRAMEWORK_INSTALL_DIR}|[APPDIR]|/"/>
+    <ROW Action="AI_DATA_SETTER_7" Type="51" Source="OrchestraDoctor.path" Target="[APPDIR]lib\OrchestraDoctor.path|${ORCHESTRA_DOCTOR_HOME}|[ORCHESTRA_DOCTOR_HOME]|/"/>
+    <ROW Action="AI_DATA_SETTER_8" Type="51" Source="Retrieve_Eclipse_ini" Target="[APPDIR]\eclipse\framework.ini|[ECLIPSE_INI]"/>
+    <ROW Action="AI_DATA_SETTER_9" Type="51" Source="MsiActions.dll_x64" Target="/LogFile= /ReqVersion=4.0 /InstallType=notransaction /Action=Install &quot;[#MsiActions.dll]&quot; &quot;[TempFolder]dotNetCustAct.dll_Config.xml&quot;"/>
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_GetArpIconPath" Type="1" Source="aicustact.dll" Target="GetArpIconPath"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="APPEND_PRODUCT_NAME" Type="307" Source="INSTALL_LOCATION" Target="[DEFAULT_LOCATION][ProductName]\"/>
+    <ROW Action="DEFAULT_LOCATION_FALLBACK" Type="307" Source="DEFAULT_LOCATION" Target="[WindowsVolume][Manufacturer]\[Company]"/>
+    <ROW Action="FORMAT_DEFAULT_LOCATION" Type="51" Source="DEFAULT_LOCATION" Target="[DEFAULT_LOCATION]\"/>
+    <ROW Action="MsiActions.dll_x64" Type="3073" Source="dotNetCustAct.dll_1" Target="LaunchDotNetCustomAction"/>
+    <ROW Action="OrchestraDoctor.path" Type="3590" Source="replace_variables.vbs_1" Target="Main"/>
+    <ROW Action="RegasmInstall_Artefact_x64" Type="3106" Source="APPDIR" Target="[REGASM64_40_PATH] &quot;[#Orchestra.Framework.Artefact.dll_1]&quot;"/>
+    <ROW Action="RegasmInstall_Artefact_x86" Type="3106" Source="APPDIR" Target="[REGASM86_40_PATH] &quot;[#Orchestra.Framework.Artefact.dll_1]&quot;"/>
+    <ROW Action="RegasmInstall_Utilities_x64" Type="3106" Source="APPDIR" Target="[REGASM64_40_PATH] &quot;[#Orchestra.Framework.Utilities.dll_1]&quot;"/>
+    <ROW Action="RegasmInstall_Utilities_x86" Type="3106" Source="APPDIR" Target="[REGASM86_40_PATH] &quot;[#Orchestra.Framework.Utilities.dll_1]&quot;"/>
+    <ROW Action="RegasmInstall_VariableManager_x64" Type="3106" Source="APPDIR" Target="[REGASM64_40_PATH] &quot;[#Orchestra.Framework.VariableManager.dll_1]&quot;"/>
+    <ROW Action="RegasmInstall_VariableManager_x86" Type="3106" Source="APPDIR" Target="[REGASM86_40_PATH] &quot;[#Orchestra.Framework.VariableManager.dll_1]&quot;"/>
+    <ROW Action="RegasmUninstall_Artefact_x64" Type="3106" Source="ToRegistered_DIR" Target="[REGASM64_40_PATH] /u &quot;[#Orchestra.Framework.Artefact.dll_1]&quot;"/>
+    <ROW Action="RegasmUninstall_Artefact_x86" Type="3106" Source="ToRegistered_DIR" Target="[REGASM86_40_PATH] /u &quot;[#Orchestra.Framework.Artefact.dll_1]&quot;"/>
+    <ROW Action="RegasmUninstall_Utilities_x64" Type="3106" Source="ToRegistered_DIR" Target="[REGASM64_40_PATH] /u &quot;[#Orchestra.Framework.Utilities.dll_1]&quot;"/>
+    <ROW Action="RegasmUninstall_Utilities_x86" Type="3106" Source="ToRegistered_DIR" Target="[REGASM86_40_PATH] /u &quot;[#Orchestra.Framework.Utilities.dll_1]&quot;"/>
+    <ROW Action="RegasmUninstall_VariableManager_x64" Type="3106" Source="ToRegistered_DIR" Target="[REGASM64_40_PATH] /u &quot;[#Orchestra.Framework.VariableManager.dll_1]&quot;"/>
+    <ROW Action="RegasmUninstall_VariableManager_x86" Type="3106" Source="ToRegistered_DIR" Target="[REGASM86_40_PATH] /u &quot;[#Orchestra.Framework.VariableManager.dll_1]&quot;"/>
+    <ROW Action="Register_CRC" Type="3106" Source="lib_DIR" Target="[REGSVR32_PATH] /s &quot;[#CRC.dll]&quot;"/>
+    <ROW Action="Retrieve_Eclipse_ini" Type="3590" Source="retrieve_eclipse_ini.vbs" Target="Main"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[APPDIR]" MultiBuildTarget="DefaultBuild:[INSTALL_LOCATION]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+    <ROW Action="Uninstall_MsiActions.dll_x64" Type="3073" Source="dotNetCustAct.dll_1" Target="LaunchDotNetCustomAction"/>
+    <ROW Action="Unregister_CRC" Type="3106" Source="lib_DIR" Target="[REGSVR32_PATH] /s /u &quot;[#CRC.dll]&quot;"/>
+    <ROW Action="context.contributions.link" Type="3590" Source="replace_variables.vbs_1" Target="Main"/>
+    <ROW Action="environment.contributions.link" Type="3590" Source="replace_variables.vbs_1" Target="Main"/>
+    <ROW Action="extract_parent_dir.vbs" Type="6" Source="extract_parent_dir.vbs" Target="Main"/>
+    <ROW Action="insertUninstallDate.vbs" Type="1030" Source="insertHklmRegistyValue.vbs" Target="Main"/>
+    <ROW Action="insert_jvm.vbs" Type="3590" Source="insert_jvm.vbs_1" Target="Main"/>
+    <ROW Action="launcher.contributions.link" Type="3590" Source="replace_variables.vbs_1" Target="Main"/>
+    <ROW Action="oe.contributions.link" Type="3590" Source="replace_variables.vbs_1" Target="Main"/>
+    <ROW Action="oe.link" Type="3590" Source="replace_variables.vbs_1" Target="Main"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDialogComponent">
+    <ROW Dialog="BrowsePath" HCentering="50" VCentering="50" Width="370" Height="270" Attributes="3" Title="[ProductName] [Setup]" Control_First="BottomLine" Control_Default="OK" Control_Cancel="OK"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDrLocatorComponent">
+    <ROW Signature_="FileSearchSign" Path="[WindowsFolder]Microsoft.NET\Framework64\v4.0.30319" Depth="0"/>
+    <ROW Signature_="FileSearchSign_1" Path="[WindowsFolder]Microsoft.NET\Framework\v4.0.30319" Depth="0"/>
+    <ROW Signature_="Regsvr32Sign" Path="[SystemFolder]" Depth="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiEnvComponent">
+    <ROW Environment="ORCHESTRA_FRAMEWORK_HOME" Name="=-*ORCHESTRA_FRAMEWORK_HOME" Value="[APPDIR]" Component_="Orchestra_Protocol.exe"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiEventMappingComponent">
+    <ROW Dialog_="BrowsePath" Control_="DirectoryCombo" Event="IgnoreChange" Attribute="IgnoreChange"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="Orchestra.exe" SourcePath="&lt;MSI_RESOURCES&gt;icons\Orchestra.ico" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="Not Installed" Sequence="1503"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_GetArpIconPath" Sequence="51"/>
+    <ROW Action="extract_parent_dir.vbs" Condition="(Not Installed)" Sequence="1502" AdditionalSeq="AI_DATA_SETTER_3"/>
+    <ROW Action="AI_DATA_SETTER_3" Condition="(Not Installed)" Sequence="1501"/>
+    <ROW Action="oe.link" Condition="NOT Installed" Sequence="5976" AdditionalSeq="AI_DATA_SETTER"/>
+    <ROW Action="AI_DATA_SETTER" Condition="NOT Installed" Sequence="5975"/>
+    <ROW Action="oe.contributions.link" Condition="NOT Installed" Sequence="5978" AdditionalSeq="AI_DATA_SETTER_1"/>
+    <ROW Action="AI_DATA_SETTER_1" Condition="NOT Installed" Sequence="5977"/>
+    <ROW Action="insert_jvm.vbs" Condition="NOT Installed" Sequence="5972" AdditionalSeq="AI_DATA_SETTER_2"/>
+    <ROW Action="AI_DATA_SETTER_2" Condition="NOT Installed" Sequence="5971"/>
+    <ROW Action="AI_AiRemoveFilesImmediate" Sequence="3499"/>
+    <ROW Action="DEFAULT_LOCATION_FALLBACK" Condition="(DEFAULT_LOCATION = &quot;&quot;) AND (NOT Installed)" Sequence="601"/>
+    <ROW Action="FORMAT_DEFAULT_LOCATION" Condition="NOT (DEFAULT_LOCATION &gt;&gt; &quot;\&quot;)" Sequence="602"/>
+    <ROW Action="APPEND_PRODUCT_NAME" Condition="(NOT Installed) AND (NOT APPDIR)" Sequence="603"/>
+    <ROW Action="environment.contributions.link" Condition="NOT Installed" Sequence="5980" AdditionalSeq="AI_DATA_SETTER_4"/>
+    <ROW Action="AI_DATA_SETTER_4" Condition="NOT Installed" Sequence="5979"/>
+    <ROW Action="launcher.contributions.link" Condition="NOT Installed" Sequence="5982" AdditionalSeq="AI_DATA_SETTER_5"/>
+    <ROW Action="AI_DATA_SETTER_5" Condition="NOT Installed" Sequence="5981"/>
+    <ROW Action="context.contributions.link" Condition="NOT Installed" Sequence="5984" AdditionalSeq="AI_DATA_SETTER_6"/>
+    <ROW Action="AI_DATA_SETTER_6" Condition="NOT Installed" Sequence="5983"/>
+    <ROW Action="Register_CRC" Condition="NOT Installed" Sequence="5935"/>
+    <ROW Action="Unregister_CRC" Condition="REMOVE=&quot;ALL&quot;" Sequence="1659"/>
+    <ROW Action="OrchestraDoctor.path" Condition="NOT Installed" Sequence="5970" AdditionalSeq="AI_DATA_SETTER_7"/>
+    <ROW Action="AI_DATA_SETTER_7" Condition="NOT Installed" Sequence="5969"/>
+    <ROW Action="RegasmInstall_Artefact_x64" Condition="(NOT Installed)  AND ( VersionNT64 )" Sequence="5936"/>
+    <ROW Action="RegasmInstall_Utilities_x64" Condition="(NOT Installed)  AND ( VersionNT64 )" Sequence="5938"/>
+    <ROW Action="RegasmInstall_VariableManager_x64" Condition="(NOT Installed)  AND ( VersionNT64 )" Sequence="5940"/>
+    <ROW Action="RegasmUninstall_Artefact_x86" Condition="REMOVE=&quot;ALL&quot;" Sequence="1658"/>
+    <ROW Action="RegasmInstall_Artefact_x86" Condition="(Not Installed)" Sequence="5937"/>
+    <ROW Action="RegasmInstall_Utilities_x86" Condition="(NOT Installed)" Sequence="5939"/>
+    <ROW Action="RegasmInstall_VariableManager_x86" Condition="(Not Installed)" Sequence="5941"/>
+    <ROW Action="RegasmUninstall_Artefact_x64" Condition="(REMOVE=&quot;ALL&quot;)  AND ( VersionNT64 )" Sequence="1657"/>
+    <ROW Action="RegasmUninstall_Utilities_x64" Condition="(REMOVE=&quot;ALL&quot;)  AND ( VersionNT64 )" Sequence="1656"/>
+    <ROW Action="RegasmUninstall_Utilities_x86" Condition="REMOVE=&quot;ALL&quot;" Sequence="1655"/>
+    <ROW Action="RegasmUninstall_VariableManager_x86" Condition="REMOVE=&quot;ALL&quot;" Sequence="1654"/>
+    <ROW Action="RegasmUninstall_VariableManager_x64" Condition="(REMOVE=&quot;ALL&quot;)  AND ( VersionNT64 )" Sequence="1653"/>
+    <ROW Action="MsiActions.dll_x64" Condition="( NOT Installed ) AND ( VersionNT64 )" Sequence="5943" AdditionalSeq="AI_DATA_SETTER_9"/>
+    <ROW Action="Uninstall_MsiActions.dll_x64" Condition="( REMOVE=&quot;ALL&quot; ) AND ( VersionNT64 )" Sequence="1652" AdditionalSeq="AI_DATA_SETTER_10"/>
+    <ROW Action="AI_DATA_SETTER_9" Condition="( NOT Installed ) AND ( VersionNT64 )" Sequence="5942"/>
+    <ROW Action="AI_DATA_SETTER_10" Condition="( REMOVE=&quot;ALL&quot; ) AND ( VersionNT64 )" Sequence="1651"/>
+    <ROW Action="Retrieve_Eclipse_ini" Condition="(Not Installed) AND (ECLIPSE_INI &lt;&gt; &quot;empty&quot;)" Sequence="5974" AdditionalSeq="AI_DATA_SETTER_8"/>
+    <ROW Action="AI_DATA_SETTER_8" Condition="(Not Installed) AND (ECLIPSE_INI &lt;&gt; &quot;empty&quot;)" Sequence="5973"/>
+    <ROW Action="insertUninstallDate.vbs" Condition="REMOVE=&quot;ALL&quot;" Sequence="1661" AdditionalSeq="AI_DATA_SETTER_11"/>
+    <ROW Action="AI_DATA_SETTER_11" Condition="REMOVE=&quot;ALL&quot;" Sequence="1660"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="51"/>
+    <ROW Action="DEFAULT_LOCATION_FALLBACK" Condition="(DEFAULT_LOCATION = &quot;&quot;) AND (NOT Installed)" Sequence="601"/>
+    <ROW Action="FORMAT_DEFAULT_LOCATION" Condition="NOT (DEFAULT_LOCATION &gt;&gt; &quot;\&quot;)" Sequence="602"/>
+    <ROW Action="APPEND_PRODUCT_NAME" Condition="(NOT Installed) AND (NOT APPDIR)" Sequence="603"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="(AI_DOTNET40_SEARCH = &quot;#1&quot;)" Description="[ProductName] cannot be installed on systems with .NET Framework version lower than [AI_MINDOTNETVERSION]" DescriptionLocId="AI.LaunchCondition.DotNET" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="JAVA_AGENT_HOME" Description="JavaAgent must be installed prior to [ProductName]."/>
+    <ROW Condition="ORCHESTRA_DOCTOR_HOME" Description="OrchestraDoctor must be installed prior to [ProductName]."/>
+    <ROW Condition="Privileged" Description="[ProductName] requires administrative privileges to install." DescriptionLocId="AI.LaunchCondition.Privileged" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]" DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRadioButtonComponent">
+    <ROW Property="IAgree" Order="1" Value="Yes" X="5" Y="6" Width="250" Height="15" Text="I &amp;accept the terms in the License Agreement" TextStyle="DlgFont8" TextLocId="RadioButton.Text.IAgree#1" MsiKey="IAgree#1"/>
+    <ROW Property="IAgree" Order="2" Value="No" X="5" Y="21" Width="250" Height="15" Text="I &amp;do not accept the terms in the License Agreement" TextStyle="DlgFont8" TextLocId="RadioButton.Text.IAgree#2" MsiKey="IAgree#2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegLocatorComponent">
+    <ROW Signature_="AI_DotNet40SearchSgn" Root="2" Key="SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full" Name="Install" Type="2"/>
+    <ROW Signature_="AppSearchSign" Root="2" Key="SOFTWARE\Thales\EPM\Orchestra\Products\JavaAgent" Name="InstallLocation" Type="2"/>
+    <ROW Signature_="AppSearchSign_1" Root="2" Key="SOFTWARE\Thales\EPM\Orchestra\Products\OrchestraDoctor" Name="InstallLocation" Type="2"/>
+    <ROW Signature_="AppSearchSign_1_1" Root="2" Key="SOFTWARE\Thales\EPM\Orchestra\Products" Name="SharedDirectory" Type="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="ARPNOMODIFY" Root="2" Key="Software\[Company]\DOD\Layer4\[ProductName]-[ProductVersion]" Name="MsiProperty03" Value="ARPNOMODIFY=[ARPNOMODIFY]" Component_="ARPNOMODIFY"/>
+    <ROW Registry="AppChk" Root="2" Key="Software\[Company]\DOD\Layer4\[ProductName]-[ProductVersion]" Name="AppChk" Value="[APPDIR]eclipse\framework.exe; [MD5]" Component_="AppChk"/>
+    <ROW Registry="Comments" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName]" Name="Comments" Value="This installer database contains the logic and data required to install [ProductName]." Component_="AI_CustomARPName"/>
+    <ROW Registry="Contact" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName]" Name="Contact" Value="orchestra-support@thalesgroup.com" Component_="AI_CustomARPName"/>
+    <ROW Registry="DMSREF" Root="2" Key="Software\[Company]\DOD\Layer4\[ProductName]-[ProductVersion]" Name="DMSREF" Value="10.05 - MSI4.5" Component_="DMSREF"/>
+    <ROW Registry="DisplayIcon" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName]" Name="DisplayIcon" Value="[ARP_ICON_PATH]" Component_="AI_CustomARPName"/>
+    <ROW Registry="DisplayName" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName]" Name="DisplayName" Value="[AI_PRODUCTNAME_ARP]" Component_="AI_CustomARPName"/>
+    <ROW Registry="DisplayVersion" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName]" Name="DisplayVersion" Value="1.0.0" Component_="AI_CustomARPName"/>
+    <ROW Registry="HelpLink" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName]" Name="HelpLink" Value="http://wiki.corp.thales/display/sswb/Support" Component_="AI_CustomARPName"/>
+    <ROW Registry="HelpTelephone" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName]" Name="HelpTelephone" Value="+33 1 73 22 31 37" Component_="AI_CustomARPName"/>
+    <ROW Registry="ITN" Root="2" Key="Software\[Company]\DOD\Layer4\[ProductName]-[ProductVersion]" Name="ITN" Value="E04046" Component_="ITN"/>
+    <ROW Registry="InstallDate" Root="2" Key="Software\[Company]\DOD\Layer4\[ProductName]-[ProductVersion]" Name="InstallDate" Value="[Date] - [Time]" Component_="InstallDate"/>
+    <ROW Registry="InstallLocation" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName]" Name="InstallLocation" Value="[APPDIR]" Component_="AI_CustomARPName"/>
+    <ROW Registry="ModifyPath" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName]" Name="ModifyPath" Value="[AI_UNINSTALLER] /I [ProductCode]" Component_="AI_CustomARPName"/>
+    <ROW Registry="MsiProperty01" Root="2" Key="Software\[Company]\DOD\Layer4\[ProductName]-[ProductVersion]" Name="MsiProperty01" Value="ADDLOCAL=[ADDLOCAL]" Component_="MsiProperty01"/>
+    <ROW Registry="MsiProperty02" Root="2" Key="Software\[Company]\DOD\Layer4\[ProductName]-[ProductVersion]" Name="MsiProperty02" Value="ALLUSERS=[ALLUSERS]" Component_="MsiProperty02"/>
+    <ROW Registry="MsiProperty04" Root="2" Key="Software\[Company]\DOD\Layer4\[ProductName]-[ProductVersion]" Name="MsiProperty04" Value="INSTALLELEVATED=[INSTALLELEVATED]" Component_="MsiProperty04"/>
+    <ROW Registry="MsiProperty05" Root="2" Key="Software\[Company]\DOD\Layer4\[ProductName]-[ProductVersion]" Name="MsiProperty05" Value="SOURCELIST=[SOURCELIST]" Component_="MsiProperty05"/>
+    <ROW Registry="MsiProperty07" Root="2" Key="Software\[Company]\DOD\Layer4\[ProductName]-[ProductVersion]" Name="MsiProperty07" Value="INSTALLDIR=[APPDIR]" Component_="MsiProperty07"/>
+    <ROW Registry="NoModify" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName]" Name="NoModify" Value="#1" Component_="AI_DisableModify"/>
+    <ROW Registry="PackageID" Root="2" Key="Software\[Company]\DOD\Layer4\[ProductName]-[ProductVersion]" Name="PackageID" Value="Ver[ProductName][ProductVersion][BuildNumber]" Component_="PackageID"/>
+    <ROW Registry="Publisher" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName]" Name="Publisher" Value="Thales" Component_="AI_CustomARPName"/>
+    <ROW Registry="SoftwareVersion" Root="2" Key="Software\[Company]\DOD\Layer4\[ProductName]-[ProductVersion]" Name="SoftwareVersion" Value="[ProductVersion]" Component_="SoftwareVersion"/>
+    <ROW Registry="URLInfoAbout" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName]" Name="URLInfoAbout" Value="http://intranet.corp.thales/orchestra/pub/" Component_="AI_CustomARPName"/>
+    <ROW Registry="URLUpdateInfo" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName]" Name="URLUpdateInfo" Component_="AI_CustomARPName"/>
+    <ROW Registry="URL_Protocol" Root="0" Key="orchestra" Name="URL Protocol" Component_="URL_Protocol"/>
+    <ROW Registry="UninstallString" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName]" Name="UninstallString" Value="[AI_UNINSTALLER] /x [ProductCode]" Component_="AI_CustomARPName"/>
+    <ROW Registry="_" Root="0" Key="orchestra" Value="URL: Protocol Orchestra" Component_="_"/>
+    <ROW Registry="__1" Root="0" Key="orchestra\DefaultIcon" Value="Orchestra Protocol.exe" Component_="__1"/>
+    <ROW Registry="__2" Root="0" Key="orchestra\shell\open\command" Value="&quot;[APPDIR]lib\Orchestra Protocol.exe&quot; &quot;%1&quot;" Component_="__2"/>
+    <ROW Registry="__3" Root="2" Key="Software\Microsoft\.NETFramework\v4.0.30319\AssemblyFoldersEx\Orchestra" Value="[APPDIR]lib\HelpersC#\" Component_="__3"/>
+    <ROW Registry="configConnector" Root="2" Key="Software\[Company]\[Division]\[Manufacturer]\Products\[ProductName]\ConnectorFrameworkCommands" Name="configConnector" Value="[APPDIR]orcConfig\FrameworkCommands.connector" Component_="configConnector"/>
+    <ROW Registry="configConnector_1" Root="2" Key="Software\[Company]\[Division]\[Manufacturer]\Products\[ProductName]\ConnectorImage" Name="configConnector" Value="[APPDIR]orcConfig\Image.connector" Component_="configConnector_1"/>
+    <ROW Registry="configConnector_2" Root="2" Key="Software\[Company]\[Division]\[Manufacturer]\Products\[ProductName]\ConnectorMigration" Name="configConnector" Value="[APPDIR]orcConfig\Migration.connector" Component_="configConnector_2"/>
+    <ROW Registry="configConnector_3" Root="2" Key="Software\[Company]\[Division]\[Manufacturer]\Products\[ProductName]\ConnectorText" Name="configConnector" Value="[APPDIR]orcConfig\Text.connector" Component_="configConnector_3"/>
+    <ROW Registry="iconPath" Root="2" Key="Software\[Company]\[Division]\[Manufacturer]\Products\[ProductName]\ConnectorFrameworkCommands" Name="iconPath" Value="[APPDIR]resources\images" Component_="iconPath"/>
+    <ROW Registry="iconPath_1" Root="2" Key="Software\[Company]\[Division]\[Manufacturer]\Products\[ProductName]\ConnectorImage" Name="iconPath" Value="[APPDIR]resources\images" Component_="iconPath_1"/>
+    <ROW Registry="iconPath_2" Root="2" Key="Software\[Company]\[Division]\[Manufacturer]\Products\[ProductName]\ConnectorText" Name="iconPath" Value="[APPDIR]resources\images" Component_="iconPath_2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRemoveFileComponent">
+    <ROW FileKey="_" Component_="_" DirProperty="APPDIR" InstallMode="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiSignatureComponent">
+    <ROW Signature="FileSearchSign" FileName="regasm.exe" MinVersion="4.0"/>
+    <ROW Signature="FileSearchSign_1" FileName="regasm.exe" MinVersion="4.0"/>
+    <ROW Signature="Regsvr32Sign" FileName="regsvr32.exe"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMax="[|ProductVersion]" Attributes="1025" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+</DOCUMENT>

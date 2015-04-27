@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+  <association_list>
+   <association relational_type="LOGICAL-PHYSICAL" balanced="true" valid="true">
+    <artifact1 tool="$toolname$"  >*</artifact1>
+    <artifact2 tool="FILESYSTEM"  >*.????</artifact2>
+  </association>
+  </association_list>

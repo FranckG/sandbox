@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Remote rich client services
+Bundle-SymbolicName: com.thalesgroup.orchestra.framework.remote.services
+Bundle-Version: 4.3.1.qualifier
+Bundle-Vendor: THALESGROUP
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.ecf;bundle-version="3.0.0";visibility:=reexport,
+ org.eclipse.ecf.discovery;bundle-version="3.0.0";visibility:=reexport,
+ org.eclipse.ecf.provider;bundle-version="2.0.0";visibility:=reexport,
+ org.eclipse.ecf.provider.remoteservice;bundle-version="3.0.0";visibility:=reexport,
+ org.eclipse.ecf.remoteservice;bundle-version="3.0.0";visibility:=reexport,
+ com.thalesgroup.orchestra.framework.lib;visibility:=reexport
+Export-Package: com.thalesgroup.orchestra.framework.remote.services,
+ com.thalesgroup.orchestra.framework.remote.services.connectionLoss,
+ com.thalesgroup.orchestra.framework.remote.services.context,
+ com.thalesgroup.orchestra.framework.remote.services.context.serialization

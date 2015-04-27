@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="com.thalesgroup.orchestra.framework.model.contexts.presentation.ContextsModelWizardID"
+            name="%_UI_ContextsModelWizard_label"
+            class="com.thalesgroup.orchestra.framework.model.contexts.presentation.ContextsModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/ContextsModelFile.gif">
+         <description>%_UI_ContextsModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="com.thalesgroup.orchestra.framework.model.contexts.presentation.ContextsEditorID"
+            name="%_UI_ContextsEditor_label"
+            icon="icons/full/obj16/ContextsModelFile.gif"
+            extensions="contexts"
+            class="com.thalesgroup.orchestra.framework.model.contexts.presentation.ContextsEditor"
+            contributorClass="com.thalesgroup.orchestra.framework.model.contexts.presentation.ContextsActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

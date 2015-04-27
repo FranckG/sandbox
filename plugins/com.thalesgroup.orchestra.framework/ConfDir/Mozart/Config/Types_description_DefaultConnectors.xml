@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<TYPES_DESCRIPTION>
+	<!-- Bmp -->
+	<TYPE id="BMP" name="Bmp">
+		<PROPERTIES>
+			<PROPERTY name="keepLabel" defaultValue="false" type="boolean" nature="publicationAttribute" category="Generation/Caption">
+				<COMMENTS>
+					<![CDATA[When true, use the assembler label for the caption.
+Otherwise, use the last part of the assembler label for the caption.]]>
+				</COMMENTS>
+			</PROPERTY>
+		</PROPERTIES>
+		<PUBLICATION>
+			<CONTEXT id="FigureProvider"/>
+		</PUBLICATION>
+	</TYPE>
+	<!-- Gif -->
+	<TYPE id="GIF" name="Gif">
+		<PROPERTIES>
+			<PROPERTY name="keepLabel" defaultValue="false" type="boolean" nature="publicationAttribute" category="Generation/Caption">
+				<COMMENTS>
+					<![CDATA[When true, use the assembler label for the caption.
+Otherwise, use the last part of the assembler label for the caption.]]>
+				</COMMENTS>
+			</PROPERTY>
+		</PROPERTIES>
+		<PUBLICATION>
+			<CONTEXT id="FigureProvider"/>
+		</PUBLICATION>
+	</TYPE>
+	<!-- Jpg -->
+	<TYPE id="JPG" name="Jpg">
+		<PROPERTIES>
+			<PROPERTY name="keepLabel" defaultValue="false" type="boolean" nature="publicationAttribute" category="Generation/Caption">
+				<COMMENTS>
+					<![CDATA[When true, use the assembler label for the caption.
+Otherwise, use the last part of the assembler label for the caption.]]>
+				</COMMENTS>
+			</PROPERTY>
+		</PROPERTIES>
+		<PUBLICATION>
+			<CONTEXT id="FigureProvider"/>
+		</PUBLICATION>
+	</TYPE>	
+	<!-- Jpeg -->
+	<TYPE id="JPEG" name="Jpeg">
+		<PROPERTIES>
+			<PROPERTY name="keepLabel" defaultValue="false" type="boolean" nature="publicationAttribute" category="Generation/Caption">
+				<COMMENTS>
+					<![CDATA[When true, use the assembler label for the caption.
+Otherwise, use the last part of the assembler label for the caption.]]>
+				</COMMENTS>
+			</PROPERTY>
+		</PROPERTIES>
+		<PUBLICATION>
+			<CONTEXT id="FigureProvider"/>
+		</PUBLICATION>
+	</TYPE>
+	<!-- Png -->
+	<TYPE id="PNG" name="Png">
+		<PROPERTIES>
+			<PROPERTY name="keepLabel" defaultValue="false" type="boolean" nature="publicationAttribute" category="Generation/Caption">
+				<COMMENTS>
+					<![CDATA[When true, use the assembler label for the caption.
+Otherwise, use the last part of the assembler label for the caption.]]>
+				</COMMENTS>
+			</PROPERTY>
+		</PROPERTIES>
+		<PUBLICATION>
+			<CONTEXT id="FigureProvider"/>
+		</PUBLICATION>
+	</TYPE>	
+	<!-- Pcx -->
+	<TYPE id="PCX" name="Pcx">
+		<PROPERTIES>
+			<PROPERTY name="keepLabel" defaultValue="false" type="boolean" nature="publicationAttribute" category="Generation/Caption">
+				<COMMENTS>
+					<![CDATA[When true, use the assembler label for the caption.
+Otherwise, use the last part of the assembler label for the caption.]]>
+				</COMMENTS>
+			</PROPERTY>
+		</PROPERTIES>
+		<PUBLICATION>
+			<CONTEXT id="FigureProvider"/>
+		</PUBLICATION>
+	</TYPE>
+	<!-- Tiff -->
+	<TYPE id="TIFF" name="Tiff">
+		<PROPERTIES>
+			<PROPERTY name="keepLabel" defaultValue="false" type="boolean" nature="publicationAttribute" category="Generation/Caption">
+				<COMMENTS>
+					<![CDATA[When true, use the assembler label for the caption.
+Otherwise, use the last part of the assembler label for the caption.]]>
+				</COMMENTS>
+			</PROPERTY>
+		</PROPERTIES>
+		<PUBLICATION>
+			<CONTEXT id="FigureProvider"/>
+		</PUBLICATION>
+	</TYPE>
+	<!-- Text -->
+	<TYPE id="Text" name="Text">
+		<PUBLICATION>
+			<CONTEXT id="NotepadProvider"/>
+		</PUBLICATION>
+	</TYPE>
+	<!-- CppAsText -->
+	<TYPE id="CppAsText" name="Cpp as text">
+		<PUBLICATION>
+			<CONTEXT id="NotepadProvider"/>
+		</PUBLICATION>
+	</TYPE>
+	<!-- Log -->
+	<TYPE id="Log" name="Log">
+		<PUBLICATION>
+			<CONTEXT id="NotepadProvider"/>
+		</PUBLICATION>
+	</TYPE>
+	<!-- ArtefactSet -->
+	<TYPE id="ArtefactSet" name="Artefact set">
+	</TYPE>
+</TYPES_DESCRIPTION>

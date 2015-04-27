@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Migration helpers plug-in
+Bundle-SymbolicName: com.thalesgroup.orchestra.framework.model.migration
+Bundle-Version: 4.3.1.qualifier
+Bundle-Vendor: THALESGROUP
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: com.thalesgroup.orchestra.framework.model;visibility:=reexport,
+ com.thalesgroup.orchestra.framework.model.handler;visibility:=reexport,
+ com.thalesgroup.orchestra.framework.puci,
+ com.thalesgroup.orchestra.framework.exchange
+Export-Package: com.thalesgroup.orchestra.framework.model.migration

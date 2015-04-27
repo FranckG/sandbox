@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Orchestra Framework Variable Manager Plug-in
+Bundle-SymbolicName: com.thalesgroup.orchestra.framework.variablemanager.server.model
+Bundle-Version: 4.4.0.qualifier
+Bundle-Vendor: THALESGROUP
+Bundle-ClassPath: .
+Class-Path: lib/stax-api.jar,
+ lib/wstx-asl-3.9.2.jar
+Created-By: Papeete Tool Suite Developer
+Main-Class: com.thalesgroup.orchestra.framework.variablemanager.model.CommandLine
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: com.thalesgroup.orchestra.framework.model.handler,
+ com.thalesgroup.orchestra.variablemanager.api;visibility:=reexport,
+ org.apache.commons.lang;bundle-version="2.3.0",
+ com.thalesgroup.orchestra.framework.environment
+Export-Package: com.thalesgroup.orchestra.framework.variablemanager.server.model

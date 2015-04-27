@@ -1,9 +1,0 @@
-// Orchestra Link Manager LinkWith
-
-
-/*
- * Orchestra Link Manager LinkWith
- */
-#include <LinkManagement/OrchestraLinkManager.inc>
-
-orclm_LinkManagerExecuteCommandOnMultipleObject("MakeLink")

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension-point id="startupCommand" name="Orchestra  Framework Startup Command" schema="schema/startupCommand.exsd"/>
+   <extension
+         id="com.thalesgroup.orchestra.framework.application"
+         name="Orchestra Framework"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="com.thalesgroup.orchestra.framework.application.FrameworkApplication">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            class="com.thalesgroup.orchestra.framework.application.FrameworkPerspective"
+            icon="icons/OrchestraFmk-16x16.png"
+            id="com.thalesgroup.orchestra.framework.application.FrameworkPerspective"
+            name="Orchestra Framework Perspective">
+      </perspective>
+   </extension>
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="com.thalesgroup.orchestra.framework.application"
+            name="Orchestra Framework">
+         <property
+               name="Papeete"
+               value="PapeeteRCP">
+         </property>
+         <property
+               name="windowImages"
+               value="icons/OrchestraFmk-16x16.png,icons/Papeete32.gif"/>
+         <property
+               name="appName"
+               value="Orchestra Framework">
+         </property>
+         <property
+               name="aboutText"
+               value="%aboutText">
+         </property>
+         <property
+               name="aboutImage"
+               value="icons/OrchestraFmk-16x16.png">
+         </property>
+         <property
+               name="startupForegroundColor"
+               value="FFFFFF">
+         </property>
+         <property
+               name="startupMessageRect"
+               value="5,295,495,20">
+         </property>
+         <property
+               name="startupProgressRect"
+               value="0,315,500,15">
+         </property>
+         <property
+               name="preferenceCustomization"
+               value="plugin_customization.ini">
+         </property>
+      </product>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            allowMultiple="false"
+            class="com.thalesgroup.orchestra.framework.application.FrameworkConsoleView"
+            icon="icons/OrchestraFmk-16x16.png"
+            id="com.thalesgroup.themis.papeete.plugin.PapeeteConsoleView"
+            name="Console">
+      </view>
+   </extension>
+<extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="com.thalesgroup.orchestra.framework.application.FrameworkPerspective">
+         <view
+               closeable="false"
+               id="com.thalesgroup.themis.papeete.plugin.PapeeteConsoleView"
+               minimized="false"
+               moveable="true"
+               ratio="0.75"
+               relationship="left"
+               relative="org.eclipse.ui.editorss"
+               showTitle="true"
+               standalone="false"
+               visible="true">
+         </view>
+         <view
+               closeable="false"
+               id="com.thalesgroup.themis.papeetedoc.ui.views.explorer.artifacts.PapeeteArtifactNavigator"
+               minimized="false"
+               moveable="true"
+               ratio="0.25"
+               relationship="right"
+               relative="org.eclipse.ui.editorss"
+               showTitle="true"
+               standalone="false"
+               visible="true">
+         </view>
+      </perspectiveExtension>
+</extension>
+<extension
+      point="com.thalesgroup.orchestra.framework.common.httpHandler">
+   <HttpHandler
+         class="com.thalesgroup.orchestra.framework.http.HttpHandler">
+   </HttpHandler>
+</extension>
+<extension
+      point="org.eclipse.ui.preferencePages">
+   <page
+         class="com.thalesgroup.orchestra.framework.pref.FrameworkPreferencePage"
+         id="com.thalesgroup.orchestra.framework.preferences.core"
+         name="%preferencePage.name.framework">
+   </page>
+</extension>
+<extension point="org.eclipse.ui.activities">
+  <activity description="Framework hidden activity" id="com.thalesgroup.orchestra.framework.hidden.activity" name="Framework hidden activity" /> 
+  <activityPatternBinding
+        activityId="com.thalesgroup.orchestra.framework.hidden.activity"
+        pattern="org\.eclipse\.ui\..*/.*Annotation"/> 
+  <activityPatternBinding
+        activityId="com.thalesgroup.orchestra.framework.hidden.activity"
+        pattern="org\.eclipse\.ui\..*/.*Position"/>
+</extension>
+</plugin>

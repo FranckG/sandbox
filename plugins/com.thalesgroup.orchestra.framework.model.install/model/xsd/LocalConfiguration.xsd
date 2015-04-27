@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.thalesgroup.com/orchestraDoctor/v2/localConfiguration" version="2">
+
+  <xsd:annotation> <xsd:documentation>
+    		XML Schema to identify Orchestra local Configuration, informations about all products.
+  </xsd:documentation>
+  </xsd:annotation>
+
+  <xsd:element name="OrchestraDoctorLocalConfiguration">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element maxOccurs="unbounded" minOccurs="0" name="product">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element maxOccurs="unbounded" minOccurs="0" name="version">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element maxOccurs="unbounded" minOccurs="0" name="parameter">
+                      <xsd:complexType>
+                        <xsd:attribute name="name" type="xsd:string" use="required"/>
+                        <xsd:attribute name="type" type="xsd:string" use="required"/>
+                        <xsd:attribute name="value" type="xsd:string" use="required"/>
+                      </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element maxOccurs="unbounded" minOccurs="0" name="compatibility">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element maxOccurs="unbounded" minOccurs="0" name="version_range">
+                            <xsd:complexType>
+                                <xsd:attribute name="range" type="xsd:string" use="required"/>
+                                <xsd:attribute default="all" name="compatType" type="xsd:string" use="optional"/> 
+                            </xsd:complexType>
+                          </xsd:element>
+                        </xsd:sequence>
+                        <xsd:attribute name="targetComponent" type="xsd:string" use="required"/>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                  <xsd:attribute name="value" type="xsd:string" use="required"/>
+                  <xsd:attribute name="installLocation" type="xsd:string" use="required"/>
+                  <xsd:attribute name="execRelativePath" type="xsd:string" use="optional"/>
+                  <xsd:attribute name="execName" type="xsd:string" use="optional"/>
+                  <xsd:attribute name="configConnector" type="xsd:string" use="optional"/>
+                  <xsd:attribute name="iconPath" type="xsd:string" use="optional"/>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+            <xsd:attribute name="name" type="xsd:string" use="required"/>
+            <xsd:attribute name="kind" type="xsd:string" use="optional"/>
+            <xsd:attribute name="category" type="xsd:string" use="optional"/>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

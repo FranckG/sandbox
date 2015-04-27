@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:gef="http://www.thalesgroup.com/orchestra/framework/4_0_24/Gef" targetNamespace="http://www.thalesgroup.com/orchestra/framework/4_0_24/Gef">
+	<xs:complexType name="GEF">
+		<xs:sequence minOccurs="1" maxOccurs="unbounded">
+			<xs:element name="GENERIC_EXPORT_FORMAT" type="gef:GenericExportFormat"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="GenericExportFormat">
+		<xs:sequence minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="ELEMENT" type="gef:Element" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Element">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="DESCRIPTION" type="gef:Description" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="VERSION" type="gef:Version" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="PROPERTIES" type="gef:Properties" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="FILE_REFERENCE" type="gef:FileReference" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="LINKS_TO_ARTIFACTS" type="gef:LinksToArtifacts" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="LINKS_TO_ELEMENTS" type="gef:LinksToElements" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="ELEMENT" type="gef:Element" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:choice>
+		<xs:attribute name="type" type="xs:string" use="required"/>
+		<xs:attribute name="label" type="xs:string" use="required"/>
+		<xs:attribute name="uri" type="xs:string" use="required"/>
+		<xs:attribute name="hash" type="xs:string"/>
+		<xs:attribute name="fullName" type="xs:string"/>
+	</xs:complexType>
+	<xs:complexType name="Description">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="TEXTUAL_DESCRIPTION" type="gef:TextualDescription"/>
+			<xs:element name="FILE_REFERENCE" type="gef:FileReference"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="Version">
+		<xs:attribute name="filePath" type="xs:string"/>
+		<xs:attribute name="version" type="xs:string"/>
+	</xs:complexType>
+	<xs:complexType name="TextualDescription" mixed="true">
+		<xs:attribute name="type" type="xs:string" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="Properties">
+		<xs:sequence minOccurs="1" maxOccurs="unbounded">
+			<xs:choice>
+				<xs:element name="PROPERTY" type="gef:Property"/>
+				<xs:element name="MPROPERTY" type="gef:Mproperty"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Property" mixed="true">
+		<xs:attribute name="name" type="xs:string" use="required"/>
+		<xs:attribute name="type" type="xs:string"/>
+		<xs:attribute name="nature" type="xs:string"/>
+	</xs:complexType>
+	<xs:complexType name="LinksToArtifacts">
+		<xs:sequence minOccurs="1" maxOccurs="unbounded">
+			<xs:element name="ARTIFACT_REFERENCE" type="gef:Reference"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="LinksToElements">
+		<xs:sequence minOccurs="1" maxOccurs="unbounded">
+			<xs:element name="ELEMENT_REFERENCE" type="gef:ElementReference"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Reference">
+		<xs:attribute name="uri" type="xs:string" use="required"/>
+		<xs:attribute name="linkType" type="xs:string"/>
+		<xs:attribute name="linkDirection" type="gef:LinkDirection"/>
+	</xs:complexType>
+	<xs:complexType name="ElementReference">
+		<xs:complexContent>
+			<xs:extension base="gef:Reference">
+				<xs:attribute name="label" type="xs:string"/>
+				<xs:attribute name="fullName" type="xs:string"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="FileReference">
+		<xs:attribute name="mimeType" type="xs:string" use="required"/>
+		<xs:attribute name="url" type="xs:string" use="required"/>
+		<xs:attribute name="nature" type="xs:string"/>
+	</xs:complexType>
+	<xs:simpleType name="LinkDirection">
+		<xs:restriction base="xs:NMTOKEN">
+			<xs:enumeration value="in"/>
+			<xs:enumeration value="out"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="Mproperty">
+		<xs:sequence>
+			<xs:element name="VALUES" type="gef:MpropertyValue" minOccurs="1" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="name" type="xs:string" use="required"/>
+		<xs:attribute name="type" type="xs:string"/>
+		<xs:attribute name="nature" type="xs:string"/>
+	</xs:complexType>
+	<xs:complexType name="MpropertyValue" mixed="true">
+	</xs:complexType>
+</xs:schema>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/com.thalesgroup.orchestra.framework.connector.migration/generated"
+    modelPluginID="com.thalesgroup.orchestra.framework.connector.migration" modelName="UriMigration"
+    generateSchema="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="6.0"
+    copyrightFields="false">
+  <foreignModel>UriMigration.ecore</foreignModel>
+  <genPackages prefix="UriMigration" basePackage="com.thalesgroup.orchestra.framework"
+      resource="XML" disposableProviderFactory="true" fileExtensions="urimigration"
+      ecorePackage="UriMigration.ecore#/">
+    <genClasses ecoreClass="UriMigration.ecore#//Migration">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UriMigration.ecore#//Migration/toolName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UriMigration.ecore#//Migration/rootType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UriMigration.ecore#//Migration/invokeConnector"/>
+    </genClasses>
+    <genClasses ecoreClass="UriMigration.ecore#//MigrationDefinition">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UriMigration.ecore#//MigrationDefinition/migrations"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Contribution
+Bundle-SymbolicName: com.thalesgroup.orchestra.filesystem.framework.ae.contribution;singleton:=true
+Bundle-Version: 4.4.1.qualifier
+Bundle-Activator: com.thalesgroup.orchestra.filesystem.framework.ae.contribution.Activator
+Bundle-Vendor: THALESGROUP
+Require-Bundle: org.eclipse.core.runtime,
+ com.thalesgroup.orchestra.framework.root.ui;bundle-version="4.3.0",
+ com.thalesgroup.orchestra.framework.common;bundle-version="4.4.0",
+ com.thalesgroup.orchestra.framework.ae.creation;bundle-version="4.4.0",
+ org.eclipse.core.databinding.observable;bundle-version="1.4.1",
+ org.eclipse.jface.databinding;bundle-version="1.6.0",
+ com.thalesgroup.orchestra.framework.lib;bundle-version="4.3.1"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Export-Package: com.thalesgroup.orchestra.filesystem.framework.ae.contribution

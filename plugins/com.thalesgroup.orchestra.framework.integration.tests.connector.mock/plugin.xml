@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="com.thalesgroup.orchestra.framework.connector.connectorDeclaration">
+      <connector
+            class="com.thalesgroup.orchestra.framework.integration.tests.connector.mock.MockConnector"
+            id="MockConnector">
+      </connector>
+   </extension>
+   <extension
+         point="com.thalesgroup.orchestra.framework.integration.tests.application.applicationTestHandler">
+      <ApplicationTestHandler
+            class="com.thalesgroup.orchestra.framework.integration.tests.connector.mock.configuration.MockConnectorConfiguration">
+      </ApplicationTestHandler>
+   </extension>
+
+</plugin>

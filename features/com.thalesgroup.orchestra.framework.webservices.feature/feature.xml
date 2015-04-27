@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.thalesgroup.orchestra.framework.webservices.feature"
+      label="Feature of the Orchestra server client API"
+      version="4.4.0.qualifier"
+      provider-name="THALESGROUP">
+
+   <description>
+      Depends on this feature to get access to the Ochestra Server
+Variable manager client API.
+   </description>
+
+   <includes
+         id="com.thalesgroup.orchestra.framework.webservices.feature.source"
+         version="0.0.0"/>
+
+   <requires>
+      <import plugin="org.apache.commons.io" version="2.0.1.v201105210651"/>
+      <import plugin="org.apache.commons.lang" version="2.6.0.v201205030909"/>
+      <import feature="com.thalesgroup.orchestra.framework.lib.feature"/>
+      <import feature="org.eclipse.platform"/>
+      <import feature="org.eclipse.wst.common_core.feature"/>
+   </requires>
+
+   <plugin
+         id="com.thalesgroup.orchestra.framework.webservices.client"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.thalesgroup.orchestra.variablemanager.api"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>

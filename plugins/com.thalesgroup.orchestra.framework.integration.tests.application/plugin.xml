@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension-point id="applicationTestHandler" name="Pre and Post Test Application Handler" schema="schema/applicationTestHandler.exsd"/>
+   <extension
+         id="com.thalesgroup.orchestra.framework.integration.tests.application"
+         name="Orchestra Framework Test Launcher"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="com.thalesgroup.orchestra.framework.integration.tests.application.FrameworkApplicationTest">
+         </run>
+      </application>
+   </extension>
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="com.thalesgroup.orchestra.framework.integration.tests.application"
+            name="Orchestra Framework Application Test">
+         <property
+               name="appName"
+               value="Orchestra Framework Application Test">
+         </property>
+      </product>
+   </extension>
+
+</plugin>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contextsproject:ContextsProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:contextsproject="http://com.thalesgroup.orchestra/framework/4_0_13/contextsproject">
+  <administrators id="t0076261"/>
+  <contextReferences uri="platform:/resource/ImageContribution/ImageContribution.contexts" id="b2ab291e-7d22-417e-a850-49fd5701c19f" name="ImageContribution"/>
+</contextsproject:ContextsProject>

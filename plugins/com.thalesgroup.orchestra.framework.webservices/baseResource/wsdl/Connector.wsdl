@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://webservices.framework.orchestra.thalesgroup.com/connector" xmlns:intf="http://webservices.framework.orchestra.thalesgroup.com/connector" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="connector" targetNamespace="http://webservices.framework.orchestra.thalesgroup.com/connector">
+	<wsdl:types>
+		<xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://webservices.framework.orchestra.thalesgroup.com/connector">
+			<import namespace="http://xml.apache.org/xml-soap"/>
+			<import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+			<complexType name="AssociationWS">
+				<sequence>
+					<element name="logical" nillable="false" type="xsd:string"/>
+					<element name="physical" nillable="false" type="xsd:string"/>
+					<element name="balanced" nillable="false" type="xsd:boolean"/>
+					<element name="valid" nillable="false" type="xsd:boolean"/>
+				</sequence>
+			</complexType>
+			<complexType name="ConnectorWS">
+				<sequence>
+					<element name="type" nillable="false" type="xsd:string"/>
+					<element name="association" nillable="true" type="impl:AssociationWS"/>
+					<element name="iconpath" nillable="true" type="xsd:string"/>
+					<element name="createpossible" nillable="false" type="xsd:boolean"/>
+				</sequence>
+			</complexType>
+			<complexType name="ArrayOf_impl_ConnectorWS">
+				<complexContent>
+					<restriction base="soapenc:Array">
+						<attribute ref="soapenc:arrayType" wsdl:arrayType="impl:ConnectorWS[]"/>
+					</restriction>
+				</complexContent>
+			</complexType>
+		</xsd:schema>
+	</wsdl:types>
+	<wsdl:message name="emptyMessage"/>
+	<wsdl:message name="getConnectorsInformationResponse">
+		<wsdl:part name="connectors" type="impl:ArrayOf_impl_ConnectorWS"/>
+	</wsdl:message>
+	<wsdl:portType name="ConnectorWSAdapter">
+		<wsdl:operation name="getConnectorsInformation">
+			<wsdl:input message="impl:emptyMessage" name="getConnectorsInformationRequest"/>
+			<wsdl:output message="impl:getConnectorsInformationResponse" name="getConnectorsInformationResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="ConnectorSoapBinding" type="impl:ConnectorWSAdapter">
+		<wsdlsoap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="getConnectorsInformation">
+			<wsdlsoap:operation soapAction=""/>
+			<wsdl:input name="getConnectorsInformationRequest">
+				<wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://webservices.framework.orchestra.thalesgroup.com/connector" use="encoded"/>
+			</wsdl:input>
+			<wsdl:output name="getConnectorsInformationResponse">
+				<wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://webservices.framework.orchestra.thalesgroup.com/connector" use="encoded"/>
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="ConnectorWSAdapterService">
+		<wsdl:port binding="impl:ConnectorSoapBinding" name="connector">
+            <wsdlsoap:address location="http://localhost:8082/webServicesTemporaryContent/services/connector"/>
+        </wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

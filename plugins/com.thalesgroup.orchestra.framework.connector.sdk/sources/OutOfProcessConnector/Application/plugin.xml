@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="{0}.application"
+         name="{1}RemoteConnector"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="{0}.application.{1}Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         id="{0}.product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="{0}.application"
+            name="{1}RemoteConnector">
+         <property
+               name="appName"
+               value="{1}RemoteConnector">
+         </property>
+      </product>
+   </extension>
+
+</plugin>

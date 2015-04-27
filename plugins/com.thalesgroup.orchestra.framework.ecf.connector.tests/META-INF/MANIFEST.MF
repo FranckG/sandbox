@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Orchestra Framework ECF connector Tests Plug-in
+Bundle-SymbolicName: com.thalesgroup.orchestra.framework.ecf.connector.tests;singleton:=true
+Bundle-Version: 4.4.0.qualifier
+Bundle-Vendor: THALESGROUP
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ com.thalesgroup.orchestra.framework.ecf.services
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy
+Bundle-Activator: com.thalesgroup.orchestra.framework.ecf.tests.EcfTestActivator

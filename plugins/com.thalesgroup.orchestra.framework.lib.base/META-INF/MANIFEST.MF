@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Base library with no dependancy.
+Bundle-SymbolicName: com.thalesgroup.orchestra.framework.lib.base
+Bundle-Version: 4.4.0.qualifier
+Bundle-Vendor: THALESGROUP
+Export-Package: com.thalesgroup.orchestra.framework.lib.base,
+ com.thalesgroup.orchestra.framework.lib.base.conf,
+ com.thalesgroup.orchestra.framework.lib.base.constants,
+ com.thalesgroup.orchestra.framework.lib.base.utils,
+ com.thalesgroup.orchestra.framework.lib.base.utils.xml
+Require-Bundle: org.eclipse.core.runtime,
+ org.apache.xerces
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-Activator: com.thalesgroup.orchestra.framework.lib.base.Activator

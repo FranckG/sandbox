@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/com.thalesgroup.orchestra.framework.exchange/generated"
+    modelPluginID="com.thalesgroup.orchestra.framework.exchange" modelName="Gef" importerID="org.eclipse.xsd.ecore.importer"
+    complianceLevel="6.0" copyrightFields="false">
+  <foreignModel>xsd/Gef.xsd</foreignModel>
+  <genPackages prefix="Gef" basePackage="com.thalesgroup.orchestra.framework" resource="XML"
+      disposableProviderFactory="true" ecorePackage="gef.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="gef.ecore#//LinkDirection">
+      <genEnumLiterals ecoreEnumLiteral="gef.ecore#//LinkDirection/in"/>
+      <genEnumLiterals ecoreEnumLiteral="gef.ecore#//LinkDirection/out"/>
+    </genEnums>
+    <genDataTypes ecoreDataType="gef.ecore#//LinkDirectionObject"/>
+    <genClasses ecoreClass="gef.ecore#//Description">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute gef.ecore#//Description/group"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference gef.ecore#//Description/tEXTUALDESCRIPTION"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference gef.ecore#//Description/fILEREFERENCE"/>
+    </genClasses>
+    <genClasses ecoreClass="gef.ecore#//Element">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute gef.ecore#//Element/group"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference gef.ecore#//Element/dESCRIPTION"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference gef.ecore#//Element/vERSION"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference gef.ecore#//Element/pROPERTIES"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference gef.ecore#//Element/fILEREFERENCE"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference gef.ecore#//Element/lINKSTOARTIFACTS"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference gef.ecore#//Element/lINKSTOELEMENTS"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference gef.ecore#//Element/eLEMENT"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gef.ecore#//Element/fullName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gef.ecore#//Element/hash"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gef.ecore#//Element/label"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gef.ecore#//Element/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gef.ecore#//Element/uri"/>
+    </genClasses>
+    <genClasses ecoreClass="gef.ecore#//ElementReference">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gef.ecore#//ElementReference/fullName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gef.ecore#//ElementReference/label"/>
+    </genClasses>
+    <genClasses ecoreClass="gef.ecore#//FileReference">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gef.ecore#//FileReference/mimeType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gef.ecore#//FileReference/nature"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gef.ecore#//FileReference/url"/>
+    </genClasses>
+    <genClasses ecoreClass="gef.ecore#//GEF">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute gef.ecore#//GEF/group"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference gef.ecore#//GEF/gENERICEXPORTFORMAT"/>
+    </genClasses>
+    <genClasses ecoreClass="gef.ecore#//GenericExportFormat">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute gef.ecore#//GenericExportFormat/group"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference gef.ecore#//GenericExportFormat/eLEMENT"/>
+    </genClasses>
+    <genClasses ecoreClass="gef.ecore#//LinksToArtifacts">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute gef.ecore#//LinksToArtifacts/group"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference gef.ecore#//LinksToArtifacts/aRTIFACTREFERENCE"/>
+    </genClasses>
+    <genClasses ecoreClass="gef.ecore#//LinksToElements">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute gef.ecore#//LinksToElements/group"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference gef.ecore#//LinksToElements/eLEMENTREFERENCE"/>
+    </genClasses>
+    <genClasses ecoreClass="gef.ecore#//Mproperty">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference gef.ecore#//Mproperty/vALUES"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gef.ecore#//Mproperty/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gef.ecore#//Mproperty/nature"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gef.ecore#//Mproperty/type"/>
+    </genClasses>
+    <genClasses ecoreClass="gef.ecore#//MpropertyValue">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute gef.ecore#//MpropertyValue/mixed"/>
+    </genClasses>
+    <genClasses ecoreClass="gef.ecore#//Properties">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute gef.ecore#//Properties/group"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference gef.ecore#//Properties/pROPERTY"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference gef.ecore#//Properties/mPROPERTY"/>
+    </genClasses>
+    <genClasses ecoreClass="gef.ecore#//Property">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute gef.ecore#//Property/mixed"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gef.ecore#//Property/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gef.ecore#//Property/nature"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gef.ecore#//Property/type"/>
+    </genClasses>
+    <genClasses ecoreClass="gef.ecore#//Reference">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gef.ecore#//Reference/linkDirection"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gef.ecore#//Reference/linkType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gef.ecore#//Reference/uri"/>
+    </genClasses>
+    <genClasses ecoreClass="gef.ecore#//TextualDescription">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute gef.ecore#//TextualDescription/mixed"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gef.ecore#//TextualDescription/type"/>
+    </genClasses>
+    <genClasses ecoreClass="gef.ecore#//Version">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gef.ecore#//Version/filePath"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gef.ecore#//Version/version"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

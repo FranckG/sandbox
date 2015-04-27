@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: com.thalesgroup.orchestra.framework.model.edit;singleton:=true
+Bundle-Version: 4.2.0.qualifier
+Bundle-ClassPath: .
+Bundle-Activator: com.thalesgroup.orchestra.framework.model.contexts.provider.ContextsEditPlugin$Implementation
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: com.thalesgroup.orchestra.framework.model.contexts.provider,
+ com.thalesgroup.orchestra.framework.model.edit
+Require-Bundle: com.thalesgroup.orchestra.framework.model;visibility:=reexport,
+ org.eclipse.emf.edit;visibility:=reexport,
+ org.eclipse.core.runtime;bundle-version="3.5.0"
+Bundle-ActivationPolicy: lazy

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="com.thalesgroup.orchestra.framework.ae.creation.environmentArtefactCreation">
+      <handler
+            class="com.thalesgroup.orchestra.filesystem.framework.ae.contribution.FileSystemArtefactCreationHandler"
+            environmentId="com.thalesgroup.orchestra.framework.environment.filesystem">
+      </handler>
+   </extension>
+
+</plugin>

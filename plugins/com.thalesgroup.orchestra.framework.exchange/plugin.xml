@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.thalesgroup.com/orchestra/framework/4_0_24/Gef"
+            class="com.thalesgroup.orchestra.framework.gef.GefPackage"
+            genModel="model/gef.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <parser
+            type="gef"
+            class="com.thalesgroup.orchestra.framework.gef.util.GefResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.thalesgroup.com/orchestra/framework/4_0_25/Status"
+            class="com.thalesgroup.orchestra.framework.exchange.status.StatusPackage"
+            genModel="model/status.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <parser
+            type="status"
+            class="com.thalesgroup.orchestra.framework.exchange.status.util.StatusResourceFactoryImpl"/>
+   </extension>
+
+</plugin>

@@ -1,0 +1,34 @@
+D'une manière générale, suppression des éléments qui sont devenus des types
+Cela ne change rien à la forme persistée xml, les noms des balises étant définis dans les types
+
+Renommage de la première balise GENERIC_EXPORT_FORMAT en GEF (obligation d'avoir un root unique dans un xml, qui est composite de plusieurs exports)
+
+Suppression des attributs de la balise GENERIC_EXPORT_FORMAT
+
+Suppression de EXTRA_FILE_RESOURCES
+
+Suppression de FILE_LOCATION
+
+Dans ELEMENT suppression de id
+Dans ELEMENT suppression de absoluteUri
+Dans ELEMENT suppression du choice et modification des cardinalités de ELEMENT, LINKS_TO_ARTIFACTS, LINKS_TO_ELEMENTS
+
+Sous PROPERTIES changement de la cardinalité 1..* au lieu de 0..*
+
+Dans FILE_REFERENCE suppression de dtdId
+
+sous LINKS_TO_ARTIFACTS et LINKS_TO_ELEMENTS changement de la cardinalité 1..* au lieu de 0..*
+
+remplacement de ARTIFACT_REFERENCE en REFERENCE
+Conséquences :
+-> renommage de id en uri
+
+ELEMENT_REFERENCE étend REFERENCE
+Conséquences :
+-> suppression de label
+
+dans PROPERTY, ajout de l'attribut "mixed=true" pour la gestion des CDATA
+-> Suppression du simple-content et de l'extension
+
+dans TEXTUAL_DESCRIPTION, ajout de l'attribut "mixed=true" pour la gestion des CDATA
+-> Suppression du simple-content et de l'extension 

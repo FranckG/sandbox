@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Orchstra Framework sdk Wizards
+Bundle-SymbolicName: com.thalesgroup.orchestra.framework.connector.sdk;singleton:=true
+Bundle-Version: 1.1.1.qualifier
+Bundle-Vendor: THALESGROUP
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: com.thalesgroup.orchestra.framework.root.ui,
+ org.eclipse.ui.ide,
+ com.thalesgroup.orchestra.framework.common,
+ org.eclipse.jdt.core,
+ org.eclipse.core.expressions,
+ org.eclipse.text
+Export-Package: com.thalesgroup.orchestra.framework.connector.sdk,
+ com.thalesgroup.orchestra.framework.connector.sdk.wizards,
+ com.thalesgroup.orchestra.framework.connector.sdk.wizards.pages
+Bundle-ActivationPolicy: lazy
+Bundle-Activator: com.thalesgroup.orchestra.framework.connector.sdk.SdkWizardsActivator

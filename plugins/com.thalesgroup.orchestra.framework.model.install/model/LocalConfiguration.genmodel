@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/com.thalesgroup.orchestra.framework.model.install/src"
+    modelPluginID="com.thalesgroup.orchestra.framework.model.install" modelName="LocalConfiguration"
+    importerID="org.eclipse.xsd.ecore.importer" complianceLevel="6.0" copyrightFields="false"
+    runtimeVersion="2.8">
+  <foreignModel>xsd/LocalConfiguration.xsd</foreignModel>
+  <genPackages prefix="Configuration" basePackage="com.thalesgroup.orchestra.doctor.v2.local"
+      resource="XML" disposableProviderFactory="true" ecorePackage="LocalConfiguration.ecore#/">
+    <genClasses ecoreClass="LocalConfiguration.ecore#//CompatibilityType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference LocalConfiguration.ecore#//CompatibilityType/versionRange"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LocalConfiguration.ecore#//CompatibilityType/targetComponent"/>
+    </genClasses>
+    <genClasses ecoreClass="LocalConfiguration.ecore#//DocumentRoot">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute LocalConfiguration.ecore#//DocumentRoot/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference LocalConfiguration.ecore#//DocumentRoot/xMLNSPrefixMap"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference LocalConfiguration.ecore#//DocumentRoot/xSISchemaLocation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference LocalConfiguration.ecore#//DocumentRoot/orchestraDoctorLocalConfiguration"/>
+    </genClasses>
+    <genClasses ecoreClass="LocalConfiguration.ecore#//OrchestraDoctorLocalConfigurationType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference LocalConfiguration.ecore#//OrchestraDoctorLocalConfigurationType/product"/>
+    </genClasses>
+    <genClasses ecoreClass="LocalConfiguration.ecore#//ParameterType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LocalConfiguration.ecore#//ParameterType/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LocalConfiguration.ecore#//ParameterType/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LocalConfiguration.ecore#//ParameterType/value"/>
+    </genClasses>
+    <genClasses ecoreClass="LocalConfiguration.ecore#//ProductType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference LocalConfiguration.ecore#//ProductType/version"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LocalConfiguration.ecore#//ProductType/category"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LocalConfiguration.ecore#//ProductType/kind"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LocalConfiguration.ecore#//ProductType/name"/>
+    </genClasses>
+    <genClasses ecoreClass="LocalConfiguration.ecore#//VersionRangeType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LocalConfiguration.ecore#//VersionRangeType/compatType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LocalConfiguration.ecore#//VersionRangeType/range"/>
+    </genClasses>
+    <genClasses ecoreClass="LocalConfiguration.ecore#//VersionType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference LocalConfiguration.ecore#//VersionType/parameter"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference LocalConfiguration.ecore#//VersionType/compatibility"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LocalConfiguration.ecore#//VersionType/configConnector"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LocalConfiguration.ecore#//VersionType/execName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LocalConfiguration.ecore#//VersionType/execRelativePath"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LocalConfiguration.ecore#//VersionType/iconPath"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LocalConfiguration.ecore#//VersionType/installLocation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LocalConfiguration.ecore#//VersionType/value"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

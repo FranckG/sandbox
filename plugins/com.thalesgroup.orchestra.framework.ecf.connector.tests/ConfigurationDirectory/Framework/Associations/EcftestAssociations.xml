@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE association_list [
+<!ELEMENT association_list (association*)>
+<!ATTLIST association
+ balanced (true|false) #REQUIRED
+ relational_type CDATA #REQUIRED
+ valid (true|false) #REQUIRED
+>
+
+<!ELEMENT association (artifact1, artifact2)>
+<!ELEMENT artifact1 (#PCDATA) >
+<!ATTLIST artifact1
+ tool CDATA #REQUIRED
+ type CDATA #IMPLIED
+ id CDATA #IMPLIED
+>
+
+<!ELEMENT artifact2 (#PCDATA) >
+<!ATTLIST artifact2
+ tool CDATA #REQUIRED
+ type CDATA #IMPLIED
+ id CDATA #IMPLIED
+>
+]>
+<association_list>
+	<association relational_type="LOGICAL-PHYSICAL" balanced="true" valid="true">
+		<artifact1 tool="EcfTest">*</artifact1>
+    <artifact2 tool="FILESYSTEM">*.ecftest</artifact2>
+  </association>
+</association_list>

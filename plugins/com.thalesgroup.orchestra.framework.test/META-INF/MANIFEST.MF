@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Papeete tests
+Bundle-SymbolicName: com.thalesgroup.orchestra.framework.test
+Bundle-Version: 4.1.3.qualifier
+Bundle-Vendor: THALESGROUP
+Fragment-Host: com.thalesgroup.orchestra.framework
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.junit;bundle-version="3.8.2",
+ org.junit4;bundle-version="4.5.0"

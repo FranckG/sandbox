@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="ASCII"?>
+<contextsproject:ContextsProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:contextsproject="http://com.thalesgroup.orchestra/framework/4_0_13/contextsproject">
+  <administrators id="s0011584"/>
+  <contextReferences uri="platform:/resource/ttt/ttt.contexts" id="b6e3ade1-3afb-4909-ac30-aa72cad91129" name="ttt"/>
+</contextsproject:ContextsProject>

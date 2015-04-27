@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="com.thalesgroup.orchestra.framework.connector.connectorDeclaration">
+      <connector
+            class="{0}.impl.{1}Connector"
+            id="{0}">
+      </connector>
+   </extension>
+
+</plugin>

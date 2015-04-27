@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.newWizards">
+      <category
+            id="com.thalesgroup.orchestra.framework.connector.sdk"
+            name="Orchestra Framework">
+      </category>
+      <wizard
+            category="com.thalesgroup.orchestra.framework.connector.sdk"
+            class="com.thalesgroup.orchestra.framework.connector.sdk.wizards.NewConnectorWizard"
+            finalPerspective="org.eclipse.pde.ui.PDEPerspective"
+            icon="icons/connector/new_connector_wiz_desc.gif"
+            id="com.thalesgroup.orchestra.framework.connector.sdk.wizards.newconnectorwizard"
+            name="New Connector Project"
+            project="true">
+      </wizard>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="popup:org.eclipse.ui.projectConfigure?after=additions">
+         <command
+               commandId="com.thalesgroup.orchestra.framework.sdk.wizards.commands.undeployconnectorcommand"
+               style="push">
+            <visibleWhen>
+               <reference
+                     definitionId="com.thalesgroup.orchestra.framework.connector.sdk.isconnectornature">
+               </reference>
+            </visibleWhen>
+         </command>
+      </menuContribution>
+      <menuContribution
+            locationURI="popup:org.eclipse.ui.projectConfigure?after=additions">
+         <command
+               commandId="com.thalesgroup.orchestra.framework.sdk.wizards.commands.deployconnectorcommand"
+               style="push">
+            <visibleWhen>
+               <reference
+                     definitionId="com.thalesgroup.orchestra.framework.connector.sdk.isconnectornature">
+               </reference>
+            </visibleWhen>
+         </command>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="com.thalesgroup.orchestra.framework.connector.sdk.commands.DeployConnectorCommand"
+            id="com.thalesgroup.orchestra.framework.sdk.wizards.commands.deployconnectorcommand"
+            name="Install Orchestra Test Connector Registry Data">
+      </command>
+      <command
+            defaultHandler="com.thalesgroup.orchestra.framework.connector.sdk.commands.UnDeployConnectorCommand"
+            id="com.thalesgroup.orchestra.framework.sdk.wizards.commands.undeployconnectorcommand"
+            name="Uninstall Orchestra Test Connector Registry Data">
+      </command>
+   </extension>
+   <extension
+         id="com.thalesgroup.orchestra.connector"
+         name="Framework Connector Project"
+         point="org.eclipse.core.resources.natures">
+      <runtime>
+         <run
+               class="com.thalesgroup.orchestra.framework.connector.sdk.ConnectorProjectNature">
+         </run>
+      </runtime>
+   </extension>
+   <extension
+         point="org.eclipse.core.expressions.definitions">
+      <definition
+            id="com.thalesgroup.orchestra.framework.connector.sdk.isconnectornature">
+         <with
+               variable="activeMenuSelection">
+            <count
+                  value="1">
+            </count>
+            <iterate
+                  ifEmpty="false"
+                  operator="and">
+               <adapt
+                     type="org.eclipse.core.resources.IResource">
+                  <test
+                        property="org.eclipse.core.resources.projectNature"
+                        value="com.thalesgroup.orchestra.connector">
+                  </test>
+               </adapt>
+            </iterate>
+         </with>
+      </definition>
+   </extension>
+
+</plugin>

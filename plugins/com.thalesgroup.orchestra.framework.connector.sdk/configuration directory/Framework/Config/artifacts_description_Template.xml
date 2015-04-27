@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE artifactsDescription [
+<!ELEMENT artifact (objectType+)>
+<!ATTLIST artifact
+	tool ID #REQUIRED
+	version CDATA #REQUIRED
+>
+<!ELEMENT artifactsDescription (artifact+)>
+<!ELEMENT objectType EMPTY>
+<!ATTLIST objectType
+	name NMTOKEN #REQUIRED
+	iconRelativePath CDATA #REQUIRED
+	isExpandable (true|false) #REQUIRED
+	isNavigable (true|false) #REQUIRED
+	isExtractable (true|false) #REQUIRED	
+	isTraceable (true|false) #REQUIRED
+	isToolAtomicallyExtractable (true|false) #IMPLIED
+	isDisplayable (true|false) #IMPLIED
+	>	
+]>
+<artifactsDescription>
+	<artifact tool="Template" version="none">
+		<objectType name="" iconRelativePath="template.gif" isExpandable="false" isNavigable="true" isExtractable="true" isTraceable="true"/>
+	</artifact>
+</artifactsDescription>

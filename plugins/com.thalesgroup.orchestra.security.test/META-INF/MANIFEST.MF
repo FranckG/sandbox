@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Ochestra Security Test Library Plug-in
+Bundle-SymbolicName: com.thalesgroup.orchestra.security.test
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: THALESGROUP
+Fragment-Host: com.thalesgroup.orchestra.security;bundle-version="1.0.0.qualifier"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Require-Bundle: org.junit4;bundle-version="4.8.1"

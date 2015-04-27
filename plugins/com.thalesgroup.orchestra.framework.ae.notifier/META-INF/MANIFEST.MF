@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Notifier
+Bundle-SymbolicName: com.thalesgroup.orchestra.framework.ae.notifier;singleton:=true
+Bundle-Version: 4.4.1.qualifier
+Bundle-Vendor: THALESGROUP
+Require-Bundle: org.eclipse.core.runtime,
+ com.thalesgroup.orchestra.framework.ae;bundle-version="4.0.26",
+ com.thalesgroup.orchestra.framework.model.handler;bundle-version="4.0.27",
+ org.eclipse.ui;bundle-version="3.5.1",
+ com.thalesgroup.orchestra.framework.root.ui;bundle-version="4.0.25",
+ com.thalesgroup.orchestra.framework.remote.services;bundle-version="4.1.6"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6

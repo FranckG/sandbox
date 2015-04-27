@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Test
+Bundle-SymbolicName: com.thalesgroup.orchestra.framework.tests
+Bundle-Version: 4.2.8.qualifier
+Bundle-Vendor: THALESGROUP
+Fragment-Host: com.thalesgroup.orchestra.variablemanager.api;bundle-version="4.0.4"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: com.thalesgroup.orchestra.framework.common;bundle-version="1.0.0",
+ com.thalesgroup.orchestra.framework.model;bundle-version="1.0.0",
+ com.thalesgroup.orchestra.framework.model.handler;bundle-version="1.0.0",
+ org.eclipse.debug.core;bundle-version="3.5.0",
+ org.junit,
+ com.thalesgroup.orchestra.framework.model.validation;bundle-version="4.0.18",
+ com.thalesgroup.orchestra.framework.model.migration;bundle-version="4.0.12"

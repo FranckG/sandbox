@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: JettyConfigurator
+Bundle-SymbolicName: com.thalesgroup.orchestra.framework.webservices.jettyConfig
+Bundle-Version: 4.4.0.qualifier
+Bundle-Vendor: THALESGROUP
+Fragment-Host: org.eclipse.equinox.http.jetty;bundle-version="2.0.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: com.thalesgroup.orchestra.framework.common

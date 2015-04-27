@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns:connector="http://www.thalesgroup.com/orchestra/framework/4_0_24/Connector" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.thalesgroup.com/orchestra/framework/4_0_24/Connector">
+	<xs:element name="connectorDefinition" type="connector:ConnectorDefinition"/>
+	<xs:complexType name="ConnectorDefinition">
+		<xs:sequence maxOccurs="1" minOccurs="1">
+			<xs:element name="connector" type="connector:Connector"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Connector">
+		<xs:sequence>
+			<xs:element maxOccurs="unbounded" minOccurs="1" name="type" type="connector:Type"/>
+			<xs:element maxOccurs="unbounded" minOccurs="0" name="unsupportedService" type="connector:Service"/>
+			<xs:element maxOccurs="1" minOccurs="0" name="keepOpen" type="connector:KeepOpen"/>
+			<xs:element maxOccurs="1" minOccurs="0" name="launchArguments" type="connector:LaunchArguments"/>
+		</xs:sequence>
+		<xs:attribute name="connectorId" type="xs:string" use="required"/>
+		<xs:attribute name="progId" type="xs:string"/>
+		<xs:attribute name="metadataResolver" type="xs:boolean"/>
+	</xs:complexType>
+	<xs:complexType name="Type">
+		<xs:attribute name="name" type="xs:string" use="required"/>
+		<xs:attribute name="timeout" type="xs:integer"/>
+	</xs:complexType>
+	<xs:complexType name="Service">
+		<xs:attribute name="serviceName" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="Create"/>
+					<xs:enumeration value="Expand"/>
+					<xs:enumeration value="ExportDoc"/>
+					<xs:enumeration value="ExportLM"/>
+					<xs:enumeration value="Navigate"/>
+					<xs:enumeration value="Search"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="KeepOpen">
+		<xs:attribute name="name" type="xs:string" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="LaunchArguments">
+		<xs:attribute name="name" type="xs:string" use="required"/>
+	</xs:complexType>	
+</xs:schema>

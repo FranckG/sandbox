@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE artifactsDescription [
+<!ELEMENT artifact (objectType+)>
+<!ATTLIST artifact
+	tool ID #REQUIRED
+	version CDATA #REQUIRED
+>
+<!ELEMENT artifactsDescription (artifact+)>
+<!ELEMENT objectType EMPTY>
+<!ATTLIST objectType
+	name NMTOKEN #REQUIRED
+	iconRelativePath CDATA #REQUIRED
+	isExpandable (true|false) #REQUIRED
+	isNavigable (true|false) #REQUIRED
+	isExtractable (true|false) #REQUIRED	
+	isTraceable (true|false) #REQUIRED
+	isToolAtomicallyExtractable (true|false) #IMPLIED
+	isDisplayable (true|false) #IMPLIED
+	>	
+]>
+<artifactsDescription>
+	<artifact tool="Text" version="none">
+		<objectType name="" iconRelativePath="notepad.gif" isExpandable="false" isNavigable="true" isExtractable="true" isTraceable="true"/>
+	</artifact>
+	<artifact tool="CppAsText" version="none">
+		<objectType name="" iconRelativePath="notepad.gif" isExpandable="false" isNavigable="true" isExtractable="true" isTraceable="true"/>
+	</artifact>
+	<artifact tool="Log" version="none">
+		<objectType name="" iconRelativePath="notepad.gif" isExpandable="false" isNavigable="true" isExtractable="true" isTraceable="true"/>
+	</artifact>
+	<artifact tool="BMP" version="none">
+		<objectType name="" iconRelativePath="gimp.gif" isExpandable="false" isNavigable="true" isExtractable="true" isTraceable="true"/>
+	</artifact>
+	<artifact tool="JPG" version="none">
+		<objectType name="" iconRelativePath="gimp.gif" isExpandable="false" isNavigable="true" isExtractable="true" isTraceable="true"/>
+	</artifact>
+	<artifact tool="JPEG" version="none">
+		<objectType name="" iconRelativePath="gimp.gif" isExpandable="false" isNavigable="true" isExtractable="true" isTraceable="true"/>
+	</artifact>
+	<artifact tool="GIF" version="none">
+		<objectType name="" iconRelativePath="gimp.gif" isExpandable="false" isNavigable="true" isExtractable="true" isTraceable="true"/>
+	</artifact>
+	<artifact tool="PNG" version="none">
+		<objectType name="" iconRelativePath="gimp.gif" isExpandable="false" isNavigable="true" isExtractable="true" isTraceable="true"/>
+	</artifact>
+	<artifact tool="PCX" version="none">
+		<objectType name="" iconRelativePath="gimp.gif" isExpandable="false" isNavigable="true" isExtractable="true" isTraceable="true"/>
+	</artifact>
+	<artifact tool="TIFF" version="none">
+		<objectType name="" iconRelativePath="gimp.gif" isExpandable="false" isNavigable="true" isExtractable="true" isTraceable="true"/>
+	</artifact>
+	<artifact tool="ArtefactSet" version="none">
+		<objectType name="" iconRelativePath="fold_project.gif" isExpandable="false" isNavigable="false" isExtractable="true" isTraceable="true"/>
+	</artifact>
+</artifactsDescription>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+ <extension-point id="validationHandler" name="Validation Handler" schema="schema/validationHandler.exsd"/>
+	<extension point="org.eclipse.core.variables.dynamicVariables">
+		<variable description="Orchestra Framework Variable Manager"
+			name="odm" resolver="com.thalesgroup.orchestra.framework.model.handler.internal.variable.ContextVariableResolver"
+			supportsArgument="true">
+		</variable>
+	</extension>
+ <extension
+       point="com.thalesgroup.orchestra.framework.model.edit.elementNameProvider">
+    <nameProvider
+          class="com.thalesgroup.orchestra.framework.model.handler.data.NameProvider">
+    </nameProvider>
+ </extension>
+<extension
+      point="org.eclipse.core.runtime.preferences">
+   <initializer
+         class="com.thalesgroup.orchestra.framework.model.handler.pref.ModelHandlerPreferenceInitializer">
+   </initializer>
+</extension>
+</plugin>

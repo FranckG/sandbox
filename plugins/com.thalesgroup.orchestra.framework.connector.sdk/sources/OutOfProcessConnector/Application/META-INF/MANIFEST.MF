@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: {1}
+Bundle-SymbolicName: {0};singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Require-Bundle: org.eclipse.core.runtime,
+ com.thalesgroup.orchestra.framework.connector,
+ com.thalesgroup.orchestra.framework.ecf.services
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6

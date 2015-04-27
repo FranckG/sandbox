@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="com.thalesgroup.orchestra.framework.connector.connectorDeclaration">
+      <connector
+            class="com.thalesgroup.orchestra.framework.connector.commands.FrameworkCommandsConnector"
+            id="OF_Commands"
+            logicalOnly="true">
+      </connector>
+   </extension>
+
+</plugin>

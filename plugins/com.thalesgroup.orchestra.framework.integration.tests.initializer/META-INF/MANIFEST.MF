@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Shared Framework integration tests initializer
+Bundle-SymbolicName: com.thalesgroup.orchestra.framework.integration.tests.initializer;singleton:=true
+Bundle-Version: 4.2.7.qualifier
+Bundle-Vendor: THALESGROUP
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: com.thalesgroup.orchestra.framework.integration.tests.application,
+ com.ice.jni.registry.Registry;bundle-version="3.1.3",
+ org.eclipse.core.runtime;bundle-version="3.5.0"
+Export-Package: com.thalesgroup.orchestra.framework.integration.tests.initializer

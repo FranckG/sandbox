@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.emf.validation.constraintProviders">
+      <category
+            id="com.thalesgroup.orchestra.framework.model.validation"
+            mandatory="true"
+            name="Orchestra Framework Variables Constraints">
+      </category>
+      <constraintProvider
+            cache="true">
+         <package
+               namespaceUri="http://com.thalesgroup.orchestra/framework/4_1_0/contexts">
+         </package>
+         <constraints
+               categories="com.thalesgroup.orchestra.framework.model.validation">
+            <constraint
+                  class="com.thalesgroup.orchestra.framework.model.validation.constraint.name.NonEmtpyNameConstraint"
+                  id="com.thalesgroup.orchestra.framework.model.validation.NonEmptyName"
+                  lang="Java"
+                  mode="Live"
+                  name="Non-Empty names"
+                  severity="ERROR"
+                  statusCode="1">
+               <message>
+                  Element &apos;&apos;{0}&apos;&apos; : can not have an empty name (type is &apos;&apos;{1}&apos;&apos;)
+               </message>
+               <description>
+                  All named elements should have a non-empty name.
+               </description>
+               <target
+                     class="NamedElement">
+                  <event
+                        name="Set">
+                     <feature
+                           name="name">
+                     </feature>
+                  </event>
+               </target>
+            </constraint>
+            <constraint
+                  class="com.thalesgroup.orchestra.framework.model.validation.constraint.name.ValidCharactersNameConstraint"
+                  id="com.thalesgroup.orchestra.framework.model.validation.ValidCharactersName"
+                  lang="Java"
+                  mode="Live"
+                  name="Name with valid characters"
+                  severity="ERROR"
+                  statusCode="1">
+               <message>
+                  Element&apos;&apos;{0}&apos;&apos; : Context name must contain only alphanumeric characters. (type is &apos;&apos;{1}&apos;&apos;)
+               </message>
+               <description>
+                  All contexts should have a name with valid characters.
+               </description>
+               <target
+                     class="Context">
+                  <event
+                        name="Set">
+                     <feature
+                           name="name">
+                     </feature>
+                  </event>
+               </target>
+            </constraint>
+            <constraint
+                  class="com.thalesgroup.orchestra.framework.model.validation.constraint.name.ElementNameUniquenessWithSiblingsConstraint"
+                  id="com.thalesgroup.orchestra.framework.model.validation.ElementNameUniquenessWithSiblingsConstraint"
+                  lang="Java"
+                  mode="Live"
+                  name="Element Name Uniqueness With Siblings"
+                  severity="ERROR"
+                  statusCode="1">
+               <message>
+                  {0} &apos;&apos;{1}&apos;&apos; : name already in use.
+               </message>
+               <description>
+                  Elements name must be unique regarding their siblings.
+               </description>
+               <target
+                     class="NamedElement">
+                  <event
+                        name="Set">
+                     <feature
+                           name="name">
+                     </feature>
+                  </event>
+               </target>
+            </constraint>
+            <constraint
+                  class="com.thalesgroup.orchestra.framework.model.validation.constraint.value.VariableValuesConstraint"
+                  id="com.thalesgroup.orchestra.framework.model.validation.VariableValueType"
+                  lang="Java"
+                  mode="Batch"
+                  name="Variable values type correctness"
+                  severity="WARNING"
+                  statusCode="1">
+               <message>
+                  Variable &apos;&apos;{0}&apos;&apos; : value &apos;&apos;{1}&apos;&apos; is not a valid &apos;&apos;{2}&apos;&apos; (raw value is &apos;&apos;{3}&apos;&apos;)
+               </message>
+               <description>
+                  Variable values should meet variable type.
+               </description>
+               <target
+                     class="Variable">
+               </target>
+            </constraint>
+            <constraint
+                  class="com.thalesgroup.orchestra.framework.model.validation.constraint.name.ContextContainedCategoriesNameUniquenessConstraint"
+                  id="com.thalesgroup.orchestra.framework.model.validation.ContextCategoriesUniqueness"
+                  lang="Java"
+                  mode="Batch"
+                  name="Context categories name uniqueness"
+                  severity="ERROR"
+                  statusCode="1">
+               <message>
+                  Context &apos;&apos;{0}&apos;&apos; : can not contain more than one Category with the name &apos;&apos;{1}&apos;&apos;
+               </message>
+               <description>
+                  Categories contained in a context must be unique, that is have a unique name within this context.
+               </description>
+               <target
+                     class="Context">
+               </target>
+            </constraint>
+            <constraint
+                  class="com.thalesgroup.orchestra.framework.model.validation.constraint.name.CategoryContainedCategoriesNameUniquenessConstraint"
+                  id="com.thalesgroup.orchestra.framework.model.validation.CategoryCategoriesUniqueness"
+                  lang="Java"
+                  mode="Batch"
+                  name="Category categories name uniqueness"
+                  severity="ERROR"
+                  statusCode="1">
+               <message>
+                  Category &apos;&apos;{0}&apos;&apos; : can not contain more than one Category with the name &apos;&apos;{1}&apos;&apos;
+               </message>
+               <description>
+                  Categories contained in a category must be unique, that is have a unique name within this category.
+               </description>
+               <target
+                     class="Category">
+               </target>
+            </constraint>
+            <constraint
+                  class="com.thalesgroup.orchestra.framework.model.validation.constraint.name.CategoryContainedVariablesNameUniquenessConstraint"
+                  id="com.thalesgroup.orchestra.framework.model.validation.CategoryVariablesUniqueness"
+                  lang="Java"
+                  mode="Batch"
+                  name="Category variables name uniqueness"
+                  severity="ERROR"
+                  statusCode="1">
+               <message>
+                  Category &apos;&apos;{0}&apos;&apos; : can not contain more than one Variable with the name &apos;&apos;{1}&apos;&apos;
+               </message>
+               <description>
+                  Variables contained in a category must be unique, that is have a unique name within this category.
+               </description>
+               <target
+                     class="Category">
+               </target>
+            </constraint>
+            <constraint
+                  class="com.thalesgroup.orchestra.framework.model.validation.constraint.value.CyclesConstraint"
+                  id="com.thalesgroup.orchestra.framework.model.validation.Cycles"
+                  lang="Java"
+                  mode="Batch"
+                  name="Variable values cycles detection"
+                  severity="WARNING"
+                  statusCode="1">
+               <message>
+                  Context &apos;&apos;{0}&apos;&apos; : &apos;&apos;{1}&apos;&apos; is involved in a cycle through its references to others variables
+               </message>
+               <description>
+                  Variable references within a context must not lead to cycles.
+               </description>
+               <target
+                     class="Context">
+               </target>
+            </constraint>
+            <constraint
+                  class="com.thalesgroup.orchestra.framework.model.validation.constraint.value.MandatoryVariablesValuesConstraint"
+                  id="com.thalesgroup.orchestra.framework.model.validation.MandatoryVariablesValuesConstraint"
+                  lang="Java"
+                  mode="Batch"
+                  name="Mandatory values contraints detection"
+                  severity="ERROR"
+                  statusCode="1">
+               <message>
+                  Variable &apos;&apos;{0}&apos;&apos; is mandatory : it must contain non empty values
+               </message>
+               <description>
+                  Mandatory variables values correctness: make sure the mandatory variable value is correct.
+Meaning neither null nor empty
+               </description>
+               <target
+                     class="Variable">
+               </target>
+            </constraint>
+            <constraint
+                  class="com.thalesgroup.orchestra.framework.model.validation.constraint.value.ReadableWritableDirectoryConstraint"
+                  id="com.thalesgroup.orchestra.framework.model.validation.ReadableWritableDirectoryConstraint"
+                  lang="Java"
+                  mode="Batch"
+                  name="Readable/writable directory constraint"
+                  severity="WARNING"
+                  statusCode="1">
+               <message>
+                  Variable&apos;&apos;{0}&apos;&apos; : The folder: &apos;&apos;{1}&apos;&apos; {2}
+               </message>
+               <description>
+                  Check that ConfigurationDirectory, SharedDirectory and TemporaryDirectory variables are filled with a path  withch is valid and is a readable and writable directory.
+               </description>
+               <target
+                     class="FolderVariable">
+               </target>
+            </constraint>
+            <constraint
+                  class="com.thalesgroup.orchestra.framework.model.validation.constraint.value.EnvironmentVariableConstraint"
+                  id="com.thalesgroup.orchestra.framework.model.validation.EnvironmentVariableConstraint"
+                  lang="Java"
+                  mode="Batch"
+                  name="Environment Variables constraint"
+                  severity="ERROR"
+                  statusCode="1">
+               <message>
+                  Variable &apos;&apos;{0}&apos;&apos; : &apos;&apos;{1}&apos;&apos;  (environment is &apos;&apos;{2}&apos;&apos;)
+               </message>
+               <description>
+                  Check specific contributed rules for ArtefactPath and ConfigurationDirectories environment variables.
+               </description>
+               <target
+                     class="EnvironmentVariable">
+               </target>
+            </constraint>
+            <constraint
+                  class="com.thalesgroup.orchestra.framework.model.validation.constraint.value.ReferencedVariableConstraint"
+                  id="com.thalesgroup.orchestra.framework.model.validation.ReferencedVariableConstraint"
+                  lang="Java"
+                  mode="Batch"
+                  name="Variable Reference constraint"
+                  severity="WARNING"
+                  statusCode="1">
+               <message>
+                  Variable &apos;&apos;{0}&apos;&apos; : value &apos;&apos;{1}&apos;&apos; can&apos;&apos;t be resolved : {2}
+               </message>
+               <description>
+                  Check if a reference to an ODM variable can be resolved (the variable must exist and it must be a mono value variable).
+               </description>
+               <target
+                     class="Variable">
+               </target>
+            </constraint>
+            <constraint
+                  class="com.thalesgroup.orchestra.framework.model.validation.constraint.structure.VersionsAreSelectedConstraint"
+                  id="com.thalesgroup.orchestra.framework.model.validation.VersionSelection"
+                  lang="Java"
+                  mode="Batch"
+                  name="Version selection constraint"
+                  severity="WARNING"
+                  statusCode="1">
+               <message>
+                  Component &apos;&apos;{0}&apos;&apos; : no version selected in this context.
+               </message>
+               <description>
+                  Check if a version is selected for every component in \Orchestra installation category.
+               </description>
+               <target
+                     class="InstallationCategory">
+               </target>
+            </constraint>
+            <constraint
+                  class="com.thalesgroup.orchestra.framework.model.validation.constraint.structure.VersionsAreValidConstraint"
+                  id="com.thalesgroup.orchestra.framework.model.validation.VersionsAreValid"
+                  lang="Java"
+                  mode="Batch"
+                  name="Selected versions are valid constraint"
+                  severity="WARNING"
+                  statusCode="1">
+               <message>
+                  {0}
+               </message>
+               <description>
+                  Check if all selected versions still exist, and are compliant with compatibility constaints declared by products to Orchestra Framework through Orchestra Doctor
+               </description>
+               <target
+                     class="Context">
+               </target>
+            </constraint>
+            <constraint
+                  class="com.thalesgroup.orchestra.framework.model.validation.constraint.value.EnvironmentInstalledConstraint"
+                  id="com.thalesgroup.orchestra.framework.model.validation.EnvironmentInstalled"
+                  lang="Java"
+                  mode="Batch"
+                  name="Environment installed"
+                  severity="ERROR"
+                  statusCode="1">
+               <message>
+                  Variable&apos;&apos;{0}&apos;&apos;: Environment &apos;&apos;{1}&apos;&apos; is used but is not installed
+               </message>
+               <description>
+                  Check that environments used in ArtefactPath and ConfigurationDirectories are available
+               </description>
+               <target
+                     class="Variable">
+               </target>
+            </constraint>
+         </constraints>
+      </constraintProvider>
+   </extension>
+   <extension
+         point="org.eclipse.emf.validation.constraintBindings">
+      <clientContext
+            default="true"
+            id="com.thalesgroup.orchestra.framework.model.validation.clientContext">
+         <selector
+               class="com.thalesgroup.orchestra.framework.model.validation.DelegateSelector">
+         </selector>
+      </clientContext>
+      <binding
+            category="com.thalesgroup.orchestra.framework.model.validation"
+            context="com.thalesgroup.orchestra.framework.model.validation.clientContext">
+      </binding>
+   </extension>
+   <extension
+         point="com.thalesgroup.orchestra.framework.model.handler.validationHandler">
+      <validationHandler
+            class="com.thalesgroup.orchestra.framework.model.validation.ValidationHelper">
+      </validationHandler>
+   </extension>
+   <extension
+         point="org.eclipse.emf.validation.constraintProviders">
+      <category
+            id="com.thalesgroup.orchestra.framework.model.validation.constraint.contextsproject"
+            mandatory="true"
+            name="Orchestra Framework Context Project Constraints">
+      </category>
+      <constraintProvider
+            cache="true">
+         <package
+               namespaceUri="http://com.thalesgroup.orchestra/framework/4_0_13/contextsproject">
+         </package>
+         <constraints
+               categories="com.thalesgroup.orchestra.framework.model.validation.constraint.contextsproject">
+            <constraint
+                  class="com.thalesgroup.orchestra.framework.model.validation.constraint.contextsproject.ParentProjectPathConstraint"
+                  id="com.thalesgroup.orchestra.framework.model.validation.ParentProjectPath"
+                  lang="Java"
+                  mode="Batch"
+                  name="Parent Project Path constraint"
+                  severity="WARNING"
+                  statusCode="1">
+               <message>
+                  Incorrect parent project path ({0}).
+               </message>
+               <target
+                     class="ContextsProject">
+               </target>
+            </constraint>
+         </constraints>
+      </constraintProvider>
+   </extension>
+   <extension
+         point="org.eclipse.emf.validation.constraintBindings">
+      <clientContext
+            default="true"
+            id="com.thalesgroup.orchestra.framework.model.validation.contextsproject.clientContext">
+         <enablement>
+            <instanceof
+                  value="com.thalesgroup.orchestra.framework.contextsproject.ContextsProject">
+            </instanceof>
+         </enablement>
+      </clientContext>
+      <binding
+            category="com.thalesgroup.orchestra.framework.model.validation.constraint.contextsproject"
+            context="com.thalesgroup.orchestra.framework.model.validation.contextsproject.clientContext">
+      </binding>
+   </extension>
+   <extension
+         point="org.eclipse.emf.validation.constraintProviders">
+   </extension>
+
+</plugin>

@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: ODM Variables Resolver for Eclipse
+Bundle-SymbolicName: com.thalesgroup.orchestra.eclipse.variablesresolver.contribution;singleton:=true
+Bundle-Version: 4.1.10.qualifier
+Bundle-Vendor: THALESGROUP
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.eclipse.core.variables;bundle-version="3.2.0",
+ org.eclipse.core.runtime;bundle-version="3.6.0",
+ com.thalesgroup.orchestra.framework.webservices.client,
+ org.eclipse.core.resources;bundle-version="3.6.0",
+ org.eclipse.ui;bundle-version="3.6.0"
+Bundle-Activator: com.thalesgroup.orchestra.eclipse.variablesresolver.contribution.OdmVariableResolverActivator
+Bundle-ActivationPolicy: lazy

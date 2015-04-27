@@ -1,0 +1,46 @@
+// CRC.odl : type library source for CRC.dll
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (CRC.tlb).
+
+[ uuid(34583227-9AF6-4C18-95DC-EF3AF6F831D6), version(2.0) ]
+library CRC
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+
+
+
+	//  Primary dispatch interface for CCalculCRC
+	
+	[ uuid(6B040DBB-0851-412D-826A-97B3F96DA404) ]
+	dispinterface ICalculCRC
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CCalculCRC)
+			//}}AFX_ODL_PROP
+			
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CCalculCRC)
+			[id(1)] BSTR GetCRC(BSTR cstrFileName);
+			[id(2)] BSTR GetCRCForAString(BSTR cstrMessage);
+			//}}AFX_ODL_METHOD
+
+	};
+
+	//  Class information for CCalculCRC
+
+	[ uuid(1C8388F9-8A08-4F89-9B0F-0749119E2EC2) ]
+	coclass CalculCRC
+	{
+		[default] dispinterface ICalculCRC;
+	};
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

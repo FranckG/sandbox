@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contexts:Context xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:contexts="http://com.thalesgroup.orchestra/framework/4_0_18/contexts" name="OFVM SUM">
+  <superContext href="platform:/plugin/com.thalesgroup.orchestra.framework.model.handler/context/default.contexts#/"/>
+</contexts:Context>

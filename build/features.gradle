@@ -1,0 +1,110 @@
+//Gradle 0.9-rc-1
+//Command Example: gradle pdeClean pdeBuild -i -S
+//
+
+apply plugin: "FeaturePde"
+apply from : "http://repo.orchestra/plugins-releases-local/com/thalesgroup/gradle/plugins/hudsonjobinfos/1.0/hudsonjobinfos-1.0.gradle"
+
+defaultTasks "pdeBuild"
+
+buildscript { 
+    repositories{
+        add(new org.apache.ivy.plugins.resolver.URLResolver()) {
+            name ="Artifactory"
+            url = "http://repo.orchestra/plugins-releases-local"
+            addArtifactPattern "$url/[organisation]/[artifact]-([classifier]-)[revision].[ext]"
+            addIvyPattern "$url/[organisation]/[artifact]-ivy-[revision].xml"   
+            descriptor = "optional"
+            checkmodified = true
+        }
+    }
+    dependencies {
+        classpath "com.thalesgroup.gradle.plugins:pdePlugin:7.+" 
+    }
+}
+
+pdeClean.enabled = false
+pdeInit.enabled = false
+
+
+configure(FeaturePde){	
+    /* the working directory
+     * all plugins and features source code will be fetched here */
+    buildDirectory = "${workspace}/work"
+
+    /* enter here all the feature ids that you want to build.
+     * the Feature directory name must match the feature ID in feature.xml */
+    features = [
+        "com.thalesgroup.orchestra.framework.lib.feature"
+		,"com.thalesgroup.orchestra.framework.common.feature"
+		,"com.thalesgroup.orchestra.framework.root.ui.feature"
+		,"com.thalesgroup.orchestra.framework.exchange.feature"
+        ,"com.thalesgroup.orchestra.framework.webservices.feature"
+        ,"com.thalesgroup.orchestra.security.feature"
+		,"com.thalesgroup.orchestra.framework.puci.feature"
+        ,"com.thalesgroup.orchestra.framework.common.ui.feature"
+        ,"com.thalesgroup.orchestra.framework.connector.feature"
+        ,"com.thalesgroup.orchestra.framework.connector.services.feature"
+        ,"com.thalesgroup.orchestra.framework.remote.services.feature"
+        ,"com.thalesgroup.orchestra.framework.ecf.feature"
+		,"com.thalesgroup.orchestra.framework.sdk.feature"
+		,"com.thalesgroup.orchestra.framework.ae.creation.feature"		
+		,"com.thalesgroup.orchestra.framework.ae.feature"
+		,"com.thalesgroup.orchestra.filesystem.framework.ae.contribution.feature"
+		,"com.thalesgroup.orchestra.framework.environment.feature"
+		,"com.thalesgroup.orchestra.framework.migration.feature"
+		,"com.thalesgroup.orchestra.framework.ae.notifier.feature"
+		,"com.thalesgroup.orchestra.framework.tests.feature"
+    ]
+    
+    /* the list of directories containing plugins */
+    //pluginsSrcDirList = ["${viewPath}/DataMgt_comp/OrchestraFramework/plugins"]
+    /* the list of directories containing features */
+    //featuresSrcDirList = ["${viewPath}/DataMgt_comp/OrchestraFramework/features"]
+
+    /* timestamp for the build artifacts. this will also be the name of the 
+     * output folder for all archives that the build will produce. */
+    buildId = timestamp
+
+    /* the target platform to use to build the features (the $base folder MUST contain an "eclipse" folder) */
+    base = "R:/extloc/platform-3.8/eclipse-sdk-3.8.2"
+    
+    /* use .link files instead of the -DpluginPath variable (default is false) */
+    usePreviousLinks = false
+
+    /* extension locations for the target platform.
+     * - if building with eclipse 3.5 (usePreviousLinks = false) 
+     *   these values will be passed as the -DpluginPath variable separated by path separators 
+     * - if building with eclipse 3.3 (usePreviousLinks = true)
+     *   these values will end up in .link files in the target platform */
+    extLocations = [
+         "platform-3.8/misc"
+        ,"shared/jacob-1.17.0.M2"
+        ,"shared/jetty-8.1.14"
+		,"platform-3.8/org.eclipse.ecf.sdk_3.5.6.v20120610-1946"
+		,"shared/misc"
+        ,"shared/google"
+        ,"OrcLdap/5.x"
+		,"platform-3.8/emf-xsd-SDK-2.8.3"
+		,"platform-3.8/emf-query-SDK-1.6.0"
+		,"platform-3.8/emf-validation-SDK-1.6.0"
+		,"platform-3.8/wtp4x-sdk-R-3.4.2-20130208151217"
+        ,"platform-3.8/swtbot-2.1.0.201302221524"
+    ]
+
+    /* if paths provided in extLocations are not absolute, gradle will append them to this parameter */
+    eclipseExtensionsRoot = "R:/extloc"
+
+    /* the eclipse runtime that will execute the build.
+     * this location must contain a plugins folder with the PDE plugin in it
+     * the PDE bundle is a folder named : org.eclipse.pde.build_${pdeBuildPluginVersion} */
+    eclipseLauncher = "R:/launcher/3.8-basebuilder"
+
+    /* additional properties to pass directly as arguments to the PDE command line
+     * the arguments will have the form : -Darg=value */
+    additionalProperties = [
+	    "javacSource" : "1.6",
+        "javacTarget" : "1.6",
+        "javacDebugInfo" : true
+    ]
+}

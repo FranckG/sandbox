@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Orchestra framework ECF default connector plug-in
+Bundle-SymbolicName: com.thalesgroup.orchestra.framework.connector.ecf;singleton:=true
+Bundle-Version: 4.4.0.qualifier
+Bundle-Activator: com.thalesgroup.orchestra.framework.connector.ecf.Activator
+Bundle-Vendor: THALESGROUP
+Require-Bundle: org.eclipse.core.runtime,
+ com.thalesgroup.orchestra.framework.connector,
+ org.eclipse.ecf;bundle-version="3.0.0",
+ com.thalesgroup.orchestra.framework.ecf.services,
+ org.eclipse.ecf.remoteservice;bundle-version="3.0.0",
+ com.thalesgroup.orchestra.framework.variablemanager.server.model,
+ com.thalesgroup.orchestra.framework.common
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy
+Export-Package: com.thalesgroup.orchestra.framework.connector.ecf

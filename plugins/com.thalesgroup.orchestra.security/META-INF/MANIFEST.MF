@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Ochestra Security Library Plug-in
+Bundle-SymbolicName: com.thalesgroup.orchestra.security
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: THALESGROUP
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Export-Package: com.thalesgroup.orchestra.security;uses:="com.thalesgroup.orchestra.security.credentials",
+ com.thalesgroup.orchestra.security.credentials;uses:="com.thalesgroup.orchestra.security.ui",
+ com.thalesgroup.orchestra.security.ui;uses:="com.thalesgroup.orchestra.security.credentials,javax.swing"
+Require-Bundle: org.bouncycastle.bcprovider;bundle-version="1.46.0"
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.thalesgroup.com/orchestra/framework/4_0_24/Connector"
+            class="com.thalesgroup.orchestra.framework.models.connector.ConnectorPackage"
+            genModel="models/emf/Connector.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.thalesgroup.com/orchestra/framework/4_1_2/Context"
+            class="com.thalesgroup.orchestra.framework.models.context.ContextPackage"
+            genModel="models/emf/Context.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <parser
+            type="connector"
+            class="com.thalesgroup.orchestra.framework.models.connector.util.ConnectorResourceFactoryImpl"/>
+   </extension>
+
+</plugin>

@@ -1,0 +1,25 @@
+
+[Types]
+Names=Orchestra Image
+
+[Orchestra Image]
+Tool=Papeete
+Image=gimp
+Variable1Name=FmkExtMethod
+Variable1Label=Extraction Type
+Variable1Type=enum
+Variable1EnumValues=XML_LM,XML_DOC
+IsFileBased=0
+Requirement1Name=Image
+Requirement1Print=$l
+Requirement1Image=gimp
+Requirement1Tree=<ELEMENT label="$l" uri="$u"></ELEMENT>
+Attribute1Name=OriginalType
+Attribute1IsVisible=0
+Attribute1Tree=<ELEMENT type="$i"></ELEMENT>
+Attribute2Name=uri
+Attribute2IsVisible=0
+Attribute2Tree=<ELEMENT uri="$i"></ELEMENT>
+FileExtension=xml
+Type=xml
+

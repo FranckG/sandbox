@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Integration Tests
+Bundle-SymbolicName: com.thalesgroup.orchestra.framework.integration.tests;singleton:=true
+Bundle-Version: 4.2.9.qualifier
+Bundle-Vendor: THALESGROUP
+Require-Bundle: com.thalesgroup.orchestra.framework.integration.tests.application;visibility:=reexport,
+ com.thalesgroup.orchestra.framework.model.migration;bundle-version="4.0.39",
+ com.thalesgroup.orchestra.framework.puci;bundle-version="4.0.39",
+ org.eclipse.debug.core;bundle-version="3.5.0",
+ org.eclipse.swtbot.eclipse.finder;bundle-version="2.0.0",
+ com.thalesgroup.orchestra.framework.exchange;bundle-version="4.0.31",
+ org.eclipse.swtbot.junit4_x;bundle-version="2.0.0",
+ org.junit4;bundle-version="4.5.0",
+ com.thalesgroup.orchestra.framework.ui.tests;bundle-version="4.0.41"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy
+Export-Package: com.thalesgroup.orchestra.framework.integration.tests.helpers

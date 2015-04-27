@@ -1,0 +1,76 @@
+apply plugin : "base"
+apply from : "http://repo.orchestra/plugins-releases-local/com/thalesgroup/gradle/plugins/hudsonjobinfos/1.0/hudsonjobinfos-1.0.gradle"
+
+defaultTasks "workClean", "zipDelivery"
+
+def dist       = "${workspace}/dist"
+def buildDir   = "${workspace}/work/${timestamp}"
+
+task workClean << {
+    println "Cleaning dist dir..."
+    ant.delete(dir : dist)
+}
+
+task zipDelivery (type : Zip) {
+    version = "$version.$timestamp"
+    destinationDir = file(dist)
+    baseName = "OrchestraFramework"
+	into ("x86") {
+		from zipTree("${buildDir}/OrchestraFramework-${version}-win32.win32.x86.zip")
+	}
+    into ("shared/exchange") {
+        from zipTree("${buildDir}/com.thalesgroup.orchestra.framework.exchange.feature-${timestamp}.zip")
+    }
+    into("shared/ws") {
+        from zipTree("${buildDir}/com.thalesgroup.orchestra.framework.webservices.feature-${timestamp}.zip")
+    }
+    into ("shared/ae") {
+        from zipTree("${buildDir}/com.thalesgroup.orchestra.framework.ae.feature-${timestamp}.zip")
+    } 
+    into ("shared/ae.notifier") {
+        from zipTree("${buildDir}/com.thalesgroup.orchestra.framework.ae.notifier.feature-${timestamp}.zip")
+    } 
+    into ("shared/lib") {
+        from zipTree("${buildDir}/com.thalesgroup.orchestra.framework.lib.feature-${timestamp}.zip")
+    }
+    into ("shared/remote.services") {
+        from zipTree("${buildDir}/com.thalesgroup.orchestra.framework.remote.services.feature-${timestamp}.zip")
+    } 
+    into ("shared/ecf") {
+        from zipTree("${buildDir}/com.thalesgroup.orchestra.framework.ecf.feature-${timestamp}.zip")
+    } 
+    into ("shared/puci") {
+        from zipTree("${buildDir}/com.thalesgroup.orchestra.framework.puci.feature-${timestamp}.zip")
+    } 
+    into ("shared/migration") {
+        from zipTree("${buildDir}/com.thalesgroup.orchestra.framework.migration.feature-${timestamp}.zip")
+    } 
+    into ("shared/root.ui") {
+        from zipTree("${buildDir}/com.thalesgroup.orchestra.framework.root.ui.feature-${timestamp}.zip")
+    }
+    into ("shared/connector") {
+        from zipTree("${buildDir}/com.thalesgroup.orchestra.framework.connector.feature-${timestamp}.zip")
+    }
+    into ("shared/connector.services") {
+        from zipTree("${buildDir}/com.thalesgroup.orchestra.framework.connector.services.feature-${timestamp}.zip")
+    }
+    into ("shared/ae.contributions") {
+        from zipTree("${buildDir}/com.thalesgroup.orchestra.framework.ae.creation.feature-${timestamp}.zip")
+		from zipTree("${buildDir}/com.thalesgroup.orchestra.filesystem.framework.ae.contribution.feature-${timestamp}.zip")
+    }	
+    into ("shared/common") {
+        from zipTree("${buildDir}/com.thalesgroup.orchestra.framework.common.feature-${timestamp}.zip")
+    }
+    into ("shared/common.ui") {
+        from zipTree("${buildDir}/com.thalesgroup.orchestra.framework.common.ui.feature-${timestamp}.zip")
+    }
+    into ("shared/environment") {
+        from zipTree("${buildDir}/com.thalesgroup.orchestra.framework.environment.feature-${timestamp}.zip")
+    }
+    into ("shared/eclipse.variablesresolver.contribution") {
+        from zipTree("${buildDir}/com.thalesgroup.orchestra.eclipse.variablesresolver.contribution.feature-${timestamp}.zip")
+    }
+    into ("shared/eclipse.sdk") {
+        from zipTree("${buildDir}/com.thalesgroup.orchestra.framework.sdk.feature-${timestamp}.zip")
+    }
+}

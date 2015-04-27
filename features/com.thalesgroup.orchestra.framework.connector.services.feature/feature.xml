@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.thalesgroup.orchestra.framework.connector.services.feature"
+      label="Orchestra Framework connector services feature"
+      version="4.1.2.qualifier"
+      provider-name="THALESGROUP">
+
+   <description url="http://www.example.com/description">
+      [Enter Feature Description here.]
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      [Enter Copyright Description here.]
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      [Enter License Description here.]
+   </license>
+
+   <includes
+         id="com.thalesgroup.orchestra.framework.connector.services.feature.source"
+         version="0.0.0"/>
+
+   <requires>
+      <import feature="com.thalesgroup.orchestra.framework.connector.feature" version="4.1.2" match="greaterOrEqual"/>
+      <import feature="com.thalesgroup.orchestra.framework.puci.feature" version="4.1.2" match="greaterOrEqual"/>
+   </requires>
+
+   <plugin
+         id="com.thalesgroup.orchestra.framework.connector.services"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>

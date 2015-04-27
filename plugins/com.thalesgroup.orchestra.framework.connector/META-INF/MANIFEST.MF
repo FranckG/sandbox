@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Orchestra Framework connector definition plug-in
+Bundle-SymbolicName: com.thalesgroup.orchestra.framework.connector;singleton:=true
+Bundle-Version: 4.3.0.qualifier
+Bundle-Vendor: THALESGROUP
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.eclipse.core.runtime;bundle-version="3.5.0",
+ com.thalesgroup.orchestra.framework.lib;bundle-version="4.0.23";visibility:=reexport,
+ com.thalesgroup.orchestra.framework.connector.models;bundle-version="4.0.24";visibility:=reexport,
+ com.thalesgroup.orchestra.framework.exchange;bundle-version="4.0.24";visibility:=reexport
+Bundle-Activator: com.thalesgroup.orchestra.framework.connector.ConnectorActivator
+Bundle-ActivationPolicy: lazy
+Export-Package: com.thalesgroup.orchestra.framework.connector,
+ com.thalesgroup.orchestra.framework.connector.helper

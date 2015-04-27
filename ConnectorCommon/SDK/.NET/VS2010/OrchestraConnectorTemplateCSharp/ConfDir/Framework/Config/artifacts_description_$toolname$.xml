@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE artifactsDescription [
+<!ELEMENT artifact (objectType+)>
+<!ATTLIST artifact
+          tool CDATA #REQUIRED
+          version CDATA #REQUIRED>
+<!ELEMENT artifactsDescription (artifact+)>
+<!ELEMENT objectType EMPTY>
+<!ATTLIST objectType
+          name CDATA #REQUIRED
+          iconRelativePath CDATA #REQUIRED
+          isExpandable (false | true) #REQUIRED
+          isNavigable (false | true) #REQUIRED
+          isExtractable (false | true) #REQUIRED
+          isToolAtomicallyExtractable (false | true) #IMPLIED
+          isDisplayable (false | true) #IMPLIED>	
+]>
+<artifactsDescription>
+	<artifact tool="$toolname$" version="none">
+		<objectType name="" isExpandable="true" isExtractable="false" isNavigable="false" iconRelativePath="sql_base.gif"/>
+		<objectType name="Query" isExpandable="false" isExtractable="true" isNavigable="false" iconRelativePath="sql_query.gif"/>
+		<objectType name="Row" isExpandable="false" isExtractable="false" isNavigable="false" iconRelativePath="sql_row.gif"/>
+	</artifact>
+</artifactsDescription>

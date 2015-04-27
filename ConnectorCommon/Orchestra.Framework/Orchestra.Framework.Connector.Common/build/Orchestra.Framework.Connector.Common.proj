@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003"
+         ToolsVersion="4.0"
+         DefaultTargets="Publish">
+ 
+  <PropertyGroup>
+    <AssemblyName>Orchestra.Framework.Connector.Common</AssemblyName>
+    <csProj>$(AssemblyName).csproj</csProj>
+  </PropertyGroup>
+  
+  <ItemGroup>
+	<ProjectToBuild Include="../$(AssemblyName).csproj">
+	  <Properties><!--OutputPath=$(OutputDir);-->Configuration=$(Configuration);Platform=$(Platform)</Properties>
+    </ProjectToBuild>
+  </ItemGroup>
+
+  <Target Name="Build">
+    <MSBuild Projects="@(ProjectToBuild)"/>
+  </Target>
+  
+  <Target Name="Rebuild">
+    <MSBuild Projects="@(ProjectToBuild)"/>
+  </Target>
+  
+  <Target Name="Package"  DependsOnTargets="Build">
+    <Exec Command="&quot;$(NuGetCommand)&quot; pack &quot;$(CsProj)&quot; -Prop Configuration=$(Configuration)" WorkingDirectory=".." LogStandardErrorAsError="true" />
+  </Target>
+  
+  <Target Name="Publish" DependsOnTargets="Package">
+    <!-- Publish the nupkg to the well known NuGet server
+         Note: "nuget setApiKey {put-your-api-key-here} -Source http://My_Nuget_Gallery_Service_Url/" must be run prior on the machine to ensure the api key is set correctly. -->
+    
+    <!-- Load up the information from the assembly -->
+    <GetAssemblyIdentity AssemblyFiles="../lib/$(AssemblyName).dll">
+      <Output TaskParameter="Assemblies" ItemName="OutputAssemblyInfo" />
+    </GetAssemblyIdentity>
+    <Message Text="Info: %(OutputAssemblyInfo.Version)" />
+    
+    <Exec Command="&quot;$(NuGetCommand)&quot; push &quot;$(AssemblyName).%(OutputAssemblyInfo.Version).nupkg&quot; -Source http://nexusorc.orchestra:8081/service/local/nuget/DataManagementNuGet/" WorkingDirectory=".."/>
+  </Target> 
+</Project>

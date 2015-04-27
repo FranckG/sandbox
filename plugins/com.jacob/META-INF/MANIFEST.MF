@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Java Com Bridge
+Bundle-SymbolicName: com.jacob
+Bundle-Version: 1.17.0.M2
+Export-Package: com.jacob.activeX,
+ com.jacob.com
+Bundle-Vendor: sourceforge

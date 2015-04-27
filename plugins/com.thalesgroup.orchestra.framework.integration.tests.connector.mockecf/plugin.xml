@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="com.thalesgroup.orchestra.framework.integration.tests.connector.mockecf.MockEcfConnectorApplication">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="com.thalesgroup.orchestra.framework.integration.tests.application.applicationTestHandler">
+      <ApplicationTestHandler
+            class="com.thalesgroup.orchestra.framework.integration.tests.connector.mockecf.configuration.MockEcfConnectorConfig">
+      </ApplicationTestHandler>
+   </extension>
+
+</plugin>

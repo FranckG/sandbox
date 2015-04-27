@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/com.thalesgroup.orchestra.framework.project/src"
+    modelPluginID="com.thalesgroup.orchestra.framework.project" modelName="contextsProject"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false">
+  <foreignModel>contextsProject.ecore</foreignModel>
+  <genPackages prefix="ContextsProject" basePackage="com.thalesgroup.orchestra.framework"
+      disposableProviderFactory="true" ecorePackage="contextsProject.ecore#/">
+    <genClasses ecoreClass="contextsProject.ecore#//ContextsProject">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute contextsProject.ecore#//ContextsProject/parentProject"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference contextsProject.ecore#//ContextsProject/administrators"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference contextsProject.ecore#//ContextsProject/contextReferences"/>
+    </genClasses>
+    <genClasses ecoreClass="contextsProject.ecore#//Administrator">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute contextsProject.ecore#//Administrator/id"/>
+    </genClasses>
+    <genClasses ecoreClass="contextsProject.ecore#//ContextReference">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute contextsProject.ecore#//ContextReference/uri"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute contextsProject.ecore#//ContextReference/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute contextsProject.ecore#//ContextReference/name"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

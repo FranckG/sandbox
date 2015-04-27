@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: JNI Registry - Windows Registry Package
+Bundle-SymbolicName: com.ice.jni.registry.Registry
+Bundle-Version: 3.1.3.qualifier
+Bundle-Vendor: ICE Engineering, Inc.
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-NativeCode: ICE_JNIRegistry.dll;
+ osname=win32;
+ processor=x86
+Bundle-ActivationPolicy: lazy
+Export-Package: com.ice.jni.registry

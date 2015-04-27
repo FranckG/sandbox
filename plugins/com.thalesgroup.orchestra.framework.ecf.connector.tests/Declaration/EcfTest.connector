@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connector:connectorDefinition xmlns:connector="http://www.thalesgroup.com/orchestra/framework/4_0_24/Connector">
+  <connector connectorId="Ecf_DefaultConnector">
+  	<type name="EcfTest"/>
+  </connector>
+</connector:connectorDefinition>

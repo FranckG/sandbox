@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contexts:Context xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:contexts="http://com.thalesgroup.orchestra/framework/4_1_0/contexts" id="b2ab291e-7d22-417e-a850-49fd5701c19f" name="ImageContribution">
+  <superContext href="../../plugin/com.thalesgroup.orchestra.framework.model.handler/context/default.contexts#9212e380-d34e-477d-bbae-0794a3b765e4"/>
+        <superCategoryCategories id="f3d3004d-6a2f-4c13-ad26-6699be65c72a" name="Orchestra Image">
+        <superCategory href="../../plugin/com.thalesgroup.orchestra.framework.model.handler/context/default.contexts#10c81e9d-68e2-4e2e-ad4e-815f7dfc5e94"/>
+          <variables id="bd025d83-63dc-44d8-a3ab-4018053afba3" name="BMP">
+            <values id="86a83fae-d48e-4e5e-9b47-d791d28af0df" value="AddedOrchestraImage"/>
+          </variables>
+          <variables id="d750d37e-5934-49e0-9c8c-e80aeca76610" name="GIF">
+            <values id="0fa271ae-bae1-4d48-8318-b38b63da91d6" value="AddedOrchestraImage"/>
+          </variables>
+          <variables id="e898c441-9bc8-4356-b784-5ae182b801f7" name="JPG">
+            <values id="54c8ae37-ca71-4c53-b09b-7d8268782810" value="AddedOrchestraImage"/>
+          </variables>
+          <variables id="c6fb83b7-a3ea-4522-955a-c5553ed9de00" name="PNG">
+            <values id="511c7b99-6220-458c-9dd5-c2bc53ebb197" value="AddedOrchestraImage"/>
+          </variables>
+          <variables id="0612d0f1-b958-4136-b547-5d2fb037bea1" name="JPEG">
+            <values id="b4cbbe12-fdc7-4f9d-8a24-45524e2df133" value="AddedOrchestraImage"/>
+          </variables>
+        </superCategoryCategories>
+        <superCategoryCategories id="7ea030f6-4443-459b-9411-4de917a968dd" name="Image">
+          <superCategory href="../../plugin/com.thalesgroup.orchestra.framework.model.handler/context/default.contexts#b7e39bc1-b760-4d04-917a-138c9872e1d6"/>
+          <variables xsi:type="contexts:FileVariable" id="97fc96a1-3994-493b-b3d6-c3876bf14950" name="Path">
+            <values id="3c37027b-d98d-4fa3-869e-9eb35383e716" value="${odm:\Orchestra installation\COTS\PictureManager\Current\Executable}"/>
+          </variables>
+          <variables id="af6f02bc-f798-4eea-ade5-e5aed3583b27" name="LaunchArguments">
+            <values id="d9ab2ff2-9147-49fd-ac46-43bed8b53510" value="%PATH%"/>
+          </variables>
+        </superCategoryCategories>
+</contexts:Context>

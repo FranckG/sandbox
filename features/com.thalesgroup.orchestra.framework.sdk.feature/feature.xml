@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.thalesgroup.orchestra.framework.sdk.feature"
+      label="Orchestra Framework SDK for Eclipse IDE"
+      version="4.4.0.qualifier"
+      provider-name="THALESGROUP">
+
+   <description url="http://www.example.com/description">
+      [Enter Feature Description here.]
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      [Enter Copyright Description here.]
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      [Enter License Description here.]
+   </license>
+
+   <includes
+         id="com.thalesgroup.orchestra.framework.sdk.feature.source"
+         version="0.0.0"/>
+
+   <requires>
+      <import plugin="org.eclipse.ui.ide"/>
+      <import plugin="org.eclipse.jdt.core"/>
+      <import plugin="org.eclipse.core.expressions"/>
+      <import plugin="org.eclipse.text"/>
+      <import feature="com.thalesgroup.orchestra.framework.common.feature" version="4.1.5.qualifier"/>
+      <import feature="com.thalesgroup.orchestra.framework.root.ui.feature" version="4.0.25.qualifier"/>
+   </requires>
+
+   <plugin
+         id="com.thalesgroup.orchestra.framework.connector.sdk"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.commons.io"
+         download-size="0"
+         install-size="0"
+         version="2.0.1.v201105210651"
+         unpack="false"/>
+
+</feature>

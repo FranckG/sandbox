@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/com.thalesgroup.orchestra.framework.model/src"
+    modelPluginID="com.thalesgroup.orchestra.framework.model" modelName="Contexts"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    optimizedHasChildren="true" runtimeVersion="2.8" runtimePlatform="RCP">
+  <foreignModel>contexts.ecore</foreignModel>
+  <genPackages prefix="Contexts" basePackage="com.thalesgroup.orchestra.framework.model"
+      resource="XMI" disposableProviderFactory="true" ecorePackage="contexts.ecore#/">
+    <genClasses ecoreClass="contexts.ecore#//Category">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference contexts.ecore#//Category/variables"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference contexts.ecore#//Category/categories"/>
+    </genClasses>
+    <genClasses ecoreClass="contexts.ecore#//Context">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference contexts.ecore#//Context/categories"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference contexts.ecore#//Context/superContext"/>
+      <genFeatures property="None" children="true" createChild="false" ecoreFeature="ecore:EReference contexts.ecore#//Context/transientCategories"/>
+      <genFeatures property="None" children="true" createChild="false" ecoreFeature="ecore:EReference contexts.ecore#//Context/superCategoryVariables"/>
+      <genFeatures property="None" children="true" createChild="false" ecoreFeature="ecore:EReference contexts.ecore#//Context/overridingVariables"/>
+      <genFeatures property="None" children="true" createChild="false" ecoreFeature="ecore:EReference contexts.ecore#//Context/superCategoryCategories"/>
+      <genFeatures property="None" children="true" createChild="false" ecoreFeature="ecore:EReference contexts.ecore#//Context/selectedVersions"/>
+      <genFeatures property="None" children="true" createChild="false" ecoreFeature="ecore:EReference contexts.ecore#//Context/currentVersions"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute contexts.ecore#//Context/description"/>
+    </genClasses>
+    <genClasses ecoreClass="contexts.ecore#//Variable">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute contexts.ecore#//Variable/mandatory"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute contexts.ecore#//Variable/description"/>
+    </genClasses>
+    <genClasses ecoreClass="contexts.ecore#//FileVariable"/>
+    <genClasses ecoreClass="contexts.ecore#//FolderVariable"/>
+    <genClasses image="false" ecoreClass="contexts.ecore#//ModelElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute contexts.ecore#//ModelElement/id"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="contexts.ecore#//NamedElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute contexts.ecore#//NamedElement/name"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="contexts.ecore#//AbstractVariable">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute contexts.ecore#//AbstractVariable/final"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute contexts.ecore#//AbstractVariable/multiValued"/>
+      <genFeatures children="true" createChild="true" ecoreFeature="ecore:EReference contexts.ecore#//AbstractVariable/values"/>
+    </genClasses>
+    <genClasses ecoreClass="contexts.ecore#//OverridingVariable">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference contexts.ecore#//OverridingVariable/overriddenVariable"/>
+    </genClasses>
+    <genClasses ecoreClass="contexts.ecore#//VariableValue" labelFeature="#//contexts/VariableValue/value">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute contexts.ecore#//VariableValue/value"/>
+    </genClasses>
+    <genClasses ecoreClass="contexts.ecore#//PendingElementsCategory"/>
+    <genClasses ecoreClass="contexts.ecore#//OverridingVariableValue" labelFeature="#//contexts/VariableValue/value">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference contexts.ecore#//OverridingVariableValue/overriddenValue"/>
+    </genClasses>
+    <genClasses provider="None" ecoreClass="contexts.ecore#//OverridingEnvironmentVariableValue"/>
+    <genClasses ecoreClass="contexts.ecore#//InstallationCategory"/>
+    <genClasses ecoreClass="contexts.ecore#//ContributedElement">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference contexts.ecore#//ContributedElement/superCategory"/>
+    </genClasses>
+    <genClasses ecoreClass="contexts.ecore#//ReferenceableElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute contexts.ecore#//ReferenceableElement/referenceable"/>
+    </genClasses>
+    <genClasses ecoreClass="contexts.ecore#//ReferencingElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute contexts.ecore#//ReferencingElement/referencePath"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference contexts.ecore#//ReferencingElement/resolvedReference"/>
+    </genClasses>
+    <genClasses ecoreClass="contexts.ecore#//EnvironmentVariableValue">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute contexts.ecore#//EnvironmentVariableValue/environmentId"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference contexts.ecore#//EnvironmentVariableValue/values"/>
+    </genClasses>
+    <genClasses ecoreClass="contexts.ecore#//EnvironmentVariable"/>
+    <genClasses ecoreClass="contexts.ecore#//StringToStringMap">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute contexts.ecore#//StringToStringMap/key"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute contexts.ecore#//StringToStringMap/value"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

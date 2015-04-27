@@ -1,0 +1,15 @@
+<!ELEMENT ConfigServer (papeeteServer,ecfServer)>
+<!ELEMENT papeeteServer (papeetePort)>
+<!ATTLIST papeeteServer
+	port CDATA #REQUIRED
+	portRange CDATA #REQUIRED
+>
+<!ELEMENT papeetePort EMPTY>
+<!ATTLIST papeetePort
+	mode (static | dynamic) #REQUIRED
+>
+<!ELEMENT ecfServer EMPTY>
+<!ATTLIST ecfServer
+	location CDATA #REQUIRED
+	timeout CDATA #REQUIRED
+>

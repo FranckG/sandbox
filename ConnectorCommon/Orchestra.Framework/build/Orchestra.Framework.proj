@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003"
+         ToolsVersion="4.0"
+         DefaultTargets="Build">
+  
+  <PropertyGroup>
+    <!-- <OutputDir>c:\temp\TESTMSBUILDOUTPUT</OutputDir> -->
+    <NugetCommand>NuGet.exe</NugetCommand>
+    
+    <!--Api key for deploy_user on http://nexusorc.orchestra:8081/service/local/nuget/DataManagementNuGet/-->
+    <NugetDeployApiKey>6b4b41ff-d4f2-3eba-842f-1295cdf8a685</NugetDeployApiKey> 
+  
+    <!--Package Source-->
+    <NugetPackageSource>http://nexusorc.orchestra:8081/service/local/nuget/DataManagementNuGet/</NugetPackageSource> 
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <ProjectToBuild Include="../**/Orchestra.Framework.*.proj">
+      <Properties>Configuration=Release</Properties>
+      <Properties>Platform=AnyCPU</Properties>
+      <Properties>NugetCommand=$(NugetCommand)</Properties>
+      <Properties>NugetPackageSource=$(NugetPackageSource)</Properties>
+    </ProjectToBuild>
+  </ItemGroup>
+  
+  <!-- Set Api key of user deploy_user on NuGet packages sources-->
+  <Target Name="setApiKey">
+    <Exec Command="&quot;$(NuGetCommand)&quot; setApiKey $(NugetDeployApiKey) -Source $(NugetPackageSource)" WorkingDirectory=".." LogStandardErrorAsError="true" />
+  </Target>
+  
+  <Target Name="Build" DependsOnTargets="setApiKey">
+    <MSBuild Projects="@(ProjectToBuild)"
+             ContinueOnError="false"
+             Targets="Publish"/>
+  </Target>
+</Project>

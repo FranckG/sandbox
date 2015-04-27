@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension-point id="environmentDeclaration" name="Environment declaration to the Framework" schema="schema/environmentDeclaration.exsd"/>
+   <extension-point id="environmentValidationRule" name="Environment specific validation rule" schema="schema/environmentValidationRule.exsd"/>
+   <extension-point id="fileSystemEnvironmentDefaultFilters" name="File System Environment Default Filters" schema="schema/fileSystemEnvironmentDefaultFilters.exsd"/>
+   <extension
+         point="com.thalesgroup.orchestra.framework.environment.environmentDeclaration">
+      <environment
+            category="File System"
+            class="com.thalesgroup.orchestra.framework.environment.filesystem.FileSystemEnvironment"
+            handler="com.thalesgroup.orchestra.framework.environment.filesystem.FileSystemEnvironmentHandler"
+            id="com.thalesgroup.orchestra.framework.environment.filesystem"
+            label="Directories on File System"
+            version="2.0.0">
+      </environment>
+   </extension>
+   <extension
+         point="com.thalesgroup.orchestra.framework.environment.environmentValidationRule">
+      <validationRuleGroup
+            environmentDeclarationId="com.thalesgroup.orchestra.framework.environment.filesystem">
+         <validationRule
+               class="com.thalesgroup.orchestra.framework.environment.filesystem.validation.FileSystemNonInclusionRule">
+         </validationRule>
+         <validationRule
+               class="com.thalesgroup.orchestra.framework.environment.filesystem.validation.ConfDirInclusionRule">
+         </validationRule>
+      </validationRuleGroup>
+   </extension>
+</plugin>

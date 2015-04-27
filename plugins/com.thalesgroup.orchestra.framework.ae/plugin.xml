@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension-point id="com.thalesgroup.orchestra.framework.ae.notifiers" name="Notifiers" schema="schema/Notifiers.exsd"/>
+	<extension
+         point="org.eclipse.ui.views">
+      <category
+            name="Orchestra Explorer"
+            id="OrchestraExplorer">
+      </category>
+      <view
+            name="Orchestra Explorer"
+            icon="icons/artifact_explorer.gif"
+            category="OrchestraExplorer"
+            class="com.thalesgroup.orchestra.framework.oe.ui.views.OrchestraExplorerView"
+            id="com.thalesgroup.themis.papeetedoc.ui.views.explorer.artifacts.PapeeteArtifactNavigator">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="org.eclipse.ui.resourcePerspective">
+         <view
+               ratio="0.5"
+               relative="org.eclipse.ui.views.TaskList"
+               relationship="right"
+               id="com.thalesgroup.themis.papeetedoc.ui.views.explorer.artifacts.PapeeteArtifactNavigator">
+         </view>
+      </perspectiveExtension>
+   </extension>
+   <!--
+	ArtifactExplorer Preference Page Extension
+	-->
+	<extension point="org.eclipse.ui.preferencePages">
+		<page class="com.thalesgroup.orchestra.framework.oe.ui.preferences.ArtefactExplorerPreferencePage" name="Orchestra Explorer" id="com.thalesgroup.orchestra.framework.oe.ui.preferences.ArtefactExplorerPreferencePage"/>
+	</extension>
+</plugin>

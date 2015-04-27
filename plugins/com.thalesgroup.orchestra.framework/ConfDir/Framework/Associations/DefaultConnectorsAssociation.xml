@@ -1,0 +1,43 @@
+<?xml version = "1.0" encoding="ISO-8859-1" ?>
+<association_list>
+	<association relational_type="LOGICAL-PHYSICAL" balanced="true" valid="true">
+		<artifact1 tool="Text">*</artifact1>
+		<artifact2 tool="FILESYSTEM">*.txt</artifact2>
+	</association>
+	<association relational_type="LOGICAL-PHYSICAL" balanced="true" valid="true">
+		<artifact1 tool="CppAsText">*</artifact1>
+		<artifact2 tool="FILESYSTEM">*.cpp</artifact2>
+	</association>
+	<association relational_type="LOGICAL-PHYSICAL" balanced="true" valid="true">
+		<artifact1 tool="Log">*</artifact1>
+		<artifact2 tool="FILESYSTEM">*.log</artifact2>
+	</association>
+	<association relational_type="LOGICAL-PHYSICAL" balanced="true" valid="true">
+		<artifact1 tool="GIF">*</artifact1>
+		<artifact2 tool="FILESYSTEM">*.gif</artifact2>
+	</association>
+	<association relational_type="LOGICAL-PHYSICAL" balanced="true" valid="true">
+		<artifact1 tool="JPG">*</artifact1>
+		<artifact2 tool="FILESYSTEM">*.jpg</artifact2>
+	</association>
+	<association relational_type="LOGICAL-PHYSICAL" balanced="true" valid="true">
+		<artifact1 tool="JPEG">*</artifact1>
+		<artifact2 tool="FILESYSTEM">*.jpeg</artifact2>
+	</association>
+	<association relational_type="LOGICAL-PHYSICAL" balanced="true" valid="true">
+		<artifact1 tool="BMP">*</artifact1>
+		<artifact2 tool="FILESYSTEM">*.bmp</artifact2>
+	</association>
+	<association relational_type="LOGICAL-PHYSICAL" balanced="true" valid="true">
+		<artifact1 tool="PNG">*</artifact1>
+		<artifact2 tool="FILESYSTEM">*.png</artifact2>
+	</association>
+	<association relational_type="LOGICAL-PHYSICAL" balanced="true" valid="true">
+		<artifact1 tool="PCX">*</artifact1>
+		<artifact2 tool="FILESYSTEM">*.pcx</artifact2>
+	</association>
+	<association relational_type="LOGICAL-PHYSICAL" balanced="true" valid="true">
+		<artifact1 tool="TIFF">*</artifact1>
+		<artifact2 tool="FILESYSTEM">*.tiff</artifact2>
+	</association>
+</association_list>

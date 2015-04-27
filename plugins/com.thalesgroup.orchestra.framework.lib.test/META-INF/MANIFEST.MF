@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Framework lib test fragment
+Bundle-SymbolicName: com.thalesgroup.orchestra.framework.lib.test
+Bundle-Version: 4.0.23.qualifier
+Bundle-Vendor: THALESGROUP
+Fragment-Host: com.thalesgroup.orchestra.framework.lib;bundle-version="4.0.23"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.junit4;bundle-version="3.8.2"

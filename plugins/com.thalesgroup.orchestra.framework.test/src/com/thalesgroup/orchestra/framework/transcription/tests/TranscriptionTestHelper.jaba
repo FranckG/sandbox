@@ -1,0 +1,90 @@
+/**
+ * Copyright (c) THALES, 2011. All rights reserved.
+ */
+package com.thalesgroup.orchestra.framework.transcription.tests;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import java.util.UUID;
+
+import com.thalesgroup.orchestra.framework.transcription.ArtefactPathsProvider;
+import com.thalesgroup.orchestra.framework.transcription.Association;
+import com.thalesgroup.orchestra.framework.transcription.AssociationArtifact;
+import com.thalesgroup.orchestra.framework.transcription.AssociationSourceObservable;
+import com.thalesgroup.orchestra.framework.transcription.TranscriptionHelper;
+
+/**
+ * @author T0052089
+ */
+@SuppressWarnings("nls")
+public class TranscriptionTestHelper {
+  public static final File TEMP_DIRECTORY;
+  static {
+    String tempDir = System.getProperty("java.io.tmpdir"); //$NON-NLS-1$
+    TEMP_DIRECTORY = new File(tempDir + UUID.randomUUID().toString());
+    TEMP_DIRECTORY.mkdir();
+    TEMP_DIRECTORY.deleteOnExit();
+  }
+
+  public static String createArtefact(String artefactPath) throws IOException {
+    File fileToCreate = new File(artefactPath);
+    fileToCreate.getParentFile().mkdirs();
+    fileToCreate.createNewFile();
+    return fileToCreate.getAbsolutePath();
+  }
+
+  public static String createArtefactInTempDirectory(String artefactPath) throws IOException {
+    return createArtefact(TEMP_DIRECTORY.getAbsolutePath() + File.separator + artefactPath);
+  }
+
+  public static TranscriptionHelper getInitializedTranscriptionHelper(final Collection<AssociationInfo> associationInfos_p,
+      final Collection<String> artefactRelativePaths_p) {
+    AssociationSourceObservable associationObservable = new AssociationSourceObservable() {
+      @Override
+      protected void upToDate() {
+        List<Association> associations = new ArrayList<Association>();
+        for (AssociationInfo associationInfo : associationInfos_p) {
+          associations.add(new Association(new AssociationArtifact(associationInfo._sourceArtefactRootType, associationInfo._sourceArtefactContent),
+              new AssociationArtifact(associationInfo._targetArtefactRootType, associationInfo._targetArtefactContent), "LOGICAL-PHYSICAL", true, true));
+        }
+        associationsAdded(associations);
+      }
+    };
+
+    ArtefactPathsProvider artefactPathsProvider = new ArtefactPathsProvider() {
+      public List<String> getArtefactPaths() {
+        return new ArrayList<String>(artefactRelativePaths_p);
+      }
+    };
+
+    return new TranscriptionHelper(associationObservable, artefactPathsProvider);
+  }
+
+  public static String getTempDirectoryAbsolutePath() {
+    return TEMP_DIRECTORY.getAbsolutePath();
+  }
+
+  public static class AssociationInfo {
+    public String _sourceArtefactContent;
+    public String _sourceArtefactRootType;
+    public String _targetArtefactContent;
+    public String _targetArtefactRootType;
+
+    /**
+     * @param sourceArtefactRootType_p
+     * @param sourceArtefactContent_p
+     * @param targetArtefactRootType_p
+     * @param targetArtefactContent_p
+     */
+    public AssociationInfo(String sourceArtefactRootType_p, String sourceArtefactContent_p, String targetArtefactRootType_p, String targetArtefactContent_p) {
+      _sourceArtefactRootType = sourceArtefactRootType_p;
+      _sourceArtefactContent = sourceArtefactContent_p;
+      _targetArtefactRootType = targetArtefactRootType_p;
+      _targetArtefactContent = targetArtefactContent_p;
+    }
+
+  }
+}

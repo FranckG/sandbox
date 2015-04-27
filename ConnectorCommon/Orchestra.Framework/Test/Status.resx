@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="txtStatus.Text" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;status:statusDefinition xmlns:status="http://www.thalesgroup.com/orchestra/framework/4_0_25/Status"&gt;
+  &lt;status message="Orchestra Framework response container status" severity="INFO"&gt;
+    &lt;status code="0" message="" severity="WARNING"&gt;
+      &lt;status code="0" message="orchestra://Doors/Orchestra%20Database%5Fb3cbf282%2FTest%2ESylvain" severity="OK" uri="orchestra://Migration/Migration?UriToMigrate=papeete%3A%2F%2F%2FDoors%2F%2FOrchestra%2BDatabase%5Fb3cbf282%252FTest%2ESylvain%2F%2F%2F"/&gt;
+      &lt;status code="0" message="orchestra://Clearquest/prod/Query/Personal%20Queries%2FMyPendingList" severity="OK" uri="orchestra://Migration/Migration?UriToMigrate=papeete%3A%2F%2F%2FClearquest%2F%2Fprod%2FQuery%2F%2FPersonal%2BQueries%252FMyPendingList"/&gt;
+      &lt;status code="0" message="orchestra://Clearquest/prod/Query/Personal%20Queries%2FFramework%2FCe%20que%20l%27on%20accept%C3%A9%20pour%20la%20V%3F?%20State%282%5F0%29=Accepted&amp;amp;ProgProd%5FDeliv%5FRelease%281%5F0%29=V5%2E0" severity="OK" uri="orchestra://Migration/Migration?UriToMigrate=papeete%3A%2F%2F%2FClearquest%2F%2Fprod%2FQuery%2F%2FPersonal%2BQueries%252FFramework%252FCe%2Bque%2Bl%2527on%2Baccept%25E9%2Bpour%2Bla%2BV%253F%2FProgProd%5FDeliv%5FRelease%25281%5F0%2529%3DV5%2E0%2C%2BState%25282%5F0%2529%3DAccepted"/&gt;
+      &lt;status code="0" message="orchestra://Clearquest/prod/Folder/Personal%20Queries" severity="OK" uri="orchestra://Migration/Migration?UriToMigrate=papeete%3A%2F%2F%2FClearquest%2F%2Fprod%2FFolder%2FPersonal%2BQueries%2F"/&gt;
+      &lt;status code="0" message="URI migration failed : could not find any connector able to deal with converted URI 'orchestra://Gimp/Images%2FMissing%20You'" severity="ERROR" uri="orchestra://Migration/Migration?UriToMigrate=papeete%3A%2F%2F%2FGimp%2F%2FImages%252FMissing%2BYou%2F%2F%2F"/&gt;
+      &lt;status code="0" message="orchestra://Doors/Orchestra%20Database%5Fb3cbf282%2FTest%2ESylvain/Object/000031e0%2118" severity="OK" uri="orchestra://Migration/Migration?UriToMigrate=papeete%3A%2F%2F%2FDoors%2F%2FOrchestra%2BDatabase%5Fb3cbf282%252FTest%2ESylvain%2FObject%2F%2F000031e0%252118"/&gt;
+      &lt;status code="0" message="orchestra://Doors/Orchestra%20Database%5Fb3cbf282%2FTest%2ESylvain/View/000031e0%2110%2E%20Document%20view" severity="OK" uri="orchestra://Migration/Migration?UriToMigrate=papeete%3A%2F%2F%2FDoors%2F%2FOrchestra%2BDatabase%5Fb3cbf282%252FTest%2ESylvain%2FView%2F%2F000031e0%252110%2E%2BDocument%2Bview"/&gt;
+      &lt;status code="0" message="orchestra://Clearquest/prod/Query/Personal%20Queries%2F%3F%20Find%20FT%20by%20id?id%281%5F0%29=prod00040630" severity="OK" uri="orchestra://Migration/Migration?UriToMigrate=papeete%3A%2F%2F%2FClearquest%2F%2Fprod%2FQuery%2F%2FPersonal%2BQueries%252F%253F%2BFind%2BFT%2Bby%2Bid%2Fid%25281%5F0%2529%3Dprod00040630"/&gt;
+      &lt;status code="0" message="orchestra://Doors/Orchestra%20Database%5Fb3cbf282%2FTest%2ESylvain/Module/000031e0" severity="OK" uri="orchestra://Migration/Migration?UriToMigrate=papeete%3A%2F%2F%2FDoors%2F%2FOrchestra%2BDatabase%5Fb3cbf282%252FTest%2ESylvain%2FModule%2F%2F000031e0"/&gt;
+      &lt;status code="0" message="orchestra://Doors/Orchestra%20Database%5Fb3cbf282%2FTest%2ESylvain/Object/000031e0%2118?viewName=10%2E%20Document%20view" severity="OK" uri="orchestra://Migration/Migration?UriToMigrate=papeete%3A%2F%2F%2FDoors%2F%2FOrchestra%2BDatabase%5Fb3cbf282%252FTest%2ESylvain%2FObject%2F%2F000031e0%252110%2E%2BDocument%2Bview%252118"/&gt;
+      &lt;status code="0" message="orchestra://Clearquest/prod" severity="OK" uri="orchestra://Migration/Migration?UriToMigrate=papeete%3A%2F%2F%2FClearquest%2F%2Fprod%2F%2F%2F"/&gt;
+      &lt;status code="0" message="orchestra://Clearquest/prod/Defect/prod00060114?queryName=Personal%20Queries%2FMyPendingList" severity="OK" uri="orchestra://Migration/Migration?UriToMigrate=papeete%3A%2F%2F%2FClearquest%2F%2Fprod%2FDefect%2F%2FPersonal%2BQueries%252FMyPendingList%2521prod00060114"/&gt;
+    &lt;/status&gt;
+  &lt;/status&gt;
+&lt;/status:statusDefinition&gt;
+</value>
+  </data>
+</root>

@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Integration Tests Mock ECF Connector
+Bundle-SymbolicName: com.thalesgroup.orchestra.framework.integration.tests.connector.mockecf;singleton:=true
+Bundle-Version: 4.2.7.qualifier
+Bundle-Activator: com.thalesgroup.orchestra.framework.integration.tests.connector.mockecf.MockEcfConnectorActivator
+Bundle-Vendor: THALESGROUP
+Require-Bundle: com.thalesgroup.orchestra.framework.ecf.services;bundle-version="4.0.33",
+ org.apache.commons.io;bundle-version="1.4.0",
+ com.ice.jni.registry.Registry;bundle-version="3.1.3",
+ org.eclipse.core.runtime;bundle-version="3.5.0",
+ com.thalesgroup.orchestra.framework.integration.tests,
+ com.thalesgroup.orchestra.framework.integration.tests.initializer,
+ com.thalesgroup.orchestra.framework.common;bundle-version="4.0.38"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy
+Export-Package: com.thalesgroup.orchestra.framework.integration.tests.connector.mockecf.configuration
