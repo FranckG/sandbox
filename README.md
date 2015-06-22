@@ -2,7 +2,7 @@
 
 ## Description
 
-Orchestra Framework is a software providing the middleware for Orchestra applications to exchange data and services.  
+Wakeup clock is a software providing the middleware for Orchestra applications to exchange data and services.  
 It is made of three main parts:
 
 * **Orchestra Framework Core (Framework)**, the applicative bus. The bus provides with the definition of Orchestra services and a way to use them from any Orchestra tool. It also provides with the capability to extend Orchestra scope with new services and applications,
